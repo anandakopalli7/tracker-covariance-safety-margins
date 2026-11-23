@@ -1,0 +1,26 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "package": "E",
+ "set": "E6 (A13 \u00a7E6), supplement to v09",
+ "session": "E (Claude Opus 5.5)",
+ "written": "2026-11-22T06:47:33.139618-05:00",
+ "before": "any E6 run and any E6 value (as v09)",
+ "lock_a13a_exists": false,
+ "reason": "make_synth_e5.py was changed on 22 Nov 2026 at 03:30:54 EST (file mtime) by the Sonnet subagent during the E5 second program pairing fix (out/e5/E5_COMPARE_NOTE_v01.md): its synthetic E5 runs now carry the level label D as the real runs do (line 62), the \"synthetic test with level D\" that note records. Intended, after both E5 programs had run; it changes no rule and no value. v08 froze the earlier bytes; v09 did not re-freeze this test file. The E6 work did not touch it.",
+ "supersedes": {
+  "path": "E_closedloop/recount/test/make_synth_e5.py",
+  "v08_sha256": "2ba9a1c250c028ac05de709236cdd0a660f1d5db580e2380024154e96e5c04ae",
+  "v08_bytes": 3289
+ },
+ "files": [
+  {
+   "path": "E_closedloop/recount/test/make_synth_e5.py",
+   "bytes": 3322,
+   "sha256": "c614530662e0b2737ccd9f60c2ffeb4f0a80e78b010b38817cc69f54a62011de"
+  }
+ ],
+ "not_refrozen": {
+  "path": "E_closedloop/STATUS.md",
+  "why": "the living status file (frozen once in FREEZE_E.json); it changes with every status update by design"
+ }
+}

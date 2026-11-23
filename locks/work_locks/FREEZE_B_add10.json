@@ -1,0 +1,261 @@
+{
+ "addendum": 10,
+ "to": "work\\locks\\FREEZE_B.json",
+ "layers": [
+  {
+   "file": "FREEZE_B.json",
+   "sha256": "1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152"
+  },
+  {
+   "file": "FREEZE_B_add1.json",
+   "sha256": "9b71225a10645bfd28b2e43a2a05578f6131ed6ec8443f14125672d480927ad6"
+  },
+  {
+   "file": "FREEZE_B_add2.json",
+   "sha256": "6ffc5cd975b5ba91c597a1f989a1c649ca4bbbcf2244642577484f4b4341c39b"
+  },
+  {
+   "file": "FREEZE_B_add3.json",
+   "sha256": "549ac106adb20e6eb9cae16088c231665c6f006fada64ec3eea15d1025970831"
+  },
+  {
+   "file": "FREEZE_B_add4.json",
+   "sha256": "23f374c013510e0eadd8f7de574f61c8eaec1021669d799148266e8c9f269e7e"
+  },
+  {
+   "file": "FREEZE_B_add5.json",
+   "sha256": "d91d1e5a55edb5224f8c150c46cee58ce30d70681fab8d76f1830ae6f5672ee0"
+  },
+  {
+   "file": "FREEZE_B_add6.json",
+   "sha256": "bd24dc97ca4f0e2b7817e5ea6d0bc3da043aa68d8aa4dc1ca2ff21445b0bd4ed"
+  },
+  {
+   "file": "FREEZE_B_add7.json",
+   "sha256": "d06cc48bbe89ec87b3927c962c041b31b5e7aab1dccbe570188a331e0a7b0c12"
+  },
+  {
+   "file": "FREEZE_B_add8.json",
+   "sha256": "9c87f029ec3ed6438aea9dd60835a1ad1067ec0490190d5d89beee6a13d7b751"
+  },
+  {
+   "file": "FREEZE_B_add9.json",
+   "sha256": "2e51dae7edb9aa9bd6da4203ee30c4cbb386a3bf31998ed537f3c173b415a341"
+  }
+ ],
+ "written": "2026-11-22 00:40:38 Eastern Standard Time",
+ "writer": "package-B session, Claude Opus 5.5 (claude-opus-5-5)",
+ "code": "make_freeze_add_v04.py",
+ "reason": "AMENDMENT_12 s3c (IMM2) and s3b (B2 re-track of the new runs): code, constants, tuning outputs, P-bar, section text and second programs, frozen before LOCK_A12a and before any IMM2 value on an evaluation run. Tuning (20 lead-braking tuning runs only): identity check of the phase-restricted NIS statistic (all phases = frozen run_stat, bit for bit); kq (pre frames) no sign change, window unreachable, kept as a note (IMM2_TUNE_KQ_v01.json, medians copied from the search log); coordinator 00:18 option (b): kappa_q = kappa of record 0.16788; sa2rec (braking frames) sigma2_hi = 0.9172759353897799, median 1.9969, 20 runs, window reached. Constants out/imm2t/IMM2_CONSTANTS_REC_v01.json. P-bar_IMM2 on the 120 tuning runs (120/120, counts 20,611/2,159) out/pbar/PBAR_IMM2_v01.json. Code: b_imm2_tune_v01, b_imm2_kq_note_v01, b_imm2_v01 (P-bar, C and new re-track, gated on LOCK_A12a), b_l12_ids_v01 (CD's l12 run-id rule), b_l12_retrack_v01 (B2 for Y, manifests), b_fresh_analysis_v04 (IMM2 on C/new, one-sided p; test-old B1 89/89 identical to v01), b_modeprob_v01, b_fresh_export_v05, b_export_b12x_v01, b_imm2_checks_v01, b_imm2_twin_v01 (byte-identical copies of CD's Y-L12 programs, recorded below as external), make_freeze_add_v04 (this tool). Second programs (Claude Sonnet 5.5, from the section text): recount_fresh/imm2_v04.py (old-run test as IMM at K=2000: 26/26 keys identical, 2,000 rows bit-equal), recount_fresh/modeprob2_v01.py (old-run B1 test: 21/21 identical to b_modeprob_v01). Second IMM (imm2_v02) with IMM2 constants on old run 0012: ids identical, P9 rel 2.6e-14. Section text B_retrack/A12_3c_IMM2_v02.md (v01 is the superseded draft). No library change.",
+ "library_unchanged": true,
+ "changed": [],
+ "new": [
+  {
+   "path": "B_retrack\\A12_3c_IMM2_v01.md",
+   "sha256": "18ff56956daacd9b3ba69f6273f45b5b2b03d62936e54927bb96b4b252ee4c76",
+   "bytes": 7093,
+   "mtime": "2026-11-22 00:15:37"
+  },
+  {
+   "path": "B_retrack\\A12_3c_IMM2_v02.md",
+   "sha256": "02484ab7adacecd38f8fbfa4d2dcfcc3ff4c992fe033193fd5f7351ba7b11de2",
+   "bytes": 8994,
+   "mtime": "2026-11-22 00:27:27"
+  },
+  {
+   "path": "B_retrack\\code\\b_export_b12x_v01.py",
+   "sha256": "0ceb5de97c52f70c4fce87407f7d44d659cbf2eb1ffc4df766c7e0f03e3be629",
+   "bytes": 3286,
+   "mtime": "2026-11-22 00:39:17"
+  },
+  {
+   "path": "B_retrack\\code\\b_fresh_analysis_v04.py",
+   "sha256": "9ec766383fb60a5b2c735637677b001d23316d12c0bd8d3076cb3c095556fb9f",
+   "bytes": 16628,
+   "mtime": "2026-11-22 00:22:42"
+  },
+  {
+   "path": "B_retrack\\code\\b_fresh_export_v05.py",
+   "sha256": "b2b507ce435e2d5b1e19394484ce9b195f2c093ff5bedbf91fabac0a0ef25643",
+   "bytes": 9314,
+   "mtime": "2026-11-22 00:28:08"
+  },
+  {
+   "path": "B_retrack\\code\\b_imm2_checks_v01.py",
+   "sha256": "d40fe71db2db8165c9adc201d85b8b53d88a8c4c40355edac2834f17c075dc05",
+   "bytes": 4497,
+   "mtime": "2026-11-22 00:38:16"
+  },
+  {
+   "path": "B_retrack\\code\\b_imm2_kq_note_v01.py",
+   "sha256": "339791e18d4d124463b6f5f25559e30d0f7a4d26f692673f010a1ae4897e0326",
+   "bytes": 2703,
+   "mtime": "2026-11-22 00:26:59"
+  },
+  {
+   "path": "B_retrack\\code\\b_imm2_tune_v01.py",
+   "sha256": "3df3a6fba406a687eeef17330919dac1a686ef215cb4790b96b19c3cea09dc97",
+   "bytes": 13532,
+   "mtime": "2026-11-22 00:16:00"
+  },
+  {
+   "path": "B_retrack\\code\\b_imm2_twin_v01.py",
+   "sha256": "b21f05161709825d225135007547244e9f112aaccb04d164e4aca71201647295",
+   "bytes": 3643,
+   "mtime": "2026-11-22 00:38:44"
+  },
+  {
+   "path": "B_retrack\\code\\b_imm2_v01.py",
+   "sha256": "1fb4857e952bad24c0e6c38dc98c91e03c21f95c619cc7ee73c04a229e09b4c3",
+   "bytes": 9786,
+   "mtime": "2026-11-22 00:22:05"
+  },
+  {
+   "path": "B_retrack\\code\\b_immr_rows_check_v01.py",
+   "sha256": "e35b0e6efaa07f20a23364f5cfef6c928f7f6dc8e51e543cda77890aa3418d5b",
+   "bytes": 2113,
+   "mtime": "2026-11-21 14:29:22"
+  },
+  {
+   "path": "B_retrack\\code\\b_l12_ids_v01.py",
+   "sha256": "ccbfea307f541e158d00b89922bde1e7ca49adefb5e31692a9d0c7a84b160f43",
+   "bytes": 1516,
+   "mtime": "2026-11-22 00:21:51"
+  },
+  {
+   "path": "B_retrack\\code\\b_l12_retrack_v01.py",
+   "sha256": "b8b5776a15e2f7b1f56ae095ef1e2cad9adf44e23f3ce33f8f12671eef38f818",
+   "bytes": 6497,
+   "mtime": "2026-11-22 00:26:17"
+  },
+  {
+   "path": "B_retrack\\code\\b_modeprob_v01.py",
+   "sha256": "1ddeb09f94779d24b1e79daff3fa44a211b7d1bcba4e1f203fc9cd6b5d14b5fb",
+   "bytes": 5808,
+   "mtime": "2026-11-22 00:24:21"
+  },
+  {
+   "path": "B_retrack\\code\\make_freeze_add_v04.py",
+   "sha256": "58e67610dc22cd87613cb4a5dd27f04b4f88298bb80d649f08345b204e29933e",
+   "bytes": 6790,
+   "mtime": "2026-11-22 00:29:43"
+  },
+  {
+   "path": "B_retrack\\out\\imm2t\\IMM2_CONSTANTS_REC_v01.json",
+   "sha256": "45e9e1c8e2dabf6e3842d4c854886eede840ec63c25ae91c1f85c94e8cefae23",
+   "bytes": 1780,
+   "mtime": "2026-11-22 00:23:22"
+  },
+  {
+   "path": "B_retrack\\out\\imm2t\\IMM2_TUNE_CHECK_v01.json",
+   "sha256": "07b1a95759fdf792e738079c7da85ec00d299f5e1c773a9604716d974055e6e9",
+   "bytes": 4498,
+   "mtime": "2026-11-22 00:11:31"
+  },
+  {
+   "path": "B_retrack\\out\\imm2t\\IMM2_TUNE_KQ_v01.json",
+   "sha256": "aa37ff1023ddc83d048be11cf3b46710a832b7f61cc7b4fddbc9103bc8df3ad7",
+   "bytes": 4682,
+   "mtime": "2026-11-22 00:27:02"
+  },
+  {
+   "path": "B_retrack\\out\\imm2t\\IMM2_TUNE_SA2REC_v01.json",
+   "sha256": "382133ba27a7075141e5d658eaade764b9d5e6044235e449d0077c540c756035",
+   "bytes": 7908,
+   "mtime": "2026-11-22 00:23:22"
+  },
+  {
+   "path": "B_retrack\\out\\imm2t\\check.out",
+   "sha256": "1c27ab5e2511056f2b145d0872b1ee6f58f20c0e84a5687ff8edcdaa85e843f9",
+   "bytes": 592,
+   "mtime": "2026-11-22 00:11:31"
+  },
+  {
+   "path": "B_retrack\\out\\imm2t\\kq_run1_killed.out",
+   "sha256": "3133f827b0fdecc332b1e901e6e017254e66760686793ed47f6ef757d8c13cfb",
+   "bytes": 2667,
+   "mtime": "2026-11-22 00:18:55"
+  },
+  {
+   "path": "B_retrack\\out\\imm2t\\kq_run2_stopped.out",
+   "sha256": "3801577c7050aef3a9d8c4be62b184b6084933cd6f6a3933535772a832379d80",
+   "bytes": 256,
+   "mtime": "2026-11-22 00:26:13"
+  },
+  {
+   "path": "B_retrack\\out\\imm2t\\sa2rec.out",
+   "sha256": "a5213ea68791753fb183edeeb1baa3e85b0a90ab6c0f95e329fbd42117f02abe",
+   "bytes": 1656,
+   "mtime": "2026-11-22 00:23:22"
+  },
+  {
+   "path": "B_retrack\\out\\pbar\\PBAR_IMM2_v01.json",
+   "sha256": "44985ede3b7fc6ab03aace58ca517ef371eb07861b7235cb84b6638953cae4a9",
+   "bytes": 1430,
+   "mtime": "2026-11-22 00:35:21"
+  },
+  {
+   "path": "B_retrack\\pods\\b_recount_pod_v03.py",
+   "sha256": "2003f3364e39b02df54c3ecac7e311c69e0726d7cd47ad8636b36b09b0fb41d1",
+   "bytes": 12682,
+   "mtime": "2026-11-21 14:45:41"
+  },
+  {
+   "path": "B_retrack\\recount_fresh\\README_imm2_v04.md",
+   "sha256": "9d21a01d620d3b43f4c6bcf3c20ae111fe29ed9b51337bb82955d95eb5e3eb7e",
+   "bytes": 2506,
+   "mtime": "2026-11-22 00:27:42"
+  },
+  {
+   "path": "B_retrack\\recount_fresh\\imm2_v04.py",
+   "sha256": "8aa4a208e60aa0bf180a284307566d9dd55eae30d38aa7f7e146114cc5a5c910",
+   "bytes": 8907,
+   "mtime": "2026-11-22 00:26:06"
+  },
+  {
+   "path": "B_retrack\\recount_fresh\\modeprob2_v01.py",
+   "sha256": "d9958c87d9eff60dd1f581c43362efff738daed21affb7d039f6fd89625e63e2",
+   "bytes": 5173,
+   "mtime": "2026-11-22 00:27:04"
+  }
+ ],
+ "missing": [],
+ "external_read_only": [
+  {
+   "path": "CD_capture\\analysis\\gl_fast_v13.py",
+   "sha256": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789",
+   "note": "package CD file, read-only (gl_fast: imported by the analysis; Y programs: run as byte-identical copies for IMM2's twin, A12 s3c)"
+  },
+  {
+   "path": "CD_capture\\ycheck\\y_twin_l12_v13.py",
+   "sha256": "70d705ed81973b32750de920fc13f0c4168345fee81d9bf0bef90404b3f1b863",
+   "note": "package CD file, read-only (gl_fast: imported by the analysis; Y programs: run as byte-identical copies for IMM2's twin, A12 s3c)"
+  },
+  {
+   "path": "CD_capture\\recount\\rc_y_twin_l12_v13.py",
+   "sha256": "a933d4f0673f5743838b0120295e22e98519039d9d87b0dc97b6586847351a8a",
+   "note": "package CD file, read-only (gl_fast: imported by the analysis; Y programs: run as byte-identical copies for IMM2's twin, A12 s3c)"
+  },
+  {
+   "path": "CD_capture\\recount\\rc_y_kern_v13.py",
+   "sha256": "1794e1b51501582518a4fce9614ea6a50226f9a7ba8ee3400423307f6b2d0ff8",
+   "note": "package CD file, read-only (gl_fast: imported by the analysis; Y programs: run as byte-identical copies for IMM2's twin, A12 s3c)"
+  },
+  {
+   "path": "CD_capture\\recount\\rc_core_v13.py",
+   "sha256": "ab4bc14a05086822586a28da2ec791e214a3638275d669e0396602113d1cbae2",
+   "note": "package CD file, read-only (gl_fast: imported by the analysis; Y programs: run as byte-identical copies for IMM2's twin, A12 s3c)"
+  },
+  {
+   "path": "CD_capture\\recount\\rc_kern_v13.py",
+   "sha256": "e404e6f823503ea2adc22657d62dd3116f2a6a43794dec85fbe971efecffac4a",
+   "note": "package CD file, read-only (gl_fast: imported by the analysis; Y programs: run as byte-identical copies for IMM2's twin, A12 s3c)"
+  },
+  {
+   "path": "CD_capture\\analysis\\cd_common_v13.py",
+   "sha256": "28a7238a2f7135aec35f3018879af25566665856ff163502b6286b0249d6bdd0",
+   "note": "package CD file, read-only (gl_fast: imported by the analysis; Y programs: run as byte-identical copies for IMM2's twin, A12 s3c)"
+  }
+ ],
+ "note": "Reference = FREEZE_B.json with add1..add9 applied in order; this addendum lists every covered file that changed or is new since that state. Earlier manifests are kept as written."
+}

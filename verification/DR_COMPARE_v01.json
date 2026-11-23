@@ -1,0 +1,15 @@
+{
+ "code": "dr_compare_v01.py",
+ "rule": "A10 sec. 10.1(c): counts exact, values within 1e-09, levels and verdicts equal",
+ "first": "out\\DR_RESULTS_v01.json",
+ "second": "recount\\DR_RECOUNT_v02.json",
+ "n_keys_compared": 65,
+ "only_first": [],
+ "only_second": [],
+ "allowed_missing": [],
+ "max_abs_diff": 4.547473508864641e-13,
+ "n_float_diffs_within_tol": 43,
+ "differ": [],
+ "agree": true,
+ "written": "2026-11-21 16:41:02"
+}

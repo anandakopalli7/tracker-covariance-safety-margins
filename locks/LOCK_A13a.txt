@@ -1,0 +1,42 @@
+LOCK_A13a (A13 section 2): the closed-loop caution frontier under detection dropouts (E6), F0_D at g = 8 and 16 on E5's 135 cases
+Written: 22 Nov 2026 06:49:05 EST by the laptop clock, by the coordinating session (Claude Opus 5.5), with work\shared\tools\make_lock_a11_v01.py (sha256 7eeb081aa3b5954004b039e7640b1e76f79414c2669ad47d2497b05da0cba8b8).
+
+Amendment: revision_v13\AMENDMENT_13_v13.md, sha256 bc7c2bf47c9a29810aa84c5dd4827a0f2d9404f9b684a94d0a918967180498bf, modified 22 Nov 06:47:56.
+Snapshot copy at this lock: revision_v13\AMENDMENT_13_v13_at_LOCK_A13a.md (identical bytes).
+
+Freezes, verified layered at writing (verify_freeze.layered; 0 mismatches required):
+- E (FREEZE_E + addenda v01-v10): layered 11 manifests: 242 files, 239 match, 3 not
+    FREEZE_E.json  sha256 0a613b6471dfd293a51d1a3e0557e6a830e519759cc65186c033186f4c27da98  modified 19 Nov 21:00:08
+    FREEZE_E_ADDENDUM_v01.json  sha256 49d37ef51622f182e5246973dc8913e81044f1805bd773ff06037f30ab1b053f  modified 19 Nov 21:01:50
+    FREEZE_E_ADDENDUM_v02.json  sha256 1527b1d5a8d018eed376150879a3809a5a29c144ecf9424907d39bd2674b24b0  modified 19 Nov 22:10:26
+    FREEZE_E_ADDENDUM_v03.json  sha256 5c33a8c823ae06f61025184c920f8fba369193d9f33e815b5d603e2899d5dc7e  modified 19 Nov 23:22:39
+    FREEZE_E_ADDENDUM_v04.json  sha256 3da1587103a0f558030b084a2beeb0d46bcc729c8466e8e634406ab0b138ebaa  modified 20 Nov 01:10:22
+    FREEZE_E_ADDENDUM_v05.json  sha256 fe5bc4dc03dabf670a2505058be2ad796cbced684da67b41447f57cbbf98ea25  modified 20 Nov 01:14:31
+    FREEZE_E_ADDENDUM_v06.json  sha256 507f920efdccf7517d4bedc6732b6d537f44fabd95af31bba26f185ff6754b61  modified 20 Nov 01:30:16
+    FREEZE_E_ADDENDUM_v07.json  sha256 deb7e27aee1f52cf473d802b8074ebac390aad7d9fcbd7aba14b85a1f48ed863  modified 21 Nov 14:46:32
+    FREEZE_E_ADDENDUM_v08.json  sha256 4b5b7af6ea0c975a6414ad597078989095e591d678732604b0c18613654395e9  modified 22 Nov 00:24:25
+    FREEZE_E_ADDENDUM_v09.json  sha256 16d6fdc971e9f36f9dbc66212bab5872bb8d543bb3734074e243348766bfbfef  modified 22 Nov 06:44:55
+    FREEZE_E_ADDENDUM_v10.json  sha256 a2383dbb3c7718da5329acf553eb9337ddde6b6a2610181f07c18700e1d6aaba  modified 22 Nov 06:47:33
+    ALLOWED: MISMATCH E_closedloop/STATUS.md (from ARS_TRIAL\revision_v13\work\locks\FREEZE_E.json)  (E's living status file, excluded since FREEZE_E)
+    ALLOWED: MISSING  shared notes E_A12_6_v02.md (A12 §6) (from ARS_TRIAL\revision_v13\work\locks\FREEZE_E_ADDENDUM_v08.json)  (a descriptive path for E's A12 section 6 text in the shared session notes; verified at LOCK_A12b)
+    ALLOWED: MISSING  shared notes E_DROPOUT_A11_6d_v03.md (merged into A11 §6d) (from ARS_TRIAL\revision_v13\work\locks\FREEZE_E_ADDENDUM_v07.json)  (a descriptive path for E's A11 section 6d text; verified at LOCK_A11b)
+
+Files (path, sha256, modified):
+- LOCK_A13b: LOCK_A13b.txt  sha256 c85f39c3bfa6c8cf1af9325a55abe45c0d50a22551036e4c22d7e0bb0fdae074  modified 22 Nov 06:40:47
+- LOCK_A13c: LOCK_A13c.txt  sha256 67088c157725660dd6ab8dd7aa01794e954bbf4f614f28f49084aab9acac0ede  modified 22 Nov 06:48:18
+- A13 snapshot at LOCK_A13c: AMENDMENT_13_v13_at_LOCK_A13c.md  sha256 bc7c2bf47c9a29810aa84c5dd4827a0f2d9404f9b684a94d0a918967180498bf  modified 22 Nov 06:48:18
+- A13 snapshot at LOCK_A13b: AMENDMENT_13_v13_at_LOCK_A13b.md  sha256 507af801899a845113ff524713070e290f011937d4ecd6ef85c8752ac5866158  modified 22 Nov 06:40:47
+- E's section 2 text v01 (merged verbatim into A13 section 2): <user folder>/E_A13_E6_v01.md  sha256 f60b92c9fc23184bdca6443867c8d0ed3f4cd2824d576bcab8828e1c59bd120d  modified 22 Nov 06:44:45
+- E5 mask table (reused): E_closedloop/out/E5_MASKS_v01.json  sha256 010595907805f7434ad4fc04f963439fa3756e57406de983053e66910822d770  modified 22 Nov 00:12:01
+- E5 export (reused arms, public): E_closedloop/out/A_EXPORT_E5.json  sha256 20ecda6a122de2c2d976ee6bf8c84bd229f801a453425162ca25ae40d6655e28  modified 22 Nov 03:29:14
+
+Sealing evidence (each pattern must match no file at writing):
+- no E6 run: E_closedloop/runs/e6_*  -> 0 file(s)
+- no E6 result or export: E_closedloop/out/*E6*  -> 0 file(s)
+
+State at writing (coordinator's statement):
+- AMENDMENT_13 is unchanged since LOCK_A13c (same bytes as its snapshot). Section 2 holds E's v01 text verbatim (headings demoted) with the coordinator's note above it, which amends one rule (the label: two-sided 95% interval upper end < 0; Holm reported beside it, not setting it); it was merged before LOCK_A13c and is locked by this file.
+- FREEZE_E_ADDENDUM_v10 (a2383dbb...) re-freezes recount/test/make_synth_e5.py, changed at 03:30:54 during the disclosed E5 second-program pairing fix (synthetic runs carry level label D); no rule or value changed.
+- No E6 pod has been created and no E6 run or value exists. E's two programs passed synthetic tests and a plumbing dry run on the reused E5 runs only (the four-arm case set was empty).
+- E5's two arms (N at g_N, F0_D at g = 4) on the 135 cases are public and reused; the two new scales come from E5C's locked calibration grid. Design data seen by E: time lost on the 120 E5C tuning runs.
+- Section 3's real runs (F, laptop) may proceed in parallel under LOCK_A13b.

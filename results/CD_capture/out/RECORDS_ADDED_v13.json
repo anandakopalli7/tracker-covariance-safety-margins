@@ -1,0 +1,41 @@
+{
+ "written": "2026-11-21 02:44:22",
+ "program": "add_records_cd_v13.py",
+ "program_sha256": "43852bdcf279299befd115bb0c44f3c60bb17b94cdb71f7aa76b2d82e57613c6",
+ "deviations_source": "DEVIATIONS_CD_v13.json",
+ "deviations_sha256": "a0de6b934c3447698260f9fee804d7ee2193288024680e4d1b86b2c740c6d5a2",
+ "files": [
+  {
+   "file": "A_EXPORT_C.json",
+   "sha256_before": "ce2c650b0bb6e8712925ba1e4b6d8610e0592b513346afe09fd6b5e870c3f9f9",
+   "sha256_after": "c6ea954f6daeae83e2e9704dcda43703ac04dbdc9100203d2ff928baa73de290",
+   "n_values": 616,
+   "n_deviations": 15,
+   "outcomes": true
+  },
+  {
+   "file": "A_EXPORT_D.json",
+   "sha256_before": "94c58a26bc25a0f39f3b9ac664db15154e1f99e3eb815d082f134db37a72b00e",
+   "sha256_after": "7b9bcaf9fffe44f450266d061515c479cc6ed46d2755b054379a7d8fba9a71e5",
+   "n_values": 132,
+   "n_deviations": 15,
+   "outcomes": false
+  },
+  {
+   "file": "A_RECOUNT_C.json",
+   "sha256_before": "217132470bd09c0ce2b79e1fd67207d237cc520d6a15f3e7a8421a4e45624e6f",
+   "sha256_after": "ee03c591e3a60e35a7cfb533ed73e2c24937cd7b9518667d5e961f4c2437becd",
+   "n_values": 605,
+   "n_deviations": 15,
+   "outcomes": true
+  },
+  {
+   "file": "A_RECOUNT_D.json",
+   "sha256_before": "be7050bfa971a55fdd62f62c44f2b233f0d2cbcd76316f34e9680b3afd96c693",
+   "sha256_after": "04b8d441993bffadfb83ec8f0d94672abc81ebed6b3dd59f9d238d8df8fed1e6",
+   "n_values": 132,
+   "n_deviations": 15,
+   "outcomes": false
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "package": "E",
+ "set": "E6 (A13 \u00a7E6)",
+ "session": "E (Claude Opus 5.5)",
+ "written": "2026-11-22T06:44:55.532177-05:00",
+ "before": "any E6 run (no pod started; no e6_ run folder exists) and any E6 value (no A_EXPORT_E6 / A_RECOUNT_E6)",
+ "lock_a13a_exists": false,
+ "pretext": {
+  "path": "<user folder>\\E_A13_E6_v01.md",
+  "sha256": "f60b92c9fc23184bdca6443867c8d0ed3f4cd2824d576bcab8828e1c59bd120d",
+  "bytes": 11281
+ },
+ "note": "E6 build of record: packet_e_v05 unchanged; six lists (pods 41-46, 270 runs, E_F0 g 8 then g 16 on the 135 E5 main cases); first program e6_analyse_v01 (8 synthetic tests vs a slow loop pass) and driver run_e6_v01; second program e_recount_e6_v01 (Sonnet 5.5 from the text, first program not read; 15 synthetic tests pass). Plumbing dry run on the E5 runs only (K = 0, no E6 run exists): per-run outcomes 270/270 agree, export 65 keys 0 disagreements (after pinning K-empty p = 1 and no-pair McNemar null in the text and in the first program). Balance watchdog (floor 3.5 USD) deletes E6 pods.",
+ "files": [
+  {
+   "path": "E_closedloop/tools/make_jobs_e6_v01.py",
+   "bytes": 3350,
+   "sha256": "8249de40a31a36d1069e964653c519c8bfb6925e574c06a0e12a10eea5578890"
+  },
+  {
+   "path": "E_closedloop/tools/make_jobs_e_v01.py",
+   "bytes": 14211,
+   "sha256": "df839f5595fda6548d6151f0b744803bd1e314231a80f941ea2987f2bc42c554"
+  },
+  {
+   "path": "E_closedloop/tools/balance_watch_e6_v01.py",
+   "bytes": 2460,
+   "sha256": "a6830f0279a731f7d1314ed512611080513ecbbdc4f18aaff00ea1755a68fe3c"
+  },
+  {
+   "path": "E_closedloop/tools/finish_e5_v01.py",
+   "bytes": 3765,
+   "sha256": "53ff2dc840eb610f4177131e3e4bb82106efa542b6b0238b92da1a6e24d1866d"
+  },
+  {
+   "path": "E_closedloop/tools/acquire_e_v02.py",
+   "bytes": 3629,
+   "sha256": "2cced2751aa3d129f38213d8d4cc6ac6bbecb6e4095172bee53b4fbc8471337c"
+  },
+  {
+   "path": "E_closedloop/tools/acquire_e_v01.py",
+   "bytes": 4435,
+   "sha256": "150f34f5296787ade8e9e9c145a864ba564f75face4b7dc553bbbed23c7627e8"
+  },
+  {
+   "path": "E_closedloop/tools/terminate_e_v01.py",
+   "bytes": 2834,
+   "sha256": "457f575e2e70650c36d2611e16feda119369ab12eda3b54029773ec87158ebf0"
+  },
+  {
+   "path": "E_closedloop/tools/fetch_e_v01.py",
+   "bytes": 9056,
+   "sha256": "2278cfea2d1082491a321a4f83683ecaef423d7d24c05b7b20c4988cea29e2e9"
+  },
+  {
+   "path": "E_closedloop/tools/pods_e_v01.py",
+   "bytes": 12185,
+   "sha256": "c3fa34d0bc7c1c65d42ae85935b3ecc8fcc46737af1baeddc00a1e0d69194fde"
+  },
+  {
+   "path": "E_closedloop/analysis/e6_analyse_v01.py",
+   "bytes": 10617,
+   "sha256": "05d73e15f6caab46aeb1f26bd134f463836b93101c695d2c38917aa819093ba7"
+  },
+  {
+   "path": "E_closedloop/analysis/run_e6_v01.py",
+   "bytes": 4178,
+   "sha256": "153e7e846a0cd74aeabe836bba2a099173b1aebec962eea8da80cec4b9f96cc2"
+  },
+  {
+   "path": "E_closedloop/analysis/e5_analyse_v01.py",
+   "bytes": 12458,
+   "sha256": "709493fb9380eecd75ea210bce297a111680ff1e1d64a08ab438a272a35ce81c"
+  },
+  {
+   "path": "E_closedloop/analysis/e3_analyse_v01.py",
+   "bytes": 10114,
+   "sha256": "e4551a4493d6bd04c1a015f7c4eff4d9dc7eef8ff0834c78775bd46cefb4ef4b"
+  },
+  {
+   "path": "E_closedloop/analysis/e_collect_v01.py",
+   "bytes": 4752,
+   "sha256": "a8d0af04e40424cc3327b0d0a3cdc47d4f1170b9ce515af053356fb0d1682b4f"
+  },
+  {
+   "path": "E_closedloop/analysis/e_compare_v01.py",
+   "bytes": 7737,
+   "sha256": "e6f887ab8781b2101c12315ad558f6788d583599073f77e1bff4c2092cc778a4"
+  },
+  {
+   "path": "E_closedloop/tests/test_e6_primary_v01.py",
+   "bytes": 5043,
+   "sha256": "cf1969c25a08c0c49ef152038adf12d1269ebc14a8813e001ade051893c8cf92"
+  },
+  {
+   "path": "E_closedloop/tests/out/TEST_E6_PRIMARY_v01.json",
+   "bytes": 1058,
+   "sha256": "7b8a9b7d6ce2fb0ff176de45a120c2d0133ecc3b278bb981880b9196793eabd9"
+  },
+  {
+   "path": "E_closedloop/tests/out/E6_EXPORT_KEYS_v01.json",
+   "bytes": 1249,
+   "sha256": "65307e712d1355d38b627650a4ec238138a81eae2d7020ed11af5d96c14ebcd5"
+  },
+  {
+   "path": "E_closedloop/recount/e_recount_e6_v01.py",
+   "bytes": 11917,
+   "sha256": "a5064c3e7231a6680d8bd65d02902c6b529b32e7d38bd62e193c3665a194bffa"
+  },
+  {
+   "path": "E_closedloop/recount/tests_e6/test_e_recount_e6_v01.py",
+   "bytes": 10521,
+   "sha256": "3fe4b687a5ff2b0e7960276ad0e427baec0e3e641b34304f7192f917295cf4bb"
+  },
+  {
+   "path": "E_closedloop/recount/e_recount_e5_v01.py",
+   "bytes": 15366,
+   "sha256": "126dea37b18ba74bcd5fa69d8e216abfb26b77b1f3d890323bab7575e0b30fd6"
+  },
+  {
+   "path": "E_closedloop/recount/e_recount_v04.py",
+   "bytes": 51043,
+   "sha256": "2b528c0b917e2cc163263d96fca90f7d3e384ca67ecde02354b8f33d868b5c26"
+  },
+  {
+   "path": "E_closedloop/recount/e_recount_export_e4_v01.py",
+   "bytes": 6886,
+   "sha256": "b0254d6af89c119dcee9416ff5f69acd1f1f84b7bf9cf200d1780a75b8d8e2b5"
+  },
+  {
+   "path": "E_closedloop/out/E5_MASKS_v01.json",
+   "bytes": 57846,
+   "sha256": "010595907805f7434ad4fc04f963439fa3756e57406de983053e66910822d770"
+  },
+  {
+   "path": "E_closedloop/out/E5_SETTINGS_v01.json",
+   "bytes": 698,
+   "sha256": "73cc480c1d951fe0f5608851cdffdf08aa705eba1dbbd1afad60abdadb189764"
+  },
+  {
+   "path": "E_closedloop/src_v05/E_PBAR_CANMOT_v01.json",
+   "bytes": 1432,
+   "sha256": "4b373f6e3863028049425bed0aa2eb68a4d1e7bdd2ab8269f2edfb6ff2127560"
+  },
+  {
+   "path": "E_closedloop/src_v05/e_dropout_v01.py",
+   "bytes": 3682,
+   "sha256": "6d47f1317af07a51daa5d19baf1b66bc0c1191085777c677c10414f39cb5d26d"
+  },
+  {
+   "path": "E_closedloop/packets/packet_e_v05.tar.gz",
+   "bytes": 7810365,
+   "sha256": "4eda7c41f734440a8522f109aa78e7709e4d6a695f4cef05c0e32d10293ab83d"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E6_claude-v13e-41_v01.json",
+   "bytes": 15478,
+   "sha256": "2028e37bc0fa3bc3a8b61698a361323abbcec6670e1cfd63f441a91b18d9b811"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E6_claude-v13e-42_v01.json",
+   "bytes": 15478,
+   "sha256": "12cf8d03c61fe32253fc044ff3cf5c1444d4c7fb39e16deaf0afa75b051c39f2"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E6_claude-v13e-43_v01.json",
+   "bytes": 15478,
+   "sha256": "532e592a5bbd18da9e8da7fb96016ce1701d57f2fa4269af03449b3f1514b814"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E6_claude-v13e-44_v01.json",
+   "bytes": 14909,
+   "sha256": "3aedef005277ff8251c81d8e7336e7091e92f304c20a6de08ad3a80250853e12"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E6_claude-v13e-45_v01.json",
+   "bytes": 14909,
+   "sha256": "93e8ad228d6c6209f02ed377ae2f2463f7c0a5aca9985662913655114336edcb"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E6_claude-v13e-46_v01.json",
+   "bytes": 14909,
+   "sha256": "0e836d229e6cb7c99d799b3d6a53e91a0dcdc418700e99f82ecf3a8ad022aaa6"
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "passed": true,
+ "cases": [
+  {
+   "name": "bracketed 4-8",
+   "status": "bracketed 4-8",
+   "delta": -0.25,
+   "p": 0.028698565071746413,
+   "fs": 0.9957
+  },
+  {
+   "name": "bracketed 8-16",
+   "status": "bracketed 8-16",
+   "delta": -0.0625,
+   "p": 0.34303284835758213,
+   "fs": 0.9957
+  },
+  {
+   "name": "N at t8",
+   "status": "bracketed 4-8",
+   "delta": -0.125,
+   "p": 0.34303284835758213,
+   "fs": 0.9957
+  },
+  {
+   "name": "below",
+   "status": "not bracketed",
+   "delta": null,
+   "p": 1.0,
+   "fs": 0.0
+  },
+  {
+   "name": "above",
+   "status": "not bracketed",
+   "delta": null,
+   "p": 1.0,
+   "fs": 0.0
+  },
+  {
+   "name": "non-monotone",
+   "status": "non-monotone",
+   "delta": null,
+   "p": 1.0,
+   "fs": 0.0
+  },
+  {
+   "name": "empty T",
+   "status": "no common no-contact case",
+   "delta": null,
+   "p": 1.0,
+   "fs": 0.0
+  },
+  {
+   "name": "mixed",
+   "status": "bracketed 4-8",
+   "delta": -0.2457142857142856,
+   "p": 0.039098045097745115,
+   "fs": 0.97955
+  }
+ ]
+}

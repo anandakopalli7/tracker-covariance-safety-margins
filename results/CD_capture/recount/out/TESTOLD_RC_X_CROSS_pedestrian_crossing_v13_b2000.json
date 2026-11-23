@@ -1,0 +1,404 @@
+{
+ "code": "rc_x_cross_v13.py",
+ "role": "second program (recount), crossing sprint X (A11)",
+ "model": "claude-sonnet-5-5",
+ "family": "pedestrian_crossing",
+ "mode": "test-old",
+ "intervals": "nominal95",
+ "calib_mode": "inproc",
+ "started": "2026-11-21 14:20:54",
+ "threads": 2,
+ "sizes": {
+  "nboot": 2000,
+  "outer": 2000,
+  "inner": 1000,
+  "mc": 2000
+ },
+ "delta": 0.05,
+ "seeds": {
+  "boot": 20261911,
+  "outer": 20261912,
+  "inner": 20261913,
+  "inner2": 20261914,
+  "perm": 20261915,
+  "mc": 20261920
+ },
+ "runs": {
+  "sets": {
+   "fit": 31,
+   "tuning": 20
+  },
+  "run_ids": [
+   "p1b_fit_finite_0085",
+   "p1b_fit_finite_0086",
+   "p1b_fit_finite_0087",
+   "p1b_fit_finite_0088",
+   "p1b_fit_finite_0090",
+   "p1b_fit_finite_0091",
+   "p1b_fit_finite_0092",
+   "p1b_fit_finite_0093",
+   "p1b_fit_finite_0094",
+   "p1b_fit_finite_0095",
+   "p1b_fit_finite_0096",
+   "p1b_fit_finite_0097",
+   "p1b_fit_finite_0098",
+   "p1b_fit_finite_0099",
+   "p1b_fit_finite_0100",
+   "p1b_fit_finite_0101",
+   "p1b_fit_finite_0102",
+   "p1b_fit_finite_0103",
+   "p1b_fit_finite_0104",
+   "p1b_fit_finite_0105",
+   "p1b_fit_finite_0107",
+   "p1b_fit_finite_0108",
+   "p1b_fit_finite_0109",
+   "p1b_fit_finite_0110",
+   "p1b_fit_finite_0111",
+   "p1b_fit_finite_0113",
+   "p1b_fit_finite_0114",
+   "p1b_fit_finite_0115",
+   "p1b_fit_finite_0116",
+   "p1b_fit_finite_0117",
+   "p1b_fit_finite_0119",
+   "p2_c1109_tune_0002_fixed_c1",
+   "p2_c1109_tune_0008_fixed_c1",
+   "p2_c1109_tune_0014_fixed_c1",
+   "p2_c1109_tune_0020_fixed_c1",
+   "p2_c1109_tune_0026_fixed_c1",
+   "p2_c1109_tune_0032_fixed_c1",
+   "p2_c1109_tune_0038_fixed_c1",
+   "p2_c1109_tune_0044_fixed_c1",
+   "p2_c1109_tune_0050_fixed_c1",
+   "p2_c1109_tune_0056_fixed_c1",
+   "p2_c1109_tune_0062_fixed_c1",
+   "p2_c1109_tune_0068_fixed_c1",
+   "p2_c1109_tune_0074_fixed_c1",
+   "p2_c1109_tune_0080_fixed_c1",
+   "p2_c1109_tune_0086_fixed_c1",
+   "p2_c1109_tune_0092_fixed_c1",
+   "p2_c1109_tune_0098_fixed_c1",
+   "p2_c1109_tune_0104_fixed_c1",
+   "p2_c1109_tune_0110_fixed_c1",
+   "p2_c1109_tune_0116_fixed_c1"
+  ],
+  "files": [
+   "p1b_fit_finite_0085.npz",
+   "p1b_fit_finite_0086.npz",
+   "p1b_fit_finite_0087.npz",
+   "p1b_fit_finite_0088.npz",
+   "p1b_fit_finite_0090.npz",
+   "p1b_fit_finite_0091.npz",
+   "p1b_fit_finite_0092.npz",
+   "p1b_fit_finite_0093.npz",
+   "p1b_fit_finite_0094.npz",
+   "p1b_fit_finite_0095.npz",
+   "p1b_fit_finite_0096.npz",
+   "p1b_fit_finite_0097.npz",
+   "p1b_fit_finite_0098.npz",
+   "p1b_fit_finite_0099.npz",
+   "p1b_fit_finite_0100.npz",
+   "p1b_fit_finite_0101.npz",
+   "p1b_fit_finite_0102.npz",
+   "p1b_fit_finite_0103.npz",
+   "p1b_fit_finite_0104.npz",
+   "p1b_fit_finite_0105.npz",
+   "p1b_fit_finite_0107.npz",
+   "p1b_fit_finite_0108.npz",
+   "p1b_fit_finite_0109.npz",
+   "p1b_fit_finite_0110.npz",
+   "p1b_fit_finite_0111.npz",
+   "p1b_fit_finite_0113.npz",
+   "p1b_fit_finite_0114.npz",
+   "p1b_fit_finite_0115.npz",
+   "p1b_fit_finite_0116.npz",
+   "p1b_fit_finite_0117.npz",
+   "p1b_fit_finite_0119.npz",
+   "p2_c1109_tune_0002_fixed_c1.npz",
+   "p2_c1109_tune_0008_fixed_c1.npz",
+   "p2_c1109_tune_0014_fixed_c1.npz",
+   "p2_c1109_tune_0020_fixed_c1.npz",
+   "p2_c1109_tune_0026_fixed_c1.npz",
+   "p2_c1109_tune_0032_fixed_c1.npz",
+   "p2_c1109_tune_0038_fixed_c1.npz",
+   "p2_c1109_tune_0044_fixed_c1.npz",
+   "p2_c1109_tune_0050_fixed_c1.npz",
+   "p2_c1109_tune_0056_fixed_c1.npz",
+   "p2_c1109_tune_0062_fixed_c1.npz",
+   "p2_c1109_tune_0068_fixed_c1.npz",
+   "p2_c1109_tune_0074_fixed_c1.npz",
+   "p2_c1109_tune_0080_fixed_c1.npz",
+   "p2_c1109_tune_0086_fixed_c1.npz",
+   "p2_c1109_tune_0092_fixed_c1.npz",
+   "p2_c1109_tune_0098_fixed_c1.npz",
+   "p2_c1109_tune_0104_fixed_c1.npz",
+   "p2_c1109_tune_0110_fixed_c1.npz",
+   "p2_c1109_tune_0116_fixed_c1.npz"
+  ]
+ },
+ "n_evaluated_per_run": [
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271
+ ],
+ "E5": {
+  "n_evaluated": 13821,
+  "n_with_ratio": 10259,
+  "m_record": 1.1029,
+  "A_record": 0.05,
+  "m_N": 0.8826208135301157,
+  "A_N": 0.8628190275316259
+ },
+ "margin_ratio_N_F0": {
+  "n": 157972,
+  "median": 0.8826208135301157,
+  "q05": 0.43461984524184166,
+  "q95": 1.9577039092602955,
+  "A": 0.8628190275316259,
+  "share_within_5pct": 0.08505304737548426,
+  "barely_varies": false
+ },
+ "points": {
+  "n": 13821.0,
+  "denE": 16.08421966572607,
+  "R_pp": 0.08002099336182125,
+  "R_deceq": 11.059701492537316,
+  "D": {
+   "N": -6.9531871789306114,
+   "E5N": 10.266985022791404,
+   "E5pN": -6.7795383836191325,
+   "E5": 2.85796975616815,
+   "E5p": 1.2083062007090664
+  },
+  "RR": {
+   "N": -0.43229869545659005,
+   "E5N": 0.6383265856950067,
+   "E5pN": -0.4215024741340532,
+   "E5": 0.17768780926675662,
+   "E5p": 0.07512370670265409
+  },
+  "RR_E5NmP": 1.0598290598290598,
+  "RR_E5recmP": 0.10256410256410253
+ },
+ "library_point": {
+  "denE": 16.08421966572607,
+  "n": 13821.0,
+  "RR": {
+   "N": -0.43229869545659005,
+   "E5N": 0.6383265856950067,
+   "E5pN": -0.4215024741340532,
+   "E5": 0.17768780926675662,
+   "E5p": 0.07512370670265409
+  },
+  "D": {
+   "N": -6.9531871789306114,
+   "E5N": 10.266985022791404,
+   "E5pN": -6.7795383836191325,
+   "E5": 2.85796975616815,
+   "E5p": 1.2083062007090664
+  },
+  "max_abs_diff_vs_own": 0.0,
+  "identical": true
+ },
+ "levels": {
+  "R_gl_pp": 0.95,
+  "RR_E5N": 0.95,
+  "RR_E5NmP": 0.95,
+  "RR_N": 0.95,
+  "RR_E5rec": 0.95,
+  "RR_E5recmP": 0.95
+ },
+ "intervals_nominal95_all": {
+  "R_gl_pp": [
+   -0.05784693492237821,
+   0.25637855149403094
+  ],
+  "RR_E5N": [
+   -1.0967823389365856,
+   0.8596961549756061
+  ],
+  "RR_E5NmP": [
+   0.1297900085360113,
+   5.701843491346888
+  ],
+  "RR_N": [
+   -3.3156958200436377,
+   0.0333753482626908
+  ],
+  "RR_E5rec": [
+   0.06933171028855038,
+   1.147517044876357
+  ],
+  "RR_E5recmP": [
+   0.03363124595323136,
+   0.6957420789327391
+  ]
+ },
+ "resamples": {
+  "R_gl_pp": {
+   "n": 2000,
+   "n_finite": 2000
+  },
+  "RR_E5N": {
+   "n": 2000,
+   "n_finite": 1785
+  },
+  "RR_E5NmP": {
+   "n": 2000,
+   "n_finite": 1785
+  },
+  "RR_N": {
+   "n": 2000,
+   "n_finite": 1785
+  },
+  "RR_E5rec": {
+   "n": 2000,
+   "n_finite": 1785
+  },
+  "RR_E5recmP": {
+   "n": 2000,
+   "n_finite": 1785
+  }
+ },
+ "detail": {
+  "class_letter": "d",
+  "RR_N_ci_inside_delta": false,
+  "RR_E5p": 0.07512370670265409,
+  "RR_E5pN": -0.4215024741340532
+ },
+ "values": {
+  "X.ped.n_runs": 51,
+  "X.ped.n_dec": 13821,
+  "X.ped.R": 0.08002099336182125,
+  "X.ped.R.dec": 11.059701492537316,
+  "X.ped.R.share_pos": 0.8925,
+  "X.ped.R.ci": [
+   -0.05784693492237821,
+   0.25637855149403094
+  ],
+  "X.ped.R.level": 0.95,
+  "X.ped.RR_E5N": 0.6383265856950067,
+  "X.ped.RR_E5N.ci": [
+   -1.0967823389365856,
+   0.8596961549756061
+  ],
+  "X.ped.RR_E5N.level": 0.95,
+  "X.ped.RR_E5NmP": 1.0598290598290598,
+  "X.ped.RR_E5NmP.ci": [
+   0.1297900085360113,
+   5.701843491346888
+  ],
+  "X.ped.RR_E5NmP.level": 0.95,
+  "X.ped.RR_N": -0.43229869545659005,
+  "X.ped.RR_N.ci": [
+   -3.3156958200436377,
+   0.0333753482626908
+  ],
+  "X.ped.RR_N.level": 0.95,
+  "X.ped.RR_E5rec": 0.17768780926675662,
+  "X.ped.RR_E5rec.ci": [
+   0.06933171028855038,
+   1.147517044876357
+  ],
+  "X.ped.RR_E5rec.level": 0.95,
+  "X.ped.RR_E5recmP": 0.10256410256410253,
+  "X.ped.RR_E5recmP.ci": [
+   0.03363124595323136,
+   0.6957420789327391
+  ],
+  "X.ped.RR_E5recmP.level": 0.95,
+  "X.ped.ratio.median": 0.8826208135301157,
+  "X.ped.ratio.A": 0.8628190275316259,
+  "X.ped.ratio.within5": 0.08505304737548426,
+  "X.ped.ratio.barely": false,
+  "X.ped.X2.class": "inconclusive",
+  "X.ped.X2.eff": null,
+  "X.ped.X2.eff.ci": null,
+  "X.ped.X0": false,
+  "X.ped.X1": false,
+  "X.ped.X2": false,
+  "X.ped.X0.confirmed": false,
+  "X.ped.X1.confirmed": false,
+  "X.ped.X2.confirmed": false,
+  "X.ped.tested": false,
+  "X.ped.n_contact": 0,
+  "X.ped.n_replaced": 0,
+  "X.ped.under_run": false,
+  "X.ped.RR_N.inside_delta": false
+ },
+ "compare_step0": {
+  "file": "ARS_TRIAL\\revision_v13\\work\\B_retrack\\out\\step0\\STEP0_CROSSING_v01.json",
+  "mine": {
+   "R_pp": 0.08002099336182125,
+   "R_deceq": 11.059701492537316,
+   "RR.N": -0.43229869545659005,
+   "RR.E5N": 0.6383265856950067,
+   "RR.E5rec": 0.17768780926675662
+  },
+  "step0": {
+   "R_pp": 0.08002099336182125,
+   "R_deceq": 11.059701492537316,
+   "RR.N": -0.43229869545659005,
+   "RR.E5N": 0.6383265856950067,
+   "RR.E5rec": 0.17768780926675662
+  },
+  "abs_diff": {
+   "R_pp": 0.0,
+   "R_deceq": 0.0,
+   "RR.N": 0.0,
+   "RR.E5N": 0.0,
+   "RR.E5rec": 0.0
+  },
+  "max_abs_diff": 0.0,
+  "n_equal_step0": true
+ },
+ "written": "2026-11-21 14:21:21",
+ "seconds": 27.316984176635742
+}

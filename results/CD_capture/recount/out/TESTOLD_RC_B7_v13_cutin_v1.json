@@ -1,0 +1,356 @@
+{
+ "family": "B7CI",
+ "program": "rc_b7_v13.py",
+ "test_old": true,
+ "values": {
+  "B7CI.2.0.R": 0.0,
+  "B7CI.2.0.RR_N": null,
+  "B7CI.2.0.RR_N.ci": null,
+  "B7CI.2.0.RR_CK3": null,
+  "B7CI.2.0.RR_N.level": 0.95,
+  "B7CI.2.0.RR_N.cal": "nominal95",
+  "B7CI.2.0.as_room": "not applicable",
+  "B7CI.2.0.lag": "not applicable",
+  "B7CI.2.0.1.R": null,
+  "B7CI.2.0.1.RR_N": null,
+  "B7CI.2.0.1.RR_N.ci": null,
+  "B7CI.2.0.1.RR_CK3": null,
+  "B7CI.2.0.1.RR_N.level": 0.95,
+  "B7CI.2.0.1.RR_N.cal": "nominal95",
+  "B7CI.2.0.1.as_room": "not applicable",
+  "B7CI.2.0.1.lag": "not applicable",
+  "B7CI.5.0.R": null,
+  "B7CI.5.0.RR_N": null,
+  "B7CI.5.0.RR_N.ci": null,
+  "B7CI.5.0.RR_CK3": null,
+  "B7CI.5.0.RR_N.level": 0.95,
+  "B7CI.5.0.RR_N.cal": "nominal95",
+  "B7CI.5.0.as_room": "not applicable",
+  "B7CI.5.0.lag": "not applicable",
+  "B7CI.5.0.1.R": null,
+  "B7CI.5.0.1.RR_N": null,
+  "B7CI.5.0.1.RR_N.ci": null,
+  "B7CI.5.0.1.RR_CK3": null,
+  "B7CI.5.0.1.RR_N.level": 0.95,
+  "B7CI.5.0.1.RR_N.cal": "nominal95",
+  "B7CI.5.0.1.as_room": "not applicable",
+  "B7CI.5.0.1.lag": "not applicable",
+  "B7CI.5.0.2.R": null,
+  "B7CI.5.0.2.RR_N": null,
+  "B7CI.5.0.2.RR_N.ci": null,
+  "B7CI.5.0.2.RR_CK3": null,
+  "B7CI.5.0.2.RR_N.level": 0.95,
+  "B7CI.5.0.2.RR_N.cal": "nominal95",
+  "B7CI.5.0.2.as_room": "not applicable",
+  "B7CI.5.0.2.lag": "not applicable",
+  "B7CI.10.0.R": null,
+  "B7CI.10.0.RR_N": null,
+  "B7CI.10.0.RR_N.ci": null,
+  "B7CI.10.0.RR_CK3": null,
+  "B7CI.10.0.RR_N.level": 0.95,
+  "B7CI.10.0.RR_N.cal": "nominal95",
+  "B7CI.10.0.as_room": "not applicable",
+  "B7CI.10.0.lag": "not applicable",
+  "B7CI.10.0.1.R": null,
+  "B7CI.10.0.1.RR_N": null,
+  "B7CI.10.0.1.RR_N.ci": null,
+  "B7CI.10.0.1.RR_CK3": null,
+  "B7CI.10.0.1.RR_N.level": 0.95,
+  "B7CI.10.0.1.RR_N.cal": "nominal95",
+  "B7CI.10.0.1.as_room": "not applicable",
+  "B7CI.10.0.1.lag": "not applicable",
+  "B7CI.10.0.2.R": null,
+  "B7CI.10.0.2.RR_N": null,
+  "B7CI.10.0.2.RR_N.ci": null,
+  "B7CI.10.0.2.RR_CK3": null,
+  "B7CI.10.0.2.RR_N.level": 0.95,
+  "B7CI.10.0.2.RR_N.cal": "nominal95",
+  "B7CI.10.0.2.as_room": "not applicable",
+  "B7CI.10.0.2.lag": "not applicable",
+  "B7CI.identity": null
+ },
+ "details": {
+  "role": "second program (recount), AMENDMENT_10_v13 section 10.1(b)",
+  "model": "claude-fable-5-2",
+  "started": "2026-11-20 03:45:49",
+  "threads": 2,
+  "delta": 0.05,
+  "only": "everything",
+  "window_ticks": [
+   -20,
+   80
+  ],
+  "lateral_threshold_m": 1.75,
+  "population": "event window: evaluated decisions with t - t_c in [-1, +4] s; 3 s commitment",
+  "shared": "extracted arrays, resample draw; scoring library of record for cross-checks only",
+  "status": "descriptive (A10 section 5.7); every interval nominal 95% percentile",
+  "B7CI": {
+   "B7CI.2.0": {
+    "label": "old-run test: logged arrays of the 20 cut-in tuning runs as chain (2, 0)",
+    "n_runs": 20,
+    "n_dec": 5420,
+    "margin_ratio": {
+     "n": 16918,
+     "median": 1.1026984777620783,
+     "q05": 1.0964080391794702,
+     "q95": 1.1125820003929867,
+     "A": 0.0073338095316597945,
+     "share_within_5pct": 0.9980494148244473,
+     "barely_varies": true
+    },
+    "bootstrap_population": "window",
+    "populations": {
+     "all": {
+      "n": 5420,
+      "denE": 0.0,
+      "R_pp": 0.0,
+      "R_dec": 0.0,
+      "D": {
+       "N": 0.0
+      },
+      "RR": {
+       "N": NaN
+      }
+     },
+     "window": {
+      "n": 1007,
+      "denE": 0.0,
+      "R_pp": 0.0,
+      "R_dec": 0.0,
+      "D": {
+       "N": 0.0
+      },
+      "RR": {
+       "N": NaN
+      }
+     }
+    },
+    "library_of_record": {
+     "denE": 0.0,
+     "D": {
+      "N": 0.0
+     },
+     "max_abs_diff": 0.0
+    },
+    "intervals": {
+     "RR_N": {
+      "point": NaN,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "n_resamples": 2000,
+      "n_invalid": 2000
+     },
+     "R_pp": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "n_resamples": 2000,
+      "n_invalid": 0
+     }
+    },
+    "bootstrap": {
+     "sources": [
+      "F0",
+      "E",
+      "N"
+     ],
+     "n_resamples": 2000,
+     "n_den_le0_dropped": 2000
+    },
+    "seconds": 29.230209350585938
+   }
+  },
+  "truth_source": "truth file ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_C_CUTIN_TESTOLD_TRUTH_v13.json (sha256 e817652fa5fe521ea849c1bbe42632a1ea9a376503fbfd53728db3d0c4e96196)",
+  "runs": [
+   "p2_c1109_tune_0004_fixed_c1",
+   "p2_c1109_tune_0010_fixed_c1",
+   "p2_c1109_tune_0016_fixed_c1",
+   "p2_c1109_tune_0022_fixed_c1",
+   "p2_c1109_tune_0028_fixed_c1",
+   "p2_c1109_tune_0034_fixed_c1",
+   "p2_c1109_tune_0040_fixed_c1",
+   "p2_c1109_tune_0046_fixed_c1",
+   "p2_c1109_tune_0052_fixed_c1",
+   "p2_c1109_tune_0058_fixed_c1",
+   "p2_c1109_tune_0064_fixed_c1",
+   "p2_c1109_tune_0070_fixed_c1",
+   "p2_c1109_tune_0076_fixed_c1",
+   "p2_c1109_tune_0082_fixed_c1",
+   "p2_c1109_tune_0088_fixed_c1",
+   "p2_c1109_tune_0094_fixed_c1",
+   "p2_c1109_tune_0100_fixed_c1",
+   "p2_c1109_tune_0106_fixed_c1",
+   "p2_c1109_tune_0112_fixed_c1",
+   "p2_c1109_tune_0118_fixed_c1"
+  ],
+  "event_ticks": [
+   136,
+   134,
+   145,
+   134,
+   146,
+   138,
+   146,
+   137,
+   136,
+   136,
+   147,
+   143,
+   143,
+   136,
+   136,
+   138,
+   138,
+   134,
+   139,
+   145
+  ],
+  "events": {
+   "found": 20,
+   "of": 20,
+   "runs_without_event": []
+  },
+  "counts": {
+   "evaluated": 5420,
+   "window": 1007,
+   "window_per_run": [
+    50,
+    50,
+    51,
+    50,
+    50,
+    50,
+    50,
+    51,
+    50,
+    50,
+    51,
+    51,
+    51,
+    50,
+    50,
+    50,
+    50,
+    50,
+    51,
+    51
+   ]
+  },
+  "draw": "old-run test: first 2000 rows of default_rng(20261911).integers(0, 20, (20000, 20)) as counts, runs in archive-name order",
+  "check_vs_rc_c_cutin": {
+   "reference": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_C_CUTIN_TESTOLD_b200_o4_i1000_matched.json",
+   "rows": [
+    {
+     "key": "window.n",
+     "recount_b7": 1007,
+     "rc_c_cutin": 1007.0,
+     "both_undefined": false,
+     "abs_diff": 0.0
+    },
+    {
+     "key": "window.denE",
+     "recount_b7": 0.0,
+     "rc_c_cutin": 0.0,
+     "both_undefined": false,
+     "abs_diff": 0.0
+    },
+    {
+     "key": "window.R_pp",
+     "recount_b7": 0.0,
+     "rc_c_cutin": 0.0,
+     "both_undefined": false,
+     "abs_diff": 0.0
+    },
+    {
+     "key": "window.RR_N",
+     "recount_b7": NaN,
+     "rc_c_cutin": NaN,
+     "both_undefined": true,
+     "abs_diff": null
+    },
+    {
+     "key": "all.n",
+     "recount_b7": 5420,
+     "rc_c_cutin": 5420.0,
+     "both_undefined": false,
+     "abs_diff": 0.0
+    },
+    {
+     "key": "all.denE",
+     "recount_b7": 0.0,
+     "rc_c_cutin": 0.0,
+     "both_undefined": false,
+     "abs_diff": 0.0
+    },
+    {
+     "key": "all.R_pp",
+     "recount_b7": 0.0,
+     "rc_c_cutin": 0.0,
+     "both_undefined": false,
+     "abs_diff": 0.0
+    },
+    {
+     "key": "all.RR_N",
+     "recount_b7": NaN,
+     "rc_c_cutin": NaN,
+     "both_undefined": true,
+     "abs_diff": null
+    }
+   ],
+   "same_runs": true,
+   "window_decisions": [
+    1007,
+    1007
+   ],
+   "agree": true
+  },
+  "window_scoring_check_on_lead_runs": {
+   "WARNING": "stand-in population on OLD lead-braking runs; tests the window scoring against the library of record; NOT a cut-in value",
+   "n_window": 1650,
+   "R_pp": 15.637569727121965,
+   "RR": {
+    "N": -0.0013497358374146787,
+    "CK3": 0.705275538930238
+   },
+   "intervals": {
+    "RR_N": {
+     "point": -0.0013497358374146787,
+     "ci": [
+      -0.004315198903506141,
+      0.0003292247518662125
+     ],
+     "n_resamples": 200,
+     "n_invalid": 0
+    },
+    "R_pp": {
+     "point": 15.637569727121965,
+     "ci": [
+      11.965582567734165,
+      18.64080181793786
+     ],
+     "n_resamples": 200,
+     "n_invalid": 0
+    },
+    "RR_CK3": {
+     "point": 0.705275538930238,
+     "ci": [
+      0.6338729209365387,
+      0.7687213491884555
+     ],
+     "n_resamples": 200,
+     "n_invalid": 0
+    }
+   },
+   "library_max_abs_diff": 0.0
+  },
+  "B7CI_identity": {
+   "note": "no old cut-in run kept its sweeps: there is no B7 detection file, so the identity cannot be tested on old cut-in runs (the routine is tested on p1b_fit_finite_0037 in the lead family)"
+  },
+  "written": "2026-11-20 03:46:31",
+  "seconds": 41.964951276779175
+ }
+}

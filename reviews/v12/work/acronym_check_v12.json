@@ -1,0 +1,260 @@
+{
+  "checker": "ars-acronym-check/1.0",
+  "input": "ARS_TRIAL\\revision_v12\\package_v12\\MANUSCRIPT_v12.md",
+  "input_sha256": "f368275af33ee584934953630013c8c4bfcffb24a3c13a449560ab8ca5f6e716",
+  "status": "partial",
+  "allowlist": {
+    "default": 29,
+    "user": []
+  },
+  "coverage": {
+    "body": "checked",
+    "abstract_en": "checked",
+    "abstract_zh": "not_in_input"
+  },
+  "scope_lines": {
+    "body": [
+      [
+        2,
+        6
+      ],
+      [
+        14,
+        31
+      ],
+      [
+        33,
+        47
+      ],
+      [
+        49,
+        51
+      ],
+      [
+        53,
+        59
+      ],
+      [
+        61,
+        71
+      ],
+      [
+        73,
+        94
+      ],
+      [
+        96,
+        110
+      ],
+      [
+        112,
+        114
+      ],
+      [
+        116,
+        130
+      ],
+      [
+        132,
+        138
+      ],
+      [
+        140,
+        142
+      ],
+      [
+        144,
+        144
+      ],
+      [
+        146,
+        154
+      ],
+      [
+        156,
+        177
+      ],
+      [
+        179,
+        189
+      ],
+      [
+        191,
+        221
+      ],
+      [
+        223,
+        240
+      ],
+      [
+        242,
+        254
+      ],
+      [
+        256,
+        258
+      ],
+      [
+        260,
+        262
+      ],
+      [
+        264,
+        266
+      ],
+      [
+        268,
+        270
+      ],
+      [
+        272,
+        276
+      ]
+    ],
+    "abstract_en": [
+      [
+        8,
+        12
+      ]
+    ]
+  },
+  "unread_sections": [],
+  "coverage_limits": [
+    {
+      "scope": "body",
+      "line": 30,
+      "acronym": "IMM",
+      "reason": "unconfirmed_definition"
+    },
+    {
+      "scope": "body",
+      "line": 42,
+      "acronym": "RSS",
+      "reason": "unconfirmed_definition"
+    },
+    {
+      "scope": "body",
+      "line": 74,
+      "acronym": "NA",
+      "reason": "unconfirmed_definition"
+    },
+    {
+      "scope": "body",
+      "line": 80,
+      "acronym": "TG",
+      "reason": "unconfirmed_definition"
+    },
+    {
+      "scope": "abstract_en",
+      "line": 9,
+      "acronym": "CANMOT",
+      "reason": "unconfirmed_definition"
+    }
+  ],
+  "findings": [
+    {
+      "scope": "body",
+      "line": 5,
+      "rule": "undefined",
+      "acronym": "AUTHOR",
+      "expansion": null,
+      "occurrences": 2
+    },
+    {
+      "scope": "body",
+      "line": 5,
+      "rule": "undefined",
+      "acronym": "BLOCK",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 21,
+      "rule": "undefined",
+      "acronym": "CANMOT",
+      "expansion": null,
+      "occurrences": 9
+    },
+    {
+      "scope": "body",
+      "line": 21,
+      "rule": "undefined",
+      "acronym": "CARLA",
+      "expansion": null,
+      "occurrences": 6
+    },
+    {
+      "scope": "body",
+      "line": 82,
+      "rule": "undefined",
+      "acronym": "TABLE",
+      "expansion": null,
+      "occurrences": 5
+    },
+    {
+      "scope": "body",
+      "line": 123,
+      "rule": "undefined",
+      "acronym": "RR",
+      "expansion": null,
+      "occurrences": 6
+    },
+    {
+      "scope": "body",
+      "line": 141,
+      "rule": "undefined",
+      "acronym": "AI",
+      "expansion": null,
+      "occurrences": 3
+    },
+    {
+      "scope": "body",
+      "line": 141,
+      "rule": "undefined",
+      "acronym": "SHA",
+      "expansion": null,
+      "occurrences": 3
+    },
+    {
+      "scope": "body",
+      "line": 261,
+      "rule": "undefined",
+      "acronym": "AND",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 261,
+      "rule": "undefined",
+      "acronym": "NAME",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 275,
+      "rule": "undefined",
+      "acronym": "IEEE",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 275,
+      "rule": "undefined",
+      "acronym": "OpenAI",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "abstract_en",
+      "line": 9,
+      "rule": "undefined",
+      "acronym": "CARLA",
+      "expansion": null,
+      "occurrences": 1
+    }
+  ]
+}

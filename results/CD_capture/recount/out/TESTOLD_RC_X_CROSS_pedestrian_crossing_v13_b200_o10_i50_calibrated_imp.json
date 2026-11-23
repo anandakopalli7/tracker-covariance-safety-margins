@@ -1,0 +1,485 @@
+{
+ "code": "rc_x_cross_v13.py",
+ "role": "second program (recount), crossing sprint X (A11)",
+ "model": "claude-sonnet-5-5",
+ "family": "pedestrian_crossing",
+ "mode": "test-old",
+ "intervals": "calibrated",
+ "calib_mode": "import",
+ "started": "2026-11-21 14:18:18",
+ "threads": 2,
+ "sizes": {
+  "nboot": 200,
+  "outer": 10,
+  "inner": 50,
+  "mc": 200
+ },
+ "delta": 0.05,
+ "seeds": {
+  "boot": 20261911,
+  "outer": 20261912,
+  "inner": 20261913,
+  "inner2": 20261914,
+  "perm": 20261915,
+  "mc": 20261920
+ },
+ "runs": {
+  "sets": {
+   "fit": 31,
+   "tuning": 20
+  },
+  "run_ids": [
+   "p1b_fit_finite_0085",
+   "p1b_fit_finite_0086",
+   "p1b_fit_finite_0087",
+   "p1b_fit_finite_0088",
+   "p1b_fit_finite_0090",
+   "p1b_fit_finite_0091",
+   "p1b_fit_finite_0092",
+   "p1b_fit_finite_0093",
+   "p1b_fit_finite_0094",
+   "p1b_fit_finite_0095",
+   "p1b_fit_finite_0096",
+   "p1b_fit_finite_0097",
+   "p1b_fit_finite_0098",
+   "p1b_fit_finite_0099",
+   "p1b_fit_finite_0100",
+   "p1b_fit_finite_0101",
+   "p1b_fit_finite_0102",
+   "p1b_fit_finite_0103",
+   "p1b_fit_finite_0104",
+   "p1b_fit_finite_0105",
+   "p1b_fit_finite_0107",
+   "p1b_fit_finite_0108",
+   "p1b_fit_finite_0109",
+   "p1b_fit_finite_0110",
+   "p1b_fit_finite_0111",
+   "p1b_fit_finite_0113",
+   "p1b_fit_finite_0114",
+   "p1b_fit_finite_0115",
+   "p1b_fit_finite_0116",
+   "p1b_fit_finite_0117",
+   "p1b_fit_finite_0119",
+   "p2_c1109_tune_0002_fixed_c1",
+   "p2_c1109_tune_0008_fixed_c1",
+   "p2_c1109_tune_0014_fixed_c1",
+   "p2_c1109_tune_0020_fixed_c1",
+   "p2_c1109_tune_0026_fixed_c1",
+   "p2_c1109_tune_0032_fixed_c1",
+   "p2_c1109_tune_0038_fixed_c1",
+   "p2_c1109_tune_0044_fixed_c1",
+   "p2_c1109_tune_0050_fixed_c1",
+   "p2_c1109_tune_0056_fixed_c1",
+   "p2_c1109_tune_0062_fixed_c1",
+   "p2_c1109_tune_0068_fixed_c1",
+   "p2_c1109_tune_0074_fixed_c1",
+   "p2_c1109_tune_0080_fixed_c1",
+   "p2_c1109_tune_0086_fixed_c1",
+   "p2_c1109_tune_0092_fixed_c1",
+   "p2_c1109_tune_0098_fixed_c1",
+   "p2_c1109_tune_0104_fixed_c1",
+   "p2_c1109_tune_0110_fixed_c1",
+   "p2_c1109_tune_0116_fixed_c1"
+  ],
+  "files": [
+   "p1b_fit_finite_0085.npz",
+   "p1b_fit_finite_0086.npz",
+   "p1b_fit_finite_0087.npz",
+   "p1b_fit_finite_0088.npz",
+   "p1b_fit_finite_0090.npz",
+   "p1b_fit_finite_0091.npz",
+   "p1b_fit_finite_0092.npz",
+   "p1b_fit_finite_0093.npz",
+   "p1b_fit_finite_0094.npz",
+   "p1b_fit_finite_0095.npz",
+   "p1b_fit_finite_0096.npz",
+   "p1b_fit_finite_0097.npz",
+   "p1b_fit_finite_0098.npz",
+   "p1b_fit_finite_0099.npz",
+   "p1b_fit_finite_0100.npz",
+   "p1b_fit_finite_0101.npz",
+   "p1b_fit_finite_0102.npz",
+   "p1b_fit_finite_0103.npz",
+   "p1b_fit_finite_0104.npz",
+   "p1b_fit_finite_0105.npz",
+   "p1b_fit_finite_0107.npz",
+   "p1b_fit_finite_0108.npz",
+   "p1b_fit_finite_0109.npz",
+   "p1b_fit_finite_0110.npz",
+   "p1b_fit_finite_0111.npz",
+   "p1b_fit_finite_0113.npz",
+   "p1b_fit_finite_0114.npz",
+   "p1b_fit_finite_0115.npz",
+   "p1b_fit_finite_0116.npz",
+   "p1b_fit_finite_0117.npz",
+   "p1b_fit_finite_0119.npz",
+   "p2_c1109_tune_0002_fixed_c1.npz",
+   "p2_c1109_tune_0008_fixed_c1.npz",
+   "p2_c1109_tune_0014_fixed_c1.npz",
+   "p2_c1109_tune_0020_fixed_c1.npz",
+   "p2_c1109_tune_0026_fixed_c1.npz",
+   "p2_c1109_tune_0032_fixed_c1.npz",
+   "p2_c1109_tune_0038_fixed_c1.npz",
+   "p2_c1109_tune_0044_fixed_c1.npz",
+   "p2_c1109_tune_0050_fixed_c1.npz",
+   "p2_c1109_tune_0056_fixed_c1.npz",
+   "p2_c1109_tune_0062_fixed_c1.npz",
+   "p2_c1109_tune_0068_fixed_c1.npz",
+   "p2_c1109_tune_0074_fixed_c1.npz",
+   "p2_c1109_tune_0080_fixed_c1.npz",
+   "p2_c1109_tune_0086_fixed_c1.npz",
+   "p2_c1109_tune_0092_fixed_c1.npz",
+   "p2_c1109_tune_0098_fixed_c1.npz",
+   "p2_c1109_tune_0104_fixed_c1.npz",
+   "p2_c1109_tune_0110_fixed_c1.npz",
+   "p2_c1109_tune_0116_fixed_c1.npz"
+  ]
+ },
+ "n_evaluated_per_run": [
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271,
+  271
+ ],
+ "E5": {
+  "n_evaluated": 13821,
+  "n_with_ratio": 10259,
+  "m_record": 1.1029,
+  "A_record": 0.05,
+  "m_N": 0.8826208135301157,
+  "A_N": 0.8628190275316259
+ },
+ "margin_ratio_N_F0": {
+  "n": 157972,
+  "median": 0.8826208135301157,
+  "q05": 0.43461984524184166,
+  "q95": 1.9577039092602955,
+  "A": 0.8628190275316259,
+  "share_within_5pct": 0.08505304737548426,
+  "barely_varies": false
+ },
+ "points": {
+  "n": 13821.0,
+  "denE": 16.08421966572607,
+  "R_pp": 0.08002099336182125,
+  "R_deceq": 11.059701492537316,
+  "D": {
+   "N": -6.9531871789306114,
+   "E5N": 10.266985022791404,
+   "E5pN": -6.7795383836191325,
+   "E5": 2.85796975616815,
+   "E5p": 1.2083062007090664
+  },
+  "RR": {
+   "N": -0.43229869545659005,
+   "E5N": 0.6383265856950067,
+   "E5pN": -0.4215024741340532,
+   "E5": 0.17768780926675662,
+   "E5p": 0.07512370670265409
+  },
+  "RR_E5NmP": 1.0598290598290598,
+  "RR_E5recmP": 0.10256410256410253
+ },
+ "library_point": {
+  "denE": 16.08421966572607,
+  "n": 13821.0,
+  "RR": {
+   "N": -0.43229869545659005,
+   "E5N": 0.6383265856950067,
+   "E5pN": -0.4215024741340532,
+   "E5": 0.17768780926675662,
+   "E5p": 0.07512370670265409
+  },
+  "D": {
+   "N": -6.9531871789306114,
+   "E5N": 10.266985022791404,
+   "E5pN": -6.7795383836191325,
+   "E5": 2.85796975616815,
+   "E5p": 1.2083062007090664
+  },
+  "max_abs_diff_vs_own": 0.0,
+  "identical": true
+ },
+ "calibration": {
+  "stats": [
+   "R_gl_pp",
+   "RR_E5N",
+   "RR_E5NmP",
+   "RR_N"
+  ],
+  "second_seed_run": true,
+  "needs_second_seed": [],
+  "per_stat": {
+   "R_gl_pp": {
+    "coverage_95": 0.9,
+    "n_outer_valid": 10,
+    "n_outer": 10,
+    "coverage_95_no_tolerance": 0.9,
+    "coverage_95_any_outer": 0.9,
+    "mean_inner_valid": 50.0,
+    "calibrated_level": null,
+    "calibrated_level_no_tolerance": null,
+    "calibrated_level_any_outer": null,
+    "level_used": 0.99,
+    "rule": "no level up to 0.9995 reaches coverage 0.95: nominal 99%"
+   },
+   "RR_E5N": {
+    "coverage_95": 0.8888888888888888,
+    "n_outer_valid": 9,
+    "n_outer": 10,
+    "coverage_95_no_tolerance": 0.8888888888888888,
+    "coverage_95_any_outer": 0.9,
+    "mean_inner_valid": 43.1,
+    "calibrated_level": null,
+    "calibrated_level_no_tolerance": null,
+    "calibrated_level_any_outer": null,
+    "level_used": 0.99,
+    "rule": "no level up to 0.9995 reaches coverage 0.95: nominal 99%"
+   },
+   "RR_E5NmP": {
+    "coverage_95": 1.0,
+    "n_outer_valid": 9,
+    "n_outer": 10,
+    "coverage_95_no_tolerance": 1.0,
+    "coverage_95_any_outer": 1.0,
+    "mean_inner_valid": 43.1,
+    "level_used": 0.95,
+    "rule": "coverage of the nominal 95% interval >= 0.94: nominal 95%"
+   },
+   "RR_N": {
+    "coverage_95": 1.0,
+    "n_outer_valid": 9,
+    "n_outer": 10,
+    "coverage_95_no_tolerance": 1.0,
+    "coverage_95_any_outer": 1.0,
+    "mean_inner_valid": 43.1,
+    "level_used": 0.95,
+    "rule": "coverage of the nominal 95% interval >= 0.94: nominal 95%"
+   }
+  },
+  "seconds_inner1": 20.69480299949646,
+  "seconds_inner2": 4.071371555328369,
+  "outer_den_le0": 1
+ },
+ "calib_import": {
+  "label": "rc_x",
+  "job": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\calib_testold\\rc_x.job.npz",
+  "job_sha256": "ee4c3e6fc29c9a2687a414d62f4362fa241c287b5e54af4a0f1082832346c71b",
+  "chunks_dir": "<user folder>\\xchunks",
+  "seeds": {
+   "20261913": {
+    "n_chunks": 2,
+    "cpu_seconds_sum": 20.69480299949646,
+    "files": [
+     "rc_x_20261913_o0_4.npz",
+     "rc_x_20261913_o4_10.npz"
+    ]
+   },
+   "20261914": {
+    "n_chunks": 2,
+    "cpu_seconds_sum": 4.071371555328369,
+    "files": [
+     "rc_x_20261914_o0_4.npz",
+     "rc_x_20261914_o4_10.npz"
+    ]
+   }
+  }
+ },
+ "levels": {
+  "R_gl_pp": 0.99,
+  "RR_E5N": 0.99,
+  "RR_E5NmP": 0.95,
+  "RR_N": 0.95,
+  "RR_E5rec": 0.95,
+  "RR_E5recmP": 0.95
+ },
+ "intervals_nominal95_all": {
+  "R_gl_pp": [
+   -0.06013003501413418,
+   0.26063967838976027
+  ],
+  "RR_E5N": [
+   -2.421797235023049,
+   0.877377031399415
+  ],
+  "RR_E5NmP": [
+   0.03970224418139357,
+   7.370170633359539
+  ],
+  "RR_N": [
+   -5.18208442408376,
+   0.04490592504096728
+  ],
+  "RR_E5rec": [
+   0.07340993494462322,
+   2.039364014584873
+  ],
+  "RR_E5recmP": [
+   0.0333957250136755,
+   0.937079866305153
+  ]
+ },
+ "resamples": {
+  "R_gl_pp": {
+   "n": 200,
+   "n_finite": 200
+  },
+  "RR_E5N": {
+   "n": 200,
+   "n_finite": 174
+  },
+  "RR_E5NmP": {
+   "n": 200,
+   "n_finite": 174
+  },
+  "RR_N": {
+   "n": 200,
+   "n_finite": 174
+  },
+  "RR_E5rec": {
+   "n": 200,
+   "n_finite": 174
+  },
+  "RR_E5recmP": {
+   "n": 200,
+   "n_finite": 174
+  }
+ },
+ "detail": {
+  "class_letter": "d",
+  "RR_N_ci_inside_delta": false,
+  "RR_E5p": 0.07512370670265409,
+  "RR_E5pN": -0.4215024741340532
+ },
+ "values": {
+  "X.ped.n_runs": 51,
+  "X.ped.n_dec": 13821,
+  "X.ped.R": 0.08002099336182125,
+  "X.ped.R.dec": 11.059701492537316,
+  "X.ped.R.share_pos": 0.87,
+  "X.ped.R.ci": [
+   -0.09026641627259119,
+   0.2989912603252456
+  ],
+  "X.ped.R.level": 0.99,
+  "X.ped.RR_E5N": 0.6383265856950067,
+  "X.ped.RR_E5N.ci": [
+   -5.279320101351331,
+   0.9119771615901479
+  ],
+  "X.ped.RR_E5N.level": 0.99,
+  "X.ped.RR_E5NmP": 1.0598290598290598,
+  "X.ped.RR_E5NmP.ci": [
+   0.03970224418139357,
+   7.370170633359539
+  ],
+  "X.ped.RR_E5NmP.level": 0.95,
+  "X.ped.RR_N": -0.43229869545659005,
+  "X.ped.RR_N.ci": [
+   -5.18208442408376,
+   0.04490592504096728
+  ],
+  "X.ped.RR_N.level": 0.95,
+  "X.ped.RR_E5rec": 0.17768780926675662,
+  "X.ped.RR_E5rec.ci": [
+   0.07340993494462322,
+   2.039364014584873
+  ],
+  "X.ped.RR_E5rec.level": 0.95,
+  "X.ped.RR_E5recmP": 0.10256410256410253,
+  "X.ped.RR_E5recmP.ci": [
+   0.0333957250136755,
+   0.937079866305153
+  ],
+  "X.ped.RR_E5recmP.level": 0.95,
+  "X.ped.ratio.median": 0.8826208135301157,
+  "X.ped.ratio.A": 0.8628190275316259,
+  "X.ped.ratio.within5": 0.08505304737548426,
+  "X.ped.ratio.barely": false,
+  "X.ped.X2.class": "inconclusive",
+  "X.ped.X2.eff": null,
+  "X.ped.X2.eff.ci": null,
+  "X.ped.X0": false,
+  "X.ped.X1": false,
+  "X.ped.X2": false,
+  "X.ped.X0.confirmed": false,
+  "X.ped.X1.confirmed": false,
+  "X.ped.X2.confirmed": false,
+  "X.ped.tested": false
+ },
+ "compare_step0": {
+  "file": "ARS_TRIAL\\revision_v13\\work\\B_retrack\\out\\step0\\STEP0_CROSSING_v01.json",
+  "mine": {
+   "R_pp": 0.08002099336182125,
+   "R_deceq": 11.059701492537316,
+   "RR.N": -0.43229869545659005,
+   "RR.E5N": 0.6383265856950067,
+   "RR.E5rec": 0.17768780926675662
+  },
+  "step0": {
+   "R_pp": 0.08002099336182125,
+   "R_deceq": 11.059701492537316,
+   "RR.N": -0.43229869545659005,
+   "RR.E5N": 0.6383265856950067,
+   "RR.E5rec": 0.17768780926675662
+  },
+  "abs_diff": {
+   "R_pp": 0.0,
+   "R_deceq": 0.0,
+   "RR.N": 0.0,
+   "RR.E5N": 0.0,
+   "RR.E5rec": 0.0
+  },
+  "max_abs_diff": 0.0,
+  "n_equal_step0": true
+ },
+ "written": "2026-11-21 14:18:31",
+ "seconds": 14.800995588302612
+}

@@ -1,0 +1,3148 @@
+{
+ "source": "A_text\\RESULTS_INTERFACE_v13.md",
+ "source_sha256": "d92d22b8efabfd3d96fe95dd5eb28159d3c7ba2d89f34e2c883b744b3b63636c",
+ "parsed": "2026-11-20 (re-parse: B7CI added)",
+ "note": "keys package CD exports (A_EXPORT_C.json / A_EXPORT_D.json); see RESULTS_INTERFACE_v13.md sec. 1, 2 and 4",
+ "keys": {
+  "C": [
+   {
+    "key": "B7.10.0.1.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "B7.10.0.1.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.10.0.1.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "B7.10.0.1.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "B7.10.0.1.as_room",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "B7.10.0.1.lag",
+    "printed_as": "f2",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.10.0.2.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.10.0.2.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.10.0.2.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.10.0.2.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.10.0.2.as_room",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.10.0.2.lag",
+    "printed_as": "f2",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.10.0.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.10.0.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.10.0.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.10.0.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.10.0.as_room",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.10.0.lag",
+    "printed_as": "f2",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.2.0.1.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.2.0.1.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.2.0.1.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.2.0.1.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.2.0.1.as_room",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.2.0.1.lag",
+    "printed_as": "f2",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.2.0.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "B7.2.0.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.2.0.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.2.0.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.2.0.as_room",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "B7.2.0.lag",
+    "printed_as": "f2",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.1.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "B7.5.0.1.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.1.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.1.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.1.as_room",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "B7.5.0.1.lag",
+    "printed_as": "f2",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.2.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.2.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.2.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.2.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.2.as_room",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.2.lag",
+    "printed_as": "f2",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.as_room",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.5.0.lag",
+    "printed_as": "f2",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7.identity",
+    "printed_as": "str",
+    "value_type": "string or number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.10.0.1.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.10.0.1.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.10.0.1.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.10.0.1.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.10.0.2.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.10.0.2.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.10.0.2.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.10.0.2.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.10.0.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.10.0.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.10.0.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.10.0.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.2.0.1.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.2.0.1.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.2.0.1.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.2.0.1.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.2.0.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.2.0.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.2.0.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.2.0.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.5.0.1.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.5.0.1.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.5.0.1.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.5.0.1.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.5.0.2.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.5.0.2.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.5.0.2.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.5.0.2.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.5.0.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.5.0.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.5.0.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "B7CI.5.0.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.PO25",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.PO50",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.PO75",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.R.ci",
+    "printed_as": "ci2",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.RR_CK3.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.RR_E5",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.RR_E5.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.RR_E5mP",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.RR_E5mP.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.RR_N.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.RR_N.dec.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.Y.R.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.Y.c",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.Y.c.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.Y.eff",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.Y.eff.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.Y.n_dec",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.Y.r",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.Y.r.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.Y.within5",
+    "printed_as": "pct1",
+    "value_type": "number in [0, 1], printed as %",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.age0.R.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.age0.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.age0.n_dec",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.age0.within5",
+    "printed_as": "pct1",
+    "value_type": "number in [0, 1], printed as %",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.age1.R.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.age1.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.age1.n_dec",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.age1.within5",
+    "printed_as": "pct1",
+    "value_type": "number in [0, 1], printed as %",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.age4.R.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.age4.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.age4.n_dec",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.age4.within5",
+    "printed_as": "pct1",
+    "value_type": "number in [0, 1], printed as %",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.den0.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.n_contact",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.n_dec",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.n_events",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.n_replaced",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.n_runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "CI.untr.R.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.untr.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.untr.n_dec",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "CI.untr.within5",
+    "printed_as": "pct1",
+    "value_type": "number in [0, 1], printed as %",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "HAND.status",
+    "printed_as": "str",
+    "value_type": "string or number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.IMM.c",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.IMM.c.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.IMM.c.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.IMM.c.dec.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.IMM.eff",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.IMM.eff.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.IMM.r",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.IMM.r.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.IMM.r.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.IMM.r.dec.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.IMM.within5",
+    "printed_as": "pct1",
+    "value_type": "number in [0, 1], printed as %",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.PO25",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.PO50",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.PO75",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.PS.like",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.PS.like.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.PS.rec",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.PS.rec.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.PS.rec.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.PS.rec.dec.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.PS.single",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.PS.single.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.PS.thr05",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.PS.thr05.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.PS.thr20",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.PS.thr20.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.PS.truth",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.PS.truth.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.R.ci",
+    "printed_as": "ci2",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.R.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_CK3.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_CK3.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_CK3.dec.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_E5",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_E5.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_E5.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_E5.dec.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_E5mP",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_E5mP.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_E5mP.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_E5mP.dec.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_N.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RR_N.dec.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.RS.0.5.6.RR0_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.5.6.RR0_N",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.5.6.RR0_N.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.5.6.den0.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.5.6.rel",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.5.6.rel.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.4.RR0_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.4.RR0_N",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.4.den0.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.4.rel",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.5.RR0_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.5.RR0_N",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.5.den0.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.5.rel",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.6.RR0_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.6.RR0_N",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.6.RR0_N.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.6.den0.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.7.6.RR0_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.7.6.RR0_N",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.7.6.den0.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.0.75.7.6.rel",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.0.6.RR0_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.0.6.RR0_N",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.0.6.RR0_N.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.0.6.den0.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.0.6.rel",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.0.6.rel.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.25.6.RR0_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.25.6.RR0_N",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.25.6.RR0_N.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.25.6.den0.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.25.6.rel",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.25.6.rel.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.5.6.RR0_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.5.6.RR0_N",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.5.6.RR0_N.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.5.6.den0.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.5.6.rel",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.5.6.rel.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.8.6.RR0_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.8.6.RR0_N",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.8.6.RR0_N.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.8.6.den0.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.8.6.rel",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.RS.1.8.6.rel.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.T0.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.T0.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.T1.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.T1.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.T10.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.T10.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.T2.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.T2.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.T20.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.T20.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.T5.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.T5.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.PO25",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.PO50",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.PO75",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.R.ci",
+    "printed_as": "ci2",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_AM",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_AM.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_CK3.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_E5",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_E5.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_IMM",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_IMM.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_NA",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_NA.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_Q",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_Q.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_TG",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.RR_TG.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.all.n_dec",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.PO25",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.PO50",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.PO75",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.R.ci",
+    "printed_as": "ci2",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_AM",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_AM.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_CK3.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_E5",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_E5.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_IMM",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_IMM.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_NA",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_NA.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_Q",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_Q.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_TG",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.RR_TG.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.brk.n_dec",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.cap10.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.cap15.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.cap5.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.cut5.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.cut5.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.gap2.RR0_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.gap2.RR0_N",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.gap2.den0.dec",
+    "printed_as": "dec1",
+    "value_type": "number, decision-equivalents",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.grid.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.grid.RR_NmP",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.grid.RR_P",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.hull.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.hull.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.hull.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.PO25",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.PO50",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.PO75",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.R.ci",
+    "printed_as": "ci2",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_AM",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_AM.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_CK3.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_E5",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_E5.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_IMM",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_IMM.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_NA",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_NA.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_Q",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_Q.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_TG",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.RR_TG.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.mov.n_dec",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.n_contact",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.n_dec",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.n_replaced",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.n_runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "LB.pre.PO25",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.PO50",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.PO75",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.R.ci",
+    "printed_as": "ci2",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_AM",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_AM.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_CK3.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_E5",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_E5.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_IMM",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_IMM.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_NA",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_NA.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_Q",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_Q.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_TG",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.RR_TG.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.pre.n_dec",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.signed.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.signed.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.signed.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.PO25",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.PO50",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.PO75",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.R",
+    "printed_as": "pp",
+    "value_type": "number, percentage points",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.R.ci",
+    "printed_as": "ci2",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_AM",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_AM.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_CK3",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_CK3.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_E5",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_E5.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_IMM",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_IMM.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_N",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_N.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_NA",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_NA.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_Q",
+    "printed_as": "sh4",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_Q.ci",
+    "printed_as": "ci4",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_TG",
+    "printed_as": "sh3",
+    "value_type": "number, share of the room",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.RR_TG.ci",
+    "printed_as": "ci3",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "LB.stop.n_dec",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   }
+  ],
+  "D": [
+   {
+    "key": "D1.const.CK3.dcau",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "D1.const.CK3.dcau.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.const.CK3.dwg",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "D1.const.CK3.dwg.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.const.N.dcau",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.const.N.dcau.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.const.N.dwg",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.const.N.dwg.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.const.PS.dcau",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "D1.const.PS.dcau.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.const.PS.dwg",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "D1.const.PS.dwg.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.const.TG.dcau",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.const.TG.dcau.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.const.TG.dwg",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.const.TG.dwg.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.mild.CK3.dcau",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "D1.mild.CK3.dcau.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.mild.CK3.dwg",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "D1.mild.CK3.dwg.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.mild.N.dcau",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.mild.N.dcau.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.mild.N.dwg",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.mild.N.dwg.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.mild.PS.dcau",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "D1.mild.PS.dcau.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.mild.PS.dwg",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "D1.mild.PS.dwg.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.mild.TG.dcau",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.mild.TG.dcau.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.mild.TG.dwg",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.mild.TG.dwg.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.n_contact",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.n_dec",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.n_replaced",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.n_runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "D1.stopgo.CK3.dcau",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "D1.stopgo.CK3.dcau.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.stopgo.CK3.dwg",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "D1.stopgo.CK3.dwg.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.stopgo.N.dcau",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.stopgo.N.dcau.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.stopgo.N.dwg",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.stopgo.N.dwg.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.stopgo.PS.dcau",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "D1.stopgo.PS.dcau.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.stopgo.PS.dwg",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "main (required)",
+    "required": true
+   },
+   {
+    "key": "D1.stopgo.PS.dwg.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.stopgo.TG.dcau",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.stopgo.TG.dcau.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.stopgo.TG.dwg",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D1.stopgo.TG.dwg.ci",
+    "printed_as": "ci1",
+    "value_type": "[lo, hi]",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.CK3.c2.rs.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.CK3.c2.rs.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.CK3.c2.w3.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.CK3.c2.w3.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.CK3.c5.rs.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.CK3.c5.rs.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.CK3.c5.w3.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.CK3.c5.w3.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.F0.c2.rs.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.F0.c2.rs.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.F0.c2.w3.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.F0.c2.w3.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.F0.c5.rs.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.F0.c5.rs.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.F0.c5.w3.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.F0.c5.w3.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.N.c2.rs.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.N.c2.rs.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.N.c2.w3.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.N.c2.w3.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.N.c5.rs.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.N.c5.rs.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.N.c5.w3.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.N.c5.w3.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.TG.c2.rs.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.TG.c2.rs.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.TG.c2.w3.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.TG.c2.w3.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.TG.c5.rs.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.TG.c5.rs.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.TG.c5.w3.runs",
+    "printed_as": "int",
+    "value_type": "integer count",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   },
+   {
+    "key": "D2.TG.c5.w3.vclose",
+    "printed_as": "f1",
+    "value_type": "number",
+    "where": "supplement (n.c. if absent)",
+    "required": false
+   }
+  ]
+ }
+}

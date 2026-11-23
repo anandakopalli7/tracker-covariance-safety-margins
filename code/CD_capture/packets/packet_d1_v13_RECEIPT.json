@@ -1,0 +1,51 @@
+{
+  "packet": "packet_d1_v13",
+  "tar": "packet_d1_v13.tar.gz",
+  "tar_sha256": "90647c83a851cf9846fcf5841f54d0fc49a47ca82954e5116e43f095b77bf49e",
+  "tar_bytes": 7771459,
+  "changes": [
+    {
+      "path": "claude_smoke_v01/DEVELOPMENT_PROTOCOL_SMOKE_v01.json",
+      "source": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\d1\\DEVELOPMENT_PROTOCOL_D1_v13.json",
+      "old_sha256": "32d683a0a8ca2e91ff0245759ad78b43e7953c33bd12847c5193cafcdaa5735d",
+      "new_sha256": "1a8328644c610f477be9a605e70bbf2f0c46893d4716ce50d2f7319450bff601",
+      "added": false
+    },
+    {
+      "path": "claude_smoke_v01/actor_policy_d1_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\d1\\src\\actor_policy_d1_v01.py",
+      "old_sha256": null,
+      "new_sha256": "6c840faedad431bc611c3840324449edb1b5e398aca878e760524862982de523",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/scene_actors_d1_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\d1\\src\\scene_actors_d1_v01.py",
+      "old_sha256": null,
+      "new_sha256": "75410cb76a6bf031fa4f9f656b885e7807e584c3d3db8343e071f0d0f08d1db4",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/probe_arms_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\d1\\src\\probe_arms_v01.py",
+      "old_sha256": "e320ff3af5ad46079d16b171ea90697e5247257885b5385f23f7e605dbc87ae0",
+      "new_sha256": "6333c3f4004b063cd9c87531b4088185b8fc6b5661fa1ca89d0632e0350615dd",
+      "added": false
+    },
+    {
+      "path": "claude_smoke_v01/review/review_actor_records_v04.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\d1\\src\\review\\review_actor_records_v04.py",
+      "old_sha256": "7500c66cff5661a9be7d932273c4434e453cec595f8d6e40b4e68fb344609d0b",
+      "new_sha256": "895d1e32cc4fe1c03db1e84ba5bddf1c1f46f03660fd289b22b08c3aada9ff0a",
+      "added": false
+    }
+  ],
+  "binding_sha256": "2ad3ca06055c10244af9072aa9970fb45a425929cb94d3839fce66e7f858119e",
+  "protocol_sha256": "1a8328644c610f477be9a605e70bbf2f0c46893d4716ce50d2f7319450bff601",
+  "smoke_files": 21,
+  "source_packet": "<library folder>\\packet_main_v03",
+  "made_by": {
+    "script": "build_packet_d1_v13.py",
+    "sha256": "c4217327439e6e22a7fbee7cd8f81f49e02f8d7dbd07d305bb322825e93d28e0"
+  }
+}

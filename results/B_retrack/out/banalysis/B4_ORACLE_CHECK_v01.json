@@ -1,0 +1,114 @@
+{
+ "code": "b2_oracle_check_v01.py",
+ "status": "POST HOC diagnostic (not pre-registered)",
+ "variant": "B4",
+ "nboot": 2000,
+ "check_1": {
+  "RR_N": -0.0020166875353197344,
+  "RR_N_record": -0.0020166875353197344,
+  "RR_E5x": 0.0027480137843917197,
+  "RR_E5x_record": 0.0027480137843917197,
+  "m_x": 0.9817972311810452,
+  "A_x": 0.009097340561702747,
+  "same": true,
+  "construction": "E5_x = c_F0x / f_i^2, f_i = m_x (1 + A_x (2 u_i - 1)); m_x, A_x from x's own ratio sqrt(c_F0x / c_Nx) at binding rows; u_i from x's own F0_x / E_x; population all evaluated decisions; 3 s commitment; gridless step frontier; the same run dicts, gridless events and resamples as N_x"
+ },
+ "diagnostics": {
+  "share_rows_outside_band": 0.1376882946379215,
+  "band": [
+   0.9728654874064544,
+   0.990728974955636
+  ],
+  "ratio_q01_q99": [
+   0.9795897606311682,
+   1.001852613988869
+  ],
+  "within_decision_spread": {
+   "n_decisions": 8099,
+   "median": 2.5728760448227434e-05,
+   "q90": 0.0012025232112882489,
+   "share_above_5pct": 0.0012347203358439314
+  }
+ },
+ "points": {
+  "RR_N": -0.0020166875353197344,
+  "RR_E5x": 0.0027480137843917197,
+  "RR_E5q": 0.007457311600385606,
+  "diff_N_minus_E5x": -0.004764701319711454,
+  "diff_N_minus_E5q": -0.00947399913570534
+ },
+ "intervals": {
+  "RR_N": {
+   "point": -0.0020166875353197344,
+   "ci": [
+    -0.006288801148982167,
+    0.0006177820804543321
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    -0.004651157151093801,
+    0.0022554260783426983
+   ]
+  },
+  "RR_E5x": {
+   "point": 0.0027480137843917197,
+   "ci": [
+    0.0018208112338158494,
+    0.003627097264859604
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    0.0018689303039238353,
+    0.00367521633496759
+   ]
+  },
+  "RR_E5q": {
+   "point": 0.007457311600385606,
+   "ci": [
+    0.0036746187815917715,
+    0.013473412871509813
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    0.0014412103292613995,
+    0.01124000441917944
+   ]
+  },
+  "diff_N_minus_E5x": {
+   "point": -0.004764701319711454,
+   "ci": [
+    -0.00886276504175237,
+    -0.0020916619513248803
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    -0.007437740688098028,
+    -0.0006666375976705375
+   ]
+  },
+  "diff_N_minus_E5q": {
+   "point": -0.00947399913570534,
+   "ci": [
+    -0.01609268520189298,
+    -0.004530156106568553
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    -0.014417842164842126,
+    -0.002855313069517699
+   ]
+  }
+ },
+ "seconds": 1055.40891289711,
+ "written": "2026-11-19 21:00:28"
+}

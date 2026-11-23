@@ -1,0 +1,22 @@
+{
+ "schema_version": "review-panel-provenance/1.0",
+ "panel_id": "ars-review-v13-sprint-round-1",
+ "written_by": "coordinating session (Claude Opus 5.5), 21 Nov 2026 about 23:40 EST",
+ "freeze_reviewed": {
+  "folder": "revision_v13\\work\\A_text\\out\\freeze_v13_2002",
+  "MANUSCRIPT_v13.md": "93541ff6b1592bbdfc9b5f239fd81e8537fa3f433a3e2a76ba43a242914a4ead",
+  "SUPPLEMENT_v13.md": "4e6766a4bdee7ac910e01ade98b99a8b83ecc3261a707df76af8d1aff69e330c",
+  "MANUSCRIPT_v13.pdf": "5e5b7b7ed013d528bd54b5988f94b1ffd8bbb658ded392acdd37bba325adb82a"
+ },
+ "route": "five seats dispatched directly by the coordinator as separate fresh sub-agents, in parallel; cards from review_v13_output\\00_phase0_field_analysis_and_cards.md (the user-accepted v12 cards; the card-confirmation pause was not held); synthesis by a separate Claude Fable 5.2 sub-agent",
+ "seats": [
+  {"seat_id": "EIC", "role_id": "journal_fit", "model": "Claude Sonnet 5.5", "output": "phase1\\01_eic_journal_fit.md"},
+  {"seat_id": "R1", "role_id": "methodology", "model": "Claude Fable 5.2", "output": "phase1\\02_r1_methodology.md", "extra_reads": "AMENDMENT_10, AMENDMENT_11, the locks and the export files, for pre-registration and value checks"},
+  {"seat_id": "R2", "role_id": "domain", "model": "Claude Opus 5.5 (the writer's model; told to be skeptical)", "output": "phase1\\03_r2_domain.md"},
+  {"seat_id": "R3", "role_id": "practical", "model": "Claude Sonnet 5.5", "output": "phase1\\04_r3_practical.md"},
+  {"seat_id": "DA", "role_id": "devils_advocate", "model": "Claude Fable 5.2", "output": "phase1\\05_devils_advocate.md", "extra_reads": "AMENDMENT_11"}
+ ],
+ "blinding": "seats did not see each other's outputs, earlier review reports or the response letter",
+ "correlated_error_disclosure": "All seats are Claude models of one family (Sonnet 5.5, Fable 5.2, Opus 5.5); spreading seats over three models reduces but does not remove correlated-error risk. The domain seat shares the writer's model.",
+ "title_note": "Seats were told the title is under revision by the author and not to spend findings on it."
+}

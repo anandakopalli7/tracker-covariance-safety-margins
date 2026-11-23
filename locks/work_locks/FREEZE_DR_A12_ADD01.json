@@ -1,0 +1,22 @@
+{
+ "name": "FREEZE_DR_A12_ADD01",
+ "layered_on": [
+  "work\\locks\\FREEZE_DR.json",
+  "work\\locks\\FREEZE_DR_A12.json"
+ ],
+ "reason": "dr_extract_v02 P-bar branch: the run index path mapped through p_local (record B1, F_dropout\notes\\DR_A12_RECORDS_ADD01.md)",
+ "written": "2026-11-22 02:32:24",
+ "n": 2,
+ "entries": [
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_extract_v02.py",
+   "sha256": "1a59c338f99724c5317381099aeaeaf10c0ef3d27c87e7df2a4827f818647430"
+  },
+  {
+   "group": "records",
+   "path": "work\\F_dropout\\notes\\DR_A12_RECORDS_ADD01.md",
+   "sha256": "452e5238f712ab9c8709b14aa2917486f19412bdd4e5526675d4653b54d8c6c7"
+  }
+ ]
+}

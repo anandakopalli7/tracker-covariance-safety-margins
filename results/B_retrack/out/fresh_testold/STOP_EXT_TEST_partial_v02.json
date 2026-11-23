@@ -1,0 +1,60 @@
+{
+ "code": "b_stop_ext_v02.py --test-old",
+ "runs": 1,
+ "totals": {
+  "a_clearX_vs_v11_ext": {
+   "max_abs": 5.684341886080802e-14,
+   "safe_flags_differ": 0,
+   "finite_pattern_equal": true,
+   "cells": 459
+  },
+  "a_clear61_vs_cache": {
+   "max_abs": 0.0,
+   "safe_flags_differ": 0,
+   "finite_pattern_equal": true,
+   "cells": 459
+  },
+  "b_clear61_vs_v01_delayed": {
+   "max_abs": 0.0,
+   "safe_flags_differ": 0,
+   "finite_pattern_equal": true,
+   "cells": 459
+  },
+  "a_tstop_max_abs": 4.440892098500626e-16,
+  "a_jend_equal": true,
+  "a_cens_equal": true,
+  "a_late_equal": true,
+  "b_n_flag_changed_by_extension": 1
+ },
+ "per_run": [
+  {
+   "run": "p1b_fit_finite_0008",
+   "a_clearX_vs_v11_ext": {
+    "max_abs": 5.684341886080802e-14,
+    "finite_pattern_equal": true,
+    "safe_flags_differ": 0,
+    "cells": 459
+   },
+   "a_clear61_vs_cache": {
+    "max_abs": 0.0,
+    "finite_pattern_equal": true,
+    "safe_flags_differ": 0,
+    "cells": 459
+   },
+   "a_tstop_max_abs": 4.440892098500626e-16,
+   "a_jend_equal": true,
+   "a_cens_equal": true,
+   "a_late_equal": true,
+   "b_clear61_vs_v01_delayed": {
+    "max_abs": 0.0,
+    "finite_pattern_equal": true,
+    "safe_flags_differ": 0,
+    "cells": 459
+   },
+   "b_n_flag_changed_by_extension": 1,
+   "seconds": 7.0
+  }
+ ],
+ "seconds": 79.7907485961914,
+ "written": "2026-11-20 02:44:53"
+}

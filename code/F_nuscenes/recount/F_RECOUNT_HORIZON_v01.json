@@ -1,0 +1,149 @@
+{
+ "code": "fr_horizon_v01.py",
+ "writer": "Claude Fable 5.2 (claude-fable-5-2), independent second program",
+ "amendment": "AMENDMENT_10_v13.md 8.3",
+ "split": "train (design)",
+ "tracker": "T1",
+ "synthetic": false,
+ "n_scenes": 700,
+ "first_scene": "scene-0001",
+ "last_scene": "scene-1110",
+ "draw": "default_rng(20261923).integers(0, n_scenes, (20000, n_scenes)), scenes in sorted name order",
+ "frontier": "gridless step frontier, margin scales in [0, 1e3], 201 caution levels",
+ "horizons": {
+  "3s": {
+   "counts": {
+    "scenes": 700,
+    "decisions_built": 110266,
+    "evaluated": 88737,
+    "evaluated_inpath": 23503
+   },
+   "all": {
+    "n_decisions": 88737.0,
+    "c0_pp": 15.3865908479115,
+    "C_pp": 63.43913598232094,
+    "D_gl_E_F0": 0.0,
+    "R_gl_pp": {
+     "point": 0.0,
+     "ci95": [
+      -0.001121508933525342,
+      0.00224367600918398
+     ],
+     "share_le0": 0.75265,
+     "n_le0": 15053,
+     "n_nonfinite": 0,
+     "n_resamples": 20000
+    },
+    "room_decision_equivalents": 0.0,
+    "sources": {
+     "F0": {
+      "events": 310796,
+      "points": 310797
+     },
+     "E": {
+      "events": 287378,
+      "points": 287379
+     }
+    }
+   },
+   "inpath": {
+    "n_decisions": 23503.0,
+    "c0_pp": 19.064282478008526,
+    "C_pp": 63.02148808262446,
+    "D_gl_E_F0": -0.8509551972089469,
+    "R_gl_pp": {
+     "point": -0.004233607946313169,
+     "ci95": [
+      -0.021831335710172307,
+      0.02723701131712252
+     ],
+     "share_le0": 0.7629,
+     "n_le0": 15258,
+     "n_nonfinite": 0,
+     "n_resamples": 20000
+    },
+    "room_decision_equivalents": -0.995024875621984,
+    "sources": {
+     "F0": {
+      "events": 73693,
+      "points": 73694
+     },
+     "E": {
+      "events": 76025,
+      "points": 76026
+     }
+    }
+   }
+  },
+  "2s": {
+   "counts": {
+    "scenes": 700,
+    "decisions_built": 110266,
+    "evaluated": 95871,
+    "evaluated_inpath": 25506
+   },
+   "all": {
+    "n_decisions": 95871.0,
+    "c0_pp": 13.39892597639493,
+    "C_pp": 64.89855568054286,
+    "D_gl_E_F0": 0.0,
+    "R_gl_pp": {
+     "point": 0.0,
+     "ci95": [
+      -0.0010266653536866147,
+      0.14191037646077873
+     ],
+     "share_le0": 0.4166,
+     "n_le0": 8332,
+     "n_nonfinite": 0,
+     "n_resamples": 20000
+    },
+    "room_decision_equivalents": 0.0,
+    "sources": {
+     "F0": {
+      "events": 345312,
+      "points": 345313
+     },
+     "E": {
+      "events": 316862,
+      "points": 316863
+     }
+    }
+   },
+   "inpath": {
+    "n_decisions": 25506.0,
+    "c0_pp": 17.16775162447159,
+    "C_pp": 66.86912241648119,
+    "D_gl_E_F0": 48.32980475182309,
+    "R_gl_pp": {
+     "point": 0.24044678981006512,
+     "ci95": [
+      -0.052850925028277825,
+      0.4880967651037985
+     ],
+     "share_le0": 0.14015,
+     "n_le0": 2803,
+     "n_nonfinite": 0,
+     "n_resamples": 20000
+    },
+    "room_decision_equivalents": 61.32835820895521,
+    "sources": {
+     "F0": {
+      "events": 83558,
+      "points": 83559
+     },
+     "E": {
+      "events": 82619,
+      "points": 82620
+     }
+    }
+   }
+  }
+ },
+ "horizon_rule": {
+  "primary_horizon_s": null,
+  "reason": "no measurable room on design data at 2 or 3 s: F stops"
+ },
+ "written": "2026-11-19 23:26:43",
+ "seconds": 426.14861965179443
+}

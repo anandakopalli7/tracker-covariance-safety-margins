@@ -1,0 +1,62 @@
+{
+ "code_sha256": "5709b5f3da03562875ae79b51f00ebda2d13838332e0dc1506190186b93650a0",
+ "runs": [
+  {
+   "run": "p2_c1109_tune_0002_fixed_c1",
+   "family": "pedestrian_crossing",
+   "seconds": 43.0,
+   "compare": {
+    "k": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "evaluated": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "v0": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "des": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "clear": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "vbar": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "idx55": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cF0": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cN": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cE": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    }
+   }
+  }
+ ]
+}

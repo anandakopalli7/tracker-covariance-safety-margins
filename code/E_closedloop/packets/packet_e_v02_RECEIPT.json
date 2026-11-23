@@ -1,0 +1,111 @@
+{
+  "packet": "packet_e_v02",
+  "base": "<library folder>\\packet_main_v03",
+  "changes": [
+    {
+      "path": "claude_smoke_v01/cuda_entry_smoke_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src\\cuda_entry_smoke_v01.py",
+      "old_sha256": "672c0a8d2c8bb10de81806ffb367ed90845ce3e643799c1bf21692f7b2d799a9",
+      "new_sha256": "2bf8d6cb4d022e1545a7eab8c9fb6bcac2021d4baedd70d0ff41de3c8782dcfa",
+      "added": false
+    },
+    {
+      "path": "claude_smoke_v01/e_arms_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src\\e_arms_v01.py",
+      "old_sha256": null,
+      "new_sha256": "81aa894ad4f14f24e2c2a4b1413b8882c3c85bd156125e1226ce49c2a2e09771",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/E_F2_PLANT_v01.json",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src\\E_F2_PLANT_v01.json",
+      "old_sha256": null,
+      "new_sha256": "55b8eb4051d736e63b37ac26d46c956903598228640c95d4258724488d04b6fc",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/e_imm_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src\\e_imm_v01.py",
+      "old_sha256": null,
+      "new_sha256": "3c9f13982e0900da4cd85cc4df4429a896f2801dada79607a78e7334e5707ecb",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/E_PBAR_CANMOT_v01.json",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src\\E_PBAR_CANMOT_v01.json",
+      "old_sha256": null,
+      "new_sha256": "fd89f69ed5c96589fa70604161d0d68adb5469220be375eab76d62c853ba0b65",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/e_sources_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src\\e_sources_v01.py",
+      "old_sha256": null,
+      "new_sha256": "a72f2bf9c7a0a8837b8c09e28ebc6a43f5b5fb2927f4c9ce1650f6e122ab4369",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/probe_e_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src\\probe_e_v01.py",
+      "old_sha256": null,
+      "new_sha256": "635d0d48bca8b0391303dcce8283b0401920dc6acb1f76229cb0782fc07f8df0",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/review/review_case_e_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src\\review\\review_case_e_v01.py",
+      "old_sha256": null,
+      "new_sha256": "eff26e5ac7e911a27391be54c12a79b05ce798c289256401b902799e1908c3ac",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/trackers_b/trk_constants_v01.json",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src\\trackers_b\\trk_constants_v01.json",
+      "old_sha256": null,
+      "new_sha256": "d8455cb50b637a3ce45460a0dee38f79b69fce4c085c913f713b56ac23338a9d",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/trackers_b/trk_env_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src\\trackers_b\\trk_env_v01.py",
+      "old_sha256": null,
+      "new_sha256": "0219dd2ed6517109a3c913430a2f30ca756fc01f4f003c1347c4ddd4a9628cad",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/trackers_b/trk_exact_math_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src\\trackers_b\\trk_exact_math_v01.py",
+      "old_sha256": null,
+      "new_sha256": "6a42ece0b2255e4c2ec15a5651ee8ac65671e63cce01895e1ff4227ead86f541",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/trackers_b/trk_filters_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src\\trackers_b\\trk_filters_v01.py",
+      "old_sha256": null,
+      "new_sha256": "9edfdd6cb5642c1618d41ccb3def176251074a3beaf703d8589df58018304dbb",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/trackers_b/trk_tracker_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src\\trackers_b\\trk_tracker_v01.py",
+      "old_sha256": null,
+      "new_sha256": "5cf4ad3baf81b614b18facc3fe4b3bc6506f867350d5b6216fce5ed725cfdef8",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/worker_main_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src\\worker_main_v01.py",
+      "old_sha256": "4462b8e4ff0c57cf78b61a4feb942992a5221094a121c9e16befab751fcb8fd6",
+      "new_sha256": "489d98cc9c436ecc63edd4f4f3bfc1e44a18762774205157bb1255b0fcc20d60",
+      "added": false
+    }
+  ],
+  "binding_sha256": "74a4a55af0259ff16fc638ec69772d941107b8f3b9768de998b8905fae4660b1",
+  "protocol_sha256": "32d683a0a8ca2e91ff0245759ad78b43e7953c33bd12847c5193cafcdaa5735d",
+  "smoke_files": 31,
+  "utc": "2026-11-19T21:01:30.644117+00:00",
+  "tar": "packet_e_v02.tar.gz",
+  "tar_sha256": "451a317df87ceaefb047041c0b92c45ad588e281f054b4838053344bbf7cadf3",
+  "tar_bytes": 7772289
+}

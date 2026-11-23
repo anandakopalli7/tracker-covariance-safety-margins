@@ -1,0 +1,138 @@
+{
+ "addendum": 11,
+ "to": "work\\locks\\FREEZE_B.json",
+ "layers": [
+  {
+   "file": "FREEZE_B.json",
+   "sha256": "1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152"
+  },
+  {
+   "file": "FREEZE_B_add1.json",
+   "sha256": "9b71225a10645bfd28b2e43a2a05578f6131ed6ec8443f14125672d480927ad6"
+  },
+  {
+   "file": "FREEZE_B_add2.json",
+   "sha256": "6ffc5cd975b5ba91c597a1f989a1c649ca4bbbcf2244642577484f4b4341c39b"
+  },
+  {
+   "file": "FREEZE_B_add3.json",
+   "sha256": "549ac106adb20e6eb9cae16088c231665c6f006fada64ec3eea15d1025970831"
+  },
+  {
+   "file": "FREEZE_B_add4.json",
+   "sha256": "23f374c013510e0eadd8f7de574f61c8eaec1021669d799148266e8c9f269e7e"
+  },
+  {
+   "file": "FREEZE_B_add5.json",
+   "sha256": "d91d1e5a55edb5224f8c150c46cee58ce30d70681fab8d76f1830ae6f5672ee0"
+  },
+  {
+   "file": "FREEZE_B_add6.json",
+   "sha256": "bd24dc97ca4f0e2b7817e5ea6d0bc3da043aa68d8aa4dc1ca2ff21445b0bd4ed"
+  },
+  {
+   "file": "FREEZE_B_add7.json",
+   "sha256": "d06cc48bbe89ec87b3927c962c041b31b5e7aab1dccbe570188a331e0a7b0c12"
+  },
+  {
+   "file": "FREEZE_B_add8.json",
+   "sha256": "9c87f029ec3ed6438aea9dd60835a1ad1067ec0490190d5d89beee6a13d7b751"
+  },
+  {
+   "file": "FREEZE_B_add9.json",
+   "sha256": "2e51dae7edb9aa9bd6da4203ee30c4cbb386a3bf31998ed537f3c173b415a341"
+  },
+  {
+   "file": "FREEZE_B_add10.json",
+   "sha256": "ee63f804caf5111eea43e0389831a5e55171285cb943f74a1b70964326a534f2"
+  }
+ ],
+ "written": "2026-11-22 00:44:32 Eastern Standard Time",
+ "writer": "package-B session, Claude Opus 5.5 (claude-opus-5-5)",
+ "code": "make_freeze_add_v04.py",
+ "reason": "AMENDMENT_12 s2.4/s3c, before LOCK_A12a and before any new-run or IMM2 evaluation value: session CD's layout of the new runs (CD message 22 Nov ~00:44 EST): logs under CD_capture\\runs\\<rid>\\ where <rid> is the capture run id (differs from the job id for a run captured on an allowed retry, suffix __p1/__r1), mapped by CD_capture\\l12\\out\\L12_RUNS_v13.json; arrays stay named by job id. New b_l12_ids_v02.py resolves every new-run folder through that map (REFUSED while the map is missing) and writes job-named LOGS_OK marker folders for the frozen second programs (imm2_v04, modeprob2_v01 test <root>\\<job id>\\LOGS_OK; they are unchanged). b_imm2_v01.py, b_l12_retrack_v01.py, b_fresh_analysis_v04.py and b_modeprob_v01.py now import b_l12_ids_v02 (b_imm2_v01 also takes the new-run capture folder from it); no other change. New pod tooling pods/b_recount_pod_v04.py (the IMM2 recount on a CPU pod, adapted from v03). No value of any run was computed under add10's versions of these files.",
+ "library_unchanged": true,
+ "changed": [
+  {
+   "path": "B_retrack\\code\\b_fresh_analysis_v04.py",
+   "sha256": "4ee93bac098416d8d78e0ff268abc9c3f908c190c882b44660e08846e46f2556",
+   "bytes": 16718,
+   "mtime": "2026-11-22 00:44:11",
+   "old_sha256": "9ec766383fb60a5b2c735637677b001d23316d12c0bd8d3076cb3c095556fb9f"
+  },
+  {
+   "path": "B_retrack\\code\\b_imm2_v01.py",
+   "sha256": "a4e05c788d515e831c7c70a1200c904b96409e8f2435b86ec4456091e740aded",
+   "bytes": 10087,
+   "mtime": "2026-11-22 00:44:11",
+   "old_sha256": "1fb4857e952bad24c0e6c38dc98c91e03c21f95c619cc7ee73c04a229e09b4c3"
+  },
+  {
+   "path": "B_retrack\\code\\b_l12_retrack_v01.py",
+   "sha256": "500635cb9a967c3b51927b701222208a8eca4996062be567fd4a64abd6b25b3f",
+   "bytes": 6710,
+   "mtime": "2026-11-22 00:44:11",
+   "old_sha256": "b8b5776a15e2f7b1f56ae095ef1e2cad9adf44e23f3ce33f8f12671eef38f818"
+  },
+  {
+   "path": "B_retrack\\code\\b_modeprob_v01.py",
+   "sha256": "5c6b28b160e4b4374573f678a614582c9cd424b80cd8c237c5ee2832d049500e",
+   "bytes": 5893,
+   "mtime": "2026-11-22 00:44:11",
+   "old_sha256": "1ddeb09f94779d24b1e79daff3fa44a211b7d1bcba4e1f203fc9cd6b5d14b5fb"
+  }
+ ],
+ "new": [
+  {
+   "path": "B_retrack\\code\\b_l12_ids_v02.py",
+   "sha256": "03f7f9fafaa9ed0e024caa13853da52d9ad64fd9e627b3d06a3b2b6870f8b053",
+   "bytes": 4332,
+   "mtime": "2026-11-22 00:43:47"
+  },
+  {
+   "path": "B_retrack\\pods\\b_recount_pod_v04.py",
+   "sha256": "6621f3b9d65b9de71f924a2874833aa9bd2f0d43c6f6b7593acf05a4b6dce069",
+   "bytes": 15858,
+   "mtime": "2026-11-22 00:44:11"
+  }
+ ],
+ "missing": [],
+ "external_read_only": [
+  {
+   "path": "CD_capture\\analysis\\gl_fast_v13.py",
+   "sha256": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789",
+   "note": "package CD file, read-only (gl_fast: imported by the analysis; Y programs: run as byte-identical copies for IMM2's twin, A12 s3c)"
+  },
+  {
+   "path": "CD_capture\\ycheck\\y_twin_l12_v13.py",
+   "sha256": "70d705ed81973b32750de920fc13f0c4168345fee81d9bf0bef90404b3f1b863",
+   "note": "package CD file, read-only (gl_fast: imported by the analysis; Y programs: run as byte-identical copies for IMM2's twin, A12 s3c)"
+  },
+  {
+   "path": "CD_capture\\recount\\rc_y_twin_l12_v13.py",
+   "sha256": "a933d4f0673f5743838b0120295e22e98519039d9d87b0dc97b6586847351a8a",
+   "note": "package CD file, read-only (gl_fast: imported by the analysis; Y programs: run as byte-identical copies for IMM2's twin, A12 s3c)"
+  },
+  {
+   "path": "CD_capture\\recount\\rc_y_kern_v13.py",
+   "sha256": "1794e1b51501582518a4fce9614ea6a50226f9a7ba8ee3400423307f6b2d0ff8",
+   "note": "package CD file, read-only (gl_fast: imported by the analysis; Y programs: run as byte-identical copies for IMM2's twin, A12 s3c)"
+  },
+  {
+   "path": "CD_capture\\recount\\rc_core_v13.py",
+   "sha256": "ab4bc14a05086822586a28da2ec791e214a3638275d669e0396602113d1cbae2",
+   "note": "package CD file, read-only (gl_fast: imported by the analysis; Y programs: run as byte-identical copies for IMM2's twin, A12 s3c)"
+  },
+  {
+   "path": "CD_capture\\recount\\rc_kern_v13.py",
+   "sha256": "e404e6f823503ea2adc22657d62dd3116f2a6a43794dec85fbe971efecffac4a",
+   "note": "package CD file, read-only (gl_fast: imported by the analysis; Y programs: run as byte-identical copies for IMM2's twin, A12 s3c)"
+  },
+  {
+   "path": "CD_capture\\analysis\\cd_common_v13.py",
+   "sha256": "28a7238a2f7135aec35f3018879af25566665856ff163502b6286b0249d6bdd0",
+   "note": "package CD file, read-only (gl_fast: imported by the analysis; Y programs: run as byte-identical copies for IMM2's twin, A12 s3c)"
+  }
+ ],
+ "note": "Reference = FREEZE_B.json with add1..add10 applied in order; this addendum lists every covered file that changed or is new since that state. Earlier manifests are kept as written."
+}

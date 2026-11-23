@@ -1,0 +1,23 @@
+{
+ "code": "imm_compare_v02.py",
+ "kappa_ca": null,
+ "constants": "out\\imm2t\\IMM2_CONSTANTS_REC_v01.json",
+ "diag": 0.95,
+ "runs": [
+  {
+   "cap": "<library folder>\\fit_finite_0012",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 2.5716268284352814e-14,
+   "centre_max_abs_diff": 1.1368683772161603e-13,
+   "velocity_max_abs_diff": 1.1546319456101628e-14,
+   "pass_1e9": true,
+   "seconds": 13.5
+  }
+ ],
+ "all_pass": true,
+ "written": "2026-11-22 00:40:08"
+}

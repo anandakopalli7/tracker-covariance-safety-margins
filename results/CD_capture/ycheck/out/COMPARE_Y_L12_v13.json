@@ -1,0 +1,14 @@
+{
+ "schema": "COMPARE_Y_V13",
+ "first": "ycheck\\out\\Y_TWIN_L12_v13.json",
+ "second": "recount\\out\\RC_Y_TWIN_L12_v13.json",
+ "tolerance": 1e-09,
+ "verdict": "AGREE",
+ "summary": {
+  "agree": 39,
+  "disagree": 0,
+  "only_first": 0,
+  "only_second": 0
+ },
+ "rows": []
+}

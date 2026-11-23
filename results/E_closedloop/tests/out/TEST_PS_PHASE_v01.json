@@ -1,0 +1,256 @@
+{
+ "schema": "E_TEST_PS_PHASE_V01",
+ "totals": {
+  "decisions": 9307,
+  "lead_found_both": 9307,
+  "lead_found_stored_only": 0,
+  "lead_found_online_only": 0,
+  "same_track": 9306,
+  "vhat_maxabs": 0.0,
+  "ahat_maxabs": 8.881784197001252e-16,
+  "ahat_nan_mismatch": 0
+ },
+ "phase_agreement": {
+  "-1.0": [
+   9307,
+   9307
+  ],
+  "-0.5": [
+   9307,
+   9307
+  ],
+  "-2.0": [
+   9307,
+   9307
+  ]
+ },
+ "confusion_thr_m1_stored_rows_online_cols": [
+  [
+   910,
+   0,
+   0
+  ],
+  [
+   0,
+   764,
+   0
+  ],
+  [
+   0,
+   0,
+   7633
+  ]
+ ],
+ "runs": [
+  {
+   "run": "p1b_fit_finite_0005",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0006",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0007",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0008",
+   "decisions": 57,
+   "same_track": 57,
+   "agree_m1": 57
+  },
+  {
+   "run": "p1b_fit_finite_0009",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0010",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0011",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0012",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0013",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0014",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0015",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0016",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0017",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0018",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0019",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0020",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0021",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0022",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0023",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0024",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0025",
+   "decisions": 48,
+   "same_track": 48,
+   "agree_m1": 48
+  },
+  {
+   "run": "p1b_fit_finite_0026",
+   "decisions": 300,
+   "same_track": 299,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0027",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0028",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0029",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0030",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0031",
+   "decisions": 82,
+   "same_track": 82,
+   "agree_m1": 82
+  },
+  {
+   "run": "p1b_fit_finite_0032",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0033",
+   "decisions": 54,
+   "same_track": 54,
+   "agree_m1": 54
+  },
+  {
+   "run": "p1b_fit_finite_0034",
+   "decisions": 66,
+   "same_track": 66,
+   "agree_m1": 66
+  },
+  {
+   "run": "p1b_fit_finite_0035",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0036",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0038",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  },
+  {
+   "run": "p1b_fit_finite_0039",
+   "decisions": 300,
+   "same_track": 300,
+   "agree_m1": 300
+  }
+ ]
+}

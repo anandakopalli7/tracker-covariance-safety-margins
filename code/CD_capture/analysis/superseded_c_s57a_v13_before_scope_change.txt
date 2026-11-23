@@ -1,0 +1,685 @@
+"""Revision v13, package C: the A10 sec. 5.6-5.7 keys that c_lead_v13.py and c_cutin_v13.py do not compute ("S57A"). New file,
+20 Nov 2026 (Claude Opus 5.5). Every definition: CD_capture\\CD_DEFINITIONS_S57A_v13.md (written before any fresh value).
+
+  1. decision-equivalents (.dec, .dec.ci) of the printed shares: LB.R, LB.RR_N / E5 / E5mP / CK3, LB.IMM.r / c, LB.PS.rec, CI.RR_N, CI.Y.R
+  2. partial oracles PO25/50/75 (gridless; masks default_rng(20261919) per family) and <prefix>.grading_ok, LB.<pop> and CI (window)
+  3. cut-in window shares CI.RR_CK3, CI.RR_E5, CI.RR_E5mP (E5 ranks over all evaluated cut-in decisions)
+  4. LB.RS075.rel: room under reaction and stop (0.75 s, 6 m/s^2; clearR075) relative to the 3 s room
+  5. B6 (b6_stop_v01 method): terciles of realised lead deceleration (rel, den0.dec, range, evaluable, relmin / relmax) and the
+     delayed stop (LB.DS.rel, LB.DS.den0.dec)
+  6. stop reliance (a9_6_stop_reliance_v01 part (1), population all): LB.REL_F0 / N / CK3
+  7. tuning runs (A10 sec. 5.6; gridless; default_rng(20261918), 20,000 resamples): TU.R, TU.RR_N / NA / AM / CK3 / TG, TU.R_pre / brk / stop
+Fresh intervals: boot_counts(n, 20000, 20261911), nominal 95% percentile (descriptive: .cal "nominal95", .level 0.95).
+Inputs (fresh, after Lock 2): arrays/CV0, arrays/B1 (c_extract_v13.py), arrays/S57A (x_s57a_extract_v13.py). Refuses without
+revision_v13/LOCK_A10_2.txt. --test-old: the 35 old evaluation runs (LB), the 20 cut-in tuning runs (CI) and the 20 lead-braking tuning
+runs (TU), with the draws of record where a value of record is compared; writes out/TESTOLD_S57A_v13*.json and out/TEST_S57A_v13*.json.
+Usage: .venv\\Scripts\\python.exe -I -B -X utf8 analysis\\c_s57a_v13.py [--test-old] [--nboot N] [--tag T]
+"""
+import argparse, csv, json, os, pathlib, sys, time
+os.environ.setdefault('OPENBLAS_CORETYPE', 'Haswell')
+os.environ.setdefault('NUMBA_NUM_THREADS', '2')                       # shared laptop: at most 2 threads
+import numpy as np
+sys.dont_write_bytecode = True
+HERE = pathlib.Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
+import cd_common_v13 as CC               # noqa: E402
+import trk_env_v01 as env                # noqa: E402
+env.setup()
+import trk_score_v01 as TS               # noqa: E402
+from c_lead_choice_v13 import single_choice, triple_choice   # noqa: E402  (v12 functions, verbatim)
+L = CC.L; C11 = CC.C11; A9 = CC.A9
+
+ap = argparse.ArgumentParser()
+ap.add_argument('--test-old', action='store_true'); ap.add_argument('--nboot', type=int, default=CC.NBOOT)
+ap.add_argument('--tag', default='')
+args = ap.parse_args()
+gate = CC.require_lock2(args.test_old)
+TEST = args.test_old
+t00 = time.time()
+log = lambda s: print('[%6.0f s] %s' % (time.time() - t00, s), flush=True)   # noqa: E731
+SUF = ('_' + args.tag) if args.tag else ''
+OUTF = CC.OUT / (('TESTOLD_' if TEST else '') + 'C_S57A_v13' + SUF + '.json')
+if TEST: OUTF = CC.OUT / ('TESTOLD_S57A_v13' + SUF + '.json')
+TESTF = CC.OUT / ('TEST_S57A_v13' + SUF + '.json')
+for f in ([OUTF, TESTF] if TEST else [OUTF]):
+    if f.exists(): raise SystemExit('REFUSED: %s exists' % f)
+
+P = pathlib.Path(r'<library folder>')
+STORED = P / '09_redesign' / 'm2_decisions' / 'openloop' / 'gateR_rt_v01'
+M4 = P / '09_redesign' / 'm4_perception_model'
+A4DRY = P / '11_ojits' / 'A4' / 'dryrun' / 'extract'
+BRET = CC.WORK / 'B_retrack' / 'out'
+OLDOUT = CC.OUT / 's57a_old'
+V11X = pathlib.Path(r'ARS_TRIAL\revision_v11\analysis\out\ext')
+NB = args.nboot
+PS_ = [0.25, 0.5, 0.75]; PO = ['PO25', 'PO50', 'PO75']
+POPS = ['all', 'mov', 'pre', 'brk', 'stop']
+SEED_PO_RECORD = 20261118          # partial-oracle draw of record (rev_g_partial_oracle_draws_v01, a9_8)
+SEED_TU = 20261918
+WR_KEY = L.vkey(0.75, 6.0)
+
+V = {}                             # A keys
+DET = dict(gate=gate, nboot=NB, definitions='CD_DEFINITIONS_S57A_v13.md')
+CHK = {}                           # old-run comparisons
+
+
+def fin(x):
+    return x is not None and np.isfinite(x)
+
+
+def num(x):
+    return float(x) if fin(x) else None
+
+
+def ci95(b):
+    b = np.asarray(b, float); f = np.isfinite(b)
+    return [float(v) for v in np.percentile(b[f], [2.5, 97.5])] if f.any() else [None, None]
+
+
+def put_ci(key, b):
+    V[key + '.ci'] = ci95(b); V[key + '.level'] = 0.95; V[key + '.cal'] = 'nominal95'
+
+
+def rr_b(D, den):
+    return C11.rat(D, den)
+
+
+def ratio_b(a, b):
+    a = np.asarray(a, float); b = np.asarray(b, float)
+    with np.errstate(divide='ignore', invalid='ignore'):
+        return np.where(np.isfinite(b) & (b > 0) & np.isfinite(a), a / b, np.nan)
+
+
+def cmp(name, mine, ref, tol=0.):
+    """Record a comparison with a value of record (exact unless tol > 0)."""
+    def one_d(a, b):                       # None and NaN are 'undefined'; two undefined values agree
+        a = np.nan if a is None else float(a); b = np.nan if b is None else float(b)
+        if not np.isfinite(a) or not np.isfinite(b):
+            return 0. if (np.isnan(a) and np.isnan(b)) or a == b else float('inf')
+        return abs(a - b)
+    if isinstance(mine, (list, tuple)):
+        d = max(one_d(a, b) for a, b in zip(mine, ref)) if len(mine) == len(ref) else float('inf')
+    else:
+        d = one_d(mine, ref)
+    CHK[name] = dict(mine=mine, record=ref, abs_diff=d, ok=bool(d <= tol))
+    return d
+
+
+# ------------------------------------------------------------------------------------------------ gridless events, cached per run
+class Events:
+    """Per run, per (scoring, source): the A9-1(c) gridless events (a9_common_v01.gridless_sources, same lines), kept so that the
+    Gridless object of any subset of runs (B6 terciles) is a9_common_v01.Gridless over that subset's per-run tuples."""
+
+    def __init__(self, runs, masks_key):
+        self.runs = runs; self.mk = masks_key; self.cache = {}
+
+    def per(self, sc, a, safe_fn):
+        if (sc, a) not in self.cache:
+            out = []
+            for r in self.runs:
+                sx = safe_fn(r)
+                if a == 'O':
+                    sel = L.select_first_safe(sx, r['idx55'])[0]
+                    RS = A9.row_stats(r, sx, r[self.mk])
+                    T0 = RS[np.arange(sel.size), sel].sum(axis=0)
+                    out.append((T0, np.zeros(0), np.zeros((0, len(r[self.mk]), L.NST))))
+                else:
+                    out.append(A9.run_events(r, r['crit'][a], sx, r[self.mk], A9.GMAX))
+            self.cache[(sc, a)] = out
+        return self.cache[(sc, a)]
+
+    def G(self, sc, names, safe_fn, idx=None):
+        idx = range(len(self.runs)) if idx is None else idx
+        return {a: A9.Gridless([self.per(sc, a, safe_fn)[i] for i in idx]) for a in names}
+
+
+def sW1(r): return r['clear1'] > 0.                                # noqa: E704
+def sWR(r): return L.clean_clear(r['clearWR']) > 0.                # noqa: E704
+def sDS(r): return L.clean_clear(r['clearDS']) > 0.                # noqa: E704
+
+
+def add_partial(runs, seed):
+    """Partial oracles of record: one uniform per stored decision, runs in the given order, decisions in k order."""
+    N = int(sum(len(r['k']) for r in runs))
+    U = np.random.default_rng(seed).random(N); pos = 0
+    for r in runs:
+        n = len(r['k']); u = U[pos:pos + n]; pos += n
+        for p, nm in zip(PS_, PO):
+            r['crit'][nm] = np.where((u < p)[:, None], r['crit']['E'], r['crit']['F0'])
+            r['sel'].pop(nm, None)
+    return N
+
+
+def grading(po):
+    return bool(all(fin(x) for x in po) and po[0] > 0 and po[0] < po[1] < po[2])
+
+
+def delay_table(rids, evs):
+    d = TS.draw_delays(int(sum(int(e.sum()) for e in evs)))
+    out = {}; pos = 0
+    for rid, ev in zip(rids, evs):
+        idx = np.flatnonzero(ev)
+        tau = np.full(ev.size, np.nan); tau[idx] = 0.75 + d[pos:pos + idx.size]
+        out[rid] = tau; pos += idx.size
+    return out
+
+
+# ================================================================================================ LEAD BRAKING: runs
+if TEST:
+    runs = CC.load_old_lead()
+    for r in runs:
+        r['masks'] = r['masks_est']; r['clearWR'] = r['cache'][WR_KEY]
+    run_ids = [r['run'] for r in runs]
+    D_REF = delay_table(run_ids, [r['ev'] for r in runs])
+    B6 = json.loads((BRET / 'b6' / 'B6_STOP_v01.json').read_text(encoding='utf-8'))
+    for r in runs:
+        z = np.load(BRET / 'b6' / 'clear' / (r['run'] + '.npz'), allow_pickle=False)
+        assert np.array_equal(z['k'], r['k']), r['run']
+        assert np.array_equal(np.isfinite(z['tau']), np.isfinite(D_REF[r['run']])) and \
+            np.array_equal(z['tau'][r['ev']], D_REF[r['run']][r['ev']]), 'tau draw differs: ' + r['run']
+        r['clearDS'] = z['clear']; r['tau'] = z['tau']
+        cap = list((P / '07_fit_runs' / 'archives' / r['run'] / 'x' / r['run'] / 'capture').iterdir())[0]
+        d = TS.realised_decel(cap); r['decel'] = d
+    cmp('B6.realised_decel (35 runs, max abs diff)', [x['decel'] for x in runs], [B6['realised_decel'][x['run']] for x in runs])
+    # extractor identity on the old runs it was run on (x_s57a_extract_v13.py --set test_lead)
+    xid = {}
+    for r in runs:
+        f = OLDOUT / 'x' / (r['run'] + '.npz')
+        if not f.is_file(): continue
+        z = np.load(f, allow_pickle=False); m = json.loads(str(z['meta']))
+        same_cl = bool(np.array_equal(z['clearDS'], r['clearDS'], equal_nan=True))
+        xid[r['run']] = dict(clearDS_identical_to_B6=same_cl, tau_identical=bool(np.array_equal(z['tau'], r['tau'], equal_nan=True)),
+                             decel_identical=bool(float(z['decel']) == r['decel']), seconds=m['seconds'],
+                             seconds_clearDS=m.get('seconds_clearDS'), n_eval=m['n_eval'])
+    DET['extractor_identity_old_runs'] = xid
+else:
+    run_ids = CC.c_run_ids('lead_braking')
+    runs = CC.load_variant(run_ids, 'CV0')
+    assert all(r['meta'].get('family') == 'lead_braking' for r in runs)
+    D_REF = delay_table(run_ids, [r['ev'] for r in runs])
+    for r in runs:
+        s = np.load(CC.ARR / 'S57A' / (r['run'] + '.npz'), allow_pickle=False)
+        assert np.array_equal(s['k'], r['k']), r['run']
+        assert np.array_equal(s['tau'], D_REF[r['run']], equal_nan=True), 'tau draw differs: ' + r['run']
+        r['clearWR'] = r['clearR075']; r['clearDS'] = s['clearDS']; r['tau'] = s['tau']
+        r['decel'] = float(s['decel']) if np.isfinite(s['decel']) else None
+for r in runs:
+    r['n_dec'] = len(r['k']); r['mask1'] = (r['ev'],)
+NR = len(runs)
+log('lead runs %d (%s)' % (NR, 'TEST: old evaluation runs' if TEST else 'fresh'))
+DET['LB.runs'] = run_ids
+
+# E5, E5p (CD_DEFINITIONS_v13), partial oracles
+u, uinfo = TS.e5_u(runs, 'F0', 'E')
+TS.add_oracle(runs, 'E5', 'F0', CC.RATIO, 0.05, u)
+TS.add_oracle(runs, 'E5p', 'F0', CC.RATIO, 0.05, TS.permute_u(runs, u))
+SEED_PO_LB = SEED_PO_RECORD if TEST else CC.SEED_PARTIAL
+N_PO_LB = add_partial(runs, SEED_PO_LB)
+DET['LB.partial_oracle_draw'] = dict(seed=SEED_PO_LB, n_uniforms=N_PO_LB)
+if TEST: assert N_PO_LB == 9307
+
+EV = Events(runs, 'masks')
+EV1 = Events(runs, 'mask1')
+W = CC.counts(NR, NB, 20261113 if TEST else CC.SEED_BOOT)
+DET['LB.draw'] = 'boot_counts(%d, %d, %d)' % (NR, NB, 20261113 if TEST else CC.SEED_BOOT)
+
+# ------------------------------------------------------------------------------------------------ 1-2: W1 sources, .dec, partial oracles
+NAMES_W1 = ['F0', 'E', 'N', 'E5', 'E5p', 'CK3'] + PO
+GW1 = EV.G('W1', NAMES_W1, sW1)
+log('W1 gridless events built')
+PT = {pi: TS.rr_gl(GW1, 'F0', 'E', NAMES_W1[2:], pop=pi) for pi in range(5)}
+if TEST:                                                  # Events = a9_common_v01.gridless_sources (library path)
+    Gl = TS.gridless(runs, ['F0', 'E', 'N', 'CK3'])
+    ref = TS.rr_gl(Gl, 'F0', 'E', ['N', 'CK3'], pop=0)
+    assert ref['denE'] == PT[0]['denE'] and ref['D']['N'] == PT[0]['D']['N'] and ref['D']['CK3'] == PT[0]['D']['CK3']
+    CHK['Events == trk_score_v01.gridless (F0, E, N, CK3, all)'] = dict(ok=True)
+P1 = CC.prep(GW1, ['F0', 'E', 'N', 'E5', 'E5p', 'CK3'], 0)
+chk = CC.evaluate(P1, np.ones((1, NR)))
+assert chk['denE'][0] == PT[0]['denE'] and all(chk['D'][a][0] == PT[0]['D'][a] for a in ('N', 'E5', 'E5p', 'CK3'))
+B1 = CC.evaluate(P1, W)
+log('W1 resamples done (%d)' % W.shape[0])
+p0 = PT[0]; n0 = p0['n']
+V['LB.R.dec'] = float(p0['R_deceq'])
+DET['LB.R.dec.ci_nominal95'] = ci95(L.dec_eq(B1['denE'], B1['n']))
+DET['LB.R'] = dict(R_pp=p0['R_pp'], n=n0, ci=ci95(B1['denE'] / L.NLEV))
+for a, key in (('N', 'LB.RR_N'), ('E5', 'LB.RR_E5'), ('CK3', 'LB.RR_CK3')):
+    V[key + '.dec'] = float(p0['D_deceq'][a]); put_ci(key + '.dec', L.dec_eq(B1['D'][a], B1['n']))
+    DET[key] = dict(point=p0['RR'][a], ci=ci95(rr_b(B1['D'][a], B1['denE'])))
+V['LB.RR_E5mP.dec'] = float(L.dec_eq(p0['D']['E5'] - p0['D']['E5p'], n0))
+put_ci('LB.RR_E5mP.dec', L.dec_eq(B1['D']['E5'] - B1['D']['E5p'], B1['n']))
+DET['LB.RR_E5mP'] = dict(point=p0['RR']['E5'] - p0['RR']['E5p'], ci=ci95(rr_b(B1['D']['E5'], B1['denE']) - rr_b(B1['D']['E5p'], B1['denE'])))
+for pi, pop in enumerate(POPS):
+    po = [PT[pi]['RR'][nm] for nm in PO]
+    for nm, x in zip(PO, po): V['LB.%s.%s' % (pop, nm)] = num(x)
+    V['LB.%s.grading_ok' % pop] = grading(po)
+    DET['LB.%s' % pop] = dict(n=PT[pi]['n'], R_pp=PT[pi]['R_pp'], R_deceq=PT[pi]['R_deceq'],
+                              PO_D_deceq={nm: PT[pi]['D_deceq'][nm] for nm in PO})
+for nm in PO: V['LB.' + nm] = V['LB.all.' + nm]
+V['LB.grading_ok'] = V['LB.all.grading_ok']
+DET['LB.e5_u'] = uinfo
+log('LB .dec and partial oracles (gridless) done')
+
+# grid version of the partial oracles (details); test: the values of record (truth phase, draw 20261118)
+Xg = C11.tables(runs, ('W1',), ['F0', 'E'] + PO)
+pg = C11.points(Xg, ['E'] + PO, pops=range(5))
+DET['LB.grid_PO'] = {pop: [L.ratio(pg[pi]['D'][nm], pg[pi]['denE']) for nm in PO] for pi, pop in enumerate(POPS)}
+if TEST:
+    REVG = json.loads(pathlib.Path(r'ARS_TRIAL\revision_v11\analysis\out\REV_G_PARTIAL_DRAWS_v01.json').read_text(encoding='utf-8'))
+    A98 = json.loads((CC.V12A / 'out' / 'A9_8_GRADING_BEFORE_STOP_v01.json').read_text(encoding='utf-8'))
+    for r in runs:
+        r['masks_truth'] = C11.masks_of(r['ev'], r['v0'], r['ph']) + (r['ev'] & (r['ph'] <= 1),)
+    Xt = C11.tables(runs, ('W1',), ['F0', 'E'] + PO, masks_key='masks_truth')
+    pt_ = C11.points(Xt, ['E'] + PO, pops=range(7))
+    for pi, pop in enumerate(['all', 'moving', 'phase0', 'phase1', 'phase2']):
+        cmp('PO grid truth-phase %s (rev_g of record)' % pop, [L.ratio(pt_[pi]['D'][nm], pt_[pi]['denE']) for nm in PO],
+            [REVG['pops'][pop]['P%s' % nm[2:]]['of_record'] for nm in PO])
+    cmp('PO grid before stop (A9-8 of record)', [L.ratio(pt_[6]['D'][nm], pt_[6]['denE']) for nm in PO],
+        [A98['of_record']['P%s' % nm[2:]] for nm in PO])
+    gb = [L.ratio(pt_[6]['D'][nm], pt_[6]['denE']) for nm in PO]
+    DET['LB.grid_PO_truth_before_stop_grades'] = grading(gb)
+    cmp('A9-8 grades_by_rule', float(grading(gb)), float(A98['grades_by_rule']))
+log('grid partial oracles done')
+
+# ------------------------------------------------------------------------------------------------ IMM (.dec)
+if TEST:
+    ri = []
+    for rid in run_ids:
+        z = np.load(BRET / 'retrack' / 'B1' / (rid + '_arrays.npz'), allow_pickle=False)
+        ev = z['evaluated'].astype(bool)
+        ri.append(dict(run=rid, desired=float(z['des'][0]), idx55=z['idx55'].astype(np.int64), clear1=L.clean_clear(z['clear']),
+                       vbar=z['vbar'], ev=ev, masks=(ev,), crit={'F0': z['cF0'], 'E': z['cE'], 'N': z['cN']}, sel={}, late={}, k=z['k']))
+else:
+    ri = CC.load_variant(run_ids, 'B1')
+rs = TS.ratio_summary(TS.margin_ratios(ri, 'N', 'F0'))
+ui, uii = TS.e5_u(ri, 'F0', 'E')
+TS.add_oracle(ri, 'E5x', 'F0', rs['median'], rs['A'], ui)
+Gi = TS.gridless(ri, ['F0', 'E', 'N', 'E5x'])
+pti = TS.rr_gl(Gi, 'F0', 'E', ['N', 'E5x'], pop=0)
+Pi = CC.prep(Gi, ['F0', 'E', 'N', 'E5x'], 0)
+Bi = CC.evaluate(Pi, W)
+assert CC.evaluate(Pi, np.ones((1, NR)))['D']['N'][0] == pti['D']['N']
+V['LB.IMM.r.dec'] = float(pti['D_deceq']['N']); put_ci('LB.IMM.r.dec', L.dec_eq(Bi['D']['N'], Bi['n']))
+V['LB.IMM.c.dec'] = float(pti['D_deceq']['E5x']); put_ci('LB.IMM.c.dec', L.dec_eq(Bi['D']['E5x'], Bi['n']))
+DET['LB.IMM'] = dict(r=pti['RR']['N'], c=pti['RR']['E5x'], R_pp=pti['R_pp'], R_deceq=pti['R_deceq'], ratio=rs, e5_u=uii)
+if TEST:
+    BB1 = json.loads((BRET / 'banalysis' / 'B_B1_v01.json').read_text(encoding='utf-8'))['points']['all']
+    cmp('IMM r (B_B1_v01 all)', pti['RR']['N'], BB1['RR']['N'], 1e-12)
+    cmp('IMM c (B_B1_v01 all, E5x)', pti['RR']['E5x'], BB1['RR']['E5x'], 1e-12)
+    cmp('IMM r.dec (B_B1_v01 D_deceq N)', pti['D_deceq']['N'], BB1['D_deceq']['N'], 1e-12)
+    cmp('IMM c.dec (B_B1_v01 D_deceq E5x)', pti['D_deceq']['E5x'], BB1['D_deceq']['E5x'], 1e-12)
+log('IMM done')
+
+# ------------------------------------------------------------------------------------------------ H4 numerator (.dec), c_lead_v13 design
+PHPOP = [2, 3, 4]
+
+
+def phase_tables(rs_, masks_fn):
+    for r in rs_: r['masks_h4'] = masks_fn(r)
+    X = C11.tables(rs_, ('W1',), ['F0', 'E'], masks_key='masks_h4')
+    return X['F0'], X['E']
+
+
+def est_masks(thr):
+    def f(r):
+        eph = TS.est_phase(r['lead']['vhat'], r['lead']['ahat_long'], r['lead']['lead_found'], thr) if 'lead' in r else \
+            TS.est_phase(r['z']['vhat'], r['z']['ahat_long'], r['z']['lead_found'], thr)
+        return CC.masks_tracker_phase(r['ev'], r['v0'], eph)
+    return f
+
+
+def h4_parts(st, w):
+    """cd_common_v13.H4Stat.share (same lines), returning the sums: num_rec = sum(F_F0 - F_ps), num_like = sum(F_1 - F_ps),
+    den = sum(F_F0 - F_E), and n (decisions)."""
+    fF0, fE, tri, one = st.fF0, st.fE, st.tri, st.one
+    Ta = np.tensordot(w, fF0[:, :, 0, :], axes=(0, 0)); TE = np.tensordot(w, fE[:, :, 0, :], axes=(0, 0))
+    c = L.curves_w({'F0': Ta, 'E': TE}, 0); cF0, wF0 = c['F0']; cE, wE = c['E']
+    lev_ = L.levels_of(cF0, cE, cF0[0])
+    f0 = L.frontier(cF0, wF0, lev_); fe = L.frontier(cE, wE, lev_)
+    Tph = [np.tensordot(w, fF0[:, :, pi, :], axes=(0, 0)) for pi in (2, 3, 4)]
+    nl = tri.shape[0]; Wv = np.zeros(nl); Sv = np.zeros(nl); Kv = np.zeros(nl)
+    for q in range(3):
+        g = tri[:, q]; okg = g >= 0
+        Wv[okg] += Tph[q][g[okg], 1]; Sv[okg] += Tph[q][g[okg], 2]; Kv[okg] += Tph[q][g[okg], 3]
+    n = float(Ta[0, 0])
+    with np.errstate(divide='ignore', invalid='ignore'):
+        cp = np.where(tri[:, 0] >= 0, 100. * Sv / Kv, np.nan); wp = np.where(tri[:, 0] >= 0, 100. * Wv / n, np.nan)
+        ok1 = one >= 0; g1 = np.clip(one, 0, None)
+        c1 = np.where(ok1, 100. * Ta[g1, 2] / Ta[g1, 3], np.nan); w1 = np.where(ok1, 100. * Ta[g1, 1] / n, np.nan)
+    fps = L.frontier(np.concatenate([[cF0[0]], cp]), np.concatenate([[wF0[0]], wp]), lev_)
+    f1 = L.frontier(np.concatenate([[cF0[0]], c1]), np.concatenate([[wF0[0]], w1]), lev_)
+    return float(np.sum(f0 - fps)), float(np.sum(f1 - fps)), float(np.sum(f0 - fe)), n
+
+
+design = CC.load_old_lead()
+mfn = est_masks(-1.0)
+dF0, dE = phase_tables(design, mfn)
+wd = np.ones(len(design))
+Tall = np.tensordot(wd, dF0[:, :, 0, :], axes=(0, 0)); TEd = np.tensordot(wd, dE[:, :, 0, :], axes=(0, 0))
+cur = L.curves_w({'F0': Tall, 'E': TEd}, 0)
+levd = L.levels_of(cur['F0'][0], cur['E'][0], cur['F0'][0][0])
+tri = triple_choice([np.tensordot(wd, dF0[:, :, pi, :], axes=(0, 0)) for pi in PHPOP], levd)
+one = single_choice(Tall, levd)
+fF0, fE = phase_tables(runs, mfn)
+st4 = CC.H4Stat(fF0, fE, tri, one)
+nr, nl_, dn, nn = h4_parts(st4, np.ones(NR))
+sh_full = st4.share(np.ones(NR))
+assert nr / dn == sh_full[0] and nl_ / dn == sh_full[1]
+H4B = np.array([h4_parts(st4, W[b]) for b in range(W.shape[0])])          # (B, 4)
+for b in range(min(50, W.shape[0])):
+    sb = st4.share(W[b])
+    assert (H4B[b, 0] / H4B[b, 2] == sb[0]) or not (H4B[b, 2] > 0)
+V['LB.PS.rec.dec'] = float(L.dec_eq(nr, nn)); put_ci('LB.PS.rec.dec', L.dec_eq(H4B[:, 0], H4B[:, 3]))
+DET['LB.PS.rec'] = dict(point=sh_full[0], like=sh_full[1], ci=ci95(ratio_b(H4B[:, 0], H4B[:, 2])), num_rec_sum=nr, den_sum=dn, n=nn)
+log('H4 numerator done')
+
+# ------------------------------------------------------------------------------------------------ 4-5: reaction and stop, terciles, delayed stop
+NM_R = ['F0', 'E', 'O', 'N', 'CK3']
+GWR = EV1.G('WR', NM_R, sWR)
+pWR = TS.rr_gl(GWR, 'F0', 'E', ['O', 'N', 'CK3'], pop=0)
+PWR = CC.prep(GWR, ['F0', 'E', 'O'], 0); BWR = CC.evaluate(PWR, W)
+V['LB.RS075.rel'] = num(pWR['denE'] / p0['denE']) if p0['denE'] > 0 else None
+put_ci('LB.RS075.rel', ratio_b(BWR['denE'], B1['denE']))
+DET['LB.RS075'] = dict(R_pp=pWR['R_pp'], den0_deceq=pWR['D_deceq']['O'], RR={a: pWR['RR'][a] for a in ('N', 'CK3')},
+                       R_pp_ci=ci95(BWR['denE'] / L.NLEV), den0_deceq_ci=ci95(L.dec_eq(BWR['D']['O'], BWR['n'])))
+log('reaction and stop (0.75 s) done')
+
+ids_ = [r['run'] for r in runs]; dec_ = [r['decel'] for r in runs]
+T3 = TS.terciles(ids_, dec_)
+NM_DS = ['F0', 'E', 'O', 'N', 'NA', 'A1', 'CK3', 'Q']
+terc = []
+for ti, members in enumerate(T3):
+    idx = [i for i, r in enumerate(runs) if r['run'] in members]
+    gr = EV1.G('WR', NM_R, sWR, idx); g1 = EV.G('W1', ['F0', 'E', 'N', 'CK3'], sW1, idx)
+    a_wr = TS.rr_gl(gr, 'F0', 'E', ['O', 'N', 'CK3'], pop=0); a_3s = TS.rr_gl(g1, 'F0', 'E', ['N', 'CK3'], pop=0)
+    dd = [runs[i]['decel'] for i in idx if runs[i]['decel'] is not None]
+    rel = a_wr['R_pp'] / a_3s['R_pp'] if a_3s['R_pp'] > 0 else None
+    den0 = float(a_wr['D_deceq']['O'])
+    k = 'LB.T%d' % (ti + 1)
+    V[k + '.rel'] = num(rel); V[k + '.den0.dec'] = den0; V[k + '.evaluable'] = bool(den0 >= L.MIN_DEC_EQ)
+    V[k + '.range'] = ('%.2f\u2013%.2f' % (min(dd), max(dd))) if dd else None
+    terc.append(dict(name='tercile %d' % (ti + 1), runs=members, decel_min_max=[min(dd), max(dd)] if dd else None, idx=idx,
+                     W_R=dict(R_pp=a_wr['R_pp'], R_deceq=a_wr['R_deceq'], den0_deceq=den0, RR={a: a_wr['RR'][a] for a in ('N', 'CK3')}, n=a_wr['n']),
+                     W1=dict(R_pp=a_3s['R_pp'], R_deceq=a_3s['R_deceq'], RR={a: a_3s['RR'][a] for a in ('N', 'CK3')}, n=a_3s['n']),
+                     room_ratio_WR_over_3s=rel))
+ev_rel = [V['LB.T%d.rel' % (i + 1)] for i in range(3) if V['LB.T%d.evaluable' % (i + 1)] and V['LB.T%d.rel' % (i + 1)] is not None]
+V['LB.T.relmin'] = min(ev_rel) if ev_rel else None; V['LB.T.relmax'] = max(ev_rel) if ev_rel else None
+DET['LB.terciles'] = [{k: v for k, v in t.items() if k != 'idx'} for t in terc]
+DET['LB.realised_decel'] = dict(zip(ids_, dec_))
+
+GDS = EV1.G('DS', NM_DS, sDS)
+pDS = TS.rr_gl(GDS, 'F0', 'E', NM_DS[2:], pop=0)
+PDS = CC.prep(GDS, ['F0', 'E', 'O'], 0); BDS = CC.evaluate(PDS, W)
+V['LB.DS.rel'] = num(pDS['denE'] / p0['denE']) if p0['denE'] > 0 else None
+put_ci('LB.DS.rel', ratio_b(BDS['denE'], B1['denE']))
+V['LB.DS.den0.dec'] = float(pDS['D_deceq']['O'])
+DET['LB.DS'] = dict(rule='tau_i = 0.75 + U(0, 0.75), 6 m/s^2; default_rng(20261916)', R_pp=pDS['R_pp'], R_deceq=pDS['R_deceq'],
+                    den0_deceq=pDS['D_deceq']['O'], RR={a: pDS['RR'][a] for a in NM_DS[3:]},
+                    R_pp_ci=ci95(BDS['denE'] / L.NLEV), den0_deceq_ci=ci95(L.dec_eq(BDS['D']['O'], BDS['n'])))
+log('terciles and delayed stop done')
+
+if TEST:                     # B6 of record: points, and intervals on the first 2,000 rows of the draw of record over each run set
+    def b6_eval(idx, sc, safe_fn, names, ev_obj):
+        g = ev_obj.G(sc, ['F0', 'E'] + names + ['O'], safe_fn, idx)
+        p = TS.rr_gl(g, 'F0', 'E', names + ['O'], pop=0)
+        Pp = CC.prep(g, ['F0', 'E'] + names + ['O'], 0)
+        b = CC.evaluate(Pp, L.boot_counts(len(idx), 20000, 20261113)[:2000])
+        return dict(R_pp=p['R_pp'], R_deceq=p['R_deceq'], den0_deceq=p['D_deceq']['O'], RR={a: p['RR'][a] for a in names}, n=p['n'],
+                    evaluable_den0=bool(p['D_deceq']['O'] >= 10.), R_pp_ci=L.summ(b['denE'] / L.NLEV, p['R_pp'])['ci'],
+                    den0_deceq_ci=L.pct(L.dec_eq(b['D']['O'], b['n'])),
+                    RR_ci={a: L.summ(C11.rat(b['D'][a], b['denE']), p['RR'][a])['ci'] for a in names})
+
+    def cmp_b6(tag, mine, ref):
+        for f in ('R_pp', 'R_deceq', 'den0_deceq', 'n'):
+            cmp('B6 %s %s' % (tag, f), mine[f], ref[f])
+        cmp('B6 %s evaluable_den0' % tag, float(mine['evaluable_den0']), float(ref['evaluable_den0']))
+        for f in ('R_pp_ci', 'den0_deceq_ci'):
+            cmp('B6 %s %s' % (tag, f), mine[f], ref[f])
+        for a in ref['RR']:
+            am = 'A1' if a == 'AM' else a
+            cmp('B6 %s RR %s' % (tag, a), mine['RR'][am], ref['RR'][a]); cmp('B6 %s RR_ci %s' % (tag, a), mine['RR_ci'][am], ref['RR_ci'][a])
+
+    allidx = list(range(NR))
+    for ti, (members, ref) in enumerate(zip([ids_] + T3, B6['terciles'])):
+        cmp('B6 %s runs' % ref['name'], float(list(members) == list(ref['runs'])), 1.)
+        idx = allidx if ti == 0 else terc[ti - 1]['idx']
+        cmp_b6(ref['name'] + ' W_R', b6_eval(idx, 'WR', sWR, ['N', 'CK3'], EV1), ref['W_R'])
+        cmp_b6(ref['name'] + ' W1', b6_eval(idx, 'W1', sW1, ['N', 'CK3'], EV), ref['W1'])
+        if ti > 0:
+            cmp('B6 %s room ratio (LB.T%d.rel)' % (ref['name'], ti), V['LB.T%d.rel' % ti], ref['room_ratio_WR_over_3s'])
+            cmp('B6 %s decel_min_max' % ref['name'], terc[ti - 1]['decel_min_max'], ref['decel_min_max'])
+    cmp('B6 all room ratio (LB.RS075.rel)', V['LB.RS075.rel'], B6['terciles'][0]['room_ratio_WR_over_3s'])
+    cmp_b6('delayed stop', b6_eval(allidx, 'DS', sDS, ['N', 'NA', 'A1', 'CK3', 'Q'], EV1), B6['delayed_stop'])
+    fx = TS.rr_gl(EV1.G('WR', ['F0', 'E', 'N', 'NA', 'A1', 'CK3', 'Q', 'O'], sWR), 'F0', 'E', ['N', 'NA', 'A1', 'CK3', 'Q', 'O'], pop=0)
+    for a in ('N', 'NA', 'AM', 'CK3', 'Q'):
+        cmp('B6 fixed_tau_0p75_point RR %s' % a, fx['RR']['A1' if a == 'AM' else a], B6['fixed_tau_0p75_point']['RR'][a])
+    log('B6 comparison done')
+    # consistency of .dec with the existing first program's old-run output (its draw: boot_counts(35, 200, 20261911))
+    TL = json.loads((CC.OUT / 'TESTOLD_C_LEAD_H0_H5_v13.json').read_text(encoding='utf-8'))
+    Bx = CC.evaluate(P1, CC.counts(NR, 200, CC.SEED_BOOT))
+    cmp('LB.R.dec = c_lead room R_deceq', V['LB.R.dec'], TL['room']['R_deceq'])
+    cmp('LB.R.dec ci (200 rows of 20261911) = c_lead R_deceq_ci', L.pct(L.dec_eq(Bx['denE'], Bx['n'])), TL['room']['R_deceq_ci'])
+    for a in ('N', 'E5', 'E5p', 'CK3'):
+        cmp('D_deceq %s point = c_lead descriptive_D_deceq' % a, float(PT[0]['D_deceq'][a]), TL['descriptive_D_deceq'][a]['point'])
+        cmp('D_deceq %s ci (200 rows of 20261911) = c_lead' % a, L.pct(L.dec_eq(Bx['D'][a], Bx['n'])), TL['descriptive_D_deceq'][a]['ci'])
+    cmp('LB.RR_E5mP.dec = D_deceq(E5) - D_deceq(E5p) of c_lead', V['LB.RR_E5mP.dec'],
+        TL['descriptive_D_deceq']['E5']['point'] - TL['descriptive_D_deceq']['E5p']['point'], 1e-9)
+    cmp('RR_E5mP point = c_lead main RR_E5_minus_E5p', DET['LB.RR_E5mP']['point'], TL['main']['RR_E5_minus_E5p']['point'])
+    for a, nm in (('N', 'RR_N'), ('E5', 'RR_E5'), ('CK3', 'RR_CK3')):
+        cmp('share %s point = c_lead main' % a, PT[0]['RR'][a], TL['main'][nm]['point'])
+        cmp('share %s = .dec / R.dec' % a, PT[0]['RR'][a], V['LB.%s.dec' % nm] / V['LB.R.dec'], 1e-12)
+    cmp('LB.PS.rec share = c_lead H4 record basis', DET['LB.PS.rec']['point'], TL['H4']['record_basis']['point'])
+    cmp('LB.PS.rec like-for-like = c_lead H4 like_for_like', DET['LB.PS.rec']['like'], TL['H4']['like_for_like']['point'])
+    cmp('LB.PS.rec.dec / LB.R.dec(grid room) = share', V['LB.PS.rec.dec'] / float(L.dec_eq(dn, nn)), DET['LB.PS.rec']['point'], 1e-12)
+    log('consistency with TESTOLD_C_LEAD done')
+
+# ------------------------------------------------------------------------------------------------ 6: stop reliance (A9-6 part (1))
+ARMS_REL = ['N', 'NA', 'A1', 'CK3']
+
+
+def reliance(rs_, sname, pi=0):
+    """a9_6_stop_reliance_v01 part (1), same lines, one population (pi); safe set r['safe_x'][sname]."""
+    X = C11.tables(rs_, ('X', sname), ['F0', 'E', 'O'] + ARMS_REL)
+    Tsum = {a: X[a].sum(axis=0)[:, pi, :] for a in X}
+    cur = L.curves_w({a: Tsum[a] for a in Tsum if a != 'O'}, 0)
+    cF0, wF0 = cur['F0']; cE, wE = cur['E']
+    lev = L.levels_of(cF0, cE, cF0[0])
+    n = float(Tsum['F0'][0, 0])
+    ent = dict(n=n)
+    for a in ['F0', 'E'] + ARMS_REL + ['O']:
+        only_stop = 0.; unsafe3 = 0.; unsafe_stop = 0.
+        if a == 'O':
+            for r in rs_:
+                m = r['masks'][pi]; sx = r['safe_x'][sname]; s1 = r['clear1'] > 0.
+                sel = L.select_first_safe(sx, r['idx55'])[0]; ar = np.arange(sel.size)
+                only_stop += float((m & ~s1[ar, sel] & sx[ar, sel]).sum()); unsafe3 += float((m & ~s1[ar, sel]).sum())
+                unsafe_stop += float((m & ~sx[ar, sel]).sum())
+            ent[a] = dict(share_safe_only_with_stop=only_stop / n, share_unsafe_3s=unsafe3 / n, share_unsafe_with_stop=unsafe_stop / n)
+            continue
+        f, ix = A9.frontier_argmin(cur[a][0], cur[a][1], lev)
+        if a in ('F0', 'E'):
+            cnt = np.bincount(ix[ix >= 0], minlength=len(C11.GRID)).astype(float); cnt0 = 0.; base = a
+        else:
+            cnt0 = float((ix == 0).sum()); cnt = np.bincount(ix[ix >= 1] - 1, minlength=len(C11.GRID)).astype(float); base = a
+        for r in rs_:
+            m = r['masks'][pi]; sx = r['safe_x'][sname]; s1 = r['clear1'] > 0.; ar = np.arange(r['n_dec'])
+            sA = C11.sel_of(r, base); sF = C11.sel_of(r, 'F0')
+            os_ = (~s1[ar[None, :], sA] & sx[ar[None, :], sA]) & m[None, :]
+            u3 = (~s1[ar[None, :], sA]) & m[None, :]
+            us = (~sx[ar[None, :], sA]) & m[None, :]
+            only_stop += float(cnt @ os_.sum(axis=1)); unsafe3 += float(cnt @ u3.sum(axis=1)); unsafe_stop += float(cnt @ us.sum(axis=1))
+            if cnt0:
+                os0 = (~s1[ar, sF[0]] & sx[ar, sF[0]]) & m; u30 = (~s1[ar, sF[0]]) & m; us0 = (~sx[ar, sF[0]]) & m
+                only_stop += cnt0 * float(os0.sum()); unsafe3 += cnt0 * float(u30.sum()); unsafe_stop += cnt0 * float(us0.sum())
+        ent[a] = dict(share_safe_only_with_stop=only_stop / L.NLEV / n, share_unsafe_3s=unsafe3 / L.NLEV / n,
+                      share_unsafe_with_stop=unsafe_stop / L.NLEV / n)
+    return ent
+
+
+for r in runs:
+    r.setdefault('safe_x', {})['wr'] = L.clean_clear(r['clearWR']) > 0.
+rel = reliance(runs, 'wr')
+V['LB.REL_F0'] = rel['F0']['share_safe_only_with_stop']; V['LB.REL_N'] = rel['N']['share_safe_only_with_stop']
+V['LB.REL_CK3'] = rel['CK3']['share_safe_only_with_stop']
+DET['LB.REL'] = dict(scoring='WR075 (3 s window, clearR075 / cache of record)', all=rel)
+if TEST:
+    A96 = json.loads((CC.V12A / 'out' / 'A9_6_STOP_RELIANCE_v01.json').read_text(encoding='utf-8'))['reliance']['all']
+    for r in runs:
+        x = np.load(V11X / (r['run'] + '.npz'), allow_pickle=False)
+        assert np.array_equal(x['k'], r['k'])
+        r['safe_x']['est'] = L.clean_clear(x['clearX_' + WR_KEY]) > 0.
+    rel_x = reliance(runs, 'est')
+    for a in ['F0', 'E', 'N', 'NA', 'A1', 'CK3', 'O']:
+        for f in ('share_safe_only_with_stop', 'share_unsafe_3s', 'share_unsafe_with_stop'):
+            cmp('A9-6 all %s %s (extended truth, of record)' % (a, f), rel_x[a][f], A96[a][f])
+    DET['LB.REL_extended_truth_of_record_method'] = rel_x
+log('stop reliance done')
+
+# ================================================================================================ CUT-IN
+if TEST:
+    rows = [r for r in csv.DictReader(open(M4 / 'run_index_m4_v02.csv', encoding='utf-8'))
+            if r['use'] == '1' and r['set'] == 'tune' and r['family'] == 'cutin']
+    ci_ids = sorted(r['archive'] for r in rows); assert len(ci_ids) == 20
+else:
+    ci_ids = CC.c_run_ids('cutin')
+cruns = []
+for rid in ci_ids:
+    if TEST:
+        z = np.load(STORED / (rid + '.npz'), allow_pickle=False)
+        b = np.load(BRET / 'retrack' / 'CV0' / (rid + '_arrays.npz'), allow_pickle=False)
+        assert np.array_equal(b['k'], z['k'])
+        for kk in ('cF0', 'cE', 'cN'):
+            assert np.array_equal(np.isfinite(b[kk]), np.isfinite(z[kk])) and \
+                np.nanmax(np.abs(np.where(np.isfinite(z[kk]), b[kk] - z[kk], 0.))) <= 1e-12, (rid, kk)
+        ck3 = b['cCK3']
+        s = np.load(OLDOUT / 'x' / (rid + '.npz'), allow_pickle=False)
+    else:
+        z = np.load(CC.ARR / 'CV0' / (rid + '.npz'), allow_pickle=False)
+        assert json.loads(str(z['meta']))['family'] == 'cutin', rid
+        ck3 = z['cCK3']
+        s = np.load(CC.ARR / 'S57A' / (rid + '.npz'), allow_pickle=False)
+    assert np.array_equal(s['k'], z['k']), rid
+    ev = z['evaluated'].astype(bool); rel_ = s['rel']; strat = s['stratum']
+    win = ev & np.isfinite(rel_) & (rel_ >= -1.0) & (rel_ <= 4.0)
+    cruns.append(dict(run=rid, desired=float(z['des'][0]), idx55=z['idx55'].astype(np.int64), clear1=L.clean_clear(z['clear']),
+                      vbar=z['vbar'], ev=ev, sel={}, late={}, k=z['k'], n_dec=len(z['k']),
+                      masks=(win, win & (strat == '<1s'), ev),
+                      crit={'F0': np.asarray(z['cF0'], float), 'E': np.asarray(z['cE'], float), 'N': np.asarray(z['cN'], float),
+                            'CK3': np.asarray(ck3, float)},
+                      kc=int(s['kc']), n_window=int(win.sum())))
+NC = len(cruns)
+uc, ucinfo = TS.e5_u(cruns, 'F0', 'E')
+TS.add_oracle(cruns, 'E5', 'F0', CC.RATIO, 0.05, uc)
+TS.add_oracle(cruns, 'E5p', 'F0', CC.RATIO, 0.05, TS.permute_u(cruns, uc))
+N_PO_CI = add_partial(cruns, CC.SEED_PARTIAL)
+DET['CI.partial_oracle_draw'] = dict(seed=CC.SEED_PARTIAL, n_uniforms=N_PO_CI)
+DET['CI.runs'] = [dict(run=r['run'], event_tick=(None if r['kc'] < 0 else r['kc']), n_window=r['n_window']) for r in cruns]
+DET['CI.e5_u'] = ucinfo
+GC = TS.gridless(cruns, NAMES_W1)
+ptc = TS.rr_gl(GC, 'F0', 'E', NAMES_W1[2:], pop=0)
+pty = TS.rr_gl(GC, 'F0', 'E', ['N'], pop=1)
+Wc = CC.counts(NC, NB, 20261113 if TEST else CC.SEED_BOOT)
+DET['CI.draw'] = 'boot_counts(%d, %d, %d)' % (NC, NB, 20261113 if TEST else CC.SEED_BOOT)
+Pc = CC.prep(GC, ['F0', 'E', 'N', 'E5', 'E5p', 'CK3'], 0); Bc = CC.evaluate(Pc, Wc)
+assert CC.evaluate(Pc, np.ones((1, NC)))['denE'][0] == ptc['denE']
+for a, key in (('CK3', 'CI.RR_CK3'), ('E5', 'CI.RR_E5')):
+    V[key] = num(ptc['RR'][a]); put_ci(key, rr_b(Bc['D'][a], Bc['denE']))
+V['CI.RR_E5mP'] = num(ptc['RR']['E5'] - ptc['RR']['E5p']) if fin(ptc['RR']['E5']) else None
+put_ci('CI.RR_E5mP', rr_b(Bc['D']['E5'], Bc['denE']) - rr_b(Bc['D']['E5p'], Bc['denE']))
+V['CI.RR_N.dec'] = float(ptc['D_deceq']['N']); put_ci('CI.RR_N.dec', L.dec_eq(Bc['D']['N'], Bc['n']))
+V['CI.Y.R.dec'] = float(pty['R_deceq']) if fin(pty['R_deceq']) else 0.
+po = [ptc['RR'][nm] for nm in PO]
+for nm, x in zip(PO, po): V['CI.' + nm] = num(x)
+V['CI.grading_ok'] = grading(po)
+DET['CI.window'] = dict(n=ptc['n'], R_pp=ptc['R_pp'], R_deceq=ptc['R_deceq'], RR={a: ptc['RR'][a] for a in NAMES_W1[2:]},
+                        D_deceq={a: ptc['D_deceq'][a] for a in NAMES_W1[2:]}, R_pp_ci=ci95(Bc['denE'] / L.NLEV),
+                        RR_N_ci=ci95(rr_b(Bc['D']['N'], Bc['denE'])))
+DET['CI.young'] = dict(n=pty['n'], R_pp=pty['R_pp'], R_deceq=pty['R_deceq'])
+if TEST:
+    TC = json.loads((CC.OUT / 'TESTOLD_C_CUTIN_K0_K2_v13.json').read_text(encoding='utf-8'))
+    cmp('cut-in event ticks (20 runs)', float(all(f['event_tick'] == r['event_tick'] for f, r in zip(TC['runs'], DET['CI.runs']))), 1.)
+    cmp('cut-in window sizes (20 runs)', float(all(f['n_window'] == r['n_window'] for f, r in zip(TC['runs'], DET['CI.runs']))), 1.)
+    cmp('cut-in window room R_deceq (TESTOLD_C_CUTIN descriptive.window)', ptc['R_deceq'], TC['descriptive']['window']['R_deceq']['point'])
+    cmp('cut-in window RR_N point (K1)', ptc['RR']['N'], TC['K1']['RR_N']['point'])
+    kr, wr_ = TC['K1']['RR_N']['point'], TC['descriptive']['window']['R_deceq']['point']
+    if fin(kr) and fin(wr_):
+        cmp('CI.RR_N.dec = K1 RR_N x window R_deceq', V['CI.RR_N.dec'], kr * wr_, 1e-9)
+    else:                                  # no room in the window: RR_N undefined, D(N) itself is defined
+        cmp('CI window: RR_N undefined where the room is 0 (as K1)', ptc['RR']['N'], kr)
+    cmp('CI young R_deceq (descriptive.young.R_deceq; NaN = no young-track decision)', num(pty['R_deceq']),
+        TC['descriptive']['young']['R_deceq']['point'])
+    cmp('cut-in e5_u n_evaluated', ucinfo['n_evaluated'], TC['e5_u']['n_evaluated'])
+log('cut-in done (%d runs)' % NC)
+
+# ================================================================================================ TUNING RUNS (A10 sec. 5.6; old data)
+TUNE = sorted(p.stem for p in A4DRY.glob('*.npz'))
+truns = []
+for rid in TUNE:
+    z = np.load(STORED / (rid + '.npz'), allow_pickle=False); m = json.loads(str(z['meta']))
+    assert m.get('family') == 'lead_braking', rid
+    x = np.load(A4DRY / (rid + '.npz'), allow_pickle=False); assert np.array_equal(x['k'], z['k'])
+    tg = np.load(OLDOUT / 'tg_tune' / (rid + '.npz'), allow_pickle=False); assert np.array_equal(tg['k'], z['k'])
+    assert json.loads(str(tg['meta']))['cF0_rows_differ'] == 0
+    b = np.load(BRET / 'retrack' / 'CV0' / (rid + '_arrays.npz'), allow_pickle=False); assert np.array_equal(b['k'], z['k'])
+    for kk in ('cF0', 'cE', 'cN'):
+        assert np.array_equal(np.isfinite(b[kk]), np.isfinite(z[kk])) and \
+            np.nanmax(np.abs(np.where(np.isfinite(z[kk]), b[kk] - z[kk], 0.))) <= 1e-12, (rid, kk)
+    ev = z['evaluated'].astype(bool); v0 = z['v0']; ph = x['phase'].astype(np.int64)
+    eph = TS.est_phase(b['vhat'], b['ahat_long'], b['lead_found'], -1.0)
+    truns.append(dict(run=rid, desired=float(m['desired']), k=z['k'], ev=ev, v0=v0, ph=ph, vbar=z['vbar'], idx55=z['idx55'],
+                      clear1=L.clean_clear(z['clear']), n_dec=len(z['k']), masks=CC.masks_tracker_phase(ev, v0, eph),
+                      masks_truth=C11.masks_of(ev, v0, ph), sel={}, late={},
+                      crit={'F0': z['cF0'], 'E': z['cE'], 'N': z['cN'], 'NA': x['cNA'], 'A1': x['cA1'], 'CK3': x['cCK3'], 'Q': x['cQ'],
+                            'TG': tg['cTG2']}))
+NT = len(truns); assert NT == 20
+TN = ['F0', 'E', 'N', 'NA', 'A1', 'CK3', 'TG']
+GT = TS.gridless(truns, TN + ['Q'])
+ptt = {pi: TS.rr_gl(GT, 'F0', 'E', TN[2:] + ['Q'], pop=pi) for pi in range(5)}
+Wt = CC.counts(NT, NB, SEED_TU)
+Pt = CC.prep(GT, TN, 0); Bt = CC.evaluate(Pt, Wt)
+assert CC.evaluate(Pt, np.ones((1, NT)))['denE'][0] == ptt[0]['denE']
+V['TU.R'] = float(ptt[0]['R_pp']); put_ci('TU.R', Bt['denE'] / L.NLEV)
+for a, key in (('N', 'N'), ('NA', 'NA'), ('A1', 'AM'), ('CK3', 'CK3'), ('TG', 'TG')):
+    V['TU.RR_' + key] = num(ptt[0]['RR'][a]); put_ci('TU.RR_' + key, rr_b(Bt['D'][a], Bt['denE']))
+V['TU.R_pre'] = float(ptt[2]['R_pp']); V['TU.R_brk'] = float(ptt[3]['R_pp']); V['TU.R_stop'] = float(ptt[4]['R_pp'])
+DET['TU'] = dict(runs=TUNE, draw='boot_counts(20, %d, %d)' % (NB, SEED_TU),
+                 gridless={pop: dict(n=ptt[pi]['n'], R_pp=ptt[pi]['R_pp'], R_deceq=ptt[pi]['R_deceq'], RR=ptt[pi]['RR'])
+                           for pi, pop in enumerate(POPS)})
+# gridless, truth phase (details) and grid, truth phase (A9-5 identity)
+for r in truns: r['masks_t5'] = r['masks_truth'][:5]
+GTt = TS.gridless(truns, ['F0', 'E'], masks_key='masks_t5')
+DET['TU']['gridless_truth_phase_rooms'] = {pop: TS.rr_gl(GTt, 'F0', 'E', [], pop=pi)['R_pp'] for pi, pop in enumerate(['all', 'mov', 'pre', 'brk', 'stop'])}
+Xtu = C11.tables(truns, ('W1',), ['F0', 'E', 'N', 'NA', 'A1', 'CK3', 'Q'], masks_key='masks_truth')
+ptg = C11.points(Xtu, ['E', 'N', 'NA', 'A1', 'CK3', 'Q'], pops=range(5))
+A95 = json.loads((CC.V12A / 'out' / 'A9_5_TUNING_RUNS_v01.json').read_text(encoding='utf-8'))['tuning']
+DET['TU']['grid_truth_phase'] = {}
+for pi, pop in enumerate(['all', 'moving', 'phase0', 'phase1', 'phase2']):
+    g = dict(n=ptg[pi]['n'], R_pp=ptg[pi]['denE'] / L.NLEV, **{'RR_' + a: L.ratio(ptg[pi]['D'][a], ptg[pi]['denE']) for a in ('N', 'NA', 'A1', 'CK3', 'Q')})
+    DET['TU']['grid_truth_phase'][pop] = g
+    for f in ('n', 'R_pp', 'RR_N', 'RR_NA', 'RR_A1', 'RR_CK3', 'RR_Q'):
+        cmp('A9-5 tuning %s %s (grid, truth phase)' % (pop, f), g[f], A95[pop][f])
+log('tuning runs done')
+
+# ================================================================================================ write
+DET['seconds'] = time.time() - t00; DET['written'] = time.strftime('%Y-%m-%d %H:%M:%S')
+DET['code_sha256'] = {f: CC.sha(CC.HERE / f) for f in ('c_s57a_v13.py', 'x_s57a_extract_v13.py', 'cd_common_v13.py', 'gl_fast_v13.py',
+                                                       'c_lead_choice_v13.py')}
+doc = dict(family='C_S57A', program='c_s57a_v13.py', test_old=TEST, values=V, details=DET)
+if TEST: doc['checks'] = CHK
+
+
+def clean(o):
+    if isinstance(o, dict): return {str(k): clean(v) for k, v in o.items()}
+    if isinstance(o, (list, tuple)): return [clean(v) for v in o]
+    if isinstance(o, (np.bool_, bool)): return bool(o)
+    if isinstance(o, (np.integer,)): return int(o)
+    if isinstance(o, (float, np.floating)): return float(o) if np.isfinite(o) else None
+    if isinstance(o, np.ndarray): return clean(o.tolist())
+    return o
+
+
+CC.write_once(OUTF, clean(doc))
+if TEST:
+    bad = {k: v for k, v in CHK.items() if not v.get('ok', False)}
+    CC.write_once(TESTF, clean(dict(family='C_S57A', program='c_s57a_v13.py', test_old=True, written=DET['written'],
+                                    n_checks=len(CHK), n_ok=len(CHK) - len(bad), failed=bad, extractor_identity=DET.get('extractor_identity_old_runs'))))
+log('written %s (%d keys)%s' % (OUTF.name, len(V), '; checks %d, failed %d' % (len(CHK), sum(not v.get('ok') for v in CHK.values())) if TEST else ''))

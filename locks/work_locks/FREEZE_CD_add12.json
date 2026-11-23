@@ -1,0 +1,139 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "addendum_to": "work/locks/FREEZE_CD.json (sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7); FREEZE_CD_add11.json (sha256 ff6c5445f89f8ae5da36a0df99e95aea3548abdebe0c2839c5fa875a8e561c4a)",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5)",
+ "written": "2026-11-22 06:17 Eastern Standard Time",
+ "approval": "Coordinator, 22 Nov 2026: option \"B. Add 4 more RTX 4090 pods and finish A10 section 2.6 calibration in full\"; \"the YN.* prefix is approved ... export #{Delta_b <= 0} and #{finite} as keys too (YN.p_count_le0, YN.p_count_finite)\"; duplicate chunks: \"record each duplicate's agreement in the merge log\". Seed 1 was sufficient (coverage 0.9445 >= 0.94 in both programs).",
+ "after_lock": "LOCK_A12a.txt sha256 0c4d4872946ba85d2ed91a0471eb8da7188333d2dfe462b68a6df555345b2766",
+ "note_add11": "FREEZE_CD_add11 addendum_to names FREEZE_CD_add9; it should name FREEZE_CD_add10 (clerical; left unchanged, coordinator 04:58)",
+ "kind": "Y-L12 results and records; one clerical exporter change; no analysis program changed",
+ "adds": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\orchestration\\cal_loop_l12.py",
+   "sha256": "b2513c3d05b6b36470e822d028543dafd000b24b4d96fe18ef35e3002fde5ecc"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\orchestration\\calnew_l12.py",
+   "sha256": "02432a29292eed26ad7342bd7d5760f2e2a1cebd6838e215ef75896a28b17247"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\orchestration\\capcheck_l12.py",
+   "sha256": "f7189747b9320dc5d1856d9cfed5f14e4ae65b2426364f64029820a192abe42b"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\orchestration\\dup_l12.py",
+   "sha256": "374c8476acf2f4becde445109a400d5161b607bcf9062f48043c9ec69b88aae2"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\orchestration\\dupcheck_l12.py",
+   "sha256": "7d1a2779bb9acc89cf265643219fb1c3769934227300257f4361d24a57872f95"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\orchestration\\failcheck_l12.py",
+   "sha256": "ff1b1b6acf973972dbab606ee408eb0d2919bf2e597aa28a3a8aa628505646d6"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\orchestration\\hpod.py",
+   "sha256": "8ae5145dc05ccc4b07cdb1b2711bd98c1e0bcc9749429c658f8009198860b1d2"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\orchestration\\lb7run.py",
+   "sha256": "610fa928a0df4584adf6c70c2dd330d8754f0b34153901fa057da5fe05944d15"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\orchestration\\llink.py",
+   "sha256": "320bf9ae79b9f9f1c20e9a5e051d6c46919840bb3277af25b104c10df2a83a6c"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\orchestration\\merge1_cov.py",
+   "sha256": "86eb1c0ccb1cf438d773ac95bfb4b9e73960ec8881f6541b367bd0e18ee001d8"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\orchestration\\rc_cov.py",
+   "sha256": "bb7920ebb9ddc4910f7c774b72d1b1d2cf5d7c13adead4d118672176ac3fa5cf"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\orchestration\\yimport.py",
+   "sha256": "f465ecce517178761920a30e71ac387d47af6383181b82eb72a6d6739c5ebcce"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\out\\calib\\y_l12_main.job.npz",
+   "sha256": "f2a47dde2634063260c11ea2a0c468986204e18c95586820d8588e1a5584f451"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\out\\calib\\y_l12_main.meta.json",
+   "sha256": "60423fb5a1337c09b058bdf715f4b67342534a5a9e98b0bfaac975f6d15e471f"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\out\\calib\\y_l12_main_20261913.npz",
+   "sha256": "b367cde6589c7aba4a41c0e5b883b31dd3e0262002ef5730e2c0ef15bee74d73"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\out\\calib\\MERGE_y_l12_main.json",
+   "sha256": "b0f7594c805e161e2dc041953ac3875d91df4e84599d687a41116761b5acc6c1"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\pods\\yl12_chunks\\CHUNKS_MANIFEST_L12.json",
+   "sha256": "5e751fb5f92b2865904a0e8db29357020a3ecd198b3597f90dcb4dac5e639175"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\pods\\yl12_chunks\\DUPCHECK_L12.jsonl",
+   "sha256": "f66c8af1be48ee23d180ccb0a33c099e2e490429197e5d09e6d53768553ba927"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\ycheck\\out\\Y_TWIN_L12_v13.json",
+   "sha256": "484f4eca0519e9cd556aa2de89fbafbfd59490ea1c73020fddcc3fb73f24ea9d"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\out\\RC_Y_TWIN_L12_v13.json",
+   "sha256": "8f7ea7f26041da1d1983ba491f6617883856b5aa952f96cfcacaae0f84cd96c9"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\ycheck\\out\\COMPARE_Y_L12_v13.json",
+   "sha256": "4b6ce46e094500064b59e1841f87a82e9a22acb36aa46882e31fa04780dd82c8"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\out\\A_EXPORT_YN.json",
+   "sha256": "72d29607d8286687551557ded4d20984a0212455afd86521202ff42d029b0234"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\out\\A_RECOUNT_YN.json",
+   "sha256": "685b75394bf9421f01009bb0db28ab48df1f529f07fdfbb68a7b0aef839d9ba1"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\ycheck\\out\\COMPARE_YN_EXPORTS_v13.json",
+   "sha256": "0c6d70e317bfdeb1521097138a3f114a553209f4d25270e78bd97265a19292fb"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\make_freeze_add12_v13.py",
+   "sha256": "ae08b016476bf254400339073b84492ccc20eedb7a7fbe90959da49905deb023"
+  }
+ ],
+ "uses": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\ycheck\\compare_y_v13.py",
+   "sha256": "9eacd2d06133b16e68fc76f761dead8423e332f7cdb0b026dd36745272f2f7fb"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\calib_merge_v13.py",
+   "sha256": "d5ae7d4508def26966baae115a64c4ddb147c9b1cacbc18096035d94c66185e1"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\ycheck\\y_twin_l12_v13.py",
+   "sha256": "70d705ed81973b32750de920fc13f0c4168345fee81d9bf0bef90404b3f1b863"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_y_twin_l12_v13.py",
+   "sha256": "a933d4f0673f5743838b0120295e22e98519039d9d87b0dc97b6586847351a8a"
+  }
+ ],
+ "replaces": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\make_export_yn_v13.py",
+   "sha256_before": "8dc442b5bc80a4109220aa9bf51ad2c38ae79f6d54ba6f9c2a598e2ba1e650f2",
+   "sha256_after": "f03a47735f582ae987cbb884fa0dba8fbcb841e5d404b7b8e8e6ab0ef5a63755",
+   "change": "adds YN.p_count_le0 and YN.p_count_finite (#finite from each program's own output; #{Delta_b <= 0} = p * #finite, integer-checked); the docstring says so. Nothing else changed.",
+   "why": "coordinator: \"export #{Delta_b <= 0} and #{finite} as keys too (YN.p_count_le0, YN.p_count_finite)\""
+  }
+ ]
+}

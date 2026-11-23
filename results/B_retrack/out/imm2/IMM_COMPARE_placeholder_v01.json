@@ -1,0 +1,35 @@
+{
+ "code": "imm_compare_v01.py",
+ "constants": "<user folder>\\const_placeholder.json",
+ "diag": 0.95,
+ "runs": [
+  {
+   "cap": "<library folder>\\fit_finite_0012",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 1.5834887103152598e-14,
+   "centre_max_abs_diff": 1.1368683772161603e-13,
+   "velocity_max_abs_diff": 9.704259965048756e-15,
+   "pass_1e9": true,
+   "seconds": 115.5
+  },
+  {
+   "cap": "<library folder>\\c1109_tune_0000",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 1.515372743869821e-15,
+   "centre_max_abs_diff": 1.1368683772161603e-13,
+   "velocity_max_abs_diff": 5.584508550038336e-15,
+   "pass_1e9": true,
+   "seconds": 64.8
+  }
+ ],
+ "all_pass": true,
+ "written": "2026-11-19 14:52:57"
+}

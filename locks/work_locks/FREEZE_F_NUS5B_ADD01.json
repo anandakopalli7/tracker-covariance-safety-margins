@@ -1,0 +1,22 @@
+{
+ "name": "FREEZE_F_NUS5B_ADD01",
+ "layered_on": [
+  "work\\locks\\FREEZE_F_NUS5B.json"
+ ],
+ "reason": "the sec. 5b second program (Claude Sonnet 5.5, written from the sec. 5b text without reading the first program) and its masks-off test, which reproduces F's unmasked T1 val values of record exactly (out\\ACCEPT3_SCORED_v01.json); written after LOCK_A12e and before any masked val value",
+ "masked_val_output_exists_at_writing": false,
+ "written": "2026-11-22 03:42:15",
+ "n": 2,
+ "entries": [
+  {
+   "group": "recount",
+   "path": "work\\F_dropout_nus\\recount\\fn_recount_v01.py",
+   "sha256": "b4795cb453a99bb6bac6b363fe0581ae846328608aecca7a2098d075c8e1f33b"
+  },
+  {
+   "group": "recount_test",
+   "path": "work\\F_dropout_nus\\recount\\FN5B_RECOUNT_unmasked_v01.json",
+   "sha256": "c640171d976e61a46fc868baf3aeb66f82b6f870bf73eda7057123e14c102e2b"
+  }
+ ]
+}

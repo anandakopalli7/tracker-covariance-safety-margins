@@ -1,0 +1,64 @@
+{
+ "schema": "CLAUDE_MAIN_JOBS_V01",
+ "protocol": "DEVELOPMENT_PROTOCOL_SMOKE_v01.json",
+ "volume_folder": "/opt/claude_v13_xlocal",
+ "capture_timeout_s": 600,
+ "review_timeout_s": 600,
+ "actor_review_timeout_s": 180,
+ "server_ready_timeout_s": 120,
+ "concurrent_start_stagger_s": 15,
+ "max_attempts": 2,
+ "protocol_main_sha256": "32d683a0a8ca2e91ff0245759ad78b43e7953c33bd12847c5193cafcdaa5735d",
+ "note": "Revision v13 X (A11 sec. 3.2) replacements on claude-v13cd-x6: c1109_eval_0722->c1109_eval_2480; packet_x_v13; alpha = beta of the failed case; keep_raw false.",
+ "made_by": {
+  "script": "make_reserve_jobs_x_v13.py",
+  "sha256": "c49ec183bc92cc50b47515dc5e6b8e024e47db3af6788c6a167fdec79a8430ea"
+ },
+ "jobs": [
+  {
+   "id": "ctl_px13_x6_v02_000",
+   "case": "canonical_lead_braking_v10_r0_finite",
+   "arm": "native",
+   "phase": "CTL",
+   "role": "control",
+   "scenario": "canonical_lead_braking_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 1.0,
+    "T": 0.18142429254388814,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 215
+   },
+   "alpha": 0.07595887787405835,
+   "beta": 0.056961122665147565
+  },
+  {
+   "id": "pc13x_c1109_eval_2480_native",
+   "case": "c1109_eval_2480",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PX13",
+   "role": "eval",
+   "scenario": "c1109_eval_2480",
+   "keep_raw": false
+  },
+  {
+   "id": "ctl_px13_x6_v02_001",
+   "case": "canonical_lead_braking_v10_r0_finite",
+   "arm": "native",
+   "phase": "CTL",
+   "role": "control",
+   "scenario": "canonical_lead_braking_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 1.0,
+    "T": 0.18142429254388814,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 215
+   },
+   "alpha": 0.07595887787405835,
+   "beta": 0.056961122665147565
+  }
+ ]
+}

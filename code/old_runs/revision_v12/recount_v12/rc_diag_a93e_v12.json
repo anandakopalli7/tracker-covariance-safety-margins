@@ -1,0 +1,7 @@
+{
+ "share_same_choice": 0.41684511063526053,
+ "n_pairs": 7005,
+ "max_abs_heldout_w_minus_fullsample_w_pp": 0.9650180940892643,
+ "mean_heldout_w_minus_fullsample_w_pp": 0.06718938480096497,
+ "sum_F_F0": 1205.235223160434
+}

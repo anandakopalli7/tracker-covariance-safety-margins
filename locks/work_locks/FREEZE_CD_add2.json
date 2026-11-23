@@ -1,0 +1,17 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "addendum_to": "work/locks/FREEZE_CD.json (sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7)",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5)",
+ "written": "2026-11-20 23:43 Eastern Standard Time",
+ "approval": "coordinator, 20 Nov 2026 about 23:45 EST: approved; record as deviation CD-11 (Table S4): post-lock fix to an identity check that refused a legitimate NaN; no analysis change; the check stays exact",
+ "replaces": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\cd_common_v13.py",
+   "sha256_before": "978dc19c136484b2514848536d6430beab4e45ec02e8099b0bd9ae11491cf0c2",
+   "sha256_after": "28a7238a2f7135aec35f3018879af25566665856ff163502b6286b0249d6bdd0",
+   "change": "line 333 (calibrate_all, import mode): np.array_equal(z['full'], full) -> np.array_equal(z['full'], full, equal_nan=True). No other byte changed.",
+   "why": "The fresh cut-in event window has no room, so its full-sample values are [R_gl 0.0, RR_N NaN]. The frozen identity check compared them without equal_nan, so NaN never equalled NaN and the import of the merged calibration stopped (AssertionError 'full-sample values differ from the exported job: cutin_window', 20 Nov ~23:40 EST, log analysis/out/stage2_c_cutin_import_r2.log; no output written). The frozen merge tool (tools/calib_merge_v13.py:31), the pod runner (analysis/calib_remote_v13.py:89) and the recount's import (recount/rc_core_v13.py:512, 674) already compare with NaN equal to NaN; the merged tables hold exactly the exported job's [0.0, NaN]. With no NaN the result is identical, so C_LEAD_H0_H5_v13.json (passed this check at 10:07) is unaffected.",
+   "kind": "frozen-code check fix (A10 sec. 11 departure record: an identity check corrected after LOCK_A10_2c; no value-computing line changed)"
+  }
+ ]
+}

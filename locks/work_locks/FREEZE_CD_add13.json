@@ -1,0 +1,42 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "addendum_to": "work/locks/FREEZE_CD.json (sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7); FREEZE_CD_add12.json (sha256 6f98a2b21a3ab9366a2fde96b17e6d3969cebfc48a38392a1c19e0f0ece6711f)",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5)",
+ "written": "2026-11-22 06:21 Eastern Standard Time",
+ "approval": "Coordinator, 22 Nov 2026 06:19: \"Task 5 (the optional A11 Bonferroni check): YES, but only if it is quick and self-contained\"; 06:25: \"Please freeze bonferroni_a11_v13.py, the rule and the JSON in a short CD addendum (add13)\"; the check is post hoc.",
+ "status": "POST HOC sensitivity check: rule and result written seconds apart, after every A11 interval was known; p-values are normal approximations from the exported intervals; no A11 result changes",
+ "kind": "the A11 Bonferroni check (rule, program, result); no analysis program changed",
+ "adds": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\a11_bonferroni\\BONFERRONI_A11_RULE_v13.md",
+   "sha256": "a6d02815112ed14059a81caf79432f6def54dca56f8231737a07bccf433c9dd0"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\a11_bonferroni\\bonferroni_a11_v13.py",
+   "sha256": "a5e01d72571d64845b73d7eb801c5d305dc93b6b2b823a8bd97a8cc5fdedb06e"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\a11_bonferroni\\BONFERRONI_A11_v13.json",
+   "sha256": "ff4380000af789280bd92b21622a18181b2bbdd1c5069d13d030c689e96b0a2a"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\make_freeze_add13_v13.py",
+   "sha256": "cf3754a07ba14c569a9d51f5d9fd4a6ac0dfabd8ace5dcf900e78f3e4ee1984b"
+  }
+ ],
+ "uses": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\out\\A_EXPORT_X.json",
+   "sha256": "163c2d3fec0dca01003cefc8e6a25d0ea2106fd04db627db63d18308c289b9c6"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\out\\A_EXPORT_Y.json",
+   "sha256": "1608c107c68b9b067de4e446b5d83e11bba4643a7c2d1feab4ea2ad1ce91df44"
+  },
+  {
+   "path": "revision_v13\\work\\F_dropout\\out\\DR_RESULTS_v01.json",
+   "sha256": "d31acc52661711dcfaf1f7f2425e6291fc2310862044817f701ffd313c6c14bf"
+  }
+ ],
+ "replaces": []
+}

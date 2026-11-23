@@ -1,0 +1,110 @@
+{
+ "code": "b9_cutin_v01.py count",
+ "lat_m": 1.75,
+ "events_found": 20,
+ "of": 20,
+ "runs": [
+  {
+   "run": "p2_c1109_tune_0004_fixed_c1",
+   "event_tick": 136,
+   "ego_lateral_spread_m": 0.35718538699823266
+  },
+  {
+   "run": "p2_c1109_tune_0010_fixed_c1",
+   "event_tick": 134,
+   "ego_lateral_spread_m": 0.35718538699823266
+  },
+  {
+   "run": "p2_c1109_tune_0016_fixed_c1",
+   "event_tick": 145,
+   "ego_lateral_spread_m": 0.3416275062177496
+  },
+  {
+   "run": "p2_c1109_tune_0022_fixed_c1",
+   "event_tick": 134,
+   "ego_lateral_spread_m": 0.35718538699823266
+  },
+  {
+   "run": "p2_c1109_tune_0028_fixed_c1",
+   "event_tick": 146,
+   "ego_lateral_spread_m": 0.35718538699823266
+  },
+  {
+   "run": "p2_c1109_tune_0034_fixed_c1",
+   "event_tick": 138,
+   "ego_lateral_spread_m": 0.33272156303619904
+  },
+  {
+   "run": "p2_c1109_tune_0040_fixed_c1",
+   "event_tick": 146,
+   "ego_lateral_spread_m": 0.33272156303619904
+  },
+  {
+   "run": "p2_c1109_tune_0046_fixed_c1",
+   "event_tick": 137,
+   "ego_lateral_spread_m": 0.35718538699823266
+  },
+  {
+   "run": "p2_c1109_tune_0052_fixed_c1",
+   "event_tick": 136,
+   "ego_lateral_spread_m": 0.33272156303619904
+  },
+  {
+   "run": "p2_c1109_tune_0058_fixed_c1",
+   "event_tick": 136,
+   "ego_lateral_spread_m": 0.33272156303619904
+  },
+  {
+   "run": "p2_c1109_tune_0064_fixed_c1",
+   "event_tick": 147,
+   "ego_lateral_spread_m": 0.3416275062177496
+  },
+  {
+   "run": "p2_c1109_tune_0070_fixed_c1",
+   "event_tick": 143,
+   "ego_lateral_spread_m": 0.33272156303619904
+  },
+  {
+   "run": "p2_c1109_tune_0076_fixed_c1",
+   "event_tick": 143,
+   "ego_lateral_spread_m": 0.3416275062177496
+  },
+  {
+   "run": "p2_c1109_tune_0082_fixed_c1",
+   "event_tick": 136,
+   "ego_lateral_spread_m": 0.3416275062177496
+  },
+  {
+   "run": "p2_c1109_tune_0088_fixed_c1",
+   "event_tick": 136,
+   "ego_lateral_spread_m": 0.35718538699823266
+  },
+  {
+   "run": "p2_c1109_tune_0094_fixed_c1",
+   "event_tick": 138,
+   "ego_lateral_spread_m": 0.35718538699823266
+  },
+  {
+   "run": "p2_c1109_tune_0100_fixed_c1",
+   "event_tick": 138,
+   "ego_lateral_spread_m": 0.33272156303619904
+  },
+  {
+   "run": "p2_c1109_tune_0106_fixed_c1",
+   "event_tick": 134,
+   "ego_lateral_spread_m": 0.35718538699823266
+  },
+  {
+   "run": "p2_c1109_tune_0112_fixed_c1",
+   "event_tick": 139,
+   "ego_lateral_spread_m": 0.3416275062177496
+  },
+  {
+   "run": "p2_c1109_tune_0118_fixed_c1",
+   "event_tick": 145,
+   "ego_lateral_spread_m": 0.33272156303619904
+  }
+ ],
+ "rule_18_of_20": "met",
+ "written": "2026-11-19 15:16:55"
+}

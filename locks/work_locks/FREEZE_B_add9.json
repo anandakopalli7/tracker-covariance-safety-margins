@@ -1,0 +1,57 @@
+{
+ "addendum": 9,
+ "to": "work/locks/FREEZE_B.json",
+ "layers": [
+  {
+   "file": "FREEZE_B.json",
+   "sha256": "1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152"
+  },
+  {
+   "file": "FREEZE_B_add1.json",
+   "sha256": "9b71225a10645bfd28b2e43a2a05578f6131ed6ec8443f14125672d480927ad6"
+  },
+  {
+   "file": "FREEZE_B_add2.json",
+   "sha256": "6ffc5cd975b5ba91c597a1f989a1c649ca4bbbcf2244642577484f4b4341c39b"
+  },
+  {
+   "file": "FREEZE_B_add3.json",
+   "sha256": "549ac106adb20e6eb9cae16088c231665c6f006fada64ec3eea15d1025970831"
+  },
+  {
+   "file": "FREEZE_B_add4.json",
+   "sha256": "23f374c013510e0eadd8f7de574f61c8eaec1021669d799148266e8c9f269e7e"
+  },
+  {
+   "file": "FREEZE_B_add5.json",
+   "sha256": "d91d1e5a55edb5224f8c150c46cee58ce30d70681fab8d76f1830ae6f5672ee0"
+  },
+  {
+   "file": "FREEZE_B_add6.json",
+   "sha256": "bd24dc97ca4f0e2b7817e5ea6d0bc3da043aa68d8aa4dc1ca2ff21445b0bd4ed"
+  },
+  {
+   "file": "FREEZE_B_add7.json",
+   "sha256": "d06cc48bbe89ec87b3927c962c041b31b5e7aab1dccbe570188a331e0a7b0c12"
+  },
+  {
+   "file": "FREEZE_B_add8.json",
+   "sha256": "9c87f029ec3ed6438aea9dd60835a1ad1067ec0490190d5d89beee6a13d7b751"
+  }
+ ],
+ "written": "2026-11-21 14:22:48 Eastern Standard Time",
+ "writer": "package-B session, Claude Opus 5.5 (claude-opus-5-5)",
+ "reason": "AMENDMENT_11 section 6 (F0 for the re-tuned IMM: its own P-bar on the 120 tuning runs, A10 section 2.1): data file PBAR_B1R_v02.json, computed 14:07-14:22 EST by the frozen b_b1r_v02.py (FREEZE_B_add8) with the frozen constants B1R_CONSTANTS_v02.json; 120 runs, 0 errors; counts vehicle 20611, pedestrian 2159. Frozen before any fresh value of B1r.",
+ "method": "inline Python by the B session: sha256 in 1 MiB blocks; no value computed",
+ "changed": [],
+ "new": [
+  {
+   "path": "B_retrack\\out\\pbar\\PBAR_B1R_v02.json",
+   "sha256": "075ce6b68d766ae6f8532c001f31f82d836c84006fdeccb75dab248872818c8d",
+   "bytes": 1417,
+   "mtime": "2026-11-21 14:22:25"
+  }
+ ],
+ "pbar_constants_sha256": "28b2e9da92cdb3ebf2d5aa236b05ce09825bcabf84ff8afda469032f8b4b0a45",
+ "library_unchanged": true
+}

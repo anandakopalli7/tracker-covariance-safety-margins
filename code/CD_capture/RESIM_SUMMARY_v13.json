@@ -1,0 +1,594 @@
+{
+ "schema": "RESIM_SUMMARY_V13",
+ "task": "A10 sec. 0.2 / FEASIBILITY sec. 3: re-simulation of the 55 old lead-braking runs (first attempts)",
+ "packet": "packet_main_v03",
+ "acceptance": "every frame noisy-sweep SHA-256 (frames.jsonl raw_sha256) and noise receipt equal to the old run, same frame count",
+ "utc": "2026-11-19T23:04:46.966126+00:00",
+ "checked": 55,
+ "accepted": 53,
+ "not_accepted": [
+  [
+   "p1b_fit_finite_0019",
+   225
+  ],
+  [
+   "p1b_fit_finite_0014",
+   204
+  ]
+ ],
+ "runs": [
+  {
+   "run": "rs13_p1b_fit_finite_0005",
+   "old": "p1b_fit_finite_0005",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-01"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0011",
+   "old": "p1b_fit_finite_0011",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-01"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0017",
+   "old": "p1b_fit_finite_0017",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-01"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0023",
+   "old": "p1b_fit_finite_0023",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-01"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0029",
+   "old": "p1b_fit_finite_0029",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-01"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0035",
+   "old": "p1b_fit_finite_0035",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-01"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0006_fixed_c1",
+   "old": "p2_c1109_tune_0006_fixed_c1",
+   "accepted": true,
+   "frames_new": 226,
+   "frames_old": 226,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-01"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0042_fixed_c1",
+   "old": "p2_c1109_tune_0042_fixed_c1",
+   "accepted": true,
+   "frames_new": 192,
+   "frames_old": 192,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-01"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0078_fixed_c1",
+   "old": "p2_c1109_tune_0078_fixed_c1",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-01"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0114_fixed_c1",
+   "old": "p2_c1109_tune_0114_fixed_c1",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-01"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0006",
+   "old": "p1b_fit_finite_0006",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-02"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0012",
+   "old": "p1b_fit_finite_0012",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-02"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0018",
+   "old": "p1b_fit_finite_0018",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-02"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0024",
+   "old": "p1b_fit_finite_0024",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-02"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0030",
+   "old": "p1b_fit_finite_0030",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-02"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0036",
+   "old": "p1b_fit_finite_0036",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-02"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0012_fixed_c1",
+   "old": "p2_c1109_tune_0012_fixed_c1",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-02"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0048_fixed_c1",
+   "old": "p2_c1109_tune_0048_fixed_c1",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-02"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0084_fixed_c1",
+   "old": "p2_c1109_tune_0084_fixed_c1",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-02"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0007",
+   "old": "p1b_fit_finite_0007",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-03"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0013",
+   "old": "p1b_fit_finite_0013",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-03"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0019",
+   "old": "p1b_fit_finite_0019",
+   "accepted": false,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": 225,
+   "noise_receipts_equal": false,
+   "pod": "claude-v13cd-03"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0025",
+   "old": "p1b_fit_finite_0025",
+   "accepted": true,
+   "frames_new": 195,
+   "frames_old": 195,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-03"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0031",
+   "old": "p1b_fit_finite_0031",
+   "accepted": true,
+   "frames_new": 264,
+   "frames_old": 264,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-03"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0037",
+   "old": "p1b_fit_finite_0037",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-03"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0018_fixed_c1",
+   "old": "p2_c1109_tune_0018_fixed_c1",
+   "accepted": true,
+   "frames_new": 218,
+   "frames_old": 218,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-03"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0054_fixed_c1",
+   "old": "p2_c1109_tune_0054_fixed_c1",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-03"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0090_fixed_c1",
+   "old": "p2_c1109_tune_0090_fixed_c1",
+   "accepted": true,
+   "frames_new": 235,
+   "frames_old": 235,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-03"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0008",
+   "old": "p1b_fit_finite_0008",
+   "accepted": true,
+   "frames_new": 213,
+   "frames_old": 213,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-04"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0014",
+   "old": "p1b_fit_finite_0014",
+   "accepted": false,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": 204,
+   "noise_receipts_equal": false,
+   "pod": "claude-v13cd-04"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0020",
+   "old": "p1b_fit_finite_0020",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-04"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0026",
+   "old": "p1b_fit_finite_0026",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-04"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0032",
+   "old": "p1b_fit_finite_0032",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-04"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0038",
+   "old": "p1b_fit_finite_0038",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-04"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0024_fixed_c1",
+   "old": "p2_c1109_tune_0024_fixed_c1",
+   "accepted": true,
+   "frames_new": 240,
+   "frames_old": 240,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-04"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0060_fixed_c1",
+   "old": "p2_c1109_tune_0060_fixed_c1",
+   "accepted": true,
+   "frames_new": 190,
+   "frames_old": 190,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-04"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0096_fixed_c1",
+   "old": "p2_c1109_tune_0096_fixed_c1",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-04"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0009",
+   "old": "p1b_fit_finite_0009",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-05"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0015",
+   "old": "p1b_fit_finite_0015",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-05"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0021",
+   "old": "p1b_fit_finite_0021",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-05"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0027",
+   "old": "p1b_fit_finite_0027",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-05"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0033",
+   "old": "p1b_fit_finite_0033",
+   "accepted": true,
+   "frames_new": 208,
+   "frames_old": 208,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-05"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0039",
+   "old": "p1b_fit_finite_0039",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-05"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0030_fixed_c1",
+   "old": "p2_c1109_tune_0030_fixed_c1",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-05"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0066_fixed_c1",
+   "old": "p2_c1109_tune_0066_fixed_c1",
+   "accepted": true,
+   "frames_new": 224,
+   "frames_old": 224,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-05"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0102_fixed_c1",
+   "old": "p2_c1109_tune_0102_fixed_c1",
+   "accepted": true,
+   "frames_new": 226,
+   "frames_old": 226,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-05"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0010",
+   "old": "p1b_fit_finite_0010",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-06"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0016",
+   "old": "p1b_fit_finite_0016",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-06"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0022",
+   "old": "p1b_fit_finite_0022",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-06"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0028",
+   "old": "p1b_fit_finite_0028",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-06"
+  },
+  {
+   "run": "rs13_p1b_fit_finite_0034",
+   "old": "p1b_fit_finite_0034",
+   "accepted": true,
+   "frames_new": 232,
+   "frames_old": 232,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-06"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0000_fixed_c1",
+   "old": "p2_c1109_tune_0000_fixed_c1",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-06"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0036_fixed_c1",
+   "old": "p2_c1109_tune_0036_fixed_c1",
+   "accepted": true,
+   "frames_new": 236,
+   "frames_old": 236,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-06"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0072_fixed_c1",
+   "old": "p2_c1109_tune_0072_fixed_c1",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-06"
+  },
+  {
+   "run": "rs13_p2_c1109_tune_0108_fixed_c1",
+   "old": "p2_c1109_tune_0108_fixed_c1",
+   "accepted": true,
+   "frames_new": 211,
+   "frames_old": 211,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true,
+   "pod": "claude-v13cd-06"
+  }
+ ],
+ "retries": [
+  {
+   "run": "rs13r_p1b_fit_finite_0014",
+   "old": "p1b_fit_finite_0014",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true
+  },
+  {
+   "run": "rs13r_p1b_fit_finite_0019",
+   "old": "p1b_fit_finite_0019",
+   "accepted": true,
+   "frames_new": 700,
+   "frames_old": 700,
+   "first_mismatch_index": null,
+   "noise_receipts_equal": true
+  }
+ ],
+ "accepted_after_retry": 55,
+ "retry_note": "One retry each for the two first attempts that diverged (0014 at frame index 204, 0019 at 225); both retries reproduce every frame exactly.",
+ "utc_retry_check": "2026-11-19T23:11:58.127590+00:00"
+}

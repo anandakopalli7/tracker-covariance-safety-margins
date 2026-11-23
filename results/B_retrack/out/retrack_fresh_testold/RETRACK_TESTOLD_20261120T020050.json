@@ -1,0 +1,145 @@
+{
+ "code": "b_fresh_retrack_v02.py",
+ "gate": "TEST_OLD: old runs only; no fresh value",
+ "variants": [
+  "B3",
+  "B4",
+  "B2",
+  "B1_d090",
+  "B1_d098"
+ ],
+ "runs": 2,
+ "jobs": [
+  {
+   "run": "p1b_fit_finite_0012",
+   "variant": "B3",
+   "res": "ok 41.8s"
+  },
+  {
+   "run": "p1b_fit_finite_0012",
+   "variant": "B4",
+   "res": "ok 46.5s"
+  },
+  {
+   "run": "p1b_fit_finite_0012",
+   "variant": "B2",
+   "res": "ok 54.0s"
+  },
+  {
+   "run": "p1b_fit_finite_0012",
+   "variant": "B1_d090",
+   "res": "ok 41.4s"
+  },
+  {
+   "run": "p1b_fit_finite_0012",
+   "variant": "B1_d098",
+   "res": "ok 47.6s"
+  },
+  {
+   "run": "p1b_fit_finite_0031",
+   "variant": "B3",
+   "res": "ok 11.1s"
+  },
+  {
+   "run": "p1b_fit_finite_0031",
+   "variant": "B4",
+   "res": "ok 17.5s"
+  },
+  {
+   "run": "p1b_fit_finite_0031",
+   "variant": "B2",
+   "res": "ok 14.2s"
+  },
+  {
+   "run": "p1b_fit_finite_0031",
+   "variant": "B1_d090",
+   "res": "ok 15.1s"
+  },
+  {
+   "run": "p1b_fit_finite_0031",
+   "variant": "B1_d098",
+   "res": "ok 8.7s"
+  }
+ ],
+ "seconds": 141.53525471687317,
+ "written": "2026-11-20 02:00:41",
+ "counts": {
+  "ok": 10,
+  "exists": 0,
+  "waiting": 0,
+  "ERROR": 0
+ },
+ "identity_vs_v01": [
+  {
+   "run": "p1b_fit_finite_0012",
+   "variant": "B3",
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p1b_fit_finite_0012",
+   "variant": "B4",
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p1b_fit_finite_0012",
+   "variant": "B2",
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p1b_fit_finite_0012",
+   "variant": "B1_d090",
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p1b_fit_finite_0012",
+   "variant": "B1_d098",
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p1b_fit_finite_0031",
+   "variant": "B3",
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p1b_fit_finite_0031",
+   "variant": "B4",
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p1b_fit_finite_0031",
+   "variant": "B2",
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p1b_fit_finite_0031",
+   "variant": "B1_d090",
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p1b_fit_finite_0031",
+   "variant": "B1_d098",
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  }
+ ],
+ "all_identical": true
+}

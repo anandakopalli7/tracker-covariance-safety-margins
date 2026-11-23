@@ -1,0 +1,97 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "addendum_to": "work/locks/FREEZE_CD.json (sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7)",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5)",
+ "written": "2026-11-21 14:38 Eastern Standard Time",
+ "approval": "Coordinator's messages to CD, 21 Nov 2026 about 14:12, 14:24 and 14:38 EST: freeze Y's code and its Sonnet recount (A11 sec. 6b) as a FREEZE_CD addendum after LOCK_A11 (7ee8d706...) and before any Y value; the three Y implementation choices accepted at 14:38 are fixed in ycheck/CD_DEFINITIONS_Y_v13.md. X's sec. 3.6 descriptive programs follow in a later addendum before their first run.",
+ "kind": "adds files for Y (AMENDMENT_11_v13.md sec. 6b), before LOCK_A11 and before any Y value; no frozen file changed",
+ "adds": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\ycheck\\CD_DEFINITIONS_Y_v13.md",
+   "sha256": "65ab668d246cdcdcfcfa84f3eca07f4889a73b70a3fe6f6e7c579f5e65989064"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\ycheck\\y_twin_v13.py",
+   "sha256": "e2376a758b7defa6577e3ade4a8c7d60cd5ecf3b799824884d362e5bb8557b7b"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\ycheck\\y_calib_remote_v13.py",
+   "sha256": "647ccf816b2c4aad2cc6f0023dfb2c1cf05bb0982e720dbc33cba107d5804eb5"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\ycheck\\compare_y_v13.py",
+   "sha256": "9eacd2d06133b16e68fc76f761dead8423e332f7cdb0b026dd36745272f2f7fb"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\ycheck\\make_freeze_y_v13.py",
+   "sha256": "b283b9ff039173d9f297f96738db7108f2db631c6929657bbaaf630fe77d674d"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_y_calib_remote_v13.py",
+   "sha256": "f6442a4ea8c81711a13e9a517fc64b7fe666844bf0196d529e23ec8d9e7547fd"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_y_kern_v13.py",
+   "sha256": "1794e1b51501582518a4fce9614ea6a50226f9a7ba8ee3400423307f6b2d0ff8"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_y_twin_v13.py",
+   "sha256": "b5831ef2eba75fc0b412d1098b7189399c2ae51e066ac652450d62ae1c1d98c2"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\README_RECOUNT_Y.md",
+   "sha256": "190d17e2d3a1b6ca38cd659b8c6adff1f3323db6f2ed4fe3f1a9ebf423086e74"
+  }
+ ],
+ "uses": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\cd_common_v13.py",
+   "sha256": "28a7238a2f7135aec35f3018879af25566665856ff163502b6286b0249d6bdd0"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\gl_fast_v13.py",
+   "sha256": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\calib_remote_v13.py",
+   "sha256": "4709a2f25cc767d2d57f1ede4a2d7f8d8c45da5d093445095b397e075d075d6b"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\calib_pods_v13.py",
+   "sha256": "28f45a6d81e52584d23e7501be04958436138e549d14e8a8561c9c02ec8983b8"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\calib_merge_v13.py",
+   "sha256": "d5ae7d4508def26966baae115a64c4ddb147c9b1cacbc18096035d94c66185e1"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\calib_worker_v13.sh",
+   "sha256": "67fa942f1fcf2be5dd15e39979b09decc11088c54ec0df325bf6b631d542d733"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_core_v13.py",
+   "sha256": "ab4bc14a05086822586a28da2ec791e214a3638275d669e0396602113d1cbae2"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_kern_v13.py",
+   "sha256": "e404e6f823503ea2adc22657d62dd3116f2a6a43794dec85fbe971efecffac4a"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_calib_remote_v13.py",
+   "sha256": "25663d4992fa0c7bede6704903e333bb853a5d01e10ec06a873e3c11b6b01986"
+  },
+  {
+   "path": "revision_v13\\work\\shared\\trackers\\trk_score_v01.py",
+   "sha256": "1cab6f300ad85fc6007d9b46dae75f41202f010c2080c5987ef06a79921417b4"
+  },
+  {
+   "path": "revision_v13\\work\\shared\\trackers\\trk_env_v01.py",
+   "sha256": "0219dd2ed6517109a3c913430a2f30ca756fc01f4f003c1347c4ddd4a9628cad"
+  },
+  {
+   "path": "revision_v13\\work\\locks\\FREEZE_B_add7.json",
+   "sha256": "d06cc48bbe89ec87b3927c962c041b31b5e7aab1dccbe570188a331e0a7b0c12"
+  }
+ ],
+ "replaces": []
+}

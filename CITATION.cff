@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this deposit, please cite it and the manuscript it accompanies."
+title: "Tracker Covariances as Safety Margins in Motion Planning: plans, code, and result files"
+type: software
+version: "v13"
+doi: 10.5281/zenodo.24454179
+repository-code: "https://github.com/anandakopalli7/tracker-covariance-safety-margins"
+authors:
+  - family-names: "Kopalli"
+    given-names: "Ananda Siva Kumar"
+    alias: "Ananda Siva Kumar Kopalli Naga Venkata"
+    orcid: "https://orcid.org/0009-0002-5241-9922"
+    affiliation: "Independent Researcher"
+abstract: >-
+  Plans, locks and freeze manifests, first and second (recount) programs, result files,
+  verification record and presubmission review record of a preregistered study of tracker
+  covariances as safety margins for motion planning, in simulation (open loop and closed loop)
+  and on recorded driving logs. The per-decision arrays are in the accompanying archive.
+keywords:
+  - motion planning
+  - multi-object tracking
+  - uncertainty
+  - safety margin
+  - preregistration
+  - autonomous driving
+  - CARLA
+  - nuScenes
+license: MIT
+preferred-citation:
+  type: unpublished
+  title: "Tracker Covariances as Safety Margins in Motion Planning: A Preregistered Equal-Caution Study in Simulation"
+  authors:
+    - family-names: "Kopalli"
+      given-names: "Ananda Siva Kumar"
+      alias: "Ananda Siva Kumar Kopalli Naga Venkata"
+      orcid: "https://orcid.org/0009-0002-5241-9922"
+  notes: "Manuscript submitted to the IEEE Open Journal of Intelligent Transportation Systems."
+  year: 2026

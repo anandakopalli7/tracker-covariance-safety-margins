@@ -1,0 +1,233 @@
+{
+ "package": "D",
+ "written": "2026-11-20T10:59:30.587561+00:00",
+ "program": "make_export_cd_v13.py (first)",
+ "program_sha256": "99fb107d5a4188e2440c6253aab7b69ecd836cc61d1c494f78673e6c7bcedfc2",
+ "lock2_sha256": "02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df",
+ "test_old": true,
+ "values": {
+  "D1.const.CK3.dcau": 0.08811567309833102,
+  "D1.const.CK3.dcau.cal": "nominal95",
+  "D1.const.CK3.dcau.ci": [
+   -0.5393433850338463,
+   0.6676481013710933
+  ],
+  "D1.const.CK3.dcau.level": 0.95,
+  "D1.const.CK3.dwg": -5.910735826296743,
+  "D1.const.CK3.dwg.cal": "nominal95",
+  "D1.const.CK3.dwg.ci": [
+   -7.348764973549735,
+   -4.577585828271699
+  ],
+  "D1.const.CK3.dwg.level": 0.95,
+  "D1.const.N.dcau": 0.01690456755148162,
+  "D1.const.N.dcau.cal": "nominal95",
+  "D1.const.N.dcau.ci": [
+   0.005665461940548133,
+   0.03099773242951745
+  ],
+  "D1.const.N.dcau.level": 0.95,
+  "D1.const.N.dwg": 0.0,
+  "D1.const.N.dwg.cal": "nominal95",
+  "D1.const.N.dwg.ci": [
+   0.0,
+   0.0
+  ],
+  "D1.const.N.dwg.level": 0.95,
+  "D1.const.PS.dcau": -0.029990267086789757,
+  "D1.const.PS.dcau.cal": "nominal95",
+  "D1.const.PS.dcau.ci": [
+   -2.4135023997163314,
+   2.2593056988468305
+  ],
+  "D1.const.PS.dcau.level": 0.95,
+  "D1.const.PS.dwg": -7.322074788902292,
+  "D1.const.PS.dwg.cal": "nominal95",
+  "D1.const.PS.dwg.ci": [
+   -8.913279806199043,
+   -5.839148334456512
+  ],
+  "D1.const.PS.dwg.level": 0.95,
+  "D1.const.TG.dcau": -0.06761576607817332,
+  "D1.const.TG.dcau.cal": "nominal95",
+  "D1.const.TG.dcau.ci": [
+   -0.5308468486873459,
+   0.4228030802670938
+  ],
+  "D1.const.TG.dcau.level": 0.95,
+  "D1.const.TG.dwg": -0.398069963811821,
+  "D1.const.TG.dwg.cal": "nominal95",
+  "D1.const.TG.dwg.ci": [
+   -0.6817113305124582,
+   -0.17533401222538228
+  ],
+  "D1.const.TG.dwg.level": 0.95,
+  "D1.mild.CK3.dcau": 0.08811567309833102,
+  "D1.mild.CK3.dcau.cal": "nominal95",
+  "D1.mild.CK3.dcau.ci": [
+   -0.5393433850338463,
+   0.6676481013710933
+  ],
+  "D1.mild.CK3.dcau.level": 0.95,
+  "D1.mild.CK3.dwg": -5.910735826296743,
+  "D1.mild.CK3.dwg.cal": "nominal95",
+  "D1.mild.CK3.dwg.ci": [
+   -7.348764973549735,
+   -4.577585828271699
+  ],
+  "D1.mild.CK3.dwg.level": 0.95,
+  "D1.mild.N.dcau": 0.01690456755148162,
+  "D1.mild.N.dcau.cal": "nominal95",
+  "D1.mild.N.dcau.ci": [
+   0.005665461940548133,
+   0.03099773242951745
+  ],
+  "D1.mild.N.dcau.level": 0.95,
+  "D1.mild.N.dwg": 0.0,
+  "D1.mild.N.dwg.cal": "nominal95",
+  "D1.mild.N.dwg.ci": [
+   0.0,
+   0.0
+  ],
+  "D1.mild.N.dwg.level": 0.95,
+  "D1.mild.PS.dcau": -0.029990267086789757,
+  "D1.mild.PS.dcau.cal": "nominal95",
+  "D1.mild.PS.dcau.ci": [
+   -2.4135023997163314,
+   2.2593056988468305
+  ],
+  "D1.mild.PS.dcau.level": 0.95,
+  "D1.mild.PS.dwg": -7.322074788902292,
+  "D1.mild.PS.dwg.cal": "nominal95",
+  "D1.mild.PS.dwg.ci": [
+   -8.913279806199043,
+   -5.839148334456512
+  ],
+  "D1.mild.PS.dwg.level": 0.95,
+  "D1.mild.TG.dcau": -0.06761576607817332,
+  "D1.mild.TG.dcau.cal": "nominal95",
+  "D1.mild.TG.dcau.ci": [
+   -0.5308468486873459,
+   0.4228030802670938
+  ],
+  "D1.mild.TG.dcau.level": 0.95,
+  "D1.mild.TG.dwg": -0.398069963811821,
+  "D1.mild.TG.dwg.cal": "nominal95",
+  "D1.mild.TG.dwg.ci": [
+   -0.6817113305124582,
+   -0.17533401222538228
+  ],
+  "D1.mild.TG.dwg.level": 0.95,
+  "D1.n_contact": null,
+  "D1.n_dec": 24870,
+  "D1.n_replaced": null,
+  "D1.n_runs": 105,
+  "D1.stopgo.CK3.dcau": 0.08811567309833102,
+  "D1.stopgo.CK3.dcau.cal": "nominal95",
+  "D1.stopgo.CK3.dcau.ci": [
+   -0.5393433850338463,
+   0.6676481013710933
+  ],
+  "D1.stopgo.CK3.dcau.level": 0.95,
+  "D1.stopgo.CK3.dwg": -5.910735826296743,
+  "D1.stopgo.CK3.dwg.cal": "nominal95",
+  "D1.stopgo.CK3.dwg.ci": [
+   -7.348764973549735,
+   -4.577585828271699
+  ],
+  "D1.stopgo.CK3.dwg.level": 0.95,
+  "D1.stopgo.N.dcau": 0.01690456755148162,
+  "D1.stopgo.N.dcau.cal": "nominal95",
+  "D1.stopgo.N.dcau.ci": [
+   0.005665461940548133,
+   0.03099773242951745
+  ],
+  "D1.stopgo.N.dcau.level": 0.95,
+  "D1.stopgo.N.dwg": 0.0,
+  "D1.stopgo.N.dwg.cal": "nominal95",
+  "D1.stopgo.N.dwg.ci": [
+   0.0,
+   0.0
+  ],
+  "D1.stopgo.N.dwg.level": 0.95,
+  "D1.stopgo.PS.dcau": -0.029990267086789757,
+  "D1.stopgo.PS.dcau.cal": "nominal95",
+  "D1.stopgo.PS.dcau.ci": [
+   -2.4135023997163314,
+   2.2593056988468305
+  ],
+  "D1.stopgo.PS.dcau.level": 0.95,
+  "D1.stopgo.PS.dwg": -7.322074788902292,
+  "D1.stopgo.PS.dwg.cal": "nominal95",
+  "D1.stopgo.PS.dwg.ci": [
+   -8.913279806199043,
+   -5.839148334456512
+  ],
+  "D1.stopgo.PS.dwg.level": 0.95,
+  "D1.stopgo.TG.dcau": -0.06761576607817332,
+  "D1.stopgo.TG.dcau.cal": "nominal95",
+  "D1.stopgo.TG.dcau.ci": [
+   -0.5308468486873459,
+   0.4228030802670938
+  ],
+  "D1.stopgo.TG.dcau.level": 0.95,
+  "D1.stopgo.TG.dwg": -0.398069963811821,
+  "D1.stopgo.TG.dwg.cal": "nominal95",
+  "D1.stopgo.TG.dwg.ci": [
+   -0.6817113305124582,
+   -0.17533401222538228
+  ],
+  "D1.stopgo.TG.dwg.level": 0.95,
+  "D2.CK3.c2.rs.runs": 1,
+  "D2.CK3.c2.rs.vclose": 0.5827230871917908,
+  "D2.CK3.c2.w3.runs": 33,
+  "D2.CK3.c2.w3.vclose": 5.779771712693652,
+  "D2.CK3.c5.rs.runs": 0,
+  "D2.CK3.c5.rs.vclose": null,
+  "D2.CK3.c5.w3.runs": 29,
+  "D2.CK3.c5.w3.vclose": 6.639577423315703,
+  "D2.F0.c2.rs.runs": 13,
+  "D2.F0.c2.rs.vclose": 3.298521955452414,
+  "D2.F0.c2.w3.runs": 34,
+  "D2.F0.c2.w3.vclose": 9.24444911726304,
+  "D2.F0.c5.rs.runs": 12,
+  "D2.F0.c5.rs.vclose": 3.589445909066731,
+  "D2.F0.c5.w3.runs": 34,
+  "D2.F0.c5.w3.vclose": 9.255891346096929,
+  "D2.N.c2.rs.runs": 13,
+  "D2.N.c2.rs.vclose": 3.298521955452414,
+  "D2.N.c2.w3.runs": 34,
+  "D2.N.c2.w3.vclose": 9.228544533052094,
+  "D2.N.c5.rs.runs": 12,
+  "D2.N.c5.rs.vclose": 3.589445909066731,
+  "D2.N.c5.w3.runs": 34,
+  "D2.N.c5.w3.vclose": 9.255891346096929,
+  "D2.TG.c2.rs.runs": 12,
+  "D2.TG.c2.rs.vclose": 3.589445909066731,
+  "D2.TG.c2.w3.runs": 34,
+  "D2.TG.c2.w3.vclose": 8.675101912861095,
+  "D2.TG.c5.rs.runs": 11,
+  "D2.TG.c5.rs.vclose": 3.245496620524936,
+  "D2.TG.c5.w3.runs": 34,
+  "D2.TG.c5.w3.vclose": 8.888176761856755
+ },
+ "deviations": [],
+ "not_produced": {
+  "required": [],
+  "supplement": []
+ },
+ "keys_not_in_A_list": [],
+ "overlaps": [],
+ "inputs": {
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\TESTOLD_C_LEAD_H0_H5_v13.json": "a1536bb9055b358473065c18366f90888d8715636fc3aaa767fffb9866a05e29",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\TESTOLD_C_CUTIN_K0_K2_v13.json": "21c850cd14bdb727544b5129908aae064231a1a8249c9606d02664d0f61601e4",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\TESTOLD_D_NONBRAKING_DH1_DH2_v13.json": "1a2887f4ddf8bf3552238b21a00a3bf798e8fd9f1f876b3a252a17f25d6a98a6",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\TESTOLD_D2_EVENT_TABLE_v13.json": "02ba2544c2d1e0d099dfc36f4725223f50d1ff1a3a2ee92efc93fd27282dd2cb",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\TESTOLD_D2_RS_v13.json": "658d9574ddbbac417b857efddb4ea78b31c713cb2ed4dc500c23c0a29e7e9e53",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\TESTOLD_S57A_v13.json": "95185ce758c874590d5b8745a919ebcdde9949380a36bf3d129a0a30d7372545",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\TESTOLD_B7_v13_final.json": "e2708883f6c2c48fe40c15b6cbf52363734aa2ea5a692d18db801f5f6aff816d",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\TESTOLD_B7_v13_ci.json": "023d3741e09df9efc5fb2cc01c77d057243bd5c6a41df584a3aab3538b570aa4",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\TESTOLD_S57B_v13.json": "a0a8c7b1b2db57d55549f63bf81b09bc3da27a7bdad21a3579054848589cf640",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\TESTOLD_HAND_CHECK_v13.json": "96e2208f54832cd63122ce3952f7d1d3e23a4609eff2161d2611a5b0fca32f47"
+ }
+}

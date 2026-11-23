@@ -1,0 +1,32 @@
+r4_items_v01 start, nboot 20000, numpy 2.5.4
+pair counts done
+w1                         all: n 8290 denE 1116.911942099 den0 1205.235223160  (15 s)
+w1_signed                  all: n 8290 denE 977.358262967 den0 1092.653799759  (18 s)
+est_t0p50_a6p0             all: n 8290 denE 20.868516285 den0 22.593486128  (19 s)
+est_t0p75_a6p0             all: n 8290 denE 136.537997587 den0 142.569360676  (19 s)
+est_t1p00_a6p0             all: n 8290 denE 269.264173703 den0 283.160434258  (19 s)
+est_t1p25_a6p0             all: n 8290 denE 429.408926417 den0 455.597104946  (18 s)
+est_t1p50_a6p0             all: n 8290 denE 599.939686369 den0 642.786489747  (18 s)
+est_t1p80_a6p0             all: n 8290 denE 817.780458384 den0 878.600723764  (17 s)
+est_t0p75_a4p0             all: n 8290 denE 327.092882992 den0 345.078407720  (18 s)
+est_t0p75_a5p0             all: n 8290 denE 199.372738239 den0 208.600723764  (17 s)
+est_t0p75_a7p6             all: n 8290 denE 71.145958987 den0 74.825090470  (18 s)
+cens_t0p50_a6p0            all: n 8290 denE 32.316043426 den0 34.692400483  (17 s)
+cens_t0p75_a6p0            all: n 8290 denE 161.085645356 den0 168.552472859  (17 s)
+cens_t1p00_a6p0            all: n 8290 denE 306.743063932 den0 323.679131484  (19 s)
+cens_t1p25_a6p0            all: n 8290 denE 476.272617612 den0 508.347406514  (19 s)
+cens_t1p50_a6p0            all: n 8290 denE 654.897466828 den0 707.442702051  (17 s)
+cens_t1p80_a6p0            all: n 8290 denE 866.610373945 den0 943.787696019  (17 s)
+est_signed_t0p75_a6p0      all: n 8290 denE 121.158021713 den0 130.265379976  (17 s)
+asscored_t0p50_a6p0        all: n 8290 denE 20.868516285 den0 22.593486128  (19 s)
+asscored_t0p75_a6p0        all: n 8290 denE 135.018094089 den0 141.013268999  (18 s)
+asscored_t1p00_a6p0        all: n 8290 denE 261.133896261 den0 274.547647768  (18 s)
+asscored_t1p25_a6p0        all: n 8290 denE 407.104945718 den0 431.616405308  (18 s)
+asscored_t1p50_a6p0        all: n 8290 denE 547.647768396 den0 587.261761158  (18 s)
+asscored_t1p80_a6p0        all: n 8290 denE 719.577804584 den0 773.992762364  (16 s)
+asscored_t0p75_a4p0        all: n 8290 denE 282.870928830 den0 297.563329312  (17 s)
+asscored_t0p75_a5p0        all: n 8290 denE 181.290711701 den0 189.794933655  (17 s)
+asscored_t0p75_a7p6        all: n 8290 denE 71.145958987 den0 74.825090470  (18 s)
+anchor against recount2 scoring: max abs diff 0
+written RECOUNT4_RESULTS_v01.json sha256 b5d428524e066e270d52cc31057c23d5c5accf4b1d88659391a5cfcb2f66f04c at 2026-11-18 19:14:20
+r4_items_v01 end, 481 s

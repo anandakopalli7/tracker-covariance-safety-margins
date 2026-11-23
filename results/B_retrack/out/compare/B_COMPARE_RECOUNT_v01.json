@@ -1,0 +1,6442 @@
+{
+ "code": "b_compare_recount_v01.py",
+ "written": "2026-11-20 01:23:29",
+ "second_program": "recount\\RECOUNT_B_v01.json (written 2026-11-19 18:55:18)",
+ "n_items": 908,
+ "n_agree": 908,
+ "disagreements": [],
+ "items": [
+  {
+   "item": "CV0 n evaluated",
+   "first": 8290.0,
+   "second": 8290.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 room pp",
+   "first": 5.512545835358791,
+   "second": 5.512545835358791,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 room dec-eq",
+   "first": 456.99004975124376,
+   "second": 456.99004975124376,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 RR_gl(N)",
+   "first": -0.00041369549833977597,
+   "second": -0.00041369549833977597,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 RR_gl(NA)",
+   "first": 0.01506722551848021,
+   "second": 0.01506722551848021,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 RR_gl(AM)",
+   "first": 0.38239616787327857,
+   "second": 0.38239616787327857,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 RR_gl(CK3)",
+   "first": 0.8366011648794295,
+   "second": 0.8366011648794295,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 RR_gl(Q)",
+   "first": -0.0023950792009144913,
+   "second": -0.0023950792009144913,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 RR_gl(E5)",
+   "first": 0.013619291274290995,
+   "second": 0.013619291274290995,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 RR_gl(E5p)",
+   "first": 0.0036797125904958765,
+   "second": 0.0036797125904958765,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 RR_gl(E5_x) = ceiling",
+   "first": 0.00011975396004572303,
+   "second": 0.00011975396004572303,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 RR_gl(E5p_x)",
+   "first": 6.532034184312156e-05,
+   "second": 6.532034184312156e-05,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 margin-ratio rows",
+   "first": 120522.0,
+   "second": 120522.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 margin ratio median",
+   "first": 1.1028772085450573,
+   "second": 1.1028772085450573,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 margin ratio q05",
+   "first": 1.1023661073557849,
+   "second": 1.1023661073557849,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 margin ratio q95",
+   "first": 1.1032217167110063,
+   "second": 1.1032217167110063,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 margin ratio A",
+   "first": 0.0003878987382240783,
+   "second": 0.0003878987382240783,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 margin ratio share_within_5pct",
+   "first": 0.9917691375848393,
+   "second": 0.9917691375848393,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 room pp CI[0]",
+   "first": 4.4519661800393555,
+   "second": 4.4519661800393555,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 room dec-eq CI[0]",
+   "first": 358.88407960199004,
+   "second": 358.88407960199004,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 RR_gl(N) CI[0]",
+   "first": -0.000757535530936449,
+   "second": -0.000757535530936449,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 RR_gl(E5) CI[0]",
+   "first": 0.008810781843485771,
+   "second": 0.008810781843485771,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 ceiling CI[0]",
+   "first": 2.227603495423895e-05,
+   "second": 2.227603495423895e-05,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 room pp CI[1]",
+   "first": 6.535414656836051,
+   "second": 6.535414656836051,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 room dec-eq CI[1]",
+   "first": 552.9324626865672,
+   "second": 552.9324626865672,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 RR_gl(N) CI[1]",
+   "first": 5.792723758548102e-05,
+   "second": 5.792723758548102e-05,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 RR_gl(E5) CI[1]",
+   "first": 0.019310617902544076,
+   "second": 0.019310617902544076,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 ceiling CI[1]",
+   "first": 0.00025122198288911714,
+   "second": 0.00025122198288911714,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 after-stop room dec-eq",
+   "first": 54.557213930348254,
+   "second": 54.557213930348254,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 tru_before n",
+   "first": 678.0,
+   "second": 678.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 tru_before room dec-eq",
+   "first": 2.8507462686567155,
+   "second": 2.8507462686567155,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 tru_before RR_gl(N)",
+   "first": 0.0017452006980802808,
+   "second": 0.0017452006980802808,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 tru_braking n",
+   "first": 755.0,
+   "second": 755.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 tru_braking room dec-eq",
+   "first": 115.04477611940298,
+   "second": 115.04477611940298,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 tru_braking RR_gl(N)",
+   "first": 0.0001729804532087838,
+   "second": 0.0001729804532087838,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 tru_stopped n",
+   "first": 6857.0,
+   "second": 6857.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 tru_stopped room dec-eq",
+   "first": 54.557213930348254,
+   "second": 54.557213930348254,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 tru_stopped RR_gl(N)",
+   "first": -0.0009119095385737746,
+   "second": -0.0009119095385737746,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 est_before n",
+   "first": 905.0,
+   "second": 905.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 est_before room dec-eq",
+   "first": 20.845771144278608,
+   "second": 20.845771144278608,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 est_before RR_gl(N)",
+   "first": 0.0007159904534606182,
+   "second": 0.0007159904534606182,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 est_braking n",
+   "first": 660.0,
+   "second": 660.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 est_braking room dec-eq",
+   "first": 202.47761194029852,
+   "second": 202.47761194029852,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 est_braking RR_gl(N)",
+   "first": 0.00019656985601258203,
+   "second": 0.00019656985601258203,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 est_stopped n",
+   "first": 6725.0,
+   "second": 6725.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 est_stopped room dec-eq",
+   "first": 3.104477611940299,
+   "second": 3.104477611940299,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 est_stopped RR_gl(N)",
+   "first": -0.0048076923076923045,
+   "second": -0.0048076923076923045,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 est05_braking n",
+   "first": 755.0,
+   "second": 755.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 est05_braking room dec-eq",
+   "first": 186.9950248756219,
+   "second": 186.9950248756219,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 est05_braking RR_gl(N)",
+   "first": -0.00018623955728196595,
+   "second": -0.00018623955728196595,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 est20_braking n",
+   "first": 535.0,
+   "second": 535.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 est20_braking room dec-eq",
+   "first": 195.407960199005,
+   "second": 195.407960199005,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 est20_braking RR_gl(N)",
+   "first": -0.00017822135091783749,
+   "second": -0.00017822135091783749,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 grid room pp",
+   "first": 5.556775831337881,
+   "second": 5.556775831337881,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 grid RR(N)",
+   "first": 0.001220407810609995,
+   "second": 0.001220407810609995,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 grid RR(NA)",
+   "first": 0.01666450665284258,
+   "second": 0.01666450665284258,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 grid RR(AM)",
+   "first": 0.3757992051149128,
+   "second": 0.3757992051149128,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 grid RR(CK3)",
+   "first": 0.8314757214446175,
+   "second": 0.8314757214446175,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 grid RR(Q)",
+   "first": -0.0018036115431138745,
+   "second": -0.0018036115431138745,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 lag n",
+   "first": 300.0,
+   "second": 300.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 lag median",
+   "first": 1.4894659881206787,
+   "second": 1.4894659881206787,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 H3-style class",
+   "first": "c_amplitude_limited",
+   "second": "c_amplitude_limited",
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "CV0 barely varies",
+   "first": true,
+   "second": true,
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B3 n evaluated",
+   "first": 8290.0,
+   "second": 8290.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 room pp",
+   "first": 5.9073750667650895,
+   "second": 5.9073750667650895,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 room dec-eq",
+   "first": 489.7213930348259,
+   "second": 489.7213930348259,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 RR_gl(N)",
+   "first": -0.000853363675152898,
+   "second": -0.000853363675152898,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 RR_gl(NA)",
+   "first": 0.16247434829428853,
+   "second": 0.16247434829428853,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 RR_gl(AM)",
+   "first": 0.3674644939756588,
+   "second": 0.3674644939756588,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 RR_gl(CK3)",
+   "first": 0.7993579454253611,
+   "second": 0.7993579454253611,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 RR_gl(Q)",
+   "first": -0.002346750106670467,
+   "second": -0.002346750106670467,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 RR_gl(E5)",
+   "first": 0.013125546051161183,
+   "second": 0.013125546051161183,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 RR_gl(E5p)",
+   "first": 0.0035048865229493796,
+   "second": 0.0035048865229493796,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 RR_gl(E5_x) = ceiling",
+   "first": 0.00018286364467562193,
+   "second": 0.00018286364467562193,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 RR_gl(E5p_x)",
+   "first": 8.127273096694218e-05,
+   "second": 8.127273096694218e-05,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 margin-ratio rows",
+   "first": 120539.0,
+   "second": 120539.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 margin ratio median",
+   "first": 1.0736279347351012,
+   "second": 1.0736279347351012,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 margin ratio q05",
+   "first": 1.072773934570585,
+   "second": 1.072773934570585,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 margin ratio q95",
+   "first": 1.074302865530852,
+   "second": 1.074302865530852,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 margin ratio A",
+   "first": 0.0007120394835126513,
+   "second": 0.0007120394835126513,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 margin ratio share_within_5pct",
+   "first": 0.9982744174084736,
+   "second": 0.9982744174084736,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 room pp CI[0]",
+   "first": 4.797920350082979,
+   "second": 4.797920350082979,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 room dec-eq CI[0]",
+   "first": 386.09141791044766,
+   "second": 386.09141791044766,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 RR_gl(N) CI[0]",
+   "first": -0.0019242832755082685,
+   "second": -0.0019242832755082685,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 RR_gl(E5) CI[0]",
+   "first": 0.008557750241707322,
+   "second": 0.008557750241707322,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 ceiling CI[0]",
+   "first": 5.829337554058264e-05,
+   "second": 5.829337554058264e-05,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 room pp CI[1]",
+   "first": 6.945070295521149,
+   "second": 6.945070295521149,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 room dec-eq CI[1]",
+   "first": 591.1512437810945,
+   "second": 591.1512437810945,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 RR_gl(N) CI[1]",
+   "first": 4.8591312189394473e-20,
+   "second": 4.8591312189394473e-20,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 RR_gl(E5) CI[1]",
+   "first": 0.0183762206589943,
+   "second": 0.0183762206589943,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 ceiling CI[1]",
+   "first": 0.0003390890132513479,
+   "second": 0.0003390890132513479,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 after-stop room dec-eq",
+   "first": 79.4726368159204,
+   "second": 79.4726368159204,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 tru_before n",
+   "first": 678.0,
+   "second": 678.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 tru_before room dec-eq",
+   "first": 2.905472636815919,
+   "second": 2.905472636815919,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 tru_before RR_gl(N)",
+   "first": 0.0,
+   "second": 0.0,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 tru_braking n",
+   "first": 755.0,
+   "second": 755.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 tru_braking room dec-eq",
+   "first": 124.16915422885573,
+   "second": 124.16915422885573,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 tru_braking RR_gl(N)",
+   "first": 0.000240403878515914,
+   "second": 0.000240403878515914,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 tru_stopped n",
+   "first": 6857.0,
+   "second": 6857.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 tru_stopped room dec-eq",
+   "first": 79.4726368159204,
+   "second": 79.4726368159204,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 tru_stopped RR_gl(N)",
+   "first": -0.0028170777513459385,
+   "second": -0.0028170777513459385,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 est_before n",
+   "first": 920.0,
+   "second": 920.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 est_before room dec-eq",
+   "first": 22.885572139303484,
+   "second": 22.885572139303484,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 est_before RR_gl(N)",
+   "first": 0.0008695652173913043,
+   "second": 0.0008695652173913043,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 est_braking n",
+   "first": 722.0,
+   "second": 722.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 est_braking room dec-eq",
+   "first": 250.9253731343284,
+   "second": 250.9253731343284,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 est_braking RR_gl(N)",
+   "first": -0.0055714172416527884,
+   "second": -0.0055714172416527884,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 est_stopped n",
+   "first": 6648.0,
+   "second": 6648.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 est_stopped room dec-eq",
+   "first": 1.9900497512437807,
+   "second": 1.9900497512437807,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 est_stopped RR_gl(N)",
+   "first": -0.012499999999999999,
+   "second": -0.012499999999999999,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 est05_braking n",
+   "first": 827.0,
+   "second": 827.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 est05_braking room dec-eq",
+   "first": 227.94029850746267,
+   "second": 227.94029850746267,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 est05_braking RR_gl(N)",
+   "first": -0.003448576916361093,
+   "second": -0.003448576916361093,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 est20_braking n",
+   "first": 607.0,
+   "second": 607.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 est20_braking room dec-eq",
+   "first": 235.90547263681594,
+   "second": 235.90547263681594,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 est20_braking RR_gl(N)",
+   "first": -0.006685366007971829,
+   "second": -0.006685366007971829,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 grid room pp",
+   "first": 5.936241590599476,
+   "second": 5.936241590599476,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 grid RR(N)",
+   "first": -0.0013041500278016468,
+   "second": -0.0013041500278016468,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 grid RR(NA)",
+   "first": 0.16019814992670472,
+   "second": 0.16019814992670472,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 grid RR(AM)",
+   "first": 0.36241217206692616,
+   "second": 0.36241217206692616,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 grid RR(CK3)",
+   "first": 0.796451498761563,
+   "second": 0.796451498761563,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 grid RR(Q)",
+   "first": -0.004175302026992878,
+   "second": -0.004175302026992878,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 lag n",
+   "first": 300.0,
+   "second": 300.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 lag median",
+   "first": 2.662327286447857,
+   "second": 2.662327286447857,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 H3-style class",
+   "first": "c_amplitude_limited",
+   "second": "c_amplitude_limited",
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B3 barely varies",
+   "first": true,
+   "second": true,
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B2 n evaluated",
+   "first": 8290.0,
+   "second": 8290.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 room pp",
+   "first": 5.68460472066687,
+   "second": 5.68460472066687,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 room dec-eq",
+   "first": 471.25373134328356,
+   "second": 471.25373134328356,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 RR_gl(N)",
+   "first": 0.055562593695234475,
+   "second": 0.055562593695234475,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 RR_gl(NA)",
+   "first": 0.21771077468803446,
+   "second": 0.21771077468803446,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 RR_gl(AM)",
+   "first": 0.3588289943202213,
+   "second": 0.3588289943202213,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 RR_gl(CK3)",
+   "first": 0.7977660944659107,
+   "second": 0.7977660944659107,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 RR_gl(Q)",
+   "first": -0.0029454614556280517,
+   "second": -0.0029454614556280517,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 RR_gl(E5)",
+   "first": 0.012489178860243666,
+   "second": 0.012489178860243666,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 RR_gl(E5p)",
+   "first": 0.0036527944933595147,
+   "second": 0.0036527944933595147,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 RR_gl(E5_x) = ceiling",
+   "first": 0.05022064567893414,
+   "second": 0.05022064567893414,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 RR_gl(E5p_x)",
+   "first": 0.012964253288570756,
+   "second": 0.012964253288570756,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 margin-ratio rows",
+   "first": 120408.0,
+   "second": 120408.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 margin ratio median",
+   "first": 0.9603360783418,
+   "second": 0.9603360783418,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 margin ratio q05",
+   "first": 0.9399820723966203,
+   "second": 0.9399820723966203,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 margin ratio q95",
+   "first": 1.2949369326547102,
+   "second": 1.2949369326547102,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 margin ratio A",
+   "first": 0.1848076253008144,
+   "second": 0.1848076253008144,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 margin ratio share_within_5pct",
+   "first": 0.6195269417314464,
+   "second": 0.6195269417314464,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 room pp CI[0]",
+   "first": 4.653639435907357,
+   "second": 4.653639435907357,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 room dec-eq CI[0]",
+   "first": 370.7677860696518,
+   "second": 370.7677860696518,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 RR_gl(N) CI[0]",
+   "first": 0.04235712034063962,
+   "second": 0.04235712034063962,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 RR_gl(E5) CI[0]",
+   "first": 0.008408766571767682,
+   "second": 0.008408766571767682,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 ceiling CI[0]",
+   "first": 0.03337451136141221,
+   "second": 0.03337451136141221,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 room pp CI[1]",
+   "first": 6.6737126023243425,
+   "second": 6.6737126023243425,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 room dec-eq CI[1]",
+   "first": 567.3133084577114,
+   "second": 567.3133084577114,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 RR_gl(N) CI[1]",
+   "first": 0.06889441349825108,
+   "second": 0.06889441349825108,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 RR_gl(E5) CI[1]",
+   "first": 0.017226125362613257,
+   "second": 0.017226125362613257,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 ceiling CI[1]",
+   "first": 0.07081963144569088,
+   "second": 0.07081963144569088,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 after-stop room dec-eq",
+   "first": 63.90049751243781,
+   "second": 63.90049751243781,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 tru_before n",
+   "first": 678.0,
+   "second": 678.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 tru_before room dec-eq",
+   "first": 3.054726368159203,
+   "second": 3.054726368159203,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 tru_before RR_gl(N)",
+   "first": -0.014657980456026053,
+   "second": -0.014657980456026053,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 tru_braking n",
+   "first": 755.0,
+   "second": 755.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 tru_braking room dec-eq",
+   "first": 124.65174129353233,
+   "second": 124.65174129353233,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 tru_braking RR_gl(N)",
+   "first": 0.033047295948912425,
+   "second": 0.033047295948912425,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 tru_stopped n",
+   "first": 6857.0,
+   "second": 6857.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 tru_stopped room dec-eq",
+   "first": 63.90049751243781,
+   "second": 63.90049751243781,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 tru_stopped RR_gl(N)",
+   "first": 0.14808470881345379,
+   "second": 0.14808470881345379,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 est_before n",
+   "first": 905.0,
+   "second": 905.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 est_before room dec-eq",
+   "first": 22.72139303482587,
+   "second": 22.72139303482587,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 est_before RR_gl(N)",
+   "first": -0.038975257280490484,
+   "second": -0.038975257280490484,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 est_braking n",
+   "first": 682.0,
+   "second": 682.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 est_braking room dec-eq",
+   "first": 233.22388059701495,
+   "second": 233.22388059701495,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 est_braking RR_gl(N)",
+   "first": 0.018430820427492653,
+   "second": 0.018430820427492653,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 est_stopped n",
+   "first": 6703.0,
+   "second": 6703.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 est_stopped room dec-eq",
+   "first": 2.7810945273631837,
+   "second": 2.7810945273631837,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 est_stopped RR_gl(N)",
+   "first": 0.41681574239713776,
+   "second": 0.41681574239713776,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 est05_braking n",
+   "first": 767.0,
+   "second": 767.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 est05_braking room dec-eq",
+   "first": 226.11940298507466,
+   "second": 226.11940298507466,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 est05_braking RR_gl(N)",
+   "first": 0.02690869086908691,
+   "second": 0.02690869086908691,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 est20_braking n",
+   "first": 532.0,
+   "second": 532.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 est20_braking room dec-eq",
+   "first": 217.06467661691542,
+   "second": 217.06467661691542,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 est20_braking RR_gl(N)",
+   "first": 0.018748567499426997,
+   "second": 0.018748567499426997,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 grid room pp",
+   "first": 5.710770634163322,
+   "second": 5.710770634163322,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 grid RR(N)",
+   "first": 0.054309674436200835,
+   "second": 0.054309674436200835,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 grid RR(NA)",
+   "first": 0.2145904705857626,
+   "second": 0.2145904705857626,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 grid RR(AM)",
+   "first": 0.3517938586351121,
+   "second": 0.3517938586351121,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 grid RR(CK3)",
+   "first": 0.7957397171020827,
+   "second": 0.7957397171020827,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 grid RR(Q)",
+   "first": -0.004445238445532697,
+   "second": -0.004445238445532697,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 lag n",
+   "first": 300.0,
+   "second": 300.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 lag median",
+   "first": 1.7153273286271977,
+   "second": 1.7153273286271977,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 H3-style class",
+   "first": "a_recovers",
+   "second": "a_recovers",
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B2 barely varies",
+   "first": false,
+   "second": false,
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B4 n evaluated",
+   "first": 8290.0,
+   "second": 8290.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 room pp",
+   "first": 5.416044025949866,
+   "second": 5.416044025949866,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 room dec-eq",
+   "first": 448.9900497512439,
+   "second": 448.9900497512439,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 RR_gl(N)",
+   "first": -0.0020166875353197344,
+   "second": -0.0020166875353197344,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 RR_gl(NA)",
+   "first": 0.13864172770285993,
+   "second": 0.13864172770285993,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 RR_gl(AM)",
+   "first": 0.3725331589969749,
+   "second": 0.3725331589969749,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 RR_gl(CK3)",
+   "first": 0.8099992243509478,
+   "second": 0.8099992243509478,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 RR_gl(Q)",
+   "first": -0.0024155927620862763,
+   "second": -0.0024155927620862763,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 RR_gl(E5)",
+   "first": 0.015158398617128544,
+   "second": 0.015158398617128544,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 RR_gl(E5p)",
+   "first": 0.00729110108923288,
+   "second": 0.00729110108923288,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 RR_gl(E5_x) = ceiling",
+   "first": 0.0027480137843917197,
+   "second": 0.0027480137843917197,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 RR_gl(E5p_x)",
+   "first": 0.0013186033884782854,
+   "second": 0.0013186033884782854,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 margin-ratio rows",
+   "first": 115776.0,
+   "second": 115776.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 margin ratio median",
+   "first": 0.9817972311810452,
+   "second": 0.9817972311810452,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 margin ratio q05",
+   "first": 0.9798811117494309,
+   "second": 0.9798811117494309,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 margin ratio q95",
+   "first": 0.9977445992986125,
+   "second": 0.9977445992986125,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 margin ratio A",
+   "first": 0.009097340561702747,
+   "second": 0.009097340561702747,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 margin ratio share_within_5pct",
+   "first": 0.9976333609729132,
+   "second": 0.9976333609729132,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 room pp CI[0]",
+   "first": 4.444622381229002,
+   "second": 4.444622381229002,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 room dec-eq CI[0]",
+   "first": 356.2514925373134,
+   "second": 356.2514925373134,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 RR_gl(N) CI[0]",
+   "first": -0.006288801148982167,
+   "second": -0.006288801148982167,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 RR_gl(E5) CI[0]",
+   "first": 0.010514546160672796,
+   "second": 0.010514546160672796,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 ceiling CI[0]",
+   "first": 0.0018208112338158494,
+   "second": 0.0018208112338158494,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 room pp CI[1]",
+   "first": 6.295843785856916,
+   "second": 6.295843785856916,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 room dec-eq CI[1]",
+   "first": 536.1215174129353,
+   "second": 536.1215174129353,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 RR_gl(N) CI[1]",
+   "first": 0.0006177820804543321,
+   "second": 0.0006177820804543321,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 RR_gl(E5) CI[1]",
+   "first": 0.019913858774884906,
+   "second": 0.019913858774884906,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 ceiling CI[1]",
+   "first": 0.003627097264859604,
+   "second": 0.003627097264859604,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 after-stop room dec-eq",
+   "first": 60.154228855721385,
+   "second": 60.154228855721385,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 tru_before n",
+   "first": 678.0,
+   "second": 678.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 tru_before room dec-eq",
+   "first": 2.915422885572139,
+   "second": 2.915422885572139,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 tru_before RR_gl(N)",
+   "first": -0.025597269624573375,
+   "second": -0.025597269624573375,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 tru_braking n",
+   "first": 755.0,
+   "second": 755.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 tru_braking room dec-eq",
+   "first": 118.59203980099502,
+   "second": 118.59203980099502,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 tru_braking RR_gl(N)",
+   "first": -0.03591055921466627,
+   "second": -0.03591055921466627,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 tru_stopped n",
+   "first": 6857.0,
+   "second": 6857.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 tru_stopped room dec-eq",
+   "first": 60.154228855721385,
+   "second": 60.154228855721385,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 tru_stopped RR_gl(N)",
+   "first": 0.0026465966421305043,
+   "second": 0.0026465966421305043,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 est_before n",
+   "first": 910.0,
+   "second": 910.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 est_before room dec-eq",
+   "first": 22.626865671641795,
+   "second": 22.626865671641795,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 est_before RR_gl(N)",
+   "first": -0.029683377308707123,
+   "second": -0.029683377308707123,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 est_braking n",
+   "first": 702.0,
+   "second": 702.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 est_braking room dec-eq",
+   "first": 236.8606965174129,
+   "second": 236.8606965174129,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 est_braking RR_gl(N)",
+   "first": -0.007666617656325485,
+   "second": -0.007666617656325485,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 est_stopped n",
+   "first": 6678.0,
+   "second": 6678.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 est_stopped room dec-eq",
+   "first": 0.7014925373134329,
+   "second": 0.7014925373134329,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 est_stopped RR_gl(N)",
+   "first": -0.00709219858156029,
+   "second": -0.00709219858156029,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 est05_braking n",
+   "first": 802.0,
+   "second": 802.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 est05_braking room dec-eq",
+   "first": 215.9004975124378,
+   "second": 215.9004975124378,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 est05_braking RR_gl(N)",
+   "first": -0.006152640796386756,
+   "second": -0.006152640796386756,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 est20_braking n",
+   "first": 587.0,
+   "second": 587.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 est20_braking room dec-eq",
+   "first": 232.06965174129354,
+   "second": 232.06965174129354,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 est20_braking RR_gl(N)",
+   "first": -0.010526090125627064,
+   "second": -0.010526090125627064,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 grid room pp",
+   "first": 5.441549790252598,
+   "second": 5.441549790252598,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 grid RR(N)",
+   "first": -0.001499911769895886,
+   "second": -0.001499911769895886,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 grid RR(NA)",
+   "first": 0.13769410622904532,
+   "second": 0.13769410622904532,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 grid RR(AM)",
+   "first": 0.3667173989765308,
+   "second": 0.3667173989765308,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 grid RR(CK3)",
+   "first": 0.8086950767601905,
+   "second": 0.8086950767601905,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 grid RR(Q)",
+   "first": -0.002867478383624488,
+   "second": -0.002867478383624488,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 lag n",
+   "first": 300.0,
+   "second": 300.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 lag median",
+   "first": 1.9594844788534411,
+   "second": 1.9594844788534411,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 H3-style class",
+   "first": "c_amplitude_limited",
+   "second": "c_amplitude_limited",
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B4 barely varies",
+   "first": true,
+   "second": true,
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B1 n evaluated",
+   "first": 8290.0,
+   "second": 8290.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 room pp",
+   "first": 5.812913718500381,
+   "second": 5.812913718500381,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 room dec-eq",
+   "first": 481.8905472636816,
+   "second": 481.8905472636816,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 RR_gl(N)",
+   "first": -0.00010324179227750986,
+   "second": -0.00010324179227750986,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 RR_gl(NA)",
+   "first": 0.15714433202560396,
+   "second": 0.15714433202560396,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 RR_gl(AM)",
+   "first": 0.3680776378277927,
+   "second": 0.3680776378277927,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 RR_gl(CK3)",
+   "first": 0.8030766054098699,
+   "second": 0.8030766054098699,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 RR_gl(Q)",
+   "first": -0.002498451373115844,
+   "second": -0.002498451373115844,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 RR_gl(E5)",
+   "first": 0.013968614495147642,
+   "second": 0.013968614495147642,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 RR_gl(E5p)",
+   "first": 0.004790419161676651,
+   "second": 0.004790419161676651,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 RR_gl(E5_x) = ceiling",
+   "first": 0.0007020441874870961,
+   "second": 0.0007020441874870961,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 RR_gl(E5p_x)",
+   "first": 0.0002890770183770409,
+   "second": 0.0002890770183770409,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 margin-ratio rows",
+   "first": 119856.0,
+   "second": 119856.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 margin ratio median",
+   "first": 1.0703311196043916,
+   "second": 1.0703311196043916,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 margin ratio q05",
+   "first": 1.0690760003852677,
+   "second": 1.0690760003852677,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 margin ratio q95",
+   "first": 1.0757934000078007,
+   "second": 1.0757934000078007,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 margin ratio A",
+   "first": 0.0031380007081433666,
+   "second": 0.0031380007081433666,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 margin ratio share_within_5pct",
+   "first": 0.9980893739153651,
+   "second": 0.9980893739153651,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 room pp CI[0]",
+   "first": 4.721601910022818,
+   "second": 4.721601910022818,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 room dec-eq CI[0]",
+   "first": 378.7839552238806,
+   "second": 378.7839552238806,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 RR_gl(N) CI[0]",
+   "first": -0.001317715501933423,
+   "second": -0.001317715501933423,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 RR_gl(E5) CI[0]",
+   "first": 0.0093337579740426,
+   "second": 0.0093337579740426,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 ceiling CI[0]",
+   "first": 0.00046659155871626095,
+   "second": 0.00046659155871626095,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 room pp CI[1]",
+   "first": 6.799534550972887,
+   "second": 6.799534550972887,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 room dec-eq CI[1]",
+   "first": 580.3470149253733,
+   "second": 580.3470149253733,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 RR_gl(N) CI[1]",
+   "first": 0.0006967001613818882,
+   "second": 0.0006967001613818882,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 RR_gl(E5) CI[1]",
+   "first": 0.01936860594571225,
+   "second": 0.01936860594571225,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 ceiling CI[1]",
+   "first": 0.0011792035204042266,
+   "second": 0.0011792035204042266,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 after-stop room dec-eq",
+   "first": 74.64179104477611,
+   "second": 74.64179104477611,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 tru_before n",
+   "first": 678.0,
+   "second": 678.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 tru_before room dec-eq",
+   "first": 2.905472636815919,
+   "second": 2.905472636815919,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 tru_before RR_gl(N)",
+   "first": 0.0017123287671232882,
+   "second": 0.0017123287671232882,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 tru_braking n",
+   "first": 755.0,
+   "second": 755.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 tru_braking room dec-eq",
+   "first": 123.41293532338311,
+   "second": 123.41293532338311,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 tru_braking RR_gl(N)",
+   "first": -0.0007659437232927532,
+   "second": -0.0007659437232927532,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 tru_stopped n",
+   "first": 6857.0,
+   "second": 6857.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 tru_stopped room dec-eq",
+   "first": 74.64179104477611,
+   "second": 74.64179104477611,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 tru_stopped RR_gl(N)",
+   "first": -0.001666333399986672,
+   "second": -0.001666333399986672,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 est_before n",
+   "first": 920.0,
+   "second": 920.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 est_before room dec-eq",
+   "first": 22.855721393034827,
+   "second": 22.855721393034827,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 est_before RR_gl(N)",
+   "first": -0.001741401828471919,
+   "second": -0.001741401828471919,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 est_braking n",
+   "first": 717.0,
+   "second": 717.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 est_braking room dec-eq",
+   "first": 250.73134328358205,
+   "second": 250.73134328358205,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 est_braking RR_gl(N)",
+   "first": -0.0033335317578427307,
+   "second": -0.0033335317578427307,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 est_stopped n",
+   "first": 6653.0,
+   "second": 6653.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 est_stopped room dec-eq",
+   "first": 1.4825870646766166,
+   "second": 1.4825870646766166,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 est_stopped RR_gl(N)",
+   "first": -0.0033557046979865632,
+   "second": -0.0033557046979865632,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 est05_braking n",
+   "first": 822.0,
+   "second": 822.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 est05_braking room dec-eq",
+   "first": 227.23880597014923,
+   "second": 227.23880597014923,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 est05_braking RR_gl(N)",
+   "first": -0.0030213464696223313,
+   "second": -0.0030213464696223313,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 est20_braking n",
+   "first": 602.0,
+   "second": 602.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 est20_braking room dec-eq",
+   "first": 235.38308457711437,
+   "second": 235.38308457711437,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 est20_braking RR_gl(N)",
+   "first": -0.004945891105850522,
+   "second": -0.004945891105850522,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 grid room pp",
+   "first": 5.843520635663659,
+   "second": 5.843520635663659,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 grid RR(N)",
+   "first": -7.189072609632433e-05,
+   "second": -7.189072609632433e-05,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 grid RR(NA)",
+   "first": 0.15534558899044879,
+   "second": 0.15534558899044879,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 grid RR(AM)",
+   "first": 0.36287357502310774,
+   "second": 0.36287357502310774,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 grid RR(CK3)",
+   "first": 0.8005340453938585,
+   "second": 0.8005340453938585,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 grid RR(Q)",
+   "first": -0.00349183526753621,
+   "second": -0.00349183526753621,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 lag n",
+   "first": 300.0,
+   "second": 300.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 lag median",
+   "first": 2.4509498175401427,
+   "second": 2.4509498175401427,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 H3-style class",
+   "first": "c_amplitude_limited",
+   "second": "c_amplitude_limited",
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B1 barely varies",
+   "first": true,
+   "second": true,
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B1_d090 n evaluated",
+   "first": 8290.0,
+   "second": 8290.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 room pp",
+   "first": 5.8454410696817485,
+   "second": 5.8454410696817485,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 room dec-eq",
+   "first": 484.58706467661693,
+   "second": 484.58706467661693,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 RR_gl(N)",
+   "first": -0.0001950678630828932,
+   "second": -0.0001950678630828932,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 RR_gl(NA)",
+   "first": 0.15804603601568756,
+   "second": 0.15804603601568756,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 RR_gl(AM)",
+   "first": 0.3673641198332683,
+   "second": 0.3673641198332683,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 RR_gl(CK3)",
+   "first": 0.8016159832446972,
+   "second": 0.8016159832446972,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 RR_gl(Q)",
+   "first": -0.0024537483829900836,
+   "second": -0.0024537483829900836,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 RR_gl(E5)",
+   "first": 0.013675283875074438,
+   "second": 0.013675283875074438,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 RR_gl(E5p)",
+   "first": 0.0045892281472659675,
+   "second": 0.0045892281472659675,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 RR_gl(E5_x) = ceiling",
+   "first": 0.000523603211433031,
+   "second": 0.000523603211433031,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 RR_gl(E5p_x)",
+   "first": 0.00016426767417506875,
+   "second": 0.00016426767417506875,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 margin-ratio rows",
+   "first": 120324.0,
+   "second": 120324.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 margin ratio median",
+   "first": 1.06726920210119,
+   "second": 1.06726920210119,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 margin ratio q05",
+   "first": 1.0660729225384982,
+   "second": 1.0660729225384982,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 margin ratio q95",
+   "first": 1.0710922450387241,
+   "second": 1.0710922450387241,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 margin ratio A",
+   "first": 0.0023514791255777622,
+   "second": 0.0023514791255777622,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 margin ratio share_within_5pct",
+   "first": 0.9980968052923772,
+   "second": 0.9980968052923772,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 room pp CI[0]",
+   "first": 4.740591151640717,
+   "second": 4.740591151640717,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 room dec-eq CI[0]",
+   "first": 380.5856965174129,
+   "second": 380.5856965174129,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 RR_gl(N) CI[0]",
+   "first": -0.001476010520300306,
+   "second": -0.001476010520300306,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 RR_gl(E5) CI[0]",
+   "first": 0.00900782942503721,
+   "second": 0.00900782942503721,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 ceiling CI[0]",
+   "first": 0.00033874396912662467,
+   "second": 0.00033874396912662467,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 room pp CI[1]",
+   "first": 6.852272588217194,
+   "second": 6.852272588217194,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 room dec-eq CI[1]",
+   "first": 583.1853233830846,
+   "second": 583.1853233830846,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 RR_gl(N) CI[1]",
+   "first": 0.0004873533827661683,
+   "second": 0.0004873533827661683,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 RR_gl(E5) CI[1]",
+   "first": 0.018955108081282677,
+   "second": 0.018955108081282677,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 ceiling CI[1]",
+   "first": 0.0009241727199932828,
+   "second": 0.0009241727199932828,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 after-stop room dec-eq",
+   "first": 75.82089552238806,
+   "second": 75.82089552238806,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 tru_before n",
+   "first": 678.0,
+   "second": 678.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 tru_before room dec-eq",
+   "first": 2.90049751243781,
+   "second": 2.90049751243781,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 tru_before RR_gl(N)",
+   "first": 0.0017152658662092628,
+   "second": 0.0017152658662092628,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 tru_braking n",
+   "first": 755.0,
+   "second": 755.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 tru_braking room dec-eq",
+   "first": 123.34328358208955,
+   "second": 123.34328358208955,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 tru_braking RR_gl(N)",
+   "first": -0.0032268473701193867,
+   "second": -0.0032268473701193867,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 tru_stopped n",
+   "first": 6857.0,
+   "second": 6857.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 tru_stopped room dec-eq",
+   "first": 75.82089552238806,
+   "second": 75.82089552238806,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 tru_stopped RR_gl(N)",
+   "first": -0.0008530183727034129,
+   "second": -0.0008530183727034129,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 est_before n",
+   "first": 920.0,
+   "second": 920.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 est_before room dec-eq",
+   "first": 22.84577114427861,
+   "second": 22.84577114427861,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 est_before RR_gl(N)",
+   "first": -0.0021777003484320548,
+   "second": -0.0021777003484320548,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 est_braking n",
+   "first": 717.0,
+   "second": 717.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 est_braking room dec-eq",
+   "first": 251.0497512437811,
+   "second": 251.0497512437811,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 est_braking RR_gl(N)",
+   "first": -0.004280533481302392,
+   "second": -0.004280533481302392,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 est_stopped n",
+   "first": 6653.0,
+   "second": 6653.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 est_stopped room dec-eq",
+   "first": 1.7014925373134329,
+   "second": 1.7014925373134329,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 est_stopped RR_gl(N)",
+   "first": -0.005847953216374281,
+   "second": -0.005847953216374281,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 est05_braking n",
+   "first": 822.0,
+   "second": 822.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 est05_braking room dec-eq",
+   "first": 227.53731343283582,
+   "second": 227.53731343283582,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 est05_braking RR_gl(N)",
+   "first": -0.0032360336722422603,
+   "second": -0.0032360336722422603,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 est20_braking n",
+   "first": 602.0,
+   "second": 602.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 est20_braking room dec-eq",
+   "first": 235.89054726368164,
+   "second": 235.89054726368164,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 est20_braking RR_gl(N)",
+   "first": -0.005989792044543807,
+   "second": -0.005989792044543807,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 grid room pp",
+   "first": 5.875327824088244,
+   "second": 5.875327824088244,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 grid RR(N)",
+   "first": -0.0006435137895811949,
+   "second": -0.0006435137895811949,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 grid RR(NA)",
+   "first": 0.15626149131767111,
+   "second": 0.15626149131767111,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 grid RR(AM)",
+   "first": 0.3629724208375894,
+   "second": 0.3629724208375894,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 grid RR(CK3)",
+   "first": 0.7995199182839632,
+   "second": 0.7995199182839632,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 grid RR(Q)",
+   "first": -0.002962206332992839,
+   "second": -0.002962206332992839,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 lag n",
+   "first": 300.0,
+   "second": 300.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 lag median",
+   "first": 2.481198493866753,
+   "second": 2.481198493866753,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 H3-style class",
+   "first": "c_amplitude_limited",
+   "second": "c_amplitude_limited",
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B1_d090 barely varies",
+   "first": true,
+   "second": true,
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B1_d098 n evaluated",
+   "first": 8290.0,
+   "second": 8290.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 room pp",
+   "first": 5.816754586536557,
+   "second": 5.816754586536557,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 room dec-eq",
+   "first": 482.20895522388054,
+   "second": 482.20895522388054,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 RR_gl(N)",
+   "first": -0.0001650777929099058,
+   "second": -0.0001650777929099058,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 RR_gl(NA)",
+   "first": 0.1576183401427923,
+   "second": 0.1576183401427923,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 RR_gl(AM)",
+   "first": 0.36844331641285955,
+   "second": 0.36844331641285955,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 RR_gl(CK3)",
+   "first": 0.8032582229375593,
+   "second": 0.8032582229375593,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 RR_gl(Q)",
+   "first": -0.0027753703932978458,
+   "second": -0.0027753703932978458,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 RR_gl(E5)",
+   "first": 0.014114151293797205,
+   "second": 0.014114151293797205,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 RR_gl(E5p)",
+   "first": 0.005499153976311335,
+   "second": 0.005499153976311335,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 RR_gl(E5_x) = ceiling",
+   "first": 0.0009904667574594545,
+   "second": 0.0009904667574594545,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 RR_gl(E5p_x)",
+   "first": 0.00027856877553547545,
+   "second": 0.00027856877553547545,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 margin-ratio rows",
+   "first": 119210.0,
+   "second": 119210.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 margin ratio median",
+   "first": 1.0717123233690373,
+   "second": 1.0717123233690373,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 margin ratio q05",
+   "first": 1.0705107819363442,
+   "second": 1.0705107819363442,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 margin ratio q95",
+   "first": 1.07896103508793,
+   "second": 1.07896103508793,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 margin ratio A",
+   "first": 0.003942407382711401,
+   "second": 0.003942407382711401,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 margin ratio share_within_5pct",
+   "first": 0.9980790202164248,
+   "second": 0.9980790202164248,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 room pp CI[0]",
+   "first": 4.7221469913019885,
+   "second": 4.7221469913019885,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 room dec-eq CI[0]",
+   "first": 378.7165422885572,
+   "second": 378.7165422885572,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 RR_gl(N) CI[0]",
+   "first": -0.0012367854341125536,
+   "second": -0.0012367854341125536,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 RR_gl(E5) CI[0]",
+   "first": 0.009643551255932104,
+   "second": 0.009643551255932104,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 ceiling CI[0]",
+   "first": 0.0006509650330519149,
+   "second": 0.0006509650330519149,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 room pp CI[1]",
+   "first": 6.79979474473596,
+   "second": 6.79979474473596,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 room dec-eq CI[1]",
+   "first": 579.3953980099501,
+   "second": 579.3953980099501,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 RR_gl(N) CI[1]",
+   "first": 0.0008007128665265212,
+   "second": 0.0008007128665265212,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 RR_gl(E5) CI[1]",
+   "first": 0.01978736175509741,
+   "second": 0.01978736175509741,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 ceiling CI[1]",
+   "first": 0.0015456044313387957,
+   "second": 0.0015456044313387957,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 after-stop room dec-eq",
+   "first": 74.41293532338308,
+   "second": 74.41293532338308,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 tru_before n",
+   "first": 678.0,
+   "second": 678.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 tru_before room dec-eq",
+   "first": 2.905472636815919,
+   "second": 2.905472636815919,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 tru_before RR_gl(N)",
+   "first": 0.0,
+   "second": 0.0,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 tru_braking n",
+   "first": 755.0,
+   "second": 755.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 tru_braking room dec-eq",
+   "first": 123.67164179104475,
+   "second": 123.67164179104475,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 tru_braking RR_gl(N)",
+   "first": -0.0002011424893394402,
+   "second": -0.0002011424893394402,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 tru_stopped n",
+   "first": 6857.0,
+   "second": 6857.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 tru_stopped room dec-eq",
+   "first": 74.41293532338308,
+   "second": 74.41293532338308,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 tru_stopped RR_gl(N)",
+   "first": -0.00073544159925119,
+   "second": -0.00073544159925119,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 est_before n",
+   "first": 920.0,
+   "second": 920.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 est_before room dec-eq",
+   "first": 22.860696517412933,
+   "second": 22.860696517412933,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 est_before RR_gl(N)",
+   "first": -0.0017410228509249174,
+   "second": -0.0017410228509249174,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 est_braking n",
+   "first": 712.0,
+   "second": 712.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 est_braking room dec-eq",
+   "first": 248.88557213930346,
+   "second": 248.88557213930346,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 est_braking RR_gl(N)",
+   "first": -0.004997401351297326,
+   "second": -0.004997401351297326,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 est_stopped n",
+   "first": 6658.0,
+   "second": 6658.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 est_stopped room dec-eq",
+   "first": 1.353233830845771,
+   "second": 1.353233830845771,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 est_stopped RR_gl(N)",
+   "first": 1.2738737760720863e-18,
+   "second": 1.2738737760720863e-18,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 est05_braking n",
+   "first": 817.0,
+   "second": 817.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 est05_braking room dec-eq",
+   "first": 225.77114427860695,
+   "second": 225.77114427860695,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 est05_braking RR_gl(N)",
+   "first": -0.002864698104892024,
+   "second": -0.002864698104892024,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 est20_braking n",
+   "first": 597.0,
+   "second": 597.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 est20_braking room dec-eq",
+   "first": 233.9402985074627,
+   "second": 233.9402985074627,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 est20_braking RR_gl(N)",
+   "first": -0.002424397090723493,
+   "second": -0.002424397090723493,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 grid room pp",
+   "first": 5.806792335067725,
+   "second": 5.806792335067725,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 grid RR(N)",
+   "first": -0.0008888153951094404,
+   "second": -0.0008888153951094404,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 grid RR(NA)",
+   "first": 0.156669215982141,
+   "second": 0.156669215982141,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 grid RR(AM)",
+   "first": 0.3651067611980405,
+   "second": 0.3651067611980405,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 grid RR(CK3)",
+   "first": 0.805215072655491,
+   "second": 0.805215072655491,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 grid RR(Q)",
+   "first": -0.004464747101014906,
+   "second": -0.004464747101014906,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 lag n",
+   "first": 300.0,
+   "second": 300.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 lag median",
+   "first": 2.456820728281942,
+   "second": 2.456820728281942,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 H3-style class",
+   "first": "c_amplitude_limited",
+   "second": "c_amplitude_limited",
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B1_d098 barely varies",
+   "first": true,
+   "second": true,
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "CV0 NIS tru_phase0 n",
+   "first": 151.0,
+   "second": 151.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 NIS tru_phase0 mean",
+   "first": 0.5047141688516703,
+   "second": 0.5047141688516703,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS tru_phase0 mean CI[0]",
+   "first": 0.39931452528852224,
+   "second": 0.39931452528852224,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS tru_phase0 mean CI[1]",
+   "first": 0.6299709246588502,
+   "second": 0.6299709246588502,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v tru_phase0 n",
+   "first": 151.0,
+   "second": 151.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 NEES_v tru_phase0 mean",
+   "first": 2.069010235877778,
+   "second": 2.069010235877778,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v tru_phase0 mean CI[0]",
+   "first": 1.5478543563386165,
+   "second": 1.5478543563386165,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v tru_phase0 mean CI[1]",
+   "first": 2.6615674745122573,
+   "second": 2.6615674745122573,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS tru_phase1 n",
+   "first": 150.0,
+   "second": 150.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 NIS tru_phase1 mean",
+   "first": 1.4706069745917068,
+   "second": 1.4706069745917068,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS tru_phase1 mean CI[0]",
+   "first": 1.1811222264366985,
+   "second": 1.1811222264366985,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS tru_phase1 mean CI[1]",
+   "first": 1.7544220865385625,
+   "second": 1.7544220865385627,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v tru_phase1 n",
+   "first": 150.0,
+   "second": 150.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 NEES_v tru_phase1 mean",
+   "first": 2.5208044809129677,
+   "second": 2.5208044809129677,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v tru_phase1 mean CI[0]",
+   "first": 1.9151491263242477,
+   "second": 1.9151491263242477,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v tru_phase1 mean CI[1]",
+   "first": 3.165738245547101,
+   "second": 3.165738245547101,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS tru_phase2 n",
+   "first": 1383.0,
+   "second": 1383.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 NIS tru_phase2 mean",
+   "first": 0.10214517325959084,
+   "second": 0.10214517325959084,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS tru_phase2 mean CI[0]",
+   "first": 0.08710460601887249,
+   "second": 0.08710460601887246,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS tru_phase2 mean CI[1]",
+   "first": 0.11773011381774794,
+   "second": 0.11773011381774794,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v tru_phase2 n",
+   "first": 1383.0,
+   "second": 1383.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 NEES_v tru_phase2 mean",
+   "first": 0.017787567726737053,
+   "second": 0.01778756772673705,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v tru_phase2 mean CI[0]",
+   "first": 0.010294227354488171,
+   "second": 0.010294227354488173,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v tru_phase2 mean CI[1]",
+   "first": 0.02708694250751862,
+   "second": 0.02708694250751862,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS est_phase0 n",
+   "first": 182.0,
+   "second": 182.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 NIS est_phase0 mean",
+   "first": 0.4853425783025189,
+   "second": 0.48534257830251876,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS est_phase0 mean CI[0]",
+   "first": 0.3959433354155793,
+   "second": 0.3959433354155793,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS est_phase0 mean CI[1]",
+   "first": 0.5875236357340594,
+   "second": 0.5875236357340594,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v est_phase0 n",
+   "first": 182.0,
+   "second": 182.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 NEES_v est_phase0 mean",
+   "first": 2.1722644722270807,
+   "second": 2.172264472227081,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v est_phase0 mean CI[0]",
+   "first": 1.6198548161070738,
+   "second": 1.6198548161070738,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v est_phase0 mean CI[1]",
+   "first": 2.8273295971874424,
+   "second": 2.8273295971874424,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS est_phase1 n",
+   "first": 133.0,
+   "second": 133.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 NIS est_phase1 mean",
+   "first": 1.8678214136147029,
+   "second": 1.8678214136147027,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS est_phase1 mean CI[0]",
+   "first": 1.489979384514767,
+   "second": 1.489979384514767,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS est_phase1 mean CI[1]",
+   "first": 2.281613423054858,
+   "second": 2.281613423054858,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v est_phase1 n",
+   "first": 133.0,
+   "second": 133.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 NEES_v est_phase1 mean",
+   "first": 2.369348569857317,
+   "second": 2.369348569857317,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v est_phase1 mean CI[0]",
+   "first": 1.8104898698567773,
+   "second": 1.8104898698567773,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v est_phase1 mean CI[1]",
+   "first": 3.001777741084982,
+   "second": 3.001777741084982,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS est_phase2 n",
+   "first": 1369.0,
+   "second": 1369.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 NIS est_phase2 mean",
+   "first": 0.07400808111143792,
+   "second": 0.07400808111143792,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS est_phase2 mean CI[0]",
+   "first": 0.06305032462940245,
+   "second": 0.06305032462940245,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NIS est_phase2 mean CI[1]",
+   "first": 0.08519477445418608,
+   "second": 0.08519477445418608,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v est_phase2 n",
+   "first": 1369.0,
+   "second": 1369.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "CV0 NEES_v est_phase2 mean",
+   "first": 0.003408276248513629,
+   "second": 0.0034082762485136285,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v est_phase2 mean CI[0]",
+   "first": 0.0024425032662869985,
+   "second": 0.002442503266286998,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 NEES_v est_phase2 mean CI[1]",
+   "first": 0.004480990183796911,
+   "second": 0.00448099018379691,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS tru_phase0 n",
+   "first": 151.0,
+   "second": 151.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 NIS tru_phase0 mean",
+   "first": 1.831520594220589,
+   "second": 1.831520594220589,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS tru_phase0 mean CI[0]",
+   "first": 1.5528424707338608,
+   "second": 1.5528424707338608,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS tru_phase0 mean CI[1]",
+   "first": 2.134554368975094,
+   "second": 2.134554368975094,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v tru_phase0 n",
+   "first": 151.0,
+   "second": 151.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 NEES_v tru_phase0 mean",
+   "first": 2.3116922796939012,
+   "second": 2.311692279693901,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v tru_phase0 mean CI[0]",
+   "first": 1.7768569151104057,
+   "second": 1.7768569151104057,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v tru_phase0 mean CI[1]",
+   "first": 2.875114732843558,
+   "second": 2.875114732843558,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS tru_phase1 n",
+   "first": 150.0,
+   "second": 150.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 NIS tru_phase1 mean",
+   "first": 7.2009449714280604,
+   "second": 7.2009449714280604,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS tru_phase1 mean CI[0]",
+   "first": 5.878458759122592,
+   "second": 5.878458759122592,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS tru_phase1 mean CI[1]",
+   "first": 8.405281832932996,
+   "second": 8.405281832932998,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v tru_phase1 n",
+   "first": 150.0,
+   "second": 150.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 NEES_v tru_phase1 mean",
+   "first": 9.026185707782364,
+   "second": 9.026185707782362,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v tru_phase1 mean CI[0]",
+   "first": 6.8891579900358675,
+   "second": 6.8891579900358675,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v tru_phase1 mean CI[1]",
+   "first": 11.327550544677429,
+   "second": 11.327550544677429,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS tru_phase2 n",
+   "first": 1383.0,
+   "second": 1383.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 NIS tru_phase2 mean",
+   "first": 0.7322518825730114,
+   "second": 0.7322518825730115,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS tru_phase2 mean CI[0]",
+   "first": 0.640345527288673,
+   "second": 0.640345527288673,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS tru_phase2 mean CI[1]",
+   "first": 0.8242900824624207,
+   "second": 0.824290082462421,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v tru_phase2 n",
+   "first": 1383.0,
+   "second": 1383.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 NEES_v tru_phase2 mean",
+   "first": 0.17464100585316297,
+   "second": 0.17464100585316295,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v tru_phase2 mean CI[0]",
+   "first": 0.13078838378797072,
+   "second": 0.13078838378797072,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v tru_phase2 mean CI[1]",
+   "first": 0.224062127512115,
+   "second": 0.22406212751211493,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS est_phase0 n",
+   "first": 185.0,
+   "second": 185.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 NIS est_phase0 mean",
+   "first": 1.8628945294847856,
+   "second": 1.862894529484786,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS est_phase0 mean CI[0]",
+   "first": 1.6142960374921635,
+   "second": 1.6142960374921635,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS est_phase0 mean CI[1]",
+   "first": 2.1116215804433605,
+   "second": 2.1116215804433605,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v est_phase0 n",
+   "first": 185.0,
+   "second": 185.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 NEES_v est_phase0 mean",
+   "first": 2.6911548371741487,
+   "second": 2.6911548371741487,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v est_phase0 mean CI[0]",
+   "first": 2.1519418477143284,
+   "second": 2.1519418477143284,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v est_phase0 mean CI[1]",
+   "first": 3.2167069957973107,
+   "second": 3.2167069957973107,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS est_phase1 n",
+   "first": 146.0,
+   "second": 146.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 NIS est_phase1 mean",
+   "first": 9.5803475333759,
+   "second": 9.580347533375898,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS est_phase1 mean CI[0]",
+   "first": 7.851792757830011,
+   "second": 7.851792757830011,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS est_phase1 mean CI[1]",
+   "first": 11.409268417632537,
+   "second": 11.409268417632537,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v est_phase1 n",
+   "first": 146.0,
+   "second": 146.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 NEES_v est_phase1 mean",
+   "first": 9.493711151457747,
+   "second": 9.493711151457747,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v est_phase1 mean CI[0]",
+   "first": 7.3820134574958205,
+   "second": 7.3820134574958205,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v est_phase1 mean CI[1]",
+   "first": 11.736670955023076,
+   "second": 11.736670955023076,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS est_phase2 n",
+   "first": 1353.0,
+   "second": 1353.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 NIS est_phase2 mean",
+   "first": 0.46270471634325677,
+   "second": 0.46270471634325666,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS est_phase2 mean CI[0]",
+   "first": 0.39127404617836303,
+   "second": 0.39127404617836303,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NIS est_phase2 mean CI[1]",
+   "first": 0.5461658725593169,
+   "second": 0.5461658725593169,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v est_phase2 n",
+   "first": 1353.0,
+   "second": 1353.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B3 NEES_v est_phase2 mean",
+   "first": 0.044771935333340056,
+   "second": 0.044771935333340056,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v est_phase2 mean CI[0]",
+   "first": 0.0365247360943294,
+   "second": 0.0365247360943294,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 NEES_v est_phase2 mean CI[1]",
+   "first": 0.054044430859702244,
+   "second": 0.054044430859702244,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS tru_phase0 n",
+   "first": 151.0,
+   "second": 151.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 NIS tru_phase0 mean",
+   "first": 1.7223330416132838,
+   "second": 1.7223330416132836,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS tru_phase0 mean CI[0]",
+   "first": 1.4600770374381766,
+   "second": 1.4600770374381766,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS tru_phase0 mean CI[1]",
+   "first": 1.99842229886672,
+   "second": 1.99842229886672,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v tru_phase0 n",
+   "first": 151.0,
+   "second": 151.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 NEES_v tru_phase0 mean",
+   "first": 2.2396090843603944,
+   "second": 2.239609084360395,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v tru_phase0 mean CI[0]",
+   "first": 1.6920303136384305,
+   "second": 1.6920303136384305,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v tru_phase0 mean CI[1]",
+   "first": 2.8324836096832917,
+   "second": 2.8324836096832917,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS tru_phase1 n",
+   "first": 150.0,
+   "second": 150.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 NIS tru_phase1 mean",
+   "first": 6.855693069901993,
+   "second": 6.855693069901993,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS tru_phase1 mean CI[0]",
+   "first": 5.504984118771085,
+   "second": 5.504984118771085,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS tru_phase1 mean CI[1]",
+   "first": 8.194912649508451,
+   "second": 8.194912649508451,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v tru_phase1 n",
+   "first": 150.0,
+   "second": 150.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 NEES_v tru_phase1 mean",
+   "first": 8.103730593266425,
+   "second": 8.103730593266423,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v tru_phase1 mean CI[0]",
+   "first": 6.24681977140989,
+   "second": 6.246819771409891,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v tru_phase1 mean CI[1]",
+   "first": 10.280402560164585,
+   "second": 10.280402560164585,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS tru_phase2 n",
+   "first": 1383.0,
+   "second": 1383.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 NIS tru_phase2 mean",
+   "first": 0.7004373841931557,
+   "second": 0.7004373841931557,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS tru_phase2 mean CI[0]",
+   "first": 0.6045710424355667,
+   "second": 0.6045710424355666,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS tru_phase2 mean CI[1]",
+   "first": 0.8010266219760723,
+   "second": 0.8010266219760723,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v tru_phase2 n",
+   "first": 1383.0,
+   "second": 1383.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 NEES_v tru_phase2 mean",
+   "first": 0.14041629905484862,
+   "second": 0.14041629905484862,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v tru_phase2 mean CI[0]",
+   "first": 0.09355667683983984,
+   "second": 0.09355667683983984,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v tru_phase2 mean CI[1]",
+   "first": 0.19799337371232703,
+   "second": 0.19799337371232703,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS est_phase0 n",
+   "first": 182.0,
+   "second": 182.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 NIS est_phase0 mean",
+   "first": 1.7265217488322802,
+   "second": 1.7265217488322802,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS est_phase0 mean CI[0]",
+   "first": 1.493672217972259,
+   "second": 1.493672217972259,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS est_phase0 mean CI[1]",
+   "first": 1.956710263988773,
+   "second": 1.956710263988773,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v est_phase0 n",
+   "first": 182.0,
+   "second": 182.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 NEES_v est_phase0 mean",
+   "first": 2.452682574915291,
+   "second": 2.452682574915291,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v est_phase0 mean CI[0]",
+   "first": 1.948585205164858,
+   "second": 1.948585205164858,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v est_phase0 mean CI[1]",
+   "first": 2.984538539158869,
+   "second": 2.984538539158869,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS est_phase1 n",
+   "first": 138.0,
+   "second": 138.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 NIS est_phase1 mean",
+   "first": 8.821692361896794,
+   "second": 8.821692361896792,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS est_phase1 mean CI[0]",
+   "first": 7.192710210829335,
+   "second": 7.1927102108293335,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS est_phase1 mean CI[1]",
+   "first": 10.582399405910971,
+   "second": 10.582399405910971,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v est_phase1 n",
+   "first": 138.0,
+   "second": 138.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 NEES_v est_phase1 mean",
+   "first": 8.898514765730775,
+   "second": 8.898514765730773,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v est_phase1 mean CI[0]",
+   "first": 6.910481658987058,
+   "second": 6.910481658987058,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v est_phase1 mean CI[1]",
+   "first": 11.208182804184675,
+   "second": 11.208182804184675,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS est_phase2 n",
+   "first": 1364.0,
+   "second": 1364.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 NIS est_phase2 mean",
+   "first": 0.5318993019639348,
+   "second": 0.5318993019639348,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS est_phase2 mean CI[0]",
+   "first": 0.4565726175053259,
+   "second": 0.4565726175053259,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NIS est_phase2 mean CI[1]",
+   "first": 0.6115829760476504,
+   "second": 0.6115829760476504,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v est_phase2 n",
+   "first": 1364.0,
+   "second": 1364.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 NEES_v est_phase2 mean",
+   "first": 0.05392451320807089,
+   "second": 0.05392451320807087,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v est_phase2 mean CI[0]",
+   "first": 0.04452571036072581,
+   "second": 0.04452571036072581,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 NEES_v est_phase2 mean CI[1]",
+   "first": 0.06403290604288196,
+   "second": 0.06403290604288196,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS tru_phase0 n",
+   "first": 151.0,
+   "second": 151.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 NIS tru_phase0 mean",
+   "first": 1.7280720651330852,
+   "second": 1.7280720651330852,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS tru_phase0 mean CI[0]",
+   "first": 1.4219460329197897,
+   "second": 1.4219460329197897,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS tru_phase0 mean CI[1]",
+   "first": 2.0446153720830447,
+   "second": 2.0446153720830447,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v tru_phase0 n",
+   "first": 151.0,
+   "second": 151.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 NEES_v tru_phase0 mean",
+   "first": 2.160537154529588,
+   "second": 2.1605371545295875,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v tru_phase0 mean CI[0]",
+   "first": 1.7201351183394573,
+   "second": 1.7201351183394573,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v tru_phase0 mean CI[1]",
+   "first": 2.6200154342473345,
+   "second": 2.6200154342473345,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS tru_phase1 n",
+   "first": 150.0,
+   "second": 150.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 NIS tru_phase1 mean",
+   "first": 6.11609729646941,
+   "second": 6.11609729646941,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS tru_phase1 mean CI[0]",
+   "first": 5.082300319131775,
+   "second": 5.082300319131775,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS tru_phase1 mean CI[1]",
+   "first": 7.121324475131662,
+   "second": 7.121324475131662,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v tru_phase1 n",
+   "first": 150.0,
+   "second": 150.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 NEES_v tru_phase1 mean",
+   "first": 7.78333021654373,
+   "second": 7.78333021654373,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v tru_phase1 mean CI[0]",
+   "first": 5.997521287493166,
+   "second": 5.997521287493166,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v tru_phase1 mean CI[1]",
+   "first": 9.73538960472296,
+   "second": 9.73538960472296,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS tru_phase2 n",
+   "first": 1383.0,
+   "second": 1383.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 NIS tru_phase2 mean",
+   "first": 0.7119221700010058,
+   "second": 0.7119221700010059,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS tru_phase2 mean CI[0]",
+   "first": 0.6296148818101319,
+   "second": 0.629614881810132,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS tru_phase2 mean CI[1]",
+   "first": 0.7920351993037589,
+   "second": 0.7920351993037591,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v tru_phase2 n",
+   "first": 1383.0,
+   "second": 1383.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 NEES_v tru_phase2 mean",
+   "first": 0.20922155316890084,
+   "second": 0.20922155316890093,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v tru_phase2 mean CI[0]",
+   "first": 0.16928882455198122,
+   "second": 0.16928882455198124,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v tru_phase2 mean CI[1]",
+   "first": 0.2527317828526635,
+   "second": 0.2527317828526635,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS est_phase0 n",
+   "first": 183.0,
+   "second": 183.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 NIS est_phase0 mean",
+   "first": 1.717171887634373,
+   "second": 1.7171718876343733,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS est_phase0 mean CI[0]",
+   "first": 1.457617883072714,
+   "second": 1.457617883072714,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS est_phase0 mean CI[1]",
+   "first": 1.9968031761238962,
+   "second": 1.9968031761238962,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v est_phase0 n",
+   "first": 183.0,
+   "second": 183.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 NEES_v est_phase0 mean",
+   "first": 2.442902672360766,
+   "second": 2.4429026723607663,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v est_phase0 mean CI[0]",
+   "first": 1.9999131432978465,
+   "second": 1.9999131432978465,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v est_phase0 mean CI[1]",
+   "first": 2.8970440544604696,
+   "second": 2.8970440544604696,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS est_phase1 n",
+   "first": 142.0,
+   "second": 142.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 NIS est_phase1 mean",
+   "first": 7.891441021104679,
+   "second": 7.8914410211046775,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS est_phase1 mean CI[0]",
+   "first": 6.599302374049851,
+   "second": 6.599302374049851,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS est_phase1 mean CI[1]",
+   "first": 9.316812106751478,
+   "second": 9.316812106751478,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v est_phase1 n",
+   "first": 142.0,
+   "second": 142.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 NEES_v est_phase1 mean",
+   "first": 8.25483301581466,
+   "second": 8.25483301581466,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v est_phase1 mean CI[0]",
+   "first": 6.47857670166354,
+   "second": 6.478576701663541,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v est_phase1 mean CI[1]",
+   "first": 10.260284507429487,
+   "second": 10.260284507429487,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS est_phase2 n",
+   "first": 1359.0,
+   "second": 1359.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 NIS est_phase2 mean",
+   "first": 0.5357724481110696,
+   "second": 0.5357724481110697,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS est_phase2 mean CI[0]",
+   "first": 0.4686010374055626,
+   "second": 0.46860103740556264,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NIS est_phase2 mean CI[1]",
+   "first": 0.6095678769399242,
+   "second": 0.6095678769399243,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v est_phase2 n",
+   "first": 1359.0,
+   "second": 1359.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B4 NEES_v est_phase2 mean",
+   "first": 0.12057143014011443,
+   "second": 0.12057143014011441,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v est_phase2 mean CI[0]",
+   "first": 0.1008899134090432,
+   "second": 0.1008899134090432,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 NEES_v est_phase2 mean CI[1]",
+   "first": 0.14027860665999964,
+   "second": 0.14027860665999958,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS tru_phase0 n",
+   "first": 151.0,
+   "second": 151.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 NIS tru_phase0 mean",
+   "first": 1.8272673800153283,
+   "second": 1.8272673800153278,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS tru_phase0 mean CI[0]",
+   "first": 1.5459261886123112,
+   "second": 1.5459261886123112,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS tru_phase0 mean CI[1]",
+   "first": 2.1284590720967937,
+   "second": 2.1284590720967937,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v tru_phase0 n",
+   "first": 151.0,
+   "second": 151.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 NEES_v tru_phase0 mean",
+   "first": 2.309938875647318,
+   "second": 2.309938875647318,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v tru_phase0 mean CI[0]",
+   "first": 1.7809603792060118,
+   "second": 1.7809603792060118,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v tru_phase0 mean CI[1]",
+   "first": 2.860561806435351,
+   "second": 2.860561806435351,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS tru_phase1 n",
+   "first": 150.0,
+   "second": 150.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 NIS tru_phase1 mean",
+   "first": 6.975284557207694,
+   "second": 6.975284557207692,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS tru_phase1 mean CI[0]",
+   "first": 5.680389256566601,
+   "second": 5.680389256566601,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS tru_phase1 mean CI[1]",
+   "first": 8.181990222392885,
+   "second": 8.181990222392885,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v tru_phase1 n",
+   "first": 150.0,
+   "second": 150.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 NEES_v tru_phase1 mean",
+   "first": 8.797400953457421,
+   "second": 8.797400953457423,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v tru_phase1 mean CI[0]",
+   "first": 6.6704238936466345,
+   "second": 6.6704238936466345,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v tru_phase1 mean CI[1]",
+   "first": 11.06662532969137,
+   "second": 11.066625329691373,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS tru_phase2 n",
+   "first": 1383.0,
+   "second": 1383.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 NIS tru_phase2 mean",
+   "first": 0.6999170710495338,
+   "second": 0.6999170710495338,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS tru_phase2 mean CI[0]",
+   "first": 0.6075836380775568,
+   "second": 0.6075836380775568,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS tru_phase2 mean CI[1]",
+   "first": 0.7876211792804454,
+   "second": 0.7876211792804454,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v tru_phase2 n",
+   "first": 1383.0,
+   "second": 1383.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 NEES_v tru_phase2 mean",
+   "first": 0.16812304762075558,
+   "second": 0.1681230476207556,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v tru_phase2 mean CI[0]",
+   "first": 0.1251903954110689,
+   "second": 0.1251903954110689,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v tru_phase2 mean CI[1]",
+   "first": 0.21724605118601983,
+   "second": 0.21724605118601975,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS est_phase0 n",
+   "first": 185.0,
+   "second": 185.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 NIS est_phase0 mean",
+   "first": 1.8578379810661287,
+   "second": 1.857837981066129,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS est_phase0 mean CI[0]",
+   "first": 1.609699961409655,
+   "second": 1.609699961409655,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS est_phase0 mean CI[1]",
+   "first": 2.106632984805201,
+   "second": 2.106632984805201,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v est_phase0 n",
+   "first": 185.0,
+   "second": 185.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 NEES_v est_phase0 mean",
+   "first": 2.6913747358975497,
+   "second": 2.6913747358975497,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v est_phase0 mean CI[0]",
+   "first": 2.165254152998095,
+   "second": 2.165254152998095,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v est_phase0 mean CI[1]",
+   "first": 3.213959935436805,
+   "second": 3.213959935436805,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS est_phase1 n",
+   "first": 145.0,
+   "second": 145.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 NIS est_phase1 mean",
+   "first": 9.242733495187593,
+   "second": 9.242733495187593,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS est_phase1 mean CI[0]",
+   "first": 7.544905883381383,
+   "second": 7.544905883381383,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS est_phase1 mean CI[1]",
+   "first": 11.024631670257373,
+   "second": 11.024631670257373,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v est_phase1 n",
+   "first": 145.0,
+   "second": 145.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 NEES_v est_phase1 mean",
+   "first": 9.228514256948683,
+   "second": 9.228514256948683,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v est_phase1 mean CI[0]",
+   "first": 7.176822909274324,
+   "second": 7.176822909274324,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v est_phase1 mean CI[1]",
+   "first": 11.408461511824513,
+   "second": 11.408461511824513,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS est_phase2 n",
+   "first": 1354.0,
+   "second": 1354.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 NIS est_phase2 mean",
+   "first": 0.4477835922640611,
+   "second": 0.4477835922640611,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS est_phase2 mean CI[0]",
+   "first": 0.3760110424479316,
+   "second": 0.3760110424479316,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NIS est_phase2 mean CI[1]",
+   "first": 0.5296859847465252,
+   "second": 0.5296859847465251,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v est_phase2 n",
+   "first": 1354.0,
+   "second": 1354.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1 NEES_v est_phase2 mean",
+   "first": 0.04792185723948124,
+   "second": 0.04792185723948125,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v est_phase2 mean CI[0]",
+   "first": 0.03908017799047368,
+   "second": 0.039080177990473676,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 NEES_v est_phase2 mean CI[1]",
+   "first": 0.057682733909060355,
+   "second": 0.05768273390906038,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS tru_phase0 n",
+   "first": 151.0,
+   "second": 151.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 NIS tru_phase0 mean",
+   "first": 1.8312281328806919,
+   "second": 1.8312281328806923,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS tru_phase0 mean CI[0]",
+   "first": 1.548042558183487,
+   "second": 1.548042558183487,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS tru_phase0 mean CI[1]",
+   "first": 2.1349861977220903,
+   "second": 2.1349861977220903,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v tru_phase0 n",
+   "first": 151.0,
+   "second": 151.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 NEES_v tru_phase0 mean",
+   "first": 2.317709111941749,
+   "second": 2.317709111941749,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v tru_phase0 mean CI[0]",
+   "first": 1.7883488678706436,
+   "second": 1.7883488678706436,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v tru_phase0 mean CI[1]",
+   "first": 2.8662704917791224,
+   "second": 2.8662704917791224,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS tru_phase1 n",
+   "first": 150.0,
+   "second": 150.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 NIS tru_phase1 mean",
+   "first": 7.020242573461019,
+   "second": 7.020242573461019,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS tru_phase1 mean CI[0]",
+   "first": 5.715052104531748,
+   "second": 5.715052104531748,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS tru_phase1 mean CI[1]",
+   "first": 8.221632441774817,
+   "second": 8.221632441774817,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v tru_phase1 n",
+   "first": 150.0,
+   "second": 150.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 NEES_v tru_phase1 mean",
+   "first": 8.838212304078482,
+   "second": 8.838212304078478,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v tru_phase1 mean CI[0]",
+   "first": 6.714588768476115,
+   "second": 6.714588768476115,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v tru_phase1 mean CI[1]",
+   "first": 11.100315594040982,
+   "second": 11.100315594040982,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS tru_phase2 n",
+   "first": 1383.0,
+   "second": 1383.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 NIS tru_phase2 mean",
+   "first": 0.7044138448254598,
+   "second": 0.7044138448254599,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS tru_phase2 mean CI[0]",
+   "first": 0.6131382665640162,
+   "second": 0.6131382665640162,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS tru_phase2 mean CI[1]",
+   "first": 0.7924229033705751,
+   "second": 0.7924229033705751,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v tru_phase2 n",
+   "first": 1383.0,
+   "second": 1383.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 NEES_v tru_phase2 mean",
+   "first": 0.16916488992971176,
+   "second": 0.16916488992971176,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v tru_phase2 mean CI[0]",
+   "first": 0.12658219749024865,
+   "second": 0.12658219749024865,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v tru_phase2 mean CI[1]",
+   "first": 0.2184717517438144,
+   "second": 0.21847175174381447,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS est_phase0 n",
+   "first": 185.0,
+   "second": 185.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 NIS est_phase0 mean",
+   "first": 1.861781663966492,
+   "second": 1.861781663966492,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS est_phase0 mean CI[0]",
+   "first": 1.613623335005598,
+   "second": 1.613623335005598,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS est_phase0 mean CI[1]",
+   "first": 2.114465158607192,
+   "second": 2.114465158607192,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v est_phase0 n",
+   "first": 185.0,
+   "second": 185.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 NEES_v est_phase0 mean",
+   "first": 2.699203636553806,
+   "second": 2.699203636553805,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v est_phase0 mean CI[0]",
+   "first": 2.1752088230937274,
+   "second": 2.1752088230937274,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v est_phase0 mean CI[1]",
+   "first": 3.223496124058062,
+   "second": 3.223496124058062,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS est_phase1 n",
+   "first": 145.0,
+   "second": 145.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 NIS est_phase1 mean",
+   "first": 9.312083339290847,
+   "second": 9.312083339290847,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS est_phase1 mean CI[0]",
+   "first": 7.62560750508106,
+   "second": 7.62560750508106,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS est_phase1 mean CI[1]",
+   "first": 11.089509539048715,
+   "second": 11.089509539048715,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v est_phase1 n",
+   "first": 145.0,
+   "second": 145.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 NEES_v est_phase1 mean",
+   "first": 9.283357406318705,
+   "second": 9.283357406318705,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v est_phase1 mean CI[0]",
+   "first": 7.229551133686838,
+   "second": 7.229551133686838,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v est_phase1 mean CI[1]",
+   "first": 11.460753353634844,
+   "second": 11.460753353634844,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS est_phase2 n",
+   "first": 1354.0,
+   "second": 1354.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 NIS est_phase2 mean",
+   "first": 0.4498334486312957,
+   "second": 0.4498334486312957,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS est_phase2 mean CI[0]",
+   "first": 0.37813387466117176,
+   "second": 0.37813387466117176,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NIS est_phase2 mean CI[1]",
+   "first": 0.5312726865332341,
+   "second": 0.5312726865332341,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v est_phase2 n",
+   "first": 1354.0,
+   "second": 1354.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d090 NEES_v est_phase2 mean",
+   "first": 0.04743092142474234,
+   "second": 0.04743092142474234,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v est_phase2 mean CI[0]",
+   "first": 0.038365931996472834,
+   "second": 0.038365931996472834,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 NEES_v est_phase2 mean CI[1]",
+   "first": 0.057203611783447295,
+   "second": 0.057203611783447295,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS tru_phase0 n",
+   "first": 151.0,
+   "second": 151.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 NIS tru_phase0 mean",
+   "first": 1.8274749999720743,
+   "second": 1.8274749999720745,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS tru_phase0 mean CI[0]",
+   "first": 1.5475140455805558,
+   "second": 1.5475140455805558,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS tru_phase0 mean CI[1]",
+   "first": 2.129496384692688,
+   "second": 2.129496384692688,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v tru_phase0 n",
+   "first": 151.0,
+   "second": 151.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 NEES_v tru_phase0 mean",
+   "first": 2.308011097384023,
+   "second": 2.3080110973840235,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v tru_phase0 mean CI[0]",
+   "first": 1.7764954576770602,
+   "second": 1.7764954576770602,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v tru_phase0 mean CI[1]",
+   "first": 2.8635697897655303,
+   "second": 2.8635697897655303,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS tru_phase1 n",
+   "first": 150.0,
+   "second": 150.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 NIS tru_phase1 mean",
+   "first": 6.997125899758827,
+   "second": 6.997125899758827,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS tru_phase1 mean CI[0]",
+   "first": 5.696801949016503,
+   "second": 5.696801949016503,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS tru_phase1 mean CI[1]",
+   "first": 8.209991833779299,
+   "second": 8.209991833779299,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v tru_phase1 n",
+   "first": 150.0,
+   "second": 150.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 NEES_v tru_phase1 mean",
+   "first": 8.819912509029336,
+   "second": 8.819912509029338,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v tru_phase1 mean CI[0]",
+   "first": 6.68413646838751,
+   "second": 6.68413646838751,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v tru_phase1 mean CI[1]",
+   "first": 11.100658168966996,
+   "second": 11.100658168966996,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS tru_phase2 n",
+   "first": 1383.0,
+   "second": 1383.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 NIS tru_phase2 mean",
+   "first": 0.7033272632226796,
+   "second": 0.7033272632226795,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS tru_phase2 mean CI[0]",
+   "first": 0.610318594797307,
+   "second": 0.610318594797307,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS tru_phase2 mean CI[1]",
+   "first": 0.7914906251048331,
+   "second": 0.7914906251048331,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v tru_phase2 n",
+   "first": 1383.0,
+   "second": 1383.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 NEES_v tru_phase2 mean",
+   "first": 0.1686393838687075,
+   "second": 0.1686393838687075,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v tru_phase2 mean CI[0]",
+   "first": 0.12585449659409306,
+   "second": 0.12585449659409306,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v tru_phase2 mean CI[1]",
+   "first": 0.2176129290658173,
+   "second": 0.21761292906581722,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS est_phase0 n",
+   "first": 185.0,
+   "second": 185.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 NIS est_phase0 mean",
+   "first": 1.858336429692708,
+   "second": 1.858336429692708,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS est_phase0 mean CI[0]",
+   "first": 1.6098449928447423,
+   "second": 1.6098449928447423,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS est_phase0 mean CI[1]",
+   "first": 2.1056606388952908,
+   "second": 2.1056606388952908,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v est_phase0 n",
+   "first": 185.0,
+   "second": 185.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 NEES_v est_phase0 mean",
+   "first": 2.6886222785201186,
+   "second": 2.6886222785201186,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v est_phase0 mean CI[0]",
+   "first": 2.156542662984033,
+   "second": 2.1565426629840334,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v est_phase0 mean CI[1]",
+   "first": 3.2129012719826093,
+   "second": 3.2129012719826093,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS est_phase1 n",
+   "first": 144.0,
+   "second": 144.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 NIS est_phase1 mean",
+   "first": 9.245771402449876,
+   "second": 9.245771402449876,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS est_phase1 mean CI[0]",
+   "first": 7.545971781964948,
+   "second": 7.545971781964948,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS est_phase1 mean CI[1]",
+   "first": 11.035434049488815,
+   "second": 11.035434049488815,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v est_phase1 n",
+   "first": 144.0,
+   "second": 144.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 NEES_v est_phase1 mean",
+   "first": 9.307645229679137,
+   "second": 9.307645229679137,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v est_phase1 mean CI[0]",
+   "first": 7.227499132640737,
+   "second": 7.227499132640737,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v est_phase1 mean CI[1]",
+   "first": 11.578221109519067,
+   "second": 11.578221109519067,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS est_phase2 n",
+   "first": 1355.0,
+   "second": 1355.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 NIS est_phase2 mean",
+   "first": 0.4598050874912471,
+   "second": 0.4598050874912471,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS est_phase2 mean CI[0]",
+   "first": 0.3900948095892503,
+   "second": 0.39009480958925036,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NIS est_phase2 mean CI[1]",
+   "first": 0.5385383236290617,
+   "second": 0.5385383236290617,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v est_phase2 n",
+   "first": 1355.0,
+   "second": 1355.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B1_d098 NEES_v est_phase2 mean",
+   "first": 0.049467738265529825,
+   "second": 0.049467738265529825,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v est_phase2 mean CI[0]",
+   "first": 0.04119044034988454,
+   "second": 0.04119044034988454,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 NEES_v est_phase2 mean CI[1]",
+   "first": 0.058446619502451,
+   "second": 0.058446619502451,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: share of rows outside the band",
+   "first": 0.1935253471530131,
+   "second": 0.1935253471530131,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: ratio q01/q99 [0]",
+   "first": 0.9391599780864679,
+   "second": 0.9391599780864679,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: ratio q01/q99 [1]",
+   "first": 1.3354732748093334,
+   "second": 1.3354732748093334,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: decisions with >= 2 rows",
+   "first": 8290.0,
+   "second": 8290.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B2 oracle: within-decision spread median",
+   "first": 4.081923127654906e-05,
+   "second": 4.081923127654906e-05,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: within-decision spread q90",
+   "first": 0.0017575695809274607,
+   "second": 0.0017575695809274607,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: share above 5%",
+   "first": 0.0016887816646562123,
+   "second": 0.0016887816646562123,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: diff_N_minus_E5x point",
+   "first": 0.005341948016300335,
+   "second": 0.005341948016300335,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: diff_N_minus_E5x CI[0]",
+   "first": -0.012876440239271085,
+   "second": -0.012876440239271085,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: diff_N_minus_E5x CI[1]",
+   "first": 0.022681218665160457,
+   "second": 0.022681218665160457,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: RR_E5q point",
+   "first": 0.0730031038195984,
+   "second": 0.0730031038195984,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: RR_E5q CI[0]",
+   "first": 0.056492892939579736,
+   "second": 0.056492892939579736,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: RR_E5q CI[1]",
+   "first": 0.09332904055986378,
+   "second": 0.09332904055986378,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: diff_N_minus_E5q point",
+   "first": -0.017440510124363928,
+   "second": -0.017440510124363928,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: diff_N_minus_E5q CI[0]",
+   "first": -0.03329498055886136,
+   "second": -0.03329498055886136,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: diff_N_minus_E5q CI[1]",
+   "first": -0.003390291584263676,
+   "second": -0.003390291584263676,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 oracle: share outside band",
+   "first": 0.07573720980401918,
+   "second": 0.07573720980401918,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 oracle: diff_N_minus_E5x point",
+   "first": -0.000533449458385499,
+   "second": -0.000533449458385499,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 oracle: diff_N_minus_E5x CI[0]",
+   "first": -0.0009101996079621487,
+   "second": -0.0009101996079621487,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 oracle: diff_N_minus_E5x CI[1]",
+   "first": -3.2544012637226096e-05,
+   "second": -3.2544012637226096e-05,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 oracle: RR_E5q point",
+   "first": 0.0016221218224375343,
+   "second": 0.0016221218224375343,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 oracle: RR_E5q CI[0]",
+   "first": 0.0005045541555844312,
+   "second": 0.0005045541555844312,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 oracle: RR_E5q CI[1]",
+   "first": 0.0037254849945909177,
+   "second": 0.0037254849945909177,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 oracle: diff_N_minus_E5q point",
+   "first": -0.00203581732077731,
+   "second": -0.00203581732077731,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 oracle: diff_N_minus_E5q CI[0]",
+   "first": -0.003978831652923336,
+   "second": -0.003978831652923336,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "CV0 oracle: diff_N_minus_E5q CI[1]",
+   "first": -0.0006869320863520298,
+   "second": -0.0006869320863520298,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 oracle: share outside band",
+   "first": 0.08715021694223446,
+   "second": 0.08715021694223446,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 oracle: diff_N_minus_E5x point",
+   "first": -0.0010362273198285198,
+   "second": -0.0010362273198285198,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 oracle: diff_N_minus_E5x CI[0]",
+   "first": -0.0021394276891794723,
+   "second": -0.0021394276891794723,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 oracle: diff_N_minus_E5x CI[1]",
+   "first": -0.00014154525562954046,
+   "second": -0.00014154525562954046,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 oracle: RR_E5q point",
+   "first": 0.0018997500863522784,
+   "second": 0.0018997500863522784,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 oracle: RR_E5q CI[0]",
+   "first": -1.5725206037881566e-05,
+   "second": -1.5725206037881566e-05,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 oracle: RR_E5q CI[1]",
+   "first": 0.004907326049065074,
+   "second": 0.004907326049065074,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 oracle: diff_N_minus_E5q point",
+   "first": -0.0027531137615051764,
+   "second": -0.0027531137615051764,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 oracle: diff_N_minus_E5q CI[0]",
+   "first": -0.005930176607848221,
+   "second": -0.005930176607848221,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B3 oracle: diff_N_minus_E5q CI[1]",
+   "first": -0.00031898080734113694,
+   "second": -0.00031898080734113694,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: share outside band",
+   "first": 0.1935253471530131,
+   "second": 0.1935253471530131,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: diff_N_minus_E5x point",
+   "first": 0.005341948016300335,
+   "second": 0.005341948016300335,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: diff_N_minus_E5x CI[0]",
+   "first": -0.012876440239271085,
+   "second": -0.012876440239271085,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: diff_N_minus_E5x CI[1]",
+   "first": 0.022681218665160457,
+   "second": 0.022681218665160457,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: RR_E5q point",
+   "first": 0.0730031038195984,
+   "second": 0.0730031038195984,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: RR_E5q CI[0]",
+   "first": 0.056492892939579736,
+   "second": 0.056492892939579736,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: RR_E5q CI[1]",
+   "first": 0.09332904055986378,
+   "second": 0.09332904055986378,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: diff_N_minus_E5q point",
+   "first": -0.017440510124363928,
+   "second": -0.017440510124363928,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: diff_N_minus_E5q CI[0]",
+   "first": -0.03329498055886136,
+   "second": -0.03329498055886136,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B2 oracle: diff_N_minus_E5q CI[1]",
+   "first": -0.003390291584263676,
+   "second": -0.003390291584263676,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 oracle: share outside band",
+   "first": 0.1376882946379215,
+   "second": 0.1376882946379215,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 oracle: diff_N_minus_E5x point",
+   "first": -0.004764701319711454,
+   "second": -0.004764701319711454,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 oracle: diff_N_minus_E5x CI[0]",
+   "first": -0.00886276504175237,
+   "second": -0.00886276504175237,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 oracle: diff_N_minus_E5x CI[1]",
+   "first": -0.0020916619513248803,
+   "second": -0.0020916619513248803,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 oracle: RR_E5q point",
+   "first": 0.007457311600385606,
+   "second": 0.007457311600385606,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 oracle: RR_E5q CI[0]",
+   "first": 0.0036746187815917715,
+   "second": 0.0036746187815917715,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 oracle: RR_E5q CI[1]",
+   "first": 0.013473412871509813,
+   "second": 0.013473412871509813,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 oracle: diff_N_minus_E5q point",
+   "first": -0.00947399913570534,
+   "second": -0.00947399913570534,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 oracle: diff_N_minus_E5q CI[0]",
+   "first": -0.01609268520189298,
+   "second": -0.01609268520189298,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B4 oracle: diff_N_minus_E5q CI[1]",
+   "first": -0.004530156106568553,
+   "second": -0.004530156106568553,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 oracle: share outside band",
+   "first": 0.10999866506474436,
+   "second": 0.10999866506474436,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 oracle: diff_N_minus_E5x point",
+   "first": -0.000805285979764606,
+   "second": -0.000805285979764606,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 oracle: diff_N_minus_E5x CI[0]",
+   "first": -0.00229187361481732,
+   "second": -0.00229187361481732,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 oracle: diff_N_minus_E5x CI[1]",
+   "first": -1.0003173518612792e-05,
+   "second": -1.0003173518612792e-05,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 oracle: RR_E5q point",
+   "first": 0.003489572578979972,
+   "second": 0.003489572578979972,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 oracle: RR_E5q CI[0]",
+   "first": 0.0014079544434554517,
+   "second": 0.0014079544434554517,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 oracle: RR_E5q CI[1]",
+   "first": 0.007460529819775088,
+   "second": 0.007460529819775088,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 oracle: diff_N_minus_E5q point",
+   "first": -0.0035928143712574815,
+   "second": -0.0035928143712574815,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 oracle: diff_N_minus_E5q CI[0]",
+   "first": -0.007695415300421443,
+   "second": -0.007695415300421443,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1 oracle: diff_N_minus_E5q CI[1]",
+   "first": -0.0012569616011940538,
+   "second": -0.0012569616011940538,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 oracle: share outside band",
+   "first": 0.1007945214587281,
+   "second": 0.1007945214587281,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 oracle: diff_N_minus_E5x point",
+   "first": -0.0007186710745159242,
+   "second": -0.0007186710745159242,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 oracle: diff_N_minus_E5x CI[0]",
+   "first": -0.002184290329384256,
+   "second": -0.002184290329384256,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 oracle: diff_N_minus_E5x CI[1]",
+   "first": -5.221668982532951e-05,
+   "second": -5.221668982532951e-05,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 oracle: RR_E5q point",
+   "first": 0.003254553294593542,
+   "second": 0.003254553294593542,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 oracle: RR_E5q CI[0]",
+   "first": 0.0010504488485084099,
+   "second": 0.0010504488485084099,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 oracle: RR_E5q CI[1]",
+   "first": 0.006879312005248383,
+   "second": 0.006879312005248383,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 oracle: diff_N_minus_E5q point",
+   "first": -0.003449621157676435,
+   "second": -0.003449621157676435,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 oracle: diff_N_minus_E5q CI[0]",
+   "first": -0.007421122947317777,
+   "second": -0.007421122947317777,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d090 oracle: diff_N_minus_E5q CI[1]",
+   "first": -0.0010784871455889317,
+   "second": -0.0010784871455889317,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 oracle: share outside band",
+   "first": 0.1175740290244107,
+   "second": 0.1175740290244107,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 oracle: diff_N_minus_E5x point",
+   "first": -0.0011555445503693602,
+   "second": -0.0011555445503693602,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 oracle: diff_N_minus_E5x CI[0]",
+   "first": -0.002520784866616744,
+   "second": -0.002520784866616744,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 oracle: diff_N_minus_E5x CI[1]",
+   "first": -0.00012052596941265817,
+   "second": -0.00012052596941265817,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 oracle: RR_E5q point",
+   "first": 0.003941232305724075,
+   "second": 0.003941232305724075,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 oracle: RR_E5q CI[0]",
+   "first": 0.001739203363311616,
+   "second": 0.001739203363311616,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 oracle: RR_E5q CI[1]",
+   "first": 0.007715290227785439,
+   "second": 0.007715290227785439,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 oracle: diff_N_minus_E5q point",
+   "first": -0.0041063100986339805,
+   "second": -0.0041063100986339805,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 oracle: diff_N_minus_E5q CI[0]",
+   "first": -0.008060384598975442,
+   "second": -0.008060384598975442,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B1_d098 oracle: diff_N_minus_E5q CI[1]",
+   "first": -0.0014922012129503907,
+   "second": -0.0014922012129503907,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 all W_R room dec-eq",
+   "first": 54.691542288557216,
+   "second": 54.691542288557216,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 all 3 s room dec-eq",
+   "first": 456.99004975124376,
+   "second": 456.99004975124376,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 all den0 dec-eq",
+   "first": 57.02985074626866,
+   "second": 57.02985074626866,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 all evaluable",
+   "first": true,
+   "second": true,
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B6 all W_R RR_gl(N)",
+   "first": -0.0008187028108796486,
+   "second": -0.0008187028108796486,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 all W_R RR_gl(CK3)",
+   "first": 0.9760756845265168,
+   "second": 0.9760756845265168,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 1 membership",
+   "first": [
+    "p1b_fit_finite_0007",
+    "p1b_fit_finite_0012",
+    "p1b_fit_finite_0014",
+    "p1b_fit_finite_0016",
+    "p1b_fit_finite_0017",
+    "p1b_fit_finite_0018",
+    "p1b_fit_finite_0024",
+    "p1b_fit_finite_0026",
+    "p1b_fit_finite_0030",
+    "p1b_fit_finite_0031",
+    "p1b_fit_finite_0035",
+    "p1b_fit_finite_0036"
+   ],
+   "second": [
+    "p1b_fit_finite_0007",
+    "p1b_fit_finite_0012",
+    "p1b_fit_finite_0014",
+    "p1b_fit_finite_0016",
+    "p1b_fit_finite_0017",
+    "p1b_fit_finite_0018",
+    "p1b_fit_finite_0024",
+    "p1b_fit_finite_0026",
+    "p1b_fit_finite_0030",
+    "p1b_fit_finite_0031",
+    "p1b_fit_finite_0035",
+    "p1b_fit_finite_0036"
+   ],
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B6 tercile 1 W_R room dec-eq",
+   "first": 46.890547263681576,
+   "second": 46.890547263681576,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 1 3 s room dec-eq",
+   "first": 233.66169154228854,
+   "second": 233.66169154228854,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 1 den0 dec-eq",
+   "first": 47.9402985074627,
+   "second": 47.9402985074627,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 1 evaluable",
+   "first": true,
+   "second": true,
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B6 tercile 1 W_R RR_gl(N)",
+   "first": -0.0035013262599469497,
+   "second": -0.0035013262599469497,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 1 W_R RR_gl(CK3)",
+   "first": 0.9451458885941647,
+   "second": 0.9451458885941647,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 2 membership",
+   "first": [
+    "p1b_fit_finite_0005",
+    "p1b_fit_finite_0009",
+    "p1b_fit_finite_0010",
+    "p1b_fit_finite_0011",
+    "p1b_fit_finite_0013",
+    "p1b_fit_finite_0019",
+    "p1b_fit_finite_0020",
+    "p1b_fit_finite_0021",
+    "p1b_fit_finite_0023",
+    "p1b_fit_finite_0029",
+    "p1b_fit_finite_0032",
+    "p1b_fit_finite_0038"
+   ],
+   "second": [
+    "p1b_fit_finite_0005",
+    "p1b_fit_finite_0009",
+    "p1b_fit_finite_0010",
+    "p1b_fit_finite_0011",
+    "p1b_fit_finite_0013",
+    "p1b_fit_finite_0019",
+    "p1b_fit_finite_0020",
+    "p1b_fit_finite_0021",
+    "p1b_fit_finite_0023",
+    "p1b_fit_finite_0029",
+    "p1b_fit_finite_0032",
+    "p1b_fit_finite_0038"
+   ],
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B6 tercile 2 W_R room dec-eq",
+   "first": 2.6865671641791047,
+   "second": 2.6865671641791047,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 2 3 s room dec-eq",
+   "first": 125.81094527363183,
+   "second": 125.81094527363183,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 2 den0 dec-eq",
+   "first": 2.855721393034826,
+   "second": 2.855721393034826,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 2 evaluable",
+   "first": false,
+   "second": false,
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B6 tercile 2 W_R RR_gl(N)",
+   "first": 0.0,
+   "second": 0.0,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 2 W_R RR_gl(CK3)",
+   "first": 0.9407407407407407,
+   "second": 0.9407407407407407,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 3 membership",
+   "first": [
+    "p1b_fit_finite_0006",
+    "p1b_fit_finite_0008",
+    "p1b_fit_finite_0015",
+    "p1b_fit_finite_0022",
+    "p1b_fit_finite_0025",
+    "p1b_fit_finite_0027",
+    "p1b_fit_finite_0028",
+    "p1b_fit_finite_0033",
+    "p1b_fit_finite_0034",
+    "p1b_fit_finite_0037",
+    "p1b_fit_finite_0039"
+   ],
+   "second": [
+    "p1b_fit_finite_0006",
+    "p1b_fit_finite_0008",
+    "p1b_fit_finite_0015",
+    "p1b_fit_finite_0022",
+    "p1b_fit_finite_0025",
+    "p1b_fit_finite_0027",
+    "p1b_fit_finite_0028",
+    "p1b_fit_finite_0033",
+    "p1b_fit_finite_0034",
+    "p1b_fit_finite_0037",
+    "p1b_fit_finite_0039"
+   ],
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B6 tercile 3 W_R room dec-eq",
+   "first": 5.253731343283581,
+   "second": 5.253731343283581,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 3 3 s room dec-eq",
+   "first": 98.31343283582089,
+   "second": 98.31343283582089,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 3 den0 dec-eq",
+   "first": 5.313432835820894,
+   "second": 5.313432835820894,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 3 evaluable",
+   "first": false,
+   "second": false,
+   "ok": true,
+   "kind": "label"
+  },
+  {
+   "item": "B6 tercile 3 W_R RR_gl(N)",
+   "first": -0.0009469696969696978,
+   "second": -0.0009469696969696978,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6 tercile 3 W_R RR_gl(CK3)",
+   "first": 0.9772727272727273,
+   "second": 0.9772727272727273,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6(b) delayed-stop room pp",
+   "first": 1.626967694699002,
+   "second": 1.626967694699002,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6(b) delayed-stop room dec-eq",
+   "first": 134.87562189054725,
+   "second": 134.87562189054725,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6(b) delayed-stop den0 dec-eq",
+   "first": 143.08457711442787,
+   "second": 143.08457711442787,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6(b) delayed-stop RR_gl(N)",
+   "first": -0.00044264109184802796,
+   "second": -0.00044264109184802796,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6(b) delayed-stop RR_gl(NA)",
+   "first": 0.01921800073773515,
+   "second": 0.01921800073773515,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6(b) delayed-stop RR_gl(AM)",
+   "first": 0.5649944669863519,
+   "second": 0.5649944669863519,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6(b) delayed-stop RR_gl(CK3)",
+   "first": 1.0036149022500924,
+   "second": 1.0036149022500924,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6(b) delayed-stop RR_gl(Q)",
+   "first": -0.02305422353375139,
+   "second": -0.02305422353375139,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B6(b) tau draw: second program vs stored (max abs diff)",
+   "first": 0.0,
+   "second": 0.0,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B9 events found",
+   "first": 20.0,
+   "second": 20.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B9 window decisions",
+   "first": 1007.0,
+   "second": 1007.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B9 window stratum <1s",
+   "first": 0.0,
+   "second": 0.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B9 window stratum 1-4s",
+   "first": 0.0,
+   "second": 0.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B9 window stratum >=4s",
+   "first": 1007.0,
+   "second": 1007.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B9 window stratum untracked",
+   "first": 0.0,
+   "second": 0.0,
+   "ok": true,
+   "kind": "count"
+  },
+  {
+   "item": "B9 window room pp",
+   "first": 0.0,
+   "second": 0.0,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B9 window margin ratio median",
+   "first": 1.1026984777620783,
+   "second": 1.1026984777620783,
+   "ok": true,
+   "kind": "value"
+  },
+  {
+   "item": "B9 window margin-ratio rows",
+   "first": 16918.0,
+   "second": 16918.0,
+   "ok": true,
+   "kind": "count"
+  }
+ ]
+}

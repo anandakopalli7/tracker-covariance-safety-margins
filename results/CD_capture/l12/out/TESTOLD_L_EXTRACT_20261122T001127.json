@@ -1,0 +1,119 @@
+{
+ "code_sha256": "5f7540736c28fe78f8ea70669b30290e30f681d963ae13681404b8c339e88a97",
+ "runs": [
+  {
+   "run": "p2_c1109_tune_0000_fixed_c1",
+   "family": "lead_braking",
+   "seconds": 16.2,
+   "compare": {
+    "k": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "evaluated": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "v0": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "des": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "clear": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "vbar": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "idx55": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cF0": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cN": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cE": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    }
+   }
+  },
+  {
+   "run": "p2_c1109_tune_0006_fixed_c1",
+   "family": "lead_braking",
+   "seconds": 2.1,
+   "compare": {
+    "k": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "evaluated": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "v0": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "des": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "clear": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "vbar": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "idx55": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cF0": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cN": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cE": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "attempt": 1,
+ "pod": "claude-v13cd-b01",
+ "pod_id": "fcwgrgpi9q7uid",
+ "created": "2026-11-20T06:18:41.796599-05:00",
+ "terminated": "2026-11-20 06:23:56 Eastern Standard Time rc=0",
+ "setup": {
+  "nproc": 32,
+  "python_numpy_numba": "3.12.16 2.5.4 0.68.1",
+  "code_files_verified": 339,
+  "links": {
+   "<library folder>\\openloop": "/root/b7/P/09_redesign/m2_decisions/openloop",
+   "<library folder>": "/root/b7/P",
+   "ARS_TRIAL\\revision_v12\\analysis": "/root/b7/ARS_TRIAL/revision_v12/analysis",
+   "ARS_TRIAL\\revision_v11\\analysis": "/root/b7/ARS_TRIAL/revision_v11/analysis",
+   "<library folder>\\149_supported_sensor_preparation_20261101": "/root/b7/codex"
+  },
+  "import_check": "{'ready': True, 'codex': '/root/b7/codex', 'exact_trig': False, 'blas': 'Haswell'}",
+  "at": "2026-11-20 06:20:40 Eastern Standard Time"
+ },
+ "acceptance_rule": "x_trk_extract_v13.py --test-old (0037) bit-identical to analysis/out/testold_b7_arrays_final, every key",
+ "acceptance_result": "FAILED: 3 of 8 chains bit-identical; 5 differ only in cA1 (AM) and cQ (Q), at the last bit (max relative 4.2e-16), finite patterns equal; every key B7 reads is bit-identical in all 8 chains",
+ "diagnosis": {
+  "B7_2_0": {
+   "keys": 45,
+   "identical_keys": 43,
+   "differing": {
+    "cA1": {
+     "max_abs": 1.4210854715202004e-14,
+     "max_rel": 3.9559577436501073e-16,
+     "n_values_differing": 764,
+     "finite_pattern_equal": true
+    },
+    "cQ": {
+     "max_abs": 7.105427357601002e-15,
+     "max_rel": 2.9670278695455515e-16,
+     "n_values_differing": 761,
+     "finite_pattern_equal": true
+    }
+   },
+   "b7_used_keys_identical": true
+  },
+  "B7_2_0.1": {
+   "keys": 45,
+   "identical_keys": 43,
+   "differing": {
+    "cA1": {
+     "max_abs": 1.4210854715202004e-14,
+     "max_rel": 3.9559577436501073e-16,
+     "n_values_differing": 764,
+     "finite_pattern_equal": true
+    },
+    "cQ": {
+     "max_abs": 7.105427357601002e-15,
+     "max_rel": 2.9670278695455515e-16,
+     "n_values_differing": 761,
+     "finite_pattern_equal": true
+    }
+   },
+   "b7_used_keys_identical": true
+  },
+  "B7_5_0": {
+   "keys": 45,
+   "identical_keys": 43,
+   "differing": {
+    "cA1": {
+     "max_abs": 1.4210854715202004e-14,
+     "max_rel": 4.1802677153372314e-16,
+     "n_values_differing": 1884,
+     "finite_pattern_equal": true
+    },
+    "cQ": {
+     "max_abs": 1.4210854715202004e-14,
+     "max_rel": 2.95321498466421e-16,
+     "n_values_differing": 1897,
+     "finite_pattern_equal": true
+    }
+   },
+   "b7_used_keys_identical": true
+  },
+  "B7_5_0.1": {
+   "keys": 45,
+   "identical_keys": 43,
+   "differing": {
+    "cA1": {
+     "max_abs": 1.4210854715202004e-14,
+     "max_rel": 4.1802677153372314e-16,
+     "n_values_differing": 1884,
+     "finite_pattern_equal": true
+    },
+    "cQ": {
+     "max_abs": 1.4210854715202004e-14,
+     "max_rel": 2.95321498466421e-16,
+     "n_values_differing": 1897,
+     "finite_pattern_equal": true
+    }
+   },
+   "b7_used_keys_identical": true
+  },
+  "B7_5_0.2": {
+   "keys": 45,
+   "identical_keys": 45,
+   "differing": {},
+   "b7_used_keys_identical": true
+  },
+  "B7_10_0": {
+   "keys": 45,
+   "identical_keys": 45,
+   "differing": {},
+   "b7_used_keys_identical": true
+  },
+  "B7_10_0.1": {
+   "keys": 45,
+   "identical_keys": 43,
+   "differing": {
+    "cA1": {
+     "max_abs": 7.105427357601002e-15,
+     "max_rel": 3.6117096569711987e-16,
+     "n_values_differing": 3727,
+     "finite_pattern_equal": true
+    },
+    "cQ": {
+     "max_abs": 7.105427357601002e-15,
+     "max_rel": 3.009324945560643e-16,
+     "n_values_differing": 3802,
+     "finite_pattern_equal": true
+    }
+   },
+   "b7_used_keys_identical": true
+  },
+  "B7_10_0.2": {
+   "keys": 45,
+   "identical_keys": 45,
+   "differing": {},
+   "b7_used_keys_identical": true
+  }
+ },
+ "fresh_files_uploaded": false,
+ "action": "pod deleted per rule; no fresh file left the laptop",
+ "written": "2026-11-20 06:26:13"
+}

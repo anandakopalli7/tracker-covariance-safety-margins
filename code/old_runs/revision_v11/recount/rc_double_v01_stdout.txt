@@ -1,0 +1,22 @@
+rc_double_v01 start, 2000 outer x 1000 inner
+  outer 100 / 2000, 37 s
+  outer 200 / 2000, 66 s
+  outer 300 / 2000, 94 s
+  outer 400 / 2000, 125 s
+  outer 500 / 2000, 157 s
+  outer 600 / 2000, 187 s
+  outer 700 / 2000, 217 s
+  outer 800 / 2000, 246 s
+  outer 900 / 2000, 282 s
+  outer 1000 / 2000, 319 s
+  outer 1100 / 2000, 357 s
+  outer 1200 / 2000, 388 s
+  outer 1300 / 2000, 416 s
+  outer 1400 / 2000, 442 s
+  outer 1500 / 2000, 472 s
+  outer 1600 / 2000, 497 s
+  outer 1700 / 2000, 528 s
+  outer 1800 / 2000, 558 s
+  outer 1900 / 2000, 589 s
+  outer 2000 / 2000, 617 s
+rc_double_v01 end

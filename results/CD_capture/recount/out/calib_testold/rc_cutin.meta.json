@@ -1,0 +1,37 @@
+{
+ "label": "rc_cutin",
+ "kind": "cutin",
+ "program": "rc_c_cutin_v13.py",
+ "mode": "test-old",
+ "n_outer": 12,
+ "n_inner": 50,
+ "n_run": 20,
+ "n_stat": 6,
+ "stats": [
+  "W_R_gl_pp",
+  "W_RR_N",
+  "Y_R_gl_pp",
+  "Y_r",
+  "Y_c",
+  "Y_r_over_c"
+ ],
+ "pod_seeds": [
+  20261913,
+  20261914
+ ],
+ "seed_outer": 20261912,
+ "b_outer_full_draw": 2000,
+ "b_inner_full_draw": 1000,
+ "job_file": "rc_cutin.job.npz",
+ "job_sha256": "99200104bb94946db3359107b9b621eb33a4e91b1d8c5342ce828834a1e47fcc",
+ "job_bytes": 89062,
+ "runner_files": [
+  "rc_calib_remote_v13.py",
+  "rc_kern_v13.py"
+ ],
+ "runner_call": "python -I -B rc_calib_remote_v13.py JOBDIR rc_cutin --seeds SEED --outer LO:HI --threads 1",
+ "chunk_name": "rc_cutin_<SEED>_o<LO>_<HI>.npz",
+ "written": "2026-11-20 01:52:54",
+ "seconds_outer_estimates": 0.06826281547546387,
+ "dryrun": false
+}

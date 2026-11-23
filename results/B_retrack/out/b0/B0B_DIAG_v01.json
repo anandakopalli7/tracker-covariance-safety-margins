@@ -1,0 +1,122 @@
+{
+ "p2_c1109_tune_0002_fixed_c1": {
+  "family": "pedestrian_crossing",
+  "decisions_actor_list_differs": 45,
+  "crit": {
+   "cF0": {
+    "n_diff": 0,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "scale_at_max_abs": null,
+    "decisions_with_diff": 0,
+    "decisions_with_diff_and_actor_list_differs": 0
+   },
+   "cN": {
+    "n_diff": 14,
+    "max_abs": 1.7053025658242404e-13,
+    "max_rel": 5.745584252825364e-16,
+    "scale_at_max_abs": 333.65760358169206,
+    "decisions_with_diff": 7,
+    "decisions_with_diff_and_actor_list_differs": 7
+   },
+   "cE": {
+    "n_diff": 80,
+    "max_abs": 5.229594535194337e-12,
+    "max_rel": 4.660053907347513e-15,
+    "scale_at_max_abs": 1285.612451286255,
+    "decisions_with_diff": 5,
+    "decisions_with_diff_and_actor_list_differs": 5
+   }
+  }
+ },
+ "p2_c1109_tune_0056_fixed_c1": {
+  "family": "pedestrian_crossing",
+  "decisions_actor_list_differs": 60,
+  "crit": {
+   "cF0": {
+    "n_diff": 41,
+    "max_abs": 8.526512829121202e-14,
+    "max_rel": 1.5631918032499477e-15,
+    "scale_at_max_abs": 147.8352979836531,
+    "decisions_with_diff": 10,
+    "decisions_with_diff_and_actor_list_differs": 8
+   },
+   "cN": {
+    "n_diff": 183,
+    "max_abs": 1.9326762412674725e-12,
+    "max_rel": 1.9670285133846166e-15,
+    "scale_at_max_abs": 982.5359561981971,
+    "decisions_with_diff": 23,
+    "decisions_with_diff_and_actor_list_differs": 20
+   },
+   "cE": {
+    "n_diff": 68,
+    "max_abs": 1.2732925824820995e-11,
+    "max_rel": 8.324967421053899e-15,
+    "scale_at_max_abs": 1529.486565030794,
+    "decisions_with_diff": 17,
+    "decisions_with_diff_and_actor_list_differs": 14
+   }
+  }
+ },
+ "p2_c1109_tune_0110_fixed_c1": {
+  "family": "pedestrian_crossing",
+  "decisions_actor_list_differs": 210,
+  "crit": {
+   "cF0": {
+    "n_diff": 178,
+    "max_abs": 7.105427357601002e-15,
+    "max_rel": 1.8900478833261884e-14,
+    "scale_at_max_abs": 16.016118386089627,
+    "decisions_with_diff": 53,
+    "decisions_with_diff_and_actor_list_differs": 53
+   },
+   "cN": {
+    "n_diff": 820,
+    "max_abs": 8.526512829121202e-14,
+    "max_rel": 7.175047299448863e-15,
+    "scale_at_max_abs": 179.2473579543443,
+    "decisions_with_diff": 154,
+    "decisions_with_diff_and_actor_list_differs": 154
+   },
+   "cE": {
+    "n_diff": 521,
+    "max_abs": 4.307366907596588e-09,
+    "max_rel": 1.6155272886373453e-13,
+    "scale_at_max_abs": 26662.29743002199,
+    "decisions_with_diff": 91,
+    "decisions_with_diff_and_actor_list_differs": 91
+   }
+  }
+ },
+ "p2_c1109_tune_0033_fixed_c1": {
+  "family": "vehicle_crossing",
+  "decisions_actor_list_differs": 0,
+  "crit": {
+   "cF0": {
+    "n_diff": 0,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "scale_at_max_abs": null,
+    "decisions_with_diff": 0,
+    "decisions_with_diff_and_actor_list_differs": 0
+   },
+   "cN": {
+    "n_diff": 5,
+    "max_abs": 1.1368683772161603e-13,
+    "max_rel": 1.3096922055842283e-16,
+    "scale_at_max_abs": 868.042409024665,
+    "decisions_with_diff": 1,
+    "decisions_with_diff_and_actor_list_differs": 0
+   },
+   "cE": {
+    "n_diff": 3,
+    "max_abs": 1.8189894035458565e-12,
+    "max_rel": 1.724698198535303e-16,
+    "scale_at_max_abs": 10546.711332397925,
+    "decisions_with_diff": 1,
+    "decisions_with_diff_and_actor_list_differs": 0
+   }
+  }
+ }
+}

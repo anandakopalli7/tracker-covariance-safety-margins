@@ -1,0 +1,38 @@
+{
+ "first": "analysis\\out\\C_S57A_v13.json",
+ "second": "recount\\out\\RC_S57A_v13.json",
+ "tolerance": 1e-09,
+ "summary": {
+  "agree": 74,
+  "disagree": 0,
+  "only_first": 0,
+  "only_second": 4,
+  "ignored": 0
+ },
+ "verdict": "AGREE",
+ "rows": [
+  {
+   "key": "LB.PS.single",
+   "status": "only_second",
+   "value": -0.002490291561363511
+  },
+  {
+   "key": "LB.PS.single.cal",
+   "status": "only_second",
+   "value": "nominal95"
+  },
+  {
+   "key": "LB.PS.single.ci",
+   "status": "only_second",
+   "value": [
+    -0.0052471838141423255,
+    -0.001704241208676331
+   ]
+  },
+  {
+   "key": "LB.PS.single.level",
+   "status": "only_second",
+   "value": 0.95
+  }
+ ]
+}

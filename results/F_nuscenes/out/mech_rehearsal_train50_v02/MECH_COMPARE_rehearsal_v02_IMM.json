@@ -1,0 +1,15 @@
+{
+ "code": "dr_compare_v01.py",
+ "rule": "A10 sec. 10.1(c): counts exact, values within 1e-09, levels and verdicts equal",
+ "first": "REHEARSAL_TRAIN50_MECH_val_IMM_v02.json",
+ "second": "REHEARSAL_TRAIN50_MECH_RECOUNT_val_IMM_v02.json",
+ "n_keys_compared": 32,
+ "only_first": [],
+ "only_second": [],
+ "allowed_missing": [],
+ "max_abs_diff": 8.881784197001252e-16,
+ "n_float_diffs_within_tol": 7,
+ "differ": [],
+ "agree": true,
+ "written": "2026-11-22 03:33:21"
+}

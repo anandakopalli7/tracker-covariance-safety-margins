@@ -1,0 +1,7407 @@
+{
+ "schema": "COMPARE_C_V13",
+ "amendment": "AMENDMENT_10_v13 sec. 10.1(c)",
+ "test_old": false,
+ "tolerance": 1e-09,
+ "inputs": {
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\C_LEAD_H0_H5_v13.json": "7b3efb463a50722c9f014af8076141f174e7d59212282dbeb3f2db7cc1192783",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_C_LEAD_v13.json": "89ae5ab689cf87334f42d384143eef2149cf138da6589b83bbbdac7dcebbf0a5",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\C_CUTIN_K0_K2_v13.json": "d862173a1b35345cddab8db5c3c4c389d0913b0cd5cf6929fc7d27a4a48939d0",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_C_CUTIN_v13.json": "1c9b1e6ccc15330534991a0caf8ffd8deb3ff4179795fcdc49b1b2e91a31345e"
+ },
+ "summary": {
+  "agree": 953
+ },
+ "verdict": "AGREE",
+ "rows": [
+  {
+   "item": "lead: run list",
+   "status": "agree",
+   "kind": "exact",
+   "first": [
+    "pc13_c1109_eval_0000_native",
+    "pc13_c1109_eval_0006_native",
+    "pc13_c1109_eval_0012_native",
+    "pc13_c1109_eval_0018_native",
+    "pc13_c1109_eval_0024_native",
+    "pc13_c1109_eval_0030_native",
+    "pc13_c1109_eval_0036_native",
+    "pc13_c1109_eval_0042_native",
+    "pc13_c1109_eval_0048_native",
+    "pc13_c1109_eval_0054_native",
+    "pc13_c1109_eval_0060_native",
+    "pc13_c1109_eval_0066_native",
+    "pc13_c1109_eval_0072_native",
+    "pc13_c1109_eval_0078_native",
+    "pc13_c1109_eval_0084_native",
+    "pc13_c1109_eval_0090_native",
+    "pc13_c1109_eval_0096_native",
+    "pc13_c1109_eval_0102_native",
+    "pc13_c1109_eval_0108_native",
+    "pc13_c1109_eval_0114_native",
+    "pc13_c1109_eval_0120_native",
+    "pc13_c1109_eval_0126_native",
+    "pc13_c1109_eval_0132_native",
+    "pc13_c1109_eval_0138_native",
+    "pc13_c1109_eval_0144_native",
+    "pc13_c1109_eval_0150_native",
+    "pc13_c1109_eval_0156_native",
+    "pc13_c1109_eval_0162_native",
+    "pc13_c1109_eval_0168_native",
+    "pc13_c1109_eval_0174_native",
+    "pc13_c1109_eval_0180_native",
+    "pc13_c1109_eval_0186_native",
+    "pc13_c1109_eval_0192_native",
+    "pc13_c1109_eval_0198_native",
+    "pc13_c1109_eval_0204_native",
+    "pc13_c1109_eval_0210_native",
+    "pc13_c1109_eval_0216_native",
+    "pc13_c1109_eval_0222_native",
+    "pc13_c1109_eval_0228_native",
+    "pc13_c1109_eval_0234_native",
+    "pc13_c1109_eval_0240_native",
+    "pc13_c1109_eval_0246_native",
+    "pc13_c1109_eval_0252_native",
+    "pc13_c1109_eval_0258_native",
+    "pc13_c1109_eval_0264_native",
+    "pc13_c1109_eval_0270_native",
+    "pc13_c1109_eval_0276_native",
+    "pc13_c1109_eval_0282_native",
+    "pc13_c1109_eval_0288_native",
+    "pc13_c1109_eval_0294_native",
+    "pc13_c1109_eval_0300_native",
+    "pc13_c1109_eval_0306_native",
+    "pc13_c1109_eval_0312_native",
+    "pc13_c1109_eval_0318_native",
+    "pc13_c1109_eval_0324_native",
+    "pc13_c1109_eval_0330_native",
+    "pc13_c1109_eval_0336_native",
+    "pc13_c1109_eval_0342_native",
+    "pc13_c1109_eval_0348_native",
+    "pc13_c1109_eval_0354_native",
+    "pc13_c1109_eval_0360_native",
+    "pc13_c1109_eval_0366_native",
+    "pc13_c1109_eval_0372_native",
+    "pc13_c1109_eval_0378_native",
+    "pc13_c1109_eval_0384_native",
+    "pc13_c1109_eval_0390_native",
+    "pc13_c1109_eval_0396_native",
+    "pc13_c1109_eval_0402_native",
+    "pc13_c1109_eval_0408_native",
+    "pc13_c1109_eval_0414_native",
+    "pc13_c1109_eval_0420_native",
+    "pc13_c1109_eval_0426_native",
+    "pc13_c1109_eval_0432_native",
+    "pc13_c1109_eval_0438_native",
+    "pc13_c1109_eval_0444_native",
+    "pc13_c1109_eval_0450_native",
+    "pc13_c1109_eval_0456_native",
+    "pc13_c1109_eval_0462_native",
+    "pc13_c1109_eval_0468_native",
+    "pc13_c1109_eval_0474_native",
+    "pc13_c1109_eval_0486_native",
+    "pc13_c1109_eval_0498_native",
+    "pc13_c1109_eval_0510_native",
+    "pc13_c1109_eval_0516_native",
+    "pc13_c1109_eval_0528_native",
+    "pc13_c1109_eval_0534_native",
+    "pc13_c1109_eval_0546_native",
+    "pc13_c1109_eval_0552_native",
+    "pc13_c1109_eval_0558_native",
+    "pc13_c1109_eval_0564_native",
+    "pc13_c1109_eval_0570_native",
+    "pc13_c1109_eval_0576_native",
+    "pc13_c1109_eval_0582_native",
+    "pc13_c1109_eval_0594_native",
+    "pc13_c1109_eval_0600_native",
+    "pc13_c1109_eval_0606_native",
+    "pc13_c1109_eval_0618_native",
+    "pc13_c1109_eval_0624_native",
+    "pc13_c1109_eval_0630_native",
+    "pc13_c1109_eval_0648_native",
+    "pc13_c1109_eval_0660_native",
+    "pc13_c1109_eval_0666_native",
+    "pc13_c1109_eval_0678_native",
+    "pc13_c1109_eval_0696_native",
+    "pc13_c1109_eval_0720_native"
+   ],
+   "second": [
+    "pc13_c1109_eval_0000_native",
+    "pc13_c1109_eval_0006_native",
+    "pc13_c1109_eval_0012_native",
+    "pc13_c1109_eval_0018_native",
+    "pc13_c1109_eval_0024_native",
+    "pc13_c1109_eval_0030_native",
+    "pc13_c1109_eval_0036_native",
+    "pc13_c1109_eval_0042_native",
+    "pc13_c1109_eval_0048_native",
+    "pc13_c1109_eval_0054_native",
+    "pc13_c1109_eval_0060_native",
+    "pc13_c1109_eval_0066_native",
+    "pc13_c1109_eval_0072_native",
+    "pc13_c1109_eval_0078_native",
+    "pc13_c1109_eval_0084_native",
+    "pc13_c1109_eval_0090_native",
+    "pc13_c1109_eval_0096_native",
+    "pc13_c1109_eval_0102_native",
+    "pc13_c1109_eval_0108_native",
+    "pc13_c1109_eval_0114_native",
+    "pc13_c1109_eval_0120_native",
+    "pc13_c1109_eval_0126_native",
+    "pc13_c1109_eval_0132_native",
+    "pc13_c1109_eval_0138_native",
+    "pc13_c1109_eval_0144_native",
+    "pc13_c1109_eval_0150_native",
+    "pc13_c1109_eval_0156_native",
+    "pc13_c1109_eval_0162_native",
+    "pc13_c1109_eval_0168_native",
+    "pc13_c1109_eval_0174_native",
+    "pc13_c1109_eval_0180_native",
+    "pc13_c1109_eval_0186_native",
+    "pc13_c1109_eval_0192_native",
+    "pc13_c1109_eval_0198_native",
+    "pc13_c1109_eval_0204_native",
+    "pc13_c1109_eval_0210_native",
+    "pc13_c1109_eval_0216_native",
+    "pc13_c1109_eval_0222_native",
+    "pc13_c1109_eval_0228_native",
+    "pc13_c1109_eval_0234_native",
+    "pc13_c1109_eval_0240_native",
+    "pc13_c1109_eval_0246_native",
+    "pc13_c1109_eval_0252_native",
+    "pc13_c1109_eval_0258_native",
+    "pc13_c1109_eval_0264_native",
+    "pc13_c1109_eval_0270_native",
+    "pc13_c1109_eval_0276_native",
+    "pc13_c1109_eval_0282_native",
+    "pc13_c1109_eval_0288_native",
+    "pc13_c1109_eval_0294_native",
+    "pc13_c1109_eval_0300_native",
+    "pc13_c1109_eval_0306_native",
+    "pc13_c1109_eval_0312_native",
+    "pc13_c1109_eval_0318_native",
+    "pc13_c1109_eval_0324_native",
+    "pc13_c1109_eval_0330_native",
+    "pc13_c1109_eval_0336_native",
+    "pc13_c1109_eval_0342_native",
+    "pc13_c1109_eval_0348_native",
+    "pc13_c1109_eval_0354_native",
+    "pc13_c1109_eval_0360_native",
+    "pc13_c1109_eval_0366_native",
+    "pc13_c1109_eval_0372_native",
+    "pc13_c1109_eval_0378_native",
+    "pc13_c1109_eval_0384_native",
+    "pc13_c1109_eval_0390_native",
+    "pc13_c1109_eval_0396_native",
+    "pc13_c1109_eval_0402_native",
+    "pc13_c1109_eval_0408_native",
+    "pc13_c1109_eval_0414_native",
+    "pc13_c1109_eval_0420_native",
+    "pc13_c1109_eval_0426_native",
+    "pc13_c1109_eval_0432_native",
+    "pc13_c1109_eval_0438_native",
+    "pc13_c1109_eval_0444_native",
+    "pc13_c1109_eval_0450_native",
+    "pc13_c1109_eval_0456_native",
+    "pc13_c1109_eval_0462_native",
+    "pc13_c1109_eval_0468_native",
+    "pc13_c1109_eval_0474_native",
+    "pc13_c1109_eval_0486_native",
+    "pc13_c1109_eval_0498_native",
+    "pc13_c1109_eval_0510_native",
+    "pc13_c1109_eval_0516_native",
+    "pc13_c1109_eval_0528_native",
+    "pc13_c1109_eval_0534_native",
+    "pc13_c1109_eval_0546_native",
+    "pc13_c1109_eval_0552_native",
+    "pc13_c1109_eval_0558_native",
+    "pc13_c1109_eval_0564_native",
+    "pc13_c1109_eval_0570_native",
+    "pc13_c1109_eval_0576_native",
+    "pc13_c1109_eval_0582_native",
+    "pc13_c1109_eval_0594_native",
+    "pc13_c1109_eval_0600_native",
+    "pc13_c1109_eval_0606_native",
+    "pc13_c1109_eval_0618_native",
+    "pc13_c1109_eval_0624_native",
+    "pc13_c1109_eval_0630_native",
+    "pc13_c1109_eval_0648_native",
+    "pc13_c1109_eval_0660_native",
+    "pc13_c1109_eval_0666_native",
+    "pc13_c1109_eval_0678_native",
+    "pc13_c1109_eval_0696_native",
+    "pc13_c1109_eval_0720_native"
+   ]
+  },
+  {
+   "item": "lead: n_runs",
+   "status": "agree",
+   "kind": "exact",
+   "first": 105,
+   "second": 105
+  },
+  {
+   "item": "lead: E5 n_evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 21574,
+   "second": 21574
+  },
+  {
+   "item": "lead: E5 n_with_ratio",
+   "status": "agree",
+   "kind": "exact",
+   "first": 21383,
+   "second": 21383
+  },
+  {
+   "item": "lead: R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 5.579177441798148,
+   "second": 5.579177441798148
+  },
+  {
+   "item": "lead: R_gl calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.95,
+   "second": 0.95
+  },
+  {
+   "item": "lead: R_gl interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    4.988910587299072,
+    6.167329150639373
+   ],
+   "second": [
+    4.988910587299072,
+    6.167329150639373
+   ]
+  },
+  {
+   "item": "lead: R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    4.988910587299072,
+    6.167329150639373
+   ],
+   "second": [
+    4.988910587299072,
+    6.167329150639373
+   ]
+  },
+  {
+   "item": "lead: RR_E5 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.012532343531706977,
+   "second": 0.012532343531706977
+  },
+  {
+   "item": "lead: RR_E5 calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.95,
+   "second": 0.95
+  },
+  {
+   "item": "lead: RR_E5 interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.009998111032464861,
+    0.01499388345286911
+   ],
+   "second": [
+    0.009998111032464861,
+    0.01499388345286911
+   ]
+  },
+  {
+   "item": "lead: RR_E5 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.009998111032464861,
+    0.01499388345286911
+   ],
+   "second": [
+    0.009998111032464861,
+    0.01499388345286911
+   ]
+  },
+  {
+   "item": "lead: RR_E5_minus_E5p point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.007667380359932874,
+   "second": 0.007667380359932874
+  },
+  {
+   "item": "lead: RR_E5_minus_E5p calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.95,
+   "second": 0.95
+  },
+  {
+   "item": "lead: RR_E5_minus_E5p interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.005838549327303173,
+    0.009841447704647266
+   ],
+   "second": [
+    0.005838549327303173,
+    0.009841447704647266
+   ]
+  },
+  {
+   "item": "lead: RR_E5_minus_E5p 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.005838549327303173,
+    0.009841447704647266
+   ],
+   "second": [
+    0.005838549327303173,
+    0.009841447704647266
+   ]
+  },
+  {
+   "item": "lead: RR_N point",
+   "status": "agree",
+   "kind": "num",
+   "first": -8.266717369203164e-06,
+   "second": -8.266717369203164e-06
+  },
+  {
+   "item": "lead: RR_N calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.994,
+   "second": 0.994
+  },
+  {
+   "item": "lead: RR_N interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    -0.0009307814282639755,
+    0.00147734546162411
+   ],
+   "second": [
+    -0.0009307814282639755,
+    0.00147734546162411
+   ]
+  },
+  {
+   "item": "lead: RR_N 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    -0.000675062544820577,
+    0.0009537641924866913
+   ],
+   "second": [
+    -0.000675062544820577,
+    0.0009537641924866913
+   ]
+  },
+  {
+   "item": "lead: RR_CK3 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.7828126679176965,
+   "second": 0.7828126679176965
+  },
+  {
+   "item": "lead: RR_CK3 calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.95,
+   "second": 0.95
+  },
+  {
+   "item": "lead: RR_CK3 interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.7196197506337577,
+    0.842229539842845
+   ],
+   "second": [
+    0.7196197506337577,
+    0.842229539842845
+   ]
+  },
+  {
+   "item": "lead: RR_CK3 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.7196197506337577,
+    0.842229539842845
+   ],
+   "second": [
+    0.7196197506337577,
+    0.842229539842845
+   ]
+  },
+  {
+   "item": "lead: H3 classification",
+   "status": "agree",
+   "kind": "exact",
+   "first": "amplitude-limited",
+   "second": "amplitude-limited"
+  },
+  {
+   "item": "lead: H3 r point",
+   "status": "agree",
+   "kind": "num",
+   "first": 3.207672753225441e-05,
+   "second": 3.207672753225441e-05
+  },
+  {
+   "item": "lead: H3 r calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.99,
+   "second": 0.99
+  },
+  {
+   "item": "lead: H3 r interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    -0.0017566495295198564,
+    0.0012115336669304838
+   ],
+   "second": [
+    -0.0017566495295198564,
+    0.0012115336669304838
+   ]
+  },
+  {
+   "item": "lead: H3 c point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0008500332796048106,
+   "second": 0.0008500332796048106
+  },
+  {
+   "item": "lead: H3 c calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.95,
+   "second": 0.95
+  },
+  {
+   "item": "lead: H3 c interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0006171802746506126,
+    0.0010432550503229
+   ],
+   "second": [
+    0.0006171802746506125,
+    0.0010432550503229
+   ]
+  },
+  {
+   "item": "lead: H3 barely_varies",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: IMM room R_pp",
+   "status": "agree",
+   "kind": "num",
+   "first": 5.751395059558977,
+   "second": 5.751395059558977
+  },
+  {
+   "item": "lead: H4_rec_est_-1.0 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.9157451355072018,
+   "second": 0.9157451355072018
+  },
+  {
+   "item": "lead: H4_rec_est_-1.0 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.8640612284616381,
+    0.9648867518532994
+   ],
+   "second": [
+    0.8640612284616381,
+    0.9648867518532994
+   ]
+  },
+  {
+   "item": "lead: H4_lfl_est_-1.0 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.9182354270685652,
+   "second": 0.9182354270685654
+  },
+  {
+   "item": "lead: H4_lfl_est_-1.0 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.8674464921905585,
+    0.9675848477334806
+   ],
+   "second": [
+    0.8674464921905586,
+    0.9675848477334806
+   ]
+  },
+  {
+   "item": "lead: H4_rec_truth point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.8334956543179437,
+   "second": 0.8334956543179437
+  },
+  {
+   "item": "lead: H4_rec_truth 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.787193288118214,
+    0.8794412014508918
+   ],
+   "second": [
+    0.787193288118214,
+    0.8794412014508918
+   ]
+  },
+  {
+   "item": "lead: H4_lfl_truth point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.8359859458793071,
+   "second": 0.8359859458793072
+  },
+  {
+   "item": "lead: H4_lfl_truth 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.7902207454551472,
+    0.8825590846210346
+   ],
+   "second": [
+    0.7902207454551472,
+    0.8825590846210347
+   ]
+  },
+  {
+   "item": "lead: H4_rec_est_-0.5 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.9298732252563231,
+   "second": 0.9298732252563231
+  },
+  {
+   "item": "lead: H4_rec_est_-0.5 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.8835157700036859,
+    0.9767696596706534
+   ],
+   "second": [
+    0.8835157700036859,
+    0.9767696596706534
+   ]
+  },
+  {
+   "item": "lead: H4_lfl_est_-0.5 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.9323635168176867,
+   "second": 0.9323635168176867
+  },
+  {
+   "item": "lead: H4_lfl_est_-0.5 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.8870605117838662,
+    0.9795332045974983
+   ],
+   "second": [
+    0.8870605117838661,
+    0.9795332045974985
+   ]
+  },
+  {
+   "item": "lead: H4_rec_est_-2.0 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.911915182148801,
+   "second": 0.911915182148801
+  },
+  {
+   "item": "lead: H4_rec_est_-2.0 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.8599092893571012,
+    0.9620931483221701
+   ],
+   "second": [
+    0.8599092893571012,
+    0.9620931483221701
+   ]
+  },
+  {
+   "item": "lead: H4_lfl_est_-2.0 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.9144054737101646,
+   "second": 0.9144054737101646
+  },
+  {
+   "item": "lead: H4_lfl_est_-2.0 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.8631639946298956,
+    0.964634971113417
+   ],
+   "second": [
+    0.8631639946298957,
+    0.9646349711134171
+   ]
+  },
+  {
+   "item": "lead: H4 primary (record basis) calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.95,
+   "second": 0.95
+  },
+  {
+   "item": "lead: H4 primary interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.8640612284616381,
+    0.9648867518532994
+   ],
+   "second": [
+    0.8640612284616381,
+    0.9648867518532994
+   ]
+  },
+  {
+   "item": "lead: descriptive RR_gl(NA) point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.02399414716410259,
+   "second": 0.02399414716410259
+  },
+  {
+   "item": "lead: descriptive RR_gl(NA) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.01496063186620931,
+    0.03414356017615395
+   ],
+   "second": [
+    0.01496063186620931,
+    0.03414356017615395
+   ]
+  },
+  {
+   "item": "lead: descriptive RR_gl(A1) point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.3694437325882265,
+   "second": 0.3694437325882265
+  },
+  {
+   "item": "lead: descriptive RR_gl(A1) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.3309567245049455,
+    0.40410341471037126
+   ],
+   "second": [
+    0.3309567245049455,
+    0.40410341471037126
+   ]
+  },
+  {
+   "item": "lead: descriptive RR_gl(Q) point",
+   "status": "agree",
+   "kind": "num",
+   "first": -0.001347474931179596,
+   "second": -0.001347474931179596
+  },
+  {
+   "item": "lead: descriptive RR_gl(Q) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    -0.003360987967818425,
+    0.00025928351049746685
+   ],
+   "second": [
+    -0.003360987967818425,
+    0.00025928351049746685
+   ]
+  },
+  {
+   "item": "lead: descriptive RR_gl(TG) point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.2874420296444485,
+   "second": 0.2874420296444485
+  },
+  {
+   "item": "lead: descriptive RR_gl(TG) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.23119022183931473,
+    0.33196881952379814
+   ],
+   "second": [
+    0.23119022183931473,
+    0.33196881952379814
+   ]
+  },
+  {
+   "item": "lead: H0 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H0 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H1 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H1 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H2 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H2 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H3 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H3 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H4 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H4 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H5 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H5 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "cut-in: run list",
+   "status": "agree",
+   "kind": "exact",
+   "first": [
+    "pc13_c1109_eval_0004_native",
+    "pc13_c1109_eval_0010_native",
+    "pc13_c1109_eval_0016_native",
+    "pc13_c1109_eval_0022_native",
+    "pc13_c1109_eval_0028_native",
+    "pc13_c1109_eval_0034_native",
+    "pc13_c1109_eval_0040_native",
+    "pc13_c1109_eval_0046_native",
+    "pc13_c1109_eval_0052_native",
+    "pc13_c1109_eval_0058_native",
+    "pc13_c1109_eval_0064_native",
+    "pc13_c1109_eval_0070_native",
+    "pc13_c1109_eval_0076_native",
+    "pc13_c1109_eval_0082_native",
+    "pc13_c1109_eval_0088_native",
+    "pc13_c1109_eval_0094_native",
+    "pc13_c1109_eval_0100_native",
+    "pc13_c1109_eval_0106_native",
+    "pc13_c1109_eval_0112_native",
+    "pc13_c1109_eval_0118_native",
+    "pc13_c1109_eval_0124_native",
+    "pc13_c1109_eval_0130_native",
+    "pc13_c1109_eval_0136_native",
+    "pc13_c1109_eval_0142_native",
+    "pc13_c1109_eval_0148_native",
+    "pc13_c1109_eval_0154_native",
+    "pc13_c1109_eval_0160_native",
+    "pc13_c1109_eval_0166_native",
+    "pc13_c1109_eval_0172_native",
+    "pc13_c1109_eval_0178_native",
+    "pc13_c1109_eval_0184_native",
+    "pc13_c1109_eval_0190_native",
+    "pc13_c1109_eval_0196_native",
+    "pc13_c1109_eval_0202_native",
+    "pc13_c1109_eval_0208_native",
+    "pc13_c1109_eval_0214_native",
+    "pc13_c1109_eval_0220_native",
+    "pc13_c1109_eval_0226_native",
+    "pc13_c1109_eval_0232_native",
+    "pc13_c1109_eval_0238_native",
+    "pc13_c1109_eval_0244_native",
+    "pc13_c1109_eval_0250_native",
+    "pc13_c1109_eval_0256_native",
+    "pc13_c1109_eval_0262_native",
+    "pc13_c1109_eval_0268_native",
+    "pc13_c1109_eval_0274_native",
+    "pc13_c1109_eval_0280_native",
+    "pc13_c1109_eval_0286_native",
+    "pc13_c1109_eval_0292_native",
+    "pc13_c1109_eval_0298_native",
+    "pc13_c1109_eval_0304_native",
+    "pc13_c1109_eval_0310_native",
+    "pc13_c1109_eval_0316_native",
+    "pc13_c1109_eval_0322_native",
+    "pc13_c1109_eval_0328_native",
+    "pc13_c1109_eval_0334_native",
+    "pc13_c1109_eval_0340_native",
+    "pc13_c1109_eval_0346_native",
+    "pc13_c1109_eval_0352_native",
+    "pc13_c1109_eval_0358_native",
+    "pc13_c1109_eval_0364_native",
+    "pc13_c1109_eval_0370_native",
+    "pc13_c1109_eval_0376_native",
+    "pc13_c1109_eval_0382_native",
+    "pc13_c1109_eval_0388_native",
+    "pc13_c1109_eval_0394_native",
+    "pc13_c1109_eval_0400_native",
+    "pc13_c1109_eval_0406_native",
+    "pc13_c1109_eval_0412_native",
+    "pc13_c1109_eval_0418_native",
+    "pc13_c1109_eval_0424_native",
+    "pc13_c1109_eval_0430_native",
+    "pc13_c1109_eval_0436_native",
+    "pc13_c1109_eval_0442_native",
+    "pc13_c1109_eval_0448_native",
+    "pc13_c1109_eval_0454_native",
+    "pc13_c1109_eval_0460_native",
+    "pc13_c1109_eval_0466_native",
+    "pc13_c1109_eval_0478_native",
+    "pc13_c1109_eval_0484_native",
+    "pc13_c1109_eval_0508_native",
+    "pc13_c1109_eval_0514_native",
+    "pc13_c1109_eval_0520_native",
+    "pc13_c1109_eval_0526_native",
+    "pc13_c1109_eval_0532_native",
+    "pc13_c1109_eval_0538_native",
+    "pc13_c1109_eval_0544_native",
+    "pc13_c1109_eval_0550_native",
+    "pc13_c1109_eval_0562_native",
+    "pc13_c1109_eval_0574_native",
+    "pc13_c1109_eval_0586_native",
+    "pc13_c1109_eval_0598_native",
+    "pc13_c1109_eval_0604_native",
+    "pc13_c1109_eval_0610_native",
+    "pc13_c1109_eval_0616_native",
+    "pc13_c1109_eval_0622_native",
+    "pc13_c1109_eval_0628_native",
+    "pc13_c1109_eval_0634_native",
+    "pc13_c1109_eval_0640_native",
+    "pc13_c1109_eval_0658_native",
+    "pc13_c1109_eval_0664_native",
+    "pc13_c1109_eval_0676_native",
+    "pc13_c1109_eval_0682_native",
+    "pc13_c1109_eval_0694_native",
+    "pc13_c1109_eval_0718_native"
+   ],
+   "second": [
+    "pc13_c1109_eval_0004_native",
+    "pc13_c1109_eval_0010_native",
+    "pc13_c1109_eval_0016_native",
+    "pc13_c1109_eval_0022_native",
+    "pc13_c1109_eval_0028_native",
+    "pc13_c1109_eval_0034_native",
+    "pc13_c1109_eval_0040_native",
+    "pc13_c1109_eval_0046_native",
+    "pc13_c1109_eval_0052_native",
+    "pc13_c1109_eval_0058_native",
+    "pc13_c1109_eval_0064_native",
+    "pc13_c1109_eval_0070_native",
+    "pc13_c1109_eval_0076_native",
+    "pc13_c1109_eval_0082_native",
+    "pc13_c1109_eval_0088_native",
+    "pc13_c1109_eval_0094_native",
+    "pc13_c1109_eval_0100_native",
+    "pc13_c1109_eval_0106_native",
+    "pc13_c1109_eval_0112_native",
+    "pc13_c1109_eval_0118_native",
+    "pc13_c1109_eval_0124_native",
+    "pc13_c1109_eval_0130_native",
+    "pc13_c1109_eval_0136_native",
+    "pc13_c1109_eval_0142_native",
+    "pc13_c1109_eval_0148_native",
+    "pc13_c1109_eval_0154_native",
+    "pc13_c1109_eval_0160_native",
+    "pc13_c1109_eval_0166_native",
+    "pc13_c1109_eval_0172_native",
+    "pc13_c1109_eval_0178_native",
+    "pc13_c1109_eval_0184_native",
+    "pc13_c1109_eval_0190_native",
+    "pc13_c1109_eval_0196_native",
+    "pc13_c1109_eval_0202_native",
+    "pc13_c1109_eval_0208_native",
+    "pc13_c1109_eval_0214_native",
+    "pc13_c1109_eval_0220_native",
+    "pc13_c1109_eval_0226_native",
+    "pc13_c1109_eval_0232_native",
+    "pc13_c1109_eval_0238_native",
+    "pc13_c1109_eval_0244_native",
+    "pc13_c1109_eval_0250_native",
+    "pc13_c1109_eval_0256_native",
+    "pc13_c1109_eval_0262_native",
+    "pc13_c1109_eval_0268_native",
+    "pc13_c1109_eval_0274_native",
+    "pc13_c1109_eval_0280_native",
+    "pc13_c1109_eval_0286_native",
+    "pc13_c1109_eval_0292_native",
+    "pc13_c1109_eval_0298_native",
+    "pc13_c1109_eval_0304_native",
+    "pc13_c1109_eval_0310_native",
+    "pc13_c1109_eval_0316_native",
+    "pc13_c1109_eval_0322_native",
+    "pc13_c1109_eval_0328_native",
+    "pc13_c1109_eval_0334_native",
+    "pc13_c1109_eval_0340_native",
+    "pc13_c1109_eval_0346_native",
+    "pc13_c1109_eval_0352_native",
+    "pc13_c1109_eval_0358_native",
+    "pc13_c1109_eval_0364_native",
+    "pc13_c1109_eval_0370_native",
+    "pc13_c1109_eval_0376_native",
+    "pc13_c1109_eval_0382_native",
+    "pc13_c1109_eval_0388_native",
+    "pc13_c1109_eval_0394_native",
+    "pc13_c1109_eval_0400_native",
+    "pc13_c1109_eval_0406_native",
+    "pc13_c1109_eval_0412_native",
+    "pc13_c1109_eval_0418_native",
+    "pc13_c1109_eval_0424_native",
+    "pc13_c1109_eval_0430_native",
+    "pc13_c1109_eval_0436_native",
+    "pc13_c1109_eval_0442_native",
+    "pc13_c1109_eval_0448_native",
+    "pc13_c1109_eval_0454_native",
+    "pc13_c1109_eval_0460_native",
+    "pc13_c1109_eval_0466_native",
+    "pc13_c1109_eval_0478_native",
+    "pc13_c1109_eval_0484_native",
+    "pc13_c1109_eval_0508_native",
+    "pc13_c1109_eval_0514_native",
+    "pc13_c1109_eval_0520_native",
+    "pc13_c1109_eval_0526_native",
+    "pc13_c1109_eval_0532_native",
+    "pc13_c1109_eval_0538_native",
+    "pc13_c1109_eval_0544_native",
+    "pc13_c1109_eval_0550_native",
+    "pc13_c1109_eval_0562_native",
+    "pc13_c1109_eval_0574_native",
+    "pc13_c1109_eval_0586_native",
+    "pc13_c1109_eval_0598_native",
+    "pc13_c1109_eval_0604_native",
+    "pc13_c1109_eval_0610_native",
+    "pc13_c1109_eval_0616_native",
+    "pc13_c1109_eval_0622_native",
+    "pc13_c1109_eval_0628_native",
+    "pc13_c1109_eval_0634_native",
+    "pc13_c1109_eval_0640_native",
+    "pc13_c1109_eval_0658_native",
+    "pc13_c1109_eval_0664_native",
+    "pc13_c1109_eval_0676_native",
+    "pc13_c1109_eval_0682_native",
+    "pc13_c1109_eval_0694_native",
+    "pc13_c1109_eval_0718_native"
+   ]
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0004_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 135,
+   "second": 135
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0004_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0004_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0004_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0004_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0004_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0004_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0010_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 137,
+   "second": 137
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0010_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0010_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0010_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0010_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0010_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0010_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0016_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 138,
+   "second": 138
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0016_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0016_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0016_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0016_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0016_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0016_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0022_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0022_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0022_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0022_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0022_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0022_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0022_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0028_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 143,
+   "second": 143
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0028_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0028_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0028_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0028_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0028_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0028_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0034_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 144,
+   "second": 144
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0034_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0034_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0034_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0034_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0034_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0034_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0040_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 146,
+   "second": 146
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0040_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0040_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0040_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0040_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0040_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0040_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0046_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 137,
+   "second": 137
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0046_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0046_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0046_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0046_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0046_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0046_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0052_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 147,
+   "second": 147
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0052_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0052_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0052_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0052_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0052_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0052_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0058_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 144,
+   "second": 144
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0058_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0058_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0058_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0058_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0058_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0058_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0064_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0064_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0064_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0064_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0064_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0064_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0064_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0070_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 135,
+   "second": 135
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0070_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0070_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0070_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0070_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0070_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0070_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0076_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 138,
+   "second": 138
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0076_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0076_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0076_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0076_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0076_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0076_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0082_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0082_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0082_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0082_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0082_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0082_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0082_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0088_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0088_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0088_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0088_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0088_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0088_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0088_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0094_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 135,
+   "second": 135
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0094_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0094_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0094_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0094_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0094_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0094_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0100_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0100_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0100_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0100_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0100_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0100_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0100_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0106_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 138,
+   "second": 138
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0106_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0106_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0106_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0106_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0106_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0106_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0112_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 134,
+   "second": 134
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0112_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0112_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0112_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0112_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0112_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0112_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0118_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0118_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0118_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0118_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0118_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0118_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0118_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0124_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 141,
+   "second": 141
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0124_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0124_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0124_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0124_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0124_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0124_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0130_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 140,
+   "second": 140
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0130_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0130_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0130_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0130_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0130_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0130_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0136_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0136_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0136_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0136_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0136_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0136_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0136_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0142_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 144,
+   "second": 144
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0142_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0142_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0142_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0142_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0142_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0142_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0148_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 139,
+   "second": 139
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0148_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0148_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0148_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0148_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0148_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0148_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0154_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 142,
+   "second": 142
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0154_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0154_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0154_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0154_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0154_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0154_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0160_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0160_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0160_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0160_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0160_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0160_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0160_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0166_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 134,
+   "second": 134
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0166_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0166_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0166_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0166_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0166_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0166_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0172_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 141,
+   "second": 141
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0172_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0172_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0172_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0172_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0172_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0172_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0178_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0178_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0178_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0178_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0178_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0178_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0178_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0184_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 139,
+   "second": 139
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0184_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0184_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0184_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0184_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0184_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0184_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0190_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0190_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0190_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0190_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0190_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0190_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0190_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0196_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0196_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0196_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0196_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0196_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0196_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0196_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0202_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 144,
+   "second": 144
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0202_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0202_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0202_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0202_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0202_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0202_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0208_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 135,
+   "second": 135
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0208_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0208_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0208_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0208_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0208_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0208_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0214_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 146,
+   "second": 146
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0214_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0214_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0214_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0214_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0214_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0214_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0220_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 140,
+   "second": 140
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0220_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0220_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0220_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0220_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0220_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0220_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0226_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 141,
+   "second": 141
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0226_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0226_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0226_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0226_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0226_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0226_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0232_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 135,
+   "second": 135
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0232_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0232_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0232_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0232_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0232_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0232_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0238_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0238_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0238_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0238_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0238_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0238_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0238_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0244_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 142,
+   "second": 142
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0244_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0244_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0244_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0244_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0244_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0244_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0250_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 135,
+   "second": 135
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0250_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0250_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0250_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0250_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0250_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0250_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0256_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 145,
+   "second": 145
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0256_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0256_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0256_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0256_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0256_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0256_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0262_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 144,
+   "second": 144
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0262_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0262_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0262_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0262_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0262_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0262_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0268_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 145,
+   "second": 145
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0268_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0268_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0268_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0268_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0268_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0268_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0274_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 141,
+   "second": 141
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0274_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0274_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0274_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0274_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0274_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0274_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0280_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 137,
+   "second": 137
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0280_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0280_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0280_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0280_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0280_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0280_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0286_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 137,
+   "second": 137
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0286_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0286_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0286_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0286_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0286_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0286_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0292_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 141,
+   "second": 141
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0292_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0292_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0292_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0292_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0292_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0292_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0298_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 140,
+   "second": 140
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0298_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0298_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0298_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0298_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0298_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0298_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0304_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0304_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0304_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0304_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0304_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0304_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0304_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0310_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 142,
+   "second": 142
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0310_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0310_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0310_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0310_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0310_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0310_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0316_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 135,
+   "second": 135
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0316_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0316_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0316_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0316_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0316_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0316_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0322_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0322_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0322_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0322_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0322_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0322_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0322_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0328_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 143,
+   "second": 143
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0328_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0328_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0328_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0328_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0328_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0328_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0334_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 146,
+   "second": 146
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0334_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0334_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0334_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0334_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0334_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0334_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0340_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0340_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0340_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0340_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0340_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0340_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0340_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0346_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 143,
+   "second": 143
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0346_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0346_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0346_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0346_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0346_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0346_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0352_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 135,
+   "second": 135
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0352_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0352_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0352_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0352_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0352_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0352_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0358_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 137,
+   "second": 137
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0358_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0358_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0358_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0358_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0358_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0358_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0364_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0364_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0364_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0364_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0364_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0364_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0364_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0370_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0370_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0370_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0370_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0370_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0370_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0370_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0376_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 144,
+   "second": 144
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0376_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0376_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0376_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0376_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0376_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0376_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0382_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 135,
+   "second": 135
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0382_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0382_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0382_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0382_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0382_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0382_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0388_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 143,
+   "second": 143
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0388_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0388_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0388_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0388_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0388_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0388_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0394_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 137,
+   "second": 137
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0394_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0394_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0394_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0394_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0394_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0394_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0400_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 141,
+   "second": 141
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0400_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0400_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0400_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0400_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0400_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0400_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0406_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 147,
+   "second": 147
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0406_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0406_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0406_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0406_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0406_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0406_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0412_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0412_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0412_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0412_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0412_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0412_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0412_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0418_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0418_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0418_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0418_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0418_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0418_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0418_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0424_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0424_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0424_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0424_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0424_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0424_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0424_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0430_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 140,
+   "second": 140
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0430_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0430_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0430_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 1,
+   "second": 1
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0430_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0430_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 49,
+   "second": 49
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0430_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0436_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 138,
+   "second": 138
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0436_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0436_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0436_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0436_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0436_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0436_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0442_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0442_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0442_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0442_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0442_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0442_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0442_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0448_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 144,
+   "second": 144
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0448_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0448_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0448_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0448_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0448_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0448_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0454_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0454_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0454_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0454_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0454_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0454_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0454_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0460_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 141,
+   "second": 141
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0460_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0460_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0460_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0460_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0460_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0460_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0466_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 144,
+   "second": 144
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0466_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0466_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0466_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0466_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0466_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0466_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0478_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0478_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0478_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0478_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0478_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0478_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0478_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0484_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 144,
+   "second": 144
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0484_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0484_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0484_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0484_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0484_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0484_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0508_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 135,
+   "second": 135
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0508_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0508_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0508_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0508_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0508_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0508_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0514_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 137,
+   "second": 137
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0514_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0514_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0514_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0514_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0514_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0514_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0520_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 135,
+   "second": 135
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0520_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0520_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0520_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0520_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0520_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0520_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0526_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 134,
+   "second": 134
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0526_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0526_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0526_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0526_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0526_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0526_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0532_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 146,
+   "second": 146
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0532_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0532_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0532_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0532_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0532_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0532_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0538_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0538_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0538_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0538_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0538_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0538_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0538_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0544_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0544_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0544_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0544_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0544_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0544_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0544_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0550_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 134,
+   "second": 134
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0550_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0550_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0550_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0550_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0550_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0550_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0562_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 137,
+   "second": 137
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0562_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0562_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0562_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0562_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0562_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0562_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0574_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 139,
+   "second": 139
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0574_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0574_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0574_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0574_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0574_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0574_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0586_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 140,
+   "second": 140
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0586_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0586_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0586_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0586_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0586_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0586_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0598_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 138,
+   "second": 138
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0598_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0598_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0598_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0598_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0598_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0598_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0604_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0604_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0604_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0604_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0604_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0604_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0604_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0610_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 139,
+   "second": 139
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0610_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0610_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0610_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0610_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0610_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0610_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0616_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 135,
+   "second": 135
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0616_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0616_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0616_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0616_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0616_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0616_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0622_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 147,
+   "second": 147
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0622_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0622_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0622_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0622_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0622_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0622_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0628_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 134,
+   "second": 134
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0628_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0628_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0628_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0628_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0628_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0628_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0634_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 137,
+   "second": 137
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0634_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0634_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0634_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0634_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0634_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0634_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0640_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 139,
+   "second": 139
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0640_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0640_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0640_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0640_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0640_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0640_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0658_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0658_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0658_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0658_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0658_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0658_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0658_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0664_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 144,
+   "second": 144
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0664_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0664_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0664_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0664_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0664_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0664_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0676_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 134,
+   "second": 134
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0676_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0676_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0676_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0676_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0676_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0676_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0682_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 146,
+   "second": 146
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0682_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0682_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0682_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0682_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0682_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0682_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0694_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 138,
+   "second": 138
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0694_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0694_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0694_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0694_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0694_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0694_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0718_native event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 141,
+   "second": 141
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0718_native evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0718_native window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0718_native window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0718_native window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0718_native window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: pc13_c1109_eval_0718_native window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: all_evaluated decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 28455,
+   "second": 28455
+  },
+  {
+   "item": "cut-in: all_evaluated R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: all_evaluated R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: all_evaluated den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: all_evaluated RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: all_evaluated ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 481683,
+   "second": 481683
+  },
+  {
+   "item": "cut-in: all_evaluated ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1024957727091482,
+   "second": 1.1024957727091482
+  },
+  {
+   "item": "cut-in: all_evaluated ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.0982569349488127,
+   "second": 1.0982569349488127
+  },
+  {
+   "item": "cut-in: all_evaluated ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.104513081487051,
+   "second": 1.104513081487051
+  },
+  {
+   "item": "cut-in: all_evaluated ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.00283726554473089,
+   "second": 0.00283726554473089
+  },
+  {
+   "item": "cut-in: all_evaluated R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: all_evaluated RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: window decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 5293,
+   "second": 5293
+  },
+  {
+   "item": "cut-in: window R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: window R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: window den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: window RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: window ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 89722,
+   "second": 89722
+  },
+  {
+   "item": "cut-in: window ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1027426922363217,
+   "second": 1.1027426922363217
+  },
+  {
+   "item": "cut-in: window ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.09629700195502,
+   "second": 1.09629700195502
+  },
+  {
+   "item": "cut-in: window ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.111738729454359,
+   "second": 1.111738729454359
+  },
+  {
+   "item": "cut-in: window ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.007001509784673238,
+   "second": 0.007001509784673238
+  },
+  {
+   "item": "cut-in: window R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: window RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: young decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 1,
+   "second": 1
+  },
+  {
+   "item": "cut-in: young R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: young R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: young den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: young RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: young ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 9,
+   "second": 9
+  },
+  {
+   "item": "cut-in: young ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.5230744314716878,
+   "second": 0.5230744314716878
+  },
+  {
+   "item": "cut-in: young ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.5152893619794389,
+   "second": 0.5152893619794389
+  },
+  {
+   "item": "cut-in: young ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.5256880368783695,
+   "second": 0.5256880368783695
+  },
+  {
+   "item": "cut-in: young ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.009939957177483921,
+   "second": 0.009939957177483921
+  },
+  {
+   "item": "cut-in: young R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: young RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: mid decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: mid R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: mid ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: mid RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: old decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 5292,
+   "second": 5292
+  },
+  {
+   "item": "cut-in: old R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: old R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: old den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: old RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: old ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 89713,
+   "second": 89713
+  },
+  {
+   "item": "cut-in: old ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.102743256835843,
+   "second": 1.102743256835843
+  },
+  {
+   "item": "cut-in: old ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.0963072178403381,
+   "second": 1.0963072178403381
+  },
+  {
+   "item": "cut-in: old ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1117387931752643,
+   "second": 1.1117387931752643
+  },
+  {
+   "item": "cut-in: old ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.006996903059377899,
+   "second": 0.006996903059377899
+  },
+  {
+   "item": "cut-in: old R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: old RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: untracked decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: untracked R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: untracked ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: untracked RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: sec[-1,0) decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 1050,
+   "second": 1050
+  },
+  {
+   "item": "cut-in: sec[-1,0) R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[-1,0) R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[-1,0) den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[-1,0) RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: sec[-1,0) ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 17850,
+   "second": 17850
+  },
+  {
+   "item": "cut-in: sec[-1,0) ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1017417659720485,
+   "second": 1.1017417659720485
+  },
+  {
+   "item": "cut-in: sec[-1,0) ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.0919956728150264,
+   "second": 1.0919956728150264
+  },
+  {
+   "item": "cut-in: sec[-1,0) ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1038562177822395,
+   "second": 1.1038562177822395
+  },
+  {
+   "item": "cut-in: sec[-1,0) ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.005382633813808789,
+   "second": 0.005382633813808789
+  },
+  {
+   "item": "cut-in: sec[-1,0) R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: sec[-1,0) RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: sec[0,1) decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 1050,
+   "second": 1050
+  },
+  {
+   "item": "cut-in: sec[0,1) R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[0,1) R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[0,1) den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[0,1) RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: sec[0,1) ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 17842,
+   "second": 17842
+  },
+  {
+   "item": "cut-in: sec[0,1) ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1044025238506143,
+   "second": 1.1044025238506143
+  },
+  {
+   "item": "cut-in: sec[0,1) ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.0976147617757974,
+   "second": 1.0976147617757974
+  },
+  {
+   "item": "cut-in: sec[0,1) ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1116613738511751,
+   "second": 1.1116613738511751
+  },
+  {
+   "item": "cut-in: sec[0,1) ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.006359371593249689,
+   "second": 0.006359371593249689
+  },
+  {
+   "item": "cut-in: sec[0,1) R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: sec[0,1) RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: sec[1,2) decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 1050,
+   "second": 1050
+  },
+  {
+   "item": "cut-in: sec[1,2) R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[1,2) R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[1,2) den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[1,2) RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: sec[1,2) ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 17735,
+   "second": 17735
+  },
+  {
+   "item": "cut-in: sec[1,2) ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1054402267962644,
+   "second": 1.1054402267962644
+  },
+  {
+   "item": "cut-in: sec[1,2) ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1019203765520864,
+   "second": 1.1019203765520864
+  },
+  {
+   "item": "cut-in: sec[1,2) ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.116131157933735,
+   "second": 1.116131157933735
+  },
+  {
+   "item": "cut-in: sec[1,2) ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.00642765707144274,
+   "second": 0.00642765707144274
+  },
+  {
+   "item": "cut-in: sec[1,2) R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: sec[1,2) RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: sec[2,3) decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 1050,
+   "second": 1050
+  },
+  {
+   "item": "cut-in: sec[2,3) R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[2,3) R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[2,3) den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[2,3) RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: sec[2,3) ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 17798,
+   "second": 17798
+  },
+  {
+   "item": "cut-in: sec[2,3) ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1019918979804229,
+   "second": 1.1019918979804229
+  },
+  {
+   "item": "cut-in: sec[2,3) ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.0991780932735633,
+   "second": 1.0991780932735633
+  },
+  {
+   "item": "cut-in: sec[2,3) ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1089612177858081,
+   "second": 1.1089612177858081
+  },
+  {
+   "item": "cut-in: sec[2,3) ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.004438836859950596,
+   "second": 0.004438836859950596
+  },
+  {
+   "item": "cut-in: sec[2,3) R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: sec[2,3) RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: sec[3,4) decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 1093,
+   "second": 1093
+  },
+  {
+   "item": "cut-in: sec[3,4) R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[3,4) R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[3,4) den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[3,4) RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: sec[3,4) ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 18497,
+   "second": 18497
+  },
+  {
+   "item": "cut-in: sec[3,4) ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1009811487658225,
+   "second": 1.1009811487658225
+  },
+  {
+   "item": "cut-in: sec[3,4) ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.0953970905380606,
+   "second": 1.0953970905380606
+  },
+  {
+   "item": "cut-in: sec[3,4) ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1039265594070753,
+   "second": 1.1039265594070753
+  },
+  {
+   "item": "cut-in: sec[3,4) ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0038735762544963165,
+   "second": 0.0038735762544963165
+  },
+  {
+   "item": "cut-in: sec[3,4) R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: sec[3,4) RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: K0 R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: K0 den0_deceq",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: K1 RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: K0 R_gl calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.95,
+   "second": 0.95
+  },
+  {
+   "item": "cut-in: K0 R_gl interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: K1 RR_gl(N) calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.99,
+   "second": 0.99
+  },
+  {
+   "item": "cut-in: K1 RR_gl(N) interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: K2 evaluable",
+   "status": "agree",
+   "kind": "exact",
+   "first": false,
+   "second": false
+  },
+  {
+   "item": "cut-in: K0 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": false,
+   "second": false
+  },
+  {
+   "item": "cut-in: K0 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": false,
+   "second": false
+  },
+  {
+   "item": "cut-in: K1 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": false,
+   "second": false
+  },
+  {
+   "item": "cut-in: K1 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": false,
+   "second": false
+  },
+  {
+   "item": "cut-in: K2 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": false,
+   "second": false
+  },
+  {
+   "item": "cut-in: K2 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": false,
+   "second": false
+  }
+ ]
+}

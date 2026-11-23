@@ -1,0 +1,619 @@
+{
+ "family": "B7CI",
+ "program": "c_b7ci_v13.py",
+ "test_old": true,
+ "values": {
+  "B7CI.identity": null,
+  "B7CI.2.0.R": 0.0,
+  "B7CI.2.0.RR_N": null,
+  "B7CI.2.0.RR_N.ci": [
+   null,
+   null
+  ],
+  "B7CI.2.0.RR_N.level": 0.95,
+  "B7CI.2.0.RR_N.cal": "nominal95",
+  "B7CI.2.0.RR_CK3": null,
+  "B7CI.2.0.as_room": "not applicable",
+  "B7CI.2.0.lag": "not applicable"
+ },
+ "details": {
+  "gate": "TEST_OLD: old runs only; no fresh value",
+  "definitions": "CD_capture/CD_DEFINITIONS_TRK_v13.md sec. 8",
+  "amendment": "AMENDMENT_10_v13 sec. 3 B7, 2.5, 5.4, 5.7",
+  "status": "descriptive (A10 sec. 5.7); nominal 95% percentile intervals",
+  "runs": [
+   {
+    "run": "p2_c1109_tune_0004_fixed_c1",
+    "event_tick": 136,
+    "n_eval": 271,
+    "n_window": 50
+   },
+   {
+    "run": "p2_c1109_tune_0010_fixed_c1",
+    "event_tick": 134,
+    "n_eval": 271,
+    "n_window": 50
+   },
+   {
+    "run": "p2_c1109_tune_0016_fixed_c1",
+    "event_tick": 145,
+    "n_eval": 271,
+    "n_window": 51
+   },
+   {
+    "run": "p2_c1109_tune_0022_fixed_c1",
+    "event_tick": 134,
+    "n_eval": 271,
+    "n_window": 50
+   },
+   {
+    "run": "p2_c1109_tune_0028_fixed_c1",
+    "event_tick": 146,
+    "n_eval": 271,
+    "n_window": 50
+   },
+   {
+    "run": "p2_c1109_tune_0034_fixed_c1",
+    "event_tick": 138,
+    "n_eval": 271,
+    "n_window": 50
+   },
+   {
+    "run": "p2_c1109_tune_0040_fixed_c1",
+    "event_tick": 146,
+    "n_eval": 271,
+    "n_window": 50
+   },
+   {
+    "run": "p2_c1109_tune_0046_fixed_c1",
+    "event_tick": 137,
+    "n_eval": 271,
+    "n_window": 51
+   },
+   {
+    "run": "p2_c1109_tune_0052_fixed_c1",
+    "event_tick": 136,
+    "n_eval": 271,
+    "n_window": 50
+   },
+   {
+    "run": "p2_c1109_tune_0058_fixed_c1",
+    "event_tick": 136,
+    "n_eval": 271,
+    "n_window": 50
+   },
+   {
+    "run": "p2_c1109_tune_0064_fixed_c1",
+    "event_tick": 147,
+    "n_eval": 271,
+    "n_window": 51
+   },
+   {
+    "run": "p2_c1109_tune_0070_fixed_c1",
+    "event_tick": 143,
+    "n_eval": 271,
+    "n_window": 51
+   },
+   {
+    "run": "p2_c1109_tune_0076_fixed_c1",
+    "event_tick": 143,
+    "n_eval": 271,
+    "n_window": 51
+   },
+   {
+    "run": "p2_c1109_tune_0082_fixed_c1",
+    "event_tick": 136,
+    "n_eval": 271,
+    "n_window": 50
+   },
+   {
+    "run": "p2_c1109_tune_0088_fixed_c1",
+    "event_tick": 136,
+    "n_eval": 271,
+    "n_window": 50
+   },
+   {
+    "run": "p2_c1109_tune_0094_fixed_c1",
+    "event_tick": 138,
+    "n_eval": 271,
+    "n_window": 50
+   },
+   {
+    "run": "p2_c1109_tune_0100_fixed_c1",
+    "event_tick": 138,
+    "n_eval": 271,
+    "n_window": 50
+   },
+   {
+    "run": "p2_c1109_tune_0106_fixed_c1",
+    "event_tick": 134,
+    "n_eval": 271,
+    "n_window": 50
+   },
+   {
+    "run": "p2_c1109_tune_0112_fixed_c1",
+    "event_tick": 139,
+    "n_eval": 271,
+    "n_window": 51
+   },
+   {
+    "run": "p2_c1109_tune_0118_fixed_c1",
+    "event_tick": 145,
+    "n_eval": 271,
+    "n_window": 51
+   }
+  ],
+  "n_runs": 20,
+  "draw": "default_rng(20261911), 200 resamples of the 20 cut-in tuning runs (as TESTOLD_C_CUTIN_K0_K2_v13.json)",
+  "lat_m": 1.75,
+  "window_s": [
+   -1.0,
+   4.0
+  ],
+  "runs_without_event": [],
+  "identity": "not run: no old cut-in run has B7 detection rows",
+  "chains": {
+   "B7CI_2_0": {
+    "folder": "B7CI_2_0",
+    "rate_hz": 2,
+    "latency_s": 0.0,
+    "n_runs": 20,
+    "ratio_summary_window": {
+     "n": 16918,
+     "median": 1.1026984777620783,
+     "q05": 1.0964080391794702,
+     "q95": 1.1125820003929867,
+     "A": 0.0073338095316597945,
+     "share_within_5pct": 0.9980494148244473,
+     "barely_varies": true,
+     "q25": 1.1009986348892995,
+     "q75": 1.1044642125236503
+    },
+    "intervals": {
+     "RR_N": {
+      "point": NaN,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "invalid_share": 1.0,
+      "n_invalid": 200,
+      "outside": false,
+      "basic": [
+       NaN,
+       NaN
+      ]
+     },
+     "RR_CK3": {
+      "point": NaN,
+      "ci": [
+       NaN,
+       NaN
+      ],
+      "invalid_share": 1.0,
+      "n_invalid": 200,
+      "outside": false,
+      "basic": [
+       NaN,
+       NaN
+      ]
+     },
+     "R": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.0,
+       0.0
+      ]
+     },
+     "R_deceq": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "populations": {
+     "window": {
+      "n": 1007.0,
+      "denE": 0.0,
+      "R_pp": 0.0,
+      "R_deceq": 0.0,
+      "RR": {
+       "N": null,
+       "CK3": null
+      }
+     },
+     "all_evaluated": {
+      "n": 5420.0,
+      "denE": 0.0,
+      "R_pp": 0.0,
+      "R_deceq": 0.0,
+      "RR": {
+       "N": null,
+       "CK3": null
+      }
+     }
+    },
+    "resamples": 200,
+    "resamples_without_room": 200,
+    "seconds": 126.37208104133606
+   }
+  },
+  "two_hz_L0_vs_reference": {
+   "reference": "stored arrays of record (gateR_rt_v01; the keys they hold)",
+   "n_identical": 19,
+   "n_runs": 20,
+   "keys_compared": [
+    22
+   ],
+   "differing": {
+    "p2_c1109_tune_0070_fixed_c1": {
+     "cE": {
+      "max_abs": 2.842170943040401e-14,
+      "finite_pattern_equal": true
+     },
+     "cF0": {
+      "max_abs": 8.881784197001252e-16,
+      "finite_pattern_equal": true
+     },
+     "cN": {
+      "max_abs": 1.7763568394002505e-15,
+      "finite_pattern_equal": true
+     }
+    }
+   }
+  },
+  "test_old": {
+   "b7ci_2_0_vs_logged_extract": {
+    "run": "p2_c1109_tune_0004_fixed_c1",
+    "keys_compared": 45,
+    "identical": true,
+    "differing": []
+   },
+   "vs_TESTOLD_C_CUTIN_K0_K2": {
+    "n_items": 50,
+    "n_equal": 50,
+    "all_equal": true,
+    "differing": [],
+    "items": [
+     {
+      "item": "event_tick p2_c1109_tune_0004_fixed_c1",
+      "ours": 136,
+      "record": 136,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0004_fixed_c1",
+      "ours": 50,
+      "record": 50,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0010_fixed_c1",
+      "ours": 134,
+      "record": 134,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0010_fixed_c1",
+      "ours": 50,
+      "record": 50,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0016_fixed_c1",
+      "ours": 145,
+      "record": 145,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0016_fixed_c1",
+      "ours": 51,
+      "record": 51,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0022_fixed_c1",
+      "ours": 134,
+      "record": 134,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0022_fixed_c1",
+      "ours": 50,
+      "record": 50,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0028_fixed_c1",
+      "ours": 146,
+      "record": 146,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0028_fixed_c1",
+      "ours": 50,
+      "record": 50,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0034_fixed_c1",
+      "ours": 138,
+      "record": 138,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0034_fixed_c1",
+      "ours": 50,
+      "record": 50,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0040_fixed_c1",
+      "ours": 146,
+      "record": 146,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0040_fixed_c1",
+      "ours": 50,
+      "record": 50,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0046_fixed_c1",
+      "ours": 137,
+      "record": 137,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0046_fixed_c1",
+      "ours": 51,
+      "record": 51,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0052_fixed_c1",
+      "ours": 136,
+      "record": 136,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0052_fixed_c1",
+      "ours": 50,
+      "record": 50,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0058_fixed_c1",
+      "ours": 136,
+      "record": 136,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0058_fixed_c1",
+      "ours": 50,
+      "record": 50,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0064_fixed_c1",
+      "ours": 147,
+      "record": 147,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0064_fixed_c1",
+      "ours": 51,
+      "record": 51,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0070_fixed_c1",
+      "ours": 143,
+      "record": 143,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0070_fixed_c1",
+      "ours": 51,
+      "record": 51,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0076_fixed_c1",
+      "ours": 143,
+      "record": 143,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0076_fixed_c1",
+      "ours": 51,
+      "record": 51,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0082_fixed_c1",
+      "ours": 136,
+      "record": 136,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0082_fixed_c1",
+      "ours": 50,
+      "record": 50,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0088_fixed_c1",
+      "ours": 136,
+      "record": 136,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0088_fixed_c1",
+      "ours": 50,
+      "record": 50,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0094_fixed_c1",
+      "ours": 138,
+      "record": 138,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0094_fixed_c1",
+      "ours": 50,
+      "record": 50,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0100_fixed_c1",
+      "ours": 138,
+      "record": 138,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0100_fixed_c1",
+      "ours": 50,
+      "record": 50,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0106_fixed_c1",
+      "ours": 134,
+      "record": 134,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0106_fixed_c1",
+      "ours": 50,
+      "record": 50,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0112_fixed_c1",
+      "ours": 139,
+      "record": 139,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0112_fixed_c1",
+      "ours": 51,
+      "record": 51,
+      "equal": true
+     },
+     {
+      "item": "event_tick p2_c1109_tune_0118_fixed_c1",
+      "ours": 145,
+      "record": 145,
+      "equal": true
+     },
+     {
+      "item": "n_window p2_c1109_tune_0118_fixed_c1",
+      "ours": 51,
+      "record": 51,
+      "equal": true
+     },
+     {
+      "item": "K0 R_gl point",
+      "ours": 0.0,
+      "record": 0.0,
+      "equal": true
+     },
+     {
+      "item": "K0 R_gl ci (nominal 95%)",
+      "ours": [
+       0.0,
+       0.0
+      ],
+      "record": [
+       0.0,
+       0.0
+      ],
+      "equal": true
+     },
+     {
+      "item": "K1 RR_N point",
+      "ours": NaN,
+      "record": NaN,
+      "equal": true
+     },
+     {
+      "item": "K1 RR_N ci (nominal 95%)",
+      "ours": [
+       NaN,
+       NaN
+      ],
+      "record": [
+       NaN,
+       NaN
+      ],
+      "equal": true
+     },
+     {
+      "item": "K1 RR_N invalid share",
+      "ours": 1.0,
+      "record": 1.0,
+      "equal": true
+     },
+     {
+      "item": "window n",
+      "ours": 1007.0,
+      "record": 1007.0,
+      "equal": true
+     },
+     {
+      "item": "window R_deceq point",
+      "ours": 0.0,
+      "record": 0.0,
+      "equal": true
+     },
+     {
+      "item": "all_evaluated n",
+      "ours": 5420.0,
+      "record": 5420.0,
+      "equal": true
+     },
+     {
+      "item": "all_evaluated R_pp point",
+      "ours": 0.0,
+      "record": 0.0,
+      "equal": true
+     },
+     {
+      "item": "all_evaluated RR_N point",
+      "ours": NaN,
+      "record": NaN,
+      "equal": true
+     }
+    ]
+   },
+   "note": "The 20 cut-in tuning runs have no room at all (R = 0 in the window and over all evaluated decisions), so RR is undefined there; the equality of R, the window sizes and event ticks, and the array identities carry the test."
+  },
+  "units": {
+   "R": "pp",
+   "shares": "fractions of the room",
+   "as_room": "not applicable",
+   "lag": "not applicable"
+  },
+  "seconds": 245.2885513305664,
+  "written": "2026-11-20 03:53:08",
+  "code_sha256": {
+   "c_b7ci_v13.py": "b3acb03d614972da7a322d2db2b5a94cd078551cb5a1dbfac00c6de855e7f8cb",
+   "c_b7_v13.py": "4f6642114c0f45aaed91dd51f9b8654b286938aaaf68c71e72ef43554356350a",
+   "x_trk_extract_v13.py": "ae0526121b4cfd70734c9cadd135cf1af83d9d6126f1cf1a628c044e05a94aaf",
+   "cd_common_v13.py": "978dc19c136484b2514848536d6430beab4e45ec02e8099b0bd9ae11491cf0c2",
+   "gl_fast_v13.py": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789"
+  }
+ }
+}

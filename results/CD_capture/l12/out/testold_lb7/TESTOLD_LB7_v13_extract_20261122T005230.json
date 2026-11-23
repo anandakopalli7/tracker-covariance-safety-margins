@@ -1,0 +1,41 @@
+{
+ "program": "x_trk_extract_v13.py",
+ "gate": "TEST_OLD: old runs only; no fresh value",
+ "family": "lead_braking",
+ "test_old": true,
+ "combos": [
+  "B7_10_0.1"
+ ],
+ "runs": [
+  "p1b_fit_finite_0037"
+ ],
+ "out_root": "<user folder>\\lb7test",
+ "workers": 1,
+ "jobs": [
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_10_0.1",
+   "status": "ok",
+   "seconds_retrack": 3.7346601000026567,
+   "seconds_extract": 15.965861399992718,
+   "n_dec": 300,
+   "n_det_rows": 341
+  }
+ ],
+ "seconds": 30.726012706756592,
+ "written": "2026-11-22 00:53:01",
+ "counts": {
+  "ok": 1,
+  "exists": 0,
+  "waiting": 0,
+  "ERROR": 0
+ },
+ "cost_seconds_per_run": {
+  "B7_10_0.1": {
+   "n": 1,
+   "retrack_mean": 3.7346601000026567,
+   "extract_mean": 15.965861399992718,
+   "total_mean": 19.700521499995375
+  }
+ }
+}

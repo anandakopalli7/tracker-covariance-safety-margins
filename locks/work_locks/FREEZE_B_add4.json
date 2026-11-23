@@ -1,0 +1,65 @@
+{
+ "addendum": 4,
+ "to": "work\\locks\\FREEZE_B.json",
+ "layers": [
+  {
+   "file": "FREEZE_B.json",
+   "sha256": "1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152"
+  },
+  {
+   "file": "FREEZE_B_add1.json",
+   "sha256": "9b71225a10645bfd28b2e43a2a05578f6131ed6ec8443f14125672d480927ad6"
+  },
+  {
+   "file": "FREEZE_B_add2.json",
+   "sha256": "6ffc5cd975b5ba91c597a1f989a1c649ca4bbbcf2244642577484f4b4341c39b"
+  },
+  {
+   "file": "FREEZE_B_add3.json",
+   "sha256": "549ac106adb20e6eb9cae16088c231665c6f006fada64ec3eea15d1025970831"
+  }
+ ],
+ "written": "2026-11-21 02:32:44 Eastern Standard Time",
+ "writer": "package-B session, Claude Opus 5.5 (claude-opus-5-5)",
+ "code": "make_freeze_add_v02.py",
+ "reason": "Coordinator request 21 Nov 2026 ~02:25 EST (author: no cuts): TU.RR_TG and TU.RR_TG.ci (A10 section 5.6: TG among the tuning-run shares, TG's tuning-run arrays rebuilt by the A9-7 method with its identity check). New code only: b_tu_tg_v03.py (calls package CD's frozen c_extract_v13.tg_arrays unchanged, FREEZE_CD sha abd4aae7...; identity = recomputed class-average cF0 equals the stored cF0 of record in every cell; old-run test p1b_fit_finite_0012 reproduces revision_v12 out/tg cTG1/2/4 exactly, 0 cells differ), b_tu_v03.py (TU with TG; every TU_v02 value must be reproduced exactly; writes TU_v03.json and boot_tu_v03.npz), b_fresh_export_v03.py (adds only TU.RR_TG and TU.RR_TG.ci; refuses unless all 220 existing keys are identical). Changed: B_FRESH_DEFINITIONS_v02.md (new section 6e for the second program). No library change; no frozen v02 script changed; no value already exported changes. No tuning-run TG value computed before this addendum.",
+ "library_unchanged": true,
+ "changed": [
+  {
+   "path": "B_retrack\\B_FRESH_DEFINITIONS_v02.md",
+   "sha256": "23557b8c83d233e8adb78228fdf1b5cdce28d38ef7cb7a2b20ae54aff100c0e2",
+   "bytes": 12939,
+   "mtime": "2026-11-21 02:32:25",
+   "old_sha256": "a4c861c37a4934f5fd9fe2a6a623c0bbc3310ee4de2b8f60432b0e93270c034f"
+  }
+ ],
+ "new": [
+  {
+   "path": "B_retrack\\code\\b_fresh_export_v03.py",
+   "sha256": "ab5a64220e19ee284c15aeb0b466add5d753894e35daa8a51957dcef320aa8a5",
+   "bytes": 7513,
+   "mtime": "2026-11-21 02:32:02"
+  },
+  {
+   "path": "B_retrack\\code\\b_tu_tg_v03.py",
+   "sha256": "07771b53226af6294a89fbfe9584707dd9e1f224cb8014dc311a22136c78d703",
+   "bytes": 5262,
+   "mtime": "2026-11-21 02:29:46"
+  },
+  {
+   "path": "B_retrack\\code\\b_tu_v03.py",
+   "sha256": "d4421655b9222e516b243f51186843c2e5ad9af4daad05327b00677e704d12f3",
+   "bytes": 10052,
+   "mtime": "2026-11-21 02:31:25"
+  }
+ ],
+ "missing": [],
+ "external_read_only": [
+  {
+   "path": "CD_capture\\analysis\\gl_fast_v13.py",
+   "sha256": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789",
+   "note": "package CD file imported read-only by b_fresh_analysis_v02.py"
+  }
+ ],
+ "note": "Reference = FREEZE_B.json with add1..add3 applied in order; this addendum lists every covered file that changed or is new since that state. Earlier manifests are kept as written."
+}

@@ -1,0 +1,177 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "addendum_to": "work/locks/FREEZE_CD.json (sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7)",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5)",
+ "written": "2026-11-21 14:23 Eastern Standard Time",
+ "approval": "Coordinator's message to CD, 21 Nov 2026 about 14:12 EST: freeze FREEZE_CD_add3 with the X code after the X1 change, the extended case file, the job lists and the recount program (A11 sec. 3); written before LOCK_A11 and before any fresh crossing value was computed or read",
+ "kind": "adds files for X (AMENDMENT_11_v13.md sec. 3), before LOCK_A11 and before any fresh crossing value; no frozen file changed",
+ "adds": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\make_cases_x_v13.py",
+   "sha256": "17055fde6fd9967e62e77abaeadecba1ed36ecd7d306acbd189ae5233ec2927f"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\make_cases_x_pc_v13.py",
+   "sha256": "e87b616f1aad24ecc5d5eb27790e01476c784dcb5280bd4394963b3bc44c706a"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\CASES_X_PC_v13.json",
+   "sha256": "58902be5ce022b314148308140cb8fc9373bc7aee401531367d456755409a31e"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\DEVELOPMENT_PROTOCOL_X_v13.json",
+   "sha256": "c0e97c1de03cd2a236aefaecc954797f81aab41049d793b9031f1b4472a2aae6"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\build_packet_x_v13.py",
+   "sha256": "0500ea47b30fee6d20b358311e986c2a94e6ad4da477f50efe6ae2ffa79b500a"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\packets\\packet_x_v13.tar.gz",
+   "sha256": "a949f1e5df3a8bf59b738a89a9c4dbafb448737ab50b2cd514e5e390fdf78e7c"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\packets\\packet_x_v13_RECEIPT.json",
+   "sha256": "cae83d6f70599951a8b1e19267e2bf5f8ced46d31d02bde0d24941abcca2638c"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\make_jobs_x_pc_v13.py",
+   "sha256": "855f0ef9f197bb59170792fa93f91511d54a9777e6738a72197081a2a224b508"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\jobs_x\\JOBS_PX13_claude-v13cd-x1_v01.json",
+   "sha256": "9396b4a03bf89549c0370c0f1b358930f97fa7bc9ddff8a9e5bedcd09883af81"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\jobs_x\\JOBS_PX13_claude-v13cd-x2_v01.json",
+   "sha256": "cda365f81266f811d8e12a3469f7032afc79ff6de29f3ac4cd84ac311b9b0c24"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\jobs_x\\JOBS_PX13_claude-v13cd-x3_v01.json",
+   "sha256": "4717f4394f641871573690f8427365b0b8c259b7ba4abdc04f21c9995352e89f"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\jobs_x\\JOBS_PX13_claude-v13cd-x4_v01.json",
+   "sha256": "b0f9e6fcb01f31bbd2e59377f4e4f9c40268b2b5983308d15df171238bd9cff9"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\jobs_x\\JOBS_PX13_claude-v13cd-x5_v01.json",
+   "sha256": "139941ca5620e86a2efa2d73a3592c10dc7342a33ae8fd8d2149a0c95efea859"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\jobs_x\\JOBS_PX13_claude-v13cd-x6_v01.json",
+   "sha256": "0a01256eaf5a760040eb306bd6575a04cb244fbed8f71901f643a6dfe1f91a30"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\x_extract_v13.py",
+   "sha256": "699c149b35caf8a4e4a7dc80e32e3451c97c9c3bf222250a36d76d74dc913a4e"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\x_pods_v13.py",
+   "sha256": "4e986177342964d3363bd37bdf9c9b26f459d50ad1de49a9fbac341da31221d5"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\x_cross_v13.py",
+   "sha256": "07e65faee56249902dd7f18c60a949beca404ee2b5701729b9b1c7752f924b00"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\compare_x_v13.py",
+   "sha256": "3c8c87ffdeb2de8e0c534d832987719cbcd998986bee7298e6bb5fc2c426ed48"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\make_freeze_x_v13.py",
+   "sha256": "df7251bd97a61832b831505e03a7e362d004100855207bb072c3f1894ef4e2a3"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\CD_DEFINITIONS_X_v13.md",
+   "sha256": "17e3e29abd87fe71578acd0c976f47f38eba67afc97d1d65fb85d8e97d37a71f"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_x_cross_v13.py",
+   "sha256": "bb8c05993794f868ddfb1255d1ee08c7ff7a44e701252ec53033f37f10c7c4b1"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_x_kern_v13.py",
+   "sha256": "a63b23cb5b05ae774dfca20707190c6fae8aeaf2a735dc66b76ef5cd30d75783"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_x_calib_remote_v13.py",
+   "sha256": "bc85c8e6839f7d836922d7401215ce4daab32da27a14b1c11df76d45de5f0518"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\README_RECOUNT_X.md",
+   "sha256": "cb468dce36d1ccc9b7c44287328b5b113eaa5e763d5e92cddaf6dc72bcec15bb"
+  }
+ ],
+ "uses": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\cd_common_v13.py",
+   "sha256": "28a7238a2f7135aec35f3018879af25566665856ff163502b6286b0249d6bdd0"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\gl_fast_v13.py",
+   "sha256": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\calib_remote_v13.py",
+   "sha256": "4709a2f25cc767d2d57f1ede4a2d7f8d8c45da5d093445095b397e075d075d6b"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\pods_v13.py",
+   "sha256": "f124c41081a75afac313d148af8327c8236d1031a3bc59ccc70a8561690562a2"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\acquire_v13.py",
+   "sha256": "be92ff7afe7af8dde6c60b4a4f47f1e061e15a134236fb4496981e4d39fc083a"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\remote_chain_v01.sh",
+   "sha256": "e466b8d00d4c9412bf17affb2b3c6a4a2768880c2e9b3477d673ebc977b9c1e5"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\b7_pods_v13.py",
+   "sha256": "1b1791b1e0d0d616c6b3a586a88e71b80742f447f0a42c2fb0bdcb64f56e3ffa"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\calib_pods_v13.py",
+   "sha256": "28f45a6d81e52584d23e7501be04958436138e549d14e8a8561c9c02ec8983b8"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\calib_merge_v13.py",
+   "sha256": "d5ae7d4508def26966baae115a64c4ddb147c9b1cacbc18096035d94c66185e1"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\download_v13.py",
+   "sha256": "1ea5e7fe2c566eea3cbfbfe7c6aeb6ddc7a732a69e5513e1712c9639da6beb3c"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\packets\\packet_main_v03.tar.gz",
+   "sha256": "6ae57b9f7b096278a3fbbcaa3d6fa19927c4bc326d58c35a4bdcb4ca61d85ec5"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_core_v13.py",
+   "sha256": "ab4bc14a05086822586a28da2ec791e214a3638275d669e0396602113d1cbae2"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_kern_v13.py",
+   "sha256": "e404e6f823503ea2adc22657d62dd3116f2a6a43794dec85fbe971efecffac4a"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_calib_remote_v13.py",
+   "sha256": "25663d4992fa0c7bede6704903e333bb853a5d01e10ec06a873e3c11b6b01986"
+  },
+  {
+   "path": "revision_v13\\work\\shared\\trackers\\trk_arrays_v01.py",
+   "sha256": "300b42bfb301680cb469784145837f8db8d5241c7e2f63c1c1dc6d58ed55dd1b"
+  },
+  {
+   "path": "revision_v13\\work\\shared\\trackers\\trk_score_v01.py",
+   "sha256": "1cab6f300ad85fc6007d9b46dae75f41202f010c2080c5987ef06a79921417b4"
+  },
+  {
+   "path": "revision_v13\\work\\shared\\trackers\\trk_env_v01.py",
+   "sha256": "0219dd2ed6517109a3c913430a2f30ca756fc01f4f003c1347c4ddd4a9628cad"
+  }
+ ],
+ "replaces": []
+}

@@ -1,0 +1,23 @@
+{
+ "schema_version": "review-panel-provenance/1.0",
+ "panel_id": "ars-review-v13-round-2",
+ "written_by": "coordinating session (Claude Opus 5.5), 22 Nov 2026 about 06:30 EST",
+ "freeze_reviewed": {
+  "folder": "revision_v13\\work\\A_text\\out\\freeze_v13_0623",
+  "MANUSCRIPT_v13.md": "893442e4437e01fa6159dd9bbb8ebae21af65508a70064890b17929cf70db958",
+  "SUPPLEMENT_v13.md": "f915fd798bbc9d3c53c56cea74d5b0ea4279463f3f3385b0e93488dba802f426",
+  "MANUSCRIPT_v13.pdf": "4bd544e9ce3aff7eab8940c1f371ccd709da9910b963d3833e540f560b755da8"
+ },
+ "writers": "sprint text: Claude Opus 5.5; round-2 text (after AMENDMENT_12): Claude Fable 5.2",
+ "route": "five seats dispatched directly by the coordinator as separate fresh sub-agents, in parallel, with the sprint panel's seat models; cards from review_v13_output\\00_phase0_field_analysis_and_cards.md (the user-accepted v12 cards, focus anchors re-pointed by each seat to the round-2 sections; the card-confirmation pause was not held); common brief work\\panel_brief_r2_filled_v01.md (sha256 3f5571870c1be74b7734e6605f9bb9948c687503c38456485ec7cc15f9fca45d); synthesis by a separate Claude Sonnet 5.5 sub-agent (not the round-2 writer's model). A claim audit on Claude Sonnet 5.5 ran in parallel from session A's brief (notes\\CLAIM_AUDIT_BRIEF_R2_v13.md) and is not part of the panel.",
+ "seats": [
+  {"seat_id": "EIC", "role_id": "journal_fit", "model": "Claude Sonnet 5.5", "output": "phase1\\01_eic_journal_fit.md"},
+  {"seat_id": "R1", "role_id": "methodology", "model": "Claude Fable 5.2 (the round-2 writer's model; told to be skeptical)", "output": "phase1\\02_r1_methodology.md", "extra_reads": "AMENDMENT_10/11/12, LOCK_A11*, LOCK_A12a-e, the round-2 export pairs and A12_HOLM_v01.json, for pre-registration and value checks"},
+  {"seat_id": "R2", "role_id": "domain", "model": "Claude Opus 5.5 (the sprint writer's model; told to be skeptical)", "output": "phase1\\03_r2_domain.md"},
+  {"seat_id": "R3", "role_id": "practical", "model": "Claude Sonnet 5.5", "output": "phase1\\04_r3_practical.md"},
+  {"seat_id": "DA", "role_id": "devils_advocate", "model": "Claude Fable 5.2 (the round-2 writer's model; told to be skeptical)", "output": "phase1\\05_devils_advocate.md", "extra_reads": "AMENDMENT_11, AMENDMENT_12"}
+ ],
+ "blinding": "seats did not see each other's outputs, earlier review reports, the response letter or session notes; seats were not told any target score",
+ "correlated_error_disclosure": "All seats are Claude models of one family (Sonnet 5.5, Fable 5.2, Opus 5.5); spreading seats over three models reduces but does not remove correlated-error risk. Two seats (R1, DA) share the round-2 writer's model and one (R2) the sprint writer's model.",
+ "title_note": "The title is the author's choice; seats comment only if the paper contradicts it."
+}

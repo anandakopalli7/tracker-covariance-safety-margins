@@ -1,0 +1,108 @@
+{
+ "gate": "TEST_OLD: old runs only; no fresh value",
+ "set": "test_cutin",
+ "workers": 2,
+ "runs": [
+  {
+   "run": "p2_c1109_tune_0004_fixed_c1",
+   "status": "ok",
+   "seconds": 3.924161195755005
+  },
+  {
+   "run": "p2_c1109_tune_0010_fixed_c1",
+   "status": "ok",
+   "seconds": 3.9675445556640625
+  },
+  {
+   "run": "p2_c1109_tune_0016_fixed_c1",
+   "status": "ok",
+   "seconds": 2.7853033542633057
+  },
+  {
+   "run": "p2_c1109_tune_0022_fixed_c1",
+   "status": "ok",
+   "seconds": 2.6536872386932373
+  },
+  {
+   "run": "p2_c1109_tune_0028_fixed_c1",
+   "status": "ok",
+   "seconds": 2.5098953247070312
+  },
+  {
+   "run": "p2_c1109_tune_0034_fixed_c1",
+   "status": "ok",
+   "seconds": 1.9941341876983643
+  },
+  {
+   "run": "p2_c1109_tune_0040_fixed_c1",
+   "status": "ok",
+   "seconds": 1.8353967666625977
+  },
+  {
+   "run": "p2_c1109_tune_0046_fixed_c1",
+   "status": "ok",
+   "seconds": 2.3101000785827637
+  },
+  {
+   "run": "p2_c1109_tune_0052_fixed_c1",
+   "status": "ok",
+   "seconds": 2.598177194595337
+  },
+  {
+   "run": "p2_c1109_tune_0058_fixed_c1",
+   "status": "ok",
+   "seconds": 3.2825915813446045
+  },
+  {
+   "run": "p2_c1109_tune_0064_fixed_c1",
+   "status": "ok",
+   "seconds": 4.944705009460449
+  },
+  {
+   "run": "p2_c1109_tune_0070_fixed_c1",
+   "status": "ok",
+   "seconds": 5.900820732116699
+  },
+  {
+   "run": "p2_c1109_tune_0076_fixed_c1",
+   "status": "ok",
+   "seconds": 4.892062187194824
+  },
+  {
+   "run": "p2_c1109_tune_0082_fixed_c1",
+   "status": "ok",
+   "seconds": 2.9187729358673096
+  },
+  {
+   "run": "p2_c1109_tune_0088_fixed_c1",
+   "status": "ok",
+   "seconds": 3.470863103866577
+  },
+  {
+   "run": "p2_c1109_tune_0094_fixed_c1",
+   "status": "ok",
+   "seconds": 2.402951717376709
+  },
+  {
+   "run": "p2_c1109_tune_0100_fixed_c1",
+   "status": "ok",
+   "seconds": 3.816589117050171
+  },
+  {
+   "run": "p2_c1109_tune_0106_fixed_c1",
+   "status": "ok",
+   "seconds": 2.7461800575256348
+  },
+  {
+   "run": "p2_c1109_tune_0112_fixed_c1",
+   "status": "ok",
+   "seconds": 3.37027907371521
+  },
+  {
+   "run": "p2_c1109_tune_0118_fixed_c1",
+   "status": "ok",
+   "seconds": 4.055179595947266
+  }
+ ],
+ "seconds": 130.11747479438782
+}

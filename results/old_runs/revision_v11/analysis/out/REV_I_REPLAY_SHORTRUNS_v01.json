@@ -1,0 +1,720 @@
+{
+ "code": "rev_i_replay_shortruns_v01.py",
+ "written": "2026-11-18 17:54:26",
+ "seconds": 166.95287442207336,
+ "S13": {
+  "runs": [
+   {
+    "run": "p1b_fit_finite_0005",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 257,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0006",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 254,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0007",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 240,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0008",
+    "decisions": 57,
+    "reproduced": 57,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 12,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0009",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 269,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0010",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 249,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0011",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 270,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0012",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 239,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0013",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 245,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0014",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 268,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0015",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 276,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0016",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 246,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0017",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 229,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0018",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 253,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0019",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 265,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0020",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 268,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0021",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 278,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0022",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 281,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0023",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 263,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0024",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 265,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0025",
+    "decisions": 48,
+    "reproduced": 48,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 8,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0026",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 250,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0027",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 260,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0028",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 275,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0029",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 260,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0030",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 237,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0031",
+    "decisions": 82,
+    "reproduced": 82,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 12,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0032",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 259,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0033",
+    "decisions": 54,
+    "reproduced": 54,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 9,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0034",
+    "decisions": 66,
+    "reproduced": 66,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 21,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0035",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 235,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0036",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 241,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0037",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 268,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0038",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 265,
+    "arm": "native"
+   },
+   {
+    "run": "p1b_fit_finite_0039",
+    "decisions": 300,
+    "reproduced": 300,
+    "differing": {
+     "candidate": 0,
+     "targets": 0,
+     "fallback": 0,
+     "wire": 0
+    },
+    "logged_fallbacks": 275,
+    "arm": "native"
+   }
+  ],
+  "decisions": 9307,
+  "reproduced": 9307,
+  "arms": [
+   "native"
+  ]
+ },
+ "S14": {
+  "runs": [
+   {
+    "run": "p1b_fit_finite_0005",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0006",
+    "evaluated": 271,
+    "na_changed_decisions": 20,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0007",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0008",
+    "evaluated": 27,
+    "na_changed_decisions": 0,
+    "contact_k": 212
+   },
+   {
+    "run": "p1b_fit_finite_0009",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0010",
+    "evaluated": 271,
+    "na_changed_decisions": 20,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0011",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0012",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0013",
+    "evaluated": 271,
+    "na_changed_decisions": 20,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0014",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0015",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0016",
+    "evaluated": 271,
+    "na_changed_decisions": 10,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0017",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0018",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0019",
+    "evaluated": 271,
+    "na_changed_decisions": 5,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0020",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0021",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0022",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0023",
+    "evaluated": 271,
+    "na_changed_decisions": 15,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0024",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0025",
+    "evaluated": 18,
+    "na_changed_decisions": 10,
+    "contact_k": 194
+   },
+   {
+    "run": "p1b_fit_finite_0026",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0027",
+    "evaluated": 271,
+    "na_changed_decisions": 15,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0028",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0029",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0030",
+    "evaluated": 271,
+    "na_changed_decisions": 30,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0031",
+    "evaluated": 53,
+    "na_changed_decisions": 15,
+    "contact_k": 263
+   },
+   {
+    "run": "p1b_fit_finite_0032",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0033",
+    "evaluated": 25,
+    "na_changed_decisions": 0,
+    "contact_k": 207
+   },
+   {
+    "run": "p1b_fit_finite_0034",
+    "evaluated": 37,
+    "na_changed_decisions": 2,
+    "contact_k": 231
+   },
+   {
+    "run": "p1b_fit_finite_0035",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0036",
+    "evaluated": 271,
+    "na_changed_decisions": 20,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0037",
+    "evaluated": 271,
+    "na_changed_decisions": 15,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0038",
+    "evaluated": 271,
+    "na_changed_decisions": 20,
+    "contact_k": -1
+   },
+   {
+    "run": "p1b_fit_finite_0039",
+    "evaluated": 271,
+    "na_changed_decisions": 0,
+    "contact_k": -1
+   }
+  ],
+  "short_runs": [
+   {
+    "run": "p1b_fit_finite_0008",
+    "evaluated": 27,
+    "na_changed_decisions": 0,
+    "contact_k": 212
+   },
+   {
+    "run": "p1b_fit_finite_0025",
+    "evaluated": 18,
+    "na_changed_decisions": 10,
+    "contact_k": 194
+   },
+   {
+    "run": "p1b_fit_finite_0031",
+    "evaluated": 53,
+    "na_changed_decisions": 15,
+    "contact_k": 263
+   },
+   {
+    "run": "p1b_fit_finite_0033",
+    "evaluated": 25,
+    "na_changed_decisions": 0,
+    "contact_k": 207
+   },
+   {
+    "run": "p1b_fit_finite_0034",
+    "evaluated": 37,
+    "na_changed_decisions": 2,
+    "contact_k": 231
+   }
+  ],
+  "evaluated_in_short_runs": 160,
+  "na_changed_in_short_runs": 27,
+  "na_changed_all": 217,
+  "runs_with_na_change": 14,
+  "evaluated_all": 8290
+ }
+}

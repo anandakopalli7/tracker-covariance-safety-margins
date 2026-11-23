@@ -1,0 +1,8 @@
+{
+ "schema": "REPLACEMENTS_C_V13",
+ "amendment": "AMENDMENT_10_v13 sec. 5.1 (a job failing twice is replaced by the next unused case of the same family and speed)",
+ "written": "2026-11-20 03:25 EST; format corrected 03:50 EST (FREEZE_CD_add1.json)",
+ "replacements": {},
+ "format": "mapping {original case id: replacement case id}, as cd_common_v13.c_run_ids reads it; empty = no replacement",
+ "note": "No job of C (210) or D1 (105) failed, retried or was replaced (capture 19 Nov 2026; STATUS.md). The run sets are exactly the cases of CASES_C_v13.json (pc13_<case>_native) and d1\\CASES_D1_v13.json roles d1_openloop (pd13_<case>_native)."
+}

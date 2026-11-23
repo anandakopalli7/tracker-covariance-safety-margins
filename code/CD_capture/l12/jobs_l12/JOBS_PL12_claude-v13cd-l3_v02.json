@@ -1,0 +1,384 @@
+{
+ "schema": "CLAUDE_MAIN_JOBS_V01",
+ "protocol": "DEVELOPMENT_PROTOCOL_SMOKE_v01.json",
+ "volume_folder": "/opt/claude_v13_l12local",
+ "capture_timeout_s": 600,
+ "review_timeout_s": 600,
+ "actor_review_timeout_s": 180,
+ "server_ready_timeout_s": 120,
+ "concurrent_start_stagger_s": 15,
+ "max_attempts": 2,
+ "protocol_main_sha256": "32d683a0a8ca2e91ff0245759ad78b43e7953c33bd12847c5193cafcdaa5735d",
+ "note": "Revision v13 A12 sec. 2, new lead-braking runs, protocol cases, pod claude-v13cd-l3 (3 of 5); 27 study jobs; CASES_L12_v13.json ae494eb27637; packet packet_main_v03 unchanged; native arm alpha = beta; keep_raw false. | v02 (A12 sec. 2.2 change, 10 Hz hedge): keep_raw true on every study job, sweeps on the pod-local disk only; derived from JOBS_PL12_claude-v13cd-l3_v01.json (sha256 c3c5a15964f34a17854d044d9e2eb2c95adfc6870243a409897d54dace598461) by make_jobs_l12_raw_v13.py; nothing else differs.",
+ "made_by": {
+  "script": "make_jobs_l12_v13.py",
+  "sha256": "cd09c839e5fdeba05f88663d7fe900c16371e01673d71acc4289aa292e244ba8",
+  "imports_read_only": "make_main_jobs_v01.py 88f5aeda24ecd6b15b3b110f42418a4285e9385a716a7d64ab486877c41cbad8"
+ },
+ "jobs": [
+  {
+   "id": "a1l12_l3_v01_crash",
+   "case": "canonical_lead_braking_v10_r0_finite",
+   "arm": "native",
+   "phase": "A1",
+   "role": "control",
+   "scenario": "canonical_lead_braking_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 1.0,
+    "T": 0.18142429254388814,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 215
+   },
+   "alpha": 0.07595887787405835,
+   "beta": 0.056961122665147565
+  },
+  {
+   "id": "a1l12_l3_v01_benign",
+   "case": "canonical_benign_v10_r0_finite",
+   "arm": "native",
+   "phase": "A1",
+   "role": "control",
+   "scenario": "canonical_benign_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 0.0,
+    "T": 0.9999999494794277,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 700
+   },
+   "alpha": 0.07595887787405835,
+   "beta": 0.056961122665147565
+  },
+  {
+   "id": "a1l12_l3_v01_learned",
+   "case": "canonical_vehicle_crossing_v10_r0_finite",
+   "arm": "learned_without",
+   "phase": "A1",
+   "role": "control",
+   "scenario": "canonical_vehicle_crossing_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 0.0,
+    "T": 0.06592746377472082,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 700
+   },
+   "kappa": 1.0
+  },
+  {
+   "id": "ctl_pl12_l3_v01_000",
+   "case": "canonical_lead_braking_v10_r0_finite",
+   "arm": "native",
+   "phase": "CTL",
+   "role": "control",
+   "scenario": "canonical_lead_braking_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 1.0,
+    "T": 0.18142429254388814,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 215
+   },
+   "alpha": 0.07595887787405835,
+   "beta": 0.056961122665147565
+  },
+  {
+   "id": "pl12_c1109_eval_0864_native",
+   "case": "c1109_eval_0864",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_0864",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1086_native",
+   "case": "c1109_eval_1086",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1086",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1152_native",
+   "case": "c1109_eval_1152",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1152",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_0900_native",
+   "case": "c1109_eval_0900",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_0900",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1212_native",
+   "case": "c1109_eval_1212",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1212",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1194_native",
+   "case": "c1109_eval_1194",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1194",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1008_native",
+   "case": "c1109_eval_1008",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1008",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1338_native",
+   "case": "c1109_eval_1338",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1338",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1242_native",
+   "case": "c1109_eval_1242",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1242",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1080_native",
+   "case": "c1109_eval_1080",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1080",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1458_native",
+   "case": "c1109_eval_1458",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1458",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1284_native",
+   "case": "c1109_eval_1284",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1284",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1176_native",
+   "case": "c1109_eval_1176",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1176",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1560_native",
+   "case": "c1109_eval_1560",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1560",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1326_native",
+   "case": "c1109_eval_1326",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1326",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1362_native",
+   "case": "c1109_eval_1362",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1362",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1638_native",
+   "case": "c1109_eval_1638",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1638",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1404_native",
+   "case": "c1109_eval_1404",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1404",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1440_native",
+   "case": "c1109_eval_1440",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1440",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1746_native",
+   "case": "c1109_eval_1746",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1746",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1482_native",
+   "case": "c1109_eval_1482",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1482",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1572_native",
+   "case": "c1109_eval_1572",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1572",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1584_native",
+   "case": "c1109_eval_1584",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1584",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1590_native",
+   "case": "c1109_eval_1590",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1590",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1698_native",
+   "case": "c1109_eval_1698",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1698",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1704_native",
+   "case": "c1109_eval_1704",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1704",
+   "keep_raw": true
+  },
+  {
+   "id": "pl12_c1109_eval_1728_native",
+   "case": "c1109_eval_1728",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PL12",
+   "role": "eval",
+   "scenario": "c1109_eval_1728",
+   "keep_raw": true
+  }
+ ]
+}

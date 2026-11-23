@@ -1,0 +1,350 @@
+{
+ "program": "rc_s57a_v13.py",
+ "what": "selftest: partial oracles of record on the 35 old evaluation runs",
+ "started": "2026-11-20 03:20:11",
+ "checks": {
+  "po.n_uniforms": {
+   "here": 9307,
+   "of_record": 9307,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "ok": true
+  },
+  "REV_G.all.P25": {
+   "here": 0.2689217210990151,
+   "of_record": 0.2689217210990151,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "REV_G.all.P50": {
+   "here": 0.5360182305166755,
+   "of_record": 0.5360182305166755,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "REV_G.all.P75": {
+   "here": 0.7775401762571281,
+   "of_record": 0.7775401762571281,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "REV_G.moving.P25": {
+   "here": -0.10874648590420641,
+   "of_record": -0.10874648590420641,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "REV_G.moving.P50": {
+   "here": 0.05115472530937179,
+   "of_record": 0.05115472530937179,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "REV_G.moving.P75": {
+   "here": 0.44013557184519586,
+   "of_record": 0.44013557184519586,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "REV_G.phase0.P25": {
+   "here": -1.0357142857142858,
+   "of_record": -1.0357142857142858,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "REV_G.phase0.P50": {
+   "here": -1.1394557823129254,
+   "of_record": -1.1394557823129254,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "REV_G.phase0.P75": {
+   "here": -0.7585034013605445,
+   "of_record": -0.7585034013605445,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "REV_G.phase1.P25": {
+   "here": -0.6815895159585712,
+   "of_record": -0.6815895159585712,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "REV_G.phase1.P50": {
+   "here": -0.6295497780596069,
+   "of_record": -0.6295497780596069,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "REV_G.phase1.P75": {
+   "here": 0.0462481504967238,
+   "of_record": 0.0462481504967238,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "REV_G.phase2.P25": {
+   "here": 0.2768346595932803,
+   "of_record": 0.2768346595932803,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "REV_G.phase2.P50": {
+   "here": 0.5405835543766578,
+   "of_record": 0.5405835543766578,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "REV_G.phase2.P75": {
+   "here": 0.7787798408488064,
+   "of_record": 0.7787798408488064,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "A9_8.P25": {
+   "here": -0.36452982810920115,
+   "of_record": -0.36452982810920115,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "A9_8.P50": {
+   "here": -0.2584024266936299,
+   "of_record": -0.2584024266936299,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "A9_8.P75": {
+   "here": 0.23191102123356916,
+   "of_record": 0.23191102123356916,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "A9_8.n": {
+   "here": 1433.0,
+   "of_record": 1433.0,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "ok": true
+  },
+  "A9_8.R_pp": {
+   "here": 8.584085851273986,
+   "of_record": 8.584085851273986,
+   "abs_diff": 0.0,
+   "tol": 1e-12,
+   "ok": true
+  },
+  "A9_8.grades_by_rule": {
+   "here": false,
+   "of_record": false,
+   "abs_diff": null,
+   "tol": 0,
+   "ok": true
+  },
+  "gridless_vs_library.all.P25": {
+   "here": 0.26834685101518696,
+   "of_record": 0.26834685101518696,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "gridless_vs_library.all.P50": {
+   "here": 0.536214686190191,
+   "of_record": 0.536214686190191,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "gridless_vs_library.all.P75": {
+   "here": 0.7777039899842142,
+   "of_record": 0.7777039899842142,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "gridless_vs_library.mov.P25": {
+   "here": -0.11937341009505957,
+   "of_record": -0.11937341009505957,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "gridless_vs_library.mov.P50": {
+   "here": 0.04056767974293747,
+   "of_record": 0.04056767974293747,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "gridless_vs_library.mov.P75": {
+   "here": 0.4325076984870799,
+   "of_record": 0.4325076984870799,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "gridless_vs_library.pre.P25": {
+   "here": -0.3713603818615753,
+   "of_record": -0.3713603818615753,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "gridless_vs_library.pre.P50": {
+   "here": -0.3183770883054893,
+   "of_record": -0.3183770883054893,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "gridless_vs_library.pre.P75": {
+   "here": 0.17541766109785206,
+   "of_record": 0.17541766109785206,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "gridless_vs_library.brk.P25": {
+   "here": -0.1396383114649368,
+   "of_record": -0.1396383114649368,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "gridless_vs_library.brk.P50": {
+   "here": 0.02931347977787606,
+   "of_record": 0.02931347977787606,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "gridless_vs_library.brk.P75": {
+   "here": 0.4436335937883925,
+   "of_record": 0.4436335937883925,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "gridless_vs_library.stop.P25": {
+   "here": -0.37499999999999994,
+   "of_record": -0.37499999999999994,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "gridless_vs_library.stop.P50": {
+   "here": -0.21955128205128197,
+   "of_record": -0.21955128205128197,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "gridless_vs_library.stop.P75": {
+   "here": 0.19711538461538464,
+   "of_record": 0.19711538461538464,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "window_standin.n": {
+   "here": 1650.0,
+   "of_record": 1650.0,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "ok": true
+  },
+  "window_standin.denE": {
+   "here": 3143.151515151515,
+   "of_record": 3143.151515151515,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "window_standin.D.N": {
+   "here": -4.242424242424247,
+   "of_record": -4.242424242424247,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "window_standin.D.E5": {
+   "here": 44.24242424242426,
+   "of_record": 44.24242424242426,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "window_standin.D.E5p": {
+   "here": 28.787878787878775,
+   "of_record": 28.787878787878775,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "window_standin.D.CK3": {
+   "here": 2216.787878787879,
+   "of_record": 2216.787878787879,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "window_standin.D.P25": {
+   "here": 58.060606060606034,
+   "of_record": 58.060606060606034,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "window_standin.D.P50": {
+   "here": 653.5757575757575,
+   "of_record": 653.5757575757575,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  },
+  "window_standin.D.P75": {
+   "here": 1760.848484848485,
+   "of_record": 1760.848484848485,
+   "abs_diff": 0.0,
+   "tol": 0.0,
+   "ok": true
+  }
+ },
+ "window_standin": {
+  "n": 1650.0,
+  "R_gl_pp": 15.637569727121965,
+  "RR": {
+   "N": -0.0013497358374146787,
+   "E5": 0.014075816590181643,
+   "E5p": 0.009158921753885307,
+   "CK3": 0.705275538930238,
+   "P25": 0.018472099032046576,
+   "P50": 0.2079364467239983,
+   "P75": 0.5602175002892292
+  }
+ },
+ "summary": {
+  "n_checks": 46,
+  "n_failed": 0,
+  "all_ok": true,
+  "max_abs_diff": 0.0
+ },
+ "seconds": 183.4620864391327,
+ "written": "2026-11-20 03:23:15"
+}

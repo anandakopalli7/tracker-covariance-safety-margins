@@ -1,0 +1,11 @@
+{
+ "test": "fresh paths refuse without the second lock",
+ "written": "2026-11-20 03:53:58",
+ "state": "revision_v13/LOCK_A10_2.txt present (stage 1); LOCK_A10_2c.txt absent",
+ "commands": {
+  "analysis/c_s57a_v13.py (no --test-old)": "REFUSED: LOCK_A10_2.txt and LOCK_A10_2c.txt must both exist before a stage-2 program reads a fresh run (two-stage Lock 2, coordinator 20 Nov 01:53 EST)",
+  "analysis/x_s57a_extract_v13.py --set c_cutin": "REFUSED: LOCK_A10_2.txt and LOCK_A10_2c.txt must both exist before a stage-2 program reads a fresh run (two-stage Lock 2, coordinator 20 Nov 01:53 EST)"
+ },
+ "outputs_created": false,
+ "note": "both programs call cd_common_v13.require_lock2c before opening any fresh array or log"
+}

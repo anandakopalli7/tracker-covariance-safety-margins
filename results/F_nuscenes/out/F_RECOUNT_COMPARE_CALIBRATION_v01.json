@@ -1,0 +1,107 @@
+{
+ "written": "2026-11-21 02:20:26",
+ "first": "ARS_TRIAL\\revision_v13\\work\\F_nuscenes\\out\\F_HELDOUT_v02.json",
+ "first_sha256": "cb863298bd7ce468b117fadc1e7272ed33dea0bcbb41d08a7e46f8a75dd10df9",
+ "recount": "ARS_TRIAL\\revision_v13\\work\\F_nuscenes\\recount\\F_RECOUNT_HELDOUT_v02.json",
+ "recount_sha256": "0aa4ff44734cd4a0e14eb6db532e1e0a065e0c62863366dba7741d51d4c854dc",
+ "levels_all_equal": true,
+ "coverage_all_same_side": true,
+ "verdicts_first_recount": {
+  "F_H0": [
+   false,
+   false
+  ],
+  "F_H1": [
+   false,
+   false
+  ],
+  "F_H2": [
+   "d: inconclusive",
+   "d: inconclusive"
+  ]
+ },
+ "verdicts_equal": true,
+ "statistics": {
+  "R": {
+   "first_level": 0.95,
+   "recount_level": 0.95,
+   "level_equal": true,
+   "first_coverage_nominal95": 0.974,
+   "recount_coverage_nominal95": 0.973,
+   "same_side_of_0_94": true,
+   "first_ci": [
+    -0.12711242689910027,
+    0.13370141931318907
+   ],
+   "recount_interval": [
+    -0.12711242689910027,
+    0.13370141931318907
+   ]
+  },
+  "RR_N": {
+   "first_level": 0.99,
+   "recount_level": 0.99,
+   "level_equal": true,
+   "first_coverage_nominal95": NaN,
+   "recount_coverage_nominal95": 0.0,
+   "same_side_of_0_94": true,
+   "first_ci": [
+    -65.69261261261227,
+    4.890753985351354
+   ],
+   "recount_interval": [
+    -65.69261261261227,
+    4.890753985351354
+   ]
+  },
+  "r_IMM": {
+   "first_level": 0.99,
+   "recount_level": 0.99,
+   "level_equal": true,
+   "first_coverage_nominal95": 0.3328328328328328,
+   "recount_coverage_nominal95": 0.305,
+   "same_side_of_0_94": true,
+   "first_ci": [
+    -198.7433333333333,
+    2.0988413134482973
+   ],
+   "recount_interval": [
+    -198.7433333333333,
+    2.0988413134482973
+   ]
+  },
+  "c_IMM": {
+   "first_level": 0.99,
+   "recount_level": 0.99,
+   "level_equal": true,
+   "first_coverage_nominal95": 0.07907907907907907,
+   "recount_coverage_nominal95": 0.061,
+   "same_side_of_0_94": true,
+   "first_ci": [
+    -2.464471195737573,
+    797.1150000000115
+   ],
+   "recount_interval": [
+    -2.464471195737573,
+    797.1150000000115
+   ]
+  },
+  "eff_IMM": {
+   "first_level": 0.95,
+   "recount_level": 0.95,
+   "level_equal": true,
+   "first_coverage_nominal95": 0.975975975975976,
+   "recount_coverage_nominal95": 0.9735,
+   "same_side_of_0_94": true,
+   "first_ci": [
+    -5.567502382760129,
+    2.6465703108503047
+   ],
+   "recount_interval": [
+    -5.567502382760129,
+    2.6465703108503047
+   ]
+  }
+ },
+ "convention_note": "The estimated coverage of the nominal 95% interval is an intermediate quantity (not in the export). First program (f06, the expressions of a9_2a_double_bootstrap_mc_v01.cover_two): rank p-values of the full-sample point among the inner statistics, covered if p_le >= a/2 and p_lt <= 1 - a/2 (tolerance 1e-12), mean over the outer resamples with a finite p-value. Recount (fr_core_v01.cover_rows, written from the amendment text): linearly interpolated percentiles (np.percentile) of the finite inner statistics, covered if lo <= point <= hi; an outer resample with no finite inner statistic or a non-finite point counts as not covered (mean over all 2,000). The two readings differ by a few outer resamples where inner statistics tie with the point; every statistic is on the same side of the 0.94 threshold in both, so the calibrated levels (A10 2.6) are equal."
+}

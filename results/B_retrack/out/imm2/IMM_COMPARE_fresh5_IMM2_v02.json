@@ -1,0 +1,75 @@
+{
+ "code": "imm_compare_v02.py",
+ "kappa_ca": null,
+ "constants": "out\\imm2t\\IMM2_CONSTANTS_REC_v01.json",
+ "diag": 0.95,
+ "runs": [
+  {
+   "cap": "..\\CD_capture\\runs\\pc13_c1109_eval_0288_native\\pc13_c1109_eval_0288_native\\capture\\c1109_eval_0288",
+   "frames": 23,
+   "frames_b": 23,
+   "ids_identical": true,
+   "track_states": 25,
+   "car_states": 23,
+   "P9_max_rel_diff": 1.2903357549918847e-14,
+   "centre_max_abs_diff": 1.1368683772161603e-13,
+   "velocity_max_abs_diff": 2.6506574712925612e-14,
+   "pass_1e9": true,
+   "seconds": 16.0
+  },
+  {
+   "cap": "..\\CD_capture\\runs\\pc13_c1109_eval_0324_native\\pc13_c1109_eval_0324_native\\capture\\c1109_eval_0324",
+   "frames": 23,
+   "frames_b": 23,
+   "ids_identical": true,
+   "track_states": 23,
+   "car_states": 23,
+   "P9_max_rel_diff": 1.4773512033596288e-14,
+   "centre_max_abs_diff": 1.1368683772161603e-13,
+   "velocity_max_abs_diff": 1.9539925233402755e-14,
+   "pass_1e9": true,
+   "seconds": 12.6
+  },
+  {
+   "cap": "..\\CD_capture\\runs\\pc13_c1109_eval_0384_native\\pc13_c1109_eval_0384_native\\capture\\c1109_eval_0384",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 2.1069960594496158e-14,
+   "centre_max_abs_diff": 5.684341886080802e-14,
+   "velocity_max_abs_diff": 1.1657341758564144e-14,
+   "pass_1e9": true,
+   "seconds": 17.2
+  },
+  {
+   "cap": "..\\CD_capture\\runs\\pc13_c1109_eval_0450_native\\pc13_c1109_eval_0450_native\\capture\\c1109_eval_0450",
+   "frames": 22,
+   "frames_b": 22,
+   "ids_identical": true,
+   "track_states": 22,
+   "car_states": 22,
+   "P9_max_rel_diff": 1.2540076665972333e-14,
+   "centre_max_abs_diff": 5.684341886080802e-14,
+   "velocity_max_abs_diff": 8.881784197001252e-15,
+   "pass_1e9": true,
+   "seconds": 15.7
+  },
+  {
+   "cap": "..\\CD_capture\\runs\\pc13_c1109_eval_0582_native\\pc13_c1109_eval_0582_native\\capture\\c1109_eval_0582",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 9.686940603689511e-14,
+   "centre_max_abs_diff": 1.1368683772161603e-13,
+   "velocity_max_abs_diff": 5.1514348342607263e-14,
+   "pass_1e9": true,
+   "seconds": 17.5
+  }
+ ],
+ "all_pass": true,
+ "written": "2026-11-22 00:50:37"
+}

@@ -1,0 +1,505 @@
+{
+ "schema": "FREEZE_V13",
+ "package": "E",
+ "session": "E (Claude Opus 5.5)",
+ "written": "2026-11-19T21:00:08.777216-05:00",
+ "packet": [
+  "packet_e_v02",
+  "packet_e_v03"
+ ],
+ "note": "E frozen 19 Nov ~21:00 EST before any E3/E3b run. packet_e_v03 (tar f3eb32c9...) runs E3, E3b; packet_e_v02 (tar 451a317d...) ran E1S, E1, E2. src/ equals packet_e_v03/claude_smoke_v01 file for file. trackers_b/ equals FREEZE_B (1fc9bb7c...). Matched settings: LOCK_A10_2b.txt (81d3a77a...) and its note (744ce80d...). E3/E3b job lists are written after this freeze by the frozen make_jobs_e_v01.py from the locked matched settings; they and the full laptop arms check (tests/out/TEST_E_ARMS_s0n12_v01.json, s12n23, running) go in FREEZE_E_ADDENDUM_v01.json.",
+ "files": [
+  {
+   "group": "src",
+   "path": "E_closedloop/src/cuda_entry_smoke_v01.py",
+   "bytes": 1598,
+   "sha256": "2bf8d6cb4d022e1545a7eab8c9fb6bcac2021d4baedd70d0ff41de3c8782dcfa"
+  },
+  {
+   "group": "src",
+   "path": "E_closedloop/src/e_arms_v01.py",
+   "bytes": 19264,
+   "sha256": "81aa894ad4f14f24e2c2a4b1413b8882c3c85bd156125e1226ce49c2a2e09771"
+  },
+  {
+   "group": "src",
+   "path": "E_closedloop/src/E_F2_PLANT_v01.json",
+   "bytes": 788,
+   "sha256": "55b8eb4051d736e63b37ac26d46c956903598228640c95d4258724488d04b6fc"
+  },
+  {
+   "group": "src",
+   "path": "E_closedloop/src/e_imm_v01.py",
+   "bytes": 2800,
+   "sha256": "3c9f13982e0900da4cd85cc4df4429a896f2801dada79607a78e7334e5707ecb"
+  },
+  {
+   "group": "src",
+   "path": "E_closedloop/src/E_PBAR_CANMOT_v01.json",
+   "bytes": 1589,
+   "sha256": "fd89f69ed5c96589fa70604161d0d68adb5469220be375eab76d62c853ba0b65"
+  },
+  {
+   "group": "src",
+   "path": "E_closedloop/src/E_PBAR_IMM_v01.json",
+   "bytes": 1379,
+   "sha256": "1cba70a1029c5c764d473a1682f55d4283f391642b946665d8417e84d9d95f68"
+  },
+  {
+   "group": "src",
+   "path": "E_closedloop/src/e_sources_v01.py",
+   "bytes": 14305,
+   "sha256": "a72f2bf9c7a0a8837b8c09e28ebc6a43f5b5fb2927f4c9ce1650f6e122ab4369"
+  },
+  {
+   "group": "src",
+   "path": "E_closedloop/src/probe_e_v01.py",
+   "bytes": 30998,
+   "sha256": "fb468671ada3ced5ec1b5b9408e0a3173a467cc1c955afdd6d38ea2501ade99e"
+  },
+  {
+   "group": "src",
+   "path": "E_closedloop/src/review/review_case_e_v01.py",
+   "bytes": 6129,
+   "sha256": "eff26e5ac7e911a27391be54c12a79b05ce798c289256401b902799e1908c3ac"
+  },
+  {
+   "group": "src",
+   "path": "E_closedloop/src/trackers_b/trk_constants_v01.json",
+   "bytes": 1344,
+   "sha256": "d8455cb50b637a3ce45460a0dee38f79b69fce4c085c913f713b56ac23338a9d"
+  },
+  {
+   "group": "src",
+   "path": "E_closedloop/src/trackers_b/trk_env_v01.py",
+   "bytes": 3533,
+   "sha256": "0219dd2ed6517109a3c913430a2f30ca756fc01f4f003c1347c4ddd4a9628cad"
+  },
+  {
+   "group": "src",
+   "path": "E_closedloop/src/trackers_b/trk_exact_math_v01.py",
+   "bytes": 6649,
+   "sha256": "6a42ece0b2255e4c2ec15a5651ee8ac65671e63cce01895e1ff4227ead86f541"
+  },
+  {
+   "group": "src",
+   "path": "E_closedloop/src/trackers_b/trk_filters_v01.py",
+   "bytes": 18493,
+   "sha256": "9edfdd6cb5642c1618d41ccb3def176251074a3beaf703d8589df58018304dbb"
+  },
+  {
+   "group": "src",
+   "path": "E_closedloop/src/trackers_b/trk_tracker_v01.py",
+   "bytes": 9506,
+   "sha256": "5cf4ad3baf81b614b18facc3fe4b3bc6506f867350d5b6216fce5ed725cfdef8"
+  },
+  {
+   "group": "src",
+   "path": "E_closedloop/src/worker_main_v01.py",
+   "bytes": 29266,
+   "sha256": "489d98cc9c436ecc63edd4f4f3bfc1e44a18762774205157bb1255b0fcc20d60"
+  },
+  {
+   "group": "packet",
+   "path": "E_closedloop/packets/packet_e_v02.tar.gz",
+   "bytes": 7772289,
+   "sha256": "451a317df87ceaefb047041c0b92c45ad588e281f054b4838053344bbf7cadf3"
+  },
+  {
+   "group": "packet",
+   "path": "E_closedloop/packets/packet_e_v02_RECEIPT.json",
+   "bytes": 5241,
+   "sha256": "62c7612b1e888bd7d9ed4b861cddc16eb65c481a507f37540729fc42b77b908b"
+  },
+  {
+   "group": "packet",
+   "path": "E_closedloop/packets/packet_e_v03.tar.gz",
+   "bytes": 7806384,
+   "sha256": "f3eb32c9546b21e7b3d28451b3bba4609726d6fd8341031c93bf19f7b7a20c74"
+  },
+  {
+   "group": "packet",
+   "path": "E_closedloop/packets/packet_e_v03_RECEIPT.json",
+   "bytes": 5494,
+   "sha256": "3ec26babcd47cb702beeb82a3286574463520fb17567b3fc24cef35aa5af4c4b"
+  },
+  {
+   "group": "out",
+   "path": "E_closedloop/out/A_INTERFACE_E_KEYS_copy.md",
+   "bytes": 15906,
+   "sha256": "900f844ddaaa94a21261fe29271d5d3deaaecd33d47a27f7dd087fa15ae6611c"
+  },
+  {
+   "group": "out",
+   "path": "E_closedloop/out/E1_RECOUNT_a1_v01.json",
+   "bytes": 2748,
+   "sha256": "1dd2d0856ed8a39900c0465dc9d6cd9779262261f215d56ad850d996f91c50e3"
+  },
+  {
+   "group": "out",
+   "path": "E_closedloop/out/E1_VERDICT_a1_v01.json",
+   "bytes": 2296,
+   "sha256": "2aa71b999f64aeaeb0d305f7f63bd14805f1d81730ce4a554d36dc3e36193bbc"
+  },
+  {
+   "group": "out",
+   "path": "E_closedloop/out/E1S_CHECK_v01.json",
+   "bytes": 5370,
+   "sha256": "659d938ec105a0f04a93d8ebfb60b13ca010054fec167bcf415665eb24c1e87c"
+  },
+  {
+   "group": "out",
+   "path": "E_closedloop/out/E2_CURVES_TEST_v01.json",
+   "bytes": 29630,
+   "sha256": "98a06d6a93a0468110753ad7443c84463ad0b22651d25244f1121a43c7a5fd4a"
+  },
+  {
+   "group": "out",
+   "path": "E_closedloop/out/E2_MATCHED_v01.json",
+   "bytes": 33212,
+   "sha256": "dee03e7d75ee00ccf29acf56a68a7efe18c2591e5812406c8852a03fcf54769e"
+  },
+  {
+   "group": "out",
+   "path": "E_closedloop/out/E2_RECOUNT_CALIB_v01.json",
+   "bytes": 891,
+   "sha256": "df19290c23b7e589ff15ed43e5b0e0e247fc2e0bb6eedc2e992c20b4492212ac"
+  },
+  {
+   "group": "out",
+   "path": "E_closedloop/out/E2_RECOUNT_MATCHED_v01.json",
+   "bytes": 3255,
+   "sha256": "7c88269ae639af4bdd3158755ae8057ffca5144509acd9a0ee58da86457ed97f"
+  },
+  {
+   "group": "out",
+   "path": "E_closedloop/out/E2_RECOUNT_OUTCOMES_v01.json",
+   "bytes": 130563,
+   "sha256": "812a51f8575fd8cba50124927da5f263c2cf0cd14f6ac7ce88a70d7d697a7dff"
+  },
+  {
+   "group": "out",
+   "path": "E_closedloop/out/IMM_POD_REPLAY_v01.json",
+   "bytes": 566,
+   "sha256": "b7d6e35b04ea01c6e655b38ce7e80db31dc70615169b5430a3ae2898650333b5"
+  },
+  {
+   "group": "out",
+   "path": "E_closedloop/out/OUTCOMES_E2_v01.json",
+   "bytes": 212116,
+   "sha256": "69af869a03b9749bc00e11a48ec5495dc881964d7d05aa9dd69f703b95a4cf70"
+  },
+  {
+   "group": "out",
+   "path": "E_closedloop/out/V03S_CHECK_v01.txt",
+   "bytes": 2266,
+   "sha256": "c21c1a7d212a1cbd2da6ac44d523a96d3668427de5b9ee5f4c391275a8cde13f"
+  },
+  {
+   "group": "tools",
+   "path": "E_closedloop/tools/acquire_e_v01.py",
+   "bytes": 4435,
+   "sha256": "150f34f5296787ade8e9e9c145a864ba564f75face4b7dc553bbbed23c7627e8"
+  },
+  {
+   "group": "tools",
+   "path": "E_closedloop/tools/build_e_packet_v01.py",
+   "bytes": 4744,
+   "sha256": "2665cc84e6e816cbe67f8748efad5786c7ebc7b27d5297d5c870f8e2e2b24284"
+  },
+  {
+   "group": "tools",
+   "path": "E_closedloop/tools/e1s_check_v01.py",
+   "bytes": 3273,
+   "sha256": "09435f3c2da324954c83ca035d338d1c8dac26c5962a99fc2c4da109b5ebb864"
+  },
+  {
+   "group": "tools",
+   "path": "E_closedloop/tools/fetch_e_v01.py",
+   "bytes": 9056,
+   "sha256": "2278cfea2d1082491a321a4f83683ecaef423d7d24c05b7b20c4988cea29e2e9"
+  },
+  {
+   "group": "tools",
+   "path": "E_closedloop/tools/freeze_e_v01.py",
+   "bytes": 2812,
+   "sha256": "bbe94039e1452d4a60fd4dce1d5af061cd762356d4e3317da8cb19bd8c0aa647"
+  },
+  {
+   "group": "tools",
+   "path": "E_closedloop/tools/make_jobs_e_v01.py",
+   "bytes": 14211,
+   "sha256": "df839f5595fda6548d6151f0b744803bd1e314231a80f941ea2987f2bc42c554"
+  },
+  {
+   "group": "tools",
+   "path": "E_closedloop/tools/next_list_e_v01.py",
+   "bytes": 2563,
+   "sha256": "5f5e186fea9f731ad3665d486211d260fdd67cd4e2fa59783b10f71dadbd87b2"
+  },
+  {
+   "group": "tools",
+   "path": "E_closedloop/tools/pods_e_v01.py",
+   "bytes": 12185,
+   "sha256": "c3fa34d0bc7c1c65d42ae85935b3ecc8fcc46737af1baeddc00a1e0d69194fde"
+  },
+  {
+   "group": "tools",
+   "path": "E_closedloop/tools/remote_chain_v01.sh",
+   "bytes": 1837,
+   "sha256": "e466b8d00d4c9412bf17affb2b3c6a4a2768880c2e9b3477d673ebc977b9c1e5"
+  },
+  {
+   "group": "tools",
+   "path": "E_closedloop/tools/remote_update_and_work_v01.sh",
+   "bytes": 1403,
+   "sha256": "a5770bb4765144a4d387f8431730b954d8fdde55147a626e1c022c93c78fc646"
+  },
+  {
+   "group": "tools",
+   "path": "E_closedloop/tools/runpodctl.exe",
+   "bytes": 15227904,
+   "sha256": "7f0de360b5b5a1c9157cede8f69564e4d8202c354fdb67af3ca5caa51ea780c4"
+  },
+  {
+   "group": "tools",
+   "path": "E_closedloop/tools/write_lock2b_v01.py",
+   "bytes": 5414,
+   "sha256": "a2ee67372cd961699822382b9bdf9273a40e4592ed3300186ee306c7a9d5e6cc"
+  },
+  {
+   "group": "analysis",
+   "path": "E_closedloop/analysis/e1_brake_v01.py",
+   "bytes": 5628,
+   "sha256": "b8bbe2c999d92c57051914a4e738b09bd9651f7cf46ccc59fd1ea8999451d465"
+  },
+  {
+   "group": "analysis",
+   "path": "E_closedloop/analysis/e2_matched_v01.py",
+   "bytes": 11564,
+   "sha256": "543ee616eee656c425dda60f9052508b48a641540bbba4e89620290aa7e7746b"
+  },
+  {
+   "group": "analysis",
+   "path": "E_closedloop/analysis/e3_analyse_v01.py",
+   "bytes": 10114,
+   "sha256": "e4551a4493d6bd04c1a015f7c4eff4d9dc7eef8ff0834c78775bd46cefb4ef4b"
+  },
+  {
+   "group": "analysis",
+   "path": "E_closedloop/analysis/e_collect_v01.py",
+   "bytes": 4752,
+   "sha256": "a8d0af04e40424cc3327b0d0a3cdc47d4f1170b9ce515af053356fb0d1682b4f"
+  },
+  {
+   "group": "analysis",
+   "path": "E_closedloop/analysis/e_export_v01.py",
+   "bytes": 5760,
+   "sha256": "b46935b0bf00c5584c61e10551d501eb6622b0ec556c9af46603539e4357932c"
+  },
+  {
+   "group": "analysis",
+   "path": "E_closedloop/analysis/e_outcomes_v01.py",
+   "bytes": 9057,
+   "sha256": "f2f0f7ff2269d282f3c433c0c526aaf823ec4822339875c72c2a94c51693cd65"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/imm_offline_t0000.json",
+   "bytes": 381986,
+   "sha256": "efc2f417d7abc61309fc419b626e4339658d3d9c5929971a6a5cea4d2de6b886"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/imm_online_t0000.json",
+   "bytes": 382704,
+   "sha256": "d3f7e97a97b17a7ee19e832b4206cf42f230d6e15b4560b59479a16829a4f434"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/IMM_REPLAY_p1b_fit_finite_0012_v01.json",
+   "bytes": 1133,
+   "sha256": "c3cf4ae8efe6a440a8d117d7d3bb846f103524489d9d9912e315e77bfea71818"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/IMM_REPLAY_p2_c1109_tune_0000_fixed_c1_v01.json",
+   "bytes": 1133,
+   "sha256": "c3cf4ae8efe6a440a8d117d7d3bb846f103524489d9d9912e315e77bfea71818"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/IMM_REPLAY_p2_c1109_tune_0001_fixed_c1_v01.json",
+   "bytes": 1130,
+   "sha256": "b7a87bbde83a2f20120db442e1b0b640b700fa2754f21e1a274bea8181469e10"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/IMM_REPLAY_t0000_placeholder_v01.json",
+   "bytes": 1071,
+   "sha256": "008518555112330ddfcb9a24f5d2674646bb004274fcbf569fa3a4d202198975"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/SYNTH_E2_TEST.json",
+   "bytes": 10226,
+   "sha256": "4443bce8272a9d9d93d984c850e1499fac263738a6f0543d57209b9be8bed8f8"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/SYNTH_MATCHED_TEST.json",
+   "bytes": 22925,
+   "sha256": "32a8677afd755740588a7de350971371486417989479e0bee7314d24fd7db62e"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/TEST_E_ARMS_s0n1_v01.json",
+   "bytes": 7617,
+   "sha256": "50baaf49610520926ad5c965cacec3fe2f34099022f0c70bd703de9e148dfb6b"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/TEST_E_ARMS_s1n1_v01.json",
+   "bytes": 7586,
+   "sha256": "efe4101e9a441fd9545f08009a978dfeccf58f8d82476ad05c1a5f3548d888c7"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/TEST_E_ARMS_s2n1_v01.json",
+   "bytes": 7618,
+   "sha256": "741de5ee5045b3d5262cc7cc34fba119d68989b5afb98d621400753aa35f7e04"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/TEST_E_EXEC_v01.json",
+   "bytes": 2798,
+   "sha256": "bad467ae5f2745c9c98e77c47f8bb68761fee3d113dfefef1040d08aba221322"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/TEST_F2_SERVO_v01.json",
+   "bytes": 943,
+   "sha256": "a92a0f210314e3118aad35621b0dbd2c4f2fea9268efb07d86b08c1886eff932"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/TEST_PS_PHASE_v01.json",
+   "bytes": 4428,
+   "sha256": "21afa48b1c8d94424e227c0a2e3dce30ac829ee358e6c89ebc1d9b3c07a1f470"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/test_e_arms_v01.py",
+   "bytes": 13091,
+   "sha256": "d1b6f3560c46b80ded0255c3b896ff6e1910a5ca0d104e65c23716c5b64d0dad"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/test_e_exec_v01.py",
+   "bytes": 6514,
+   "sha256": "36785a893452326e6334e1b6538f02474e244f3bdc5ec57c45e33b5c67365cf2"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/test_f2_servo_v01.py",
+   "bytes": 4440,
+   "sha256": "cf4733cabb196feeedc55c71949f249a73b58a97730f6d762b0e6e88f92444db"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/test_imm_pod_replay_v01.py",
+   "bytes": 1994,
+   "sha256": "e6ecc4774fa3e345ce2eb65e796135a6d98aede0dd70393758b09a76a9bfa05c"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/test_imm_replay_v01.py",
+   "bytes": 6343,
+   "sha256": "1eb86908e8d2340ff15d7940a8729b61602af267168f35c8846e738c1a6e94ff"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/test_ps_phase_v01.py",
+   "bytes": 4434,
+   "sha256": "ce7505d2225852c11bf0d3d7313dd07cbca675257401d4e08263ac027d3304d6"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E1_claude-v13e-01_a1.json",
+   "bytes": 1740,
+   "sha256": "ee2d6a8a348fe50c5af2cdbf5137c76afae047dd77a363057d15aa5d9088e700"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E1S_claude-v13e-01_v01.json",
+   "bytes": 3482,
+   "sha256": "33ffbe3c8bc6e2e02bf3e15d59be39995923168c9401c0521f99a73c54c0a6c2"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E2_claude-v13e-01_v01.json",
+   "bytes": 18393,
+   "sha256": "14d6bd7aba74173becbd669afe3034bc537e70c579492eda59bae6720f2b7c64"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E2_claude-v13e-02_v01.json",
+   "bytes": 18393,
+   "sha256": "b2020622aef2f176e28088aefb3eff3f6fc83973988fb8adace894f1c54957b4"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E2_claude-v13e-03_v01.json",
+   "bytes": 18393,
+   "sha256": "a21b84a6d0b7331185c2bb90a0883013803a2f69ff1b84a86f3476652c6165b2"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_V03S_claude-v13e-01_v01.json",
+   "bytes": 2916,
+   "sha256": "7ab92b40acebba374ddb9b6e2477ea3829f948f5bae5d7370bb5ea5e7c79bbab"
+  },
+  {
+   "group": "review",
+   "path": "E_closedloop/review/REVIEW_E_BUILD_v01.md",
+   "bytes": 10603,
+   "sha256": "205d992dba14a93feb5222948db050d75eabb6dc3668e01938647e70d285547f"
+  },
+  {
+   "group": "recount",
+   "path": "E_closedloop/recount/e_recount_v01.py",
+   "bytes": 39878,
+   "sha256": "8bc518ca654f6cefbe0dff1fba1b1eb5265a26f645af7ee040f5f556724ea045"
+  },
+  {
+   "group": "recount",
+   "path": "E_closedloop/recount/out/E2_RECOUNT_MATCHED_v01.json",
+   "bytes": 3255,
+   "sha256": "7c88269ae639af4bdd3158755ae8057ffca5144509acd9a0ee58da86457ed97f"
+  },
+  {
+   "group": "recount",
+   "path": "E_closedloop/recount/README_RECOUNT_v01.md",
+   "bytes": 14648,
+   "sha256": "e19597ff2c19d99ffa7b642d1fb0ac54f6466f70b0c9bffcde3654e6bc3e3d8e"
+  },
+  {
+   "group": "lock",
+   "path": "locks/LOCK_A10_2b.txt",
+   "bytes": 3704,
+   "sha256": "81d3a77ada225718987d745e7ee2faaa4ef49c3c5e50b7a2ab81ade76cd5e867"
+  },
+  {
+   "group": "lock",
+   "path": "locks/LOCK_A10_2b_NOTE_v01.txt",
+   "bytes": 1675,
+   "sha256": "744ce80d7fa83e3e25ef0054ef52175a821f5fde3f1290285b8810b74cab0a68"
+  },
+  {
+   "group": "status",
+   "path": "E_closedloop/STATUS.md",
+   "bytes": 20471,
+   "sha256": "97b6a0b4a859f6ff7bcd652cb9755d48a17ef8d7ba1e2a49b056598059c4ae1a"
+  }
+ ]
+}

@@ -1,0 +1,786 @@
+{
+ "code": "rc_d_nonbraking_v13.py",
+ "mode": "fresh D1 runs",
+ "spec": "AMENDMENT_10_v13.md sec. 6 D1; CD_DEFINITIONS_v13.md D1",
+ "nboot": 20000,
+ "seed": 20261911,
+ "matched_settings": {
+  "c_star": 8.96842530569466,
+  "F0_g1": {
+   "idx": 81,
+   "g": 1.0,
+   "design_caution": 8.96842530569466,
+   "design_wrong_go": 7.587454764776839,
+   "n": 8290.0
+  },
+  "sources": {
+   "N": {
+    "idx": 78,
+    "g": 0.8413951416451951,
+    "design_caution": 8.985329873246142,
+    "design_wrong_go": 7.587454764776839,
+    "abs_gap": 0.01690456755148162,
+    "n_tied": 1
+   },
+   "NA": {
+    "idx": 78,
+    "g": 0.8413951416451951,
+    "design_caution": 9.005930108581145,
+    "design_wrong_go": 7.5512665862484925,
+    "abs_gap": 0.03750480288648461,
+    "n_tied": 1
+   },
+   "AM": {
+    "idx": 51,
+    "g": 0.1778279410038923,
+    "design_caution": 9.043677257195437,
+    "design_wrong_go": 5.705669481302775,
+    "abs_gap": 0.07525195150077657,
+    "n_tied": 1
+   },
+   "CK3": {
+    "idx": 74,
+    "g": 0.6683439175686149,
+    "design_caution": 9.056540978792993,
+    "design_wrong_go": 1.6767189384800965,
+    "abs_gap": 0.08811567309833279,
+    "n_tied": 1
+   },
+   "Q": {
+    "idx": 54,
+    "g": 0.21134890398366477,
+    "design_caution": 8.951647772459031,
+    "design_wrong_go": 7.611580217129071,
+    "abs_gap": 0.01677753323562925,
+    "n_tied": 1
+   },
+   "TG": {
+    "idx": 63,
+    "g": 0.35481338923357547,
+    "design_caution": 8.900809539616489,
+    "design_wrong_go": 7.189384800965018,
+    "abs_gap": 0.06761576607817155,
+    "n_tied": 1
+   }
+  },
+  "PS": {
+   "idx": [
+    164,
+    162,
+    38
+   ],
+   "g": [
+    118.85022274370189,
+    105.92537251772897,
+    0.08413951416451952
+   ],
+   "design_wrong_go": 0.26537997587454765,
+   "design_caution": 8.938435038607869,
+   "n_triples": 1969488,
+   "n_tied_on_wrong_go": 1,
+   "n_tied_on_wrong_go_and_caution": 1,
+   "n_grid_indices_sharing_each_tuple": [
+    1,
+    1,
+    1
+   ],
+   "n_unique": [
+    97,
+    144,
+    141
+   ],
+   "same_choice_with_tensordot_sums": true,
+   "design_phase_counts": [
+    905,
+    660,
+    6725
+   ]
+  }
+ },
+ "variants": {
+  "constant": {
+   "n_runs": 35,
+   "runs": [
+    "pd13_d1v13_constant_0000_native",
+    "pd13_d1v13_constant_0001_native",
+    "pd13_d1v13_constant_0002_native",
+    "pd13_d1v13_constant_0003_native",
+    "pd13_d1v13_constant_0004_native",
+    "pd13_d1v13_constant_0005_native",
+    "pd13_d1v13_constant_0006_native",
+    "pd13_d1v13_constant_0007_native",
+    "pd13_d1v13_constant_0008_native",
+    "pd13_d1v13_constant_0009_native",
+    "pd13_d1v13_constant_0010_native",
+    "pd13_d1v13_constant_0011_native",
+    "pd13_d1v13_constant_0012_native",
+    "pd13_d1v13_constant_0013_native",
+    "pd13_d1v13_constant_0014_native",
+    "pd13_d1v13_constant_0015_native",
+    "pd13_d1v13_constant_0016_native",
+    "pd13_d1v13_constant_0017_native",
+    "pd13_d1v13_constant_0018_native",
+    "pd13_d1v13_constant_0019_native",
+    "pd13_d1v13_constant_0020_native",
+    "pd13_d1v13_constant_0021_native",
+    "pd13_d1v13_constant_0022_native",
+    "pd13_d1v13_constant_0023_native",
+    "pd13_d1v13_constant_0024_native",
+    "pd13_d1v13_constant_0025_native",
+    "pd13_d1v13_constant_0026_native",
+    "pd13_d1v13_constant_0027_native",
+    "pd13_d1v13_constant_0028_native",
+    "pd13_d1v13_constant_0029_native",
+    "pd13_d1v13_constant_0030_native",
+    "pd13_d1v13_constant_0031_native",
+    "pd13_d1v13_constant_0032_native",
+    "pd13_d1v13_constant_0033_native",
+    "pd13_d1v13_constant_0034_native"
+   ],
+   "sources": {
+    "N": {
+     "caution": 0.03071514778177939,
+     "wrong_go": 0.0,
+     "n_decisions": 9485,
+     "n_wrong": 0,
+     "n_caution_count": 9485,
+     "caution_sum": 2.913331767101775,
+     "d_caution": {
+      "point": -0.003783276813980066,
+      "ci": [
+       -0.011349830441940212,
+       0.0
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "no measurable cost"
+    },
+    "NA": {
+     "caution": 0.03071514778177939,
+     "wrong_go": 0.0,
+     "n_decisions": 9485,
+     "n_wrong": 0,
+     "n_caution_count": 9485,
+     "caution_sum": 2.913331767101775,
+     "d_caution": {
+      "point": -0.003783276813980066,
+      "ci": [
+       -0.011349830441940212,
+       0.0
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "no measurable cost"
+    },
+    "AM": {
+     "caution": 0.03879059763148769,
+     "wrong_go": 0.0,
+     "n_decisions": 9485,
+     "n_wrong": 0,
+     "n_caution_count": 9485,
+     "caution_sum": 3.6792881853466075,
+     "d_caution": {
+      "point": 0.004292173035728236,
+      "ci": [
+       0.0,
+       0.012876519107184722
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "no measurable cost"
+    },
+    "CK3": {
+     "caution": 5.330103282794957,
+     "wrong_go": 0.0,
+     "n_decisions": 9485,
+     "n_wrong": 0,
+     "n_caution_count": 9485,
+     "caution_sum": 505.5602963731016,
+     "d_caution": {
+      "point": 5.295604858199197,
+      "ci": [
+       2.7127007896353676,
+       8.46017538150503
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "costs progress"
+    },
+    "Q": {
+     "caution": 0.03879059763148769,
+     "wrong_go": 0.0,
+     "n_decisions": 9485,
+     "n_wrong": 0,
+     "n_caution_count": 9485,
+     "caution_sum": 3.6792881853466075,
+     "d_caution": {
+      "point": 0.004292173035728236,
+      "ci": [
+       0.0,
+       0.012876519107184722
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "no measurable cost"
+    },
+    "TG": {
+     "caution": 0.04130749284406175,
+     "wrong_go": 0.0,
+     "n_decisions": 9485,
+     "n_wrong": 0,
+     "n_caution_count": 9485,
+     "caution_sum": 3.918015696259257,
+     "d_caution": {
+      "point": 0.006809068248302297,
+      "ci": [
+       0.0,
+       0.017999391026067624
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "no measurable cost"
+    },
+    "PS": {
+     "caution": 35.26677310871288,
+     "wrong_go": 0.0,
+     "n_decisions": 9485,
+     "n_wrong": 0,
+     "n_caution_count": 9485,
+     "caution_sum": 3345.053429361417,
+     "d_caution": {
+      "point": 35.23227468411712,
+      "ci": [
+       26.280885692418416,
+       44.133962586116844
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "costs progress"
+    }
+   },
+   "F0_g1": {
+    "caution": 0.034498424595759455,
+    "wrong_go": 0.0,
+    "n_decisions": 9485,
+    "n_wrong": 0,
+    "n_caution_count": 9485,
+    "caution_sum": 3.272175572907784
+   },
+   "D-H1": "costs progress",
+   "D-H2": "costs progress"
+  },
+  "mild_braking": {
+   "n_runs": 35,
+   "runs": [
+    "pd13_d1v13_mild_braking_0000_native",
+    "pd13_d1v13_mild_braking_0001_native",
+    "pd13_d1v13_mild_braking_0002_native",
+    "pd13_d1v13_mild_braking_0003_native",
+    "pd13_d1v13_mild_braking_0004_native",
+    "pd13_d1v13_mild_braking_0005_native",
+    "pd13_d1v13_mild_braking_0006_native",
+    "pd13_d1v13_mild_braking_0007_native",
+    "pd13_d1v13_mild_braking_0008_native",
+    "pd13_d1v13_mild_braking_0009_native",
+    "pd13_d1v13_mild_braking_0010_native",
+    "pd13_d1v13_mild_braking_0011_native",
+    "pd13_d1v13_mild_braking_0012_native",
+    "pd13_d1v13_mild_braking_0013_native",
+    "pd13_d1v13_mild_braking_0014_native",
+    "pd13_d1v13_mild_braking_0015_native",
+    "pd13_d1v13_mild_braking_0016_native",
+    "pd13_d1v13_mild_braking_0017_native",
+    "pd13_d1v13_mild_braking_0018_native",
+    "pd13_d1v13_mild_braking_0019_native",
+    "pd13_d1v13_mild_braking_0020_native",
+    "pd13_d1v13_mild_braking_0021_native",
+    "pd13_d1v13_mild_braking_0022_native",
+    "pd13_d1v13_mild_braking_0023_native",
+    "pd13_d1v13_mild_braking_0024_native",
+    "pd13_d1v13_mild_braking_0025_native",
+    "pd13_d1v13_mild_braking_0026_native",
+    "pd13_d1v13_mild_braking_0027_native",
+    "pd13_d1v13_mild_braking_0028_native",
+    "pd13_d1v13_mild_braking_0029_native",
+    "pd13_d1v13_mild_braking_0030_native",
+    "pd13_d1v13_mild_braking_0031_native",
+    "pd13_d1v13_mild_braking_0032_native",
+    "pd13_d1v13_mild_braking_0033_native",
+    "pd13_d1v13_mild_braking_0034_native"
+   ],
+   "sources": {
+    "N": {
+     "caution": 1.7097470901383454,
+     "wrong_go": 0.9277807063784923,
+     "n_decisions": 9485,
+     "n_wrong": 88,
+     "n_caution_count": 9397,
+     "caution_sum": 160.6649340603003,
+     "d_caution": {
+      "point": 0.008707581581071988,
+      "ci": [
+       0.0025437094559256357,
+       0.017079839913149927
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": -0.021085925144965767,
+      "ci": [
+       -0.05271481286241442,
+       0.0
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "no measurable cost"
+    },
+    "NA": {
+     "caution": 1.7097470901383454,
+     "wrong_go": 0.9277807063784923,
+     "n_decisions": 9485,
+     "n_wrong": 88,
+     "n_caution_count": 9397,
+     "caution_sum": 160.6649340603003,
+     "d_caution": {
+      "point": 0.008707581581071988,
+      "ci": [
+       0.0025437094559256357,
+       0.017079839913149927
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": -0.021085925144965767,
+      "ci": [
+       -0.05271481286241442,
+       0.0
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "no measurable cost"
+    },
+    "AM": {
+     "caution": 1.8230817335888712,
+     "wrong_go": 0.5904059040590406,
+     "n_decisions": 9485,
+     "n_wrong": 56,
+     "n_caution_count": 9429,
+     "caution_sum": 171.89837666009467,
+     "d_caution": {
+      "point": 0.12204222503159778,
+      "ci": [
+       0.07672912846396844,
+       0.17132622960829058
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": -0.3584607274644175,
+      "ci": [
+       -0.6220347917764891,
+       -0.14760147601476012
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "no measurable cost"
+    },
+    "CK3": {
+     "caution": 20.390115021097362,
+     "wrong_go": 0.0,
+     "n_decisions": 9485,
+     "n_wrong": 0,
+     "n_caution_count": 9485,
+     "caution_sum": 1934.0024097510845,
+     "d_caution": {
+      "point": 18.68907551254009,
+      "ci": [
+       15.440172021049507,
+       21.857243337845798
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": -0.9488666315234581,
+      "ci": [
+       -1.591987348444913,
+       -0.41117554032683185
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "costs progress"
+    },
+    "Q": {
+     "caution": 1.705564673055983,
+     "wrong_go": 0.9383236689509752,
+     "n_decisions": 9485,
+     "n_wrong": 89,
+     "n_caution_count": 9396,
+     "caution_sum": 160.25485668034017,
+     "d_caution": {
+      "point": 0.004525164498709655,
+      "ci": [
+       -0.004283444596551533,
+       0.013285090535731531
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": -0.010542962572482883,
+      "ci": [
+       -0.05271481286241442,
+       0.03162888771744865
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "no measurable cost"
+    },
+    "TG": {
+     "caution": 6.2642262247992795,
+     "wrong_go": 0.0,
+     "n_decisions": 9485,
+     "n_wrong": 0,
+     "n_caution_count": 9485,
+     "caution_sum": 594.1618574222117,
+     "d_caution": {
+      "point": 4.563186716242006,
+      "ci": [
+       3.4586397182048905,
+       5.648418345782143
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": -0.9488666315234581,
+      "ci": [
+       -1.591987348444913,
+       -0.41117554032683185
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "costs progress"
+    },
+    "PS": {
+     "caution": 55.16396966325775,
+     "wrong_go": 0.0,
+     "n_decisions": 9485,
+     "n_wrong": 0,
+     "n_caution_count": 9485,
+     "caution_sum": 5232.302522559998,
+     "d_caution": {
+      "point": 53.46293015470048,
+      "ci": [
+       48.17461708041793,
+       58.7084579014487
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": -0.9488666315234581,
+      "ci": [
+       -1.591987348444913,
+       -0.41117554032683185
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "costs progress"
+    }
+   },
+   "F0_g1": {
+    "caution": 1.7010395085572734,
+    "wrong_go": 0.9488666315234581,
+    "n_decisions": 9485,
+    "n_wrong": 90,
+    "n_caution_count": 9395,
+    "caution_sum": 159.81266182895584
+   },
+   "D-H1": "costs progress",
+   "D-H2": "costs progress"
+  },
+  "stop_and_go": {
+   "n_runs": 35,
+   "runs": [
+    "pd13_d1v13_stop_and_go_0000_native",
+    "pd13_d1v13_stop_and_go_0001_native",
+    "pd13_d1v13_stop_and_go_0002_native",
+    "pd13_d1v13_stop_and_go_0003_native",
+    "pd13_d1v13_stop_and_go_0004_native",
+    "pd13_d1v13_stop_and_go_0005_native",
+    "pd13_d1v13_stop_and_go_0006_native",
+    "pd13_d1v13_stop_and_go_0007_native",
+    "pd13_d1v13_stop_and_go_0008_native",
+    "pd13_d1v13_stop_and_go_0009_native",
+    "pd13_d1v13_stop_and_go_0010_native",
+    "pd13_d1v13_stop_and_go_0011_native",
+    "pd13_d1v13_stop_and_go_0012_native",
+    "pd13_d1v13_stop_and_go_0013_native",
+    "pd13_d1v13_stop_and_go_0014_native",
+    "pd13_d1v13_stop_and_go_0015_native",
+    "pd13_d1v13_stop_and_go_0016_native",
+    "pd13_d1v13_stop_and_go_0017_native",
+    "pd13_d1v13_stop_and_go_0018_native",
+    "pd13_d1v13_stop_and_go_0019_native",
+    "pd13_d1v13_stop_and_go_0020_native",
+    "pd13_d1v13_stop_and_go_0021_native",
+    "pd13_d1v13_stop_and_go_0022_native",
+    "pd13_d1v13_stop_and_go_0023_native",
+    "pd13_d1v13_stop_and_go_0024_native",
+    "pd13_d1v13_stop_and_go_0025_native",
+    "pd13_d1v13_stop_and_go_0026_native",
+    "pd13_d1v13_stop_and_go_0027_native",
+    "pd13_d1v13_stop_and_go_0028_native",
+    "pd13_d1v13_stop_and_go_0029_native",
+    "pd13_d1v13_stop_and_go_0030_native",
+    "pd13_d1v13_stop_and_go_0031_native",
+    "pd13_d1v13_stop_and_go_0032_native",
+    "pd13_d1v13_stop_and_go_0033_native",
+    "pd13_d1v13_stop_and_go_0034_native"
+   ],
+   "sources": {
+    "N": {
+     "caution": 3.262656825537023,
+     "wrong_go": 6.9568990454151,
+     "n_decisions": 6914,
+     "n_wrong": 481,
+     "n_caution_count": 6433,
+     "caution_sum": 209.88671358679667,
+     "d_caution": {
+      "point": 0.03353861603736208,
+      "ci": [
+       0.014387891167760536,
+       0.05431400093999949
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": -0.014463407578825027,
+      "ci": [
+       -0.04730480956681331,
+       0.0
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "no measurable cost"
+    },
+    "NA": {
+     "caution": 3.288062200384736,
+     "wrong_go": 6.927972230257448,
+     "n_decisions": 6914,
+     "n_wrong": 479,
+     "n_caution_count": 6435,
+     "caution_sum": 211.58680259475776,
+     "d_caution": {
+      "point": 0.05894399088507507,
+      "ci": [
+       0.03137429846269567,
+       0.08838791541098583
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": -0.04339022273647686,
+      "ci": [
+       -0.09422152834717486,
+       0.0
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "no measurable cost"
+    },
+    "AM": {
+     "caution": 3.8016415954251404,
+     "wrong_go": 5.669655770899624,
+     "n_decisions": 6914,
+     "n_wrong": 392,
+     "n_caution_count": 6522,
+     "caution_sum": 247.94306485362765,
+     "d_caution": {
+      "point": 0.5725233859254795,
+      "ci": [
+       0.39209544511214295,
+       0.7444544040461589
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": -1.3017066820943013,
+      "ci": [
+       -1.5969716737427204,
+       -0.9969079555179997
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "inconclusive"
+    },
+    "CK3": {
+     "caution": 4.888404117868612,
+     "wrong_go": 2.2707549898756145,
+     "n_decisions": 6914,
+     "n_wrong": 157,
+     "n_caution_count": 6757,
+     "caution_sum": 330.3094662443821,
+     "d_caution": {
+      "point": 1.6592859083689513,
+      "ci": [
+       1.1349926642982822,
+       2.237378011399703
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": -4.700607463118311,
+      "ci": [
+       -6.27321704186795,
+       -3.401878649403402
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "costs progress"
+    },
+    "Q": {
+     "caution": 3.2204951524672225,
+     "wrong_go": 7.043679490888053,
+     "n_decisions": 6914,
+     "n_wrong": 487,
+     "n_caution_count": 6427,
+     "caution_sum": 206.98122344906838,
+     "d_caution": {
+      "point": -0.008623057032438375,
+      "ci": [
+       -0.043342621500427767,
+       0.019545079808179135
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": 0.0723170378941278,
+      "ci": [
+       0.013972334777141859,
+       0.14961157104053802
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "costs safety"
+    },
+    "TG": {
+     "caution": 3.5005450506715823,
+     "wrong_go": 6.7978015620480186,
+     "n_decisions": 6914,
+     "n_wrong": 470,
+     "n_caution_count": 6444,
+     "caution_sum": 225.57512306527676,
+     "d_caution": {
+      "point": 0.2714268411719214,
+      "ci": [
+       0.15166096707778956,
+       0.4342050355397348
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": -0.17356089094590654,
+      "ci": [
+       -0.3093832799159153,
+       -0.06450209221957502
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "no measurable cost"
+    },
+    "PS": {
+     "caution": 24.671885791693878,
+     "wrong_go": 0.4917558576800694,
+     "n_decisions": 6914,
+     "n_wrong": 34,
+     "n_caution_count": 6880,
+     "caution_sum": 1697.4257424685388,
+     "d_caution": {
+      "point": 21.442767582194218,
+      "ci": [
+       14.766818139639517,
+       28.146785549235926
+      ],
+      "n_nonfinite": 0
+     },
+     "d_wrong_go": {
+      "point": -6.4796065953138555,
+      "ci": [
+       -8.03422903683261,
+       -5.196688846899715
+      ],
+      "n_nonfinite": 0
+     },
+     "classification": "costs progress"
+    }
+   },
+   "F0_g1": {
+    "caution": 3.229118209499661,
+    "wrong_go": 6.971362452993925,
+    "n_decisions": 6914,
+    "n_wrong": 482,
+    "n_caution_count": 6432,
+    "caution_sum": 207.69688323501816
+   },
+   "D-H1": "costs progress",
+   "D-H2": "costs progress"
+  }
+ },
+ "d1_run_order_file_equals_sorted": true,
+ "seconds": 48.25757074356079,
+ "written": "2026-11-20 08:26:43"
+}

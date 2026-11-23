@@ -1,0 +1,228 @@
+{
+ "schema": "CHECK_FRONTIER_ADD4_V13",
+ "verdict": "OK",
+ "tolerance": 1e-09,
+ "unchanged": {
+  "A_EXPORT_C": {
+   "old_sha256": "c7ad0499db7cc8df980fd10e92a39afd83bd0152a233269f818a42e61dcf34f3",
+   "new_sha256": "21ceaa48e85e0e8f0af46504694e0cc302e54d123fb1423e226eafa1267ab73e",
+   "old_values": 616,
+   "new_values": 627,
+   "changed_or_missing": [],
+   "added": [
+    "CI.frontier.E",
+    "CI.frontier.F0",
+    "CI.frontier.N",
+    "LB.frontier.CK3",
+    "LB.frontier.E",
+    "LB.frontier.E5",
+    "LB.frontier.E_IMM",
+    "LB.frontier.F0",
+    "LB.frontier.F0_IMM",
+    "LB.frontier.IMM",
+    "LB.frontier.N"
+   ],
+   "added_not_frontier": [],
+   "other_fields_differing": [
+    "deviations",
+    "deviations_source",
+    "inputs",
+    "keys_not_in_A_list",
+    "program_sha256",
+    "written"
+   ],
+   "deviations": [
+    14,
+    15
+   ],
+   "outcomes_equal": true,
+   "ok": true
+  },
+  "A_EXPORT_D": {
+   "old_sha256": "1100f41f18be5e9ce264d16bbb87619f8a9ff55d78c35b76ee72b23f6ba23d0b",
+   "new_sha256": "3e6879723dbb14ea622a8c9d5e1fd0ef381c5c71a102cd29660d7a268eb1e2bd",
+   "old_values": 138,
+   "new_values": 138,
+   "changed_or_missing": [],
+   "added": [],
+   "added_not_frontier": [],
+   "other_fields_differing": [
+    "deviations",
+    "deviations_source",
+    "inputs",
+    "program_sha256",
+    "written"
+   ],
+   "deviations": [
+    14,
+    15
+   ],
+   "outcomes_equal": true,
+   "ok": true
+  },
+  "A_RECOUNT_C": {
+   "old_sha256": "a0804329d4fbad4fe5b0eefbed364fa09a2b8f23cf545b8763db26d0b9a386d9",
+   "new_sha256": "41817692094c8eb871dd04899a8948dcffceeded9e5f7203e4216109377db4d8",
+   "old_values": 616,
+   "new_values": 616,
+   "changed_or_missing": [],
+   "added": [],
+   "added_not_frontier": [],
+   "other_fields_differing": [
+    "deviations",
+    "deviations_source",
+    "program_sha256",
+    "written"
+   ],
+   "deviations": [
+    14,
+    15
+   ],
+   "outcomes_equal": true,
+   "ok": true
+  },
+  "A_RECOUNT_D": {
+   "old_sha256": "e6a932fb5c28d005a0d7977685ee268084ccfada6ab585dead4e417bf93b2a71",
+   "new_sha256": "7cceb01dce5d4ad97ff6b06303794752e41a2b7480372b35cbeeaa7abfdb0a92",
+   "old_values": 138,
+   "new_values": 138,
+   "changed_or_missing": [],
+   "added": [],
+   "added_not_frontier": [],
+   "other_fields_differing": [
+    "deviations",
+    "deviations_source",
+    "program_sha256",
+    "written"
+   ],
+   "deviations": [
+    14,
+    15
+   ],
+   "outcomes_equal": true,
+   "ok": true
+  }
+ },
+ "tie_to_recount": [
+  {
+   "check": "LB D_gl(E,F0)",
+   "from_curves": 1121.4146658014276,
+   "from_recount": 1121.4146658014276,
+   "recount_keys": "201 * LB.R",
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "check": "LB D_gl(E,F0) (dec)",
+   "from_curves": 1121.4146658014276,
+   "from_recount": 1121.4146658014279,
+   "recount_keys": "LB.R.dec * 20100 / LB.n_dec",
+   "abs_diff": 2.2737367544323206e-13,
+   "ok": true
+  },
+  {
+   "check": "LB D_gl(E5,F0)",
+   "from_curves": 14.053953833317864,
+   "from_recount": 14.053953833317864,
+   "recount_keys": "LB.RR_E5 * 201 * LB.R",
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "check": "LB D_gl(E5,F0) (dec)",
+   "from_curves": 14.053953833317864,
+   "from_recount": 14.053953833317864,
+   "recount_keys": "LB.RR_E5.dec * 20100 / LB.n_dec",
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "check": "LB RR_gl(E5)",
+   "from_curves": 0.012532343531706978,
+   "from_recount": 0.012532343531706977,
+   "recount_keys": "LB.RR_E5",
+   "abs_diff": 1.734723475976807e-18,
+   "ok": true
+  },
+  {
+   "check": "LB D_gl(N,F0)",
+   "from_curves": -0.009270418095859823,
+   "from_recount": -0.009270418095859824,
+   "recount_keys": "LB.RR_N * 201 * LB.R",
+   "abs_diff": 1.734723475976807e-18,
+   "ok": true
+  },
+  {
+   "check": "LB D_gl(N,F0) (dec)",
+   "from_curves": -0.009270418095859823,
+   "from_recount": -0.009270418095859823,
+   "recount_keys": "LB.RR_N.dec * 20100 / LB.n_dec",
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "check": "LB RR_gl(N)",
+   "from_curves": -8.266717369203164e-06,
+   "from_recount": -8.266717369203164e-06,
+   "recount_keys": "LB.RR_N",
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "check": "LB D_gl(CK3,F0)",
+   "from_curves": 877.8576063780476,
+   "from_recount": 877.8576063780478,
+   "recount_keys": "LB.RR_CK3 * 201 * LB.R",
+   "abs_diff": 1.1368683772161603e-13,
+   "ok": true
+  },
+  {
+   "check": "LB D_gl(CK3,F0) (dec)",
+   "from_curves": 877.8576063780476,
+   "from_recount": 877.8576063780479,
+   "recount_keys": "LB.RR_CK3.dec * 20100 / LB.n_dec",
+   "abs_diff": 2.2737367544323206e-13,
+   "ok": true
+  },
+  {
+   "check": "LB RR_gl(CK3)",
+   "from_curves": 0.7828126679176965,
+   "from_recount": 0.7828126679176965,
+   "recount_keys": "LB.RR_CK3",
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "check": "LB D_gl(IMM,F0_IMM) (dec)",
+   "from_curves": 0.037081672383421305,
+   "from_recount": 0.037081672383421305,
+   "recount_keys": "LB.IMM.r.dec * 20100 / LB.n_dec",
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "check": "LB RR_gl(IMM) on its own room",
+   "from_curves": 3.20767275322544e-05,
+   "from_recount": 3.207672753225441e-05,
+   "recount_keys": "LB.IMM.r",
+   "abs_diff": 6.776263578034403e-21,
+   "ok": true
+  },
+  {
+   "check": "CI D_gl(E,F0)",
+   "from_curves": 0.0,
+   "from_recount": 0.0,
+   "recount_keys": "201 * CI.R",
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "check": "CI D_gl(N,F0) (dec)",
+   "from_curves": 0.0,
+   "from_recount": 0.0,
+   "recount_keys": "CI.RR_N.dec * 20100 / CI.n_dec",
+   "abs_diff": 0.0,
+   "ok": true
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "schema": "COMPARE_X_V13",
+ "test_old": true,
+ "tolerance": 1e-09,
+ "verdict": "DISAGREE OR MISSING",
+ "summary": {
+  "pedestrian_crossing": {
+   "agree": 33,
+   "disagree": 0,
+   "only_first": 4,
+   "only_second": 3
+  }
+ },
+ "rows": [
+  {
+   "family": "pedestrian_crossing",
+   "key": "X.ped.RR_E5rec.level",
+   "status": "only_second",
+   "value": 0.95
+  },
+  {
+   "family": "pedestrian_crossing",
+   "key": "X.ped.RR_E5recmP.level",
+   "status": "only_second",
+   "value": 0.95
+  },
+  {
+   "family": "pedestrian_crossing",
+   "key": "X.ped.RR_N.inside_delta",
+   "status": "only_first",
+   "value": false
+  },
+  {
+   "family": "pedestrian_crossing",
+   "key": "X.ped.n_contact",
+   "status": "only_first",
+   "value": 0
+  },
+  {
+   "family": "pedestrian_crossing",
+   "key": "X.ped.n_replaced",
+   "status": "only_first",
+   "value": 0
+  },
+  {
+   "family": "pedestrian_crossing",
+   "key": "X.ped.tested",
+   "status": "only_second",
+   "value": false
+  },
+  {
+   "family": "pedestrian_crossing",
+   "key": "X.ped.under_run",
+   "status": "only_first",
+   "value": false
+  }
+ ]
+}

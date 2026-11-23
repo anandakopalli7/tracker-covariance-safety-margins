@@ -1,0 +1,33 @@
+{
+ "schema_version": "review-panel-provenance/1.0",
+ "panel_id": "ars-review-v13-author-round",
+ "written_by": "coordinating session (Claude Opus 5.5), 22 Nov 2026, from 18:35 EST (Get-Date)",
+ "requested_by": "the author-facing session 'Paper work summary' (Claude Fable 5.2), request file revision_v13\\work\\A_text\\notes\\REVIEW_REQUEST_AUTHOR_ROUND_v13.md, written 18:36 EST per that session's clock; read by the coordinator only, not by any seat (it states the author's target, which no seat is told)",
+ "package_reviewed": {
+  "folder": "revision_v13\\work\\A_text\\package_v13_1830 (frozen 18:30:33 EST, packaged 18:30:56; equal to out\\freeze_v13_1830; 13 typeset pages with IEEE's official ieeeoj.cls; supplement PDF 43 pages)",
+  "MANUSCRIPT_v13.md": "29125167b108bc27833c16e3b639cbb07af5f4c105c49d375deff3d5b4a951d0",
+  "MANUSCRIPT_v13.tex": "bd4d08d954d3595de2b5ac2653c18476c7bb3281e1c264604f995f018da01345",
+  "SUPPLEMENT_v13.md": "fab98c1fe24c8c5b95f86da8b1e664662401055232409a236d963938f5b99a09",
+  "MANUSCRIPT_v13.pdf": "4fabfd9f611013fd4e7f60b8a59fcdcc2d782dbd3192a77c2efe54e77beb8299",
+  "SUPPLEMENT_v13.pdf": "a8ad36027dee70c8c48cf2b998cb2512b55ca568c400eb1ecd340923ddeb8b16",
+  "RESPONSE_TO_REVIEW_v13.md (not read by seats)": "6c9bb9853e39aad51f85e38bfb7427e3c44ff96880adf66cf4ddb9e30911eb2b",
+  "hash_check": "re-computed by the coordinator just before 18:35:25 EST (Get-Date); package and freeze equal; the PDF, .md and supplement .md equal the request's values"
+ },
+ "page_images": "review_v13_author_round_output\\pages (manuscript), pages_supplement (supplement first pages), pages_template (official ojits-template.pdf): rendered by Paper work summary on request, since this laptop has no PDF renderer; sha256 in work\\pages_sha256.txt",
+ "template": "revision_v13\\work\\A_text\\template_ojits_official\\unzipped\\ojits-latex-template\\ojits-template.tex (938 lines) and ojits-template.pdf",
+ "writers": "text up to the sprint: Claude Opus 5.5; round-2 text, the submission pass, the fix round after the 12:01 panel (package 13:16) and the format pass (15:44 to 16:13): session A on Claude Fable 5.2 (gen\\model_record_v13.json: writer_round2); author round (18:30): the author's full name and the ACKNOWLEDGMENT's first paragraph written by the author, built and packaged by session A",
+ "route": "same as the 12:01 panel (review_v13_final_output): five seats dispatched directly by the coordinator as separate fresh sub-agents, in parallel, with the same seat models; the same user-accepted cards (review_v13_output\\00_phase0_field_analysis_and_cards.md), focus anchors re-pointed; the card-confirmation pause not held; the same rubric (Q1 to Q8) and 10-point scale; output format per the request (accept as is / minor / major / reject; REQUIRED-major, REQUIRED-minor, OPTIONAL; types W, M, T, A); Phase 2 per seat: after its own blind report is written and hashed, it marks the 12:01 panel's R-1 to R-19 resolved, partly or not (file work\\earlier_required_R1_R19_and_Q7.md, verbatim sections 4 and 7 of that panel's record); synthesis by a separate Claude Sonnet 5.5 sub-agent (not the text's writer model).",
+ "seats": [
+  {"seat_id": "EIC", "role_id": "journal_fit", "model": "Claude Sonnet 5.5", "output": ["phase1\\01_eic_journal_fit.md", "phase2_r_check\\01_eic_journal_fit_r_check.md"], "extra_duty": "Q7 in full against the official template and every page image; Q8 in depth"},
+  {"seat_id": "R1", "role_id": "methodology", "model": "Claude Fable 5.2 (the writer model of the later text, not the writer session; told to be skeptical)", "output": ["phase1\\02_r1_methodology.md", "phase2_r_check\\02_r1_methodology_r_check.md"], "extra_reads": "AMENDMENT_10-13, LOCK_A11*, LOCK_A12a-e, LOCK_A13a-c, export pairs (DR2, DR10, M, N5B, DRF, YN, B, E5, E6), A12 and A13 Holm files, RECOUNT_COVERAGE_v13.md of freeze_v13_1830; spot-check at least 40 printed values"},
+  {"seat_id": "R2", "role_id": "domain", "model": "Claude Opus 5.5 (the earlier text's writer model; told to be skeptical)", "output": ["phase1\\03_r2_domain.md", "phase2_r_check\\03_r2_domain_r_check.md"]},
+  {"seat_id": "R3", "role_id": "practical", "model": "Claude Sonnet 5.5", "output": ["phase1\\04_r3_practical.md", "phase2_r_check\\04_r3_practical_r_check.md"], "extra_duty": "second full pass on Q7's first page, acknowledgment, abstract, index terms and references"},
+  {"seat_id": "DA", "role_id": "devils_advocate", "model": "Claude Fable 5.2 (the writer model of the later text, not the writer session; told to be skeptical)", "output": ["phase1\\05_devils_advocate.md", "phase2_r_check\\05_devils_advocate_r_check.md"], "extra_reads": "AMENDMENT_11, AMENDMENT_12, AMENDMENT_13"}
+ ],
+ "synthesis": {"model": "Claude Sonnet 5.5", "outputs": ["ARS_REVIEW_AUTHOR_ROUND_v01.md", "ARS_AUTHOR_LETTER_AUTHOR_ROUND_v01.md"]},
+ "blinding": "seats do not see each other's outputs, earlier review reports (until Phase 2, and then only the verbatim R-1 to R-19 and Q7 list), the response letter, the package manifest, session A's notes or diffs; no seat or the synthesis is told any target score; the coordinator did not pass on session A's flag about the ACKNOWLEDGMENT (requested: seats see the paragraph without it; the synthesis rules on it either way)",
+ "web_access": "none for any seat or the synthesis; no manuscript text to any external service",
+ "correlated_error_disclosure": "All seats are Claude models of one family (Sonnet 5.5, Fable 5.2, Opus 5.5); spreading seats over three models reduces but does not remove correlated-error risk. Two seats (R1, DA) share the later text's writer model and one (R2) the earlier text's writer model. The same family ran the earlier panels whose required items the text was revised against.",
+ "title_note": "The title is the author's choice; seats comment only if the paper contradicts it.",
+ "gates_not_findings": "the repository name and DOI placeholder"
+}

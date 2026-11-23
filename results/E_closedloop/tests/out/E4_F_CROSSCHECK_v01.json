@@ -1,0 +1,15 @@
+{
+ "schema": "E4_F_CROSSCHECK_V01",
+ "written": "2026-11-21T14:33:24.597688-05:00",
+ "check": "A11 \u00a76d.6(a): F function = E law = locked table, masks (69 rows) and seeds",
+ "f_code": "work/F_dropout/code/dr_masks_v02.py",
+ "f_code_sha256": "63f786c540f41aa87c41047daf0f327c68e850c1f76757682c7d3ce02c11d953",
+ "e_law": "work/E_closedloop/src_v04/e_dropout_v01.py",
+ "e_law_sha256": "6d47f1317af07a51daa5d19baf1b66bc0c1191085777c677c10414f39cb5d26d",
+ "table": "work/E_closedloop/out/E4_MASKS_v01.json",
+ "table_sha256": "c66d91923ae4d87ac7e49ac70fba98828434ae64de0954f15078ff80f2997313",
+ "cases": 61,
+ "mismatches": 0,
+ "note": "F's mask() returns masked row indices; compared as 0/1 strings over 69 rows",
+ "pass": true
+}

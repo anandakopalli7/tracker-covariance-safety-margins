@@ -1,0 +1,14 @@
+{
+  "schema_version": "review-panel-provenance-input/1.0",
+  "panel_id": "ars-review-v10-round-1",
+  "mode": "reviewer_full",
+  "contract_id": "reviewer/reviewer_full/v2",
+  "contract_sha256": "d958bc2ade7d9d154954c33fd424766697a8b6ef664854800a3106d804ee7e5c",
+  "seats": [
+    {"seat_id": "EIC", "role_id": "eic", "context_id": "round1-eic-phase2-subagent", "peer_outputs_visible": false, "actor_type": "model", "model_family": "claude-opus-5-5", "provider": "anthropic", "human_reviewer_id": null},
+    {"seat_id": "R1", "role_id": "methodology", "context_id": "round1-methodology-phase2-subagent", "peer_outputs_visible": false, "actor_type": "model", "model_family": "claude-opus-5-5", "provider": "anthropic", "human_reviewer_id": null},
+    {"seat_id": "R2", "role_id": "domain", "context_id": "round1-domain-phase2-subagent", "peer_outputs_visible": false, "actor_type": "model", "model_family": "claude-opus-5-5", "provider": "anthropic", "human_reviewer_id": null},
+    {"seat_id": "R3", "role_id": "perspective", "context_id": "round1-perspective-phase2-subagent", "peer_outputs_visible": false, "actor_type": "model", "model_family": "claude-opus-5-5", "provider": "anthropic", "human_reviewer_id": null},
+    {"seat_id": "DA", "role_id": "da", "context_id": "round1-da-phase2-subagent", "peer_outputs_visible": false, "actor_type": "model", "model_family": "claude-opus-5-5", "provider": "anthropic", "human_reviewer_id": null}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+ "1_make_requests": {
+  "variant_cases": 183,
+  "plain_cases": 2223
+ },
+ "2_3_profiles": {
+  "cases": 183,
+  "max_request_step_per_frame": {
+   "constant": 0.0,
+   "mild_braking": 0.07342093496846935,
+   "stop_and_go": 0.2977438813842328
+  }
+ },
+ "4_plain_case_identical": {
+  "case": "c1109_eval_0000",
+  "frames": 700
+ },
+ "5_start_ast_identical_but_policy": true,
+ "6_diffs": {
+  "probe_arms_v01.py": [
+   "-adapter call is the smoke-verified one (the v01 bodies inside arms_adapter_v02).\"\"\"",
+   "+adapter call is the smoke-verified one (the v01 bodies inside arms_adapter_v02).",
+   "+Revision v13 D1 (packet_d1_v13): the scenario-actor class comes from scene_actors_d1_v01.scenario_actors_class(case),",
+   "+which is scene_actors_v03.ScenarioActors itself unless the case carries a lead_variant record.\"\"\"",
+   "+import scene_actors_d1_v01 as lead_variants   # revision v13 D1: lead-variant actor policy for cases with lead_variant",
+   "-        scene=ScenarioActors(world,carla,draw,catalogue['selected'],assessment_origin,route_yaw,reference,save,append,created)",
+   "+        scene=lead_variants.scenario_actors_class(case)(world,carla,draw,catalogue['selected'],assessment_origin,route_yaw,reference,save,append,created)"
+  ],
+  "review/review_actor_records_v04.py": [
+   "-    policy=ActorRequests(draw,base,reactive=case['reactive']);pid=None;previous={};previous_primary=None;initial_fd_unreconstructed=[];metrics=[]",
+   "+    sys.path.insert(0,str(full));import actor_policy_d1_v01 as lead_variants   # revision v13 D1",
+   "+    policy=lead_variants.make_requests(case,draw,base);pid=None;previous={};previous_primary=None;initial_fd_unreconstructed=[];metrics=[]"
+  ]
+ },
+ "status": "PASS"
+}

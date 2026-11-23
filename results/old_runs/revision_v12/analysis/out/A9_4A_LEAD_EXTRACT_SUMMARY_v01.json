@@ -1,0 +1,253 @@
+{
+ "code": "a9_4a_lead_state_extract_v01.py",
+ "status": "post hoc, descriptive; AMENDMENT_09 A9-4(a)",
+ "runs": [
+  {
+   "run": "p1b_fit_finite_0005",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0006",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0007",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0008",
+   "n_dec": 57,
+   "n_eval": 27,
+   "n_found_eval": 27,
+   "n_nis_eval": 27
+  },
+  {
+   "run": "p1b_fit_finite_0009",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0010",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0011",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0012",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0013",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0014",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0015",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0016",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0017",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0018",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0019",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0020",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0021",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0022",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0023",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0024",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0025",
+   "n_dec": 48,
+   "n_eval": 18,
+   "n_found_eval": 18,
+   "n_nis_eval": 18
+  },
+  {
+   "run": "p1b_fit_finite_0026",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 268
+  },
+  {
+   "run": "p1b_fit_finite_0027",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0028",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0029",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0030",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0031",
+   "n_dec": 82,
+   "n_eval": 53,
+   "n_found_eval": 53,
+   "n_nis_eval": 53
+  },
+  {
+   "run": "p1b_fit_finite_0032",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0033",
+   "n_dec": 54,
+   "n_eval": 25,
+   "n_found_eval": 25,
+   "n_nis_eval": 25
+  },
+  {
+   "run": "p1b_fit_finite_0034",
+   "n_dec": 66,
+   "n_eval": 37,
+   "n_found_eval": 37,
+   "n_nis_eval": 37
+  },
+  {
+   "run": "p1b_fit_finite_0035",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0036",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0038",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  },
+  {
+   "run": "p1b_fit_finite_0039",
+   "n_dec": 300,
+   "n_eval": 271,
+   "n_found_eval": 271,
+   "n_nis_eval": 271
+  }
+ ],
+ "written": "2026-11-19 00:21:39",
+ "seconds": 15.0206298828125
+}

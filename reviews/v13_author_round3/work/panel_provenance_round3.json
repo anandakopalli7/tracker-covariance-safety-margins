@@ -1,0 +1,29 @@
+{
+ "schema_version": "review-panel-provenance/1.0",
+ "panel_id": "ars-review-v13-author-round-3",
+ "written_by": "coordinating session (Claude Opus 5.5), 22 Nov 2026, from 22:56 EST (Get-Date)",
+ "requested_by": "Paper work summary (Claude Fable 5.2), request revision_v13\\work\\A_text\\notes\\REVIEW_REQUEST_AUTHOR_ROUND3_v13.md (22:56 EST by that session's clock); read by the coordinator only",
+ "package_reviewed": {
+  "folder": "revision_v13\\work\\A_text\\package_v13_2244 (frozen 22:44:09 EST, packaged 22:46:31; .md, .tex, supplement .md and PDF equal to out\\freeze_v13_2244, checked by the coordinator; 14 typeset pages; abstract 235, body 8,229, whole 12,339 words)",
+  "MANUSCRIPT_v13.md": "04b6ca9e2c47fb34d0f9b09f980c8e6855e37ebfd0062368649a75636d3e2eb8",
+  "MANUSCRIPT_v13.tex": "710a8366cb4aba07bbe8fd67084a38f217f2862cf6d8d8bfc0ebeb4c80f6df8d",
+  "SUPPLEMENT_v13.md": "e99e2d807a0884af7e53866a69a4b5f7019741e1fa75902a5cfcf56fd2545eba",
+  "MANUSCRIPT_v13.pdf": "93926a734b87ea1fb17117928edda98a2603d041b89afdc9521f1e8a5d650914",
+  "SUPPLEMENT_v13.pdf": "ec81d45527801c11bd0ad4b06f91c94c44ef7c430b03235bf3ef1770f3b03f23",
+  "RESPONSE_TO_REVIEW_v13.md (seats get only the round-2 section)": "53481eed3465ec643bb06edc8b1e297d297e504580653628c1bd44be318055de"
+ },
+ "page_images": "review_v13_author_round3_output\\pages (14), pages_supplement (43), pages_template (9), rendered by Paper work summary; 66 images, all 1224 x 1584 (checked); sha256 in work\\pages_sha256.txt",
+ "writers": "earlier text Claude Opus 5.5; later text and this revision session A on Claude Fable 5.2; claim audits of changed passages by fresh Claude Sonnet 5.5 agents (not read by seats); the author settled N-1, N-5 and N-20 (6)",
+ "route": "third round by the same five seat roles and models, as fresh sub-agents; each gets its own round-2 report, the round-2 record's sections 3 and 4 (work\\round2_record_sections_3_4.md, verbatim) and the letter's round-2 section (work\\letter_section_round2.md, verbatim); not other seats' reports, the claim audits, session A's reports, the author's quotes, AMENDMENT_14's declined draft or the author's target. One judgement on the text as it stands; nine open items marked; new items Q-1 onward; 'send as is?' per seat. Synthesis by a separate Claude Sonnet 5.5 sub-agent.",
+ "seats": [
+  {"seat_id": "EIC", "model": "Claude Sonnet 5.5", "round2_report": "review_v13_author_round2_output\\phase1\\01_eic_journal_fit_round2.md", "output": "phase1\\01_eic_journal_fit_round3.md"},
+  {"seat_id": "R1", "model": "Claude Fable 5.2 (writer model of the later text; told to be skeptical)", "round2_report": "review_v13_author_round2_output\\phase1\\02_r1_methodology_round2.md", "output": "phase1\\02_r1_methodology_round3.md", "extra_reads": "amendments, locks, export pairs, Holm files and programs, RECOUNT_COVERAGE of freeze_v13_2244; spot-check every value this revision changed or added"},
+  {"seat_id": "R2", "model": "Claude Opus 5.5 (writer model of the earlier text; told to be skeptical)", "round2_report": "review_v13_author_round2_output\\phase1\\03_r2_domain_round2.md", "output": "phase1\\03_r2_domain_round3.md"},
+  {"seat_id": "R3", "model": "Claude Sonnet 5.5", "round2_report": "review_v13_author_round2_output\\phase1\\04_r3_practical_round2.md", "output": "phase1\\04_r3_practical_round3.md"},
+  {"seat_id": "DA", "model": "Claude Fable 5.2 (writer model of the later text; told to be skeptical)", "round2_report": "review_v13_author_round2_output\\phase1\\05_devils_advocate_round2.md", "output": "phase1\\05_devils_advocate_round3.md", "extra_reads": "AMENDMENT_11 to 13"}
+ ],
+ "synthesis": {"model": "Claude Sonnet 5.5", "outputs": ["ARS_REVIEW_ROUND3_v01.md", "ARS_AUTHOR_LETTER_ROUND3_v01.md"]},
+ "web_access": "none; no manuscript text to any external service",
+ "correlated_error_disclosure": "All seats and the synthesis are Claude models of one family; R1 and DA share the later text's writer model, R2 the earlier text's; the same family wrote, audited and reviewed the text in every round. Seats read their own round-2 reports, which can anchor them.",
+ "gates_not_findings": "repository name and DOI bracket"
+}

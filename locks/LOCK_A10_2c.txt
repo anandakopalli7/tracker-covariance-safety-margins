@@ -1,0 +1,14 @@
+LOCK_A10_2c (stage 2 of Lock 2: CD's section 5.7 additions)
+written: 2026-11-20T06:03:03-05:00 by the coordinating session (Claude Opus 5.5), with shared/tools/make_lock2_v01.py (sha256 b1fbb2609b7270ef31ce4c5c7e7374e133118e116e7e544b16cce7030f2a9033)
+
+Freeze manifests, re-verified now:
+[CD (core + stage-2 additions)] layered 3 manifest(s): 238 files, 238 match
+  locks\FREEZE_CD.json  sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7
+  locks\FREEZE_CD_add1.json  sha256 0e562f346cdd64feaed605041565d44b3d6f2f2a8639d33ff955a33fadb2730f
+  locks\FREEZE_CD_2.json  sha256 1039025ce46a9de60163f4468535b227ca0ec3e8d2705af293bfbaa54797a8a0
+
+Other files:
+  LOCK_A10_2.txt  sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df
+
+State: per each package's report and the gates in its code, no fresh C or D value and no fresh B value (Table III, TU, B6) had been computed when this lock was written. Under stage 1 (LOCK_A10_2) E's closed-loop values and B's five-run second-IMM check had been computed, and F's held-out run had started; their writers do not write stage-2 code.
+Stage-1 deviation recorded since LOCK_A10_2: FREEZE_CD_add1 (REPLACEMENTS_C_v13.json [] -> {}, same meaning, no code change; README_COORDINATION.md freeze ledger).

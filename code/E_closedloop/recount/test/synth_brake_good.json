@@ -1,0 +1,102 @@
+{
+ "schema": "E_RECOUNT_BRAKE_v01",
+ "runs_dir": "test/synth/brake_good",
+ "runs": [
+  {
+   "run_id": "e1_good_v10",
+   "job": "e1_good_v10",
+   "case": "c_brake_10",
+   "status": "CAPTURED_AND_REVIEWED",
+   "desired_mps": 10.0,
+   "policy_failure": false,
+   "first_fallback_k": 199,
+   "v0": 10.0,
+   "a0": 0.0,
+   "v0_measured": 10.0,
+   "a0_measured": 0.0,
+   "model_dist_m": 12.798360000000002,
+   "stop_dist_m": 12.799500000000009,
+   "ratio": 1.0000890739125956,
+   "within_10pct": true,
+   "contact": 0,
+   "problems": [],
+   "model_horizon_s": 12.0,
+   "stop_tick": 245
+  },
+  {
+   "run_id": "e1_good_v15",
+   "job": "e1_good_v15",
+   "case": "c_brake_15",
+   "status": "CAPTURED_AND_REVIEWED",
+   "desired_mps": 15.0,
+   "policy_failure": false,
+   "first_fallback_k": 199,
+   "v0": 15.0,
+   "a0": 0.0,
+   "v0_measured": 15.0,
+   "a0_measured": 0.0,
+   "model_dist_m": 26.73836,
+   "stop_dist_m": 26.739500000000135,
+   "ratio": 1.0000426353748,
+   "within_10pct": true,
+   "contact": 0,
+   "problems": [],
+   "model_horizon_s": 12.0,
+   "stop_tick": 265
+  },
+  {
+   "run_id": "e1_good_v5",
+   "job": "e1_good_v5",
+   "case": "c_brake_5",
+   "status": "CAPTURED_AND_REVIEWED",
+   "desired_mps": 5.0,
+   "policy_failure": false,
+   "first_fallback_k": 199,
+   "v0": 5.0,
+   "a0": 0.0,
+   "v0_measured": 5.0,
+   "a0_measured": 0.0,
+   "model_dist_m": 3.8583600000000016,
+   "stop_dist_m": 3.85949999999999,
+   "ratio": 1.0002954623207758,
+   "within_10pct": true,
+   "contact": 0,
+   "problems": [],
+   "model_horizon_s": 12.0,
+   "stop_tick": 225
+  }
+ ],
+ "per_speed": {
+  "5": {
+   "present": true,
+   "run_id": "e1_good_v5",
+   "n_runs_for_speed": 1,
+   "ok": true,
+   "ratio": 1.0002954623207758,
+   "within_10pct": true,
+   "policy_failure": false,
+   "status": "CAPTURED_AND_REVIEWED"
+  },
+  "10": {
+   "present": true,
+   "run_id": "e1_good_v10",
+   "n_runs_for_speed": 1,
+   "ok": true,
+   "ratio": 1.0000890739125956,
+   "within_10pct": true,
+   "policy_failure": false,
+   "status": "CAPTURED_AND_REVIEWED"
+  },
+  "15": {
+   "present": true,
+   "run_id": "e1_good_v15",
+   "n_runs_for_speed": 1,
+   "ok": true,
+   "ratio": 1.0000426353748,
+   "within_10pct": true,
+   "policy_failure": false,
+   "status": "CAPTURED_AND_REVIEWED"
+  }
+ },
+ "passed": true
+}

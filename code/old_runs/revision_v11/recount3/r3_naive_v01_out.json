@@ -1,0 +1,1838 @@
+{
+ "what": "naive recomputation against the program (own results)",
+ "n_compared": 305,
+ "max_abs_diff": 1.4210854715202004e-14,
+ "n_above_1e9": 0,
+ "entries": [
+  {
+   "tag": "S25 a0=1 all RR",
+   "naive": 0.2763197684465182,
+   "program": 0.2763197684465182,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=1 all D deceq",
+   "naive": 127.28855721393036,
+   "program": 127.28855721393036,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=1 moving RR",
+   "naive": 0.12897716822994668,
+   "program": 0.12897716822994668,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=1 moving D deceq",
+   "naive": 24.4228855721393,
+   "program": 24.4228855721393,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=1 phase0 RR",
+   "naive": 0.028911564625850348,
+   "program": 0.028911564625850348,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=1 phase0 D deceq",
+   "naive": 0.08457711442786069,
+   "program": 0.08457711442786069,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=1 phase1 RR",
+   "naive": 0.02908476009300359,
+   "program": 0.02908476009300359,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=1 phase1 D deceq",
+   "naive": 3.4228855721393026,
+   "program": 3.4228855721393026,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=1 phase2 RR",
+   "naive": 0.7946949602122017,
+   "program": 0.7946949602122017,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=1 phase2 D deceq",
+   "naive": 44.71641791044777,
+   "program": 44.71641791044777,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=1 phase_weighted RR",
+   "naive": 0.2726352206564847,
+   "program": 0.27263522065648466,
+   "absdiff": 5.551115123125783e-17
+  },
+  {
+   "tag": "S25 a0=1 phase_weighted D deceq",
+   "naive": 48.223880597014926,
+   "program": 48.223880597014926,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=2 all RR",
+   "naive": 0.564865215137377,
+   "program": 0.564865215137377,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=2 all D deceq",
+   "naive": 260.20895522388054,
+   "program": 260.20895522388054,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=2 moving RR",
+   "naive": 0.2825464386117023,
+   "program": 0.2825464386117023,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=2 moving D deceq",
+   "naive": 53.50248756218905,
+   "program": 53.50248756218905,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=2 phase0 RR",
+   "naive": -0.22619047619047628,
+   "program": -0.22619047619047628,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=2 phase0 D deceq",
+   "naive": -0.6616915422885572,
+   "program": -0.6616915422885572,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=2 phase1 RR",
+   "naive": 0.27956034664975693,
+   "program": 0.27956034664975693,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=2 phase1 D deceq",
+   "naive": 32.90049751243781,
+   "program": 32.90049751243781,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=2 phase2 RR",
+   "naive": 0.9526083112290009,
+   "program": 0.9526083112290009,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=2 phase2 D deceq",
+   "naive": 53.60199004975124,
+   "program": 53.60199004975124,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=2 phase_weighted RR",
+   "naive": 0.4853036311984924,
+   "program": 0.4853036311984924,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=2 phase_weighted D deceq",
+   "naive": 85.8407960199005,
+   "program": 85.84079601990051,
+   "absdiff": 1.4210854715202004e-14
+  },
+  {
+   "tag": "S25 a0=3 all RR",
+   "naive": 0.8314757214446175,
+   "program": 0.8314757214446175,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=3 all D deceq",
+   "naive": 383.02487562189066,
+   "program": 383.02487562189066,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=3 moving RR",
+   "naive": 0.47179527600430887,
+   "program": 0.47179527600430887,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=3 moving D deceq",
+   "naive": 89.33830845771145,
+   "program": 89.33830845771145,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=3 phase0 RR",
+   "naive": -0.535714285714286,
+   "program": -0.535714285714286,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=3 phase0 D deceq",
+   "naive": -1.567164179104478,
+   "program": -1.567164179104478,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=3 phase1 RR",
+   "naive": 0.6062988797294442,
+   "program": 0.6062988797294442,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=3 phase1 D deceq",
+   "naive": 71.35323383084578,
+   "program": 71.35323383084578,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=3 phase2 RR",
+   "naive": 0.9933687002652519,
+   "program": 0.9933687002652519,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=3 phase2 D deceq",
+   "naive": 55.8955223880597,
+   "program": 55.8955223880597,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=3 phase_weighted RR",
+   "naive": 0.7105448204089669,
+   "program": 0.7105448204089668,
+   "absdiff": 1.1102230246251565e-16
+  },
+  {
+   "tag": "S25 a0=3 phase_weighted D deceq",
+   "naive": 125.68159203980099,
+   "program": 125.68159203980099,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=4 all RR",
+   "naive": 0.9298967513392088,
+   "program": 0.9298967513392088,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=4 all D deceq",
+   "naive": 428.363184079602,
+   "program": 428.363184079602,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=4 moving RR",
+   "naive": 0.38561782401933736,
+   "program": 0.38561782401933736,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=4 moving D deceq",
+   "naive": 73.01990049751242,
+   "program": 73.01990049751242,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=4 phase0 RR",
+   "naive": -1.3775510204081642,
+   "program": -1.3775510204081642,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=4 phase0 D deceq",
+   "naive": -4.029850746268658,
+   "program": -4.029850746268658,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=4 phase1 RR",
+   "naive": 0.5305432255337139,
+   "program": 0.5305432255337139,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=4 phase1 D deceq",
+   "naive": 62.43781094527363,
+   "program": 62.43781094527363,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=4 phase2 RR",
+   "naive": 1.0101679929266136,
+   "program": 1.0101679929266136,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=4 phase2 D deceq",
+   "naive": 56.840796019900495,
+   "program": 56.840796019900495,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=4 phase_weighted RR",
+   "naive": 0.6515624560515287,
+   "program": 0.6515624560515286,
+   "absdiff": 1.1102230246251565e-16
+  },
+  {
+   "tag": "S25 a0=4 phase_weighted D deceq",
+   "naive": 115.24875621890548,
+   "program": 115.24875621890548,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=5 all RR",
+   "naive": 0.9291083462934167,
+   "program": 0.9291083462934167,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=5 all D deceq",
+   "naive": 428.00000000000006,
+   "program": 428.00000000000006,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=5 moving RR",
+   "naive": 0.18212868815848243,
+   "program": 0.18212868815848243,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=5 moving D deceq",
+   "naive": 34.48756218905472,
+   "program": 34.48756218905472,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=5 phase0 RR",
+   "naive": -2.22278911564626,
+   "program": -2.22278911564626,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=5 phase0 D deceq",
+   "naive": -6.5024875621890565,
+   "program": -6.5024875621890565,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=5 phase1 RR",
+   "naive": 0.30382582963432686,
+   "program": 0.30382582963432686,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=5 phase1 D deceq",
+   "naive": 35.75621890547264,
+   "program": 35.75621890547264,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=5 phase2 RR",
+   "naive": 1.0194518125552607,
+   "program": 1.0194518125552607,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=5 phase2 D deceq",
+   "naive": 57.36318407960197,
+   "program": 57.36318407960197,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=5 phase_weighted RR",
+   "naive": 0.48969144657272234,
+   "program": 0.4896914465727223,
+   "absdiff": 5.551115123125783e-17
+  },
+  {
+   "tag": "S25 a0=5 phase_weighted D deceq",
+   "naive": 86.61691542288557,
+   "program": 86.61691542288557,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=6 all RR",
+   "naive": 0.9170986694314845,
+   "program": 0.9170986694314845,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=6 all D deceq",
+   "naive": 422.46766169154233,
+   "program": 422.46766169154233,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=6 moving RR",
+   "naive": 0.02154436299624284,
+   "program": 0.02154436299624284,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=6 moving D deceq",
+   "naive": 4.079601990049744,
+   "program": 4.079601990049744,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=6 phase0 RR",
+   "naive": -2.8588435374149674,
+   "program": -2.8588435374149674,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=6 phase0 D deceq",
+   "naive": -8.363184079601991,
+   "program": -8.363184079601991,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=6 phase1 RR",
+   "naive": 0.10040160642570288,
+   "program": 0.10040160642570288,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=6 phase1 D deceq",
+   "naive": 11.815920398009958,
+   "program": 11.815920398009958,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=6 phase2 RR",
+   "naive": 1.0229000884173296,
+   "program": 1.0229000884173296,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=6 phase2 D deceq",
+   "naive": 57.55721393034825,
+   "program": 57.55721393034825,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=6 phase_weighted RR",
+   "naive": 0.34492166624476134,
+   "program": 0.3449216662447613,
+   "absdiff": 5.551115123125783e-17
+  },
+  {
+   "tag": "S25 a0=6 phase_weighted D deceq",
+   "naive": 61.00995024875622,
+   "program": 61.00995024875622,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=7 all RR",
+   "naive": 0.8983497494383966,
+   "program": 0.8983497494383966,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=7 all D deceq",
+   "naive": 413.8308457711443,
+   "program": 413.8308457711443,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=7 moving RR",
+   "naive": -0.12713801529124308,
+   "program": -0.12713801529124308,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=7 moving D deceq",
+   "naive": -24.074626865671654,
+   "program": -24.074626865671654,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=7 phase0 RR",
+   "naive": -3.3792517006802734,
+   "program": -3.3792517006802734,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=7 phase0 D deceq",
+   "naive": -9.885572139303482,
+   "program": -9.885572139303482,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=7 phase1 RR",
+   "naive": -0.07025998731769173,
+   "program": -0.07025998731769173,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=7 phase1 D deceq",
+   "naive": -8.2686567164179,
+   "program": -8.2686567164179,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=7 phase2 RR",
+   "naive": 1.0250221043324492,
+   "program": 1.0250221043324492,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=7 phase2 D deceq",
+   "naive": 57.67661691542289,
+   "program": 57.67661691542289,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 a0=7 phase_weighted RR",
+   "naive": 0.22344105982617507,
+   "program": 0.22344105982617504,
+   "absdiff": 2.7755575615628914e-17
+  },
+  {
+   "tag": "S25 a0=7 phase_weighted D deceq",
+   "naive": 39.522388059701505,
+   "program": 39.522388059701505,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 zero margin F0 caution",
+   "naive": 1.0958004600764908,
+   "program": 1.09580046007649,
+   "absdiff": 8.881784197001252e-16
+  },
+  {
+   "tag": "S25 zero margin F0 wrong go",
+   "naive": 8.998793727382388,
+   "program": 8.998793727382388,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 zero margin CK1 caution",
+   "naive": 1.1279189841070851,
+   "program": 1.1279189841070842,
+   "absdiff": 8.881784197001252e-16
+  },
+  {
+   "tag": "S25 zero margin CK1 wrong go",
+   "naive": 8.166465621230397,
+   "program": 8.166465621230397,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 zero margin CK2 caution",
+   "naive": 1.414385594664008,
+   "program": 1.4143855946640072,
+   "absdiff": 8.881784197001252e-16
+  },
+  {
+   "tag": "S25 zero margin CK2 wrong go",
+   "naive": 6.670687575392039,
+   "program": 6.670687575392039,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 zero margin CK3 caution",
+   "naive": 1.7182278844479144,
+   "program": 1.7182278844479137,
+   "absdiff": 6.661338147750939e-16
+  },
+  {
+   "tag": "S25 zero margin CK3 wrong go",
+   "naive": 4.837153196622436,
+   "program": 4.837153196622436,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 zero margin CK4 caution",
+   "naive": 2.267699942399291,
+   "program": 2.26769994239929,
+   "absdiff": 8.881784197001252e-16
+  },
+  {
+   "tag": "S25 zero margin CK4 wrong go",
+   "naive": 2.762364294330519,
+   "program": 2.762364294330519,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 zero margin CK5 caution",
+   "naive": 2.8574131942135437,
+   "program": 2.8574131942135432,
+   "absdiff": 4.440892098500626e-16
+  },
+  {
+   "tag": "S25 zero margin CK5 wrong go",
+   "naive": 2.0024125452352233,
+   "program": 2.0024125452352233,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 zero margin CK6 caution",
+   "naive": 3.306248885965102,
+   "program": 3.306248885965102,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 zero margin CK6 wrong go",
+   "naive": 1.5922798552472859,
+   "program": 1.5922798552472859,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 zero margin CK7 caution",
+   "naive": 3.666077552829113,
+   "program": 3.666077552829113,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 zero margin CK7 wrong go",
+   "naive": 1.3872135102533172,
+   "program": 1.3872135102533172,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 theta R",
+   "naive": 5.556775831337881,
+   "program": 5.556775831337881,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 theta RR_N",
+   "naive": 0.001220407810609995,
+   "program": 0.001220407810609995,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 theta RR_NA",
+   "naive": 0.01666450665284258,
+   "program": 0.01666450665284258,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 theta RR_AM",
+   "naive": 0.3757992051149128,
+   "program": 0.3757992051149128,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 theta RR_CK3",
+   "naive": 0.8314757214446175,
+   "program": 0.8314757214446175,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 theta RR_Q",
+   "naive": -0.0018036115431138745,
+   "program": -0.0018036115431138745,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 theta RR0_CK3",
+   "naive": 0.7705426666933565,
+   "program": 0.7705426666933565,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 theta RR_NA_minus_RR_N",
+   "naive": 0.015444098842232586,
+   "program": 0.015444098842232586,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=15 subsample 0 denE",
+   "naive": 920.3155272626627,
+   "program": 920.3155272626627,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=15 subsample 0 D CK3",
+   "naive": 760.974259618046,
+   "program": 760.974259618046,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=15 subsample 0 den0",
+   "naive": 1015.6933296429561,
+   "program": 1015.6933296429561,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=15 subsample 0 D NA",
+   "naive": 13.811237199003607,
+   "program": 13.811237199003607,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=15 subsample 1 denE",
+   "naive": 1237.182508510081,
+   "program": 1237.182508510081,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=15 subsample 1 D CK3",
+   "naive": 980.9897879025923,
+   "program": 980.9897879025923,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=15 subsample 1 den0",
+   "naive": 1290.3901544907044,
+   "program": 1290.3901544907044,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=15 subsample 1 D NA",
+   "naive": 25.058915946582857,
+   "program": 25.058915946582857,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=20 subsample 0 denE",
+   "naive": 1077.8224852071005,
+   "program": 1077.8224852071005,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=20 subsample 0 D CK3",
+   "naive": 813.7988165680474,
+   "program": 813.7988165680474,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=20 subsample 0 den0",
+   "naive": 1116.8757396449705,
+   "program": 1116.8757396449705,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=20 subsample 0 D NA",
+   "naive": 20.923076923076913,
+   "program": 20.923076923076913,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=20 subsample 1 denE",
+   "naive": 1205.0190597204573,
+   "program": 1205.0190597204573,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=20 subsample 1 D CK3",
+   "naive": 962.0499788225328,
+   "program": 962.0499788225328,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=20 subsample 1 den0",
+   "naive": 1256.543837357052,
+   "program": 1256.543837357052,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=20 subsample 1 D NA",
+   "naive": 17.556120288013563,
+   "program": 17.556120288013563,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=25 subsample 0 denE",
+   "naive": 1057.9597655631237,
+   "program": 1057.9597655631237,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=25 subsample 0 D CK3",
+   "naive": 893.9173134801204,
+   "program": 893.9173134801204,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=25 subsample 0 den0",
+   "naive": 1142.2461587201014,
+   "program": 1142.2461587201014,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=25 subsample 0 D NA",
+   "naive": 19.546966576904797,
+   "program": 19.546966576904797,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=25 subsample 1 denE",
+   "naive": 1040.9387430389816,
+   "program": 1040.9387430389816,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=25 subsample 1 D CK3",
+   "naive": 846.0620525059666,
+   "program": 846.0620525059666,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=25 subsample 1 den0",
+   "naive": 1155.3858392999205,
+   "program": 1155.3858392999205,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S17 m=25 subsample 1 D NA",
+   "naive": 20.89101034208434,
+   "program": 20.89101034208434,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b all den0 pp",
+   "naive": 1.1417580373164335,
+   "program": 1.1417580373164335,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b all den0 deceq",
+   "naive": 94.65174129353235,
+   "program": 94.65174129353235,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b all RR0 E",
+   "naive": -0.06969776609724071,
+   "program": -0.06969776609724071,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b all RR0 N",
+   "naive": -0.0007884362680683661,
+   "program": -0.0007884362680683661,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b all RR0 NA",
+   "naive": 0.021024967148488734,
+   "program": 0.021024967148488734,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b all RR0 CK3",
+   "naive": 0.5763994743758212,
+   "program": 0.5763994743758212,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b all RR0 AM",
+   "naive": 0.800525624178712,
+   "program": 0.800525624178712,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b all RR0 Q",
+   "naive": -0.006517739816031459,
+   "program": -0.006517739816031459,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b moving den0 pp",
+   "naive": 1.0973046736259657,
+   "program": 1.0973046736259657,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b moving den0 deceq",
+   "naive": 20.442786069651742,
+   "program": 20.442786069651742,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b moving RR0 E",
+   "naive": -1.5799464589924554,
+   "program": -1.5799464589924554,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b moving RR0 N",
+   "naive": -0.021903139449987827,
+   "program": -0.021903139449987827,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b moving RR0 NA",
+   "naive": -0.00924799221221708,
+   "program": -0.00924799221221708,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b moving RR0 CK3",
+   "naive": -0.9559503528839133,
+   "program": -0.9559503528839133,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b moving RR0 AM",
+   "naive": 0.4066682891214407,
+   "program": 0.4066682891214407,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b moving RR0 Q",
+   "naive": -0.026527135556096374,
+   "program": -0.026527135556096374,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase0 den0 pp",
+   "naive": 0.0,
+   "program": 0.0,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase0 den0 deceq",
+   "naive": 0.0,
+   "program": 0.0,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase0 RR0 E",
+   "naive": null,
+   "program": null,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase0 RR0 N",
+   "naive": null,
+   "program": null,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase0 RR0 NA",
+   "naive": null,
+   "program": null,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase0 RR0 CK3",
+   "naive": null,
+   "program": null,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase0 RR0 AM",
+   "naive": null,
+   "program": null,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase0 RR0 Q",
+   "naive": null,
+   "program": null,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase1 den0 pp",
+   "naive": 0.6161246746400448,
+   "program": 0.6161246746400448,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase1 den0 deceq",
+   "naive": 4.651741293532338,
+   "program": 4.651741293532338,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase1 RR0 E",
+   "naive": 0.8844919786096257,
+   "program": 0.8844919786096257,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase1 RR0 N",
+   "naive": 0.02245989304812834,
+   "program": 0.02245989304812834,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase1 RR0 NA",
+   "naive": -0.10374331550802139,
+   "program": -0.10374331550802139,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase1 RR0 CK3",
+   "naive": 0.1689839572192513,
+   "program": 0.1689839572192513,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase1 RR0 AM",
+   "naive": -0.6844919786096255,
+   "program": -0.6844919786096255,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase1 RR0 Q",
+   "naive": -0.009625668449197797,
+   "program": -0.009625668449197797,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase2 den0 pp",
+   "naive": 0.10527789809883122,
+   "program": 0.10527789809883122,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase2 den0 deceq",
+   "naive": 7.218905472636856,
+   "program": 7.218905472636856,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase2 RR0 E",
+   "naive": -1.0420399724327956,
+   "program": -1.0420399724327956,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase2 RR0 N",
+   "naive": -0.04617505168849082,
+   "program": -0.04617505168849082,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase2 RR0 NA",
+   "naive": 0.2081323225361815,
+   "program": 0.2081323225361815,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase2 RR0 CK3",
+   "naive": 0.791178497587869,
+   "program": 0.791178497587869,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase2 RR0 AM",
+   "naive": 0.8104755341144044,
+   "program": 0.8104755341144044,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase2 RR0 Q",
+   "naive": -0.014472777394900717,
+   "program": -0.014472777394900717,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase_weighted den0 pp",
+   "naive": 0.14319236147369355,
+   "program": 0.14319236147369355,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase_weighted den0 deceq",
+   "naive": 11.870646766169195,
+   "program": 11.870646766169195,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase_weighted RR0 E",
+   "naive": -0.2870913663034335,
+   "program": -0.2870913663034335,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase_weighted RR0 N",
+   "naive": -0.019279128248114164,
+   "program": -0.019279128248114164,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase_weighted RR0 NA",
+   "naive": 0.08591785414920385,
+   "program": 0.08591785414920385,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase_weighted RR0 CK3",
+   "naive": 0.5473595976529756,
+   "program": 0.5473595976529756,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase_weighted RR0 AM",
+   "naive": 0.22464375523889593,
+   "program": 0.22464375523889593,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b phase_weighted RR0 Q",
+   "naive": -0.01257334450963994,
+   "program": -0.01257334450963994,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 all den0",
+   "naive": 164.4631073785243,
+   "program": 164.4631073785243,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 all D CK3",
+   "naive": 80.28794241151769,
+   "program": 80.28794241151769,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 all D AM",
+   "naive": 122.0755848830234,
+   "program": 122.0755848830234,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 all denE",
+   "naive": -166.29874025194954,
+   "program": -166.29874025194954,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 moving den0",
+   "naive": 195.38461538461536,
+   "program": 195.38461538461536,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 moving D CK3",
+   "naive": -317.0879120879122,
+   "program": -317.0879120879122,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 moving D AM",
+   "naive": 98.5164835164835,
+   "program": 98.5164835164835,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 moving denE",
+   "naive": -328.6813186813187,
+   "program": -328.6813186813187,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 phase0 den0",
+   "naive": 0.0,
+   "program": 0.0,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 phase0 D CK3",
+   "naive": 0.0,
+   "program": 0.0,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 phase0 D AM",
+   "naive": 0.0,
+   "program": 0.0,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 phase0 denE",
+   "naive": 0.0,
+   "program": 0.0,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 phase1 den0",
+   "naive": 122.52906976744185,
+   "program": 122.52906976744185,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 phase1 D CK3",
+   "naive": 100.14534883720931,
+   "program": 100.14534883720931,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 phase1 D AM",
+   "naive": -40.406976744186046,
+   "program": -40.406976744186046,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 phase1 denE",
+   "naive": 119.62209302325581,
+   "program": 119.62209302325581,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 phase2 den0",
+   "naive": 16.060388209920955,
+   "program": 16.060388209920955,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 phase2 D CK3",
+   "naive": 11.45938173975563,
+   "program": 11.45938173975563,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 phase2 D AM",
+   "naive": 10.582314881380338,
+   "program": 10.582314881380338,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 0 phase2 denE",
+   "naive": -31.171818835370225,
+   "program": -31.171818835370225,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 all den0",
+   "naive": 187.1013013523857,
+   "program": 187.1013013523857,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 all D CK3",
+   "naive": 43.53151314110733,
+   "program": 43.53151314110733,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 all D AM",
+   "naive": 142.70221995406985,
+   "program": 142.70221995406985,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 all denE",
+   "naive": -592.6767032406227,
+   "program": -592.6767032406227,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 moving den0",
+   "naive": 177.9469825155104,
+   "program": 177.9469825155104,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 moving D CK3",
+   "naive": -330.4004512126339,
+   "program": -330.4004512126339,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 moving D AM",
+   "naive": 73.0400451212634,
+   "program": 73.0400451212634,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 moving denE",
+   "naive": -744.7264523406656,
+   "program": -744.7264523406656,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 phase0 den0",
+   "naive": 0.0,
+   "program": 0.0,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 phase0 D CK3",
+   "naive": 0.0,
+   "program": 0.0,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 phase0 D AM",
+   "naive": 0.0,
+   "program": 0.0,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 phase0 denE",
+   "naive": 0.0,
+   "program": 0.0,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 phase1 den0",
+   "naive": 128.28282828282826,
+   "program": 128.28282828282826,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 phase1 D CK3",
+   "naive": 17.893217893217894,
+   "program": 17.893217893217894,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 phase1 D AM",
+   "naive": -55.26695526695527,
+   "program": -55.26695526695527,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 phase1 denE",
+   "naive": 128.28282828282826,
+   "program": 128.28282828282826,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 phase2 den0",
+   "naive": 25.745007680491618,
+   "program": 25.745007680491618,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 phase2 D CK3",
+   "naive": 24.301075268817268,
+   "program": 24.301075268817268,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 phase2 D AM",
+   "naive": 16.328725038402514,
+   "program": 16.328725038402514,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S24b resample 1 phase2 denE",
+   "naive": -96.00614439324117,
+   "program": -96.00614439324117,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 all denE",
+   "naive": 1082.8074385122973,
+   "program": 1082.8074385122973,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 all D CK1",
+   "naive": 325.60287942411514,
+   "program": 325.60287942411514,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 all D CK3",
+   "naive": 863.9352129574086,
+   "program": 863.9352129574086,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 all D CK7",
+   "naive": 951.997600479904,
+   "program": 951.997600479904,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 moving denE",
+   "naive": 2068.021978021978,
+   "program": 2068.021978021978,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 moving D CK1",
+   "naive": 269.17582417582423,
+   "program": 269.17582417582423,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 moving D CK3",
+   "naive": 758.7362637362637,
+   "program": 758.7362637362637,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 moving D CK7",
+   "naive": 35.494505494505574,
+   "program": 35.494505494505574,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 phase0 denE",
+   "naive": 251.58959537572252,
+   "program": 251.58959537572252,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 phase0 D CK1",
+   "naive": 10.838150289017344,
+   "program": 10.838150289017344,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 phase0 D CK3",
+   "naive": -145.6647398843931,
+   "program": -145.6647398843931,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 phase0 D CK7",
+   "naive": -526.0115606936416,
+   "program": -526.0115606936416,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 phase1 denE",
+   "naive": 2915.116279069767,
+   "program": 2915.116279069767,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 phase1 D CK1",
+   "naive": 87.20930232558139,
+   "program": 87.20930232558139,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 phase1 D CK3",
+   "naive": 1933.4302325581393,
+   "program": 1933.4302325581393,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 phase1 D CK7",
+   "naive": 833.1395348837209,
+   "program": 833.1395348837209,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 phase2 denE",
+   "naive": 170.17972681524083,
+   "program": 170.17972681524083,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 phase2 D CK1",
+   "naive": 131.11430625449316,
+   "program": 131.11430625449316,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 phase2 D CK3",
+   "naive": 162.8468727534148,
+   "program": 162.8468727534148,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 0 phase2 D CK7",
+   "naive": 168.23867721063982,
+   "program": 168.23867721063982,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 all denE",
+   "naive": 1109.8239346772134,
+   "program": 1109.8239346772134,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 all D CK1",
+   "naive": 277.0732329675937,
+   "program": 277.0732329675937,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 all D CK3",
+   "naive": 823.4753763715233,
+   "program": 823.4753763715233,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 all D CK7",
+   "naive": 1014.5445266649655,
+   "program": 1014.5445266649655,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 moving denE",
+   "naive": 2058.206429780034,
+   "program": 2058.206429780034,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 moving D CK1",
+   "naive": 218.4433164128596,
+   "program": 218.4433164128596,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 moving D CK3",
+   "naive": 748.3361534122956,
+   "program": 748.3361534122956,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 moving D CK7",
+   "naive": -143.8804286520022,
+   "program": -143.8804286520022,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 phase0 denE",
+   "naive": 201.41732283464566,
+   "program": 201.41732283464566,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 phase0 D CK1",
+   "naive": 10.078740157480315,
+   "program": 10.078740157480315,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 phase0 D CK3",
+   "naive": -38.11023622047246,
+   "program": -38.11023622047246,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 phase0 D CK7",
+   "naive": -460.31496062992125,
+   "program": -460.31496062992125,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 phase1 denE",
+   "naive": 3308.080808080808,
+   "program": 3308.080808080808,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 phase1 D CK1",
+   "naive": 58.5858585858586,
+   "program": 58.5858585858586,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 phase1 D CK3",
+   "naive": 1696.825396825397,
+   "program": 1696.825396825397,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 phase1 D CK7",
+   "naive": 528.5714285714283,
+   "program": 528.5714285714283,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 phase2 denE",
+   "naive": 189.8463901689708,
+   "program": 189.8463901689708,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 phase2 D CK1",
+   "naive": 151.2288786482335,
+   "program": 151.2288786482335,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 phase2 D CK3",
+   "naive": 188.5867895545315,
+   "program": 188.5867895545315,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S25 resample 1 phase2 D CK7",
+   "naive": 198.0184331797235,
+   "program": 198.0184331797235,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 0 p=0.25 all RR",
+   "naive": 0.2721077414895456,
+   "program": 0.2721077414895456,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 0 p=0.25 moving RR",
+   "naive": -0.09046005097081002,
+   "program": -0.09046005097081002,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 0 p=0.25 phase1 RR",
+   "naive": -0.6395265271612768,
+   "program": -0.6395265271612768,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 0 p=0.25 phase2 RR",
+   "naive": 0.30574712643678165,
+   "program": 0.30574712643678165,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 0 p=0.25 phase_weighted RR",
+   "naive": -0.3422214721683121,
+   "program": -0.3422214721683121,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 0 p=0.50 all RR",
+   "naive": 0.5447662865042339,
+   "program": 0.5447662865042339,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 0 p=0.50 moving RR",
+   "naive": 0.0997609101179685,
+   "program": 0.0997609101179685,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 0 p=0.50 phase1 RR",
+   "naive": -0.5149017121116044,
+   "program": -0.5149017121116044,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 0 p=0.50 phase2 RR",
+   "naive": 0.5702033598585323,
+   "program": 0.5702033598585323,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 0 p=0.50 phase_weighted RR",
+   "naive": -0.16963406744859788,
+   "program": -0.1696340674485979,
+   "absdiff": 2.7755575615628914e-17
+  },
+  {
+   "tag": "S12b draw 0 p=0.75 all RR",
+   "naive": 0.7691053222740628,
+   "program": 0.7691053222740628,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 0 p=0.75 moving RR",
+   "naive": 0.4271301332072201,
+   "program": 0.4271301332072201,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 0 p=0.75 phase1 RR",
+   "naive": -0.07326146692031289,
+   "program": -0.07326146692031289,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 0 p=0.75 phase2 RR",
+   "naive": 0.8003536693191866,
+   "program": 0.8003536693191866,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 0 p=0.75 phase_weighted RR",
+   "naive": 0.21469355609934457,
+   "program": 0.21469355609934454,
+   "absdiff": 2.7755575615628914e-17
+  },
+  {
+   "tag": "S12b draw 1 p=0.25 all RR",
+   "naive": 0.2995291169863488,
+   "program": 0.2995291169863488,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 1 p=0.25 moving RR",
+   "naive": -0.05217939623236384,
+   "program": -0.05217939623236384,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 1 p=0.25 phase1 RR",
+   "naive": -0.6418093426336927,
+   "program": -0.6418093426336927,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 1 p=0.25 phase2 RR",
+   "naive": 0.25888594164456236,
+   "program": 0.25888594164456236,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 1 p=0.25 phase_weighted RR",
+   "naive": -0.36033527409782584,
+   "program": -0.3603352740978258,
+   "absdiff": 5.551115123125783e-17
+  },
+  {
+   "tag": "S12b draw 1 p=0.50 all RR",
+   "naive": 0.5451334888543289,
+   "program": 0.5451334888543289,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 1 p=0.50 moving RR",
+   "naive": 0.07981923753973887,
+   "program": 0.07981923753973887,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 1 p=0.50 phase1 RR",
+   "naive": -0.5482984569858381,
+   "program": -0.5482984569858381,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 1 p=0.50 phase2 RR",
+   "naive": 0.5421750663129974,
+   "program": 0.5421750663129974,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 1 p=0.50 phase_weighted RR",
+   "naive": -0.21463730205608525,
+   "program": -0.21463730205608525,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 1 p=0.75 all RR",
+   "naive": 0.7831346120615174,
+   "program": 0.7831346120615174,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 1 p=0.75 moving RR",
+   "naive": 0.46375555030083293,
+   "program": 0.46375555030083293,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 1 p=0.75 phase1 RR",
+   "naive": 0.10344536038892427,
+   "program": 0.10344536038892427,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 1 p=0.75 phase2 RR",
+   "naive": 0.7727674624226348,
+   "program": 0.7727674624226348,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 1 p=0.75 phase_weighted RR",
+   "naive": 0.30815964897477016,
+   "program": 0.3081596489747701,
+   "absdiff": 5.551115123125783e-17
+  },
+  {
+   "tag": "S12b draw 49 p=0.25 all RR",
+   "naive": 0.28358821496457587,
+   "program": 0.28358821496457587,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 49 p=0.25 moving RR",
+   "naive": -0.0670239878090434,
+   "program": -0.0670239878090434,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 49 p=0.25 phase1 RR",
+   "naive": -0.6723737053477067,
+   "program": -0.6723737053477067,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 49 p=0.25 phase2 RR",
+   "naive": 0.306631299734748,
+   "program": 0.306631299734748,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 49 p=0.25 phase_weighted RR",
+   "naive": -0.3602227660113071,
+   "program": -0.36022276601130704,
+   "absdiff": 5.551115123125783e-17
+  },
+  {
+   "tag": "S12b draw 49 p=0.50 all RR",
+   "naive": 0.5462890962502162,
+   "program": 0.5462890962502162,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 49 p=0.50 moving RR",
+   "naive": 0.10209926171146318,
+   "program": 0.10209926171146318,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 49 p=0.50 phase1 RR",
+   "naive": -0.5156203762418095,
+   "program": -0.5156203762418095,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 49 p=0.50 phase2 RR",
+   "naive": 0.5912466843501327,
+   "program": 0.5912466843501327,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 49 p=0.50 phase_weighted RR",
+   "naive": -0.17469693134194025,
+   "program": -0.17469693134194028,
+   "absdiff": 2.7755575615628914e-17
+  },
+  {
+   "tag": "S12b draw 49 p=0.75 all RR",
+   "naive": 0.7857374287195439,
+   "program": 0.7857374287195439,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 49 p=0.75 moving RR",
+   "naive": 0.4702188591997058,
+   "program": 0.4702188591997058,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 49 p=0.75 phase1 RR",
+   "naive": 0.06484886916085385,
+   "program": 0.06484886916085385,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 49 p=0.75 phase2 RR",
+   "naive": 0.8106100795755967,
+   "program": 0.8106100795755967,
+   "absdiff": 0.0
+  },
+  {
+   "tag": "S12b draw 49 p=0.75 phase_weighted RR",
+   "naive": 0.29406801113830044,
+   "program": 0.29406801113830044,
+   "absdiff": 0.0
+  }
+ ]
+}

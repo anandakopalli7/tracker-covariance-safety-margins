@@ -1,0 +1,8 @@
+truth mine order (0, 1, 2) 969.3124246079614
+truth mine order (2, 1, 0) 969.3124246079614
+truth lowest_c_then_highest_index order (0, 1, 2) 969.3124246079614
+truth lowest_index_only order (0, 1, 2) 971.0735826296743
+truth highest_c order (0, 1, 2) 970.3739445114595
+estimated mine order (0, 1, 2) 1076.357056694813
+
+[killed]

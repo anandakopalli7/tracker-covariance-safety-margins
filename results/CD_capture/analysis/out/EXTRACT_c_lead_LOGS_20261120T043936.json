@@ -1,0 +1,428 @@
+{
+ "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df",
+ "set": "c_lead",
+ "logs_only": true,
+ "runs": [
+  {
+   "run": "pc13_c1109_eval_0288_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0324_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0384_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0450_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0582_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0000_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0006_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0012_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0018_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0024_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0030_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0036_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0042_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0048_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0054_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0060_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0066_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0072_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0078_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0084_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0090_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0096_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0102_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0108_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0114_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0120_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0126_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0132_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0138_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0144_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0150_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0156_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0162_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0168_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0174_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0180_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0186_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0192_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0198_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0204_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0210_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0216_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0222_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0228_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0234_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0240_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0246_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0252_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0258_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0264_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0270_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0276_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0282_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0294_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0300_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0306_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0312_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0318_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0330_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0336_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0342_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0348_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0354_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0360_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0366_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0372_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0378_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0390_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0396_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0402_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0408_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0414_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0420_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0426_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0432_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0438_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0444_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0456_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0462_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0468_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0474_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0486_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0498_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0510_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0516_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0528_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0534_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0546_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0552_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0558_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0564_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0570_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0576_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0594_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0600_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0606_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0618_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0624_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0630_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0648_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0660_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0666_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0678_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0696_native",
+   "logs_ok": true
+  },
+  {
+   "run": "pc13_c1109_eval_0720_native",
+   "logs_ok": true
+  }
+ ],
+ "seconds": 3167.726466655731
+}

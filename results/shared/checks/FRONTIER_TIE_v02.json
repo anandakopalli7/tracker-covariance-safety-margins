@@ -1,0 +1,121 @@
+{
+ "tolerance": 1e-09,
+ "export": "CD_capture/out/A_EXPORT_C.json",
+ "recount": "CD_capture/out/A_RECOUNT_C.json",
+ "families": [
+  {
+   "prefix": "LB",
+   "sources": [
+    "CK3",
+    "E",
+    "E5",
+    "F0",
+    "N"
+   ],
+   "checks": [
+    {
+     "what": "IMM group: same caution levels",
+     "n_levels": 201,
+     "ok": true
+    },
+    {
+     "what": "RR(IMM) on its own room vs LB.IMM.r",
+     "first_curves": 3.20767275322544e-05,
+     "recount": 3.207672753225441e-05,
+     "abs_diff": 6.776263578034403e-21,
+     "ok": true
+    },
+    {
+     "what": "same caution levels for every source",
+     "n_levels": 201,
+     "ok": true
+    },
+    {
+     "what": "room (mean gap) vs recount LB.R",
+     "first_curves": 5.579177441798148,
+     "recount": 5.579177441798148,
+     "abs_diff": 0.0,
+     "ok": true
+    },
+    {
+     "what": "room (summed gap) vs recount LB.R",
+     "first_curves": 1121.4146658014276,
+     "recount": 5.579177441798148,
+     "abs_diff": 1115.8354883596296,
+     "ok": false
+    },
+    {
+     "what": "RR(CK3) vs LB.RR_CK3",
+     "first_curves": 0.7828126679176965,
+     "recount": 0.7828126679176965,
+     "abs_diff": 0.0,
+     "ok": true
+    },
+    {
+     "what": "RR(E5) vs LB.RR_E5",
+     "first_curves": 0.012532343531706978,
+     "recount": 0.012532343531706977,
+     "abs_diff": 1.734723475976807e-18,
+     "ok": true
+    },
+    {
+     "what": "RR(N) vs LB.RR_N",
+     "first_curves": -8.266717369203164e-06,
+     "recount": -8.266717369203164e-06,
+     "abs_diff": 0.0,
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "D_summed": {
+    "CK3": 877.8576063780476,
+    "E": 1121.4146658014276,
+    "E5": 14.053953833317864,
+    "N": -0.009270418095859823
+   }
+  },
+  {
+   "prefix": "CI",
+   "sources": [
+    "E",
+    "F0",
+    "N"
+   ],
+   "checks": [
+    {
+     "what": "same caution levels for every source",
+     "n_levels": 201,
+     "ok": true
+    },
+    {
+     "what": "room (mean gap) vs recount CI.R",
+     "first_curves": 0.0,
+     "recount": 0.0,
+     "abs_diff": 0.0,
+     "ok": true
+    },
+    {
+     "what": "room (summed gap) vs recount CI.R",
+     "first_curves": 0.0,
+     "recount": 0.0,
+     "abs_diff": 0.0,
+     "ok": true
+    },
+    {
+     "what": "RR(N) vs CI.RR_N",
+     "D": 0.0,
+     "D_E": 0.0,
+     "recount": null,
+     "ok": true,
+     "note": "ratio undefined (room zero or recount undefined); summed gap must be 0 if room is 0"
+    }
+   ],
+   "ok": true,
+   "D_summed": {
+    "E": 0.0,
+    "N": 0.0
+   }
+  }
+ ],
+ "ok": true
+}

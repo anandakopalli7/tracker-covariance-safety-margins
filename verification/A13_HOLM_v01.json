@@ -1,0 +1,47 @@
+{
+ "tool": "holm_a13_v01.py",
+ "tool_sha256": "e5f4d3513b1a1fa84717248bedc1ddf94f1b366d71c6ae7430ae253e43c780c9",
+ "written": "2026-11-22T09:04:03-05:00",
+ "m": 2,
+ "alpha_fw": 0.05,
+ "rows": [
+  {
+   "id": "E6",
+   "label": "A13 section 2: closed-loop caution frontier, contact difference N - F0_D at N's time lost",
+   "export": "E_closedloop/out/A_EXPORT_E6.json",
+   "recount": "E_closedloop/out/A_RECOUNT_E6.json",
+   "key": "E6.p_one",
+   "convention": "plus1",
+   "status": "ran",
+   "p": 0.08779561021948902,
+   "p_u": 0.08779561021948902,
+   "n": 20000,
+   "k": 1755,
+   "sha_export": "72a520cf39ba236891a39a75179242962413f26cae42158d906047111840147e",
+   "sha_recount": "87c32b32c04941a2705ccbb810304259c26a0039a997096f119bd7f64d9edeb2",
+   "p_holm": 0.17559122043897804,
+   "p_u_holm": 0.17559122043897804,
+   "reject_0.05": false,
+   "reject_u_0.05": false
+  },
+  {
+   "id": "COAST",
+   "label": "A13 section 3: N_DR against a fixed coast-count margin, open loop, 150 new runs",
+   "export": "F_nuscenes/out/A_EXPORT_DRF.json",
+   "recount": "F_nuscenes/out/A_RECOUNT_DRF.json",
+   "key": "DRF.delta.p",
+   "convention": "plus1",
+   "status": "ran",
+   "p": 0.9855507224638768,
+   "p_u": 0.9855507224638768,
+   "n": 20000,
+   "k": 19711,
+   "sha_export": "06aa86d8eef229678c2aed7426922bb704b23cfe4df67c9c0c6062347aae59c6",
+   "sha_recount": "7615053bf709de82f443ee4ddccb73a992f897b3d8623c75e9ffb232b4c264ac",
+   "p_holm": 0.9855507224638768,
+   "p_u_holm": 0.9855507224638768,
+   "reject_0.05": false,
+   "reject_u_0.05": false
+  }
+ ]
+}

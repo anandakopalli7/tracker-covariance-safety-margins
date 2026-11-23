@@ -1,0 +1,14 @@
+{
+ "schema": "COMPARE_Y_V13",
+ "first": "out\\A_EXPORT_XH.json",
+ "second": "out\\A_RECOUNT_XH.json",
+ "tolerance": 1e-09,
+ "verdict": "AGREE",
+ "summary": {
+  "agree": 50,
+  "disagree": 0,
+  "only_first": 0,
+  "only_second": 0
+ },
+ "rows": []
+}

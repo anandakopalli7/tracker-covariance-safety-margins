@@ -1,0 +1,1927 @@
+{
+ "family": "S57B",
+ "program": "rc_s57b_v13.py",
+ "test_old": true,
+ "what": "values of record of v11 / v12 reproduced on the 35 old runs",
+ "model": "claude-fable-5-2",
+ "threads": 2,
+ "values": {},
+ "details": {
+  "record": {
+   "n_compared": 263,
+   "n_differ": 0,
+   "max_absdiff": 0.0,
+   "boot": 100,
+   "draw": "default_rng(20261113), the draw of record",
+   "rows": [
+    {
+     "name": "grid all n",
+     "here": 8290.0,
+     "record": 8290.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid all R_pp",
+     "here": 5.556775831337881,
+     "record": 5.556775831337881,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid all RR_N",
+     "here": 0.001220407810609995,
+     "record": 0.001220407810609995,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid all RR_P",
+     "here": 0.0014904095386210547,
+     "record": 0.0014904095386210547,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid all RR_NA",
+     "here": 0.01666450665284258,
+     "record": 0.01666450665284258,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid all RR_A1",
+     "here": 0.3757992051149128,
+     "record": 0.3757992051149128,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid all RR_CK3",
+     "here": 0.8314757214446175,
+     "record": 0.8314757214446175,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid all RR_Q",
+     "here": -0.0018036115431138745,
+     "record": -0.0018036115431138745,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid all RR_N_minus_P",
+     "here": -0.00027000172801105966,
+     "record": -0.00027000172801105966,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid moving n",
+     "here": 1863.0,
+     "record": 1863.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid moving R_pp",
+     "here": 10.164155070060325,
+     "record": 10.164155070060325,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid moving RR_N",
+     "here": -0.000131368067050269,
+     "record": -0.000131368067050269,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid moving RR_P",
+     "here": 0.0021807099130343372,
+     "record": 0.0021807099130343372,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid moving RR_NA",
+     "here": 0.01568534720580121,
+     "record": 0.01568534720580121,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid moving RR_A1",
+     "here": 0.2933186201098237,
+     "record": 0.2933186201098237,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid moving RR_CK3",
+     "here": 0.47179527600430887,
+     "record": 0.47179527600430887,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid moving RR_Q",
+     "here": 0.0017603320984735024,
+     "record": 0.0017603320984735024,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid moving RR_N_minus_P",
+     "here": -0.0023120779800846064,
+     "record": -0.0023120779800846064,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase0 n",
+     "here": 678.0,
+     "record": 678.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase0 R_pp",
+     "here": 0.4314709637652444,
+     "record": 0.4314709637652444,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase0 RR_N",
+     "here": 0.0051020408163265345,
+     "record": 0.0051020408163265345,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase0 RR_P",
+     "here": 0.0051020408163265345,
+     "record": 0.0051020408163265345,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase0 RR_NA",
+     "here": 0.0034013605442176896,
+     "record": 0.0034013605442176896,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase0 RR_A1",
+     "here": -0.12755102040816332,
+     "record": -0.12755102040816332,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase0 RR_CK3",
+     "here": -0.535714285714286,
+     "record": -0.535714285714286,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase0 RR_Q",
+     "here": -0.0034013605442177004,
+     "record": -0.0034013605442177004,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase0 RR_N_minus_P",
+     "here": 0.0,
+     "record": 0.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase1 n",
+     "here": 755.0,
+     "record": 755.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase1 R_pp",
+     "here": 15.587624789957497,
+     "record": 15.587624789957497,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase1 RR_N",
+     "here": -0.0024519129148171735,
+     "record": -0.0024519129148171735,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase1 RR_P",
+     "here": -0.001437328260410071,
+     "record": -0.001437328260410071,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase1 RR_NA",
+     "here": -0.006383428450644672,
+     "record": -0.006383428450644672,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase1 RR_A1",
+     "here": -0.04366941450010569,
+     "record": -0.04366941450010569,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase1 RR_CK3",
+     "here": 0.6062988797294442,
+     "record": 0.6062988797294442,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase1 RR_Q",
+     "here": -0.00029592052420207544,
+     "record": -0.00029592052420207544,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase1 RR_N_minus_P",
+     "here": -0.0010145846544071025,
+     "record": -0.0010145846544071025,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase2 n",
+     "here": 6857.0,
+     "record": 6857.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase2 R_pp",
+     "here": 0.820601672982615,
+     "record": 0.820601672982615,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase2 RR_N",
+     "here": 0.0018567639257294458,
+     "record": 0.0018567639257294458,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase2 RR_P",
+     "here": 0.0028293545534924876,
+     "record": 0.0028293545534924876,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase2 RR_NA",
+     "here": 0.07895667550839966,
+     "record": 0.07895667550839966,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase2 RR_A1",
+     "here": 0.7022104332449159,
+     "record": 0.7022104332449159,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase2 RR_CK3",
+     "here": 0.9933687002652519,
+     "record": 0.9933687002652519,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase2 RR_Q",
+     "here": -0.014323607427055698,
+     "record": -0.014323607427055698,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase2 RR_N_minus_P",
+     "here": -0.000972590627763042,
+     "record": -0.000972590627763042,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull all hdenE",
+     "here": 799.6448677244994,
+     "record": 799.6448677244994,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull all hden0",
+     "here": 850.6944266039882,
+     "record": 850.6944266039882,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull all hrr0_N",
+     "here": -0.0018496143431391164,
+     "record": -0.0018496143431391164,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull all hrr0_NA",
+     "here": 0.0012751937198854104,
+     "record": 0.0012751937198854104,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull all hrr0_CK3",
+     "here": 0.7052965704054772,
+     "record": 0.7052965704054772,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull all hrr0_A1",
+     "here": 0.14339746982624066,
+     "record": 0.14339746982624066,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull all hrr0_Q",
+     "here": -0.003081624244791781,
+     "record": -0.003081624244791781,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull moving hdenE",
+     "here": 1906.807203267307,
+     "record": 1906.807203267307,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull moving hden0",
+     "here": 1961.1976363849512,
+     "record": 1961.1976363849512,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull moving hrr0_N",
+     "here": 0.002034797153517557,
+     "record": 0.002034797153517557,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull moving hrr0_NA",
+     "here": 0.00562904450886383,
+     "record": 0.00562904450886383,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull moving hrr0_CK3",
+     "here": 0.5103725862337628,
+     "record": 0.5103725862337628,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull moving hrr0_A1",
+     "here": 0.2971306488752456,
+     "record": 0.2971306488752456,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull moving hrr0_Q",
+     "here": 0.0014652801704427908,
+     "record": 0.0014652801704427908,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase0 hdenE",
+     "here": 69.50744630422821,
+     "record": 69.50744630422821,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase0 hden0",
+     "here": 70.8348799325468,
+     "record": 70.8348799325468,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase0 hrr0_N",
+     "here": 0.027872902003379336,
+     "record": 0.027872902003379336,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase0 hrr0_NA",
+     "here": 0.02776891207110878,
+     "record": 0.02776891207110878,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase0 hrr0_CK3",
+     "here": 0.014853302968761048,
+     "record": 0.014853302968761048,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase0 hrr0_A1",
+     "here": -0.1540189195701417,
+     "record": -0.1540189195701417,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase0 hrr0_Q",
+     "here": 0.028036919363764772,
+     "record": 0.028036919363764772,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase1 hdenE",
+     "here": 2857.840320086745,
+     "record": 2857.840320086745,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase1 hden0",
+     "here": 2884.1190779700787,
+     "record": 2884.1190779700787,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase1 hrr0_N",
+     "here": 0.008995511605907032,
+     "record": 0.008995511605907032,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase1 hrr0_NA",
+     "here": -0.01828317073913723,
+     "record": -0.01828317073913723,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase1 hrr0_CK3",
+     "here": 0.5982831644155694,
+     "record": 0.5982831644155694,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase1 hrr0_A1",
+     "here": -0.060471433327381224,
+     "record": -0.060471433327381224,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase1 hrr0_Q",
+     "here": 0.013938187380893932,
+     "record": 0.013938187380893932,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase2 hdenE",
+     "here": 157.95361261373935,
+     "record": 157.95361261373935,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase2 hden0",
+     "here": 179.91507128902535,
+     "record": 179.91507128902535,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase2 hrr0_N",
+     "here": -0.0008510690562469419,
+     "record": -0.0008510690562469419,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase2 hrr0_NA",
+     "here": 0.0770447347378058,
+     "record": 0.0770447347378058,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase2 hrr0_CK3",
+     "here": 0.8583435982054457,
+     "record": 0.8583435982054457,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase2 hrr0_A1",
+     "here": 0.6616825102994779,
+     "record": 0.6616825102994779,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "hull phase2 hrr0_Q",
+     "here": -0.005921499470646754,
+     "record": -0.005921499470646754,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid all RR_TG2",
+     "here": 0.3142172109901504,
+     "record": 0.3142172109901504,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid all D_TG2_deceq",
+     "here": 144.7462686567164,
+     "record": 144.7462686567164,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid moving RR_TG2",
+     "here": 0.16780956885000398,
+     "record": 0.16780956885000398,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid moving D_TG2_deceq",
+     "here": 31.776119402985078,
+     "record": 31.776119402985078,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase0 RR_TG2",
+     "here": -0.48129251700680276,
+     "record": -0.48129251700680276,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase0 D_TG2_deceq",
+     "here": -1.4079601990049748,
+     "record": -1.4079601990049748,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase1 RR_TG2",
+     "here": 0.08788839568801524,
+     "record": 0.08788839568801524,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase1 D_TG2_deceq",
+     "here": 10.343283582089553,
+     "record": 10.343283582089553,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase2 RR_TG2",
+     "here": 0.16127320954907165,
+     "record": 0.16127320954907165,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "grid phase2 D_TG2_deceq",
+     "here": 9.074626865671643,
+     "record": 9.074626865671643,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all n",
+     "here": 8290.0,
+     "record": 8290.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all R_pp",
+     "here": 5.512545835358791,
+     "record": 5.512545835358791,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all RR_N",
+     "here": -0.00041369549833977597,
+     "record": -0.00041369549833977597,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all RR_P",
+     "here": 0.0,
+     "record": 0.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all RR_NA",
+     "here": 0.01506722551848021,
+     "record": 0.01506722551848021,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all RR_A1",
+     "here": 0.38239616787327857,
+     "record": 0.38239616787327857,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all RR_CK3",
+     "here": 0.8366011648794295,
+     "record": 0.8366011648794295,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all RR_Q",
+     "here": -0.0023950792009144913,
+     "record": -0.0023950792009144913,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all n_points F0",
+     "here": 61770.0,
+     "record": 61770.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all n_points E",
+     "here": 53722.0,
+     "record": 53722.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all n_points N",
+     "here": 61805.0,
+     "record": 61805.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all n_points P",
+     "here": 61770.0,
+     "record": 61770.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all n_points NA",
+     "here": 61805.0,
+     "record": 61805.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all n_points A1",
+     "here": 62027.0,
+     "record": 62027.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all n_points CK3",
+     "here": 58908.0,
+     "record": 58908.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless all n_points Q",
+     "here": 62018.0,
+     "record": 62018.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving n",
+     "here": 1863.0,
+     "record": 1863.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving R_pp",
+     "here": 9.972947928099705,
+     "record": 9.972947928099705,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving RR_N",
+     "here": -0.0023028517873878674,
+     "record": -0.0023028517873878674,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving RR_P",
+     "here": 0.0,
+     "record": 0.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving RR_NA",
+     "here": 0.013736778685232298,
+     "record": 0.013736778685232298,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving RR_A1",
+     "here": 0.29141786049002544,
+     "record": 0.29141786049002544,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving RR_CK3",
+     "here": 0.464881510242335,
+     "record": 0.464881510242335,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving RR_Q",
+     "here": -0.0005355469272995029,
+     "record": -0.0005355469272995029,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving n_points F0",
+     "here": 61770.0,
+     "record": 61770.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving n_points E",
+     "here": 53722.0,
+     "record": 53722.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving n_points N",
+     "here": 61805.0,
+     "record": 61805.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving n_points P",
+     "here": 61770.0,
+     "record": 61770.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving n_points NA",
+     "here": 61805.0,
+     "record": 61805.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving n_points A1",
+     "here": 62027.0,
+     "record": 62027.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving n_points CK3",
+     "here": 58908.0,
+     "record": 58908.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless moving n_points Q",
+     "here": 62018.0,
+     "record": 62018.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 n",
+     "here": 678.0,
+     "record": 678.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 R_pp",
+     "here": 0.4204640514242943,
+     "record": 0.4204640514242943,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 RR_N",
+     "here": 0.0017452006980802808,
+     "record": 0.0017452006980802808,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 RR_P",
+     "here": 0.0,
+     "record": 0.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 RR_NA",
+     "here": 0.0017452006980802808,
+     "record": 0.0017452006980802808,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 RR_A1",
+     "here": -0.12216404886561959,
+     "record": -0.12216404886561959,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 RR_CK3",
+     "here": -0.5846422338568938,
+     "record": -0.5846422338568938,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 RR_Q",
+     "here": 0.001745200698080265,
+     "record": 0.001745200698080265,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 n_points F0",
+     "here": 61770.0,
+     "record": 61770.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 n_points E",
+     "here": 53722.0,
+     "record": 53722.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 n_points N",
+     "here": 61805.0,
+     "record": 61805.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 n_points P",
+     "here": 61770.0,
+     "record": 61770.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 n_points NA",
+     "here": 61805.0,
+     "record": 61805.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 n_points A1",
+     "here": 62027.0,
+     "record": 62027.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 n_points CK3",
+     "here": 58908.0,
+     "record": 58908.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase0 n_points Q",
+     "here": 62018.0,
+     "record": 62018.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 n",
+     "here": 755.0,
+     "record": 755.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 R_pp",
+     "here": 15.237718691311652,
+     "record": 15.237718691311652,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 RR_N",
+     "here": 0.0001729804532087838,
+     "record": 0.0001729804532087838,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 RR_P",
+     "here": 0.0,
+     "record": 0.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 RR_NA",
+     "here": -0.0054488842760768135,
+     "record": -0.0054488842760768135,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 RR_A1",
+     "here": -0.05747275557861962,
+     "record": -0.05747275557861962,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 RR_CK3",
+     "here": 0.5960041515308772,
+     "record": 0.5960041515308772,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 RR_Q",
+     "here": 0.0003892060197197582,
+     "record": 0.0003892060197197582,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 n_points F0",
+     "here": 61770.0,
+     "record": 61770.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 n_points E",
+     "here": 53722.0,
+     "record": 53722.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 n_points N",
+     "here": 61805.0,
+     "record": 61805.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 n_points P",
+     "here": 61770.0,
+     "record": 61770.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 n_points NA",
+     "here": 61805.0,
+     "record": 61805.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 n_points A1",
+     "here": 62027.0,
+     "record": 62027.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 n_points CK3",
+     "here": 58908.0,
+     "record": 58908.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase1 n_points Q",
+     "here": 62018.0,
+     "record": 62018.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 n",
+     "here": 6857.0,
+     "record": 6857.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 R_pp",
+     "here": 0.7956426123720032,
+     "record": 0.7956426123720032,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 RR_N",
+     "here": -0.0009119095385737746,
+     "record": -0.0009119095385737746,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 RR_P",
+     "here": 0.0,
+     "record": 0.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 RR_NA",
+     "here": 0.07988327557906257,
+     "record": 0.07988327557906257,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 RR_A1",
+     "here": 0.7622651832938173,
+     "record": 0.7622651832938173,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 RR_CK3",
+     "here": 1.0223417836950575,
+     "record": 1.0223417836950575,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 RR_Q",
+     "here": -0.004833120554440999,
+     "record": -0.004833120554440999,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 n_points F0",
+     "here": 61770.0,
+     "record": 61770.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 n_points E",
+     "here": 53722.0,
+     "record": 53722.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 n_points N",
+     "here": 61805.0,
+     "record": 61805.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 n_points P",
+     "here": 61770.0,
+     "record": 61770.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 n_points NA",
+     "here": 61805.0,
+     "record": 61805.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 n_points A1",
+     "here": 62027.0,
+     "record": 62027.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 n_points CK3",
+     "here": 58908.0,
+     "record": 58908.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gridless phase2 n_points Q",
+     "here": 62018.0,
+     "record": 62018.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T0 n",
+     "here": 1433.0,
+     "record": 1433.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T0 R_pp",
+     "here": 8.584085851273986,
+     "record": 8.584085851273986,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T0 RR_CK3",
+     "here": 0.28873609706774517,
+     "record": 0.28873609706774517,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T0 RR0_CK3",
+     "here": 0.28655721912254645,
+     "record": 0.28655721912254645,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T1 n",
+     "here": 1733.0,
+     "record": 1733.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T1 R_pp",
+     "here": 10.00364593650329,
+     "record": 10.00364593650329,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T1 RR_CK3",
+     "here": 0.41166848418756813,
+     "record": 0.41166848418756813,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T1 RR0_CK3",
+     "here": 0.4055467601492706,
+     "record": 0.4055467601492706,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T2 n",
+     "here": 2033.0,
+     "record": 2033.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T2 R_pp",
+     "here": 10.645004196919976,
+     "record": 10.645004196919976,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T2 RR_CK3",
+     "here": 0.5371617738338812,
+     "record": 0.5371617738338812,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T2 RR0_CK3",
+     "here": 0.5222502849735142,
+     "record": 0.5222502849735142,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T5 n",
+     "here": 2933.0,
+     "record": 2933.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T5 R_pp",
+     "here": 10.145318413048972,
+     "record": 10.145318413048972,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T5 RR_CK3",
+     "here": 0.6844340411302458,
+     "record": 0.6844340411302458,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T5 RR0_CK3",
+     "here": 0.6560466681624412,
+     "record": 0.6560466681624412,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T10 n",
+     "here": 4433.0,
+     "record": 4433.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T10 R_pp",
+     "here": 8.393179601653364,
+     "record": 8.393179601653364,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T10 RR_CK3",
+     "here": 0.766226299039927,
+     "record": 0.766226299039927,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T10 RR0_CK3",
+     "here": 0.7213731809255249,
+     "record": 0.7213731809255249,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T20 n",
+     "here": 7422.0,
+     "record": 7422.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T20 R_pp",
+     "here": 6.003263123884753,
+     "record": 6.003263123884753,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T20 RR_CK3",
+     "here": 0.8179392125773243,
+     "record": 0.8179392125773243,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "trunc T20 RR0_CK3",
+     "here": 0.7609278264843978,
+     "record": 0.7609278264843978,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed all R_pp",
+     "here": 4.862478920235974,
+     "record": 4.862478920235974,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed all RR_N",
+     "here": -0.00019747479110869187,
+     "record": -0.00019747479110869187,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed all RR_CK3",
+     "here": 0.8166323142811299,
+     "record": 0.8166323142811299,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed moving R_pp",
+     "here": 6.315977813562354,
+     "record": 6.315977813562354,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed moving RR_N",
+     "here": -0.003086550251574988,
+     "record": -0.003086550251574988,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed moving RR_CK3",
+     "here": 0.29926852987188707,
+     "record": 0.29926852987188707,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed phase0 R_pp",
+     "here": 0.41019093323940753,
+     "record": 0.41019093323940753,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed phase0 RR_N",
+     "here": -4.712986113480318e-18,
+     "record": -4.712986113480318e-18,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed phase0 RR_CK3",
+     "here": -0.6261180679785334,
+     "record": -0.6261180679785334,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed phase1 R_pp",
+     "here": 5.636058119996046,
+     "record": 5.636058119996046,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed phase1 RR_N",
+     "here": -2.5480741229266716e-17,
+     "record": -2.5480741229266716e-17,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed phase1 RR_CK3",
+     "here": 0.347246580147317,
+     "record": 0.347246580147317,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed phase2 R_pp",
+     "here": 0.7921599527519178,
+     "record": 0.7921599527519178,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed phase2 RR_N",
+     "here": 0.000732734933137941,
+     "record": 0.000732734933137941,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "signed phase2 RR_CK3",
+     "here": 0.9821395860047629,
+     "record": 0.9821395860047629,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p50_a6p0 n",
+     "here": 8290.0,
+     "record": 8290.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p50_a6p0 denE_over_3s",
+     "here": 0.018684119578365306,
+     "record": 0.018684119578365306,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p50_a6p0 den0 dec_eq",
+     "here": 9.318407960199005,
+     "record": 9.318407960199005,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p50_a6p0 RR0_N",
+     "here": -0.0026695141484249884,
+     "record": -0.0026695141484249884,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p50_a6p0 RR0_CK3",
+     "here": 0.8793379604911907,
+     "record": 0.8793379604911907,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a6p0 n",
+     "here": 8290.0,
+     "record": 8290.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a6p0 denE_over_3s",
+     "here": 0.12224598237428722,
+     "record": 0.12224598237428722,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a6p0 den0 dec_eq",
+     "here": 58.80099502487561,
+     "record": 58.80099502487561,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a6p0 RR0_N",
+     "here": 0.0004230476351637103,
+     "record": 0.0004230476351637103,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a6p0 RR0_CK3",
+     "here": 0.9359505880362129,
+     "record": 0.9359505880362129,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p00_a6p0 n",
+     "here": 8290.0,
+     "record": 8290.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p00_a6p0 denE_over_3s",
+     "here": 0.2410791429065147,
+     "record": 0.2410791429065147,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p00_a6p0 den0 dec_eq",
+     "here": 116.7860696517413,
+     "record": 116.7860696517413,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p00_a6p0 RR0_N",
+     "here": 0.0007668058277242975,
+     "record": 0.0007668058277242975,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p00_a6p0 RR0_CK3",
+     "here": 0.9431711681008776,
+     "record": 0.9431711681008776,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p25_a6p0 n",
+     "here": 8290.0,
+     "record": 8290.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p25_a6p0 denE_over_3s",
+     "here": 0.3844608605495076,
+     "record": 0.3844608605495076,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p25_a6p0 den0 dec_eq",
+     "here": 187.90547263681586,
+     "record": 187.90547263681586,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p25_a6p0 RR0_N",
+     "here": 0.0010325928671661862,
+     "record": 0.0010325928671661862,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p25_a6p0 RR0_CK3",
+     "here": 0.9433662527469617,
+     "record": 0.9433662527469617,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p50_a6p0 n",
+     "here": 8290.0,
+     "record": 8290.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p50_a6p0 denE_over_3s",
+     "here": 0.5371414377052014,
+     "record": 0.5371414377052014,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p50_a6p0 den0 dec_eq",
+     "here": 265.10945273631836,
+     "record": 265.10945273631836,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p50_a6p0 RR0_N",
+     "here": 0.0010696792838778653,
+     "record": 0.0010696792838778653,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p50_a6p0 RR0_CK3",
+     "here": 0.9328916996640831,
+     "record": 0.9328916996640831,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p80_a6p0 n",
+     "here": 8290.0,
+     "record": 8290.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p80_a6p0 denE_over_3s",
+     "here": 0.7321798859512703,
+     "record": 0.7321798859512703,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p80_a6p0 den0 dec_eq",
+     "here": 362.36815920398004,
+     "record": 362.36815920398004,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p80_a6p0 RR0_N",
+     "here": 0.001084628480421767,
+     "record": 0.001084628480421767,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t1p80_a6p0 RR0_CK3",
+     "here": 0.8447196441320227,
+     "record": 0.8447196441320227,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a4p0 n",
+     "here": 8290.0,
+     "record": 8290.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a4p0 denE_over_3s",
+     "here": 0.29285467426991546,
+     "record": 0.29285467426991546,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a4p0 den0 dec_eq",
+     "here": 142.32338308457713,
+     "record": 142.32338308457713,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a4p0 RR0_N",
+     "here": -0.00010486943755022025,
+     "record": -0.00010486943755022025,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a4p0 RR0_CK3",
+     "here": 0.9493131051840455,
+     "record": 0.9493131051840455,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a5p0 n",
+     "here": 8290.0,
+     "record": 8290.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a5p0 denE_over_3s",
+     "here": 0.17850354242267155,
+     "record": 0.17850354242267155,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a5p0 den0 dec_eq",
+     "here": 86.03482587064676,
+     "record": 86.03482587064676,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a5p0 RR0_N",
+     "here": 0.0005204417972590089,
+     "record": 0.0005204417972590089,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a5p0 RR0_CK3",
+     "here": 0.9457583993523392,
+     "record": 0.9457583993523392,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a7p6 n",
+     "here": 8290.0,
+     "record": 8290.0,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a7p6 denE_over_3s",
+     "here": 0.06369880767236911,
+     "record": 0.06369880767236911,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a7p6 den0 dec_eq",
+     "here": 30.860696517412933,
+     "record": 30.860696517412933,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a7p6 RR0_N",
+     "here": -0.0025793970659358442,
+     "record": -0.0025793970659358442,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "rs est t0p75_a7p6 RR0_CK3",
+     "here": 0.9166532323069483,
+     "record": 0.9166532323069483,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gap2 est den0 dec_eq",
+     "here": 94.65174129353235,
+     "record": 94.65174129353235,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gap2 est RR0_N",
+     "here": -0.0007884362680683661,
+     "record": -0.0007884362680683661,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gap2 est RR0_CK3",
+     "here": 0.5763994743758212,
+     "record": 0.5763994743758212,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gap2 cens-unsafe den0 dec_eq",
+     "here": 100.34825870646767,
+     "record": 100.34825870646767,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gap2 cens-unsafe RR0_N",
+     "here": -0.0006941001487357494,
+     "record": -0.0006941001487357494,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gap2 cens-unsafe RR0_CK3",
+     "here": 0.5615765989092713,
+     "record": 0.5615765989092713,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gap2 as-scored den0 dec_eq",
+     "here": 93.10447761194028,
+     "record": 93.10447761194028,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gap2 as-scored RR0_N",
+     "here": -0.000587795233515112,
+     "record": -0.000587795233515112,
+     "absdiff": 0.0,
+     "ok": true
+    },
+    {
+     "name": "gap2 as-scored RR0_CK3",
+     "here": 0.5705354280218019,
+     "record": 0.5705354280218019,
+     "absdiff": 0.0,
+     "ok": true
+    }
+   ]
+  },
+  "kernel_vs_point_path": [
+   {
+    "what": "record gridless all",
+    "identical": true,
+    "differ": []
+   },
+   {
+    "what": "record gridless moving",
+    "identical": true,
+    "differ": []
+   },
+   {
+    "what": "record gridless phase0",
+    "identical": true,
+    "differ": []
+   },
+   {
+    "what": "record gridless phase1",
+    "identical": true,
+    "differ": []
+   },
+   {
+    "what": "record gridless phase2",
+    "identical": true,
+    "differ": []
+   }
+  ],
+  "runs": [
+   "p1b_fit_finite_0005",
+   "p1b_fit_finite_0006",
+   "p1b_fit_finite_0007",
+   "p1b_fit_finite_0008",
+   "p1b_fit_finite_0009",
+   "p1b_fit_finite_0010",
+   "p1b_fit_finite_0011",
+   "p1b_fit_finite_0012",
+   "p1b_fit_finite_0013",
+   "p1b_fit_finite_0014",
+   "p1b_fit_finite_0015",
+   "p1b_fit_finite_0016",
+   "p1b_fit_finite_0017",
+   "p1b_fit_finite_0018",
+   "p1b_fit_finite_0019",
+   "p1b_fit_finite_0020",
+   "p1b_fit_finite_0021",
+   "p1b_fit_finite_0022",
+   "p1b_fit_finite_0023",
+   "p1b_fit_finite_0024",
+   "p1b_fit_finite_0025",
+   "p1b_fit_finite_0026",
+   "p1b_fit_finite_0027",
+   "p1b_fit_finite_0028",
+   "p1b_fit_finite_0029",
+   "p1b_fit_finite_0030",
+   "p1b_fit_finite_0031",
+   "p1b_fit_finite_0032",
+   "p1b_fit_finite_0033",
+   "p1b_fit_finite_0034",
+   "p1b_fit_finite_0035",
+   "p1b_fit_finite_0036",
+   "p1b_fit_finite_0037",
+   "p1b_fit_finite_0038",
+   "p1b_fit_finite_0039"
+  ]
+ },
+ "written": "2026-11-20 02:17:47",
+ "seconds": 103.52439951896667
+}

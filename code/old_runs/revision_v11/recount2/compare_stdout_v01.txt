@@ -1,0 +1,96 @@
+# Recount 2 (independent second program): the extended truth of the reaction-and-stop scoring — comparison
+
+Written by `recount2_compare_v01.py` on the results of `recount2_ext_v01.py` (own code, written from the specification; the first program was not read). Files of the first program opened for this comparison, after the own results were written: `analysis\out\REV_E1_EXTRACT_SUMMARY_v01.json`, `analysis\out\REV_E2_EXTENDED_TRUTH_v01.json`, the arrays of `analysis\out\ext\<run>.npz`. No `.py` of the first program was opened.
+
+## Anchors (own results against the stored results of record)
+
+| anchor | result |
+|---|---|
+| decision ticks rebuilt = stored `k` (35 runs) | yes (the program stops otherwise) |
+| own evaluated rule (target present, k + 60 <= kmax) = stored `evaluated` | 0 mismatches |
+| (a) own clearance on frames 0..60 against stored `clearR_<key>`: safe flags | identical (9 settings, 140930 pairs each) |
+| (a) largest absolute difference of the values | 0 m (within 1e-9: True) |
+| (a) same against the recount cache `<run>_pack.npz` | flags differing 0, largest difference 6.39e-14 m |
+| (b) own `t_stop_abs` against stored `tstopR_<key>` | largest difference 0 s, 0 values not bit-equal |
+| (c) (0.75 s, 6 m/s2): evaluated pairs | 140930 (expected 140,930) |
+| (c) late and safe on the 61-frame window | 5356 (expected 5,356) |
+| (c) of those censored | 153 (expected 153) |
+| continuation formula reproduces `replan_s` on frames j_react+1 and 60 | 0 differences |
+| truth frames contiguous 0..kmax in every run; actor extents constant | True; True |
+| true actors per run (max); an actor ending before the window | 1; 0 cases |
+
+## Counts per setting: recount 2 beside the first program
+
+E1 = `REV_E1_EXTRACT_SUMMARY_v01.json` (`totals`), E2 = `REV_E2_EXTENDED_TRUTH_v01.json` (`pair_counts`). Evaluated pairs: 140930 in every setting.
+
+| setting | late & safe on 61 frames (R2 / E1 / E2) | of those censored (R2 / E1 / E2) | late, safe on 61, extended <= 0 (R2 / E1 / E2) | of those censored (R2) | clearance <= 0 on 61 frames (R2 / E2) | extended clearance <= 0 (R2 / E2) | all agree |
+|---|---|---|---|---|---|---|---|
+| tau 0.50 s, A 6.0 | 2897 / 2897 / 2897 | 94 / 94 / 94 | 8 / 8 / 8 | 4 | 1417 / 1417 | 1425 / 1425 | yes |
+| tau 0.75 s, A 6.0 | 5356 / 5356 / 5356 | 153 / 153 / 153 | 28 / 28 / 28 | 8 | 3334 / 3334 | 3362 / 3362 | yes |
+| tau 1.00 s, A 6.0 | 5301 / 5301 / 5301 | 230 / 230 / 230 | 126 / 126 / 126 | 30 | 5631 / 5631 | 5757 / 5757 | yes |
+| tau 1.25 s, A 6.0 | 7048 / 7048 / 7048 | 296 / 296 / 296 | 215 / 215 / 215 | 49 | 8530 / 8530 | 8745 / 8745 | yes |
+| tau 1.50 s, A 6.0 | 8583 / 8583 / 8583 | 372 / 372 / 372 | 374 / 374 / 374 | 81 | 12714 / 12714 | 13088 / 13088 | yes |
+| tau 1.80 s, A 6.0 | 9900 / 9900 / 9900 | 487 / 487 / 487 | 651 / 651 / 651 | 139 | 15824 / 15824 | 16475 / 16475 | yes |
+| tau 0.75 s, A 4.0 | 8905 / 8905 / 8905 | 773 / 773 / 773 | 440 / 440 / 440 | 59 | 4373 / 4373 | 4813 / 4813 | yes |
+| tau 0.75 s, A 5.0 | 6781 / 6781 / 6781 | 365 / 365 / 365 | 161 / 161 / 161 | 26 | 3740 / 3740 | 3901 / 3901 | yes |
+| tau 0.75 s, A 7.6 | 2431 / 2431 / 2431 | 37 / 37 / 37 | 0 / 0 / 0 | 0 | 2802 / 2802 | 2802 / 2802 | yes |
+
+Further shared counts (late pairs, censored pairs still > 0, pairs unsafe under the 3 s commitment, decisions without a safe row, non-late pairs changed, largest last frame) are in `RECOUNT2_COMPARE_v01.json` -> `counts`. Count entries that differ: **0**.
+
+## Element-wise comparison with `analysis\out\ext\<run>.npz` (evaluated decisions x 17 rows)
+
+| setting | pairs | max abs diff `clearX` (m) | values differing | safe/unsafe flags differing | `late` differing | `cens` differing | max abs diff `clear61` (m) | max abs diff `tstop` (s) | last frame differing (own J vs `jend`) |
+|---|---|---|---|---|---|---|---|---|---|
+| tau 0.50 s, A 6.0 | 140930 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| tau 0.75 s, A 6.0 | 140930 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| tau 1.00 s, A 6.0 | 140930 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| tau 1.25 s, A 6.0 | 140930 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| tau 1.50 s, A 6.0 | 140930 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| tau 1.80 s, A 6.0 | 140930 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| tau 0.75 s, A 4.0 | 140930 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| tau 0.75 s, A 5.0 | 140930 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| tau 0.75 s, A 7.6 | 140930 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+Over all 9 settings (1268370 pairs): largest absolute difference of the extended clearance **0 m**; pairs whose safe/unsafe flag differs **0**; `late` flags differing 0; `cens` flags differing 0; NaN mismatches 0; arrays with a different shape or decision list 0.
+Non-evaluated decisions: NaN in the own arrays; entries of the first program that are not NaN there: 0.
+
+## OPTIONAL: scoring at (0.75 s, 6 m/s2) with the own extended clearances
+
+Own extended clearances scored with the earlier independent recount library `recount\rc_lib_v01.py` (wrong go = extended clearance <= 0; caution axis from the 3 s commitment clearance; 201 levels; perfect oracle = first row with extended clearance > 0, else the fallback row). First program: `REV_E2_EXTENDED_TRUTH_v01.json` -> `scorings.est_t0p75_a6p0.pops`.
+
+| population | quantity | recount 2 | first program | abs diff |
+|---|---|---|---|---|
+| all | n | 8290 | 8290 | 0 |
+| all | denE | 136.537997587 | 136.537997587 | 0 |
+| all | den0 | 142.569360676 | 142.569360676 | 0 |
+| all | denE_over_3s | 0.122245982374 | 0.122245982374 | 0 |
+| all | den0_over_3s | 0.118291730889 | 0.118291730889 | 0 |
+| all | D_N | 0.0603136308806 | 0.0603136308806 | 0 |
+| all | D_NA | 1.67671893848 | 1.67671893848 | 0 |
+| all | D_AM | 81.2545235223 | 81.2545235223 | 0 |
+| all | D_CK3 | 133.43787696 | 133.43787696 | 0 |
+| all | D_Q | -4.46320868516 | -4.46320868516 | 0 |
+| moving | n | 1863 | 1863 | 0 |
+| moving | denE | 124.74503489 | 124.74503489 | 0 |
+| moving | den0 | 131.132581857 | 131.132581857 | 0 |
+| moving | denE_over_3s | 0.061059877565 | 0.061059877565 | 0 |
+| moving | den0_over_3s | 0.0623341498265 | 0.0623341498265 | 0 |
+| moving | D_N | -1.6639828234 | -1.6639828234 | 0 |
+| moving | D_NA | -2.73752012882 | -2.73752012882 | 0 |
+| moving | D_AM | 33.655394525 | 33.655394525 | 0 |
+| moving | D_CK3 | 4.99194847021 | 4.99194847021 | 0 |
+| moving | D_Q | -5.743424584 | -5.743424584 | 0 |
+
+`denE_over_3s` of the first program equals denE(extended) / denE(3 s commitment scoring). The other reading, denE(extended) / denE(reaction-and-stop on the 61-frame window), is 1.011257 in the own computation (all evaluated decisions).
+As scored on 61 frames (all): denE recount 2 135.018094089, first program (`asscored_t0p75_a6p0`) 135.018094089; den0 141.013268999 against 141.013268999.
+Censored pairs counted unsafe (own reading: every late, 61-frame-safe, censored pair set unsafe; all): denE recount 2 161.085645356, first program (`cens_t0p75_a6p0`, whose exact definition was not checked) 161.085645356; den0 168.552472859 against 168.552472859.
+
+## Points of the specification that needed a reading
+
+1. **Which true actors and frames.** `ol_extract_v01.window_truth` takes the actors present at the decision frame and follows each over its contiguous true frames (it stops at the first frame without the actor). The same was done beyond frame 60. In these 35 runs there is one true actor per run, present in every frame, with constant extents, so no other reading can change a number.
+2. **"Censored"** was taken literally as late and J > kmax - k. The extended clearance of a censored pair is the minimum over the frames that exist, so a censored pair with extended clearance <= 0 is a definite contact and one with > 0 is undetermined. The count of flag changes includes the censored ones (given separately above).
+3. **Frames after the stop** (j > J) are not examined: a contact after the ego has come to rest is not counted, as specified.
+4. **"Ratio to the 3 s denE"** (optional part) can mean the 3 s commitment scoring or the reaction-and-stop scoring on the 3 s window; both are given; the first program's `denE_over_3s` is the former.
+5. `oc.poly_dist` returns 0 for overlapping or touching rectangles, so "clearance <= 0" means clearance = 0.
+6. **What the agreement covers.** As the specification directs, the position profile comes from the code of record (`replan_s`, `brake_profile`) and the distances from `oc.rect_corners` / `oc.poly_dist`. The bit-identical values suggest the first program calls the same functions. The agreement therefore checks the extension logic (frames used, last frame J, late and censored flags, truth window, counting, and in the optional part the scoring), not those shared functions; an error inside them would not show here.
+

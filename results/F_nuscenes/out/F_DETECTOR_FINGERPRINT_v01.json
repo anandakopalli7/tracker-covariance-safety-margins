@@ -1,0 +1,16 @@
+{
+ "code": "f11_fingerprint_v01.py",
+ "result_file": "<library folder>\\infos_val_10sweeps_withvelo_filter_True.json",
+ "result_sha256": "4186f748f91e071c1276287244e23a01da5908a373af85ee2dfb08ea935b903e",
+ "nd_score": 0.6845417768947929,
+ "mean_ap": 0.6153713531012205,
+ "tp_errors": {
+  "trans_err": 0.28174607104274635,
+  "scale_err": 0.2491043903634449,
+  "orient_err": 0.27920838202931225,
+  "vel_err": 0.23364134021750796,
+  "attr_err": 0.18773881290516176
+ },
+ "reference": "GitHub tianweiy/CenterPoint#249, 18 Jan 2022: val NDS 68.5 with flip augmentation, 66.8 without",
+ "written": "2026-11-20 05:30:35"
+}

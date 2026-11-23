@@ -1,0 +1,24 @@
+## Contract Paraphrase
+
+D1 (methodology_rigor): Seen from the practitioner side, this asks whether the study is built and reported so that someone outside the authors' lab could repeat it and trust the numbers: the experimental design fits the question, data and simulation settings are handled transparently, statistics are reported with their uncertainty, and enough configuration detail is released to rerun the work. For a safety-assurance reader this is the precondition for treating any result as evidence at all. This dimension belongs to the methodology seat; I do not score it.
+
+D2 (domain_accuracy): This asks whether what the work asserts matches the current state of knowledge in its home field, whether earlier studies are described faithfully rather than in a convenient caricature, and whether technical vocabulary and reported results are free of factual slips. Cross-disciplinary readers depend on this heavily because they cannot easily audit specialist claims themselves. This dimension belongs to the domain seat; I do not score it.
+
+D3 (argumentative_coherence): This asks whether the main thesis holds together from start to finish, whether each conclusion is actually carried by the evidence offered, and whether any premise the argument leans on is left unsupported, including tacit premises about who gains from the proposed approach, who absorbs its costs or risks, and who is excluded from consideration. Those stakeholder premises overlap with my practical lens, but this dimension is owned by the devil's-advocate and methodology seats; I do not score it.
+
+D4 (cross_disciplinary_relevance): This is my dimension. It asks whether readers from neighbouring communities, here principally intelligent-transportation engineers, vehicle-safety and safety-assurance practitioners, and regulators or assessors, can follow the framing, apply the definitions, and judge the stated implications without the authors' specialist background, and whether any claim that reaches into another discipline (safety standards, regulation, deployment practice, human factors) is backed by evidence rather than asserted. Accessibility alone is not enough; the practical consequences claimed must be substantiated, with their costs and the parties they affect made explicit.
+
+D5 (writing_and_structure): This asks whether the manuscript is organised so a reader can find and follow the argument, whether the prose explains rather than obscures, whether figures and tables are legible and carry the information they are meant to, and whether the presentation follows the conventions expected by its target outlet. Clear structure matters for adjacent-field readers, but this dimension belongs to the editor-in-chief seat; I do not score it.
+
+D6 (venue_fit_and_contribution): This asks whether the work belongs in the venue it has been configured for and whether it adds something new and consequential for that venue's readers, rather than restating known results. Judging the venue match and the overall significance of the contribution is the editor-in-chief's call; I do not score it and make no venue-alignment judgement here.
+
+## Scoring Plan
+
+### D4: cross_disciplinary_relevance
+dimension_id: D4
+what_to_look_for: Whether core terms, metrics, scenario parameters and decision criteria are defined in plain operational language that ITS engineers and safety-assurance practitioners could apply without the authors' specialist background; whether references to safety standards, regulations and safety models (for example ISO 21448 SOTIF, ISO 26262, UN R157 ALKS, RSS) are used for what those documents actually require and within their stated scope; and whether every claimed practical, safety or deployment implication is traced to the presented evidence, states the validity gap between the test setting and real operation, and names the operational costs (comfort, throughput, nuisance interventions, compute or integration effort) and the affected parties (occupants, surrounding traffic, vulnerable road users, integrators, assessors).
+what_triggers_block: A central practical, safety or regulatory claim would mislead a practitioner who acted on it, for example a standard or regulation is cited as requiring, endorsing or being satisfied by the approach when it does not, or simulation-only or narrow-scenario results are presented as deployment-ready safety evidence without any statement of the validity gap or the conditions under which the implication holds.
+what_triggers_warn: The adjacent-field framing is incomplete but not misleading, for example key metrics or terms are left undefined or given only in specialist notation, standards are cited loosely by name without the relevant clause or scope, or practical implications are stated without naming their costs, trade-offs, or which parties benefit and which bear the residual risk.
+criteria_binding_unavailable
+
+[CONTRACT-ACKNOWLEDGED]

@@ -1,0 +1,35 @@
+{
+ "status": "PASS",
+ "populations": {
+  "0": {
+   "evals": 41,
+   "values_not_identical": 0,
+   "max_abs_diff": 0.0,
+   "fast_s": 128.63053345680237,
+   "library_s": 43.22584819793701
+  },
+  "2": {
+   "evals": 41,
+   "values_not_identical": 0,
+   "max_abs_diff": 0.0,
+   "fast_s": 1.3409340381622314,
+   "library_s": 59.41063570976257
+  },
+  "3": {
+   "evals": 41,
+   "values_not_identical": 0,
+   "max_abs_diff": 0.0,
+   "fast_s": 0.9881224632263184,
+   "library_s": 31.272424697875977
+  },
+  "4": {
+   "evals": 41,
+   "values_not_identical": 0,
+   "max_abs_diff": 0.0,
+   "fast_s": 0.8526301383972168,
+   "library_s": 27.953887701034546
+  }
+ },
+ "nboot": 40,
+ "note": "old evaluation runs of record; full sample + first NB rows of default_rng(20261113)"
+}

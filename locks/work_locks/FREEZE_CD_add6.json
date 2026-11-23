@@ -1,0 +1,52 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "addendum_to": "work/locks/FREEZE_CD.json (sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7)",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5)",
+ "written": "2026-11-21 17:05 Eastern Standard Time",
+ "approval": "Coordinator's messages to CD, 21 Nov 2026: replacements per A11 sec. 3.2 (reported 15:10 and 16:45); the data-side alias of the three retried runs approved about 17:05 with conditions 1-5 (byte-identical arrays, record with SHA-256 and statement, tool and record frozen here before the analysis of record, departure record X-6, 390 runs listed). Written before the X analysis of record.",
+ "kind": "adds files: X replacements (A11 sec. 3.2) and orchestration/export tools, before the X analysis of record; no frozen file changed",
+ "adds": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\REPLACEMENTS_X_v13.json",
+   "sha256": "7b983d5507ab194c95d479ddf605a72278d55189304ef98b03e343a60a91cd3a"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\make_reserve_jobs_x_v13.py",
+   "sha256": "c49ec183bc92cc50b47515dc5e6b8e024e47db3af6788c6a167fdec79a8430ea"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\jobs_x\\JOBS_PX13_claude-v13cd-x6_v02.json",
+   "sha256": "e037f4e463eed34bb6f840358c0bb7b0ace1448c3d56794a83d0cd1adb208abd"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\jobs_x\\JOBS_PX13_claude-v13cd-x6_v03.json",
+   "sha256": "aafdf8d9b6d1404915826103765cfdd123664f476c8b24ba5f154d37963a4019"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\x_run_pods_v13.py",
+   "sha256": "a0dd79dcf673c2911fe29ede5ec51c3ddbeb4318d4f3251657e7b03b518c314b"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\make_export_xy_v13.py",
+   "sha256": "1e9139a60517c3ac6a00fb07efce87c6b980f4ac6e18e683f8243c256a969012"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\alias_retries_x_v13.py",
+   "sha256": "8091b01879cd2d026a5743d7594c853154b548707a8497154e0658d20c75459a"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\out\\ALIAS_RETRIES_X_v13.json",
+   "sha256": "bc0a53b105d7d12c5acabdbe717fe5991781febadb846e32480c3ce3fc3f2d1f"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\DEVIATIONS_X_v13.json",
+   "sha256": "dea64de8a861578ee345ed29de89a2fe8e9cef89f9a6f10c68694dd64bb34eb2"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\make_freeze_add6_v13.py",
+   "sha256": "043846a4aaee05364afe067d264dbdb4707b8a9702763ca14b051f0f2fe8ea5d"
+  }
+ ],
+ "uses": [],
+ "replaces": []
+}

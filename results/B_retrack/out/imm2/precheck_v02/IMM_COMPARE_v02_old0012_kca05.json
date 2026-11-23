@@ -1,0 +1,23 @@
+{
+ "code": "imm_compare_v02.py",
+ "kappa_ca": 0.5,
+ "constants": "imm2\\scratch_v02\\consts_kca05.json",
+ "diag": 0.95,
+ "runs": [
+  {
+   "cap": "<library folder>\\fit_finite_0012",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 1.6323932550120753e-14,
+   "centre_max_abs_diff": 1.7053025658242404e-13,
+   "velocity_max_abs_diff": 1.4677712170674262e-14,
+   "pass_1e9": true,
+   "seconds": 14.1
+  }
+ ],
+ "all_pass": true,
+ "written": "2026-11-21 13:55:27"
+}

@@ -1,0 +1,72 @@
+{
+ "name": "FREEZE_DR_A13_ADD01",
+ "layered_on": [
+  "work\\locks\\FREEZE_DR_A13.json"
+ ],
+ "reason": "AMENDMENT_13 sec. 3 v02: the primary arm becomes the coast-count margin F0_coast (the coordinator's decision from the domain seat's report, before any value on A11's or the new runs); v01's flag kept as a descriptive secondary; the tie rule of the count p (delta* <= 1e-12 counts against), found by the pre-lock agreement test; text, both programs, the export, the code tests on the 35 old runs (both programs agree on 41 keys), and records R1-R6",
+ "real_DRF_outputs_existing": [],
+ "written": "2026-11-22 06:46:58",
+ "n": 12,
+ "entries": [
+  {
+   "group": "spec",
+   "path": "work\\F_dropout\\A13_3_DRFLAG_v02.md",
+   "sha256": "bcf5ccd9db0d49db19867b31b114ea23efb12ed66515121cb0e3574faefce7e6"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_flag_v02.py",
+   "sha256": "b25c3dfbf2ac16032eb8fd8c8ba4a14c5ae1db65b70e364993d6c96e56ab2a2b"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_export_v05.py",
+   "sha256": "4fe8ef81d8090b4851e15bfcfa8eccf9047c79f5a1c20473cfd388183c0c45bb"
+  },
+  {
+   "group": "test",
+   "path": "work\\F_dropout\\out_a13\\TESTOLD_DRF_RESULTS_v02.json",
+   "sha256": "b3924f4c940127dd0d64ad1907c1f0c789734495995851c7d5dfd07d63913774"
+  },
+  {
+   "group": "test",
+   "path": "work\\F_dropout\\logs\\drf_testold_v02.log",
+   "sha256": "795689ecee921da1a5d0f6caee4265e337591733a1b35ca51abbcc7ad4f20aad"
+  },
+  {
+   "group": "test",
+   "path": "work\\F_dropout\\out_a13\\superseded\\TESTOLD_DRF_RESULTS_v02_pretie.json",
+   "sha256": "417a1dbefa32bbaf329efef6b8bc13db05ff5f2404d39a3aa4f4351c826ce3ba"
+  },
+  {
+   "group": "test",
+   "path": "work\\F_dropout\\out_a13\\superseded\\DRF_COMPARE_TESTOLD_v02_pretie.json",
+   "sha256": "5ed1381f57ca65c4699383b6706d6c69c21add1a4c007e6ea8f0767976ee471a"
+  },
+  {
+   "group": "recount",
+   "path": "work\\F_dropout\\recount\\dr_recount_a13_flag_v02.py",
+   "sha256": "bdb63f3c220a0fcb3b1af7e313b94441c3dc8ecb185107ea67327ecbe1d5d5cf"
+  },
+  {
+   "group": "recount",
+   "path": "work\\F_dropout\\recount\\TESTOLD_DRF_RECOUNT_v02.json",
+   "sha256": "452d4906eac9a64354bc4b67b3c7a218d02b42f78148ad7dd19113bc04fd8d9e"
+  },
+  {
+   "group": "recount",
+   "path": "work\\F_dropout\\recount\\dr_recount_a13_flag_v01.py",
+   "sha256": "519170694dd99e9596c6992c2d5a8664f7ce6689429a62eb8a07523361e4abbf"
+  },
+  {
+   "group": "agreement",
+   "path": "work\\F_dropout\\out_a13\\DRF_COMPARE_TESTOLD_v02.json",
+   "sha256": "5d7dab5b497f30d7c1bf92fc5258db0a28730c0f1dbd47dad45a36dc7685e666"
+  },
+  {
+   "group": "records",
+   "path": "work\\F_dropout\\notes\\DR_A13_RECORDS_v01.md",
+   "sha256": "ded5461c2994a7dac8527a15831bd5eea2d52c05ca29bd05147eaadaaf60ca2a"
+  }
+ ]
+}

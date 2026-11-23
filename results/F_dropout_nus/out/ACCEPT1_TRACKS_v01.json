@@ -1,0 +1,143 @@
+{
+ "ref": "../../F_nuscenes/cache/tracks_T1/val",
+ "new": "../cache/tracks_accept/val",
+ "n_ref": 150,
+ "n_new": 150,
+ "missing": [],
+ "problems": [],
+ "n_problems": 0,
+ "per_key": {
+  "trk_P": {
+   "files": 150,
+   "bits_differ": 3651823,
+   "pattern_differ": 0,
+   "max_abs": 8.1601392309949e-15,
+   "max_rel": 1.0368106698793194e-10,
+   "shape_or_dtype_differ": 0,
+   "string_differ": 0,
+   "elements": 30883680
+  },
+  "trk_center": {
+   "files": 150,
+   "bits_differ": 992,
+   "pattern_differ": 0,
+   "max_abs": 4.547473508864641e-13,
+   "max_rel": 3.613068784506303e-13,
+   "shape_or_dtype_differ": 0,
+   "string_differ": 0,
+   "elements": 1143840
+  },
+  "trk_id": {
+   "files": 150,
+   "bits_differ": 0,
+   "pattern_differ": 0,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "shape_or_dtype_differ": 0,
+   "string_differ": 0,
+   "elements": 381280
+  },
+  "trk_kf": {
+   "files": 150,
+   "bits_differ": 0,
+   "pattern_differ": 0,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "shape_or_dtype_differ": 0,
+   "string_differ": 0,
+   "elements": 381280
+  },
+  "trk_name": {
+   "files": 150,
+   "bits_differ": 0,
+   "pattern_differ": 0,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "shape_or_dtype_differ": 0,
+   "string_differ": 0,
+   "elements": 381280
+  },
+  "trk_score": {
+   "files": 150,
+   "bits_differ": 0,
+   "pattern_differ": 0,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "shape_or_dtype_differ": 0,
+   "string_differ": 0,
+   "elements": 381280
+  },
+  "trk_size": {
+   "files": 150,
+   "bits_differ": 3248,
+   "pattern_differ": 0,
+   "max_abs": 1.0658141036401503e-14,
+   "max_rel": 4.909446426895182e-15,
+   "shape_or_dtype_differ": 0,
+   "string_differ": 0,
+   "elements": 1143840
+  },
+  "trk_state_time": {
+   "files": 150,
+   "bits_differ": 0,
+   "pattern_differ": 0,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "shape_or_dtype_differ": 0,
+   "string_differ": 0,
+   "elements": 381280
+  },
+  "trk_vel": {
+   "files": 150,
+   "bits_differ": 114812,
+   "pattern_differ": 0,
+   "max_abs": 8.615330671091215e-14,
+   "max_rel": 1.5863461204426193e-09,
+   "shape_or_dtype_differ": 0,
+   "string_differ": 0,
+   "elements": 762560
+  },
+  "trk_yaw": {
+   "files": 150,
+   "bits_differ": 2362,
+   "pattern_differ": 0,
+   "max_abs": 9.769962616701378e-15,
+   "max_rel": 8.184612083820983e-14,
+   "shape_or_dtype_differ": 0,
+   "string_differ": 0,
+   "elements": 381280
+  }
+ },
+ "worst_scene_per_key": {
+  "trk_P": "scene-0332",
+  "trk_center": "scene-0332",
+  "trk_size": "scene-0094",
+  "trk_vel": "scene-0332",
+  "trk_yaw": "scene-0332"
+ },
+ "meta_numbers_max_abs": {
+  "n_kf": 0.0,
+  "n_rows": 0.0
+ },
+ "float_keys": [
+  "trk_P",
+  "trk_center",
+  "trk_id",
+  "trk_kf",
+  "trk_name",
+  "trk_score",
+  "trk_size",
+  "trk_state_time",
+  "trk_vel",
+  "trk_yaw"
+ ],
+ "verdict": {
+  "bit_identical": false,
+  "structure_identical": true,
+  "max_abs_all_arrays": 4.547473508864641e-13,
+  "max_rel_all_arrays": 1.5863461204426193e-09,
+  "within_1e14_abs": false,
+  "within_1e12_abs": true
+ },
+ "written": "2026-11-22 00:48:45"
+}

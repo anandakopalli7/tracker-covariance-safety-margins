@@ -1,0 +1,15 @@
+{
+ "package": "F",
+ "addendum": "FREEZE_F_ADD01",
+ "written": "2026-11-20 05:59:55",
+ "after_lock2": true,
+ "reason": "run_val_v01.sh (frozen in FREEZE_F) stopped before step 1: its guard counted val caches with ls | wc -l, ls exits 2 when there are none, and pipefail + set -e ended the script. run_val_v02.sh is the same script with that one line fixed; no computation, rule or other file changes. FREEZE_F is unchanged.",
+ "base_manifest": "locks\\\\FREEZE_F.json",
+ "base_sha256": "79a5bd03efb9cc7a01673fc2f86f7b59571836a838311ad737ccf71368b7769f",
+ "entries": [
+  {
+   "path": "work\\\\F_nuscenes\\\\code\\\\run_val_v02.sh",
+   "sha256": "d3c8556b747dc45d8b51469c2a4a69d2ffedfca2205744d347dc8569178260b7"
+  }
+ ]
+}

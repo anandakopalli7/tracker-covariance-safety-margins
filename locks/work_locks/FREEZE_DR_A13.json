@@ -1,0 +1,71 @@
+{
+ "name": "FREEZE_DR_A13",
+ "layered_on": [
+  "work\\locks\\FREEZE_DR.json",
+  "work\\locks\\FREEZE_DR_A12.json",
+  "work\\locks\\FREEZE_DR_A12_ADD01.json",
+  "work\\locks\\FREEZE_DR_A12_ADD02.json",
+  "work\\locks\\FREEZE_DR_A12_ADD03.json"
+ ],
+ "reason": "AMENDMENT_13 sec. 3 (N_DR against a fixed dropout-flag margin) before LOCK_A13b: the text, the first program, its export and its code test on the 35 old runs (no A11 or new-run value); also the post hoc A11 DR count-p (both programs, descriptive, record F_dropout\\notes\\DR_A11_POSTHOC_PR_v01.md)",
+ "real_value_exists_at_writing": false,
+ "written": "2026-11-22 06:38:35",
+ "n": 11,
+ "entries": [
+  {
+   "group": "spec",
+   "path": "work\\F_dropout\\A13_3_DRFLAG_v01.md",
+   "sha256": "84c8737447d43e4efbfb6080d45b1e2691410a9ea01d5fd498fd4cbdb9fb0a83"
+  },
+  {
+   "group": "spec_draft",
+   "path": "work\\F_dropout\\A13_DRFLAG_DRAFT_v01.md",
+   "sha256": "83838c9edca4cf48a5cd034d68257b1a0c15db0108dc7dfc0537819c3f4d8305"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_flag_v01.py",
+   "sha256": "40f8857c76d0be8297cb82afcd33f5c184a25e7d206596bbb89aa7197482f9fc"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_export_v04.py",
+   "sha256": "2fec4b5a7418f3d61ec89873a752ffc4e8360f7dc583376cd7ded3d67cb5d532"
+  },
+  {
+   "group": "test",
+   "path": "work\\F_dropout\\out_a13\\TESTOLD_DRF_RESULTS_v01.json",
+   "sha256": "66c54a84f7638d876be16eba94cb01bc2fe75cff9310bf15cd96ae4f7ea4d1a7"
+  },
+  {
+   "group": "test",
+   "path": "work\\F_dropout\\logs\\drf_testold.log",
+   "sha256": "9ce63dd8fdcdc0c7e41a491af2faa019d105996a754176c270e969e8df2104e1"
+  },
+  {
+   "group": "posthoc_a11",
+   "path": "work\\F_dropout\\code\\dr_posthoc_pr_a11_v01.py",
+   "sha256": "26c392df02c0ec8c1b6c808451f02fffba74956ec1a324211fd04412bc325c14"
+  },
+  {
+   "group": "posthoc_a11",
+   "path": "work\\F_dropout\\out\\posthoc\\DR_A11_PR_POSTHOC_v01.json",
+   "sha256": "ffe77340a333fe9289391fc2a801990591ff66b9bf17cb14d0fa982ee3c24f37"
+  },
+  {
+   "group": "posthoc_a11",
+   "path": "work\\F_dropout\\recount\\dr_recount_a11_pr_posthoc_v01.py",
+   "sha256": "af1e0f42ac40ae514b8913f2f4422a6cf857bdfdf5d685e72090ae9cea042bd5"
+  },
+  {
+   "group": "posthoc_a11",
+   "path": "work\\F_dropout\\recount\\DR_A11_PR_POSTHOC_RECOUNT_v01.json",
+   "sha256": "32acc55d7f2dda31961d44fcd990d640570d9e73f207d50367ce238a33fc6303"
+  },
+  {
+   "group": "posthoc_a11",
+   "path": "work\\F_dropout\\notes\\DR_A11_POSTHOC_PR_v01.md",
+   "sha256": "e362bafe17bc94fa81db05a3b7dc58fe998acfa78dfadd009c60bea05411ba9e"
+  }
+ ]
+}

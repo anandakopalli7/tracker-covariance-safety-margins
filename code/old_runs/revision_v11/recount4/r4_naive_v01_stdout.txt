@@ -1,0 +1,33 @@
+w1                         part 1 done, 6 s
+w1_signed                  part 1 done, 12 s
+est_t0p50_a6p0             part 1 done, 19 s
+est_t0p75_a6p0             part 1 done, 25 s
+est_t1p00_a6p0             part 1 done, 31 s
+est_t1p25_a6p0             part 1 done, 37 s
+est_t1p50_a6p0             part 1 done, 44 s
+est_t1p80_a6p0             part 1 done, 50 s
+est_t0p75_a4p0             part 1 done, 56 s
+est_t0p75_a5p0             part 1 done, 63 s
+est_t0p75_a7p6             part 1 done, 69 s
+cens_t0p50_a6p0            part 1 done, 75 s
+cens_t0p75_a6p0            part 1 done, 82 s
+cens_t1p00_a6p0            part 1 done, 88 s
+cens_t1p25_a6p0            part 1 done, 95 s
+cens_t1p50_a6p0            part 1 done, 101 s
+cens_t1p80_a6p0            part 1 done, 107 s
+est_signed_t0p75_a6p0      part 1 done, 113 s
+asscored_t0p50_a6p0        part 1 done, 119 s
+asscored_t0p75_a6p0        part 1 done, 126 s
+asscored_t1p00_a6p0        part 1 done, 132 s
+asscored_t1p25_a6p0        part 1 done, 138 s
+asscored_t1p50_a6p0        part 1 done, 144 s
+asscored_t1p80_a6p0        part 1 done, 151 s
+asscored_t0p75_a4p0        part 1 done, 158 s
+asscored_t0p75_a5p0        part 1 done, 164 s
+asscored_t0p75_a7p6        part 1 done, 170 s
+part 2 done, 229 s
+part 1 points: 1296 compared, max abs 5.68e-14, nan mismatches 0
+part 1 resamples: 4374 compared, max abs 5.68e-14, nan mismatches 0
+part 1 entries above 1e-9 or NaN mismatch: 0
+part 2: 19788 compared, max abs 5.68e-14, mismatches 0
+part 3: 126 counts compared, differ 0

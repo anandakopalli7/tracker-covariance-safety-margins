@@ -1,0 +1,108 @@
+{
+ "code": "b_modeprob_v01.py",
+ "label": "B1old",
+ "arrays": "ARS_TRIAL\\revision_v13\\work\\B_retrack\\out\\retrack\\B1",
+ "run_set": "old",
+ "n_runs": 35,
+ "seed": 20261911,
+ "nboot": 20000,
+ "lock_sha256": null,
+ "run_ids": [
+  "p1b_fit_finite_0005",
+  "p1b_fit_finite_0006",
+  "p1b_fit_finite_0007",
+  "p1b_fit_finite_0008",
+  "p1b_fit_finite_0009",
+  "p1b_fit_finite_0010",
+  "p1b_fit_finite_0011",
+  "p1b_fit_finite_0012",
+  "p1b_fit_finite_0013",
+  "p1b_fit_finite_0014",
+  "p1b_fit_finite_0015",
+  "p1b_fit_finite_0016",
+  "p1b_fit_finite_0017",
+  "p1b_fit_finite_0018",
+  "p1b_fit_finite_0019",
+  "p1b_fit_finite_0020",
+  "p1b_fit_finite_0021",
+  "p1b_fit_finite_0022",
+  "p1b_fit_finite_0023",
+  "p1b_fit_finite_0024",
+  "p1b_fit_finite_0025",
+  "p1b_fit_finite_0026",
+  "p1b_fit_finite_0027",
+  "p1b_fit_finite_0028",
+  "p1b_fit_finite_0029",
+  "p1b_fit_finite_0030",
+  "p1b_fit_finite_0031",
+  "p1b_fit_finite_0032",
+  "p1b_fit_finite_0033",
+  "p1b_fit_finite_0034",
+  "p1b_fit_finite_0035",
+  "p1b_fit_finite_0036",
+  "p1b_fit_finite_0037",
+  "p1b_fit_finite_0038",
+  "p1b_fit_finite_0039"
+ ],
+ "by_phase": {
+  "pre": {
+   "n": 678,
+   "mean": 0.25008396914034975,
+   "median": 0.24278369116111506,
+   "share_gt05": 0.0,
+   "mean_ci": [
+    0.24245364425240226,
+    0.2583523241540931
+   ],
+   "median_ci": [
+    0.236261853587197,
+    0.2506132438181973
+   ],
+   "share_gt05_ci": [
+    0.0,
+    0.0
+   ],
+   "n_resamples": 20000
+  },
+  "braking": {
+   "n": 755,
+   "mean": 0.40623571854103946,
+   "median": 0.31700559675336326,
+   "share_gt05": 0.21324503311258278,
+   "mean_ci": [
+    0.3620373734106348,
+    0.44173218518116625
+   ],
+   "median_ci": [
+    0.3024110322501949,
+    0.3437726999746617
+   ],
+   "share_gt05_ci": [
+    0.12828351892081571,
+    0.28054309700419755
+   ],
+   "n_resamples": 20000
+  },
+  "stopped": {
+   "n": 6854,
+   "mean": 0.40751035647639783,
+   "median": 0.3674451163679327,
+   "share_gt05": 0.1111759556463379,
+   "mean_ci": [
+    0.39365666933525995,
+    0.422353965797791
+   ],
+   "median_ci": [
+    0.366764445362535,
+    0.3683709870739103
+   ],
+   "share_gt05_ci": [
+    0.07155564661690998,
+    0.15386684348150514
+   ],
+   "n_resamples": 20000
+  }
+ },
+ "seconds": 17.42190384864807,
+ "written": "2026-11-22 00:47:44"
+}

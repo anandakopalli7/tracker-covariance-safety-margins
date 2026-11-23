@@ -1,0 +1,46 @@
+{
+ "job": "design_R",
+ "written": "2026-11-20 03:24:54",
+ "seeds": {
+  "20261913": {
+   "p_lt_equal": true,
+   "p_le_equal": true,
+   "full_equal": true,
+   "full_reproduced_laptop": true,
+   "full_reproduced_pod": true,
+   "platform_laptop": "Windows-11-10.0.26200-SP0",
+   "platform_pod": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+   "seconds_laptop": 217.79694604873657,
+   "seconds_pod": 18.80627965927124
+  },
+  "20261914": {
+   "p_lt_equal": true,
+   "p_le_equal": true,
+   "full_equal": true,
+   "full_reproduced_laptop": true,
+   "full_reproduced_pod": true,
+   "platform_laptop": "Windows-11-10.0.26200-SP0",
+   "platform_pod": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+   "seconds_laptop": 258.0457372665405,
+   "seconds_pod": 19.002443313598633
+  }
+ },
+ "ok": true,
+ "single": {
+  "max_abs_diff": 0.0,
+  "nan_pattern_equal": true,
+  "ci_laptop": [
+   0.015225851275179355,
+   0.27972546001349496
+  ],
+  "ci_pod": [
+   0.015225851275179355,
+   0.27972546001349496
+  ],
+  "ci_horizon_rule_v02": [
+   0.015225851275179355,
+   0.27972546001349496
+  ],
+  "ci_equal_horizon_rule": true
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "schema": "E_IMM_REPLAY_IDENTITY_V01",
+ "detector_updates": [
+  13,
+  13
+ ],
+ "tracks_exact_updates": 13,
+ "tracks_max_abs_diff": 0.0,
+ "decision_ticks": [
+  63,
+  63
+ ],
+ "actors_exact_ticks": 63,
+ "actors_max_abs_diff": 0.0,
+ "recorder_json_ok": true,
+ "online_describe": {
+  "schema": "E_IMM_TRACKER_V01",
+  "variant": "B1",
+  "library": "work\\shared\\trackers (session B), frozen copy in trackers_b",
+  "files": {
+   "trk_env_v01.py": "0219dd2ed6517109a3c913430a2f30ca756fc01f4f003c1347c4ddd4a9628cad",
+   "trk_filters_v01.py": "ce2fb0c3ce752f68072715145d731dc706b9626fadb9c579eff886fd60d25826",
+   "trk_tracker_v01.py": "5cf4ad3baf81b614b18facc3fe4b3bc6506f867350d5b6216fce5ed725cfdef8",
+   "trk_constants_v01.json": "d8455cb50b637a3ce45460a0dee38f79b69fce4c085c913f713b56ac23338a9d"
+  },
+  "env": {
+   "codex": "<library folder>\\149_supported_sensor_preparation_20261101",
+   "exact_trig": true,
+   "blas": "Haswell"
+  },
+  "imm": {
+   "diag": 0.95,
+   "mu0": [
+    0.9,
+    0.1
+   ]
+  },
+  "car_filter": "IMMFilter"
+ },
+ "pass": true
+}

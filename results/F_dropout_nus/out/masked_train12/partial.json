@@ -1,0 +1,239 @@
+{
+ "code": "fn06_score_v01.py",
+ "amendment": "AMENDMENT_12 sec. 5b",
+ "set": "masked",
+ "split": "train",
+ "horizon_s": 3,
+ "n_scenes": 12,
+ "scenes": [
+  "scene-0055",
+  "scene-0132",
+  "scene-0229",
+  "scene-0285",
+  "scene-0295",
+  "scene-0385",
+  "scene-0437",
+  "scene-0502",
+  "scene-0706",
+  "scene-0790",
+  "scene-0955",
+  "scene-1005"
+ ],
+ "checks": {
+  "indep_keys_equal_F": 0,
+  "indep_checked": 0,
+  "masks_identical": true,
+  "ticks_match": true,
+  "indep_float_max_abs": {}
+ },
+ "verify": [
+  {
+   "max_rel": 0.0,
+   "n": 25,
+   "roles": [
+    "F0",
+    "E",
+    "N",
+    "E5x",
+    "E5xp"
+   ],
+   "pop": 0
+  },
+  {
+   "max_rel": 0.0,
+   "n": 25,
+   "roles": [
+    "F0",
+    "E",
+    "N",
+    "E5x"
+   ],
+   "pop": 1
+  }
+ ],
+ "nboot": 2000,
+ "n_outer": 100,
+ "n_inner": 200,
+ "draw": "default_rng(20261923).integers(0, 12, (2000, 12)) as counts",
+ "delta": 0.05,
+ "punish_num": 3,
+ "mask_law": "AMENDMENT_11 sec. 6c, dr_masks_v02.mask(scene name, n keyframes)",
+ "F0": {
+  "file": "work\\F_nuscenes\\out\\PBAR_T1_train_v01.json",
+  "sha256": "01b3708895f58fa21beb48d34f8efbf030259cdcd77254e13e18c398e7fbf9ba",
+  "note": "class average of record from the train scenes, UNMASKED tracks"
+ },
+ "clearance": "F departure (cache\\clear_v02), decision ticks checked equal",
+ "ratio_summary_N_F0": {
+  "n": 18372,
+  "median": 1.7578045342049045,
+  "q05": 0.6291936122608921,
+  "q95": 4.069001232939101,
+  "A": 0.9784386016031393,
+  "share_within_5pct": 0.06292183757892444,
+  "barely_varies": false,
+  "q25": 1.015229123707234,
+  "q75": 2.5620646990603113
+ },
+ "E5x": {
+  "m": 1.7578045342049045,
+  "A": 0.9784386016031393
+ },
+ "e5_u": {
+  "n_evaluated": 1521,
+  "n_with_ratio": 1269
+ },
+ "perm_seed": 20261915,
+ "full": {
+  "R": 0.0,
+  "c": NaN,
+  "cdiff": NaN,
+  "r": NaN
+ },
+ "library_point": {
+  "R_pp": 0.0,
+  "R_deceq": 0.0,
+  "n": 1521.0,
+  "RR": {
+   "N": NaN,
+   "E5x": NaN,
+   "E5xp": NaN
+  },
+  "D_deceq": {
+   "N": 0.0,
+   "E5x": 0.0,
+   "E5xp": 0.0
+  }
+ },
+ "boot95": {
+  "R": {
+   "point": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "ci99": [
+    0.0,
+    0.0
+   ],
+   "n_finite": 2000
+  },
+  "c": {
+   "point": NaN,
+   "ci95": [
+    NaN,
+    NaN
+   ],
+   "ci99": [
+    NaN,
+    NaN
+   ],
+   "n_finite": 0
+  },
+  "cdiff": {
+   "point": NaN,
+   "ci95": [
+    NaN,
+    NaN
+   ],
+   "ci99": [
+    NaN,
+    NaN
+   ],
+   "n_finite": 0
+  },
+  "r": {
+   "point": NaN,
+   "ci95": [
+    NaN,
+    NaN
+   ],
+   "ci99": [
+    NaN,
+    NaN
+   ],
+   "n_finite": 0
+  }
+ },
+ "share_R_nonpositive": 1.0,
+ "p_r": 1.0,
+ "R_deceq_ci95": [
+  0.0,
+  0.0
+ ],
+ "D_N_deceq": {
+  "point": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ "descriptive": {
+  "n_evaluated": 1521,
+  "n_in_dropout": 282,
+  "share_evaluated_in_dropout": 0.1854043392504931,
+  "n_decisions_built": 1888,
+  "n_built_in_dropout": 381,
+  "keyframes": 482,
+  "keyframes_masked": 92,
+  "masked_share_keyframes": 0.1908713692946058,
+  "in_dropout": {
+   "n": 282.0,
+   "R_pp": 0.0,
+   "R_deceq": 0.0,
+   "RR": {
+    "N": NaN,
+    "E5x": NaN
+   },
+   "R": {
+    "point": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "ci99": [
+     0.0,
+     0.0
+    ],
+    "n_finite": 2000
+   },
+   "RR_N": {
+    "point": NaN,
+    "ci95": [
+     NaN,
+     NaN
+    ],
+    "ci99": [
+     NaN,
+     NaN
+    ],
+    "n_finite": 0
+   },
+   "c": {
+    "point": NaN,
+    "ci95": [
+     NaN,
+     NaN
+    ],
+    "ci99": [
+     NaN,
+     NaN
+    ],
+    "n_finite": 0
+   }
+  },
+  "ratio_summary_in_dropout": {
+   "n": 3370,
+   "median": 2.4431100798638825,
+   "q05": 1.2859969540985028,
+   "q95": 4.830514494794698,
+   "A": 0.7254109362304455,
+   "share_within_5pct": 0.11513353115727003,
+   "barely_varies": false,
+   "q25": 2.0132013662345525,
+   "q75": 3.1022732310884193
+  }
+ },
+ "seconds_prep": 4.2,
+ "written_prep": "2026-11-22 05:54:14"
+}

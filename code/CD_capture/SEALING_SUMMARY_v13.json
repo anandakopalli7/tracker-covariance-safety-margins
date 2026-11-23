@@ -1,0 +1,45 @@
+{
+ "schema": "SEALING_SUMMARY_V13",
+ "amendment": "A10 sec. 5.2 (pass/fail counts only)",
+ "utc": "2026-11-19T22:47:33.088458+00:00",
+ "archives": 315,
+ "C": 210,
+ "D1": 105,
+ "passed": 315,
+ "failed": [],
+ "checks_pass_fail": {
+  "receipt_sha256": [
+   315,
+   0
+  ],
+  "receipt_status": [
+   315,
+   0
+  ],
+  "receipt_frames_dropped_zero": [
+   315,
+   0
+  ],
+  "receipt_keep_raw": [
+   315,
+   0
+  ],
+  "sweeps_present": [
+   315,
+   0
+  ],
+  "sweep_counts_consistent": [
+   315,
+   0
+  ],
+  "noisy_sweep_file_sha256_equals_file_hashes": [
+   315,
+   0
+  ],
+  "noisy_sweep_array_hash_equals_noise_receipt": [
+   315,
+   0
+  ]
+ },
+ "note": "Checks run on the pods (tools/seal_extract_v13.py) on the archives later downloaded byte-identically (DOWNLOAD_OK.json SHA-256 = receipt)."
+}

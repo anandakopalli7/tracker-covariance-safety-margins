@@ -1,0 +1,270 @@
+{
+ "schema": "E4_CANMOT_OUTPUT_TEST_V01",
+ "case": "c1109_eval_0480",
+ "windows": [
+  [
+   2,
+   1
+  ],
+  [
+   5,
+   1
+  ],
+  [
+   16,
+   3
+  ],
+  [
+   31,
+   2
+  ],
+  [
+   36,
+   3
+  ],
+  [
+   45,
+   1
+  ],
+  [
+   49,
+   2
+  ],
+  [
+   55,
+   1
+  ],
+  [
+   58,
+   1
+  ],
+  [
+   60,
+   2
+  ]
+ ],
+ "punish1": [
+  {
+   "start": 2,
+   "L": 1,
+   "lead_id": 0,
+   "present_in_window": [
+    true
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 5,
+   "L": 1,
+   "lead_id": 0,
+   "present_in_window": [
+    true
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 16,
+   "L": 3,
+   "lead_id": 0,
+   "present_in_window": [
+    true,
+    false,
+    false
+   ],
+   "same_id_after": false,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 31,
+   "L": 2,
+   "lead_id": 1,
+   "present_in_window": [
+    true,
+    false
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 36,
+   "L": 3,
+   "lead_id": 1,
+   "present_in_window": [
+    true,
+    false,
+    false
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 45,
+   "L": 1,
+   "lead_id": 1,
+   "present_in_window": [
+    true
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 49,
+   "L": 2,
+   "lead_id": 1,
+   "present_in_window": [
+    true,
+    false
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 55,
+   "L": 1,
+   "lead_id": 1,
+   "present_in_window": [
+    true
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 58,
+   "L": 1,
+   "lead_id": 1,
+   "present_in_window": [
+    true
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 60,
+   "L": 2,
+   "lead_id": 1,
+   "present_in_window": [
+    true,
+    false
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  }
+ ],
+ "punish3": [
+  {
+   "start": 2,
+   "L": 1,
+   "lead_id": 0,
+   "present_in_window": [
+    true
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 5,
+   "L": 1,
+   "lead_id": 0,
+   "present_in_window": [
+    true
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 16,
+   "L": 3,
+   "lead_id": 0,
+   "present_in_window": [
+    true,
+    true,
+    true
+   ],
+   "same_id_after": false,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 31,
+   "L": 2,
+   "lead_id": 1,
+   "present_in_window": [
+    true,
+    true
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 36,
+   "L": 3,
+   "lead_id": 1,
+   "present_in_window": [
+    true,
+    true,
+    true
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 45,
+   "L": 1,
+   "lead_id": 1,
+   "present_in_window": [
+    true
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 49,
+   "L": 2,
+   "lead_id": 1,
+   "present_in_window": [
+    true,
+    true
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 55,
+   "L": 1,
+   "lead_id": 1,
+   "present_in_window": [
+    true
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 58,
+   "L": 1,
+   "lead_id": 1,
+   "present_in_window": [
+    true
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  },
+  {
+   "start": 60,
+   "L": 2,
+   "lead_id": 1,
+   "present_in_window": [
+    true,
+    true
+   ],
+   "same_id_after": true,
+   "lead_at_gap_row": true
+  }
+ ],
+ "punish1_drops_from_2nd_tick": true,
+ "punish3_present_throughout": true,
+ "id_continues_after": false,
+ "punish3_lead_at_gap_row": true,
+ "note": "after a 2-3-row coast the lead may re-associate as a NEW track id at the gap row (score decays x0.2 per missed update); the planner sees a lead throughout",
+ "pass": true
+}

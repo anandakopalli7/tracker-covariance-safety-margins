@@ -1,0 +1,8 @@
+LOCK_A10_1
+file: AMENDMENT_10_v13.md
+sha256: 85787f3d75a84057eaadfedaeb80b4c440f3f56ed02fc97e77aa61174abb8f6b
+written: 2026-11-19 14:05 EST by the v13 planning session (Claude Opus 5.5)
+approval: the author's message of 19 Nov 2026 (quoted in the amendment, section 0)
+defaults: as fixed in section 0.2
+state: no value of packages B, C, D, E or F had been computed when this lock was written
+note: hash rewritten at 14:12 EST after fixing two path typos in section 0.3; still no value computed

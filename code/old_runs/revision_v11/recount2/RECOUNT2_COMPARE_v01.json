@@ -1,0 +1,1090 @@
+{
+ "runs_equal": true,
+ "settings_equal": true,
+ "keys_first_program_E1": [
+  "t0p50_a6p0",
+  "t0p75_a6p0",
+  "t1p00_a6p0",
+  "t1p25_a6p0",
+  "t1p50_a6p0",
+  "t1p80_a6p0",
+  "t0p75_a4p0",
+  "t0p75_a5p0",
+  "t0p75_a7p6"
+ ],
+ "keys_first_program_E2": [
+  "t0p50_a6p0",
+  "t0p75_a6p0",
+  "t1p00_a6p0",
+  "t1p25_a6p0",
+  "t1p50_a6p0",
+  "t1p80_a6p0",
+  "t0p75_a4p0",
+  "t0p75_a5p0",
+  "t0p75_a7p6"
+ ],
+ "counts": {
+  "t0p50_a6p0": [
+   {
+    "what": "pairs evaluated",
+    "recount2": 140930,
+    "first_E1": 140930,
+    "first_E2": 140930,
+    "agree": true
+   },
+   {
+    "what": "late pairs (stop ends after 3 s)",
+    "recount2": 2945,
+    "first_E1": 2945,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "late and safe on 61 frames",
+    "recount2": 2897,
+    "first_E1": 2897,
+    "first_E2": 2897,
+    "agree": true
+   },
+   {
+    "what": "of those: censored",
+    "recount2": 94,
+    "first_E1": 94,
+    "first_E2": 94,
+    "agree": true
+   },
+   {
+    "what": "late, safe on 61 frames, extended clearance <= 0",
+    "recount2": 8,
+    "first_E1": 8,
+    "first_E2": 8,
+    "agree": true
+   },
+   {
+    "what": "censored, safe on 61 frames and still > 0 on the frames seen",
+    "recount2": 90,
+    "first_E1": null,
+    "first_E2": 90,
+    "agree": true
+   },
+   {
+    "what": "pairs with 61-frame clearance <= 0",
+    "recount2": 1417,
+    "first_E1": null,
+    "first_E2": 1417,
+    "agree": true
+   },
+   {
+    "what": "pairs with extended clearance <= 0",
+    "recount2": 1425,
+    "first_E1": null,
+    "first_E2": 1425,
+    "agree": true
+   },
+   {
+    "what": "pairs with 3 s commitment clearance <= 0",
+    "recount2": 24902,
+    "first_E1": null,
+    "first_E2": 24902,
+    "agree": true
+   },
+   {
+    "what": "evaluated decisions without a row of extended clearance > 0",
+    "recount2": 0,
+    "first_E1": null,
+    "first_E2": 0,
+    "agree": true
+   },
+   {
+    "what": "non-late pairs changed by the extension",
+    "recount2": 0,
+    "first_E1": 0,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "largest last frame J",
+    "recount2": 72,
+    "first_E1": 72,
+    "first_E2": null,
+    "agree": true
+   }
+  ],
+  "t0p75_a6p0": [
+   {
+    "what": "pairs evaluated",
+    "recount2": 140930,
+    "first_E1": 140930,
+    "first_E2": 140930,
+    "agree": true
+   },
+   {
+    "what": "late pairs (stop ends after 3 s)",
+    "recount2": 5798,
+    "first_E1": 5798,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "late and safe on 61 frames",
+    "recount2": 5356,
+    "first_E1": 5356,
+    "first_E2": 5356,
+    "agree": true
+   },
+   {
+    "what": "of those: censored",
+    "recount2": 153,
+    "first_E1": 153,
+    "first_E2": 153,
+    "agree": true
+   },
+   {
+    "what": "late, safe on 61 frames, extended clearance <= 0",
+    "recount2": 28,
+    "first_E1": 28,
+    "first_E2": 28,
+    "agree": true
+   },
+   {
+    "what": "censored, safe on 61 frames and still > 0 on the frames seen",
+    "recount2": 145,
+    "first_E1": null,
+    "first_E2": 145,
+    "agree": true
+   },
+   {
+    "what": "pairs with 61-frame clearance <= 0",
+    "recount2": 3334,
+    "first_E1": null,
+    "first_E2": 3334,
+    "agree": true
+   },
+   {
+    "what": "pairs with extended clearance <= 0",
+    "recount2": 3362,
+    "first_E1": null,
+    "first_E2": 3362,
+    "agree": true
+   },
+   {
+    "what": "pairs with 3 s commitment clearance <= 0",
+    "recount2": 24902,
+    "first_E1": null,
+    "first_E2": 24902,
+    "agree": true
+   },
+   {
+    "what": "evaluated decisions without a row of extended clearance > 0",
+    "recount2": 0,
+    "first_E1": null,
+    "first_E2": 0,
+    "agree": true
+   },
+   {
+    "what": "non-late pairs changed by the extension",
+    "recount2": 0,
+    "first_E1": 0,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "largest last frame J",
+    "recount2": 78,
+    "first_E1": 78,
+    "first_E2": null,
+    "agree": true
+   }
+  ],
+  "t1p00_a6p0": [
+   {
+    "what": "pairs evaluated",
+    "recount2": 140930,
+    "first_E1": 140930,
+    "first_E2": 140930,
+    "agree": true
+   },
+   {
+    "what": "late pairs (stop ends after 3 s)",
+    "recount2": 6530,
+    "first_E1": 6530,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "late and safe on 61 frames",
+    "recount2": 5301,
+    "first_E1": 5301,
+    "first_E2": 5301,
+    "agree": true
+   },
+   {
+    "what": "of those: censored",
+    "recount2": 230,
+    "first_E1": 230,
+    "first_E2": 230,
+    "agree": true
+   },
+   {
+    "what": "late, safe on 61 frames, extended clearance <= 0",
+    "recount2": 126,
+    "first_E1": 126,
+    "first_E2": 126,
+    "agree": true
+   },
+   {
+    "what": "censored, safe on 61 frames and still > 0 on the frames seen",
+    "recount2": 200,
+    "first_E1": null,
+    "first_E2": 200,
+    "agree": true
+   },
+   {
+    "what": "pairs with 61-frame clearance <= 0",
+    "recount2": 5631,
+    "first_E1": null,
+    "first_E2": 5631,
+    "agree": true
+   },
+   {
+    "what": "pairs with extended clearance <= 0",
+    "recount2": 5757,
+    "first_E1": null,
+    "first_E2": 5757,
+    "agree": true
+   },
+   {
+    "what": "pairs with 3 s commitment clearance <= 0",
+    "recount2": 24902,
+    "first_E1": null,
+    "first_E2": 24902,
+    "agree": true
+   },
+   {
+    "what": "evaluated decisions without a row of extended clearance > 0",
+    "recount2": 0,
+    "first_E1": null,
+    "first_E2": 0,
+    "agree": true
+   },
+   {
+    "what": "non-late pairs changed by the extension",
+    "recount2": 0,
+    "first_E1": 0,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "largest last frame J",
+    "recount2": 85,
+    "first_E1": 85,
+    "first_E2": null,
+    "agree": true
+   }
+  ],
+  "t1p25_a6p0": [
+   {
+    "what": "pairs evaluated",
+    "recount2": 140930,
+    "first_E1": 140930,
+    "first_E2": 140930,
+    "agree": true
+   },
+   {
+    "what": "late pairs (stop ends after 3 s)",
+    "recount2": 9000,
+    "first_E1": 9000,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "late and safe on 61 frames",
+    "recount2": 7048,
+    "first_E1": 7048,
+    "first_E2": 7048,
+    "agree": true
+   },
+   {
+    "what": "of those: censored",
+    "recount2": 296,
+    "first_E1": 296,
+    "first_E2": 296,
+    "agree": true
+   },
+   {
+    "what": "late, safe on 61 frames, extended clearance <= 0",
+    "recount2": 215,
+    "first_E1": 215,
+    "first_E2": 215,
+    "agree": true
+   },
+   {
+    "what": "censored, safe on 61 frames and still > 0 on the frames seen",
+    "recount2": 247,
+    "first_E1": null,
+    "first_E2": 247,
+    "agree": true
+   },
+   {
+    "what": "pairs with 61-frame clearance <= 0",
+    "recount2": 8530,
+    "first_E1": null,
+    "first_E2": 8530,
+    "agree": true
+   },
+   {
+    "what": "pairs with extended clearance <= 0",
+    "recount2": 8745,
+    "first_E1": null,
+    "first_E2": 8745,
+    "agree": true
+   },
+   {
+    "what": "pairs with 3 s commitment clearance <= 0",
+    "recount2": 24902,
+    "first_E1": null,
+    "first_E2": 24902,
+    "agree": true
+   },
+   {
+    "what": "evaluated decisions without a row of extended clearance > 0",
+    "recount2": 0,
+    "first_E1": null,
+    "first_E2": 0,
+    "agree": true
+   },
+   {
+    "what": "non-late pairs changed by the extension",
+    "recount2": 0,
+    "first_E1": 0,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "largest last frame J",
+    "recount2": 92,
+    "first_E1": 92,
+    "first_E2": null,
+    "agree": true
+   }
+  ],
+  "t1p50_a6p0": [
+   {
+    "what": "pairs evaluated",
+    "recount2": 140930,
+    "first_E1": 140930,
+    "first_E2": 140930,
+    "agree": true
+   },
+   {
+    "what": "late pairs (stop ends after 3 s)",
+    "recount2": 11575,
+    "first_E1": 11575,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "late and safe on 61 frames",
+    "recount2": 8583,
+    "first_E1": 8583,
+    "first_E2": 8583,
+    "agree": true
+   },
+   {
+    "what": "of those: censored",
+    "recount2": 372,
+    "first_E1": 372,
+    "first_E2": 372,
+    "agree": true
+   },
+   {
+    "what": "late, safe on 61 frames, extended clearance <= 0",
+    "recount2": 374,
+    "first_E1": 374,
+    "first_E2": 374,
+    "agree": true
+   },
+   {
+    "what": "censored, safe on 61 frames and still > 0 on the frames seen",
+    "recount2": 291,
+    "first_E1": null,
+    "first_E2": 291,
+    "agree": true
+   },
+   {
+    "what": "pairs with 61-frame clearance <= 0",
+    "recount2": 12714,
+    "first_E1": null,
+    "first_E2": 12714,
+    "agree": true
+   },
+   {
+    "what": "pairs with extended clearance <= 0",
+    "recount2": 13088,
+    "first_E1": null,
+    "first_E2": 13088,
+    "agree": true
+   },
+   {
+    "what": "pairs with 3 s commitment clearance <= 0",
+    "recount2": 24902,
+    "first_E1": null,
+    "first_E2": 24902,
+    "agree": true
+   },
+   {
+    "what": "evaluated decisions without a row of extended clearance > 0",
+    "recount2": 0,
+    "first_E1": null,
+    "first_E2": 0,
+    "agree": true
+   },
+   {
+    "what": "non-late pairs changed by the extension",
+    "recount2": 0,
+    "first_E1": 0,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "largest last frame J",
+    "recount2": 98,
+    "first_E1": 98,
+    "first_E2": null,
+    "agree": true
+   }
+  ],
+  "t1p80_a6p0": [
+   {
+    "what": "pairs evaluated",
+    "recount2": 140930,
+    "first_E1": 140930,
+    "first_E2": 140930,
+    "agree": true
+   },
+   {
+    "what": "late pairs (stop ends after 3 s)",
+    "recount2": 14404,
+    "first_E1": 14404,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "late and safe on 61 frames",
+    "recount2": 9900,
+    "first_E1": 9900,
+    "first_E2": 9900,
+    "agree": true
+   },
+   {
+    "what": "of those: censored",
+    "recount2": 487,
+    "first_E1": 487,
+    "first_E2": 487,
+    "agree": true
+   },
+   {
+    "what": "late, safe on 61 frames, extended clearance <= 0",
+    "recount2": 651,
+    "first_E1": 651,
+    "first_E2": 651,
+    "agree": true
+   },
+   {
+    "what": "censored, safe on 61 frames and still > 0 on the frames seen",
+    "recount2": 348,
+    "first_E1": null,
+    "first_E2": 348,
+    "agree": true
+   },
+   {
+    "what": "pairs with 61-frame clearance <= 0",
+    "recount2": 15824,
+    "first_E1": null,
+    "first_E2": 15824,
+    "agree": true
+   },
+   {
+    "what": "pairs with extended clearance <= 0",
+    "recount2": 16475,
+    "first_E1": null,
+    "first_E2": 16475,
+    "agree": true
+   },
+   {
+    "what": "pairs with 3 s commitment clearance <= 0",
+    "recount2": 24902,
+    "first_E1": null,
+    "first_E2": 24902,
+    "agree": true
+   },
+   {
+    "what": "evaluated decisions without a row of extended clearance > 0",
+    "recount2": 0,
+    "first_E1": null,
+    "first_E2": 0,
+    "agree": true
+   },
+   {
+    "what": "non-late pairs changed by the extension",
+    "recount2": 0,
+    "first_E1": 0,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "largest last frame J",
+    "recount2": 106,
+    "first_E1": 106,
+    "first_E2": null,
+    "agree": true
+   }
+  ],
+  "t0p75_a4p0": [
+   {
+    "what": "pairs evaluated",
+    "recount2": 140930,
+    "first_E1": 140930,
+    "first_E2": 140930,
+    "agree": true
+   },
+   {
+    "what": "late pairs (stop ends after 3 s)",
+    "recount2": 10799,
+    "first_E1": 10799,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "late and safe on 61 frames",
+    "recount2": 8905,
+    "first_E1": 8905,
+    "first_E2": 8905,
+    "agree": true
+   },
+   {
+    "what": "of those: censored",
+    "recount2": 773,
+    "first_E1": 773,
+    "first_E2": 773,
+    "agree": true
+   },
+   {
+    "what": "late, safe on 61 frames, extended clearance <= 0",
+    "recount2": 440,
+    "first_E1": 440,
+    "first_E2": 440,
+    "agree": true
+   },
+   {
+    "what": "censored, safe on 61 frames and still > 0 on the frames seen",
+    "recount2": 714,
+    "first_E1": null,
+    "first_E2": 714,
+    "agree": true
+   },
+   {
+    "what": "pairs with 61-frame clearance <= 0",
+    "recount2": 4373,
+    "first_E1": null,
+    "first_E2": 4373,
+    "agree": true
+   },
+   {
+    "what": "pairs with extended clearance <= 0",
+    "recount2": 4813,
+    "first_E1": null,
+    "first_E2": 4813,
+    "agree": true
+   },
+   {
+    "what": "pairs with 3 s commitment clearance <= 0",
+    "recount2": 24902,
+    "first_E1": null,
+    "first_E2": 24902,
+    "agree": true
+   },
+   {
+    "what": "evaluated decisions without a row of extended clearance > 0",
+    "recount2": 0,
+    "first_E1": null,
+    "first_E2": 0,
+    "agree": true
+   },
+   {
+    "what": "non-late pairs changed by the extension",
+    "recount2": 0,
+    "first_E1": 0,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "largest last frame J",
+    "recount2": 104,
+    "first_E1": 104,
+    "first_E2": null,
+    "agree": true
+   }
+  ],
+  "t0p75_a5p0": [
+   {
+    "what": "pairs evaluated",
+    "recount2": 140930,
+    "first_E1": 140930,
+    "first_E2": 140930,
+    "agree": true
+   },
+   {
+    "what": "late pairs (stop ends after 3 s)",
+    "recount2": 7730,
+    "first_E1": 7730,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "late and safe on 61 frames",
+    "recount2": 6781,
+    "first_E1": 6781,
+    "first_E2": 6781,
+    "agree": true
+   },
+   {
+    "what": "of those: censored",
+    "recount2": 365,
+    "first_E1": 365,
+    "first_E2": 365,
+    "agree": true
+   },
+   {
+    "what": "late, safe on 61 frames, extended clearance <= 0",
+    "recount2": 161,
+    "first_E1": 161,
+    "first_E2": 161,
+    "agree": true
+   },
+   {
+    "what": "censored, safe on 61 frames and still > 0 on the frames seen",
+    "recount2": 339,
+    "first_E1": null,
+    "first_E2": 339,
+    "agree": true
+   },
+   {
+    "what": "pairs with 61-frame clearance <= 0",
+    "recount2": 3740,
+    "first_E1": null,
+    "first_E2": 3740,
+    "agree": true
+   },
+   {
+    "what": "pairs with extended clearance <= 0",
+    "recount2": 3901,
+    "first_E1": null,
+    "first_E2": 3901,
+    "agree": true
+   },
+   {
+    "what": "pairs with 3 s commitment clearance <= 0",
+    "recount2": 24902,
+    "first_E1": null,
+    "first_E2": 24902,
+    "agree": true
+   },
+   {
+    "what": "evaluated decisions without a row of extended clearance > 0",
+    "recount2": 0,
+    "first_E1": null,
+    "first_E2": 0,
+    "agree": true
+   },
+   {
+    "what": "non-late pairs changed by the extension",
+    "recount2": 0,
+    "first_E1": 0,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "largest last frame J",
+    "recount2": 88,
+    "first_E1": 88,
+    "first_E2": null,
+    "agree": true
+   }
+  ],
+  "t0p75_a7p6": [
+   {
+    "what": "pairs evaluated",
+    "recount2": 140930,
+    "first_E1": 140930,
+    "first_E2": 140930,
+    "agree": true
+   },
+   {
+    "what": "late pairs (stop ends after 3 s)",
+    "recount2": 2543,
+    "first_E1": 2543,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "late and safe on 61 frames",
+    "recount2": 2431,
+    "first_E1": 2431,
+    "first_E2": 2431,
+    "agree": true
+   },
+   {
+    "what": "of those: censored",
+    "recount2": 37,
+    "first_E1": 37,
+    "first_E2": 37,
+    "agree": true
+   },
+   {
+    "what": "late, safe on 61 frames, extended clearance <= 0",
+    "recount2": 0,
+    "first_E1": 0,
+    "first_E2": 0,
+    "agree": true
+   },
+   {
+    "what": "censored, safe on 61 frames and still > 0 on the frames seen",
+    "recount2": 37,
+    "first_E1": null,
+    "first_E2": 37,
+    "agree": true
+   },
+   {
+    "what": "pairs with 61-frame clearance <= 0",
+    "recount2": 2802,
+    "first_E1": null,
+    "first_E2": 2802,
+    "agree": true
+   },
+   {
+    "what": "pairs with extended clearance <= 0",
+    "recount2": 2802,
+    "first_E1": null,
+    "first_E2": 2802,
+    "agree": true
+   },
+   {
+    "what": "pairs with 3 s commitment clearance <= 0",
+    "recount2": 24902,
+    "first_E1": null,
+    "first_E2": 24902,
+    "agree": true
+   },
+   {
+    "what": "evaluated decisions without a row of extended clearance > 0",
+    "recount2": 0,
+    "first_E1": null,
+    "first_E2": 0,
+    "agree": true
+   },
+   {
+    "what": "non-late pairs changed by the extension",
+    "recount2": 0,
+    "first_E1": 0,
+    "first_E2": null,
+    "agree": true
+   },
+   {
+    "what": "largest last frame J",
+    "recount2": 68,
+    "first_E1": 68,
+    "first_E2": null,
+    "agree": true
+   }
+  ]
+ },
+ "elementwise": {
+  "t0p50_a6p0": {
+   "n_eval_pairs": 140930,
+   "clearX_max_abs_diff": 0.0,
+   "clearX_n_flag_differ": 0,
+   "clearX_n_value_differ": 0,
+   "clearX_n_nan_mismatch": 0,
+   "late_n_differ": 0,
+   "cens_n_differ": 0,
+   "clear61_max_abs_diff": 0.0,
+   "clear61_n_flag_differ": 0,
+   "tstop_max_abs_diff": 0.0,
+   "J_vs_jend_n_differ": 0,
+   "noneval_theirs_not_nan": 0,
+   "shape_or_k_mismatch": 0
+  },
+  "t0p75_a6p0": {
+   "n_eval_pairs": 140930,
+   "clearX_max_abs_diff": 0.0,
+   "clearX_n_flag_differ": 0,
+   "clearX_n_value_differ": 0,
+   "clearX_n_nan_mismatch": 0,
+   "late_n_differ": 0,
+   "cens_n_differ": 0,
+   "clear61_max_abs_diff": 0.0,
+   "clear61_n_flag_differ": 0,
+   "tstop_max_abs_diff": 0.0,
+   "J_vs_jend_n_differ": 0,
+   "noneval_theirs_not_nan": 0,
+   "shape_or_k_mismatch": 0
+  },
+  "t1p00_a6p0": {
+   "n_eval_pairs": 140930,
+   "clearX_max_abs_diff": 0.0,
+   "clearX_n_flag_differ": 0,
+   "clearX_n_value_differ": 0,
+   "clearX_n_nan_mismatch": 0,
+   "late_n_differ": 0,
+   "cens_n_differ": 0,
+   "clear61_max_abs_diff": 0.0,
+   "clear61_n_flag_differ": 0,
+   "tstop_max_abs_diff": 0.0,
+   "J_vs_jend_n_differ": 0,
+   "noneval_theirs_not_nan": 0,
+   "shape_or_k_mismatch": 0
+  },
+  "t1p25_a6p0": {
+   "n_eval_pairs": 140930,
+   "clearX_max_abs_diff": 0.0,
+   "clearX_n_flag_differ": 0,
+   "clearX_n_value_differ": 0,
+   "clearX_n_nan_mismatch": 0,
+   "late_n_differ": 0,
+   "cens_n_differ": 0,
+   "clear61_max_abs_diff": 0.0,
+   "clear61_n_flag_differ": 0,
+   "tstop_max_abs_diff": 0.0,
+   "J_vs_jend_n_differ": 0,
+   "noneval_theirs_not_nan": 0,
+   "shape_or_k_mismatch": 0
+  },
+  "t1p50_a6p0": {
+   "n_eval_pairs": 140930,
+   "clearX_max_abs_diff": 0.0,
+   "clearX_n_flag_differ": 0,
+   "clearX_n_value_differ": 0,
+   "clearX_n_nan_mismatch": 0,
+   "late_n_differ": 0,
+   "cens_n_differ": 0,
+   "clear61_max_abs_diff": 0.0,
+   "clear61_n_flag_differ": 0,
+   "tstop_max_abs_diff": 0.0,
+   "J_vs_jend_n_differ": 0,
+   "noneval_theirs_not_nan": 0,
+   "shape_or_k_mismatch": 0
+  },
+  "t1p80_a6p0": {
+   "n_eval_pairs": 140930,
+   "clearX_max_abs_diff": 0.0,
+   "clearX_n_flag_differ": 0,
+   "clearX_n_value_differ": 0,
+   "clearX_n_nan_mismatch": 0,
+   "late_n_differ": 0,
+   "cens_n_differ": 0,
+   "clear61_max_abs_diff": 0.0,
+   "clear61_n_flag_differ": 0,
+   "tstop_max_abs_diff": 0.0,
+   "J_vs_jend_n_differ": 0,
+   "noneval_theirs_not_nan": 0,
+   "shape_or_k_mismatch": 0
+  },
+  "t0p75_a4p0": {
+   "n_eval_pairs": 140930,
+   "clearX_max_abs_diff": 0.0,
+   "clearX_n_flag_differ": 0,
+   "clearX_n_value_differ": 0,
+   "clearX_n_nan_mismatch": 0,
+   "late_n_differ": 0,
+   "cens_n_differ": 0,
+   "clear61_max_abs_diff": 0.0,
+   "clear61_n_flag_differ": 0,
+   "tstop_max_abs_diff": 0.0,
+   "J_vs_jend_n_differ": 0,
+   "noneval_theirs_not_nan": 0,
+   "shape_or_k_mismatch": 0
+  },
+  "t0p75_a5p0": {
+   "n_eval_pairs": 140930,
+   "clearX_max_abs_diff": 0.0,
+   "clearX_n_flag_differ": 0,
+   "clearX_n_value_differ": 0,
+   "clearX_n_nan_mismatch": 0,
+   "late_n_differ": 0,
+   "cens_n_differ": 0,
+   "clear61_max_abs_diff": 0.0,
+   "clear61_n_flag_differ": 0,
+   "tstop_max_abs_diff": 0.0,
+   "J_vs_jend_n_differ": 0,
+   "noneval_theirs_not_nan": 0,
+   "shape_or_k_mismatch": 0
+  },
+  "t0p75_a7p6": {
+   "n_eval_pairs": 140930,
+   "clearX_max_abs_diff": 0.0,
+   "clearX_n_flag_differ": 0,
+   "clearX_n_value_differ": 0,
+   "clearX_n_nan_mismatch": 0,
+   "late_n_differ": 0,
+   "cens_n_differ": 0,
+   "clear61_max_abs_diff": 0.0,
+   "clear61_n_flag_differ": 0,
+   "tstop_max_abs_diff": 0.0,
+   "J_vs_jend_n_differ": 0,
+   "noneval_theirs_not_nan": 0,
+   "shape_or_k_mismatch": 0
+  }
+ },
+ "elementwise_overall": {
+  "max_abs_diff_clearX": 0.0,
+  "worst": {
+   "diff": 0.0,
+   "run": null,
+   "key": null
+  },
+  "n_flag_differ_clearX": 0,
+  "n_value_differ_clearX": 0,
+  "n_late_differ": 0,
+  "n_cens_differ": 0,
+  "n_nan_mismatch": 0,
+  "n_shape_or_k_mismatch": 0,
+  "n_pairs_compared": 1268370
+ },
+ "n_count_differences": 0,
+ "optional_scoring_t0p75_a6p0": {
+  "all": {
+   "n": {
+    "recount2": 8290.0,
+    "first": 8290.0,
+    "abs_diff": 0.0
+   },
+   "denE": {
+    "recount2": 136.53799758745475,
+    "first": 136.53799758745475,
+    "abs_diff": 0.0
+   },
+   "den0": {
+    "recount2": 142.56936067551266,
+    "first": 142.56936067551266,
+    "abs_diff": 0.0
+   },
+   "denE_over_3s": {
+    "recount2": 0.12224598237428722,
+    "first": 0.12224598237428722,
+    "abs_diff": 0.0
+   },
+   "den0_over_3s": {
+    "recount2": 0.11829173088856418,
+    "first": 0.11829173088856418,
+    "abs_diff": 0.0
+   },
+   "D_N": {
+    "recount2": 0.0603136308805777,
+    "first": 0.0603136308805777,
+    "abs_diff": 0.0
+   },
+   "D_NA": {
+    "recount2": 1.676718938480095,
+    "first": 1.676718938480095,
+    "abs_diff": 0.0
+   },
+   "D_AM": {
+    "recount2": 81.25452352231605,
+    "first": 81.25452352231605,
+    "abs_diff": 0.0
+   },
+   "D_CK3": {
+    "recount2": 133.437876960193,
+    "first": 133.437876960193,
+    "abs_diff": 0.0
+   },
+   "D_Q": {
+    "recount2": -4.463208685162847,
+    "first": -4.463208685162847,
+    "abs_diff": 0.0
+   },
+   "denE_ext_over_denE_RS61_recount2_only": 1.0112570356472792
+  },
+  "moving": {
+   "n": {
+    "recount2": 1863.0,
+    "first": 1863.0,
+    "abs_diff": 0.0
+   },
+   "denE": {
+    "recount2": 124.74503488996244,
+    "first": 124.74503488996244,
+    "abs_diff": 0.0
+   },
+   "den0": {
+    "recount2": 131.13258185721958,
+    "first": 131.13258185721958,
+    "abs_diff": 0.0
+   },
+   "denE_over_3s": {
+    "recount2": 0.06105987756496152,
+    "first": 0.06105987756496152,
+    "abs_diff": 0.0
+   },
+   "den0_over_3s": {
+    "recount2": 0.06233414982649523,
+    "first": 0.06233414982649523,
+    "abs_diff": 0.0
+   },
+   "D_N": {
+    "recount2": -1.6639828234031133,
+    "first": -1.6639828234031133,
+    "abs_diff": 0.0
+   },
+   "D_NA": {
+    "recount2": -2.7375201288244764,
+    "first": -2.7375201288244764,
+    "abs_diff": 0.0
+   },
+   "D_AM": {
+    "recount2": 33.655394524959746,
+    "first": 33.655394524959746,
+    "abs_diff": 0.0
+   },
+   "D_CK3": {
+    "recount2": 4.991948470209344,
+    "first": 4.991948470209344,
+    "abs_diff": 0.0
+   },
+   "D_Q": {
+    "recount2": -5.743424584004293,
+    "first": -5.743424584004293,
+    "abs_diff": 0.0
+   },
+   "denE_ext_over_denE_RS61_recount2_only": 1.0113141862489121
+  }
+ },
+ "optional_first_program_arm_names": [
+  "N",
+  "NA",
+  "CK3",
+  "A1",
+  "Q"
+ ],
+ "optional_asscored_all": {
+  "denE": {
+   "recount2": 135.0180940892642,
+   "first": 135.0180940892642
+  },
+  "den0": {
+   "recount2": 141.01326899879373,
+   "first": 141.01326899879373
+  }
+ },
+ "optional_cens_all": {
+  "denE": {
+   "recount2_censored_counted_unsafe": 161.08564535585043,
+   "first": 161.08564535585043
+  },
+  "den0": {
+   "recount2_censored_counted_unsafe": 168.55247285886614,
+   "first": 168.55247285886614
+  }
+ }
+}

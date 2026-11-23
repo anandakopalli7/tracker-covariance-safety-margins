@@ -1,0 +1,426 @@
+{
+ "code": "fn06_score_v01.py",
+ "amendment": "AMENDMENT_12 sec. 5b",
+ "set": "masked",
+ "split": "train",
+ "horizon_s": 3,
+ "n_scenes": 12,
+ "scenes": [
+  "scene-0055",
+  "scene-0132",
+  "scene-0229",
+  "scene-0285",
+  "scene-0295",
+  "scene-0385",
+  "scene-0437",
+  "scene-0502",
+  "scene-0706",
+  "scene-0790",
+  "scene-0955",
+  "scene-1005"
+ ],
+ "checks": {
+  "indep_keys_equal_F": 0,
+  "indep_checked": 0,
+  "masks_identical": true,
+  "ticks_match": true,
+  "indep_float_max_abs": {}
+ },
+ "verify": [
+  {
+   "max_rel": 0.0,
+   "n": 25,
+   "roles": [
+    "F0",
+    "E",
+    "N",
+    "E5x",
+    "E5xp"
+   ],
+   "pop": 0
+  },
+  {
+   "max_rel": 0.0,
+   "n": 25,
+   "roles": [
+    "F0",
+    "E",
+    "N",
+    "E5x"
+   ],
+   "pop": 1
+  }
+ ],
+ "nboot": 2000,
+ "n_outer": 100,
+ "n_inner": 200,
+ "draw": "default_rng(20261923).integers(0, 12, (2000, 12)) as counts",
+ "delta": 0.05,
+ "punish_num": 3,
+ "mask_law": "AMENDMENT_11 sec. 6c, dr_masks_v02.mask(scene name, n keyframes)",
+ "F0": {
+  "file": "work\\F_nuscenes\\out\\PBAR_T1_train_v01.json",
+  "sha256": "01b3708895f58fa21beb48d34f8efbf030259cdcd77254e13e18c398e7fbf9ba",
+  "note": "class average of record from the train scenes, UNMASKED tracks"
+ },
+ "clearance": "F departure (cache\\clear_v02), decision ticks checked equal",
+ "ratio_summary_N_F0": {
+  "n": 18372,
+  "median": 1.7578045342049045,
+  "q05": 0.6291936122608921,
+  "q95": 4.069001232939101,
+  "A": 0.9784386016031393,
+  "share_within_5pct": 0.06292183757892444,
+  "barely_varies": false,
+  "q25": 1.015229123707234,
+  "q75": 2.5620646990603113
+ },
+ "E5x": {
+  "m": 1.7578045342049045,
+  "A": 0.9784386016031393
+ },
+ "e5_u": {
+  "n_evaluated": 1521,
+  "n_with_ratio": 1269
+ },
+ "perm_seed": 20261915,
+ "full": {
+  "R": 0.0,
+  "c": NaN,
+  "cdiff": NaN,
+  "r": NaN
+ },
+ "library_point": {
+  "R_pp": 0.0,
+  "R_deceq": 0.0,
+  "n": 1521.0,
+  "RR": {
+   "N": NaN,
+   "E5x": NaN,
+   "E5xp": NaN
+  },
+  "D_deceq": {
+   "N": 0.0,
+   "E5x": 0.0,
+   "E5xp": 0.0
+  }
+ },
+ "boot95": {
+  "R": {
+   "point": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "ci99": [
+    0.0,
+    0.0
+   ],
+   "n_finite": 2000
+  },
+  "c": {
+   "point": NaN,
+   "ci95": [
+    NaN,
+    NaN
+   ],
+   "ci99": [
+    NaN,
+    NaN
+   ],
+   "n_finite": 0
+  },
+  "cdiff": {
+   "point": NaN,
+   "ci95": [
+    NaN,
+    NaN
+   ],
+   "ci99": [
+    NaN,
+    NaN
+   ],
+   "n_finite": 0
+  },
+  "r": {
+   "point": NaN,
+   "ci95": [
+    NaN,
+    NaN
+   ],
+   "ci99": [
+    NaN,
+    NaN
+   ],
+   "n_finite": 0
+  }
+ },
+ "share_R_nonpositive": 1.0,
+ "p_r": 1.0,
+ "R_deceq_ci95": [
+  0.0,
+  0.0
+ ],
+ "D_N_deceq": {
+  "point": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ "descriptive": {
+  "n_evaluated": 1521,
+  "n_in_dropout": 282,
+  "share_evaluated_in_dropout": 0.1854043392504931,
+  "n_decisions_built": 1888,
+  "n_built_in_dropout": 381,
+  "keyframes": 482,
+  "keyframes_masked": 92,
+  "masked_share_keyframes": 0.1908713692946058,
+  "in_dropout": {
+   "n": 282.0,
+   "R_pp": 0.0,
+   "R_deceq": 0.0,
+   "RR": {
+    "N": NaN,
+    "E5x": NaN
+   },
+   "R": {
+    "point": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "ci99": [
+     0.0,
+     0.0
+    ],
+    "n_finite": 2000
+   },
+   "RR_N": {
+    "point": NaN,
+    "ci95": [
+     NaN,
+     NaN
+    ],
+    "ci99": [
+     NaN,
+     NaN
+    ],
+    "n_finite": 0
+   },
+   "c": {
+    "point": NaN,
+    "ci95": [
+     NaN,
+     NaN
+    ],
+    "ci99": [
+     NaN,
+     NaN
+    ],
+    "n_finite": 0
+   }
+  },
+  "ratio_summary_in_dropout": {
+   "n": 3370,
+   "median": 2.4431100798638825,
+   "q05": 1.2859969540985028,
+   "q95": 4.830514494794698,
+   "A": 0.7254109362304455,
+   "share_within_5pct": 0.11513353115727003,
+   "barely_varies": false,
+   "q25": 2.0132013662345525,
+   "q75": 3.1022732310884193
+  }
+ },
+ "seconds_prep": 4.2,
+ "written_prep": "2026-11-22 05:54:14",
+ "second_inner_seed": {
+  "needed": [],
+  "present": true
+ },
+ "calib_runs": {
+  "20261913": {
+   "file": "calib_20261913.npz",
+   "sha256": "5eec9256153150d35b6a368721dc697286f96b46bd3a8462d73765a24d6d134b",
+   "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+   "seconds": 4.352818250656128,
+   "threads": 13
+  },
+  "20261914": {
+   "file": "calib_20261914.npz",
+   "sha256": "34d95318f6b85b9ea421f4dc42760dca67b892759e518f6c3f92fa0cdb960157",
+   "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+   "seconds": 4.319114446640015,
+   "threads": 13
+  }
+ },
+ "calibration": {
+  "R": {
+   "level": 0.95,
+   "reason": "coverage of the nominal 95% interval 1.0000 >= 0.94",
+   "coverage_nominal95": 1.0,
+   "calibrated_seed1": 0.95,
+   "calibrated_seed2": null,
+   "mc_sd": 2.221001369016217e-16,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "point": 0.0
+  },
+  "c": {
+   "level": 0.99,
+   "reason": "nominal 99% (calibration checks failed: level None, second None, MC SD nan)",
+   "coverage_nominal95": NaN,
+   "calibrated_seed1": null,
+   "calibrated_seed2": null,
+   "mc_sd": NaN,
+   "ci": [
+    NaN,
+    NaN
+   ],
+   "point": NaN
+  },
+  "cdiff": {
+   "level": 0.99,
+   "reason": "nominal 99% (calibration checks failed: level None, second None, MC SD nan)",
+   "coverage_nominal95": NaN,
+   "calibrated_seed1": null,
+   "calibrated_seed2": null,
+   "mc_sd": NaN,
+   "ci": [
+    NaN,
+    NaN
+   ],
+   "point": NaN
+  },
+  "r": {
+   "level": 0.99,
+   "reason": "nominal 99% (calibration checks failed: level None, second None, MC SD nan)",
+   "coverage_nominal95": NaN,
+   "calibrated_seed1": null,
+   "calibrated_seed2": null,
+   "mc_sd": NaN,
+   "ci": [
+    NaN,
+    NaN
+   ],
+   "point": NaN
+  }
+ },
+ "sequence": {
+  "room": {
+   "passes": false,
+   "R_gl_pp": 0.0,
+   "R_lower": 0.0,
+   "level": 0.95,
+   "share_resamples_R_nonpositive": 1.0,
+   "rule": "R_gl's lower end > 0",
+   "confirmatory": true,
+   "status": "confirmatory"
+  },
+  "E5_N": {
+   "passes": false,
+   "c": NaN,
+   "c_ci": [
+    NaN,
+    NaN
+   ],
+   "cdiff": NaN,
+   "cdiff_ci": [
+    NaN,
+    NaN
+   ],
+   "rule": "lower ends of RR_gl(E5_N) and RR_gl(E5_N) - RR_gl(E5p_N) > 0",
+   "confirmatory": false,
+   "status": "not confirmatory (an earlier step did not pass)"
+  },
+  "N_class": {
+   "classification": "inconclusive",
+   "passes": false,
+   "r": NaN,
+   "r_ci": [
+    NaN,
+    NaN
+   ],
+   "c_ci": [
+    NaN,
+    NaN
+   ],
+   "delta": 0.05,
+   "barely_varies": false,
+   "efficiency_r_over_c": null,
+   "confirmatory": false,
+   "status": "not confirmatory (an earlier step did not pass)"
+  }
+ },
+ "p_r_holm_input": {
+  "p": 1.0,
+  "rule": "(1 + #{r* <= 0, NaN counted}) / (20,000 + 1)"
+ },
+ "values": {
+  "N5b.n_scenes": 12,
+  "N5b.n_dec": 1521,
+  "N5b.n_in_dropout": 282,
+  "N5b.dec_in_share": 0.1854043392504931,
+  "N5b.masked_share": 0.1908713692946058,
+  "N5b.R_gl": 0.0,
+  "N5b.R_gl.ci": [
+   0.0,
+   0.0
+  ],
+  "N5b.R_gl.level": 0.95,
+  "N5b.R_gl.share_nonpos": 1.0,
+  "N5b.c": NaN,
+  "N5b.c.ci": [
+   NaN,
+   NaN
+  ],
+  "N5b.c.level": 0.99,
+  "N5b.cdiff": NaN,
+  "N5b.cdiff.ci": [
+   NaN,
+   NaN
+  ],
+  "N5b.cdiff.level": 0.99,
+  "N5b.r": NaN,
+  "N5b.r.ci": [
+   NaN,
+   NaN
+  ],
+  "N5b.r.level": 0.99,
+  "N5b.p_r": 1.0,
+  "N5b.m": 1.7578045342049045,
+  "N5b.A": 0.9784386016031393,
+  "N5b.within5": 0.06292183757892444,
+  "N5b.room.passes": false,
+  "N5b.E5N.passes": false,
+  "N5b.class": "inconclusive",
+  "N5b.class.passes": false,
+  "N5b.eff": null,
+  "N5b.eff.ci": null,
+  "N5b.R_deceq": 0.0,
+  "N5b.D_N_deceq": 0.0,
+  "N5b.in.R_gl": 0.0,
+  "N5b.in.R_gl.ci": [
+   0.0,
+   0.0
+  ],
+  "N5b.in.RR_N": NaN,
+  "N5b.in.RR_N.ci": [
+   NaN,
+   NaN
+  ],
+  "N5b.in.c": NaN,
+  "N5b.in.c.ci": [
+   NaN,
+   NaN
+  ],
+  "N5b.in.within5": 0.11513353115727003
+ },
+ "written": "2026-11-22 05:54:31",
+ "seconds_finish": 6.6,
+ "code_sha256": "ae8e7e28b40c71c81aa0be26e260176eea3a3dd658c20acfbdd19c13aa6b3359"
+}

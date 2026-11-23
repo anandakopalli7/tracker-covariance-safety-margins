@@ -1,0 +1,740 @@
+{
+ "code": "b_fresh_b6_v02.py",
+ "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6",
+ "status": "descriptive (A10 section 5.7)",
+ "stop": "ext",
+ "stop_scoring": "judged until the stop ends (A10 section 1; clearX)",
+ "nboot": 20000,
+ "draw": "optA_lib_v02.boot_counts(n, 20000, 20261911) per run set (all 105, or a tercile), runs ascending",
+ "engine": "CD_capture/analysis/gl_fast_v13.py sha256 8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789",
+ "realised_decel": {
+  "pc13_c1109_eval_0000_native": 2.057559549027134,
+  "pc13_c1109_eval_0006_native": 5.144815984658083,
+  "pc13_c1109_eval_0012_native": 2.27253130163211,
+  "pc13_c1109_eval_0018_native": 2.1778191397168802,
+  "pc13_c1109_eval_0024_native": 2.3876709386048534,
+  "pc13_c1109_eval_0030_native": 4.964685938785185,
+  "pc13_c1109_eval_0036_native": 5.378684437310546,
+  "pc13_c1109_eval_0042_native": 4.089059558683038,
+  "pc13_c1109_eval_0048_native": 5.113316090816153,
+  "pc13_c1109_eval_0054_native": 5.66751510237616,
+  "pc13_c1109_eval_0060_native": 2.8956385951759183,
+  "pc13_c1109_eval_0066_native": 3.3593000536675857,
+  "pc13_c1109_eval_0072_native": 5.711237656918158,
+  "pc13_c1109_eval_0078_native": 4.941181281037085,
+  "pc13_c1109_eval_0084_native": 3.32861893595877,
+  "pc13_c1109_eval_0090_native": 2.193151944846486,
+  "pc13_c1109_eval_0096_native": 4.118071894200055,
+  "pc13_c1109_eval_0102_native": 5.635298551555299,
+  "pc13_c1109_eval_0108_native": 2.4782708277413996,
+  "pc13_c1109_eval_0114_native": 2.5979784497936227,
+  "pc13_c1109_eval_0120_native": 3.9892945566939266,
+  "pc13_c1109_eval_0126_native": 3.384774486341444,
+  "pc13_c1109_eval_0132_native": 3.5432214250410303,
+  "pc13_c1109_eval_0138_native": 4.337225605446115,
+  "pc13_c1109_eval_0144_native": 1.9991507001911348,
+  "pc13_c1109_eval_0150_native": 2.202717776439623,
+  "pc13_c1109_eval_0156_native": 3.8306830329078285,
+  "pc13_c1109_eval_0162_native": 2.906666459915113,
+  "pc13_c1109_eval_0168_native": 3.991332179160528,
+  "pc13_c1109_eval_0174_native": 3.0351997079242987,
+  "pc13_c1109_eval_0180_native": 2.671527088592868,
+  "pc13_c1109_eval_0186_native": 2.749798875449069,
+  "pc13_c1109_eval_0192_native": 3.261519562140384,
+  "pc13_c1109_eval_0198_native": 3.3008957932170184,
+  "pc13_c1109_eval_0204_native": 2.11479276265217,
+  "pc13_c1109_eval_0210_native": 3.5631462609522453,
+  "pc13_c1109_eval_0216_native": 3.8481567121408173,
+  "pc13_c1109_eval_0222_native": 2.3175383091576296,
+  "pc13_c1109_eval_0228_native": 2.365250683513861,
+  "pc13_c1109_eval_0234_native": 3.2338813717336006,
+  "pc13_c1109_eval_0240_native": 5.053628627312311,
+  "pc13_c1109_eval_0246_native": 4.64611021150314,
+  "pc13_c1109_eval_0252_native": 3.168590727936397,
+  "pc13_c1109_eval_0258_native": 2.2399457148024484,
+  "pc13_c1109_eval_0264_native": 5.541386665489109,
+  "pc13_c1109_eval_0270_native": 4.981982509436673,
+  "pc13_c1109_eval_0276_native": 5.369936739846376,
+  "pc13_c1109_eval_0282_native": 5.388160049431657,
+  "pc13_c1109_eval_0288_native": 4.6183836254942,
+  "pc13_c1109_eval_0294_native": 5.367437447221095,
+  "pc13_c1109_eval_0300_native": 2.177270077083271,
+  "pc13_c1109_eval_0306_native": 4.155985665682571,
+  "pc13_c1109_eval_0312_native": 4.49058361648656,
+  "pc13_c1109_eval_0318_native": 2.8534666406389437,
+  "pc13_c1109_eval_0324_native": 4.281554485669773,
+  "pc13_c1109_eval_0330_native": 3.3933396827455238,
+  "pc13_c1109_eval_0336_native": 4.672787224474812,
+  "pc13_c1109_eval_0342_native": 3.519448884019567,
+  "pc13_c1109_eval_0348_native": 2.9639979468706787,
+  "pc13_c1109_eval_0354_native": 4.69178614803818,
+  "pc13_c1109_eval_0360_native": 4.687804714866442,
+  "pc13_c1109_eval_0366_native": 5.408385522240397,
+  "pc13_c1109_eval_0372_native": 4.648482845774779,
+  "pc13_c1109_eval_0378_native": 4.317801138428513,
+  "pc13_c1109_eval_0384_native": 3.1224557803475412,
+  "pc13_c1109_eval_0390_native": 4.061070278574375,
+  "pc13_c1109_eval_0396_native": 5.3892487084443825,
+  "pc13_c1109_eval_0402_native": 3.742406305066998,
+  "pc13_c1109_eval_0408_native": 4.684563307902665,
+  "pc13_c1109_eval_0414_native": 2.5851754765135913,
+  "pc13_c1109_eval_0420_native": 3.2773083615796037,
+  "pc13_c1109_eval_0426_native": 2.8781120244678386,
+  "pc13_c1109_eval_0432_native": 4.853361809960216,
+  "pc13_c1109_eval_0438_native": 5.272609736374241,
+  "pc13_c1109_eval_0444_native": 4.687821988817488,
+  "pc13_c1109_eval_0450_native": 4.596963121314791,
+  "pc13_c1109_eval_0456_native": 3.5482861444909486,
+  "pc13_c1109_eval_0462_native": 2.0879251430169434,
+  "pc13_c1109_eval_0468_native": 3.231992320937837,
+  "pc13_c1109_eval_0474_native": 2.981540809735139,
+  "pc13_c1109_eval_0486_native": 4.687869738416616,
+  "pc13_c1109_eval_0498_native": 4.248984865564686,
+  "pc13_c1109_eval_0510_native": 4.686106771206071,
+  "pc13_c1109_eval_0516_native": 4.680382955834734,
+  "pc13_c1109_eval_0528_native": 3.7664005323692122,
+  "pc13_c1109_eval_0534_native": 3.8135555579615867,
+  "pc13_c1109_eval_0546_native": 4.620337367107961,
+  "pc13_c1109_eval_0552_native": 2.1954926923761553,
+  "pc13_c1109_eval_0558_native": 3.1077292281928792,
+  "pc13_c1109_eval_0564_native": 5.368999728992847,
+  "pc13_c1109_eval_0570_native": 4.753553977443137,
+  "pc13_c1109_eval_0576_native": 2.9567696477866,
+  "pc13_c1109_eval_0582_native": 2.65952918004729,
+  "pc13_c1109_eval_0594_native": 2.6382740160733653,
+  "pc13_c1109_eval_0600_native": 2.9724128643015493,
+  "pc13_c1109_eval_0606_native": 4.534932996025519,
+  "pc13_c1109_eval_0618_native": 2.0801320884525785,
+  "pc13_c1109_eval_0624_native": 4.13658080759079,
+  "pc13_c1109_eval_0630_native": 3.8921109124601245,
+  "pc13_c1109_eval_0648_native": 2.231879029308696,
+  "pc13_c1109_eval_0660_native": 2.5481283773002525,
+  "pc13_c1109_eval_0666_native": 3.212608645586006,
+  "pc13_c1109_eval_0678_native": 2.7362221391579253,
+  "pc13_c1109_eval_0696_native": 3.6081554827293667,
+  "pc13_c1109_eval_0720_native": 4.67692469561873
+ },
+ "terciles": [
+  {
+   "name": "all",
+   "runs": [
+    "pc13_c1109_eval_0000_native",
+    "pc13_c1109_eval_0006_native",
+    "pc13_c1109_eval_0012_native",
+    "pc13_c1109_eval_0018_native",
+    "pc13_c1109_eval_0024_native",
+    "pc13_c1109_eval_0030_native",
+    "pc13_c1109_eval_0036_native",
+    "pc13_c1109_eval_0042_native",
+    "pc13_c1109_eval_0048_native",
+    "pc13_c1109_eval_0054_native",
+    "pc13_c1109_eval_0060_native",
+    "pc13_c1109_eval_0066_native",
+    "pc13_c1109_eval_0072_native",
+    "pc13_c1109_eval_0078_native",
+    "pc13_c1109_eval_0084_native",
+    "pc13_c1109_eval_0090_native",
+    "pc13_c1109_eval_0096_native",
+    "pc13_c1109_eval_0102_native",
+    "pc13_c1109_eval_0108_native",
+    "pc13_c1109_eval_0114_native",
+    "pc13_c1109_eval_0120_native",
+    "pc13_c1109_eval_0126_native",
+    "pc13_c1109_eval_0132_native",
+    "pc13_c1109_eval_0138_native",
+    "pc13_c1109_eval_0144_native",
+    "pc13_c1109_eval_0150_native",
+    "pc13_c1109_eval_0156_native",
+    "pc13_c1109_eval_0162_native",
+    "pc13_c1109_eval_0168_native",
+    "pc13_c1109_eval_0174_native",
+    "pc13_c1109_eval_0180_native",
+    "pc13_c1109_eval_0186_native",
+    "pc13_c1109_eval_0192_native",
+    "pc13_c1109_eval_0198_native",
+    "pc13_c1109_eval_0204_native",
+    "pc13_c1109_eval_0210_native",
+    "pc13_c1109_eval_0216_native",
+    "pc13_c1109_eval_0222_native",
+    "pc13_c1109_eval_0228_native",
+    "pc13_c1109_eval_0234_native",
+    "pc13_c1109_eval_0240_native",
+    "pc13_c1109_eval_0246_native",
+    "pc13_c1109_eval_0252_native",
+    "pc13_c1109_eval_0258_native",
+    "pc13_c1109_eval_0264_native",
+    "pc13_c1109_eval_0270_native",
+    "pc13_c1109_eval_0276_native",
+    "pc13_c1109_eval_0282_native",
+    "pc13_c1109_eval_0288_native",
+    "pc13_c1109_eval_0294_native",
+    "pc13_c1109_eval_0300_native",
+    "pc13_c1109_eval_0306_native",
+    "pc13_c1109_eval_0312_native",
+    "pc13_c1109_eval_0318_native",
+    "pc13_c1109_eval_0324_native",
+    "pc13_c1109_eval_0330_native",
+    "pc13_c1109_eval_0336_native",
+    "pc13_c1109_eval_0342_native",
+    "pc13_c1109_eval_0348_native",
+    "pc13_c1109_eval_0354_native",
+    "pc13_c1109_eval_0360_native",
+    "pc13_c1109_eval_0366_native",
+    "pc13_c1109_eval_0372_native",
+    "pc13_c1109_eval_0378_native",
+    "pc13_c1109_eval_0384_native",
+    "pc13_c1109_eval_0390_native",
+    "pc13_c1109_eval_0396_native",
+    "pc13_c1109_eval_0402_native",
+    "pc13_c1109_eval_0408_native",
+    "pc13_c1109_eval_0414_native",
+    "pc13_c1109_eval_0420_native",
+    "pc13_c1109_eval_0426_native",
+    "pc13_c1109_eval_0432_native",
+    "pc13_c1109_eval_0438_native",
+    "pc13_c1109_eval_0444_native",
+    "pc13_c1109_eval_0450_native",
+    "pc13_c1109_eval_0456_native",
+    "pc13_c1109_eval_0462_native",
+    "pc13_c1109_eval_0468_native",
+    "pc13_c1109_eval_0474_native",
+    "pc13_c1109_eval_0486_native",
+    "pc13_c1109_eval_0498_native",
+    "pc13_c1109_eval_0510_native",
+    "pc13_c1109_eval_0516_native",
+    "pc13_c1109_eval_0528_native",
+    "pc13_c1109_eval_0534_native",
+    "pc13_c1109_eval_0546_native",
+    "pc13_c1109_eval_0552_native",
+    "pc13_c1109_eval_0558_native",
+    "pc13_c1109_eval_0564_native",
+    "pc13_c1109_eval_0570_native",
+    "pc13_c1109_eval_0576_native",
+    "pc13_c1109_eval_0582_native",
+    "pc13_c1109_eval_0594_native",
+    "pc13_c1109_eval_0600_native",
+    "pc13_c1109_eval_0606_native",
+    "pc13_c1109_eval_0618_native",
+    "pc13_c1109_eval_0624_native",
+    "pc13_c1109_eval_0630_native",
+    "pc13_c1109_eval_0648_native",
+    "pc13_c1109_eval_0660_native",
+    "pc13_c1109_eval_0666_native",
+    "pc13_c1109_eval_0678_native",
+    "pc13_c1109_eval_0696_native",
+    "pc13_c1109_eval_0720_native"
+   ],
+   "decel_min_max": [
+    1.9991507001911348,
+    5.711237656918158
+   ],
+   "W_R": {
+    "R_pp": 0.5651726534657758,
+    "R_deceq": 121.93034825870647,
+    "den0_deceq": 123.90547263681593,
+    "RR": {
+     "N": -0.0007344540558185042,
+     "CK3": 0.9538110004896362
+    },
+    "n": 21574.0,
+    "evaluable_den0": true,
+    "R_pp_ci": [
+     0.3603367818983148,
+     0.7795567041798233
+    ],
+    "den0_deceq_ci": [
+     78.25820895522389,
+     172.56791044776114
+    ],
+    "RR_ci": {
+     "N": [
+      -0.002437437182569967,
+      0.00035960376388282175
+     ],
+     "CK3": [
+      0.9368548399151564,
+      0.9741116239704048
+     ]
+    }
+   },
+   "W1": {
+    "R_pp": 5.579177441798148,
+    "R_deceq": 1203.6517412935325,
+    "den0_deceq": 1299.223880597015,
+    "RR": {
+     "N": -8.266717369203164e-06,
+     "CK3": 0.7828126679176965
+    },
+    "n": 21574.0,
+    "evaluable_den0": true,
+    "R_pp_ci": [
+     4.988910587299072,
+     6.167329150639373
+    ],
+    "den0_deceq_ci": [
+     1139.00907960199,
+     1453.2648009950249
+    ],
+    "RR_ci": {
+     "N": [
+      -0.000675062544820577,
+      0.0009537641924866913
+     ],
+     "CK3": [
+      0.7196197506337577,
+      0.842229539842845
+     ]
+    }
+   },
+   "room_ratio_WR_over_3s": 0.10130035464217514
+  },
+  {
+   "name": "tercile 1",
+   "runs": [
+    "pc13_c1109_eval_0144_native",
+    "pc13_c1109_eval_0000_native",
+    "pc13_c1109_eval_0618_native",
+    "pc13_c1109_eval_0462_native",
+    "pc13_c1109_eval_0204_native",
+    "pc13_c1109_eval_0300_native",
+    "pc13_c1109_eval_0018_native",
+    "pc13_c1109_eval_0090_native",
+    "pc13_c1109_eval_0552_native",
+    "pc13_c1109_eval_0150_native",
+    "pc13_c1109_eval_0648_native",
+    "pc13_c1109_eval_0258_native",
+    "pc13_c1109_eval_0012_native",
+    "pc13_c1109_eval_0222_native",
+    "pc13_c1109_eval_0228_native",
+    "pc13_c1109_eval_0024_native",
+    "pc13_c1109_eval_0108_native",
+    "pc13_c1109_eval_0660_native",
+    "pc13_c1109_eval_0414_native",
+    "pc13_c1109_eval_0114_native",
+    "pc13_c1109_eval_0594_native",
+    "pc13_c1109_eval_0582_native",
+    "pc13_c1109_eval_0180_native",
+    "pc13_c1109_eval_0678_native",
+    "pc13_c1109_eval_0186_native",
+    "pc13_c1109_eval_0318_native",
+    "pc13_c1109_eval_0426_native",
+    "pc13_c1109_eval_0060_native",
+    "pc13_c1109_eval_0162_native",
+    "pc13_c1109_eval_0576_native",
+    "pc13_c1109_eval_0348_native",
+    "pc13_c1109_eval_0600_native",
+    "pc13_c1109_eval_0474_native",
+    "pc13_c1109_eval_0174_native",
+    "pc13_c1109_eval_0558_native"
+   ],
+   "decel_min_max": [
+    1.9991507001911348,
+    3.1077292281928792
+   ],
+   "W_R": {
+    "R_pp": 0.4165744356447131,
+    "R_deceq": 36.79601990049751,
+    "den0_deceq": 37.51243781094528,
+    "RR": {
+     "N": -0.0009464575446187127,
+     "CK3": 0.9511898323418064
+    },
+    "n": 8833.0,
+    "evaluable_den0": true,
+    "R_pp_ci": [
+     0.19097623394974492,
+     0.6738739028314806
+    ],
+    "den0_deceq_ci": [
+     17.094278606965172,
+     61.0299751243781
+    ],
+    "RR_ci": {
+     "N": [
+      -0.005159545967089821,
+      0.0008772006798322553
+     ],
+     "CK3": [
+      0.9071776947472462,
+      0.9858926402843706
+     ]
+    }
+   },
+   "W1": {
+    "R_pp": 5.7595527400921345,
+    "R_deceq": 508.74129353233826,
+    "den0_deceq": 548.2786069651742,
+    "RR": {
+     "N": -0.0004791847990846587,
+     "CK3": 0.9846367485844492
+    },
+    "n": 8833.0,
+    "evaluable_den0": true,
+    "R_pp_ci": [
+     4.751483395970543,
+     6.653137354357134
+    ],
+    "den0_deceq_ci": [
+     452.10211442786056,
+     633.862686567164
+    ],
+    "RR_ci": {
+     "N": [
+      -0.0017733485639178119,
+      6.365998660389681e-05
+     ],
+     "CK3": [
+      0.9280513809188602,
+      1.060520236054528
+     ]
+    }
+   },
+   "room_ratio_WR_over_3s": 0.07232756681694162
+  },
+  {
+   "name": "tercile 2",
+   "runs": [
+    "pc13_c1109_eval_0384_native",
+    "pc13_c1109_eval_0252_native",
+    "pc13_c1109_eval_0666_native",
+    "pc13_c1109_eval_0468_native",
+    "pc13_c1109_eval_0234_native",
+    "pc13_c1109_eval_0192_native",
+    "pc13_c1109_eval_0420_native",
+    "pc13_c1109_eval_0198_native",
+    "pc13_c1109_eval_0084_native",
+    "pc13_c1109_eval_0066_native",
+    "pc13_c1109_eval_0126_native",
+    "pc13_c1109_eval_0330_native",
+    "pc13_c1109_eval_0342_native",
+    "pc13_c1109_eval_0132_native",
+    "pc13_c1109_eval_0456_native",
+    "pc13_c1109_eval_0210_native",
+    "pc13_c1109_eval_0696_native",
+    "pc13_c1109_eval_0402_native",
+    "pc13_c1109_eval_0528_native",
+    "pc13_c1109_eval_0534_native",
+    "pc13_c1109_eval_0156_native",
+    "pc13_c1109_eval_0216_native",
+    "pc13_c1109_eval_0630_native",
+    "pc13_c1109_eval_0120_native",
+    "pc13_c1109_eval_0168_native",
+    "pc13_c1109_eval_0390_native",
+    "pc13_c1109_eval_0042_native",
+    "pc13_c1109_eval_0096_native",
+    "pc13_c1109_eval_0624_native",
+    "pc13_c1109_eval_0306_native",
+    "pc13_c1109_eval_0498_native",
+    "pc13_c1109_eval_0324_native",
+    "pc13_c1109_eval_0378_native",
+    "pc13_c1109_eval_0138_native",
+    "pc13_c1109_eval_0312_native"
+   ],
+   "decel_min_max": [
+    3.1224557803475412,
+    4.49058361648656
+   ],
+   "W_R": {
+    "R_pp": 0.9660827452723797,
+    "R_deceq": 69.08457711442787,
+    "den0_deceq": 70.0,
+    "RR": {
+     "N": 0.00021604493734696947,
+     "CK3": 0.9601037015699265
+    },
+    "n": 7151.0,
+    "evaluable_den0": true,
+    "R_pp_ci": [
+     0.48996722989813557,
+     1.4455067288664063
+    ],
+    "den0_deceq_ci": [
+     34.12437810945273,
+     109.3987562189054
+    ],
+    "RR_ci": {
+     "N": [
+      -0.0022599426617986042,
+      0.0027295100304471826
+     ],
+     "CK3": [
+      0.9309655591123256,
+      0.9829302036267863
+     ]
+    }
+   },
+   "W1": {
+    "R_pp": 5.744525867376862,
+    "R_deceq": 410.7910447761194,
+    "den0_deceq": 431.8308457711443,
+    "RR": {
+     "N": 0.0006903317225593149,
+     "CK3": 0.6569414671365768
+    },
+    "n": 7151.0,
+    "evaluable_den0": true,
+    "R_pp_ci": [
+     4.81313571690945,
+     6.640851517670044
+    ],
+    "den0_deceq_ci": [
+     339.22226368159204,
+     522.1660447761193
+    ],
+    "RR_ci": {
+     "N": [
+      -0.000446425190660604,
+      0.003934140912793376
+     ],
+     "CK3": [
+      0.5686897735544977,
+      0.7281281837329445
+     ]
+    }
+   },
+   "room_ratio_WR_over_3s": 0.16817449648173044
+  },
+  {
+   "name": "tercile 3",
+   "runs": [
+    "pc13_c1109_eval_0606_native",
+    "pc13_c1109_eval_0450_native",
+    "pc13_c1109_eval_0288_native",
+    "pc13_c1109_eval_0546_native",
+    "pc13_c1109_eval_0246_native",
+    "pc13_c1109_eval_0372_native",
+    "pc13_c1109_eval_0336_native",
+    "pc13_c1109_eval_0720_native",
+    "pc13_c1109_eval_0516_native",
+    "pc13_c1109_eval_0408_native",
+    "pc13_c1109_eval_0510_native",
+    "pc13_c1109_eval_0360_native",
+    "pc13_c1109_eval_0444_native",
+    "pc13_c1109_eval_0486_native",
+    "pc13_c1109_eval_0354_native",
+    "pc13_c1109_eval_0570_native",
+    "pc13_c1109_eval_0432_native",
+    "pc13_c1109_eval_0078_native",
+    "pc13_c1109_eval_0030_native",
+    "pc13_c1109_eval_0270_native",
+    "pc13_c1109_eval_0240_native",
+    "pc13_c1109_eval_0048_native",
+    "pc13_c1109_eval_0006_native",
+    "pc13_c1109_eval_0438_native",
+    "pc13_c1109_eval_0294_native",
+    "pc13_c1109_eval_0564_native",
+    "pc13_c1109_eval_0276_native",
+    "pc13_c1109_eval_0036_native",
+    "pc13_c1109_eval_0282_native",
+    "pc13_c1109_eval_0396_native",
+    "pc13_c1109_eval_0366_native",
+    "pc13_c1109_eval_0264_native",
+    "pc13_c1109_eval_0102_native",
+    "pc13_c1109_eval_0054_native",
+    "pc13_c1109_eval_0072_native"
+   ],
+   "decel_min_max": [
+    4.534932996025519,
+    5.711237656918158
+   ],
+   "W_R": {
+    "R_pp": 0.2735873405779688,
+    "R_deceq": 15.293532338308456,
+    "den0_deceq": 15.552238805970147,
+    "RR": {
+     "N": 0.0,
+     "CK3": 0.9525048796356538
+    },
+    "n": 5590.0,
+    "evaluable_den0": true,
+    "R_pp_ci": [
+     0.09079371578962642,
+     0.49919875608055164
+    ],
+    "den0_deceq_ci": [
+     5.159079601990049,
+     27.70149253731343
+    ],
+    "RR_ci": {
+     "N": [
+      -0.002525252525252525,
+      0.0005439290755736609
+     ],
+     "CK3": [
+      0.9161041949308347,
+      0.9753694581280787
+     ]
+    }
+   },
+   "W1": {
+    "R_pp": 4.99247946314937,
+    "R_deceq": 279.07960199004975,
+    "den0_deceq": 309.59203980099505,
+    "RR": {
+     "N": -0.0001247883055530805,
+     "CK3": 0.5692307692307691
+    },
+    "n": 5590.0,
+    "evaluable_den0": true,
+    "R_pp_ci": [
+     3.968425922533584,
+     6.147450487518711
+    ],
+    "den0_deceq_ci": [
+     243.0733830845771,
+     367.723134328358
+    ],
+    "RR_ci": {
+     "N": [
+      -0.0007487427058283695,
+      0.00012177606945622528
+     ],
+     "CK3": [
+      0.4396015613831606,
+      0.6946047566194448
+     ]
+    }
+   },
+   "room_ratio_WR_over_3s": 0.05479989303859523
+  }
+ ],
+ "delayed_stop": {
+  "rule": "tau_i = 0.75 + U(0, 0.75), 6 m/s^2; default_rng(20261916)",
+  "R_pp": 1.8645531958267438,
+  "R_deceq": 402.2587064676617,
+  "den0_deceq": 413.35323383084574,
+  "RR": {
+   "N": -0.00032156726939916604,
+   "NA": 0.043287901649887446,
+   "AM": 0.48165829767234764,
+   "CK3": 0.9282904989239863,
+   "Q": -0.0059613624557844904
+  },
+  "n": 21574.0,
+  "evaluable_den0": true,
+  "R_pp_ci": [
+   1.4414622796656384,
+   2.271281753722474
+  ],
+  "den0_deceq_ci": [
+   316.60634328358213,
+   508.4232587064676
+  ],
+  "RR_ci": {
+   "N": [
+    -0.001346089990799237,
+    0.0006518863649183173
+   ],
+   "NA": [
+    0.02407058696223564,
+    0.0655313517759299
+   ],
+   "AM": [
+    0.44059545343335166,
+    0.5252728294738712
+   ],
+   "CK3": [
+    0.8943767255746058,
+    0.9623409446269149
+   ],
+   "Q": [
+    -0.011684714310840363,
+    -0.001298406440250785
+   ]
+  }
+ },
+ "fixed_tau_0p75_point": {
+  "R_pp": 0.5651726534657758,
+  "R_deceq": 121.93034825870647,
+  "den0_deceq": 123.90547263681593,
+  "RR": {
+   "N": -0.0007344540558185042,
+   "NA": 0.06601925901746371,
+   "AM": 0.5674881671291006,
+   "CK3": 0.9538110004896362,
+   "Q": -0.0060796474620531706
+  },
+  "n": 21574.0,
+  "evaluable_den0": true
+ },
+ "RS075_rel": {
+  "point": 0.10130035464217514,
+  "ci": [
+   0.06834182630564359,
+   0.13387874492631124
+  ],
+  "invalid_share": 0.0,
+  "n_invalid": 0,
+  "outside": false,
+  "basic": [
+   0.06872196435803904,
+   0.1342588829787067
+  ]
+ },
+ "DS_rel": {
+  "point": 0.3341985830846429,
+  "ci": [
+   0.27905943937918076,
+   0.38301622318247863
+  ],
+  "invalid_share": 0.0,
+  "n_invalid": 0,
+  "outside": false,
+  "basic": [
+   0.28538094298680716,
+   0.38933772679010503
+  ]
+ },
+ "tercile_rel_range": {
+  "evaluable": [
+   "tercile 1",
+   "tercile 2",
+   "tercile 3"
+  ],
+  "relmin": 0.05479989303859523,
+  "relmax": 0.16817449648173044
+ },
+ "reliance": {
+  "scoring": "W_R (the same safe set as RS075)",
+  "all": {
+   "n": 21574.0,
+   "F0": {
+    "share_safe_only_with_stop": 0.0580021464938218,
+    "share_unsafe_3s": 0.07407040997847511,
+    "share_unsafe_with_stop": 0.016068263484653306
+   },
+   "E": {
+    "share_safe_only_with_stop": 0.06867926982312872,
+    "share_unsafe_3s": 0.07901647782225427,
+    "share_unsafe_with_stop": 0.010337207999125537
+   },
+   "N": {
+    "share_safe_only_with_stop": 0.05787369816348867,
+    "share_unsafe_3s": 0.073947035011279,
+    "share_unsafe_with_stop": 0.016073336847790342
+   },
+   "NA": {
+    "share_safe_only_with_stop": 0.0565862169637582,
+    "share_unsafe_3s": 0.07228458615423855,
+    "share_unsafe_with_stop": 0.01569836919048034
+   },
+   "AM": {
+    "share_safe_only_with_stop": 0.046847204599972235,
+    "share_unsafe_3s": 0.05989128244012164,
+    "share_unsafe_with_stop": 0.013044077840149396
+   },
+   "CK3": {
+    "share_safe_only_with_stop": 0.04160180833110797,
+    "share_unsafe_3s": 0.05220098635403681,
+    "share_unsafe_with_stop": 0.010599178022928833
+   },
+   "O": {
+    "share_safe_only_with_stop": 0.6372948919996292,
+    "share_unsafe_3s": 0.6475387039955502,
+    "share_unsafe_with_stop": 0.010243811995921016
+   }
+  }
+ },
+ "seconds": 5723.151111125946,
+ "written": "2026-11-20 09:08:01"
+}

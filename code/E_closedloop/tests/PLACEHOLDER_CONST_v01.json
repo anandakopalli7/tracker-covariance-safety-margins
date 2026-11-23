@@ -1,0 +1,11 @@
+{
+ "_note": "PLACEHOLDER for the E0 replay-identity dry run only (19 Nov): B3 R terms and kappa from B STATUS 15:10; sigma_a2 placeholder 1.0",
+ "R_car_diag": {
+  "R_x": 0.0469,
+  "R_y": 0.00592,
+  "R_vx": 0.267,
+  "R_vy": 0.0446
+ },
+ "kappa": 0.16788,
+ "sigma_a2": 1.0
+}

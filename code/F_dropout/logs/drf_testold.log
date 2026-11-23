@@ -1,0 +1,2 @@
+[     0 s] k fitted on 35 runs: M {'in': 0.22677518388152357, 're': 1.9603147948377804, 'st': 2.121860759952116}, rows {'in': 19322, 're': 17255, 'st': 84200}, k_in 0.106876, k_re 0.923866
+[    52 s] WROTE ARS_TRIAL\revision_v13\work\F_dropout\out_a13\TESTOLD_DRF_RESULTS_v01.json: {'DRF.k_in': 0.10687561981524234, 'DRF.k_re': 0.9238658972523808, 'DRF.RR_N': 0.011578779332730271, 'DRF.RR_flag': 0.01734688447826318, 'DRF.delta': -0.005768105145532908, 'DRF.delta.ci': [-0.013492013804502373, 0.0007561829712634592], 'DRF.status': 'failed (amendment)'}

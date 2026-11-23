@@ -1,0 +1,132 @@
+{
+  "packet": "packet_e_v04",
+  "base": "ARS_TRIAL/revision_v13/work/CD_capture/packets/packet_d1_v13",
+  "changes": [
+    {
+      "path": "claude_smoke_v01/cuda_entry_smoke_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\cuda_entry_smoke_v01.py",
+      "old_sha256": "672c0a8d2c8bb10de81806ffb367ed90845ce3e643799c1bf21692f7b2d799a9",
+      "new_sha256": "2bf8d6cb4d022e1545a7eab8c9fb6bcac2021d4baedd70d0ff41de3c8782dcfa",
+      "added": false
+    },
+    {
+      "path": "claude_smoke_v01/e_arms_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\e_arms_v01.py",
+      "old_sha256": null,
+      "new_sha256": "81aa894ad4f14f24e2c2a4b1413b8882c3c85bd156125e1226ce49c2a2e09771",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/e_dropout_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\e_dropout_v01.py",
+      "old_sha256": null,
+      "new_sha256": "6d47f1317af07a51daa5d19baf1b66bc0c1191085777c677c10414f39cb5d26d",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/E_F2_PLANT_v01.json",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\E_F2_PLANT_v01.json",
+      "old_sha256": null,
+      "new_sha256": "55b8eb4051d736e63b37ac26d46c956903598228640c95d4258724488d04b6fc",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/e_imm_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\e_imm_v01.py",
+      "old_sha256": null,
+      "new_sha256": "73df9d62923d3f56cd32303d1dac426c21e4e33fbd95beb63a5df80604300300",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/E_PBAR_CANMOT_v01.json",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\E_PBAR_CANMOT_v01.json",
+      "old_sha256": null,
+      "new_sha256": "fd89f69ed5c96589fa70604161d0d68adb5469220be375eab76d62c853ba0b65",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/E_PBAR_IMM_v01.json",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\E_PBAR_IMM_v01.json",
+      "old_sha256": null,
+      "new_sha256": "1cba70a1029c5c764d473a1682f55d4283f391642b946665d8417e84d9d95f68",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/e_sources_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\e_sources_v01.py",
+      "old_sha256": null,
+      "new_sha256": "a72f2bf9c7a0a8837b8c09e28ebc6a43f5b5fb2927f4c9ce1650f6e122ab4369",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/probe_e_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\probe_e_v01.py",
+      "old_sha256": null,
+      "new_sha256": "dbbbafb79ea3a8848a7436de2084b17154d85320c6926c1984b398f81a54f2ac",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/review/review_case_e_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\review\\review_case_e_v01.py",
+      "old_sha256": null,
+      "new_sha256": "07b7c638f0344c4214318e28aa5d861b9cae04de1d751da01fb499f780806d55",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/review/review_perception_prefix_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\review\\review_perception_prefix_v01.py",
+      "old_sha256": "cdc0f32e6399424511af74465c665d374f6ac874e0feb5812b052448888e7a21",
+      "new_sha256": "5ae72eb6cf8c27d7ce76bcbac4df248d96e97bdce3385b87fe93ee78ccf0cfd8",
+      "added": false
+    },
+    {
+      "path": "claude_smoke_v01/trackers_b/trk_constants_v01.json",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\trackers_b\\trk_constants_v01.json",
+      "old_sha256": null,
+      "new_sha256": "d8455cb50b637a3ce45460a0dee38f79b69fce4c085c913f713b56ac23338a9d",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/trackers_b/trk_env_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\trackers_b\\trk_env_v01.py",
+      "old_sha256": null,
+      "new_sha256": "0219dd2ed6517109a3c913430a2f30ca756fc01f4f003c1347c4ddd4a9628cad",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/trackers_b/trk_exact_math_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\trackers_b\\trk_exact_math_v01.py",
+      "old_sha256": null,
+      "new_sha256": "6a42ece0b2255e4c2ec15a5651ee8ac65671e63cce01895e1ff4227ead86f541",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/trackers_b/trk_filters_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\trackers_b\\trk_filters_v01.py",
+      "old_sha256": null,
+      "new_sha256": "9edfdd6cb5642c1618d41ccb3def176251074a3beaf703d8589df58018304dbb",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/trackers_b/trk_tracker_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\trackers_b\\trk_tracker_v01.py",
+      "old_sha256": null,
+      "new_sha256": "5cf4ad3baf81b614b18facc3fe4b3bc6506f867350d5b6216fce5ed725cfdef8",
+      "added": true
+    },
+    {
+      "path": "claude_smoke_v01/worker_main_v01.py",
+      "source": "ARS_TRIAL\\revision_v13\\work\\E_closedloop\\src_v04\\worker_main_v01.py",
+      "old_sha256": "4462b8e4ff0c57cf78b61a4feb942992a5221094a121c9e16befab751fcb8fd6",
+      "new_sha256": "d9fd57f79b1a82a74c13093c24a06996eaff2de817ab0a0679dd527066e51a60",
+      "added": false
+    }
+  ],
+  "binding_sha256": "c36b58747acee0c7fa809e1195299cfd813f46886901b3bcd304d2fd9b8c29cd",
+  "protocol_sha256": "1a8328644c610f477be9a605e70bbf2f0c46893d4716ce50d2f7319450bff601",
+  "smoke_files": 35,
+  "utc": "2026-11-21T19:28:38.565405+00:00",
+  "tar": "packet_e_v04.tar.gz",
+  "tar_sha256": "b8d3fd1587da32ee3f5f15f8fdf46dbcec933d04819aa229db6e4dc59da13820",
+  "tar_bytes": 7810248
+}

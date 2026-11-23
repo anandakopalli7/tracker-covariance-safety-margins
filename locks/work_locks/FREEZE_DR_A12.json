@@ -1,0 +1,115 @@
+{
+ "name": "FREEZE_DR_A12",
+ "layered_on": "work\\locks\\FREEZE_DR.json",
+ "amendment": "AMENDMENT_12 sec. 3a",
+ "written": "2026-11-22 00:45:26",
+ "writer": "session F (Claude Opus 5.5)",
+ "n": 21,
+ "entries": [
+  {
+   "group": "spec",
+   "path": "work\\F_dropout\\A12_3a_DR_REPLICATION_v02.md",
+   "sha256": "ca5f058c54250f06b72355675810b664f818ef86d05a630ed230358ca8dbbfa0"
+  },
+  {
+   "group": "spec",
+   "path": "work\\F_dropout\\A12_3a_DR_REPLICATION_v01.md",
+   "sha256": "26ca6298b7920fe5b9d2d25ac46edc06779bce0fe7201ee63c54ada8af8d291c"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_masks_v03.py",
+   "sha256": "a4fe811165e97af242fb1e22669a7f73c48ed2dd9cd655a701b0ee0c626762a6"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_masks_v04.py",
+   "sha256": "b5827b26d87bcbd2bc69bfad55cdd1a1d148d3dcd45d4df43c8e216e183859df"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_extract_v02.py",
+   "sha256": "9e14318e7f89a12b05c34b7f906cb17b4e71e3b4794dada743ef6b75f8f5d970"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_analysis_v02.py",
+   "sha256": "0255538074dd3ee4703a01006c3a30f1d7886dac9ad7551bf0634699878f029b"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_dose_v01.py",
+   "sha256": "68e2c043b4965c4a9130e0024b6878c6988d39e9baf9d7325aa7909264d49c92"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_slope_remote_v01.py",
+   "sha256": "43a82f095ff9d8a148571f109020275e8f422260609cfeb27c1de43aa832e8b2"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_pods_v02.py",
+   "sha256": "327baa08de091f7a512c715e9283b06efcb6fa2fc57a469449bdee856d6f126a"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_identity_v02.py",
+   "sha256": "080f93826145f921d569b9ae5f96d00649cc69735d9b748b5c1c93c79218f319"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_pod_a12_test_v01.sh",
+   "sha256": "62bf173dda38f44ca8d8618c3167ecba017ca4ce8b5742921017671739f02181"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_pod_a12_test2_v01.sh",
+   "sha256": "1e1ef4f5ca36c87e1ebb10c0ac90d89ada2ef0bca5991208905d5b08c8da8e08"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_pod_a12_postlock_v01.sh",
+   "sha256": "6e025308efbd966bb3b1507ba6b73d8f94394437e03867adbb23785028365ebc"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\make_freeze_dr_a12_v01.py",
+   "sha256": "5da85a776048cd5c702bb01a8f526484818f3e3a9e7027fd00769a9a19caf8dc"
+  },
+  {
+   "group": "recount",
+   "path": "work\\F_dropout\\recount\\dr_recount_a12_v01.py",
+   "sha256": "c80d1ffc77ab8603161711943b0419a653d0a82a7f23985861ebbfb6e28676d3"
+  },
+  {
+   "group": "recount",
+   "path": "work\\F_dropout\\recount\\TESTOLD_DR2_RECOUNT_v01.json",
+   "sha256": "b4a8e3fbd8ac40037083b80b88bacbe29664ebbf2a36633331bfba046c18b560"
+  },
+  {
+   "group": "tests",
+   "path": "work\\F_dropout\\out_a12\\testold_p010\\TESTOLD_DR2_RESULTS_v01.json",
+   "sha256": "d4b8d41c7778f83bb33fddb5213ea7d4de20b1a8fba28efb9554c66cb87f50c3"
+  },
+  {
+   "group": "tests",
+   "path": "work\\F_dropout\\out_a12\\TESTOLD_DR2_DOSE_v01.json",
+   "sha256": "0492f011f69f4c2c72518e6b6bd25664baf0c90322e47bfe69ffe723b4455d92"
+  },
+  {
+   "group": "tests",
+   "path": "work\\F_dropout\\out_a12\\TESTOLD_DR2_FIRST_MERGED_v01.json",
+   "sha256": "a258466df50589d4885238c2c43ec4ae0ce38afd8dc288d30e1dd268dcc92e9d"
+  },
+  {
+   "group": "tests",
+   "path": "work\\F_dropout\\out_a12\\DR2_COMPARE_TESTOLD_v01.json",
+   "sha256": "2ddd5e1219d96f1e2deb312511fc364b0e5eac21af14e910e6d04139a4af1e46"
+  },
+  {
+   "group": "records",
+   "path": "work\\F_dropout\\notes\\DR_A12_RECORDS_v01.md",
+   "sha256": "72b18264942c94f4671820341235493f3f51a61d6ac0567967fe4360ff858ee9"
+  }
+ ]
+}

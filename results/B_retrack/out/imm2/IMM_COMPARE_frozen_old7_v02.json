@@ -1,0 +1,100 @@
+{
+ "code": "imm_compare_v01.py",
+ "constants": "ARS_TRIAL\\revision_v13\\work\\shared\\trackers\\trk_constants_v01.json",
+ "diag": 0.95,
+ "runs": [
+  {
+   "cap": "<library folder>\\fit_finite_0007",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 9.044522256333545e-15,
+   "centre_max_abs_diff": 1.1368683772161603e-13,
+   "velocity_max_abs_diff": 1.2698175844150228e-14,
+   "pass_1e9": true,
+   "seconds": 106.6
+  },
+  {
+   "cap": "<library folder>\\fit_finite_0019",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 1.2817366701599828e-15,
+   "centre_max_abs_diff": 5.684341886080802e-14,
+   "velocity_max_abs_diff": 5.748873599387139e-15,
+   "pass_1e9": true,
+   "seconds": 113.5
+  },
+  {
+   "cap": "<library folder>\\fit_finite_0033",
+   "frames": 19,
+   "frames_b": 19,
+   "ids_identical": true,
+   "track_states": 19,
+   "car_states": 19,
+   "P9_max_rel_diff": 4.589187160086909e-15,
+   "centre_max_abs_diff": 5.684341886080802e-14,
+   "velocity_max_abs_diff": 8.881784197001252e-15,
+   "pass_1e9": true,
+   "seconds": 114.3
+  },
+  {
+   "cap": "<library folder>\\c1109_tune_0004",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 8.778384139843953e-15,
+   "centre_max_abs_diff": 2.2737367544323206e-13,
+   "velocity_max_abs_diff": 1.2434497875801753e-14,
+   "pass_1e9": true,
+   "seconds": 108.5
+  },
+  {
+   "cap": "<library folder>\\c1109_tune_0064",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 6.840959174403895e-15,
+   "centre_max_abs_diff": 2.2737367544323206e-13,
+   "velocity_max_abs_diff": 1.7763568394002505e-14,
+   "pass_1e9": true,
+   "seconds": 84.9
+  },
+  {
+   "cap": "<library folder>\\c1109_tune_0098",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 96,
+   "car_states": 11,
+   "P9_max_rel_diff": 2.5896737983598174e-16,
+   "centre_max_abs_diff": 5.684341886080802e-14,
+   "velocity_max_abs_diff": 4.440892098500626e-16,
+   "pass_1e9": true,
+   "seconds": 149.0
+  },
+  {
+   "cap": "<library folder>\\c1109_tune_0050",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 61,
+   "car_states": 6,
+   "P9_max_rel_diff": 0.0,
+   "centre_max_abs_diff": 0.0,
+   "velocity_max_abs_diff": 0.0,
+   "pass_1e9": true,
+   "seconds": 156.7
+  }
+ ],
+ "all_pass": true,
+ "written": "2026-11-19 16:07:58"
+}

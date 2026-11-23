@@ -1,0 +1,22 @@
+{
+ "v03s_v01_e_f0_imm_c1109_tune_0000": {
+  "detector_updates": 69,
+  "tracks_exact": 1,
+  "tracks_max_abs_diff": 5.684341886080802e-14,
+  "decisions": 340,
+  "actors_exact": 5,
+  "actors_max_abs_diff": 5.684341886080802e-14,
+  "events_equal": false,
+  "n_events": 138
+ },
+ "v03s_v01_e_n_imm_c1109_tune_0000": {
+  "detector_updates": 69,
+  "tracks_exact": 1,
+  "tracks_max_abs_diff": 5.684341886080802e-14,
+  "decisions": 340,
+  "actors_exact": 5,
+  "actors_max_abs_diff": 5.684341886080802e-14,
+  "events_equal": false,
+  "n_events": 138
+ }
+}

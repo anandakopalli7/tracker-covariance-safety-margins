@@ -1,0 +1,88 @@
+{
+ "code": "f06_score_v01.py horizon",
+ "rule": "A10 section 8.3",
+ "split": "train (design split)",
+ "nboot": 20000,
+ "draw": "default_rng(20261923).integers(0, n_scenes, (20000, n_scenes))",
+ "horizons": {
+  "3 s": {
+   "n_scenes": 700,
+   "n_evaluated": 88737,
+   "verify": {
+    "max_rel": 0.0,
+    "n": 25,
+    "roles": [
+     "F0",
+     "E"
+    ],
+    "pop": 0
+   },
+   "R_gl_pp": {
+    "point": 0.0,
+    "ci": [
+     -0.001121508933525342,
+     0.00224367600918398
+    ],
+    "invalid_share": 0.0,
+    "n_invalid": 0,
+    "outside": false,
+    "basic": [
+     -0.00224367600918398,
+     0.001121508933525342
+    ]
+   },
+   "D_gl_E_F0": {
+    "point": 0.0,
+    "ci": [
+     -0.22542329563859376,
+     0.45097887784598
+    ]
+   },
+   "R_deceq": 0.0,
+   "share_resamples_nonpositive": 0.75265,
+   "lower_end_positive": false
+  },
+  "2 s": {
+   "n_scenes": 700,
+   "n_evaluated": 95871,
+   "verify": {
+    "max_rel": 4.898559208329982e-15,
+    "n": 25,
+    "roles": [
+     "F0",
+     "E"
+    ],
+    "pop": 0
+   },
+   "R_gl_pp": {
+    "point": 0.0,
+    "ci": [
+     -0.0010266653536866147,
+     0.14191037646077873
+    ],
+    "invalid_share": 0.0,
+    "n_invalid": 0,
+    "outside": false,
+    "basic": [
+     -0.14191037646077873,
+     0.0010266653536866147
+    ]
+   },
+   "D_gl_E_F0": {
+    "point": 0.0,
+    "ci": [
+     -0.20635973609100952,
+     28.523985668616522
+    ]
+   },
+   "R_deceq": 0.0,
+   "share_resamples_nonpositive": 0.4166,
+   "lower_end_positive": false
+  }
+ },
+ "primary_horizon_s": null,
+ "stop": "no measurable room on design data at 2 or 3 s",
+ "written": "2026-11-19 23:40:04",
+ "seconds": 501.4,
+ "code_sha256": "19207e1f2f680c9acdfa123bbf433751576ab1638684b8aa0b616fd8876545dd"
+}

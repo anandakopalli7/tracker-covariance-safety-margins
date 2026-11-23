@@ -1,0 +1,23 @@
+{
+ "code": "imm_compare_v02.py",
+ "kappa_ca": null,
+ "constants": "..\\shared\\trackers\\trk_constants_v01.json",
+ "diag": 0.95,
+ "runs": [
+  {
+   "cap": "<library folder>\\fit_finite_0012",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 7.289477842796685e-15,
+   "centre_max_abs_diff": 1.1368683772161603e-13,
+   "velocity_max_abs_diff": 2.4868995751603507e-14,
+   "pass_1e9": true,
+   "seconds": 27.6
+  }
+ ],
+ "all_pass": true,
+ "written": "2026-11-21 13:56:14"
+}

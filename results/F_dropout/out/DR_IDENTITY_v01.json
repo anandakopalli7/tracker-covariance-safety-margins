@@ -1,0 +1,175 @@
+{
+ "code": "dr_identity_v01.py",
+ "amendment": "AMENDMENT_11 sec. 6c.8",
+ "reference": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\arrays\\CV0",
+ "rule": {
+  "tol_abs": 1e-12,
+  "compared": "every key both builders produce",
+  "read_keys": [
+   "k",
+   "idx55",
+   "evaluated",
+   "clear",
+   "vbar",
+   "des",
+   "cF0",
+   "cE",
+   "cN",
+   "cCK3",
+   "phase",
+   "lead_found",
+   "dx_pred3",
+   "now",
+   "age",
+   "v0",
+   "track_id"
+  ],
+  "citation": "A10 sec. 3 B0(b): arrays rebuilt from replayed actor lists within 1e-12 of the stored ones; session B (21 Nov): CD CV0 arrays are built from logged tracks, so (b) applies"
+ },
+ "check_i": {
+  "passed": true,
+  "n_runs": 105,
+  "all_common_keys_identical_runs": 0,
+  "read_keys_identical_runs": 104,
+  "keys_only_in_reference": [
+   "cTG1",
+   "cTG2",
+   "cTG4",
+   "clearR075"
+  ],
+  "keys_only_in_replay": [],
+  "by_key": {
+   "cA1": {
+    "runs": 105,
+    "max_abs": 2.842170943040401e-14,
+    "max_rel": 4.1008322771310466e-15
+   },
+   "cCK3": {
+    "runs": 1,
+    "max_abs": 1.3322676295501878e-15,
+    "max_rel": 4.0858909946303244e-15
+   },
+   "cE": {
+    "runs": 1,
+    "max_abs": 5.684341886080802e-14,
+    "max_rel": 4.1535600582994206e-15
+   },
+   "cF0": {
+    "runs": 1,
+    "max_abs": 1.3322676295501878e-15,
+    "max_rel": 4.0858909946303244e-15
+   },
+   "cN": {
+    "runs": 1,
+    "max_abs": 1.3322676295501878e-15,
+    "max_rel": 4.177975454103305e-15
+   },
+   "cNA": {
+    "runs": 1,
+    "max_abs": 1.3322676295501878e-15,
+    "max_rel": 4.177975454103305e-15
+   },
+   "cQ": {
+    "runs": 105,
+    "max_abs": 2.842170943040401e-14,
+    "max_rel": 4.1006185624127416e-15
+   }
+  },
+  "runs_read_keys_not_identical": {
+   "pc13_c1109_eval_0114_native": {
+    "cA1": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 3.552713678800501e-15,
+     "n_values": 826,
+     "max_rel": 4.1008322771310466e-15
+    },
+    "cCK3": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 1.3322676295501878e-15,
+     "n_values": 38,
+     "max_rel": 4.0858909946303244e-15
+    },
+    "cE": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 5.684341886080802e-14,
+     "n_values": 15,
+     "max_rel": 4.1535600582994206e-15
+    },
+    "cF0": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 1.3322676295501878e-15,
+     "n_values": 38,
+     "max_rel": 4.0858909946303244e-15
+    },
+    "cN": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 1.3322676295501878e-15,
+     "n_values": 38,
+     "max_rel": 4.177975454103305e-15
+    },
+    "cNA": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 1.3322676295501878e-15,
+     "n_values": 38,
+     "max_rel": 4.177975454103305e-15
+    },
+    "cQ": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 3.552713678800501e-15,
+     "n_values": 818,
+     "max_rel": 4.1006185624127416e-15
+    }
+   }
+  }
+ },
+ "check_ii": {
+  "n_runs": 105,
+  "n_evaluated": 21574,
+  "n_changed": 76,
+  "runs_with_changes": {
+   "pc13_c1109_eval_0054_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   },
+   "pc13_c1109_eval_0138_native": {
+    "n_evaluated": 271,
+    "n_changed": 15,
+    "evaluated_equal": true
+   },
+   "pc13_c1109_eval_0468_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   },
+   "pc13_c1109_eval_0486_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   },
+   "pc13_c1109_eval_0558_native": {
+    "n_evaluated": 271,
+    "n_changed": 11,
+    "evaluated_equal": true
+   },
+   "pc13_c1109_eval_0564_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   },
+   "pc13_c1109_eval_0624_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   }
+  }
+ },
+ "written": "2026-11-21 14:37:34"
+}

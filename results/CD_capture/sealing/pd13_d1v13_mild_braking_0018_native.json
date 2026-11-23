@@ -1,0 +1,22 @@
+{
+ "run_id": "pd13_d1v13_mild_braking_0018_native",
+ "checks": {
+  "receipt_sha256": true,
+  "receipt_status": true,
+  "receipt_frames_dropped_zero": true,
+  "receipt_keep_raw": true,
+  "sweeps_present": true,
+  "sweep_counts_consistent": true,
+  "noisy_sweep_file_sha256_equals_file_hashes": true,
+  "noisy_sweep_array_hash_equals_noise_receipt": true
+ },
+ "failures": {
+  "file_sha": 0,
+  "noise_receipt": 0
+ },
+ "logs_archive": "pd13_d1v13_mild_braking_0018_native_logs.tar.gz",
+ "logs_sha256": "7eb17068cbf477802bdeb98040fa874df9e93ae39f28c4eb7eb0d2dc64bb9cc0",
+ "logs_bytes": 9063212,
+ "archive_sha256": "5a319315482862a129bb8564c0057ab4bcb168df1e7544c4954e002491b3bc00",
+ "pass": true
+}

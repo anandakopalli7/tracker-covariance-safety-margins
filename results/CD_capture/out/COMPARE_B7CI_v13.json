@@ -1,0 +1,87 @@
+{
+ "first": "analysis\\out\\C_B7CI_v13.json",
+ "second": "recount\\out\\RC_B7_v13_cutin.json",
+ "tolerance": 1e-09,
+ "summary": {
+  "agree": 57,
+  "disagree": 8,
+  "only_first": 0,
+  "only_second": 0,
+  "ignored": 0
+ },
+ "verdict": "DISAGREE",
+ "rows": [
+  {
+   "key": "B7CI.10.0.1.RR_N.ci",
+   "status": "DISAGREE",
+   "first": [
+    null,
+    null
+   ],
+   "second": null
+  },
+  {
+   "key": "B7CI.10.0.2.RR_N.ci",
+   "status": "DISAGREE",
+   "first": [
+    null,
+    null
+   ],
+   "second": null
+  },
+  {
+   "key": "B7CI.10.0.RR_N.ci",
+   "status": "DISAGREE",
+   "first": [
+    null,
+    null
+   ],
+   "second": null
+  },
+  {
+   "key": "B7CI.2.0.1.RR_N.ci",
+   "status": "DISAGREE",
+   "first": [
+    null,
+    null
+   ],
+   "second": null
+  },
+  {
+   "key": "B7CI.2.0.RR_N.ci",
+   "status": "DISAGREE",
+   "first": [
+    null,
+    null
+   ],
+   "second": null
+  },
+  {
+   "key": "B7CI.5.0.1.RR_N.ci",
+   "status": "DISAGREE",
+   "first": [
+    null,
+    null
+   ],
+   "second": null
+  },
+  {
+   "key": "B7CI.5.0.2.RR_N.ci",
+   "status": "DISAGREE",
+   "first": [
+    null,
+    null
+   ],
+   "second": null
+  },
+  {
+   "key": "B7CI.5.0.RR_N.ci",
+   "status": "DISAGREE",
+   "first": [
+    null,
+    null
+   ],
+   "second": null
+  }
+ ]
+}

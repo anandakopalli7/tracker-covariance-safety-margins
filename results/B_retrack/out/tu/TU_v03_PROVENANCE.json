@@ -1,0 +1,22 @@
+{
+ "written": "2026-11-21 02:38:52 Eastern Standard Time",
+ "note": "run-time provenance of TU v03 (coordinator 21 Nov ~02:34); frozen code unchanged",
+ "tg_extract": {
+  "file": "B_retrack/out/tu/tg/TU_TG_EXTRACT_v03.json",
+  "sha256": "ced24faa18c4dbebcf042256ceddf6e73abe3e1fd2ef7757e07f3ee9789b1be3",
+  "interpreter": "CD_capture/.venv (CPython 3.12.2, numpy 2.5.4)"
+ },
+ "cd_files_imported": {
+  "CD_capture/analysis/c_extract_v13.py": "abd4aae782c713c3492a1799f77920e73b18fedfabc0a76833c271e32364c8ea",
+  "CD_capture/analysis/cd_common_v13.py": "28a7238a2f7135aec35f3018879af25566665856ff163502b6286b0249d6bdd0",
+  "CD_capture/analysis/gl_fast_v13.py": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789"
+ },
+ "tu_v03": {
+  "file": "B_retrack/out/tu/TU_v03.json",
+  "sha256": "b120aa27fc6e1e1370def9d8e6b903fbdf7c6738e2fb5389d9cfcd2c72d03722",
+  "interpreter": "B_retrack/.venv (CPython 3.12.2, numpy 2.5.4, numba 0.68.1)"
+ },
+ "freeze": {
+  "add4": "23f374c013510e0eadd8f7de574f61c8eaec1021669d799148266e8c9f269e7e"
+ }
+}

@@ -1,0 +1,14 @@
+# README_E5_v01: second program for set E5 (caution-matched closed-loop dropout test, A12 6)
+
+`e_recount_e5_v01.py` is written from `E_A12_6_v01.md` and the raw files; the first program was not read. It imports `e_recount_v04.py` (outcomes, mask law, validity, `compare_pair`) and `e_recount_export_e4_v01.py` (summaries). Single process.
+
+- `cal <runs> --out X`: valid `e5c_` runs (validity as E4: mask = law = locked table `out\E5_MASKS_v01.json`, law A11D2, punish 3); contact share per g; g_D = the g nearest 0.20 (ties to the smaller g); every share < 0.05: g_D = 4, low_power true.
+- `match --out X`: from F's 105 masked arrays (`F_dropout\out\arrays\DR`), open-loop caution of record (W1, population all, `optA_lib_v02` via `rev_common_v01`) summed over the runs; for each g_D in {4, 8, 16, 32}: F0_D caution (cF0) at g_D, g_N = the grid scale (`[0] + logspace(-2, 3, 201)`) whose N caution (cN) is nearest (the first minimum). `caution_diff` is SIGNED: caution_N - caution_F0D, percentage points.
+- `main <runs> --settings S --cal CAL --match MATCH --out-outcomes X --out-compare Y --export Z`: E5 outcomes and validity; primary comparison E_N vs E_F0 paired by case (Newcombe, exact McNemar, case bootstrap, classes as E; no interval below 2 pairs); `p_one` = share of 20,000 resamples (`default_rng(20261922)`, `integers(0, n, (20000, n))` over the valid pairs) with mean paired contact difference (N - F0) >= 0; the 45-key export (`E5.*`, same keys as `tests\out\E5_EXPORT_KEYS_v01.json`). Caution keys come from the match row at the recount g_D, calibration keys from `cal`.
+- **Settings check (fails loudly):** `E5_SETTINGS_v01.json` (top-level g_D, g_N, g_N_index, caution_F0D_pct, caution_N_pct, caution_diff_pp, low_power, shares keyed "4.0" ...) is compared with the recount's cal and match values (relative 1e-9), and each run's g with g_D (F0) / g_N (N). Any mismatch is printed as `SETTINGS CHECK FAILED`, the files are still written, and the program exits with a non-zero status.
+
+Tests: `test\make_synth_e5.py` writes `test\synth_e5\` (calibration and main runs with real table case ids, two corrupted main runs). The match on the real arrays equals the first program's table exactly (coordinator's comparison). Not tested: real E5 runs.
+
+## Added after the build review
+- g_D uses exact fractions: distance |5 contacts - n| / (5 n), first minimum over g ascending (ties to the smaller g); "every share < 0.05" is 20 contacts < n. Test: 5/30 at g = 4 against 7/30 at g = 8 gives g_D = 4 (`test\make_synth_e5.py <dir> tie`).
+- Per-run identity (validity, reason recorded): tracker CANMOT; ARM_METHOD arm = SUMMARY arm = the job id arm, and E_F0 or E_N; knobs.g = SUMMARY e_job.g; for E_F0 `pbar_sha256` = 4b373f6e...7560 (P-bar_DR, packet v05); in `main`, knobs.g also equals the settings g_D (E_F0) or g_N (E_N).

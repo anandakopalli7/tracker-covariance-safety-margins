@@ -1,0 +1,71 @@
+{
+ "addendum": 6,
+ "to": "work\\locks\\FREEZE_B.json",
+ "layers": [
+  {
+   "file": "FREEZE_B.json",
+   "sha256": "1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152"
+  },
+  {
+   "file": "FREEZE_B_add1.json",
+   "sha256": "9b71225a10645bfd28b2e43a2a05578f6131ed6ec8443f14125672d480927ad6"
+  },
+  {
+   "file": "FREEZE_B_add2.json",
+   "sha256": "6ffc5cd975b5ba91c597a1f989a1c649ca4bbbcf2244642577484f4b4341c39b"
+  },
+  {
+   "file": "FREEZE_B_add3.json",
+   "sha256": "549ac106adb20e6eb9cae16088c231665c6f006fada64ec3eea15d1025970831"
+  },
+  {
+   "file": "FREEZE_B_add4.json",
+   "sha256": "23f374c013510e0eadd8f7de574f61c8eaec1021669d799148266e8c9f269e7e"
+  },
+  {
+   "file": "FREEZE_B_add5.json",
+   "sha256": "d91d1e5a55edb5224f8c150c46cee58ce30d70681fab8d76f1830ae6f5672ee0"
+  }
+ ],
+ "written": "2026-11-21 13:38:26 Eastern Standard Time",
+ "writer": "package-B session, Claude Opus 5.5 (claude-opus-5-5)",
+ "code": "make_freeze_add_v02.py",
+ "reason": "AMENDMENT_11_v13 (draft) section 6, IMM re-tune B1r, coordinator 21 Nov ~13:58 EST: (a) NEW additive library module shared/trackers/trk_tracker_v02.py (kappa_ca scales only the CA filter's position and velocity process-noise terms, Q_ca diagonal entries 0,1,2,6,7,8; without kappa_ca the frozen matrices are returned unchanged; no frozen library file edited); (b) its identity test code/b_kca_identity_v02.py (kappa_ca absent: B4 and B1 arrays of the 20 lead-braking tuning runs bit-identical to the stored v01 files; kappa_ca = 1.0 on 2 runs too); (c) code/b3_nis_tune_v02.py (stage 1: sigma_a2 = 10^(-3+0.05j), j = 0..-120; stage 2: kappa_ca = 10^(-0.05j), j = 0..120, sigma_a2 frozen 0.001; criterion A10 B3 rule (2) unchanged, reusing the frozen b3_nis_tune_v01 statistic). Also new: code/b_step0_crossing_v01.py (sprint step 0, descriptive design data on stored crossing runs, already run). Pre-freeze check: make_config with kappa_ca absent gives the frozen Q_ca; with 0.5 exactly the six position/velocity entries halve. No search run before this addendum.",
+ "library_unchanged": true,
+ "changed": [],
+ "new": [
+  {
+   "path": "B_retrack\\code\\b3_nis_tune_v02.py",
+   "sha256": "041da3e03bfd213f56d53f1bc19702cab5aadd938c89440c759b74af7b7464d7",
+   "bytes": 5519,
+   "mtime": "2026-11-21 13:37:34"
+  },
+  {
+   "path": "B_retrack\\code\\b_kca_identity_v02.py",
+   "sha256": "39b3516bea89fcc8b28095ae04f64119cd8f7a56373df01ae2aaa01d92992eae",
+   "bytes": 3617,
+   "mtime": "2026-11-21 13:37:51"
+  },
+  {
+   "path": "B_retrack\\code\\b_step0_crossing_v01.py",
+   "sha256": "f9bd25465db7ccf0dc3a88adf69ff4fc978c88f60861600d1add87cf72e9e171",
+   "bytes": 11832,
+   "mtime": "2026-11-21 13:32:24"
+  },
+  {
+   "path": "shared\\trackers\\trk_tracker_v02.py",
+   "sha256": "2143e00f24a53d86e6d740aa6472b00dbb4165ab40165f5ca572dd79bf4deb10",
+   "bytes": 1800,
+   "mtime": "2026-11-21 13:37:01"
+  }
+ ],
+ "missing": [],
+ "external_read_only": [
+  {
+   "path": "CD_capture\\analysis\\gl_fast_v13.py",
+   "sha256": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789",
+   "note": "package CD file imported read-only by b_fresh_analysis_v02.py"
+  }
+ ],
+ "note": "Reference = FREEZE_B.json with add1..add5 applied in order; this addendum lists every covered file that changed or is new since that state. Earlier manifests are kept as written."
+}

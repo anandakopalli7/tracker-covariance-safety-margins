@@ -1,0 +1,149 @@
+{
+ "schema": "E_TEST_EXEC_V01",
+ "capture": "<library folder>\\c1109_tune_0000",
+ "runs": [
+  {
+   "arm": "E_Z",
+   "knobs": {
+    "g": 0.0,
+    "triple": null,
+    "brake_from_k": null
+   },
+   "alpha": 0.0,
+   "ticks": 700,
+   "origins": 300,
+   "sink_fired": 300,
+   "e_records": 300,
+   "ff_from_plan_ticks": 600,
+   "fallbacks": 0,
+   "forced": 0,
+   "phases": null,
+   "problems": [],
+   "n_problems": 0
+  },
+  {
+   "arm": "E_F0",
+   "knobs": {
+    "g": 1.0,
+    "triple": null,
+    "brake_from_k": null
+   },
+   "alpha": 1.0,
+   "ticks": 700,
+   "origins": 300,
+   "sink_fired": 300,
+   "e_records": 300,
+   "ff_from_plan_ticks": 600,
+   "fallbacks": 248,
+   "forced": 0,
+   "phases": null,
+   "problems": [],
+   "n_problems": 0
+  },
+  {
+   "arm": "E_N",
+   "knobs": {
+    "g": 1.0,
+    "triple": null,
+    "brake_from_k": null
+   },
+   "alpha": 1.0,
+   "ticks": 700,
+   "origins": 300,
+   "sink_fired": 300,
+   "e_records": 300,
+   "ff_from_plan_ticks": 600,
+   "fallbacks": 249,
+   "forced": 0,
+   "phases": null,
+   "problems": [],
+   "n_problems": 0
+  },
+  {
+   "arm": "E_CK3",
+   "knobs": {
+    "g": 1.0,
+    "triple": null,
+    "brake_from_k": null
+   },
+   "alpha": 1.0,
+   "ticks": 700,
+   "origins": 300,
+   "sink_fired": 300,
+   "e_records": 300,
+   "ff_from_plan_ticks": 600,
+   "fallbacks": 248,
+   "forced": 0,
+   "phases": null,
+   "problems": [],
+   "n_problems": 0,
+   "decisions_with_shift": 45
+  },
+  {
+   "arm": "E_TG",
+   "knobs": {
+    "g": 1.0,
+    "triple": null,
+    "brake_from_k": null
+   },
+   "alpha": 1.0,
+   "ticks": 700,
+   "origins": 300,
+   "sink_fired": 300,
+   "e_records": 300,
+   "ff_from_plan_ticks": 600,
+   "fallbacks": 255,
+   "forced": 0,
+   "phases": null,
+   "problems": [],
+   "n_problems": 0
+  },
+  {
+   "arm": "E_PS",
+   "knobs": {
+    "g": null,
+    "triple": [
+     0.25,
+     1.0,
+     4.0
+    ],
+    "brake_from_k": null
+   },
+   "alpha": 1.0,
+   "ticks": 700,
+   "origins": 300,
+   "sink_fired": 300,
+   "e_records": 300,
+   "ff_from_plan_ticks": 600,
+   "fallbacks": 255,
+   "forced": 0,
+   "phases": {
+    "0": 30,
+    "1": 15,
+    "2": 255
+   },
+   "problems": [],
+   "n_problems": 0
+  },
+  {
+   "arm": "E_BRAKE",
+   "knobs": {
+    "g": 0.0,
+    "triple": null,
+    "brake_from_k": 199
+   },
+   "alpha": 0.0,
+   "ticks": 700,
+   "origins": 300,
+   "sink_fired": 300,
+   "e_records": 300,
+   "ff_from_plan_ticks": 600,
+   "fallbacks": 250,
+   "forced": 250,
+   "phases": null,
+   "problems": [],
+   "n_problems": 0
+  }
+ ],
+ "ok": true
+}

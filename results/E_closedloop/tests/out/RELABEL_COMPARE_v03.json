@@ -1,0 +1,28 @@
+{
+ "schema": "E_COMPARE_RESULTS_V01",
+ "comparisons_compared": 24,
+ "disagreements": 0,
+ "extras_in_recount": [
+  {
+   "key": [
+    "E3",
+    "E_F0_IMM",
+    "E_F0",
+    "lo",
+    null
+   ],
+   "label": "E_F0_IMM vs E_F0 at lo (extra)"
+  },
+  {
+   "key": [
+    "E3",
+    "E_F0_IMM",
+    "E_F0",
+    "hi",
+    null
+   ],
+   "label": "E_F0_IMM vs E_F0 at hi (extra)"
+  }
+ ],
+ "list": []
+}

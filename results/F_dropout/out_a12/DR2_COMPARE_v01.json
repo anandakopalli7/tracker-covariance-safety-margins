@@ -1,0 +1,19 @@
+{
+ "code": "dr_compare_v01.py",
+ "rule": "A10 sec. 10.1(c): counts exact, values within 1e-09, levels and verdicts equal",
+ "first": "out_a12\\DR2_FIRST_MERGED_v01.json",
+ "second": "recount\\DR2_RECOUNT_v01.json",
+ "n_keys_compared": 111,
+ "only_first": [],
+ "only_second": [
+  "DR.dec.r.ci"
+ ],
+ "allowed_missing": [
+  "DR.dec.r.ci"
+ ],
+ "max_abs_diff": 1.1368683772161603e-12,
+ "n_float_diffs_within_tol": 84,
+ "differ": [],
+ "agree": true,
+ "written": "2026-11-22 05:11:14"
+}

@@ -1,0 +1,7 @@
+{
+ "first": "analysis/out/TESTOLD_D2_RS_v13.json",
+ "second": "recount_d/out/RC_D2_RS_v13_TESTOLD.json",
+ "agree": 16,
+ "compared": 16,
+ "disagreements": []
+}

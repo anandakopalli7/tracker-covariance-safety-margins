@@ -1,0 +1,87 @@
+{
+ "code": "b_fresh_export_v02.py",
+ "written": "2026-11-20 03:36:21",
+ "sources": {
+  "CV": {
+   "file": "out\\fresh_testold\\B_FRESH_CV0_v02.json",
+   "sha256": "0d8d9d56b44ecd869d5673d5541151fc639544c54ffca5fac6893bc7988d50ea",
+   "gate": "TEST_OLD: old runs only; no fresh value",
+   "status": "TEST on old runs (exploratory data of record)",
+   "nboot": 2000,
+   "draw": "first 2000 rows of default_rng(20261113).integers(0, 35, (20000, 35)) (draw of record), runs in name order"
+  },
+  "CV2": {
+   "file": "out\\fresh_testold\\B_FRESH_B3_v02.json",
+   "sha256": "9be571eefa300ea7e07490f553bc9b9a91ea1b039f6fc1b46cca0580347fbd5a",
+   "gate": "TEST_OLD: old runs only; no fresh value",
+   "status": "TEST on old runs (exploratory data of record)",
+   "nboot": 2000,
+   "draw": "first 2000 rows of default_rng(20261113).integers(0, 35, (20000, 35)) (draw of record), runs in name order"
+  },
+  "CA": {
+   "file": "out\\fresh_testold\\B_FRESH_B4_v02.json",
+   "sha256": "c3ed47b4b4a0ac94b207d37c9837831d206ea5d97322c4b38a9d100b480c748a",
+   "gate": "TEST_OLD: old runs only; no fresh value",
+   "status": "TEST on old runs (exploratory data of record)",
+   "nboot": 2000,
+   "draw": "first 2000 rows of default_rng(20261113).integers(0, 35, (20000, 35)) (draw of record), runs in name order"
+  },
+  "IMM": {
+   "file": "out\\fresh_testold\\B_FRESH_B1_v02.json",
+   "sha256": "2d952a83ebbf3a5b451502de9429170dd445edb0897178bbb199426daf4c07e9",
+   "gate": "TEST_OLD: old runs only; no fresh value",
+   "status": "TEST on old runs (exploratory data of record)",
+   "nboot": 2000,
+   "draw": "first 2000 rows of default_rng(20261113).integers(0, 35, (20000, 35)) (draw of record), runs in name order"
+  },
+  "AQ": {
+   "file": "out\\fresh_testold\\B_FRESH_B2_v02.json",
+   "sha256": "aa9b2b5bf014ea4dbc2f3f1c36e43e1a6c573c7fb80abc0c9ae464b3f5170c8c",
+   "gate": "TEST_OLD: old runs only; no fresh value",
+   "status": "TEST on old runs (exploratory data of record)",
+   "nboot": 2000,
+   "draw": "first 2000 rows of default_rng(20261113).integers(0, 35, (20000, 35)) (draw of record), runs in name order"
+  },
+  "IMM090": {
+   "file": "out\\fresh_testold\\B_FRESH_B1_d090_v02.json",
+   "sha256": "5390622e54215d7d82c47aaf85adc6f25c305f956f4542fd79dc78e0f4ec6276",
+   "gate": "TEST_OLD: old runs only; no fresh value",
+   "status": "TEST on old runs (exploratory data of record)",
+   "nboot": 2000,
+   "draw": "first 2000 rows of default_rng(20261113).integers(0, 35, (20000, 35)) (draw of record), runs in name order"
+  },
+  "IMM098": {
+   "file": "out\\fresh_testold\\B_FRESH_B1_d098_v02.json",
+   "sha256": "158c75cf10e05e5e1af01ddd4ba7a3de93792679122dcea99d4fff8872877988",
+   "gate": "TEST_OLD: old runs only; no fresh value",
+   "status": "TEST on old runs (exploratory data of record)",
+   "nboot": 2000,
+   "draw": "first 2000 rows of default_rng(20261113).integers(0, 35, (20000, 35)) (draw of record), runs in name order"
+  },
+  "B6": {
+   "file": "out\\fresh_testold\\B6_TESTOLD_v02.json",
+   "sha256": "2312aad0ae44490ababca618294a0bc6a57e7deee057a3178893c9bd9004bcb7",
+   "gate": "TEST_OLD: old runs only; no fresh value",
+   "status": "TEST on old runs",
+   "nboot": 2000,
+   "draw": "first 2,000 rows of boot_counts(n, 20000, 20261113) per run set (as b6_stop_v01)"
+  },
+  "TU": {
+   "file": "out\\tu\\TU_v02.json",
+   "sha256": "846fab9966ae28e5787e3fb11f5c2636e283eda768e6935600342abd42d2fb17",
+   "status": "descriptive (A10 section 5.6), old tuning runs",
+   "nboot": 20000,
+   "draw": "optA_lib_v02.boot_counts(20, 20000, 20261918), runs in name order"
+  }
+ },
+ "definitions": "B_retrack/B_FRESH_DEFINITIONS_v02.md",
+ "gate": [
+  "TEST_OLD: old runs only; no fresh value"
+ ],
+ "status": [
+  "TEST on old runs",
+  "TEST on old runs (exploratory data of record)",
+  "descriptive (A10 section 5.6), old tuning runs"
+ ],
+ "n_keys": 220
+}

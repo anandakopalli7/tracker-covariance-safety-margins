@@ -1,0 +1,16 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "addendum_to": "work/locks/FREEZE_CD.json (sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7)",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5)",
+ "written": "2026-11-20 03:52 EST",
+ "replaces": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\REPLACEMENTS_C_v13.json",
+   "sha256_before": "082081f7acc159e14e2225cac314435df5cbac7601c6f97810776758b14559e9",
+   "sha256_after": "05e26a6d23f44fbc1a3c119d7123365ceb823643469fe5185e3d6a9cb22ce58b",
+   "change": "\"replacements\": [] (a list) -> \"replacements\": {} (a mapping); text fields updated. Content unchanged: no replacement.",
+   "why": "The file was written at 03:25 EST for package B's reader, as a list. The frozen loader cd_common_v13.c_run_ids (unchanged, frozen) reads it as a mapping {original case: replacement case}. The first call of the frozen extractor after LOCK_A10_2 (03:41 EST, step 1a, logs only) stopped with AttributeError: 'list' object has no attribute 'get' inside c_run_ids, i.e. while building the run list from CASES_C_v13.json, before any fresh run file was opened (log: work/CD_capture/analysis/out/step1a_logs_c_lead.log). No code changes; no value of any run was computed or seen; the run sets are unchanged (105 lead braking, 105 cut-in; checked with the frozen loader after the fix).",
+   "kind": "data-file format fix (A10 sec. 11 departure record: a frozen data file's representation corrected after LOCK_A10_2, with identical meaning)"
+  }
+ ]
+}

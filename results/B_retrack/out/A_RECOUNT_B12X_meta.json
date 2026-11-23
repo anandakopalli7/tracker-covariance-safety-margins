@@ -1,0 +1,23 @@
+{
+ "code": "b_b12x_second_v01.py recount",
+ "written": "2026-11-22 03:39:28",
+ "sources": {
+  "IMM2N": {
+   "file": "recount_fresh\\out\\MODEPROB2_IMM2_new_v01.json",
+   "sha256": "a3e19766878e86e1ab2003dd4bd6d62cf0561fd1c81efa9f88f58f83cf2d29e8"
+  },
+  "IMM2C": {
+   "file": "recount_fresh\\out\\MODEPROB2_IMM2_fresh_v01.json",
+   "sha256": "bb2c043a6042a4183c253af76c9b787179439a74a2c846ffd44d1df8b9002b28"
+  },
+  "IMMrC": {
+   "file": "recount_fresh\\out\\MODEPROB2_B1R_fresh_v01.json",
+   "sha256": "271386eb612b315ef9e244099a3cc0058435282ccae490b08231a1648f2f81a9"
+  },
+  "twin": {
+   "file": "CD_capture\\recount_imm2\\out\\RC_Y_TWIN_L12_v13.json",
+   "sha256": "de15307f9e9110a1e48231c87b09863db67e54fc96a46a54b7ddd7032173fc1e"
+  }
+ },
+ "n_keys": 86
+}

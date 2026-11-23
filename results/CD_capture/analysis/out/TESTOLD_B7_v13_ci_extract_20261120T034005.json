@@ -1,0 +1,231 @@
+{
+ "program": "x_trk_extract_v13.py",
+ "gate": "TEST_OLD: old runs only; no fresh value",
+ "family": "cutin",
+ "test_old": true,
+ "combos": [
+  "B7CI_2_0"
+ ],
+ "runs": [
+  "p2_c1109_tune_0004_fixed_c1",
+  "p2_c1109_tune_0010_fixed_c1",
+  "p2_c1109_tune_0016_fixed_c1",
+  "p2_c1109_tune_0022_fixed_c1",
+  "p2_c1109_tune_0028_fixed_c1",
+  "p2_c1109_tune_0034_fixed_c1",
+  "p2_c1109_tune_0040_fixed_c1",
+  "p2_c1109_tune_0046_fixed_c1",
+  "p2_c1109_tune_0052_fixed_c1",
+  "p2_c1109_tune_0058_fixed_c1",
+  "p2_c1109_tune_0064_fixed_c1",
+  "p2_c1109_tune_0070_fixed_c1",
+  "p2_c1109_tune_0076_fixed_c1",
+  "p2_c1109_tune_0082_fixed_c1",
+  "p2_c1109_tune_0088_fixed_c1",
+  "p2_c1109_tune_0094_fixed_c1",
+  "p2_c1109_tune_0100_fixed_c1",
+  "p2_c1109_tune_0106_fixed_c1",
+  "p2_c1109_tune_0112_fixed_c1",
+  "p2_c1109_tune_0118_fixed_c1"
+ ],
+ "out_root": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\testold_b7ci_arrays",
+ "workers": 2,
+ "jobs": [
+  {
+   "run": "p2_c1109_tune_0004_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 5.223955400055274,
+   "seconds_extract": 26.162338399910368,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0010_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 4.746642900048755,
+   "seconds_extract": 23.74204069992993,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0016_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 1.7974200999597088,
+   "seconds_extract": 24.533649699995294,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0022_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 1.3810198999708518,
+   "seconds_extract": 26.05086860002484,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0028_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 5.456751700025052,
+   "seconds_extract": 24.221196900005452,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0034_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 5.483627100009471,
+   "seconds_extract": 24.416309399995953,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0040_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 2.6967867999337614,
+   "seconds_extract": 28.522991199977696,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0046_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 1.8976862999843433,
+   "seconds_extract": 28.09498659998644,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0052_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 6.034991699969396,
+   "seconds_extract": 65.05323279998265,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0058_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 10.1666124999756,
+   "seconds_extract": 39.36275510000996,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0064_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 1.8459890999365598,
+   "seconds_extract": 22.3814326999709,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0070_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 3.6520864000776783,
+   "seconds_extract": 22.33763149997685,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0076_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 1.8569998999591917,
+   "seconds_extract": 23.104196300031617,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0082_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 1.941876000026241,
+   "seconds_extract": 26.17153219995089,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0088_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 4.3536260999972,
+   "seconds_extract": 26.078434700029902,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0094_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 15.64685479993932,
+   "seconds_extract": 23.382476500002667,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0100_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 1.7264345999574289,
+   "seconds_extract": 24.76560809998773,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0106_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 2.5313716999953613,
+   "seconds_extract": 24.480892499908805,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0112_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 1.6110012999270111,
+   "seconds_extract": 25.58346440002788,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p2_c1109_tune_0118_fixed_c1",
+   "name": "B7CI_2_0",
+   "status": "ok",
+   "seconds_retrack": 6.678820200031623,
+   "seconds_extract": 24.076455799979158,
+   "n_dec": 300,
+   "n_det_rows": 69
+  }
+ ],
+ "seconds": 384.0528118610382,
+ "written": "2026-11-20 03:46:29",
+ "counts": {
+  "ok": 20,
+  "exists": 0,
+  "waiting": 0,
+  "ERROR": 0
+ },
+ "cost_seconds_per_run": {
+  "B7CI_2_0": {
+   "n": 20,
+   "retrack_mean": 4.336527724988992,
+   "extract_mean": 27.62612470498425,
+   "total_mean": 31.96265242997324
+  }
+ }
+}

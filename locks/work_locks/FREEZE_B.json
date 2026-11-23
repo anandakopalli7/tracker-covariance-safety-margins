@@ -1,0 +1,490 @@
+{
+ "package": "B (offline re-tracking) and the shared tracker library",
+ "written": "2026-11-19 20:38:46 Eastern Standard Time",
+ "writer": "package-B session, Claude Opus 5.5 (claude-opus-5-5)",
+ "rule": "After this manifest the library does not change (README_COORDINATION rule 3; A10 section 4 change rules).",
+ "tuned_constants": {
+  "R_car_diag": {
+   "R_x": 0.046851677873796724,
+   "R_y": 0.005920073314371262,
+   "R_vx": 0.26689842565895483,
+   "R_vy": 0.044646723127441834
+  },
+  "kappa": 0.16788040181225605,
+  "sigma_a2": 0.001,
+  "ca_acc_init_var": 10.0,
+  "tuning": {
+   "R": {
+    "n_boxes": 4933,
+    "runs": 120,
+    "rule": "A10 B3 (1)"
+   },
+   "kappa": {
+    "median_lead_nis": 1.9944344860529792,
+    "window_reached": true,
+    "j_first_sign_change": 44,
+    "rule": "A10 B3 (2)"
+   },
+   "sigma_a2": {
+    "median_lead_nis": 1.634454782498468,
+    "window_reached": false,
+    "status": "no sign change on the grid; nearest grid value taken",
+    "rule": "A10 B4 (B3 rule (2)); window not reachable: nearest grid value"
+   }
+  }
+ },
+ "b4_filter_class": "CANMOT LinearKalmanFilter arithmetic (world-frame noise); ExtendedKalmanFilterRotate cannot take the CA model unchanged (code check, spec section 4)",
+ "cut_in_lateral_threshold_m": 1.75,
+ "cut_in_threshold_basis": "events found in 20 of 20 cut-in tuning runs (out/b9/B9_EVENT_COUNT_lat1p75_v01.json)",
+ "imm": {
+  "transition_diag_per_0p5s": 0.95,
+  "sensitivities": [
+   0.9,
+   0.98
+  ],
+  "mu0": [
+   0.9,
+   0.1
+  ]
+ },
+ "library": [
+  {
+   "path": "shared\\trackers\\IMM_AND_VARIANTS_SPEC_v01.md",
+   "sha256": "36295aed56a19f042bff1d2c055189dedb3ea2023e2291c53ab2d4740b8ec876",
+   "bytes": 13310,
+   "mtime": "2026-11-19 15:44:47"
+  },
+  {
+   "path": "shared\\trackers\\README.md",
+   "sha256": "c6377c9b5352aa72b5d045dead95f12d12ef6fb9b611137a88fe136480385ef3",
+   "bytes": 11555,
+   "mtime": "2026-11-19 20:37:29"
+  },
+  {
+   "path": "shared\\trackers\\shims_v01\\hydra\\__init__.py",
+   "sha256": "3e04377812b92d89be393011cf4d00abae149265a96e1d52fa6b9932e8e8f1a9",
+   "bytes": 572,
+   "mtime": "2026-11-19 14:27:21"
+  },
+  {
+   "path": "shared\\trackers\\shims_v01\\hydra\\utils.py",
+   "sha256": "ff50ad09edef0ca2a20eeaaca0598468cd58dc3596e5d77c05e8ca761542b88b",
+   "bytes": 127,
+   "mtime": "2026-11-19 14:27:21"
+  },
+  {
+   "path": "shared\\trackers\\shims_v01\\lap\\__init__.py",
+   "sha256": "55a6afe044761f06fa0083e91628327c14738917ecc5b8eafb7aba12ce33e192",
+   "bytes": 1985,
+   "mtime": "2026-11-19 14:27:21"
+  },
+  {
+   "path": "shared\\trackers\\shims_v01\\numba\\__init__.py",
+   "sha256": "ed9de5401ec78ff0e4b37b45abf895a70e79dc4b941890437441c5ce48edae12",
+   "bytes": 505,
+   "mtime": "2026-11-19 14:27:21"
+  },
+  {
+   "path": "shared\\trackers\\shims_v01\\omegaconf\\__init__.py",
+   "sha256": "1f8baabb30afacf77a3fcf35171538ba4e19ec70935b500fa9b5c3a3e28c76f9",
+   "bytes": 516,
+   "mtime": "2026-11-19 14:27:21"
+  },
+  {
+   "path": "shared\\trackers\\shims_v01\\pyquaternion\\__init__.py",
+   "sha256": "1adeea625407d116c3ffda0cc8ce9a04a8cde60d7299ec1fb033735dbeca700d",
+   "bytes": 7639,
+   "mtime": "2026-11-19 14:27:21"
+  },
+  {
+   "path": "shared\\trackers\\shims_v01\\shapely\\__init__.py",
+   "sha256": "9562727d4d12ba5da97c724af75f551a0e6670e5e60578107186147e7b532baf",
+   "bytes": 97,
+   "mtime": "2026-11-19 14:27:21"
+  },
+  {
+   "path": "shared\\trackers\\shims_v01\\shapely\\geometry.py",
+   "sha256": "89a97551c364c96f00a07b90e643ef5273da1179babbb83ed1c6aa1c53436c47",
+   "bytes": 601,
+   "mtime": "2026-11-19 14:27:21"
+  },
+  {
+   "path": "shared\\trackers\\trk_arrays_v01.py",
+   "sha256": "300b42bfb301680cb469784145837f8db8d5241c7e2f63c1c1dc6d58ed55dd1b",
+   "bytes": 17922,
+   "mtime": "2026-11-19 14:40:10"
+  },
+  {
+   "path": "shared\\trackers\\trk_constants_v01.json",
+   "sha256": "d8455cb50b637a3ce45460a0dee38f79b69fce4c085c913f713b56ac23338a9d",
+   "bytes": 1344,
+   "mtime": "2026-11-19 15:07:13"
+  },
+  {
+   "path": "shared\\trackers\\trk_env_v01.py",
+   "sha256": "0219dd2ed6517109a3c913430a2f30ca756fc01f4f003c1347c4ddd4a9628cad",
+   "bytes": 3533,
+   "mtime": "2026-11-19 14:31:51"
+  },
+  {
+   "path": "shared\\trackers\\trk_exact_math_v01.py",
+   "sha256": "6a42ece0b2255e4c2ec15a5651ee8ac65671e63cce01895e1ff4227ead86f541",
+   "bytes": 6649,
+   "mtime": "2026-11-19 14:27:35"
+  },
+  {
+   "path": "shared\\trackers\\trk_filters_v01.py",
+   "sha256": "9edfdd6cb5642c1618d41ccb3def176251074a3beaf703d8589df58018304dbb",
+   "bytes": 18493,
+   "mtime": "2026-11-19 15:44:47"
+  },
+  {
+   "path": "shared\\trackers\\trk_score_v01.py",
+   "sha256": "1cab6f300ad85fc6007d9b46dae75f41202f010c2080c5987ef06a79921417b4",
+   "bytes": 14644,
+   "mtime": "2026-11-19 15:04:55"
+  },
+  {
+   "path": "shared\\trackers\\trk_tracker_v01.py",
+   "sha256": "5cf4ad3baf81b614b18facc3fe4b3bc6506f867350d5b6216fce5ed725cfdef8",
+   "bytes": 9506,
+   "mtime": "2026-11-19 15:22:45"
+  }
+ ],
+ "pbar": [
+  {
+   "path": "B_retrack\\out\\pbar\\PBAR_B1_d090_v01.json",
+   "sha256": "769079036098c43d97920ff95de006e024b67003e351f4e1ded9534b155344cb",
+   "bytes": 1289,
+   "mtime": "2026-11-19 16:13:48"
+  },
+  {
+   "path": "B_retrack\\out\\pbar\\PBAR_B1_d098_v01.json",
+   "sha256": "c0082555e44f7c10da686b001127848002f48d89fda06805a59cc16b3e26a875",
+   "bytes": 1289,
+   "mtime": "2026-11-19 16:20:36"
+  },
+  {
+   "path": "B_retrack\\out\\pbar\\PBAR_B1_v01.json",
+   "sha256": "5c57780af989c7180c66b6341ecc6f03d8b60ea93f9d5f012a5d02f00b83eb54",
+   "bytes": 1279,
+   "mtime": "2026-11-19 16:03:14"
+  },
+  {
+   "path": "B_retrack\\out\\pbar\\PBAR_B2_v01.json",
+   "sha256": "1f8cb23a97b675448110e42deecc0f6e89883a2c4b23aecad690bdf37f1d551b",
+   "bytes": 1283,
+   "mtime": "2026-11-19 15:20:35"
+  },
+  {
+   "path": "B_retrack\\out\\pbar\\PBAR_B3_v01.json",
+   "sha256": "513a6e4e178fc943ff4d77658f10a9fab3cb2bb5e0c49824a6e7c1304a435bfc",
+   "bytes": 1279,
+   "mtime": "2026-11-19 15:15:04"
+  },
+  {
+   "path": "B_retrack\\out\\pbar\\PBAR_B4_v01.json",
+   "sha256": "d8e34b11c06aff833b4fad4c10625150160224a677bb3bb005488d9a5b94a632",
+   "bytes": 1277,
+   "mtime": "2026-11-19 15:55:40"
+  },
+  {
+   "path": "B_retrack\\out\\pbar\\PBAR_CV0_v01.json",
+   "sha256": "a59a835b36e76c5230407164da8725cc18a1f0ed01f6471fd335f0c4e3f2a673",
+   "bytes": 1479,
+   "mtime": "2026-11-19 15:09:57"
+  }
+ ],
+ "b3_tuning": [
+  {
+   "path": "B_retrack\\out\\b3\\B3_CONSTANTS_kappa_v01.json",
+   "sha256": "81acc4e1a4ca5f4d47c5ee63e2109fd094c99c2e261851e039726f95efdc6486",
+   "bytes": 424,
+   "mtime": "2026-11-19 14:54:28"
+  },
+  {
+   "path": "B_retrack\\out\\b3\\B3_R_EXTRACT_v01.json",
+   "sha256": "793f5044807713a935df9481cc15b31c39094dd836ef34d071a235451f5aad40",
+   "bytes": 1328,
+   "mtime": "2026-11-19 14:36:30"
+  },
+  {
+   "path": "B_retrack\\out\\b3\\B3_TUNE_KAPPA_v01.json",
+   "sha256": "9114f7a810cad1b368c0f15834cff8c61958494a1a2a49e1e21631856f4cacbc",
+   "bytes": 7728,
+   "mtime": "2026-11-19 14:53:26"
+  },
+  {
+   "path": "B_retrack\\out\\b3\\B3_TUNE_SIGMA_A2_v01.json",
+   "sha256": "9cd37ec5dc77c8d00e6ca95205ca44569c855008a2611c0546ccb9e7c153f54c",
+   "bytes": 7641,
+   "mtime": "2026-11-19 15:06:11"
+  },
+  {
+   "path": "B_retrack\\out\\b3\\B4_RECHECK_AFTER_FIX_v01.json",
+   "sha256": "9bb9fbab0db3c106c8824b729205e805fb373b8a41f5757e507a4ca0766cea5c",
+   "bytes": 806,
+   "mtime": "2026-11-19 15:52:40"
+  }
+ ],
+ "package_b_code": [
+  {
+   "path": "B_retrack\\code\\b0_recorder_check_v01.py",
+   "sha256": "69e1cc2f8cb89cde06022dc1b8e76361653c37cc9a9ff9d880f7fc1d7c54e768",
+   "bytes": 2110,
+   "mtime": "2026-11-19 14:31:16"
+  },
+  {
+   "path": "B_retrack\\code\\b0b_arrays_check_v01.py",
+   "sha256": "cab676b1d743957442e72c39a706f837bc0d755da6fe7d5a86a246dfc9a67539",
+   "bytes": 6444,
+   "mtime": "2026-11-19 14:43:04"
+  },
+  {
+   "path": "B_retrack\\code\\b0b_diag_v01.py",
+   "sha256": "04d7d4515f08b6a60910b11929fb2ec63aa27674f0240b606d04f06cbb40bde2",
+   "bytes": 2552,
+   "mtime": "2026-11-19 20:31:45"
+  },
+  {
+   "path": "B_retrack\\code\\b2_oracle_check_v01.py",
+   "sha256": "f51dfd9af8cb21b68b65e6791db78ce7c6da35554352b4c61cd595960581d410",
+   "bytes": 5646,
+   "mtime": "2026-11-19 20:17:07"
+  },
+  {
+   "path": "B_retrack\\code\\b3_nis_tune_v01.py",
+   "sha256": "9d619761c345a1b3bd85d369363b825b29aba09a5f94982915e241038cbddd86",
+   "bytes": 8716,
+   "mtime": "2026-11-19 14:38:49"
+  },
+  {
+   "path": "B_retrack\\code\\b3_R_extract_v01.py",
+   "sha256": "5dfd7eb15488c9e06ba8e5bd7563ce68a9eb8332c023c02c16c027e098d2ae35",
+   "bytes": 5295,
+   "mtime": "2026-11-19 14:36:06"
+  },
+  {
+   "path": "B_retrack\\code\\b4_recheck_v01.py",
+   "sha256": "0ba6561e86b0909660301a9fd66ac65d559549fd5f52f1bd8668010b71356b49",
+   "bytes": 1351,
+   "mtime": "2026-11-19 15:47:45"
+  },
+  {
+   "path": "B_retrack\\code\\b6_stop_v01.py",
+   "sha256": "5bebd9c20dc0333e79c14702ad8b54001db319ac7bd5d7f0d92d93054b6114b6",
+   "bytes": 6557,
+   "mtime": "2026-11-19 15:20:02"
+  },
+  {
+   "path": "B_retrack\\code\\b8_nis_nees_v01.py",
+   "sha256": "961e7f1fed7f76456007390e68bdb2558c66d24a91724bdd4c23e27f84179397",
+   "bytes": 5970,
+   "mtime": "2026-11-19 18:33:39"
+  },
+  {
+   "path": "B_retrack\\code\\b9_cutin_v01.py",
+   "sha256": "0b9b6f02fce98828eac56f36d33c30535febc0c186503407d077257883a09a37",
+   "bytes": 9978,
+   "mtime": "2026-11-19 15:15:01"
+  },
+  {
+   "path": "B_retrack\\code\\b_analysis_v01.py",
+   "sha256": "676abd0cb6e38e116436d68ff50e171ee55ce8c08aaa64bfe41761bb5cf5597d",
+   "bytes": 11243,
+   "mtime": "2026-11-19 18:10:31"
+  },
+  {
+   "path": "B_retrack\\code\\b_compare_recount_v01.py",
+   "sha256": "3cdcb7db994e7d319e51eb6ee047fe667e813b4f1b9fe3417d6d6d6e69c4dfdb",
+   "bytes": 11014,
+   "mtime": "2026-11-19 20:36:33"
+  },
+  {
+   "path": "B_retrack\\code\\b_retrack_v01.py",
+   "sha256": "1966e89980f7c5197d30ee363b08ddbd582577d6e3ea2dad0a145adba50198ae",
+   "bytes": 8165,
+   "mtime": "2026-11-19 15:05:44"
+  },
+  {
+   "path": "B_retrack\\code\\b_summary_v01.py",
+   "sha256": "0621af3a8ec8a05a8af127ab96e7e6e14b36ae6dc14038b62f458fe65408dd57",
+   "bytes": 9016,
+   "mtime": "2026-11-19 20:38:33"
+  },
+  {
+   "path": "B_retrack\\code\\imm_compare_v01.py",
+   "sha256": "c07fa7731295345ffe1a2069ca1d103b0bb6ce02a4731d67c3e8e822d46c30ab",
+   "bytes": 3616,
+   "mtime": "2026-11-19 14:48:19"
+  },
+  {
+   "path": "B_retrack\\code\\make_freeze_v01.py",
+   "sha256": "e67376141f442b2ab703e858be1e963118de75c9e10d81402499e8503079187d",
+   "bytes": 4683,
+   "mtime": "2026-11-19 15:21:55"
+  },
+  {
+   "path": "B_retrack\\code\\run_pass_v01.sh",
+   "sha256": "ddbbe406c9ded8197122ee131e2373531f6a13095f941238c4a3161ced1cc9c3",
+   "bytes": 487,
+   "mtime": "2026-11-19 15:07:25"
+  }
+ ],
+ "second_imm": [
+  {
+   "path": "B_retrack\\imm2\\check_imm2.py",
+   "sha256": "e195121de3c9a61e170bdee5fff47ce4e57c31fc8831828d91ba22555a93fb1f",
+   "bytes": 3211,
+   "mtime": "2026-11-19 14:39:23"
+  },
+  {
+   "path": "B_retrack\\imm2\\imm2_v01.py",
+   "sha256": "ece20a2f856579a2c6c3b89a53a2b406d905c2ac533ab9eda1a494e726b7699a",
+   "bytes": 12802,
+   "mtime": "2026-11-19 15:47:06"
+  },
+  {
+   "path": "B_retrack\\imm2\\README_imm2.md",
+   "sha256": "cc9716f60134e065b6f39abb93cf19e8dfb9f79a12cb091cf4d8a59b7d486f9d",
+   "bytes": 6494,
+   "mtime": "2026-11-19 15:51:25"
+  }
+ ],
+ "definitions": [
+  {
+   "path": "B_retrack\\B_ANALYSIS_DEFINITIONS_v01.md",
+   "sha256": "1dc3b4c1f37883c9eda038e360a9a21a79fa74a1c4980affcc3e4650aa4f2a89",
+   "bytes": 6762,
+   "mtime": "2026-11-19 18:32:56"
+  }
+ ],
+ "record_modules_read_only": [
+  {
+   "path": "<library folder>\\olcore_v01.py",
+   "sha256": "6298ad9282ad8bd15caf96e9c2d9238ca6fe207b0b03a07c380d650f01798542",
+   "bytes": 6325,
+   "mtime": "2026-11-10 11:41:22"
+  },
+  {
+   "path": "<library folder>\\olcore_rt_v01.py",
+   "sha256": "d857b994757ce01aa1a1e9417d4645a758445872fe311516c2088906918c2516",
+   "bytes": 1870,
+   "mtime": "2026-11-12 18:54:43"
+  },
+  {
+   "path": "<library folder>\\ol_gateR_core_v01.py",
+   "sha256": "00eda05768de6918bff3fc1fdf38005740f44f3cc5fde1e7e17b59c0756d6193",
+   "bytes": 13054,
+   "mtime": "2026-11-11 19:52:35"
+  },
+  {
+   "path": "<library folder>\\ol_extract_v01.py",
+   "sha256": "a1d99303dae49c5de7119c008d5d5218f375195199103057b5a3fc44ba4b6dec",
+   "bytes": 15860,
+   "mtime": "2026-11-10 11:56:42"
+  },
+  {
+   "path": "<library folder>\\ox12_core_v01.py",
+   "sha256": "b76f8d0d605f76353ef778e668bc11ec746c65f4f910ffdfa75bfe2b40a7a5e7",
+   "bytes": 11558,
+   "mtime": "2026-11-12 15:02:42"
+  },
+  {
+   "path": "<library folder>\\oxsb_core_v01.py",
+   "sha256": "02d58f88023255652c485dcd9649f188bc031ff2b2ead1646e907b63dff6fe82",
+   "bytes": 9739,
+   "mtime": "2026-11-12 22:08:14"
+  },
+  {
+   "path": "<library folder>\\ol_gateR_rt_extract_v01.py",
+   "sha256": "72d68af8ad4ddb435a22d89e421de7e195f7634357d352b28cf2f235aaad393a",
+   "bytes": 16423,
+   "mtime": "2026-11-12 18:57:57"
+  },
+  {
+   "path": "<library folder>\\pbar_tuning_v01.json",
+   "sha256": "73025559a71aa1d72f0cb91eea17a9313a0695798e2fab3d7d568d9a71bd8718",
+   "bytes": 6040,
+   "mtime": "2026-11-10 11:46:10"
+  },
+  {
+   "path": "<library folder>\\optA_lib_v02.py",
+   "sha256": "b32a619a07f494e919f8d0bf112c8df4bed0957f051412c73819982a9a3f9898",
+   "bytes": 19905,
+   "mtime": "2026-11-18 03:10:47"
+  },
+  {
+   "path": "ARS_TRIAL\\revision_v12\\analysis\\a9_common_v01.py",
+   "sha256": "6ee4998074b00dfc678b2eb6e1ea349b951ad2569c6f4a13ec7376aaadc11edc",
+   "bytes": 7349,
+   "mtime": "2026-11-19 00:20:01"
+  },
+  {
+   "path": "ARS_TRIAL\\revision_v11\\analysis\\rev_common_v01.py",
+   "sha256": "872f3559198dcfcddf4ac01d8b0389b00db0855456fc0835973e4c651782cf6c",
+   "bytes": 9491,
+   "mtime": "2026-11-18 16:29:46"
+  },
+  {
+   "path": "<library folder>\\tracker_config.json",
+   "sha256": "a3bfe2f344e15b96392d5b372366ae95450211446f1781eed4afacb21d8dd586",
+   "bytes": 36903,
+   "mtime": "2026-11-01 01:22:44"
+  },
+  {
+   "path": "<library folder>\\online_tracker.py",
+   "sha256": "69edbc02b6653889b4fb8b12d6ad23dd95ae0b7f932b7c93f76749ce4b22508f",
+   "bytes": 2964,
+   "mtime": "2026-11-01 01:22:44"
+  },
+  {
+   "path": "<library folder>\\consumer.py",
+   "sha256": "ff62710a4415ef99df5d85b57c2fbfe741d93d8da4898186868b27e6710406ff",
+   "bytes": 6008,
+   "mtime": "2026-11-01 01:25:11"
+  },
+  {
+   "path": "<library folder>\\finite_primitive.py",
+   "sha256": "13da04ec7f8b47827b85555da6e3b190f7dd6b0c08941fdde8b738c51c1cf4fe",
+   "bytes": 1055,
+   "mtime": "2026-11-01 01:22:44"
+  },
+  {
+   "path": "<library folder>\\sensor_policy.py",
+   "sha256": "05755d0cf0ce82dcb7d868cae3da430dac7ff559e4daf6cd69e43d9a6949e7d1",
+   "bytes": 3624,
+   "mtime": "2026-11-01 01:22:44"
+  },
+  {
+   "path": "<library folder>\\fast_overlap_array.py",
+   "sha256": "e1bd727700160eb76439c8983ddf47d286716e43205d7d9e81c2dbf0a2678255",
+   "bytes": 1345,
+   "mtime": "2026-11-01 01:22:44"
+  },
+  {
+   "path": "<library folder>\\kalman_filter.py",
+   "sha256": "67c00f6ab527c341a557b86f91a4a692bda00b529e75cd2016b6a123cd537b36",
+   "bytes": 23975,
+   "mtime": "2026-11-01 01:22:44"
+  },
+  {
+   "path": "<library folder>\\motion_model.py",
+   "sha256": "ed219e9575f293c372dd3b5817d9be0f196e76448e122f4757035455b585fb71",
+   "bytes": 30610,
+   "mtime": "2026-11-01 01:22:44"
+  },
+  {
+   "path": "<library folder>\\nusc_trajectory.py",
+   "sha256": "0b7e94456fcced0d97c119e785c5fb41a8b0fabfbfcaa1716b7c9bea289520cd",
+   "bytes": 4086,
+   "mtime": "2026-11-01 01:22:44"
+  },
+  {
+   "path": "<library folder>\\nusc_tracker.py",
+   "sha256": "eea3facab95e71e3f4dc4f22860816f7e3d0565457535d201d035d9c2ae0be45",
+   "bytes": 23728,
+   "mtime": "2026-11-01 01:22:44"
+  }
+ ]
+}

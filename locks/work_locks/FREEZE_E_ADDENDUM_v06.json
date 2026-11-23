@@ -1,0 +1,16 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "package": "E",
+ "session": "E (Claude Opus 5.5)",
+ "written": "2026-11-20T01:30:16.097188-05:00",
+ "before": "any E3 / E3b value (LOCK_A10_2.txt does not exist)",
+ "lock2_exists": false,
+ "note": "Driver of the post-Lock-2 sequence (coordinator 01:24: no step waits for a clock time). It calls only frozen programs, in the order recorded in STATUS.md: e_collect_v01, e3_analyse_v01, e_export_v03; e_recount_v03 outcomes/compare, e_recount_export_v02; e_compare_v01 outcomes/compare/export. It refuses without LOCK_A10_2 or with any of the 1,200 arm jobs lacking a verified run, never overwrites a result, and exits non-zero on any disagreement.",
+ "files": [
+  {
+   "path": "E_closedloop/analysis/run_e_after_lock2_v01.py",
+   "bytes": 6827,
+   "sha256": "2c0793a9eb36fd221bbcbeb533f8c90d6d35a9daec2ba7d266daefa5d99a7b28"
+  }
+ ]
+}

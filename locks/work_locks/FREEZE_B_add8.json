@@ -1,0 +1,151 @@
+{
+ "addendum": 8,
+ "to": "work\\locks\\FREEZE_B.json",
+ "layers": [
+  {
+   "file": "FREEZE_B.json",
+   "sha256": "1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152"
+  },
+  {
+   "file": "FREEZE_B_add1.json",
+   "sha256": "9b71225a10645bfd28b2e43a2a05578f6131ed6ec8443f14125672d480927ad6"
+  },
+  {
+   "file": "FREEZE_B_add2.json",
+   "sha256": "6ffc5cd975b5ba91c597a1f989a1c649ca4bbbcf2244642577484f4b4341c39b"
+  },
+  {
+   "file": "FREEZE_B_add3.json",
+   "sha256": "549ac106adb20e6eb9cae16088c231665c6f006fada64ec3eea15d1025970831"
+  },
+  {
+   "file": "FREEZE_B_add4.json",
+   "sha256": "23f374c013510e0eadd8f7de574f61c8eaec1021669d799148266e8c9f269e7e"
+  },
+  {
+   "file": "FREEZE_B_add5.json",
+   "sha256": "d91d1e5a55edb5224f8c150c46cee58ce30d70681fab8d76f1830ae6f5672ee0"
+  },
+  {
+   "file": "FREEZE_B_add6.json",
+   "sha256": "bd24dc97ca4f0e2b7817e5ea6d0bc3da043aa68d8aa4dc1ca2ff21445b0bd4ed"
+  },
+  {
+   "file": "FREEZE_B_add7.json",
+   "sha256": "d06cc48bbe89ec87b3927c962c041b31b5e7aab1dccbe570188a331e0a7b0c12"
+  }
+ ],
+ "written": "2026-11-21 14:06:57 Eastern Standard Time",
+ "writer": "package-B session, Claude Opus 5.5 (claude-opus-5-5)",
+ "code": "make_freeze_add_v03.py",
+ "reason": "AMENDMENT_11_v13 section 6, B1r: constants and code, frozen before any fresh value under them. Stage 1 (sigma_a2 down to 1e-9): no sign change, median plateau 1.6663 (out/b3/B4_TUNE_STAGE1_v02.json). Identity test of trk_tracker_v02 (out/b3/KCA_IDENTITY_v02.json): 44 of 44 identical (kappa_ca absent: B4 and B1 arrays of the 20 lead-braking tuning runs bit-identical to v01; kappa_ca = 1.0 on 2 runs). Stage 2 (out/b3/B4_TUNE_STAGE2_v02.json): kappa_ca = 0.6401032024709309, median NIS 1.9978 in [1.8, 2.2] (first sign change between j = 3 and 4, bisection). Constants out/b3/B1R_CONSTANTS_v02.json (kappa 0.16788, sigma_a2 0.001, kappa_ca 0.6401). Code: b_b1r_v02.py (P-bar on the 120 tuning runs; fresh re-track gated on LOCK_A10_2, LOCK_A10_2c and LOCK_A11), b_fresh_analysis_v03.py (+B1R/IMMr, gated on LOCK_A11; test-old B1 reproduces v01 89 of 89), b_fresh_export_v04.py (+B.IMMr.*, existing keys must stay identical), imm_compare_v02.py (kappa_ca; old-run check with kappa_ca 0.5: P9 rel 1.6e-14, ids identical), b_step0_export_v01.py, make_freeze_add_v03.py (this tool: reads the data-only add7 layer; also covers B_retrack/pods/*.py, the RunPod recount tooling of 20 Nov). Second programs (Claude Sonnet, from the spec/A11, without B's code): imm2/imm2_v02.py + README_imm2_v02.md (kappa_ca on Q_CA entries 0,1,2,6,7,8; byte-identical to imm2_v01 without it), recount_fresh/immr_v03.py (old-run test as IMM: 26 of 26 keys and 2,000 rows bit-equal; fresh mode gated on all three locks). No library change since add6.",
+ "library_unchanged": true,
+ "changed": [],
+ "new": [
+  {
+   "path": "B_retrack\\code\\b_b1r_v02.py",
+   "sha256": "5ce2fe40f452c4ec3a8b90908f76c5512e50eeb39482c57e33f919ff36f9fa3a",
+   "bytes": 7866,
+   "mtime": "2026-11-21 13:46:55"
+  },
+  {
+   "path": "B_retrack\\code\\b_fresh_analysis_v03.py",
+   "sha256": "f5b861e7a01eb593189005346c183d2e8d7c269bbf5d5ec9ae0ecca3b2d10466",
+   "bytes": 14192,
+   "mtime": "2026-11-21 13:47:44"
+  },
+  {
+   "path": "B_retrack\\code\\b_fresh_export_v04.py",
+   "sha256": "ca8b2bb1b19472a8e6c46cde41e85c550cc3671bb377c8dfdb589080fc14ed5a",
+   "bytes": 7987,
+   "mtime": "2026-11-21 13:47:44"
+  },
+  {
+   "path": "B_retrack\\code\\b_step0_export_v01.py",
+   "sha256": "83e0bb5f289b7b2234311d99f644b89dd8cb1ceb8cbf1f3c10a2da2b8614dada",
+   "bytes": 2341,
+   "mtime": "2026-11-21 13:42:19"
+  },
+  {
+   "path": "B_retrack\\code\\imm_compare_v02.py",
+   "sha256": "86b938a2dba779e95125d0f9845b4d29a40cf83fd4c7d5bcfedf244fef95d6c9",
+   "bytes": 4103,
+   "mtime": "2026-11-21 13:49:00"
+  },
+  {
+   "path": "B_retrack\\code\\make_freeze_add_v03.py",
+   "sha256": "49b9712ddf54095a85454a4121516d9f4ec06beab69f13a8db8667f1ab7d1378",
+   "bytes": 5689,
+   "mtime": "2026-11-21 14:06:46"
+  },
+  {
+   "path": "B_retrack\\imm2\\README_imm2_v02.md",
+   "sha256": "75f753fa03dd57f8d5e4faf0cca45652abd308707496ece7fac667a42cf1b2e2",
+   "bytes": 1382,
+   "mtime": "2026-11-21 13:50:54"
+  },
+  {
+   "path": "B_retrack\\imm2\\imm2_v02.py",
+   "sha256": "0e353438a7fceabfc735ef92acf42bbc0ed619268dc2133250cc8d324e0ca29f",
+   "bytes": 13464,
+   "mtime": "2026-11-21 13:48:57"
+  },
+  {
+   "path": "B_retrack\\out\\b3\\B1R_CONSTANTS_v02.json",
+   "sha256": "28b2e9da92cdb3ebf2d5aa236b05ce09825bcabf84ff8afda469032f8b4b0a45",
+   "bytes": 1571,
+   "mtime": "2026-11-21 14:04:38"
+  },
+  {
+   "path": "B_retrack\\out\\b3\\B4_TUNE_STAGE1_v02.json",
+   "sha256": "ba006509c110c2c1b411982ef952cece3fcee2deb5a9286d05df15d0cf309fb0",
+   "bytes": 7948,
+   "mtime": "2026-11-21 13:48:05"
+  },
+  {
+   "path": "B_retrack\\out\\b3\\B4_TUNE_STAGE2_v02.json",
+   "sha256": "fdfbfdf62dcba47fbbe4abb68220bd27511b79ac7ba5c13dd84a9a2ae428ec81",
+   "bytes": 2611,
+   "mtime": "2026-11-21 14:04:38"
+  },
+  {
+   "path": "B_retrack\\out\\b3\\KCA_IDENTITY_v02.json",
+   "sha256": "6a3e21a1c63d406e7d8e9057d2d52ab7508ba3d4c9f6b6aecb2b8d295c31af8e",
+   "bytes": 7049,
+   "mtime": "2026-11-21 14:02:53"
+  },
+  {
+   "path": "B_retrack\\pods\\b_pods_v02.py",
+   "sha256": "3e46f88ca74adad5ceec489159f5ddef0aca8cd9b5585a8667204d973c85e872",
+   "bytes": 11528,
+   "mtime": "2026-11-20 09:44:47"
+  },
+  {
+   "path": "B_retrack\\pods\\b_recount_pod_v02.py",
+   "sha256": "1ffe0a3bff41efc72e26fa4b0ad508f8b4feaf7627879ea253ab4a3f78a53dd4",
+   "bytes": 11536,
+   "mtime": "2026-11-20 10:32:16"
+  },
+  {
+   "path": "B_retrack\\pods\\pod_place_v02.py",
+   "sha256": "51917810c91cf80dca2a2bcc73e569af1eb3ca46b76d756920002999764fb77d",
+   "bytes": 1967,
+   "mtime": "2026-11-20 09:45:52"
+  },
+  {
+   "path": "B_retrack\\recount_fresh\\immr_v03.py",
+   "sha256": "f81afc9e1ae043039b7705a8ce9df76ab135317de895f2ac8409c039733a5aae",
+   "bytes": 6203,
+   "mtime": "2026-11-21 13:51:49"
+  }
+ ],
+ "missing": [],
+ "external_read_only": [
+  {
+   "path": "CD_capture\\analysis\\gl_fast_v13.py",
+   "sha256": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789",
+   "note": "package CD file imported read-only by b_fresh_analysis_v02.py"
+  }
+ ],
+ "note": "Reference = FREEZE_B.json with add1..add7 applied in order; this addendum lists every covered file that changed or is new since that state. Earlier manifests are kept as written."
+}

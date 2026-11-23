@@ -1,0 +1,142 @@
+{
+ "code": "test_rc_kernel_v13.py",
+ "started": "2026-11-19 17:25:52",
+ "numpy": "2.5.4",
+ "numba": "0.68.1",
+ "E5_family_vs_trk_score_v01": {
+  "u_equal": true,
+  "info_equal": true,
+  "u_permuted_equal": true,
+  "crit_E5_equal": true,
+  "crit_E5p_equal": true,
+  "ratio_summary_equal": true,
+  "ratio_summary": {
+   "n": 120522,
+   "median": 1.102877208545063,
+   "q05": 1.1023661073557904,
+   "q95": 1.1032217167110119,
+   "A": 0.00038789873822407623,
+   "share_within_5pct": 0.9917691375848393,
+   "barely_varies": true
+  },
+  "e5_info": {
+   "n_evaluated": 8290,
+   "n_with_ratio": 8290
+  },
+  "est_phase_equal": true
+ },
+ "old_evaluation_runs": {
+  "populations": 6,
+  "resamples": 9,
+  "sources": [
+   "F0",
+   "E",
+   "N",
+   "CK3",
+   "E5",
+   "E5p",
+   "NA",
+   "A1",
+   "Q",
+   "TG",
+   "O"
+  ],
+  "values_compared": 648,
+  "values_differing": 0,
+  "max_abs_diff": 0.0,
+  "seconds_library": 89.3668122291565,
+  "seconds_recount": 104.90552186965942,
+  "points_per_source": {
+   "F0": [
+    46935,
+    7902,
+    4016,
+    35019,
+    35895,
+    1
+   ],
+   "E": [
+    43406,
+    7777,
+    4041,
+    31590,
+    32466,
+    1
+   ],
+   "N": [
+    46970,
+    7936,
+    4017,
+    35019,
+    35895,
+    1
+   ],
+   "CK3": [
+    46169,
+    7411,
+    3741,
+    35019,
+    35809,
+    1
+   ],
+   "E5": [
+    46935,
+    7902,
+    4016,
+    35019,
+    35895,
+    1
+   ],
+   "E5p": [
+    46935,
+    7902,
+    4016,
+    35019,
+    35895,
+    1
+   ],
+   "NA": [
+    46970,
+    7936,
+    4017,
+    35019,
+    35895,
+    1
+   ],
+   "A1": [
+    47114,
+    8056,
+    4041,
+    35019,
+    35895,
+    1
+   ],
+   "Q": [
+    47105,
+    8047,
+    4041,
+    35019,
+    35895,
+    1
+   ],
+   "TG": [
+    28348,
+    3014,
+    1934,
+    23402,
+    23958,
+    1
+   ],
+   "O": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  }
+ },
+ "all_identical": true,
+ "written": "2026-11-19 17:30:32"
+}

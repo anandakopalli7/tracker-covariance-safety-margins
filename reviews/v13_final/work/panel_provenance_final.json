@@ -1,0 +1,31 @@
+{
+ "schema_version": "review-panel-provenance/1.0",
+ "panel_id": "ars-review-v13-final",
+ "written_by": "coordinating session (Claude Opus 5.5), 22 Nov 2026 12:09 EST (Get-Date)",
+ "requested_by": "the author, relayed by the author-facing session 'Paper work summary' (about 10:50 EST; GO received about 12:05 EST)",
+ "freeze_reviewed": {
+  "folder": "revision_v13\\work\\A_text\\out\\freeze_v13_1201 (frozen 22 Nov 2026 12:01:26 EST; 12 typeset pages; final build PASS)",
+  "MANUSCRIPT_v13.md": "b469bf657af9ddee583b7bda944ca3af639e1ba4b2e61875150d83bafd0f7793",
+  "MANUSCRIPT_v13.tex": "dd915933edffcebad863c9d1ed02b37ef0a6a493045696b210ff9c94b4dc2eee",
+  "SUPPLEMENT_v13.md": "d1ea32fa94787a0eb44c441714ac8c9183d3ab9707c25336194673170515f9b8",
+  "MANUSCRIPT_v13.pdf": "d3fec633f7b5ab7d4d9053c2b9a56e23dbd6d5ef9c90455cd477701c0920bcf5",
+  "RESPONSE_TO_REVIEW_v13.md (not read by seats)": "b87ffbbf6fce6c5f3c204096cba716c6e6c37bc7902b5ca00fcca9eca2d78c1f",
+  "hash_check": "re-computed by the coordinator at 12:07 EST; equal to session A's and Paper work summary's"
+ },
+ "page_images": "review_v13_final_output\\pages\\page01.png to page12.png (1224 x 1584 px), rendered from the frozen PDF by Paper work summary; sha256 listed in work\\pages_sha256.txt",
+ "writers": "text up to the sprint: Claude Opus 5.5; round-2 text and the submission pass (session A): Claude Fable 5.2 (gen\\model_record_v13.json: writer_round2)",
+ "route": "five seats dispatched directly by the coordinator as separate fresh sub-agents, in parallel, with the round-2 seat models; cards from review_v13_output\\00_phase0_field_analysis_and_cards.md (the user-accepted cards, focus anchors re-pointed by each seat to the final text; the card-confirmation pause was not held); common brief work\\panel_brief_final_filled_v01.md (round 2's Q1-Q5 re-pointed, plus Q6 self-contained main text, Q7 OJ-ITS format and declarations, Q8 AI disclosure with the frozen paragraph and the author's shorter candidate); synthesis by a separate Claude Sonnet 5.5 sub-agent (not the final text's writer model).",
+ "seats": [
+  {"seat_id": "EIC", "role_id": "journal_fit", "model": "Claude Sonnet 5.5", "output": "phase1\\01_eic_journal_fit.md", "extra_duty": "Q7 in full against the template and every page image; Q8 in depth"},
+  {"seat_id": "R1", "role_id": "methodology", "model": "Claude Fable 5.2 (the final text's writer model; told to be skeptical)", "output": "phase1\\02_r1_methodology.md", "extra_reads": "AMENDMENT_10-13, LOCK_A11*, LOCK_A12a-e, LOCK_A13a-c, export pairs (DR2, DR10, M, N5B, DRF, YN, B, E5, E6), A12 and A13 Holm files, RECOUNT_COVERAGE_v13.md; spot-check at least 40 printed values including every value moved into the main text"},
+  {"seat_id": "R2", "role_id": "domain", "model": "Claude Opus 5.5 (the earlier text's writer model; told to be skeptical)", "output": "phase1\\03_r2_domain.md"},
+  {"seat_id": "R3", "role_id": "practical", "model": "Claude Sonnet 5.5", "output": "phase1\\04_r3_practical.md", "extra_duty": "second full pass on Q7's first page, acknowledgment, abstract, index terms and references"},
+  {"seat_id": "DA", "role_id": "devils_advocate", "model": "Claude Fable 5.2 (the final text's writer model; told to be skeptical)", "output": "phase1\\05_devils_advocate.md", "extra_reads": "AMENDMENT_11, AMENDMENT_12, AMENDMENT_13"}
+ ],
+ "synthesis": {"model": "Claude Sonnet 5.5", "outputs": ["ARS_REVIEW_FINAL_v01.md", "ARS_AUTHOR_LETTER_FINAL_v01.md"]},
+ "blinding": "seats do not see each other's outputs, earlier review reports, the response letter, session A's diffs or session notes; seats are not told any target score",
+ "web_access": "none for any seat or the synthesis; no manuscript text to any external service",
+ "correlated_error_disclosure": "All seats are Claude models of one family (Sonnet 5.5, Fable 5.2, Opus 5.5); spreading seats over three models reduces but does not remove correlated-error risk. Two seats (R1, DA) share the final text's writer model and one (R2) the earlier text's writer model.",
+ "title_note": "The title is the author's choice; seats comment only if the paper contradicts it.",
+ "gates_not_findings": "repository DOI; the author's own AI-use confirmation sentence"
+}

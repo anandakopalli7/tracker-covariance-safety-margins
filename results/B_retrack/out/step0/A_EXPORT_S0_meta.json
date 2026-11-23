@@ -1,0 +1,8 @@
+{
+ "code": "b_step0_export_v01.py",
+ "source": "out\\step0\\STEP0_CROSSING_v01.json",
+ "source_sha256": "1d0322910e072657e5fdaaaa89f2d82a73f028ae879ad2f6baa82b6822e06610",
+ "status": "descriptive design data on stored runs (needs a second-program recount before print)",
+ "n_keys": 45,
+ "written": "2026-11-21 13:42:21"
+}

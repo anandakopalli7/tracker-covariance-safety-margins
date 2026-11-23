@@ -1,0 +1,25 @@
+{
+ "package": "F",
+ "addendum": "FREEZE_F_ADD02",
+ "written": "2026-11-20 10:03:58",
+ "after_lock2": true,
+ "reason": "Pod tooling only (moves files; no numerics, rule or frozen recount file changes). (1) f17_calib_pod_v01.py: an optional --gpu for up(), because no RTX 4090 was left in EU-RO-1 at 09:50 EST; the default is unchanged. (2) new f18_recount_pod_v01.py: runs the frozen recount (recount/fr_heldout_v02.py, unchanged, in FREEZE_F) on a pod at the coordinator offer of 09:28 EST, with SHA-256 checked transfers. (3) new f19_compare_json_v01.py: value-by-value JSON comparison for the platform tests.",
+ "base_manifests": [
+  "locks/FREEZE_F.json",
+  "locks/FREEZE_F_ADD01.json"
+ ],
+ "entries": [
+  {
+   "path": "work/F_nuscenes/code/f17_calib_pod_v01.py",
+   "sha256": "eff58ae8d645b501343bdd68fa74d3a0ffca28fe3c30a4c5bd08d8311640db3a"
+  },
+  {
+   "path": "work/F_nuscenes/code/f18_recount_pod_v01.py",
+   "sha256": "a520af9f711738b45920d30f650c15872992396cf53366b40a7c77a4e567c7c1"
+  },
+  {
+   "path": "work/F_nuscenes/code/f19_compare_json_v01.py",
+   "sha256": "7920a9a4eba8bd512e5b9d4680106ebbbd50bec1e1b54f506109a11cc868bfe2"
+  }
+ ]
+}

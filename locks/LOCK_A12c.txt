@@ -1,0 +1,36 @@
+LOCK_A12c (round 2): AMENDMENT_12 section 5 - the real-sensor mechanism check on nuScenes val (train-informed primary)
+Written: 22 Nov 2026 03:35:07 EST by the laptop clock, by the coordinating session (Claude Opus 5.5), with work\shared\tools\make_lock_a11_v01.py (sha256 ece77e031fef3729814375e6ff1f2a87a0828fdd4113e032df67d707834266f7).
+
+Amendment: revision_v13\AMENDMENT_12_v13.md, sha256 a9911f1222b5fa386c28d39b2f3816cb3e0ec00d0eb4c4d082a58dc8d4ac0e42, modified 22 Nov 03:35:00.
+Snapshot copy at this lock: revision_v13\AMENDMENT_12_v13_at_LOCK_A12c.md (identical bytes).
+
+Freezes, verified layered at writing (verify_freeze.layered; 0 mismatches required):
+- F (FREEZE_F + ADD01 + ADD02 + F_A12): layered 4 manifests: 379 files, 379 match, 0 not
+    FREEZE_F.json  sha256 79a5bd03efb9cc7a01673fc2f86f7b59571836a838311ad737ccf71368b7769f  modified 20 Nov 03:33:18
+    FREEZE_F_ADD01.json  sha256 72e9c7f57fb2f081e90b837479e05ffd4099b7a7b15a2fe71c0e0037f849d5ef  modified 20 Nov 05:59:55
+    FREEZE_F_ADD02.json  sha256 e7324f6d86b0766aeca1959abdc32c589a2fa0b1fc72b294c3196924d085639b  modified 20 Nov 10:03:58
+    FREEZE_F_A12.json  sha256 091d06944ca026ad72dc5463d67e748959ccd04468db5c9ec69e5a4ff3af8601  modified 22 Nov 03:33:37
+
+Files (path, sha256, modified):
+- LOCK_A12a: LOCK_A12a.txt  sha256 0c4d4872946ba85d2ed91a0471eb8da7188333d2dfe462b68a6df555345b2766  modified 22 Nov 00:47:53
+- LOCK_A12b: LOCK_A12b.txt  sha256 8fe336698b36ce334601d4928c179c1eccfcc9936e449b673c79a92d21e2324e  modified 22 Nov 01:44:34
+- LOCK_A12d: LOCK_A12d.txt  sha256 eb4b6326150fadb1d411550b68cff990c86a8cdeefd01f5c2743c36066f54fc9  modified 22 Nov 03:21:57
+- A12 snapshot at LOCK_A12d: AMENDMENT_12_v13_at_LOCK_A12d.md  sha256 33367fec0920a53f2c761cbfbaa80b65ee6b26a96ace4175182255faed4e65d4  modified 22 Nov 03:21:57
+- F's section 5 text v02 (merged verbatim into A12 section 5): F_nuscenes/notes/A12_5_MECH_v02.md  sha256 73fc9219e037b2052df9461e5e45d6934afeef68943340574b07a5a855d41863  modified 22 Nov 03:33:35
+- Train design result, CANMOT, all 700 train scenes: F_nuscenes/out/mech/MECH_train_T1_v01.json  sha256 97939033cfed4d88ac046bd5bfe615bb4c199e0b20395c92ef253b9a3fa63c27  modified 22 Nov 03:20:46
+- Train design, primary recomputed from rows (v02): F_nuscenes/out/mech/MECH_train_T1_v02_fromrows.json  sha256 7787e3ac5ab2e97f89c4385d97065de44f4856853a0fa4e1b219186c18fa1135  modified 22 Nov 03:31:52
+- Train design, IMM, first 50 scenes: F_nuscenes/out/mech/MECH_train_IMM_v01_first50.json  sha256 97a9b6cacf38309685dda06bc389965c929f96db1c3aae24f1d08458eb675e2d  modified 22 Nov 03:21:55
+- Agreement v02, first 50 train scenes, CANMOT: F_nuscenes/out/mech_v02/MECH_COMPARE_v02_first50_T1.json  sha256 9265295be2a7bf3762b198fec1ec609c52dd1cba17f46e559c63f6c017794f58  modified 22 Nov 03:30:58
+- Agreement v02, first 50 train scenes, IMM: F_nuscenes/out/mech_v02/MECH_COMPARE_v02_first50_IMM.json  sha256 56ba7fbf6703017c576988d81cb7d0dee579ca15787d1f97515df3d5926fbc93  modified 22 Nov 03:30:59
+- Val-path rehearsal on train scenes v02, CANMOT: F_nuscenes/out/mech_rehearsal_train50_v02/MECH_COMPARE_rehearsal_v02_T1.json  sha256 f3c3fffdc8a4d4b5c521530ff642d9ce6bc40dce2b15f6fc52b53e9f89d72873  modified 22 Nov 03:33:21
+
+Sealing evidence (each pattern must match no file at writing):
+- no val result of the mechanism check: F_nuscenes/out/mech/MECH_val*  -> 0 file(s)
+- no mechanism export: F_nuscenes/out/A_EXPORT_M*  -> 0 file(s)
+- no mechanism recount export: F_nuscenes/out/A_RECOUNT_M*  -> 0 file(s)
+
+State at writing (coordinator's statement):
+- Since LOCK_A12d, AMENDMENT_12 changed only in section 5 (F's v02 text and the coordinator's design-split note with the author's agreement) and in section 5b's lock line. All other sections are byte-identical to the LOCK_A12d snapshot (checked by the coordinator before writing this file).
+- Design split only so far: the primary population (pairs around real missed detections) was chosen on the 700 train scenes after the all-row statistic there was found to be dominated by steady pairs (CANMOT all-row tau -0.0108; miss pairs +0.190 [0.167, 0.212]). The author agreed before this lock, verbatim: "Yes, keep it". The text discloses the choice.
+- No val value of the mechanism check exists. The files named REHEARSAL_TRAIN50_MECH_val_* are a rehearsal of the val code path on 50 TRAIN scenes in a sandbox whose placeholder lock was marked TEST TREE ONLY; no val scene was reachable there (F's README).
+- Section 5b (the real-log dropout decision test) is NOT locked here; it gets LOCK_A12e after its worker's code is frozen, before any masked val value.

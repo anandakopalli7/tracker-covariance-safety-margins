@@ -1,0 +1,710 @@
+{
+ "calib_mode": "import",
+ "code": "c_lead_v13.py",
+ "amendment": "AMENDMENT_10_v13 sec. 5.3, 5.5",
+ "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df",
+ "runs": [
+  "pc13_c1109_eval_0000_native",
+  "pc13_c1109_eval_0006_native",
+  "pc13_c1109_eval_0012_native",
+  "pc13_c1109_eval_0018_native",
+  "pc13_c1109_eval_0024_native",
+  "pc13_c1109_eval_0030_native",
+  "pc13_c1109_eval_0036_native",
+  "pc13_c1109_eval_0042_native",
+  "pc13_c1109_eval_0048_native",
+  "pc13_c1109_eval_0054_native",
+  "pc13_c1109_eval_0060_native",
+  "pc13_c1109_eval_0066_native",
+  "pc13_c1109_eval_0072_native",
+  "pc13_c1109_eval_0078_native",
+  "pc13_c1109_eval_0084_native",
+  "pc13_c1109_eval_0090_native",
+  "pc13_c1109_eval_0096_native",
+  "pc13_c1109_eval_0102_native",
+  "pc13_c1109_eval_0108_native",
+  "pc13_c1109_eval_0114_native",
+  "pc13_c1109_eval_0120_native",
+  "pc13_c1109_eval_0126_native",
+  "pc13_c1109_eval_0132_native",
+  "pc13_c1109_eval_0138_native",
+  "pc13_c1109_eval_0144_native",
+  "pc13_c1109_eval_0150_native",
+  "pc13_c1109_eval_0156_native",
+  "pc13_c1109_eval_0162_native",
+  "pc13_c1109_eval_0168_native",
+  "pc13_c1109_eval_0174_native",
+  "pc13_c1109_eval_0180_native",
+  "pc13_c1109_eval_0186_native",
+  "pc13_c1109_eval_0192_native",
+  "pc13_c1109_eval_0198_native",
+  "pc13_c1109_eval_0204_native",
+  "pc13_c1109_eval_0210_native",
+  "pc13_c1109_eval_0216_native",
+  "pc13_c1109_eval_0222_native",
+  "pc13_c1109_eval_0228_native",
+  "pc13_c1109_eval_0234_native",
+  "pc13_c1109_eval_0240_native",
+  "pc13_c1109_eval_0246_native",
+  "pc13_c1109_eval_0252_native",
+  "pc13_c1109_eval_0258_native",
+  "pc13_c1109_eval_0264_native",
+  "pc13_c1109_eval_0270_native",
+  "pc13_c1109_eval_0276_native",
+  "pc13_c1109_eval_0282_native",
+  "pc13_c1109_eval_0288_native",
+  "pc13_c1109_eval_0294_native",
+  "pc13_c1109_eval_0300_native",
+  "pc13_c1109_eval_0306_native",
+  "pc13_c1109_eval_0312_native",
+  "pc13_c1109_eval_0318_native",
+  "pc13_c1109_eval_0324_native",
+  "pc13_c1109_eval_0330_native",
+  "pc13_c1109_eval_0336_native",
+  "pc13_c1109_eval_0342_native",
+  "pc13_c1109_eval_0348_native",
+  "pc13_c1109_eval_0354_native",
+  "pc13_c1109_eval_0360_native",
+  "pc13_c1109_eval_0366_native",
+  "pc13_c1109_eval_0372_native",
+  "pc13_c1109_eval_0378_native",
+  "pc13_c1109_eval_0384_native",
+  "pc13_c1109_eval_0390_native",
+  "pc13_c1109_eval_0396_native",
+  "pc13_c1109_eval_0402_native",
+  "pc13_c1109_eval_0408_native",
+  "pc13_c1109_eval_0414_native",
+  "pc13_c1109_eval_0420_native",
+  "pc13_c1109_eval_0426_native",
+  "pc13_c1109_eval_0432_native",
+  "pc13_c1109_eval_0438_native",
+  "pc13_c1109_eval_0444_native",
+  "pc13_c1109_eval_0450_native",
+  "pc13_c1109_eval_0456_native",
+  "pc13_c1109_eval_0462_native",
+  "pc13_c1109_eval_0468_native",
+  "pc13_c1109_eval_0474_native",
+  "pc13_c1109_eval_0486_native",
+  "pc13_c1109_eval_0498_native",
+  "pc13_c1109_eval_0510_native",
+  "pc13_c1109_eval_0516_native",
+  "pc13_c1109_eval_0528_native",
+  "pc13_c1109_eval_0534_native",
+  "pc13_c1109_eval_0546_native",
+  "pc13_c1109_eval_0552_native",
+  "pc13_c1109_eval_0558_native",
+  "pc13_c1109_eval_0564_native",
+  "pc13_c1109_eval_0570_native",
+  "pc13_c1109_eval_0576_native",
+  "pc13_c1109_eval_0582_native",
+  "pc13_c1109_eval_0594_native",
+  "pc13_c1109_eval_0600_native",
+  "pc13_c1109_eval_0606_native",
+  "pc13_c1109_eval_0618_native",
+  "pc13_c1109_eval_0624_native",
+  "pc13_c1109_eval_0630_native",
+  "pc13_c1109_eval_0648_native",
+  "pc13_c1109_eval_0660_native",
+  "pc13_c1109_eval_0666_native",
+  "pc13_c1109_eval_0678_native",
+  "pc13_c1109_eval_0696_native",
+  "pc13_c1109_eval_0720_native"
+ ],
+ "n_runs": 105,
+ "e5_u": {
+  "n_evaluated": 21574,
+  "n_with_ratio": 21383
+ },
+ "draw": "default_rng(20261911), 20000 run resamples",
+ "delta": 0.05,
+ "test_old": false,
+ "calibration_main": {
+  "R_gl": {
+   "coverage95": 0.9475,
+   "n_outer_valid": 2000,
+   "level": 0.95,
+   "rule": "nominal 95% (estimated coverage >= 0.94)",
+   "source": "calib_remote_v13.py results 20261913, 20261914"
+  },
+  "RR_E5": {
+   "coverage95": 0.947,
+   "n_outer_valid": 2000,
+   "level": 0.95,
+   "rule": "nominal 95% (estimated coverage >= 0.94)",
+   "source": "calib_remote_v13.py results 20261913, 20261914"
+  },
+  "RR_E5_minus_E5p": {
+   "coverage95": 0.957,
+   "n_outer_valid": 2000,
+   "level": 0.95,
+   "rule": "nominal 95% (estimated coverage >= 0.94)",
+   "source": "calib_remote_v13.py results 20261913, 20261914"
+  },
+  "RR_N": {
+   "coverage95": 0.801,
+   "n_outer_valid": 2000,
+   "calibrated_level": 0.994,
+   "mc_sd": 0.0010072493612000063,
+   "second_seed_level": 0.994,
+   "level": 0.994,
+   "rule": "calibrated (MC SD <= 0.002; second inner seed within 0.002)",
+   "source": "calib_remote_v13.py results 20261913, 20261914"
+  },
+  "RR_CK3": {
+   "coverage95": 0.946,
+   "n_outer_valid": 2000,
+   "level": 0.95,
+   "rule": "nominal 95% (estimated coverage >= 0.94)",
+   "source": "calib_remote_v13.py results 20261913, 20261914"
+  }
+ },
+ "main": {
+  "R_gl": {
+   "point": 5.579177441798148,
+   "ci": [
+    4.988910587299072,
+    6.167329150639373
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    4.991025732956923,
+    6.169444296297224
+   ],
+   "level": 0.95,
+   "ci_level": [
+    4.988910587299072,
+    6.167329150639373
+   ]
+  },
+  "RR_E5": {
+   "point": 0.012532343531706977,
+   "ci": [
+    0.009998111032464861,
+    0.01499388345286911
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    0.010070803610544844,
+    0.015066576030949092
+   ],
+   "level": 0.95,
+   "ci_level": [
+    0.009998111032464861,
+    0.01499388345286911
+   ]
+  },
+  "RR_E5_minus_E5p": {
+   "point": 0.007667380359932874,
+   "ci": [
+    0.005838549327303173,
+    0.009841447704647266
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    0.005493313015218482,
+    0.009496211392562575
+   ],
+   "level": 0.95,
+   "ci_level": [
+    0.005838549327303173,
+    0.009841447704647266
+   ]
+  },
+  "RR_N": {
+   "point": -8.266717369203164e-06,
+   "ci": [
+    -0.000675062544820577,
+    0.0009537641924866913
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    -0.0009702976272250976,
+    0.0006585291100821707
+   ],
+   "level": 0.994,
+   "ci_level": [
+    -0.0009307814282639755,
+    0.00147734546162411
+   ]
+  },
+  "RR_CK3": {
+   "point": 0.7828126679176965,
+   "ci": [
+    0.7196197506337577,
+    0.842229539842845
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    0.7233957959925481,
+    0.8460055852016354
+   ],
+   "level": 0.95,
+   "ci_level": [
+    0.7196197506337577,
+    0.842229539842845
+   ]
+  }
+ },
+ "room": {
+  "R_pp": 5.579177441798148,
+  "R_deceq": 1203.6517412935325,
+  "n": 21574.0,
+  "share_resamples_denE_gt0": 1.0,
+  "R_deceq_ci": [
+   1049.223134328358,
+   1357.53855721393
+  ]
+ },
+ "descriptive_RR_gl": {
+  "NA": {
+   "point": 0.02399414716410259,
+   "ci": [
+    0.01496063186620931,
+    0.03414356017615395
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    0.01384473415205123,
+    0.03302766246199587
+   ]
+  },
+  "A1": {
+   "point": 0.3694437325882265,
+   "ci": [
+    0.3309567245049455,
+    0.40410341471037126
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    0.33478405046608173,
+    0.4079307406715075
+   ]
+  },
+  "Q": {
+   "point": -0.001347474931179596,
+   "ci": [
+    -0.003360987967818425,
+    0.00025928351049746685
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    -0.002954233372856659,
+    0.0006660381054592328
+   ]
+  },
+  "TG": {
+   "point": 0.2874420296444485,
+   "ci": [
+    0.23119022183931473,
+    0.33196881952379814
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    0.24291523976509882,
+    0.34369383744958226
+   ]
+  }
+ },
+ "descriptive_D_deceq": {
+  "N": {
+   "point": -0.009950248756222876,
+   "ci": [
+    -0.8208955223880608,
+    1.1243781094527365
+   ]
+  },
+  "E5": {
+   "point": 15.084577114427839,
+   "ci": [
+    11.393034825870656,
+    18.60199004975124
+   ]
+  },
+  "E5p": {
+   "point": 5.8557213930348055,
+   "ci": [
+    3.1641791044776038,
+    8.104477611940283
+   ]
+  },
+  "CK3": {
+   "point": 942.2338308457713,
+   "ci": [
+    791.5060945273632,
+    1092.8267412935322
+   ]
+  },
+  "NA": {
+   "point": 28.880597014925357,
+   "ci": [
+    18.039676616915433,
+    40.482587064676615
+   ]
+  },
+  "A1": {
+   "point": 444.68159203980093,
+   "ci": [
+    371.4751243781094,
+    515.2793532338308
+   ]
+  },
+  "Q": {
+   "point": -1.6218905472637035,
+   "ci": [
+    -4.16417910447761,
+    0.3084577114427699
+   ]
+  },
+  "TG": {
+   "point": 345.9800995024876,
+   "ci": [
+    267.8157960199006,
+    416.02002487562197
+   ]
+  }
+ },
+ "H3": {
+  "status": "run",
+  "classification": "amplitude-limited",
+  "barely_varies": true,
+  "ratio_summary": {
+   "n": 312592,
+   "median": 1.0703797852084254,
+   "q05": 1.069092363592245,
+   "q95": 1.0763568979941733,
+   "A": 0.003393437778962664,
+   "share_within_5pct": 0.9969257050724267,
+   "barely_varies": true,
+   "q25": 1.0697894720820007,
+   "q75": 1.071275532176385
+  },
+  "e5_u": {
+   "n_evaluated": 21574,
+   "n_with_ratio": 21334
+  },
+  "r": {
+   "point": 3.207672753225441e-05,
+   "ci": [
+    -0.0012891356512523134,
+    0.0009220020775986451
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    -0.0008578486225341363,
+    0.0013532891063168222
+   ],
+   "level": 0.99,
+   "ci_level": [
+    -0.0017566495295198564,
+    0.0012115336669304838
+   ]
+  },
+  "c": {
+   "point": 0.0008500332796048106,
+   "ci": [
+    0.0006171802746506125,
+    0.0010432550503229
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    0.0006568115088867212,
+    0.0010828862845590087
+   ],
+   "level": 0.95,
+   "ci_level": [
+    0.0006171802746506126,
+    0.0010432550503229
+   ]
+  },
+  "efficiency_r_over_c": null,
+  "room_IMM": {
+   "R_pp": 5.751395059558977,
+   "R_deceq": 1240.8059701492537,
+   "ci": [
+    5.170137960734441,
+    6.327441552359018
+   ]
+  },
+  "calibration": {
+   "r": {
+    "coverage95": 0.8965,
+    "n_outer_valid": 2000,
+    "calibrated_level": 0.994,
+    "mc_sd": 0.0027872673767894733,
+    "second_seed_level": 0.996,
+    "level": 0.99,
+    "rule": "nominal 99%: the calibrated level failed its Monte Carlo checks",
+    "source": "calib_remote_v13.py results 20261913, 20261914"
+   },
+   "c": {
+    "coverage95": 0.9975,
+    "n_outer_valid": 2000,
+    "level": 0.95,
+    "rule": "nominal 95% (estimated coverage >= 0.94)",
+    "source": "calib_remote_v13.py results 20261913, 20261914"
+   }
+  },
+  "passes": true
+ },
+ "H4": {
+  "record_basis": {
+   "point": 0.9157451355072018,
+   "ci": [
+    0.8640612284616381,
+    0.9648867518532994
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    0.8666035191611042,
+    0.9674290425527655
+   ],
+   "level": 0.95,
+   "ci_level": [
+    0.8640612284616381,
+    0.9648867518532994
+   ]
+  },
+  "like_for_like": {
+   "point": 0.9182354270685652,
+   "ci": [
+    0.8674464921905585,
+    0.9675848477334806
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    0.8688860064036498,
+    0.9690243619465719
+   ]
+  },
+  "single_scale": {
+   "point": -0.002490291561363511,
+   "ci": [
+    -0.0052471838141423255,
+    -0.001704241208676331
+   ],
+   "invalid_share": 0.0,
+   "n_invalid": 0,
+   "outside": false,
+   "basic": [
+    -0.0032763419140506914,
+    0.00026660069141530313
+   ]
+  },
+  "calibration": {
+   "share_record": {
+    "coverage95": 0.9425,
+    "n_outer_valid": 2000,
+    "level": 0.95,
+    "rule": "nominal 95% (estimated coverage >= 0.94)",
+    "source": "calib_remote_v13.py results 20261913, 20261914"
+   }
+  },
+  "design": {
+   "design_levels": [
+    1.095800460076491,
+    27.704363041729717
+   ],
+   "triples_with_choice": 201
+  },
+  "sensitivities": {
+   "truth_phase": {
+    "record_basis": {
+     "point": 0.8334956543179437,
+     "ci": [
+      0.787193288118214,
+      0.8794412014508918
+     ],
+     "invalid_share": 0.0,
+     "n_invalid": 0,
+     "outside": false,
+     "basic": [
+      0.7875501071849956,
+      0.8797980205176734
+     ]
+    },
+    "like_for_like": {
+     "point": 0.8359859458793071,
+     "ci": [
+      0.7902207454551472,
+      0.8825590846210346
+     ],
+     "invalid_share": 0.0,
+     "n_invalid": 0,
+     "outside": false,
+     "basic": [
+      0.7894128071375796,
+      0.881751146303467
+     ]
+    },
+    "single_scale": {
+     "point": -0.002490291561363511,
+     "ci": [
+      -0.0052471838141423255,
+      -0.001704241208676331
+     ],
+     "invalid_share": 0.0,
+     "n_invalid": 0,
+     "outside": false,
+     "basic": [
+      -0.0032763419140506914,
+      0.00026660069141530313
+     ]
+    }
+   },
+   "thr_-0.5": {
+    "record_basis": {
+     "point": 0.9298732252563231,
+     "ci": [
+      0.8835157700036859,
+      0.9767696596706534
+     ],
+     "invalid_share": 0.0,
+     "n_invalid": 0,
+     "outside": false,
+     "basic": [
+      0.8829767908419928,
+      0.9762306805089603
+     ]
+    },
+    "like_for_like": {
+     "point": 0.9323635168176867,
+     "ci": [
+      0.8870605117838662,
+      0.9795332045974983
+     ],
+     "invalid_share": 0.0,
+     "n_invalid": 0,
+     "outside": false,
+     "basic": [
+      0.8851938290378751,
+      0.9776665218515072
+     ]
+    },
+    "single_scale": {
+     "point": -0.002490291561363511,
+     "ci": [
+      -0.0052471838141423255,
+      -0.001704241208676331
+     ],
+     "invalid_share": 0.0,
+     "n_invalid": 0,
+     "outside": false,
+     "basic": [
+      -0.0032763419140506914,
+      0.00026660069141530313
+     ]
+    }
+   },
+   "thr_-2.0": {
+    "record_basis": {
+     "point": 0.911915182148801,
+     "ci": [
+      0.8599092893571012,
+      0.9620931483221701
+     ],
+     "invalid_share": 0.0,
+     "n_invalid": 0,
+     "outside": false,
+     "basic": [
+      0.8617372159754318,
+      0.9639210749405007
+     ]
+    },
+    "like_for_like": {
+     "point": 0.9144054737101646,
+     "ci": [
+      0.8631639946298956,
+      0.964634971113417
+     ],
+     "invalid_share": 0.0,
+     "n_invalid": 0,
+     "outside": false,
+     "basic": [
+      0.8641759763069121,
+      0.9656469527904336
+     ]
+    },
+    "single_scale": {
+     "point": -0.002490291561363511,
+     "ci": [
+      -0.0052471838141423255,
+      -0.001704241208676331
+     ],
+     "invalid_share": 0.0,
+     "n_invalid": 0,
+     "outside": false,
+     "basic": [
+      -0.0032763419140506914,
+      0.00026660069141530313
+     ]
+    }
+   }
+  }
+ },
+ "sequence": {
+  "H0": {
+   "passes": true,
+   "confirmed": true,
+   "label": "confirmatory"
+  },
+  "H1": {
+   "passes": true,
+   "confirmed": true,
+   "label": "confirmatory"
+  },
+  "H2": {
+   "passes": true,
+   "confirmed": true,
+   "label": "confirmatory"
+  },
+  "H3": {
+   "passes": true,
+   "confirmed": true,
+   "label": "confirmatory"
+  },
+  "H4": {
+   "passes": true,
+   "confirmed": true,
+   "label": "confirmatory"
+  },
+  "H5": {
+   "passes": true,
+   "confirmed": true,
+   "label": "confirmatory"
+  }
+ },
+ "seconds": 3204.5368134975433,
+ "written": "2026-11-20 10:07:15",
+ "code_sha256": {
+  "c_lead_v13.py": "36cbbc166bc060472e8b02d53ff526b792e4b35191d8b83429ff9a006ad6f6c0",
+  "cd_common_v13.py": "978dc19c136484b2514848536d6430beab4e45ec02e8099b0bd9ae11491cf0c2",
+  "gl_fast_v13.py": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789",
+  "c_lead_choice_v13.py": "ea9024990b97b9436452baf02ef95c8b3bf098a41af2efb58f89b7e2c42d9fb7"
+ }
+}

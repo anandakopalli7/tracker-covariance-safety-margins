@@ -1,0 +1,116 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "package": "E",
+ "session": "E (Claude Opus 5.5)",
+ "written": "2026-11-19T23:22:39.614400-05:00",
+ "before": "any E3 / E3b value (LOCK_A10_2.txt does not exist)",
+ "lock2_exists": false,
+ "note": "Additions after FREEZE_E.json (0a613b64...). Second program of record for E3/E3b is recount/e_recount_v03.py (Sonnet): v02 fixes fallback share to A10 7.4 \"decisions in full braking\" (31/180 E2 runs differed; out/E2_COMPARE_NOTE_v01.md); v03 maps a dict lead_variant to its kind (real D1 contracts) and reports no interval for an outcome defined on fewer than 2 pairs (convention gap, A10 7.5 silent; the first program already does so). analysis/e_compare_v01.py is the comparison of record (A10 10.1(c)). Checks: E2 outcomes first vs v03 180 runs 0 disagreements; E2 values relabelled into an E3/E3b design, e3_analyse_v01 vs v03 compare: 24 comparisons 0 disagreements (2 labelled recount extras). acquire_e_v02.py / auto_e3b_v01.py are pod logistics only.",
+ "files": [
+  {
+   "path": "E_closedloop/recount/e_recount_v02.py",
+   "bytes": 40193,
+   "sha256": "5bbc7b9ddab4fe68e057d8e87185eecf36ffe0cf533b2baa15461c8acfdabb5f"
+  },
+  {
+   "path": "E_closedloop/recount/README_RECOUNT_v02.md",
+   "bytes": 15805,
+   "sha256": "9bb0ae47036e42c8b59adb7a6123e8d81f1f2c932b0aaee609a809d20859dad9"
+  },
+  {
+   "path": "E_closedloop/recount/e_recount_v03.py",
+   "bytes": 40777,
+   "sha256": "fb1a810e724155bdef0901250ed04069a7db58d58352be50ba6b4bae9831414e"
+  },
+  {
+   "path": "E_closedloop/recount/README_RECOUNT_v03.md",
+   "bytes": 17602,
+   "sha256": "9dd74f21d0cf739e7321d2d3cf763f2e13040b837c598fd6c279e0ebdedfd484"
+  },
+  {
+   "path": "E_closedloop/recount/test/make_synth_dict.py",
+   "bytes": 1527,
+   "sha256": "31b079c58f06d5596ffdc60fcf6a1bef9f668c0817624e7233cc0d8100b13b11"
+  },
+  {
+   "path": "E_closedloop/analysis/e_compare_v01.py",
+   "bytes": 6587,
+   "sha256": "3f853ebdaa02a1a4db6879a863b820b0b32e82a5ce32af5981e7d287ae4ae3e1"
+  },
+  {
+   "path": "E_closedloop/tools/acquire_e_v02.py",
+   "bytes": 3629,
+   "sha256": "2cced2751aa3d129f38213d8d4cc6ac6bbecb6e4095172bee53b4fbc8471337c"
+  },
+  {
+   "path": "E_closedloop/tools/auto_e3b_v01.py",
+   "bytes": 4756,
+   "sha256": "5f367a78850fc4194ca656977d4317a39473051af595265b751c66aff4b3952f"
+  },
+  {
+   "path": "E_closedloop/tests/test_e_compare_synth_v01.py",
+   "bytes": 2359,
+   "sha256": "b49e01df43990d39ac915b7dc9c0810038fb346fce9d419f1054ddcd2cdc5c91"
+  },
+  {
+   "path": "E_closedloop/tests/test_e_compare_e2relabel_v01.py",
+   "bytes": 4726,
+   "sha256": "7cb129638ab18a6e9dc8288f90a60a26b2245008362a43e89e4ae196158d9f2b"
+  },
+  {
+   "path": "E_closedloop/out/E2_COMPARE_NOTE_v01.md",
+   "bytes": 3519,
+   "sha256": "f2487e4a288e002c96e785d3a415077a72cd59fe66cc1ad67bdfcab74e6371ec"
+  },
+  {
+   "path": "E_closedloop/out/E2_RECOUNT_OUTCOMES_v02.json",
+   "bytes": 138018,
+   "sha256": "c9a8e2ac6386d82ddf5405bdca92d6c6f8a74b4c667ff3fcda545b569b16f2c2"
+  },
+  {
+   "path": "E_closedloop/out/E2_RECOUNT_OUTCOMES_v03.json",
+   "bytes": 143598,
+   "sha256": "fe5e865d647557a64790af7dbd918046ad05238d3ddf27aa10c02db9c051b1a9"
+  },
+  {
+   "path": "E_closedloop/out/E_COMPARE_OUTCOMES_E2_v01.json",
+   "bytes": 4646,
+   "sha256": "53b08ca5d464647fde93eb616c4dc5086329f4d155940e400d3488e97344263f"
+  },
+  {
+   "path": "E_closedloop/out/E_COMPARE_OUTCOMES_E2_v02.json",
+   "bytes": 119,
+   "sha256": "f284c587ab6cc755d87af89fa48f54a948b24133a7e73280b4321db03eb9de77"
+  },
+  {
+   "path": "E_closedloop/out/E_COMPARE_OUTCOMES_E2_v03.json",
+   "bytes": 119,
+   "sha256": "f284c587ab6cc755d87af89fa48f54a948b24133a7e73280b4321db03eb9de77"
+  },
+  {
+   "path": "E_closedloop/tests/out/RELABEL_RESULTS_FIRST_v02.json",
+   "bytes": 57256,
+   "sha256": "bd5b2b13cab4a1fab5b420542131a6d61ee232ed0b81dfb91a10d0cb178250ff"
+  },
+  {
+   "path": "E_closedloop/tests/out/RELABEL_RESULTS_SECOND_v02.json",
+   "bytes": 77295,
+   "sha256": "55d97e979b479028b039f803542eac8024f7e099d03b52027d3c679c84254ae1"
+  },
+  {
+   "path": "E_closedloop/tests/out/RELABEL_RESULTS_SECOND_v03.json",
+   "bytes": 77529,
+   "sha256": "15554d4cf79145484412ffa9c558e7d00686d50fc5eb5c155f2e40cf5da764fa"
+  },
+  {
+   "path": "E_closedloop/tests/out/RELABEL_COMPARE_v02.json",
+   "bytes": 413,
+   "sha256": "38e1c462e97ef180f06b9ddf51c565f6e1674f3b10eccdc99e843da6126140ec"
+  },
+  {
+   "path": "E_closedloop/tests/out/RELABEL_COMPARE_v03.json",
+   "bytes": 413,
+   "sha256": "38e1c462e97ef180f06b9ddf51c565f6e1674f3b10eccdc99e843da6126140ec"
+  }
+ ]
+}

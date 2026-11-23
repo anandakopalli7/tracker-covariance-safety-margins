@@ -1,0 +1,8 @@
+{
+ "truth sum34": 969.3124246079614,
+ "truth total_minus": 969.3124246079614,
+ "truth tensordot": 969.3124246079614,
+ "estimated sum34": 1076.357056694813,
+ "estimated total_minus": 1076.357056694813,
+ "estimated tensordot": 1076.357056694813
+}

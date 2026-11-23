@@ -1,0 +1,363 @@
+{
+ "code": "b_kca_identity_v02.py",
+ "module": "shared/trackers/trk_tracker_v02.py",
+ "jobs": 44,
+ "identical": 44,
+ "all_identical": true,
+ "results": [
+  {
+   "run": "p2_c1109_tune_0000_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0000_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0006_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0006_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0012_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0012_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0018_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0018_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0024_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0024_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0030_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0030_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0036_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0036_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0042_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0042_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0048_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0048_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0054_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0054_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0060_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0060_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0066_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0066_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0072_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0072_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0078_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0078_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0084_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0084_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0090_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0090_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0096_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0096_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0102_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0102_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0108_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0108_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0114_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0114_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": null,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0000_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": 1.0,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0000_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": 1.0,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0006_fixed_c1",
+   "variant": "B4",
+   "kappa_ca": 1.0,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  },
+  {
+   "run": "p2_c1109_tune_0006_fixed_c1",
+   "variant": "B1",
+   "kappa_ca": 1.0,
+   "keys": 61,
+   "identical": true,
+   "differing": []
+  }
+ ],
+ "seconds": 857.5551693439484,
+ "written": "2026-11-21 14:02:53"
+}

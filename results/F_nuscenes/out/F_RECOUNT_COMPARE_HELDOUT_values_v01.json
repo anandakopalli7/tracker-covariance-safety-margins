@@ -1,0 +1,32 @@
+{
+ "first": "out\\A_EXPORT_F.json",
+ "second": "out\\A_RECOUNT_F.json",
+ "tolerance": 1e-09,
+ "ignored_keys": [
+  "code",
+  "deviations",
+  "elapsed",
+  "elapsed_s",
+  "extras",
+  "host",
+  "lock2",
+  "note",
+  "own_statuses",
+  "package",
+  "platform",
+  "program",
+  "program_sha256",
+  "python",
+  "runtime_s",
+  "seconds",
+  "threads",
+  "time",
+  "writer",
+  "written"
+ ],
+ "n_numbers": 99,
+ "n_other": 11,
+ "max_abs_diff": 2.8421709430404007e-12,
+ "differ": [],
+ "agree": true
+}

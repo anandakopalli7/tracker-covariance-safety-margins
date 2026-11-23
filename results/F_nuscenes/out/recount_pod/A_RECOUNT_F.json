@@ -1,0 +1,175 @@
+{
+ "package": "F",
+ "written": "2026-11-21T06:59:49",
+ "program": "recount/fr_heldout_v02.py",
+ "program_sha256": "556d7e2939648a2681dd8989b974a824edaaf17b5a3204bb623a482e36e5bf7d",
+ "lock2_sha256": "02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df",
+ "note": "second program (Claude Fable 5.2); F.provenance is as given by the coordinator, not determined here; F.RR_CK3 and F.RR_AM are not computed on nuScenes (recorded departure); clearances from cache/clear_v02 (departure of 19 Nov 2026), the pre-registered horizon result under F.prereg",
+ "values": {
+  "F.clearance": "departure",
+  "F.provenance": "confirmed",
+  "F.n_design": 700,
+  "F.prereg.status": "no_room_design",
+  "F.prereg.horizon": "no measurable room on design data at 2 or 3 s",
+  "F.prereg.design.R3": 0.0,
+  "F.prereg.design.R3.ci": [
+   -0.001121508933525342,
+   0.00224367600918398
+  ],
+  "F.design.R3": 0.09070910365848811,
+  "F.design.R3.ci": [
+   0.01522585127517936,
+   0.27972546001349496
+  ],
+  "F.design.removed3.F0": 6122,
+  "F.design.removed3.E": 5337,
+  "F.prereg.design.R2": 0.0,
+  "F.prereg.design.R2.ci": [
+   -0.0010266653536866147,
+   0.14191037646077873
+  ],
+  "F.design.R2": 0.04812125497617523,
+  "F.design.R2.ci": [
+   0.016330477558620434,
+   0.08250144753146542
+  ],
+  "F.design.removed2.F0": 851,
+  "F.design.removed2.E": 794,
+  "F.status": "heldout",
+  "F.horizon": 3,
+  "F.n_heldout": 150,
+  "F.n_dec": 18987,
+  "F.R": -0.0052405586749980256,
+  "F.R.ci": [
+   -0.12711242689910027,
+   0.13370141931318907
+  ],
+  "F.R.level": 0.95,
+  "F.R.cal": "nominal95",
+  "F.R.dec": -0.9950248756218751,
+  "F.R.dec.ci": [
+   -24.13445273631832,
+   25.37350746268668
+  ],
+  "F.RR_N": NaN,
+  "F.RR_N.ci": [
+   -65.69261261261227,
+   4.890753985351354
+  ],
+  "F.RR_N.level": 0.99,
+  "F.RR_N.cal": "nominal99",
+  "F.RR_N.dec": 0.0,
+  "F.RR_N.dec.ci": [
+   -35.617313432835836,
+   7.950373134328353
+  ],
+  "F.IMM.r": -65.33333333333333,
+  "F.IMM.r.ci": [
+   -198.7433333333333,
+   2.0988413134482973
+  ],
+  "F.IMM.r.level": 0.99,
+  "F.IMM.r.cal": "nominal99",
+  "F.IMM.r.dec": -0.9751243781094375,
+  "F.IMM.r.dec.ci": [
+   -53.33870646766184,
+   2.8408208955223833
+  ],
+  "F.IMM.c": 528.0000000000027,
+  "F.IMM.c.ci": [
+   -2.464471195737573,
+   797.1150000000115
+  ],
+  "F.IMM.c.level": 0.99,
+  "F.IMM.c.cal": "nominal99",
+  "F.IMM.c.dec": 7.880597014925292,
+  "F.IMM.c.dec.ci": [
+   -18.114477611940274,
+   34.86572139303482
+  ],
+  "F.IMM.eff": -0.12373737373737309,
+  "F.IMM.eff.ci": [
+   -5.567502382760129,
+   2.6465703108503047
+  ],
+  "F.IMM.eff.level": 0.95,
+  "F.IMM.eff.cal": "nominal95",
+  "F.R.nonpos_share": 0.77715,
+  "F.IMM.within5": 0.06899843276193521,
+  "F.RR_TG": NaN,
+  "F.RR_TG.ci": [
+   -36.423750000000474,
+   0.4044645669291303
+  ],
+  "F.RR_TG.dec": -1.9900497512438342,
+  "F.RR_TG.dec.ci": [
+   -28.438059701492417,
+   0.9502487562189061
+  ],
+  "F.RR_E5": NaN,
+  "F.RR_E5.ci": [
+   -0.023161051648796182,
+   2.8130434782609415
+  ],
+  "F.RR_E5.dec": 0.0,
+  "F.RR_E5.dec.ci": [
+   -0.47263681592039863,
+   2.7662935323382967
+  ],
+  "F.RR_E5mP": NaN,
+  "F.RR_E5mP.ci": [
+   -0.08322206950716651,
+   4.0151814318403725
+  ],
+  "F.RR_E5mP.dec": 0.0,
+  "F.RR_E5mP.dec.ci": [
+   -0.6965174129353057,
+   5.154353233830844
+  ],
+  "F.PO25": NaN,
+  "F.PO25.ci": [
+   -3.1840994892293493,
+   2.057325010097272
+  ],
+  "F.PO25.dec": 0.0,
+  "F.PO25.dec.ci": [
+   -14.831716417910398,
+   7.512810945273551
+  ],
+  "F.PO50": NaN,
+  "F.PO50.ci": [
+   -3.8957074721780613,
+   2.9526623014060838
+  ],
+  "F.PO50.dec": -0.9950248756218751,
+  "F.PO50.dec.ci": [
+   -20.339054726368236,
+   10.03532338308461
+  ],
+  "F.PO75": NaN,
+  "F.PO75.ci": [
+   -4.659356097561074,
+   2.960119402985157
+  ],
+  "F.PO75.dec": -1.9900497512438342,
+  "F.PO75.dec.ci": [
+   -22.92039800995027,
+   16.25012437810933
+  ],
+  "F.inpath.R": -0.03444999866817025,
+  "F.inpath.R.ci": [
+   -0.3818374726704521,
+   0.1904186835434826
+  ],
+  "F.inpath.RR_N": NaN,
+  "F.inpath.RR_N.ci": [
+   -20.794920634921695,
+   1.3951700511757492
+  ],
+  "F.inpath.RR_N.dec": -1.900497512437816,
+  "F.inpath.RR_N.dec.ci": [
+   -21.005099502487635,
+   2.164179104477613
+  ]
+ }
+}

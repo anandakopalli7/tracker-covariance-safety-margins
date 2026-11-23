@@ -1,0 +1,25 @@
+--- fn06_score_v01.py	2026-11-22 00:53:03.974380100 -0500
++++ fn06_score_v02.py	2026-11-22 03:58:20.783279100 -0500
+@@ -4,6 +4,7 @@
+ unchanged there): load_runs (with F's clearance under the departure, cache\\clear_v02, and its decision-tick check), boot_counts,
+ Evaluator / verify (f06k_kernel_v01, unchanged copy, checked against trk_score_v01.rr_gl on the first 25 resamples, relative 1e-9),
+ cover_two, calibrate, the double bootstrap and the level rule of finish() (A10 sec. 2.6), all with F's seeds.
++v02 (22 Nov 2026, approved post-lock (LOCK_A12e) by the coordinator at 03:57 EST, before any masked value) = v01 except ONE change: the float part of the tracker-independent check (vbar, v0, des, clear, clear2 within 1e-9, NaN patterns) applies to EVALUATED decisions only (the exact-key check stays on all decisions), because a CPU-dependent tie-break of two equal-cost planner rows swapped rows 6 and 7 at scene-0966 decision 151, which is not evaluated (clearance NaN on both sides).
+ 
+ Run unit = scene (the 150 val scenes, sorted names). Horizon 3 s (F's frozen horizon). Population 0 = all evaluated decisions
+ (primary); population 1 = evaluated decisions whose keyframe is masked ("in dropout", descriptive).
+@@ -123,9 +124,13 @@
+             fz = np.load(fa, allow_pickle=False)
+             chk['indep_checked'] += 1
+             ok = all(np.array_equal(fz[k], z[k], equal_nan=(fz[k].dtype.kind == 'f')) for k in INDEP_EXACT)
++            evd = np.asarray(fz['evaluated']).astype(bool)
+             for k in INDEP_FLOAT:
+                 x, y = np.asarray(fz[k], float), np.asarray(z[k], float)
+-                if x.shape != y.shape or not np.array_equal(np.isnan(x), np.isnan(y)):
++                if x.shape != y.shape or x.shape[:1] != evd.shape:
++                    ok = False; continue
++                x, y = x[evd], y[evd]
++                if not np.array_equal(np.isnan(x), np.isnan(y)):
+                     ok = False; continue
+                 d = float(np.nanmax(np.abs(x - y))) if np.isfinite(x).any() else 0.
+                 chk['indep_float_max_abs'][k] = max(chk['indep_float_max_abs'].get(k, 0.), d)

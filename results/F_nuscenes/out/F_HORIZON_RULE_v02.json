@@ -1,0 +1,94 @@
+{
+ "code": "f06_score_v01.py horizon",
+ "rule": "A10 section 8.3",
+ "split": "train (design split)",
+ "nboot": 20000,
+ "draw": "default_rng(20261923).integers(0, n_scenes, (20000, n_scenes))",
+ "clearance": {
+  "version": "v02",
+  "rule": "departure: (actor, frame) pairs with the actor's centre behind the ego dropped",
+  "file": "notes\\F_DEPARTURE_CLEARANCE_v01.md",
+  "sha256": "a0be0de7e462281a7e8b95b6b0acf31dd99cdbc38299b6214edd08ad3bd18259",
+  "arrays": "cache\\clear_v02\\<split>\\<scene>.npz (f15_clear_v02.py)"
+ },
+ "horizons": {
+  "3 s": {
+   "n_scenes": 700,
+   "n_evaluated": 88737,
+   "verify": {
+    "max_rel": 5.476920720710671e-15,
+    "n": 25,
+    "roles": [
+     "F0",
+     "E"
+    ],
+    "pop": 0
+   },
+   "R_gl_pp": {
+    "point": 0.0907091036584884,
+    "ci": [
+     0.015225851275179355,
+     0.27972546001349496
+    ],
+    "invalid_share": 0.0,
+    "n_invalid": 0,
+    "outside": false,
+    "basic": [
+     -0.09830725269651816,
+     0.16619235604179744
+    ]
+   },
+   "D_gl_E_F0": {
+    "point": 18.232529835356168,
+    "ci": [
+     3.0603961063110505,
+     56.22481746271249
+    ]
+   },
+   "R_deceq": 80.49253731343286,
+   "share_resamples_nonpositive": 0.0041,
+   "lower_end_positive": true
+  },
+  "2 s": {
+   "n_scenes": 700,
+   "n_evaluated": 95871,
+   "verify": {
+    "max_rel": 9.148940285918979e-15,
+    "n": 25,
+    "roles": [
+     "F0",
+     "E"
+    ],
+    "pop": 0
+   },
+   "R_gl_pp": {
+    "point": 0.04812125497617524,
+    "ci": [
+     0.01633047755862043,
+     0.08250144753146542
+    ],
+    "invalid_share": 0.0,
+    "n_invalid": 0,
+    "outside": false,
+    "basic": [
+     0.013741062420885061,
+     0.07991203239373004
+    ]
+   },
+   "D_gl_E_F0": {
+    "point": 9.672372250211223,
+    "ci": [
+     3.2824259892827063,
+     16.58279095382455
+    ]
+   },
+   "R_deceq": 46.13432835820897,
+   "share_resamples_nonpositive": 5e-05,
+   "lower_end_positive": true
+  }
+ },
+ "primary_horizon_s": 3,
+ "written": "2026-11-20 02:45:14",
+ "seconds": 1450.6,
+ "code_sha256": "47b27503494abf2c564f4ad1241a49e874c9947b8d73f5156f131d9c558ee465"
+}

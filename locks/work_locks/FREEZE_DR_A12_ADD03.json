@@ -1,0 +1,94 @@
+{
+ "name": "FREEZE_DR_A12_ADD03",
+ "layered_on": [
+  "work\\locks\\FREEZE_DR.json",
+  "work\\locks\\FREEZE_DR_A12.json",
+  "work\\locks\\FREEZE_DR_A12_ADD01.json",
+  "work\\locks\\FREEZE_DR_A12_ADD02.json"
+ ],
+ "reason": "AMENDMENT_12 sec. 3d (DR at 10 Hz) before LOCK_A12d: code, text, second program and the pre-lock test (record C1-C4, F_dropout\\notes\\DR_A12_RECORDS_ADD03.md); also the DR2 / DR10 export renamers and the first program merge step",
+ "written": "2026-11-22 03:20:55",
+ "n": 16,
+ "entries": [
+  {
+   "group": "spec",
+   "path": "work\\F_dropout\\A12_3d_DR_10HZ_v01.md",
+   "sha256": "0f268a93152b2cb25ca9a2bd5d11c8b7f41b24f8d0d2bcb67e6b9e825f28a6c0"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_extract_v03.py",
+   "sha256": "19fb61d73dda53a8a5ea83e95a71aa407fe06a0e8af9f4d47c595992c471f732"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_analysis_v03.py",
+   "sha256": "d23a98486ea108b013c888776c0dd30aa902586326ed5e05657ed033c3fd0393"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_identity_v03.py",
+   "sha256": "2c88df0aa1568fab2cfeacfc3fc384b3f1f655251292b7af8beb5975e3423b84"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_pods_v03.py",
+   "sha256": "e76f93e76f1a96cf2eeb4ffaec01aae1423d92d6b3a08c1dcba1d8619676eb00"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_pod_hz10_test_v01.sh",
+   "sha256": "61253b6d9fb18fbbc8c3b02886e670bb9134d0d758c6f6ffd0edbd3b62f7616c"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_masks_v04.py",
+   "sha256": "b5827b26d87bcbd2bc69bfad55cdd1a1d148d3dcd45d4df43c8e216e183859df"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_identity_hz10test_v01.py",
+   "sha256": "1a42b6612851ff68eadc5c28ca29cb2030b92b9d0abd332448fa6bdafeea75b2"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_export_v02.py",
+   "sha256": "425741c2c7e1bad4006091129e52c7c45ab80bc6520fa35d43ea2531def807a4"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_export_v03.py",
+   "sha256": "7bbd710fb3cb92fa2301a71f838b0cb2d246300dce4bfc6b23a923befdf1e99c"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_merge_first_v01.py",
+   "sha256": "0ff85229e9c5df4212c4ad27c3a5b5ed4b17e9fab9a34f9d418132f9d23a7d52"
+  },
+  {
+   "group": "recount",
+   "path": "work\\F_dropout\\recount\\dr_recount_a12_hz10_v01.py",
+   "sha256": "11e8368f78bde4d82ae0e88a647f66137ca4d4306e8f60161c72569f1ac78257"
+  },
+  {
+   "group": "recount",
+   "path": "work\\F_dropout\\recount\\TESTOLD_DR10_RECOUNT_v01.json",
+   "sha256": "ecd5f8119f7c5b3a1d4b6dc60aa0683a72bc987658fb08b5ab90f5e01f3334ad"
+  },
+  {
+   "group": "test",
+   "path": "work\\F_dropout\\out_a12\\testold_hz10\\TESTOLD_DR10_RESULTS_v01.json",
+   "sha256": "5fcba6476049194b4d099e393143daecbe05c027af290957404f6dbecd030767"
+  },
+  {
+   "group": "test",
+   "path": "work\\F_dropout\\out_a12\\DR10_COMPARE_TESTOLD_v01.json",
+   "sha256": "ede4b172c434a71dd8994663df3ac58864c9c6c19bedf35a52329c4748d461c5"
+  },
+  {
+   "group": "records",
+   "path": "work\\F_dropout\\notes\\DR_A12_RECORDS_ADD03.md",
+   "sha256": "d47db6ee8154b097377a5320821c7cd1983a605cb21fcda6a549808f0ba08044"
+  }
+ ]
+}

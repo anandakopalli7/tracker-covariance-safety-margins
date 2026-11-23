@@ -1,0 +1,17 @@
+resamples with a non-finite den0 or denE: []
+undefined frontier levels (point, resamples): []
+ratio points with a full-sample denominator not positive: a number stored 0, undefined 213
+   undefined points by scoring and population: {('est_t0p50_a6p0', 'phase0'): 13, ('est_t0p75_a6p0', 'phase0'): 13, ('est_t1p00_a6p0', 'phase0'): 13, ('est_t1p25_a6p0', 'phase0'): 13, ('est_t1p50_a6p0', 'phase0'): 2, ('est_t0p75_a4p0', 'phase0'): 13, ('est_t0p75_a5p0', 'phase0'): 13, ('est_t0p75_a7p6', 'phase0'): 13, ('cens_t0p50_a6p0', 'phase0'): 13, ('cens_t0p75_a6p0', 'phase0'): 2, ('cens_t1p00_a6p0', 'phase0'): 2, ('cens_t1p25_a6p0', 'phase0'): 2, ('cens_t1p50_a6p0', 'phase0'): 2, ('est_signed_t0p75_a6p0', 'phase0'): 11, ('asscored_t0p50_a6p0', 'phase0'): 11, ('asscored_t0p75_a6p0', 'phase0'): 11, ('asscored_t1p00_a6p0', 'phase0'): 11, ('asscored_t1p25_a6p0', 'phase0'): 11, ('asscored_t1p50_a6p0', 'phase0'): 11, ('asscored_t0p75_a4p0', 'phase0'): 11, ('asscored_t0p75_a5p0', 'phase0'): 11, ('asscored_t0p75_a7p6', 'phase0'): 11}
+undefined in both, by scoring and population: {('est_t0p75_a6p0', 'phase0'): 55, ('asscored_t0p75_a6p0', 'phase0'): 11, ('est_signed_t0p75_a6p0', 'phase0'): 45, ('est_t0p50_a6p0', 'phase0'): 45, ('cens_t0p50_a6p0', 'phase0'): 5, ('est_t1p00_a6p0', 'phase0'): 45, ('est_t1p25_a6p0', 'phase0'): 45, ('est_t0p75_a4p0', 'phase0'): 9, ('est_t0p75_a5p0', 'phase0'): 9, ('est_t0p75_a7p6', 'phase0'): 9}
+   largest: est_t1p50_a6p0 phase_weighted denE.point 142.34016887816645 142.34016887816648 2.842170943040401e-14
+   largest: est_t1p80_a6p0 phase_weighted arms.CK3.D 202.64173703256935 202.64173703256938 2.842170943040401e-14
+   largest: cens_t1p80_a6p0 phase_weighted arms.CK3.D 202.00241254523522 202.00241254523525 2.842170943040401e-14
+   largest: cens_t1p80_a6p0 phase_weighted arms.CK3.D_dec_eq 83.31343283582089 83.31343283582092 2.842170943040401e-14
+   largest: cens_t1p25_a6p0 phase_weighted den0.point 102.46079613992762 102.46079613992764 1.4210854715202004e-14
+   largest: cens_t1p25_a6p0 phase_weighted denE.point 104.37876960193003 104.37876960193002 1.4210854715202004e-14
+   largest: est_t1p80_a6p0 phase_weighted arms.CK3.D_dec_eq 83.57711442786069 83.5771144278607 1.4210854715202004e-14
+   largest: cens_t1p25_a6p0 phase_weighted den0.dec_eq 42.25870646766169 42.258706467661696 7.105427357601002e-15
+numbers equal because both are exactly 0: 1685 of 8061
+numbers bit-identical (difference exactly 0): 7497
+entries by last name: {'signed_caution': 17, 'n': 102, 'point': 1242, 'R_pp': 204, 'dec_eq': 204, 'share_le0': 96, 'n_le0': 96, 'ci': 1272, 'R_pp_ci': 192, 'dec_eq_ci': 192, 'n_invalid': 540, 'invalid_share': 540, 'outside': 540, 'basic': 1080, 'D': 366, 'D_pp': 366, 'D_dec_eq': 366, 'D_dec_eq_ci': 408, 'branch': 204, 'F0_g0_caution_pp': 85, 'O_caution_pp': 85, 'no_safe_row_wrong_go_pp': 85, 'O_front_min': 85, 'O_front_max': 85, 'O_front_n_nan': 85, 'pairs': 9, 'unsafe_as_scored': 9, 'unsafe_est': 9, 'late_safe_as_scored': 9, 'late_safe_now_unsafe': 9, 'censored_safe_as_scored': 9, 'censored_safe_est': 9, 'unsafe_W1': 9, 'decisions_no_safe_row_est': 9}
+branch numbers (first, second): {(3, 3): 58, (4, 4): 13, (5, 5): 30, (1, 1): 100, (2, 2): 3}

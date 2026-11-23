@@ -1,0 +1,348 @@
+{
+  "checker": "verify_panel_recommendations/1",
+  "status": "checked",
+  "reports": [
+    {
+      "seat": "R2",
+      "input": "P2_domain.md",
+      "input_sha256": "de5a6405362f2b1ade6adf37fa0a992b2d6a9e313a2dd88fcb0e09ea84fe76cb",
+      "blocks": 1,
+      "problems": []
+    },
+    {
+      "seat": "R3",
+      "input": "P2_perspective.md",
+      "input_sha256": "8472d17ab927dd4d2037d67bfac4c2c829de02abd07ff4621b4be9348fb00461",
+      "blocks": 1,
+      "problems": []
+    }
+  ],
+  "items": [
+    {
+      "seat": "R2",
+      "index": 1,
+      "title": "Flexible Spacing Adaptive Cruise Control Using Stochastic Model Predictive Control",
+      "authors": [
+        "Moser, D.",
+        "Schmied, R.",
+        "Waschl, H.",
+        "del Re, L."
+      ],
+      "year": 2018,
+      "doi": "10.1109/TCST.2017.2658193",
+      "arxiv_id": null,
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "unreachable",
+          "queried_by": null,
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "skipped",
+          "queried_by": null,
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R2",
+      "index": 2,
+      "title": "Stochastic Model Predictive Control With a Safety Guarantee for Automated Driving",
+      "authors": [
+        "Brüdigam, T.",
+        "Olbrich, M.",
+        "Wollherr, D.",
+        "Leibold, M."
+      ],
+      "year": 2023,
+      "doi": "10.1109/TIV.2021.3074645",
+      "arxiv_id": null,
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "skipped",
+          "queried_by": null,
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R2",
+      "index": 3,
+      "title": "Adaptive fading Kalman filter with an application",
+      "authors": [
+        "Xia, Q.",
+        "Rao, M.",
+        "Ying, Y.",
+        "Shen, X."
+      ],
+      "year": 1994,
+      "doi": "10.1016/0005-1098(94)90112-0",
+      "arxiv_id": null,
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "unreachable",
+          "queried_by": null,
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "skipped",
+          "queried_by": null,
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R3",
+      "index": 1,
+      "title": "Road vehicles — Safety of the intended functionality (ISO 21448:2022)",
+      "authors": [
+        "International Organization for Standardization"
+      ],
+      "year": 2022,
+      "doi": null,
+      "arxiv_id": null,
+      "result": "title_not_found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "unmatched",
+          "queried_by": "title",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "unmatched",
+          "queried_by": "title",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "unreachable",
+          "queried_by": null,
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "skipped",
+          "queried_by": null,
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R3",
+      "index": 2,
+      "title": "Road vehicles — Functional safety — Part 2: Management of functional safety (ISO 26262-2:2018)",
+      "authors": [
+        "International Organization for Standardization"
+      ],
+      "year": 2018,
+      "doi": null,
+      "arxiv_id": null,
+      "result": "title_not_found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "unmatched",
+          "queried_by": "title",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "unreachable",
+          "queried_by": null,
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "unreachable",
+          "queried_by": null,
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "skipped",
+          "queried_by": null,
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R3",
+      "index": 3,
+      "title": "Decision curve analysis: a novel method for evaluating prediction models",
+      "authors": [
+        "Vickers, A. J.",
+        "Elkin, E. B."
+      ],
+      "year": 2006,
+      "doi": "10.1177/0272989X06295361",
+      "arxiv_id": null,
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "unreachable",
+          "queried_by": null,
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "skipped",
+          "queried_by": null,
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R3",
+      "index": 4,
+      "title": "Value of information analysis: the state of application",
+      "authors": [
+        "Keisler, J. M.",
+        "Collier, Z. A.",
+        "Chu, E.",
+        "Sinatra, N.",
+        "Linkov, I."
+      ],
+      "year": 2014,
+      "doi": "10.1007/s10669-013-9439-4",
+      "arxiv_id": null,
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "skipped",
+          "queried_by": null,
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R3",
+      "index": 5,
+      "title": "Examining accident reports involving autonomous vehicles in California",
+      "authors": [
+        "Favarò, F. M.",
+        "Nader, N.",
+        "Eurich, S. O.",
+        "Tripp, M.",
+        "Varadaraju, N."
+      ],
+      "year": 2017,
+      "doi": "10.1371/journal.pone.0184952",
+      "arxiv_id": null,
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "skipped",
+          "queried_by": null,
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R3",
+      "index": 6,
+      "title": "Safety benefits of forward collision warning, brake assist, and autonomous braking systems in rear-end collisions",
+      "authors": [
+        "Kusano, K. D.",
+        "Gabler, H. C."
+      ],
+      "year": 2012,
+      "doi": "10.1109/TITS.2012.2191542",
+      "arxiv_id": null,
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "unreachable",
+          "queried_by": null,
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "skipped",
+          "queried_by": null,
+          "response_summary": null
+        }
+      }
+    }
+  ],
+  "item_problems": []
+}

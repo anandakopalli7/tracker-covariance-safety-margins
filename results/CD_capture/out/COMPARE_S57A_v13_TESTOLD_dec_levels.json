@@ -1,0 +1,275 @@
+{
+ "first": "analysis\\out\\TESTOLD_S57A_v13.json",
+ "second": "recount\\out\\TESTOLD_RC_S57A_v13_PART_b20000_levels.json",
+ "tolerance": 1e-09,
+ "summary": {
+  "agree": 25,
+  "disagree": 0,
+  "only_first": 49,
+  "only_second": 0,
+  "ignored": 0
+ },
+ "verdict": "AGREE",
+ "rows": [
+  {
+   "key": "CI.PO25",
+   "status": "only_first",
+   "value": null
+  },
+  {
+   "key": "CI.PO50",
+   "status": "only_first",
+   "value": null
+  },
+  {
+   "key": "CI.PO75",
+   "status": "only_first",
+   "value": null
+  },
+  {
+   "key": "CI.RR_CK3",
+   "status": "only_first",
+   "value": null
+  },
+  {
+   "key": "CI.RR_CK3.cal",
+   "status": "only_first",
+   "value": "nominal95"
+  },
+  {
+   "key": "CI.RR_CK3.ci",
+   "status": "only_first",
+   "value": [
+    null,
+    null
+   ]
+  },
+  {
+   "key": "CI.RR_CK3.level",
+   "status": "only_first",
+   "value": 0.95
+  },
+  {
+   "key": "CI.RR_E5",
+   "status": "only_first",
+   "value": null
+  },
+  {
+   "key": "CI.RR_E5.cal",
+   "status": "only_first",
+   "value": "nominal95"
+  },
+  {
+   "key": "CI.RR_E5.ci",
+   "status": "only_first",
+   "value": [
+    null,
+    null
+   ]
+  },
+  {
+   "key": "CI.RR_E5.level",
+   "status": "only_first",
+   "value": 0.95
+  },
+  {
+   "key": "CI.RR_E5mP",
+   "status": "only_first",
+   "value": null
+  },
+  {
+   "key": "CI.RR_E5mP.cal",
+   "status": "only_first",
+   "value": "nominal95"
+  },
+  {
+   "key": "CI.RR_E5mP.ci",
+   "status": "only_first",
+   "value": [
+    null,
+    null
+   ]
+  },
+  {
+   "key": "CI.RR_E5mP.level",
+   "status": "only_first",
+   "value": 0.95
+  },
+  {
+   "key": "CI.RR_N.dec",
+   "status": "only_first",
+   "value": 0.0
+  },
+  {
+   "key": "CI.RR_N.dec.cal",
+   "status": "only_first",
+   "value": "nominal99"
+  },
+  {
+   "key": "CI.RR_N.dec.ci",
+   "status": "only_first",
+   "value": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "key": "CI.RR_N.dec.level",
+   "status": "only_first",
+   "value": 0.99
+  },
+  {
+   "key": "CI.Y.R.dec",
+   "status": "only_first",
+   "value": 0.0
+  },
+  {
+   "key": "CI.grading_ok",
+   "status": "only_first",
+   "value": false
+  },
+  {
+   "key": "LB.PO25",
+   "status": "only_first",
+   "value": 0.26834685101518696
+  },
+  {
+   "key": "LB.PO50",
+   "status": "only_first",
+   "value": 0.536214686190191
+  },
+  {
+   "key": "LB.PO75",
+   "status": "only_first",
+   "value": 0.7777039899842142
+  },
+  {
+   "key": "LB.PS.rec.dec",
+   "status": "only_first",
+   "value": 453.1194029850746
+  },
+  {
+   "key": "LB.PS.rec.dec.cal",
+   "status": "only_first",
+   "value": "nominal95"
+  },
+  {
+   "key": "LB.PS.rec.dec.ci",
+   "status": "only_first",
+   "value": [
+    355.9497512437811,
+    544.5639303482585
+   ]
+  },
+  {
+   "key": "LB.PS.rec.dec.level",
+   "status": "only_first",
+   "value": 0.95
+  },
+  {
+   "key": "LB.all.PO25",
+   "status": "only_first",
+   "value": 0.26834685101518696
+  },
+  {
+   "key": "LB.all.PO50",
+   "status": "only_first",
+   "value": 0.536214686190191
+  },
+  {
+   "key": "LB.all.PO75",
+   "status": "only_first",
+   "value": 0.7777039899842142
+  },
+  {
+   "key": "LB.all.grading_ok",
+   "status": "only_first",
+   "value": true
+  },
+  {
+   "key": "LB.brk.PO25",
+   "status": "only_first",
+   "value": -0.1396383114649368
+  },
+  {
+   "key": "LB.brk.PO50",
+   "status": "only_first",
+   "value": 0.02931347977787606
+  },
+  {
+   "key": "LB.brk.PO75",
+   "status": "only_first",
+   "value": 0.4436335937883925
+  },
+  {
+   "key": "LB.brk.grading_ok",
+   "status": "only_first",
+   "value": false
+  },
+  {
+   "key": "LB.grading_ok",
+   "status": "only_first",
+   "value": true
+  },
+  {
+   "key": "LB.mov.PO25",
+   "status": "only_first",
+   "value": -0.11937341009505957
+  },
+  {
+   "key": "LB.mov.PO50",
+   "status": "only_first",
+   "value": 0.04056767974293747
+  },
+  {
+   "key": "LB.mov.PO75",
+   "status": "only_first",
+   "value": 0.4325076984870799
+  },
+  {
+   "key": "LB.mov.grading_ok",
+   "status": "only_first",
+   "value": false
+  },
+  {
+   "key": "LB.pre.PO25",
+   "status": "only_first",
+   "value": -0.3713603818615753
+  },
+  {
+   "key": "LB.pre.PO50",
+   "status": "only_first",
+   "value": -0.3183770883054893
+  },
+  {
+   "key": "LB.pre.PO75",
+   "status": "only_first",
+   "value": 0.17541766109785206
+  },
+  {
+   "key": "LB.pre.grading_ok",
+   "status": "only_first",
+   "value": false
+  },
+  {
+   "key": "LB.stop.PO25",
+   "status": "only_first",
+   "value": -0.37499999999999994
+  },
+  {
+   "key": "LB.stop.PO50",
+   "status": "only_first",
+   "value": -0.21955128205128197
+  },
+  {
+   "key": "LB.stop.PO75",
+   "status": "only_first",
+   "value": 0.19711538461538464
+  },
+  {
+   "key": "LB.stop.grading_ok",
+   "status": "only_first",
+   "value": false
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+LOCK_A11b (stage 2 of 3): AMENDMENT_11 section 6d, closed loop with detection dropouts (E4)
+Written: 21 Nov 2026 14:48:44 EST by the laptop clock, by the coordinating session (Claude Opus 5.5), with work\shared\tools\make_lock_a11_v01.py (sha256 8bc65845d059d3930e30d1c7b096a6afb51d61ef1f39dc547f46baff9362668a).
+
+Amendment: revision_v13\AMENDMENT_11_v13.md, sha256 45ae49b7f7482c9b5b7458fecce756c37e17edd16a6ac0271fe642744c5437d6, modified 21 Nov 14:40:38.
+Snapshot copy at this lock: revision_v13\AMENDMENT_11_v13_at_LOCK_A11b.md (identical bytes).
+
+Freezes, verified layered at writing (verify_freeze.layered; 0 mismatches required):
+- E (FREEZE_E + addenda v01-v07): layered 8 manifests: 188 files, 186 match, 2 not
+    FREEZE_E.json  sha256 0a613b6471dfd293a51d1a3e0557e6a830e519759cc65186c033186f4c27da98  modified 19 Nov 21:00:08
+    FREEZE_E_ADDENDUM_v01.json  sha256 49d37ef51622f182e5246973dc8913e81044f1805bd773ff06037f30ab1b053f  modified 19 Nov 21:01:50
+    FREEZE_E_ADDENDUM_v02.json  sha256 1527b1d5a8d018eed376150879a3809a5a29c144ecf9424907d39bd2674b24b0  modified 19 Nov 22:10:26
+    FREEZE_E_ADDENDUM_v03.json  sha256 5c33a8c823ae06f61025184c920f8fba369193d9f33e815b5d603e2899d5dc7e  modified 19 Nov 23:22:39
+    FREEZE_E_ADDENDUM_v04.json  sha256 3da1587103a0f558030b084a2beeb0d46bcc729c8466e8e634406ab0b138ebaa  modified 20 Nov 01:10:22
+    FREEZE_E_ADDENDUM_v05.json  sha256 fe5bc4dc03dabf670a2505058be2ad796cbced684da67b41447f57cbbf98ea25  modified 20 Nov 01:14:31
+    FREEZE_E_ADDENDUM_v06.json  sha256 507f920efdccf7517d4bedc6732b6d537f44fabd95af31bba26f185ff6754b61  modified 20 Nov 01:30:16
+    FREEZE_E_ADDENDUM_v07.json  sha256 deb7e27aee1f52cf473d802b8074ebac390aad7d9fcbd7aba14b85a1f48ed863  modified 21 Nov 14:46:32
+    ALLOWED: MISMATCH E_closedloop/STATUS.md (from ARS_TRIAL\revision_v13\work\locks\FREEZE_E.json)  (E's living status file, excluded since FREEZE_E (ledger, 19-20 Nov))
+    ALLOWED: MISSING  shared notes E_DROPOUT_A11_6d_v03.md (merged into A11 §6d) (from ARS_TRIAL\revision_v13\work\locks\FREEZE_E_ADDENDUM_v07.json)  (a descriptive path for E's section 6d text in the shared session notes; its SHA-256 is verified under Files below (E section 6d v03) and equals the manifest's 51352d7f...)
+- B (FREEZE_B + add1-add9): layered 10 manifests: 221 files, 221 match, 0 not
+    FREEZE_B.json  sha256 1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152  modified 19 Nov 20:38:46
+    FREEZE_B_add1.json  sha256 9b71225a10645bfd28b2e43a2a05578f6131ed6ec8443f14125672d480927ad6  modified 19 Nov 21:03:04
+    FREEZE_B_add2.json  sha256 6ffc5cd975b5ba91c597a1f989a1c649ca4bbbcf2244642577484f4b4341c39b  modified 20 Nov 01:09:19
+    FREEZE_B_add3.json  sha256 549ac106adb20e6eb9cae16088c231665c6f006fada64ec3eea15d1025970831  modified 20 Nov 03:36:24
+    FREEZE_B_add4.json  sha256 23f374c013510e0eadd8f7de574f61c8eaec1021669d799148266e8c9f269e7e  modified 21 Nov 02:32:44
+    FREEZE_B_add5.json  sha256 d91d1e5a55edb5224f8c150c46cee58ce30d70681fab8d76f1830ae6f5672ee0  modified 21 Nov 02:37:32
+    FREEZE_B_add6.json  sha256 bd24dc97ca4f0e2b7817e5ea6d0bc3da043aa68d8aa4dc1ca2ff21445b0bd4ed  modified 21 Nov 13:38:26
+    FREEZE_B_add7.json  sha256 d06cc48bbe89ec87b3927c962c041b31b5e7aab1dccbe570188a331e0a7b0c12  modified 21 Nov 13:45:37
+    FREEZE_B_add8.json  sha256 9c87f029ec3ed6438aea9dd60835a1ad1067ec0490190d5d89beee6a13d7b751  modified 21 Nov 14:06:57
+    FREEZE_B_add9.json  sha256 2e51dae7edb9aa9bd6da4203ee30c4cbb386a3bf31998ed537f3c173b415a341  modified 21 Nov 14:22:48
+- CD (FREEZE_CD chain + add3, add4): layered 10 manifests: 273 files, 273 match, 0 not
+    FREEZE_CD.json  sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7  modified 20 Nov 03:40:55
+    FREEZE_CD_add1.json  sha256 0e562f346cdd64feaed605041565d44b3d6f2f2a8639d33ff955a33fadb2730f  modified 20 Nov 03:44:34
+    FREEZE_CD_add2.json  sha256 df4e03c9a00df30f7b0159f8585df911a4b202745817241854462030f4d46d02  modified 20 Nov 23:43:41
+    FREEZE_CD_2.json  sha256 1039025ce46a9de60163f4468535b227ca0ec3e8d2705af293bfbaa54797a8a0  modified 20 Nov 05:59:53
+    FREEZE_CD_2_add1.json  sha256 e4e311049433f80a6f7a29cbe89543d95aceaa2377163c85fe8cdeded0b74161  modified 21 Nov 00:58:31
+    FREEZE_CD_2_add2.json  sha256 1e8f131d6b992e5e47efb5b8ef170f95cd41c755353046cd84da3e2b4c9114e2  modified 21 Nov 01:04:05
+    FREEZE_CD_2_add3.json  sha256 dc48da9fe515eb05a93f51aca51cab6e8ec6fa8223b59927990ef72a59c72b3b  modified 21 Nov 01:08:49
+    FREEZE_CD_2_add4.json  sha256 9686b38f308553c5d090d32d8c011ba1f3edf6cd97cdd44d034de2a1c91b7e92  modified 21 Nov 02:35:17
+    FREEZE_CD_add3.json  sha256 c372c0dd2aa874cef9b3599d15731a24f1dd82e1cc37c49208a7d2d785bcad40  modified 21 Nov 14:23:05
+    FREEZE_CD_add4.json  sha256 e45a141f0a376069483644567402f1d9ad5a7de35690050b26d676014d050674  modified 21 Nov 14:38:54
+
+Files (path, sha256, modified):
+- LOCK_A11 (stage 1): LOCK_A11.txt  sha256 7ee8d706a9579c677accab6bab014c3c38acfca43d8e2628e2af81b5c853959f  modified 21 Nov 14:23:47
+- A11 snapshot at LOCK_A11: AMENDMENT_11_v13_at_LOCK_A11.md  sha256 9aab822c88f736c9eb9e7a165c2d8359e062cc3eb9becb00a2c77cffee92c487  modified 21 Nov 14:23:47
+- E section 6d v03 (merged into A11 section 6d): <user folder>/E_DROPOUT_A11_6d_v03.md  sha256 51352d7f9b10361e6fa47c042e20fda56b27c14dbe070c6716c6af62ac33cf93  modified 21 Nov 14:40:12
+- E4 mask table (known answer): E_closedloop/out/E4_MASKS_v01.json  sha256 c66d91923ae4d87ac7e49ac70fba98828434ae64de0954f15078ff80f2997313  modified 21 Nov 14:25:50
+- E4 smoke check: E_closedloop/out/E4S_CHECK_v01.json  sha256 69fb44d1809a34eb037a393bebcf94a143c8b6e7edb220f704e28fdcb53d2f35  modified 21 Nov 14:45:28
+- E matched settings lock (unchanged): locks/LOCK_A10_2b.txt  sha256 81d3a77ada225718987d745e7ee2faaa4ef49c3c5e50b7a2ab81ade76cd5e867  modified 19 Nov 20:33:31
+- F's DR spec v02 (merged into section 6c; NOT locked by this file): F_dropout/A11_6c_DROPOUT_SPEC_v02.md  sha256 446381f221050d6c8689e75a240585ce06705ec013d52fe2d0e405cb9b3cb14f  modified 21 Nov 14:37:47
+- DR mask file v02 (reproduces E's table on all 61 E4 cases): F_dropout/masks/DR_MASKS_v02.json  sha256 0746c0d399e751947fd98d7b12b7c2e233442c9f9870e449639a24f8045e2098  modified 21 Nov 14:27:53
+
+Sealing evidence (each pattern must match no file at writing):
+- E4 lo study runs: E_closedloop/runs/e4l_*  -> 0 file(s)
+- E4 hi study runs: E_closedloop/runs/e4h_*  -> 0 file(s)
+- E4 study outputs: E_closedloop/out/*E4[LH]*  -> 0 file(s)
+
+State at writing (coordinator's statement):
+- Deviation from A11 section 9, recorded before any E4 or DR value: section 9 planned one second-stage lock for DR and E4 together. E was ready about an hour before F, so this file locks section 6d (E4) only, and LOCK_A11c will lock section 6c (DR) before any DR value on fresh runs. This changes no rule of either test; it only lets E4's capture start earlier within the 21:30 cut-off.
+- Since LOCK_A11, only sections 6c and 6d of AMENDMENT_11_v13.md changed. Sections 0-6b and 7-10 are byte-identical to the LOCK_A11 snapshot (checked by the coordinator just before writing this file). Section 6d holds E's v03 text verbatim (headings demoted). Section 6c holds F's v02 text but is not locked here.
+- No E4 study run (lo or hi) has been captured. E4's smoke ran before this lock: 4 masked runs on tuning case c1109_tune_0000, plus an unmasked reproduction of E3's c1109_eval_0480 F0-lo, bit-identical to E3's record. Its pod was deleted at 14:45. Smoke runs are not study runs.
+- E4's code, packet_e_v04, job lists, mask table, both programs, tests and build review (PASS WITH FIXES, then re-review PASS) are frozen in FREEZE_E_ADDENDUM_v07.
+- The lock tool's sha differs from LOCK_A11's because two options were added after it: a third stage name, and allowed, explained manifest entries. Its checks are unchanged.
+- Spend: the sprint cap stays $80 (the author, about 14:45). E4 is funded inside it. The author's $25 top-up had not shown in the balance at writing, and the coordinator has told 'Paper work summary'.

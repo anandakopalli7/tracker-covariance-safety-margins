@@ -1,0 +1,109 @@
+{
+ "values": {
+  "T1.pop0.n": 18987.0,
+  "T1.pop0.R_pp": -0.0052405586749980256,
+  "T1.pop0.R_deceq": -0.9950248756218751,
+  "T1.pop0.D_N": 0.0,
+  "T1.pop0.RR_N": NaN,
+  "T1.pop0.D_N_deceq": 0.0,
+  "T1.R_ci95": [
+   -0.12711242689910035,
+   0.13370141931318907
+  ],
+  "T1.share_R_nonpositive": 0.77715,
+  "T1.pop1.n": 8405.0,
+  "T1.pop1.R_pp": -0.03444999866817025,
+  "T1.pop1.R_deceq": -2.8955223880597094,
+  "T1.pop1.D_N": -4.544913741820357,
+  "T1.pop1.RR_N": NaN,
+  "T1.pop1.D_N_deceq": -1.900497512437816
+ },
+ "comparison_with_ACCEPT3": {
+  "pop0.n": {
+   "recount": 18987.0,
+   "target": 18987.0,
+   "diff": 0.0
+  },
+  "pop0.R_pp": {
+   "recount": -0.0052405586749980256,
+   "target": -0.0052405586749980256,
+   "diff": 0.0
+  },
+  "pop0.R_deceq": {
+   "recount": -0.9950248756218751,
+   "target": -0.9950248756218751,
+   "diff": 0.0
+  },
+  "pop0.D_N": {
+   "recount": 0.0,
+   "target": 0.0,
+   "diff": 0.0
+  },
+  "pop0.RR_N": {
+   "recount": NaN,
+   "target": NaN,
+   "diff": 0.0
+  },
+  "pop0.D_N_deceq": {
+   "recount": 0.0,
+   "target": 0.0,
+   "diff": 0.0
+  },
+  "pop1.n": {
+   "recount": 8405.0,
+   "target": 8405.0,
+   "diff": 0.0
+  },
+  "pop1.R_pp": {
+   "recount": -0.03444999866817025,
+   "target": -0.03444999866817025,
+   "diff": 0.0
+  },
+  "pop1.R_deceq": {
+   "recount": -2.8955223880597094,
+   "target": -2.8955223880597094,
+   "diff": 0.0
+  },
+  "pop1.D_N": {
+   "recount": -4.544913741820357,
+   "target": -4.544913741820357,
+   "diff": 0.0
+  },
+  "pop1.RR_N": {
+   "recount": NaN,
+   "target": NaN,
+   "diff": 0.0
+  },
+  "pop1.D_N_deceq": {
+   "recount": -1.900497512437816,
+   "target": -1.900497512437816,
+   "diff": 0.0
+  },
+  "R_ci95[0]": {
+   "recount": -0.12711242689910035,
+   "target": -0.12711242689910035,
+   "diff": 0.0
+  },
+  "R_ci95[1]": {
+   "recount": 0.13370141931318907,
+   "target": 0.13370141931318907,
+   "diff": 0.0
+  },
+  "share_R_nonpositive": {
+   "recount": 0.77715,
+   "target": 0.77715,
+   "diff": 0.0
+  }
+ },
+ "max_abs_difference": 0.0,
+ "checks": {
+  "exact_keys_equal": true,
+  "tol_keys_ok": true,
+  "clear_pattern_ok": true,
+  "max_abs_tol_keys": 0.0,
+  "failures": []
+ },
+ "nboot": 20000,
+ "code_sha256": "b4795cb453a99bb6bac6b363fe0581ae846328608aecca7a2098d075c8e1f33b",
+ "seconds": 27.5986487865448
+}

@@ -1,0 +1,231 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "package": "E",
+ "set": "E5 (A12 \u00a76)",
+ "session": "E (Claude Opus 5.5)",
+ "written": "2026-11-22T00:24:25.803767-05:00",
+ "before": "any E5 calibration value (E5C capture running; E5_CAL / E5_SETTINGS not written) and any main E5 run",
+ "lock_a12b_exists": false,
+ "pretext": {
+  "path": "shared notes E_A12_6_v02.md (A12 \u00a76)",
+  "sha256": "81bd271870b95735d18a2ad0b32debcd7912dff2cd9b6105132bde4b6f821b43"
+ },
+ "note": "E5 build of record: packet_e_v05 = packet_e_v04 + P-bar_DR (F0_D) only; E5C lists (pods 21-24, 120 runs); mask table E5_MASKS_v01 (165 cases); match table E5_MATCH_TABLE_v01 (design data: F DR arrays of the 105 fresh runs; second program bit-equal); first program e5_analyse_v01 (review M1/M2 and m1-m3 fixed), driver run_e5_v01; second program e_recount_e5_v01 (Sonnet; same rules). Cross-model review (Fable 5.2) PASS WITH FIXES. P-bar_DR (F output, not in FREEZE_DR) recorded here.",
+ "files": [
+  {
+   "path": "E_closedloop/src_v05/cuda_entry_smoke_v01.py",
+   "bytes": 1598,
+   "sha256": "2bf8d6cb4d022e1545a7eab8c9fb6bcac2021d4baedd70d0ff41de3c8782dcfa"
+  },
+  {
+   "path": "E_closedloop/src_v05/e_arms_v01.py",
+   "bytes": 19264,
+   "sha256": "81aa894ad4f14f24e2c2a4b1413b8882c3c85bd156125e1226ce49c2a2e09771"
+  },
+  {
+   "path": "E_closedloop/src_v05/e_dropout_v01.py",
+   "bytes": 3682,
+   "sha256": "6d47f1317af07a51daa5d19baf1b66bc0c1191085777c677c10414f39cb5d26d"
+  },
+  {
+   "path": "E_closedloop/src_v05/E_F2_PLANT_v01.json",
+   "bytes": 788,
+   "sha256": "55b8eb4051d736e63b37ac26d46c956903598228640c95d4258724488d04b6fc"
+  },
+  {
+   "path": "E_closedloop/src_v05/e_imm_v01.py",
+   "bytes": 3278,
+   "sha256": "73df9d62923d3f56cd32303d1dac426c21e4e33fbd95beb63a5df80604300300"
+  },
+  {
+   "path": "E_closedloop/src_v05/E_PBAR_CANMOT_v01.json",
+   "bytes": 1432,
+   "sha256": "4b373f6e3863028049425bed0aa2eb68a4d1e7bdd2ab8269f2edfb6ff2127560"
+  },
+  {
+   "path": "E_closedloop/src_v05/E_PBAR_IMM_v01.json",
+   "bytes": 1379,
+   "sha256": "1cba70a1029c5c764d473a1682f55d4283f391642b946665d8417e84d9d95f68"
+  },
+  {
+   "path": "E_closedloop/src_v05/e_sources_v01.py",
+   "bytes": 14305,
+   "sha256": "a72f2bf9c7a0a8837b8c09e28ebc6a43f5b5fb2927f4c9ce1650f6e122ab4369"
+  },
+  {
+   "path": "E_closedloop/src_v05/probe_e_v01.py",
+   "bytes": 32367,
+   "sha256": "dbbbafb79ea3a8848a7436de2084b17154d85320c6926c1984b398f81a54f2ac"
+  },
+  {
+   "path": "E_closedloop/src_v05/worker_main_v01.py",
+   "bytes": 30336,
+   "sha256": "d9fd57f79b1a82a74c13093c24a06996eaff2de817ab0a0679dd527066e51a60"
+  },
+  {
+   "path": "E_closedloop/src_v05/review/review_case_e_v01.py",
+   "bytes": 8484,
+   "sha256": "07b7c638f0344c4214318e28aa5d861b9cae04de1d751da01fb499f780806d55"
+  },
+  {
+   "path": "E_closedloop/src_v05/review/review_perception_prefix_v01.py",
+   "bytes": 11145,
+   "sha256": "5ae72eb6cf8c27d7ce76bcbac4df248d96e97bdce3385b87fe93ee78ccf0cfd8"
+  },
+  {
+   "path": "E_closedloop/src_v05/trackers_b/trk_constants_v01.json",
+   "bytes": 1344,
+   "sha256": "d8455cb50b637a3ce45460a0dee38f79b69fce4c085c913f713b56ac23338a9d"
+  },
+  {
+   "path": "E_closedloop/src_v05/trackers_b/trk_env_v01.py",
+   "bytes": 3533,
+   "sha256": "0219dd2ed6517109a3c913430a2f30ca756fc01f4f003c1347c4ddd4a9628cad"
+  },
+  {
+   "path": "E_closedloop/src_v05/trackers_b/trk_exact_math_v01.py",
+   "bytes": 6649,
+   "sha256": "6a42ece0b2255e4c2ec15a5651ee8ac65671e63cce01895e1ff4227ead86f541"
+  },
+  {
+   "path": "E_closedloop/src_v05/trackers_b/trk_filters_v01.py",
+   "bytes": 18493,
+   "sha256": "9edfdd6cb5642c1618d41ccb3def176251074a3beaf703d8589df58018304dbb"
+  },
+  {
+   "path": "E_closedloop/src_v05/trackers_b/trk_tracker_v01.py",
+   "bytes": 9506,
+   "sha256": "5cf4ad3baf81b614b18facc3fe4b3bc6506f867350d5b6216fce5ed725cfdef8"
+  },
+  {
+   "path": "E_closedloop/packets/packet_e_v05.tar.gz",
+   "bytes": 7810365,
+   "sha256": "4eda7c41f734440a8522f109aa78e7709e4d6a695f4cef05c0e32d10293ab83d"
+  },
+  {
+   "path": "E_closedloop/packets/packet_e_v05_RECEIPT.json",
+   "bytes": 6343,
+   "sha256": "97dfe6dd1ffec26495a3aaead3d68fba6814b778cc1a334355dad44d33a7f5aa"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E5C_claude-v13e-21_v01.json",
+   "bytes": 11565,
+   "sha256": "318a1167fa243538125d0180d91d4c9c464b5d593c1c9a478ca97ff550e1d62b"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E5C_claude-v13e-22_v01.json",
+   "bytes": 11565,
+   "sha256": "da118b6c4a6173a799656a85852805a916a23221ccc8521341bf16d9b5408c50"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E5C_claude-v13e-23_v01.json",
+   "bytes": 10417,
+   "sha256": "90b2ee70c9842e95eb92439f438030c31e91e60c01c3e9dba43c1aa31388c426"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E5C_claude-v13e-24_v01.json",
+   "bytes": 10417,
+   "sha256": "37e3d414cd05d7cbbb38e76a07b21a1eadbd02aae76665b6f59dc77faf49ee14"
+  },
+  {
+   "path": "E_closedloop/out/E5_MASKS_v01.json",
+   "bytes": 57846,
+   "sha256": "010595907805f7434ad4fc04f963439fa3756e57406de983053e66910822d770"
+  },
+  {
+   "path": "E_closedloop/out/E5_MATCH_TABLE_v01.json",
+   "bytes": 10629,
+   "sha256": "7fdb4e36d0514928d6c52d7a62c1022f12a901464a3513d0596cb14bd2531e3a"
+  },
+  {
+   "path": "E_closedloop/analysis/e5_match_v01.py",
+   "bytes": 4250,
+   "sha256": "6eb91de5d3dac8055c9d1a8810b5111954c178832818faf2848fbf8684c9668a"
+  },
+  {
+   "path": "E_closedloop/analysis/e5_analyse_v01.py",
+   "bytes": 12458,
+   "sha256": "709493fb9380eecd75ea210bce297a111680ff1e1d64a08ab438a272a35ce81c"
+  },
+  {
+   "path": "E_closedloop/analysis/run_e5_v01.py",
+   "bytes": 6418,
+   "sha256": "74cf5b454b6a803419ffefbe2f556ffc58de68fe65ae9b29ce8f12314125bd09"
+  },
+  {
+   "path": "E_closedloop/analysis/e_compare_v01.py",
+   "bytes": 7737,
+   "sha256": "e6f887ab8781b2101c12315ad558f6788d583599073f77e1bff4c2092cc778a4"
+  },
+  {
+   "path": "E_closedloop/analysis/e2_matched_v01.py",
+   "bytes": 11564,
+   "sha256": "543ee616eee656c425dda60f9052508b48a641540bbba4e89620290aa7e7746b"
+  },
+  {
+   "path": "E_closedloop/analysis/e3_analyse_v01.py",
+   "bytes": 10114,
+   "sha256": "e4551a4493d6bd04c1a015f7c4eff4d9dc7eef8ff0834c78775bd46cefb4ef4b"
+  },
+  {
+   "path": "E_closedloop/analysis/e_collect_v01.py",
+   "bytes": 4752,
+   "sha256": "a8d0af04e40424cc3327b0d0a3cdc47d4f1170b9ce515af053356fb0d1682b4f"
+  },
+  {
+   "path": "E_closedloop/tools/make_jobs_e5_v01.py",
+   "bytes": 3555,
+   "sha256": "339eaa773da2c2966f9717f5f169c665099b60ea3e80415894fe07b9be4115c0"
+  },
+  {
+   "path": "E_closedloop/tools/finish_e5_v01.py",
+   "bytes": 3765,
+   "sha256": "53ff2dc840eb610f4177131e3e4bb82106efa542b6b0238b92da1a6e24d1866d"
+  },
+  {
+   "path": "E_closedloop/tools/acquire_e_v02.py",
+   "bytes": 3629,
+   "sha256": "2cced2751aa3d129f38213d8d4cc6ac6bbecb6e4095172bee53b4fbc8471337c"
+  },
+  {
+   "path": "E_closedloop/tools/terminate_e_v01.py",
+   "bytes": 2834,
+   "sha256": "457f575e2e70650c36d2611e16feda119369ab12eda3b54029773ec87158ebf0"
+  },
+  {
+   "path": "E_closedloop/tools/fetch_e_v01.py",
+   "bytes": 9056,
+   "sha256": "2278cfea2d1082491a321a4f83683ecaef423d7d24c05b7b20c4988cea29e2e9"
+  },
+  {
+   "path": "E_closedloop/tests/out/E5_EXPORT_KEYS_v01.json",
+   "bytes": 753,
+   "sha256": "c031aa827d8d4360a273c2fdb59c64f84c6703fd36dddd38dea4a1209ef62351"
+  },
+  {
+   "path": "E_closedloop/review/REVIEW_E5_BUILD_v01.md",
+   "bytes": 9564,
+   "sha256": "1a20ec849deda34632dd3c21c7bdd0af6a6a3cebc65b53272f537d7c194befe6"
+  },
+  {
+   "path": "E_closedloop/recount/e_recount_e5_v01.py",
+   "bytes": 14757,
+   "sha256": "c627272aff5a4581976a79c99421f4610e79380b4aea149886bcbf283ffcd90c"
+  },
+  {
+   "path": "E_closedloop/recount/README_E5_v01.md",
+   "bytes": 2835,
+   "sha256": "3b29abce0bb24daf187e2fc8222e3918f7f2677ce21820c4ed21a3d7c821abb8"
+  },
+  {
+   "path": "E_closedloop/recount/test/make_synth_e5.py",
+   "bytes": 3289,
+   "sha256": "2ba9a1c250c028ac05de709236cdd0a660f1d5db580e2380024154e96e5c04ae"
+  },
+  {
+   "path": "F_dropout/out/PBAR_DR_v01.json",
+   "bytes": 1349,
+   "sha256": "a50b3a1df23107efdb2e76c1c6a318a24de7813fbb88eb396b28f667edafa685"
+  }
+ ]
+}

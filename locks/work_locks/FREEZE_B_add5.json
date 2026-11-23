@@ -1,0 +1,55 @@
+{
+ "addendum": 5,
+ "to": "work\\locks\\FREEZE_B.json",
+ "layers": [
+  {
+   "file": "FREEZE_B.json",
+   "sha256": "1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152"
+  },
+  {
+   "file": "FREEZE_B_add1.json",
+   "sha256": "9b71225a10645bfd28b2e43a2a05578f6131ed6ec8443f14125672d480927ad6"
+  },
+  {
+   "file": "FREEZE_B_add2.json",
+   "sha256": "6ffc5cd975b5ba91c597a1f989a1c649ca4bbbcf2244642577484f4b4341c39b"
+  },
+  {
+   "file": "FREEZE_B_add3.json",
+   "sha256": "549ac106adb20e6eb9cae16088c231665c6f006fada64ec3eea15d1025970831"
+  },
+  {
+   "file": "FREEZE_B_add4.json",
+   "sha256": "23f374c013510e0eadd8f7de574f61c8eaec1021669d799148266e8c9f269e7e"
+  }
+ ],
+ "written": "2026-11-21 02:37:32 Eastern Standard Time",
+ "writer": "package-B session, Claude Opus 5.5 (claude-opus-5-5)",
+ "code": "make_freeze_add_v02.py",
+ "reason": "Second program for TU.RR_TG (coordinator 21 Nov ~02:33; A10 section 10.1(d)): new files only in recount_fresh (written by a Claude Sonnet subagent from B_FRESH_DEFINITIONS_v02.md section 6e and A10, without reading B_retrack\\code): tu_tg_v03.py (TU.RR_TG and .ci on the 20 tuning runs, shared TG arrays out\\tu\\tg and the same draws as section 10.1(b) allows; --combine-tg adds the two keys to A_RECOUNT_B.json, refusing if any existing key would change) and README_tu_tg_v03.md. Frozen recount files unchanged. Old-run test: grid RR(TG2), D_TG2, R_pp and n on the 35 evaluation runs equal revision_v12 A9_7B_TIMEGAP_SCORE_v01.json w1.all to the digit. Not yet run on the tuning runs.",
+ "library_unchanged": true,
+ "changed": [],
+ "new": [
+  {
+   "path": "B_retrack\\recount_fresh\\README_tu_tg_v03.md",
+   "sha256": "034a08edddc5bbb09d354c24eece048ed77142e9fcd44d46579591931c63f105",
+   "bytes": 2528,
+   "mtime": "2026-11-21 02:37:03"
+  },
+  {
+   "path": "B_retrack\\recount_fresh\\tu_tg_v03.py",
+   "sha256": "4e55a81daa2d51d88b81a9feac3a691e6cb9d663525f2b03454375f75f8d8d81",
+   "bytes": 5716,
+   "mtime": "2026-11-21 02:36:47"
+  }
+ ],
+ "missing": [],
+ "external_read_only": [
+  {
+   "path": "CD_capture\\analysis\\gl_fast_v13.py",
+   "sha256": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789",
+   "note": "package CD file imported read-only by b_fresh_analysis_v02.py"
+  }
+ ],
+ "note": "Reference = FREEZE_B.json with add1..add4 applied in order; this addendum lists every covered file that changed or is new since that state. Earlier manifests are kept as written."
+}

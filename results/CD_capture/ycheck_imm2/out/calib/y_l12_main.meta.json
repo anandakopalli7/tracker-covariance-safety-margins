@@ -1,0 +1,1 @@
+{"label": "y_l12_main", "n_run": 150, "full": [0.020995860799215168], "names": ["delta"], "seeds": [20261912, 20261913, 20261914], "n_outer": 2000, "n_inner": 1000, "job_sha256": "66eb829ea9ccc91fd7c60bbad4e1c53e53f6fc346dc3a422213bd25cdd478590"}

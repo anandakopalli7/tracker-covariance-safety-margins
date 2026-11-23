@@ -1,0 +1,33 @@
+{
+ "label": "rc_y",
+ "kind": "ytwin",
+ "program": "rc_y_twin_v13.py",
+ "mode": "test-old",
+ "n_outer": 10,
+ "n_inner": 50,
+ "n_run": 35,
+ "n_stat": 1,
+ "stats": [
+  "delta"
+ ],
+ "pod_seeds": [
+  20261913,
+  20261914
+ ],
+ "seed_outer": 20261912,
+ "b_outer_full_draw": 2000,
+ "b_inner_full_draw": 1000,
+ "job_file": "rc_y.job.npz",
+ "job_sha256": "1e0d0240198a193224d01dc0ab4688ffb07945a1e7ed6d6c2dfe08fdb0faede2",
+ "job_bytes": 6295738,
+ "runner_files": [
+  "rc_y_calib_remote_v13.py",
+  "rc_y_kern_v13.py",
+  "rc_kern_v13.py"
+ ],
+ "runner_call": "python -I -B rc_calib_remote_v13.py JOBDIR rc_y --seeds SEED --outer LO:HI --threads 1",
+ "chunk_name": "rc_y_<SEED>_o<LO>_<HI>.npz",
+ "written": "2026-11-21 14:33:54",
+ "seconds_outer_estimates": 1.9549717903137207,
+ "dryrun": false
+}

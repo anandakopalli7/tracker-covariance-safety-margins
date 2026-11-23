@@ -1,0 +1,16 @@
+{
+ "first c_b7": {
+  "values_compared": 76,
+  "bit_identical": true,
+  "differing": [],
+  "pod_file": "analysis/out/TESTOLD_B7_v13_vid_pod1.json",
+  "laptop_file": "analysis/out/TESTOLD_B7_v13_vid_lap1.json"
+ },
+ "second rc_b7": {
+  "values_compared": 76,
+  "bit_identical": true,
+  "differing": [],
+  "pod_file": "recount/out/TESTOLD_RC_B7_v13vid_pod1.json",
+  "laptop_file": "recount/out/TESTOLD_RC_B7_v13vid_lap1.json"
+ }
+}

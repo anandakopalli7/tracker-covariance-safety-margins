@@ -1,0 +1,360 @@
+{
+ "code": "b_fresh_compare_v02.py",
+ "test_old": true,
+ "first": "out\\fresh_testold\\TESTOLD_A_EXPORT_B.json",
+ "second": "recount_fresh\\out\\TESTOLD_A_RECOUNT_B.json",
+ "keys_compared": 220,
+ "keys_agree": 220,
+ "keys_disagree": [],
+ "keys_only_first": [],
+ "keys_only_second": [],
+ "note_ci_only_first": null,
+ "per_resample": [
+  {
+   "variant": "CV0",
+   "denE": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "n": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_N": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_E5x": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_CK3": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "agree": true
+  },
+  {
+   "variant": "B3",
+   "denE": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "n": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_N": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_E5x": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_CK3": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "agree": true
+  },
+  {
+   "variant": "B4",
+   "denE": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "n": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_N": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_E5x": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_CK3": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "agree": true
+  },
+  {
+   "variant": "B1",
+   "denE": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "n": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_N": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_E5x": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_CK3": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "agree": true
+  },
+  {
+   "variant": "B2",
+   "denE": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "n": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_N": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_E5x": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_CK3": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "agree": true
+  },
+  {
+   "variant": "B1_d090",
+   "denE": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "n": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_N": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_E5x": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_CK3": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "agree": true
+  },
+  {
+   "variant": "B1_d098",
+   "denE": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "n": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_N": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_E5x": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_CK3": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "agree": true
+  },
+  {
+   "variant": "B6",
+   "WR": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "W1": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "DS": {
+    "rows": 2000,
+    "rows_first": 2000,
+    "rows_second": 2000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "agree": true
+  },
+  {
+   "variant": "TU",
+   "denE": {
+    "rows": 20000,
+    "rows_first": 20000,
+    "rows_second": 20000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "n": {
+    "rows": 20000,
+    "rows_first": 20000,
+    "rows_second": 20000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_N": {
+    "rows": 20000,
+    "rows_first": 20000,
+    "rows_second": 20000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_NA": {
+    "rows": 20000,
+    "rows_first": 20000,
+    "rows_second": 20000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_AM": {
+    "rows": 20000,
+    "rows_first": 20000,
+    "rows_second": 20000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "D_CK3": {
+    "rows": 20000,
+    "rows_first": 20000,
+    "rows_second": 20000,
+    "max_rel": 0.0,
+    "agree": true
+   },
+   "agree": true
+  }
+ ],
+ "all_agree": true,
+ "written": "2026-11-20 03:36:22"
+}

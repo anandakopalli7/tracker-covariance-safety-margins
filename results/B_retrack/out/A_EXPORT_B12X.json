@@ -1,0 +1,184 @@
+{
+ "B.MP.IMM2N.pre.n": 3109,
+ "B.MP.IMM2N.pre.mean": 0.18107454928176173,
+ "B.MP.IMM2N.pre.mean.ci": [
+  0.1457524570920963,
+  0.219539493958235
+ ],
+ "B.MP.IMM2N.pre.median": 0.05796988051507672,
+ "B.MP.IMM2N.pre.median.ci": [
+  0.053013770771492594,
+  0.06627897832870143
+ ],
+ "B.MP.IMM2N.pre.share_gt05": 0.13187520102926986,
+ "B.MP.IMM2N.pre.share_gt05.ci": [
+  0.0888135313126044,
+  0.17858317377301958
+ ],
+ "B.MP.IMM2N.braking.n": 3087,
+ "B.MP.IMM2N.braking.mean": 0.47869309927760717,
+ "B.MP.IMM2N.braking.mean.ci": [
+  0.42107990175206733,
+  0.5323571676513622
+ ],
+ "B.MP.IMM2N.braking.median": 0.35312645230528167,
+ "B.MP.IMM2N.braking.median.ci": [
+  0.19590607749756367,
+  0.5844668251554181
+ ],
+ "B.MP.IMM2N.braking.share_gt05": 0.4574020084224166,
+ "B.MP.IMM2N.braking.share_gt05.ci": [
+  0.38605804433682145,
+  0.5238382806033508
+ ],
+ "B.MP.IMM2N.stopped.n": 23672,
+ "B.MP.IMM2N.stopped.mean": 0.08003047825542799,
+ "B.MP.IMM2N.stopped.mean.ci": [
+  0.07779252635620271,
+  0.08218284812267308
+ ],
+ "B.MP.IMM2N.stopped.median": 0.04334318386355253,
+ "B.MP.IMM2N.stopped.median.ci": [
+  0.043285400221948135,
+  0.04342660797747066
+ ],
+ "B.MP.IMM2N.stopped.share_gt05": 0.036625549172017574,
+ "B.MP.IMM2N.stopped.share_gt05.ci": [
+  0.03366054401519858,
+  0.039557526360270226
+ ],
+ "B.MP.IMM2C.pre.n": 2122,
+ "B.MP.IMM2C.pre.mean": 0.19208076821606052,
+ "B.MP.IMM2C.pre.mean.ci": [
+  0.14730683532372357,
+  0.23973864356680175
+ ],
+ "B.MP.IMM2C.pre.median": 0.05812471487250053,
+ "B.MP.IMM2C.pre.median.ci": [
+  0.05316638486024289,
+  0.07014346805555181
+ ],
+ "B.MP.IMM2C.pre.share_gt05": 0.13854853911404336,
+ "B.MP.IMM2C.pre.share_gt05.ci": [
+  0.0852485666972809,
+  0.19618887569911947
+ ],
+ "B.MP.IMM2C.braking.n": 2347,
+ "B.MP.IMM2C.braking.mean": 0.480625452734652,
+ "B.MP.IMM2C.braking.mean.ci": [
+  0.41584866012818633,
+  0.5392328587408821
+ ],
+ "B.MP.IMM2C.braking.median": 0.3198583819809429,
+ "B.MP.IMM2C.braking.median.ci": [
+  0.16016282539684276,
+  0.6342846773073427
+ ],
+ "B.MP.IMM2C.braking.share_gt05": 0.47890924584576056,
+ "B.MP.IMM2C.braking.share_gt05.ci": [
+  0.4012310601596218,
+  0.5495718251645291
+ ],
+ "B.MP.IMM2C.stopped.n": 17076,
+ "B.MP.IMM2C.stopped.mean": 0.0811106772578431,
+ "B.MP.IMM2C.stopped.mean.ci": [
+  0.07867275156992702,
+  0.08348196433583059
+ ],
+ "B.MP.IMM2C.stopped.median": 0.043366613197320054,
+ "B.MP.IMM2C.stopped.median.ci": [
+  0.04328907347584396,
+  0.04345163627559953
+ ],
+ "B.MP.IMM2C.stopped.share_gt05": 0.03835792925743734,
+ "B.MP.IMM2C.stopped.share_gt05.ci": [
+  0.035126087817598815,
+  0.0414467137308924
+ ],
+ "B.MP.IMMrC.pre.n": 2122,
+ "B.MP.IMMrC.pre.mean": 0.41154853068625896,
+ "B.MP.IMMrC.pre.mean.ci": [
+  0.3986243938377959,
+  0.4238798449960906
+ ],
+ "B.MP.IMMrC.pre.median": 0.40818448661822226,
+ "B.MP.IMMrC.pre.median.ci": [
+  0.3924535330370869,
+  0.41999727145705945
+ ],
+ "B.MP.IMMrC.pre.share_gt05": 0.17153628652214892,
+ "B.MP.IMMrC.pre.share_gt05.ci": [
+  0.13210321006241602,
+  0.21147467092509592
+ ],
+ "B.MP.IMMrC.braking.n": 2347,
+ "B.MP.IMMrC.braking.mean": 0.38920360448181035,
+ "B.MP.IMMrC.braking.mean.ci": [
+  0.35646525500259746,
+  0.4247215531691184
+ ],
+ "B.MP.IMMrC.braking.median": 0.4301987205819052,
+ "B.MP.IMMrC.braking.median.ci": [
+  0.38551171498209735,
+  0.4625775843200423
+ ],
+ "B.MP.IMMrC.braking.share_gt05": 0.33191308052833407,
+ "B.MP.IMMrC.braking.share_gt05.ci": [
+  0.26821447052378744,
+  0.40102047838433
+ ],
+ "B.MP.IMMrC.stopped.n": 17075,
+ "B.MP.IMMrC.stopped.mean": 0.7076302738787515,
+ "B.MP.IMMrC.stopped.mean.ci": [
+  0.7014840912864546,
+  0.7141113965031549
+ ],
+ "B.MP.IMMrC.stopped.median": 0.7878800817358427,
+ "B.MP.IMMrC.stopped.median.ci": [
+  0.7803921810046316,
+  0.7948631242585183
+ ],
+ "B.MP.IMMrC.stopped.share_gt05": 0.8732650073206443,
+ "B.MP.IMMrC.stopped.share_gt05.ci": [
+  0.8616543905898115,
+  0.8858743990748096
+ ],
+ "B.IMM2N.twin.n_runs": 150,
+ "B.IMM2N.twin.n_dec": 29926,
+ "B.IMM2N.twin.n_factor": 29900,
+ "B.IMM2N.twin.share_pos": 1.0,
+ "B.IMM2N.twin.R": 4.94822552345537,
+ "B.IMM2N.twin.delta": 0.020995860799215168,
+ "B.IMM2N.twin.delta.ci": [
+  0.018383388337838206,
+  0.024212534798410984
+ ],
+ "B.IMM2N.twin.delta.level": 0.95,
+ "B.IMM2N.twin.Y1": true,
+ "B.IMM2N.twin.p_one_sided": 0.0,
+ "B.IMM2N.twin.RR_NB2": 0.02200966261481915,
+ "B.IMM2N.twin.RR_NB2.ci": [
+  0.01847074528303944,
+  0.025286366607192468
+ ],
+ "B.IMM2N.twin.RR_NB2.level": 0.95,
+ "B.IMM2N.twin.RR_B2s": 0.021986144428541674,
+ "B.IMM2N.twin.RR_B2s.ci": [
+  0.018485319345646522,
+  0.025285177641374425
+ ],
+ "B.IMM2N.twin.RR_B2s.level": 0.95,
+ "B.IMM2N.twin.RR_B2p": 0.0010138018156039832,
+ "B.IMM2N.twin.RR_B2p.ci": [
+  -0.0038706107629589972,
+  0.003966224459919536
+ ],
+ "B.IMM2N.twin.RR_B2p.level": 0.95,
+ "B.IMM2N.twin.delta_s": 0.02097234261293769,
+ "B.IMM2N.twin.delta_s.ci": [
+  0.01838528523991225,
+  0.024213604845171467
+ ],
+ "B.IMM2N.twin.delta_s.level": 0.95,
+ "B.IMM2N.twin.n_factor_ref": 29926
+}

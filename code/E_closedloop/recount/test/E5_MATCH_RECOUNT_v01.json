@@ -1,0 +1,40 @@
+{
+ "schema": "E5_RECOUNT_MATCH_v01",
+ "arrays_dir": "ARS_TRIAL\\revision_v13\\work\\F_dropout\\out\\arrays\\DR",
+ "n_files": 105,
+ "grid_size": 202,
+ "rows": [
+  {
+   "g_D": 4,
+   "caution_F0D": 18.389280968429485,
+   "g_N": 5.95662143529011,
+   "grid_index": 112,
+   "caution_N": 18.21878585666968,
+   "caution_diff": -0.1704951117598057
+  },
+  {
+   "g_D": 8,
+   "caution_F0D": 21.34013357287118,
+   "g_N": 10.592537251772898,
+   "grid_index": 122,
+   "caution_N": 21.38321212739747,
+   "caution_diff": 0.04307855452628928
+  },
+  {
+   "g_D": 16,
+   "caution_F0D": 22.333234413558714,
+   "g_N": 14.962356560944343,
+   "grid_index": 128,
+   "caution_N": 22.328454193716134,
+   "caution_diff": -0.004780219842579925
+  },
+  {
+   "g_D": 32,
+   "caution_F0D": 24.565898782752623,
+   "g_N": 44.668359215096345,
+   "grid_index": 147,
+   "caution_N": 24.585235291673232,
+   "caution_diff": 0.019336508920609674
+  }
+ ]
+}

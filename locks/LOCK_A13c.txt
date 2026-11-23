@@ -1,0 +1,36 @@
+LOCK_A13c (A13 section 3, superseding LOCK_A13b's section 3 before any real value): N_DR against a fixed coast-count margin (F0_coast), open loop, on the 150 new runs
+Written: 22 Nov 2026 06:48:17 EST by the laptop clock, by the coordinating session (Claude Opus 5.5), with work\shared\tools\make_lock_a11_v01.py (sha256 7eeb081aa3b5954004b039e7640b1e76f79414c2669ad47d2497b05da0cba8b8).
+
+Amendment: revision_v13\AMENDMENT_13_v13.md, sha256 bc7c2bf47c9a29810aa84c5dd4827a0f2d9404f9b684a94d0a918967180498bf, modified 22 Nov 06:47:56.
+Snapshot copy at this lock: revision_v13\AMENDMENT_13_v13_at_LOCK_A13c.md (identical bytes).
+
+Freezes, verified layered at writing (verify_freeze.layered; 0 mismatches required):
+- DR (FREEZE_DR + DR_A12 + ADD01-ADD03 + DR_A13 + DR_A13_ADD01): layered 7 manifests: 121 files, 121 match, 0 not
+    FREEZE_DR.json  sha256 e1348c40b656fb9db32fb874195fcb6265c7e7b82bce3d7301fcca298c1f2c26  modified 21 Nov 15:07:07
+    FREEZE_DR_A12.json  sha256 59a402b080a010466a2dd5fbaef23a710febb54971caf8aaa7a6c78935204d96  modified 22 Nov 00:45:26
+    FREEZE_DR_A12_ADD01.json  sha256 fc3b00177bb881def52223f5121aa4e818643e595a5384c05129a8f2a5dadb2f  modified 22 Nov 02:32:24
+    FREEZE_DR_A12_ADD02.json  sha256 7af38b297cd7b8143467d83f83fa07120aea613cc94ab2dd0cfdd14ab48ccc3f  modified 22 Nov 03:11:14
+    FREEZE_DR_A12_ADD03.json  sha256 42f95596309c0f0d47c2c60fb6afb540c0a4afb4224f19e220e4af88d6a4877c  modified 22 Nov 03:20:55
+    FREEZE_DR_A13.json  sha256 6155b02390e6e87dc81ffeb744ddd688a3b80be340e35467ff27fb7b90c7a816  modified 22 Nov 06:38:35
+    FREEZE_DR_A13_ADD01.json  sha256 f1a60d8409c9d2f0ce0e24be6ff7bcee081fe4dab1850e839f906a103e452b4e  modified 22 Nov 06:46:58
+
+Files (path, sha256, modified):
+- LOCK_A13b (superseded in section 3): LOCK_A13b.txt  sha256 c85f39c3bfa6c8cf1af9325a55abe45c0d50a22551036e4c22d7e0bb0fdae074  modified 22 Nov 06:40:47
+- A13 snapshot at LOCK_A13b: AMENDMENT_13_v13_at_LOCK_A13b.md  sha256 507af801899a845113ff524713070e290f011937d4ecd6ef85c8752ac5866158  modified 22 Nov 06:40:47
+- F's section 3 text v02 (merged verbatim into A13 section 3): F_dropout/A13_3_DRFLAG_v02.md  sha256 bcf5ccd9db0d49db19867b31b114ea23efb12ed66515121cb0e3574faefce7e6  modified 22 Nov 06:45:06
+- F's records R4-R6 (design change, tie rule): F_dropout/notes/DR_A13_RECORDS_v01.md  sha256 ded5461c2994a7dac8527a15831bd5eea2d52c05ca29bd05147eaadaaf60ca2a  modified 22 Nov 06:46:41
+- v01 code test on the 35 old runs (design data): F_dropout/out_a13/TESTOLD_DRF_RESULTS_v01.json  sha256 66c54a84f7638d876be16eba94cb01bc2fe75cff9310bf15cd96ae4f7ea4d1a7  modified 22 Nov 06:38:05
+- v02 code test on the 35 old runs (design data): F_dropout/out_a13/TESTOLD_DRF_RESULTS_v02.json  sha256 b3924f4c940127dd0d64ad1907c1f0c789734495995851c7d5dfd07d63913774  modified 22 Nov 06:46:33
+- v02 code-test agreement of the two programs: F_dropout/out_a13/DRF_COMPARE_TESTOLD_v02.json  sha256 5d7dab5b497f30d7c1bf92fc5258db0a28730c0f1dbd47dad45a36dc7685e666  modified 22 Nov 06:46:45
+
+Sealing evidence (each pattern must match no file at writing):
+- no real DRF result: F_dropout/out_a13/DRF_RESULTS*  -> 0 file(s)
+- no real DRF comparison: F_dropout/out_a13/DRF_COMPARE_v*  -> 0 file(s)
+- no DRF export: F_nuscenes/out/A_EXPORT_DRF*  -> 0 file(s)
+- no DRF recount export: F_nuscenes/out/A_RECOUNT_DRF*  -> 0 file(s)
+
+State at writing (coordinator's statement):
+- Since LOCK_A13b, AMENDMENT_13 changed in section 3 (F's v02 replaces v01, with the coordinator's superseding note) and in section 2 (E's E6 text merged, not yet locked; LOCK_A13a follows). Everything before section 2 and section 4 are byte-identical to the LOCK_A13b snapshot.
+- No value of F0_coast or F0_flag2 on A11's 105 fit runs or on the 150 new runs exists. The only DRF values are the two code tests on the 35 old test runs (v01 and v02), which the coordinator and F have seen; they are design data and are reported in the amendment.
+- The switch to v02 does not favour the paper's claim: both code tests favour the baseline over N, the coast-count version more decisively.
+- F's first program checks for LOCK_A13b.txt; F is told to start the real runs only after this lock is confirmed.

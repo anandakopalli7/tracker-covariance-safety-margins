@@ -1,0 +1,69 @@
+LOCK_A12a (round 2, stage 1 of 4): AMENDMENT_12 sections 2-4 and 7 - new lead-braking runs, DR replication and dose-response, Y replication, the two-noise IMM2, multiplicity
+Written: 22 Nov 2026 00:47:51 EST by the laptop clock, by the coordinating session (Claude Opus 5.5), with work\shared\tools\make_lock_a11_v01.py (sha256 ece77e031fef3729814375e6ff1f2a87a0828fdd4113e032df67d707834266f7).
+
+Amendment: revision_v13\AMENDMENT_12_v13.md, sha256 0c0d03fca89d798eb7dbfe29c0ed3ec84c5cdd498f76fabfd948eb898fa26bf0, modified 22 Nov 00:47:38.
+Snapshot copy at this lock: revision_v13\AMENDMENT_12_v13_at_LOCK_A12a.md (identical bytes).
+
+Freezes, verified layered at writing (verify_freeze.layered; 0 mismatches required):
+- B (FREEZE_B + add1-add11): layered 12 manifests: 257 files, 257 match, 0 not
+    FREEZE_B.json  sha256 1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152  modified 19 Nov 20:38:46
+    FREEZE_B_add1.json  sha256 9b71225a10645bfd28b2e43a2a05578f6131ed6ec8443f14125672d480927ad6  modified 19 Nov 21:03:04
+    FREEZE_B_add2.json  sha256 6ffc5cd975b5ba91c597a1f989a1c649ca4bbbcf2244642577484f4b4341c39b  modified 20 Nov 01:09:19
+    FREEZE_B_add3.json  sha256 549ac106adb20e6eb9cae16088c231665c6f006fada64ec3eea15d1025970831  modified 20 Nov 03:36:24
+    FREEZE_B_add4.json  sha256 23f374c013510e0eadd8f7de574f61c8eaec1021669d799148266e8c9f269e7e  modified 21 Nov 02:32:44
+    FREEZE_B_add5.json  sha256 d91d1e5a55edb5224f8c150c46cee58ce30d70681fab8d76f1830ae6f5672ee0  modified 21 Nov 02:37:32
+    FREEZE_B_add6.json  sha256 bd24dc97ca4f0e2b7817e5ea6d0bc3da043aa68d8aa4dc1ca2ff21445b0bd4ed  modified 21 Nov 13:38:26
+    FREEZE_B_add7.json  sha256 d06cc48bbe89ec87b3927c962c041b31b5e7aab1dccbe570188a331e0a7b0c12  modified 21 Nov 13:45:37
+    FREEZE_B_add8.json  sha256 9c87f029ec3ed6438aea9dd60835a1ad1067ec0490190d5d89beee6a13d7b751  modified 21 Nov 14:06:57
+    FREEZE_B_add9.json  sha256 2e51dae7edb9aa9bd6da4203ee30c4cbb386a3bf31998ed537f3c173b415a341  modified 21 Nov 14:22:48
+    FREEZE_B_add10.json  sha256 ee63f804caf5111eea43e0389831a5e55171285cb943f74a1b70964326a534f2  modified 22 Nov 00:40:38
+    FREEZE_B_add11.json  sha256 c5ae85ea837301fd8b42996f7a82c9dd98652932551e16db6a3eb9c821ac5901  modified 22 Nov 00:44:32
+- CD (FREEZE_CD chain + add3-add8): layered 14 manifests: 327 files, 327 match, 0 not
+    FREEZE_CD.json  sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7  modified 20 Nov 03:40:55
+    FREEZE_CD_add1.json  sha256 0e562f346cdd64feaed605041565d44b3d6f2f2a8639d33ff955a33fadb2730f  modified 20 Nov 03:44:34
+    FREEZE_CD_add2.json  sha256 df4e03c9a00df30f7b0159f8585df911a4b202745817241854462030f4d46d02  modified 20 Nov 23:43:41
+    FREEZE_CD_2.json  sha256 1039025ce46a9de60163f4468535b227ca0ec3e8d2705af293bfbaa54797a8a0  modified 20 Nov 05:59:53
+    FREEZE_CD_2_add1.json  sha256 e4e311049433f80a6f7a29cbe89543d95aceaa2377163c85fe8cdeded0b74161  modified 21 Nov 00:58:31
+    FREEZE_CD_2_add2.json  sha256 1e8f131d6b992e5e47efb5b8ef170f95cd41c755353046cd84da3e2b4c9114e2  modified 21 Nov 01:04:05
+    FREEZE_CD_2_add3.json  sha256 dc48da9fe515eb05a93f51aca51cab6e8ec6fa8223b59927990ef72a59c72b3b  modified 21 Nov 01:08:49
+    FREEZE_CD_2_add4.json  sha256 9686b38f308553c5d090d32d8c011ba1f3edf6cd97cdd44d034de2a1c91b7e92  modified 21 Nov 02:35:17
+    FREEZE_CD_add3.json  sha256 c372c0dd2aa874cef9b3599d15731a24f1dd82e1cc37c49208a7d2d785bcad40  modified 21 Nov 14:23:05
+    FREEZE_CD_add4.json  sha256 e45a141f0a376069483644567402f1d9ad5a7de35690050b26d676014d050674  modified 21 Nov 14:38:54
+    FREEZE_CD_add5.json  sha256 a33ab443fe68a271b223d4d0a7cbdd5cc529b58c3b65698b4370170e61199663  modified 21 Nov 14:55:01
+    FREEZE_CD_add6.json  sha256 52214172c4f283daaf3a9d1a79f11584a227ac3a240d884d4bdabddedcb2a0b7  modified 21 Nov 17:05:17
+    FREEZE_CD_add7.json  sha256 2a44dacba439196a97d3468b61af505f9ecf592363a299440d08cac3220c81cb  modified 22 Nov 00:21:10
+    FREEZE_CD_add8.json  sha256 3fe15ff6e92601de448d84ffad17249c14944e4daf7c46294239045df216eb42  modified 22 Nov 00:45:17
+- DR (FREEZE_DR + FREEZE_DR_A12): layered 2 manifests: 79 files, 79 match, 0 not
+    FREEZE_DR.json  sha256 e1348c40b656fb9db32fb874195fcb6265c7e7b82bce3d7301fcca298c1f2c26  modified 21 Nov 15:07:07
+    FREEZE_DR_A12.json  sha256 59a402b080a010466a2dd5fbaef23a710febb54971caf8aaa7a6c78935204d96  modified 22 Nov 00:45:26
+
+Files (path, sha256, modified):
+- LOCK_A11: LOCK_A11.txt  sha256 7ee8d706a9579c677accab6bab014c3c38acfca43d8e2628e2af81b5c853959f  modified 21 Nov 14:23:47
+- LOCK_A11b: LOCK_A11b.txt  sha256 d3a11b4c4a05834def74126d8478fb3fe020f384cc8a8775d66bf5d887ddf7e1  modified 21 Nov 14:48:45
+- LOCK_A11c: LOCK_A11c.txt  sha256 3a20eb688e7b3adf534d018c79856d8a2704222f7e47b8dd761c0256404b4647  modified 21 Nov 15:09:34
+- L12 case file: CD_capture/l12/CASES_L12_v13.json  sha256 ae494eb27637139132df1e258da489038087fd81452952ded73c6c842d4075eb  modified 22 Nov 00:08:51
+- IMM2 constants (tuning runs only): B_retrack/out/imm2t/IMM2_CONSTANTS_REC_v01.json  sha256 45e9e1c8e2dabf6e3842d4c854886eede840ec63c25ae91c1f85c94e8cefae23  modified 22 Nov 00:23:22
+- IMM2 class average (tuning runs): B_retrack/out/pbar/PBAR_IMM2_v01.json  sha256 44985ede3b7fc6ab03aace58ca517ef371eb07861b7235cb84b6638953cae4a9  modified 22 Nov 00:35:21
+- IMM2 kappa_q grid note: B_retrack/out/imm2t/IMM2_TUNE_KQ_v01.json  sha256 aa37ff1023ddc83d048be11cf3b46710a832b7f61cc7b4fddbc9103bc8df3ad7  modified 22 Nov 00:27:02
+- DR masked class average P-bar_DR (not listed in FREEZE_DR): F_dropout/out/PBAR_DR_v01.json  sha256 a50b3a1df23107efdb2e76c1c6a318a24de7813fbb88eb396b28f667edafa685  modified 21 Nov 16:40:33
+- DR mask code v04 (10 Hz-capable): F_dropout/code/dr_masks_v04.py  sha256 b5827b26d87bcbd2bc69bfad55cdd1a1d148d3dcd45d4df43c8e216e183859df  modified 22 Nov 00:23:42
+- A12 section text, CD (2, 3b): CD_capture/l12/A12_SECTIONS_2_3b_CD_v02.md  sha256 10d5691cdfe232c79498bbb96a60fdfe0d6fff7c178e544875ce2ce2139a652e  modified 22 Nov 00:44:34
+- A12 section text, F (3a): F_dropout/A12_3a_DR_REPLICATION_v02.md  sha256 ca5f058c54250f06b72355675810b664f818ef86d05a630ed230358ca8dbbfa0  modified 22 Nov 00:21:06
+- A12 section text, B (3c): B_retrack/A12_3c_IMM2_v02.md  sha256 02484ab7adacecd38f8fbfa4d2dcfcc3ff4c992fe033193fd5f7351ba7b11de2  modified 22 Nov 00:27:27
+
+Sealing evidence (each pattern must match no file at writing):
+- no L12 CV0 arrays (CD): CD_capture/arrays*/**/pl12_*  -> 0 file(s)
+- no L12 arrays in the l12 folder: CD_capture/l12/**/*pl12_*arrays*  -> 0 file(s)
+- no L12 DR arrays (F): F_dropout/out/arrays/**/pl12_*  -> 0 file(s)
+- no L12 re-track under B2 or IMM2: B_retrack/out/retrack*/**/pl12_*  -> 0 file(s)
+- no DR2 export: F_nuscenes/out/A_EXPORT_DR2*  -> 0 file(s)
+- no Y L12 result: CD_capture/ycheck*/out/Y_TWIN_L12*  -> 0 file(s)
+- no IMM2 new-run export: B_retrack/out/*IMM2N*  -> 0 file(s)
+
+State at writing (coordinator's statement):
+- The L12 capture (150 study runs, 6 RTX 4090 pods) began at 00:37-00:40 EST, before this lock, as A12 section 2 and A11 section 3.3 allow. It is sealed: receipts and pass/fail only, plus logs-only tars. No L12 run has been extracted, re-tracked or scored. Raw sweeps stay on the pods for the 10 Hz option.
+- IMM2's constants were tuned on tuning runs only (A12 section 3c, option b: kappa_q of record, sigma_a2_hi = 0.9172759 from braking frames). Its class average on the 120 tuning runs is computed. No IMM2 value exists on any C or L12 run.
+- DR's A12 code was tested on the 35 old fit runs at all four dropout rates; the two programs agree on 111 of 111 shared keys. No DR value exists on any L12 run.
+- Sections 5, 5b, 6 and 3d (10 Hz) of AMENDMENT_12 are drafts or placeholders in this snapshot and are NOT locked here. LOCK_A12b locks section 6 (before E's main capture), LOCK_A12c locks sections 5 and 5b (before any nuScenes val value) and LOCK_A12d locks section 3d (before any 10 Hz value).
+- Freeze changes before this lock, recorded: (1) CD keep_raw true for the 10 Hz hedge, l_extract and l_pods seal checks changed by one value (FREEZE_CD_add8, old-run tests bit-identical); (2) B and F switched their new-run readers to CD's job-id to run-folder map (L12_RUNS_v13.json) because retry runs carry suffixed folder ids (FREEZE_B_add11; FREEZE_DR_A12 re-issued 59a402b0..., the first issue 266814fc... unused). A dry run of this lock at 00:47 had refused on these changed files until those freezes were written.
+- E's calibration capture on tuning cases (section 6 design data) may run before LOCK_A12b; it produces no value of any locked test.

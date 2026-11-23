@@ -1,0 +1,18 @@
+{
+"mode": "id3",
+"runs": 1,
+"errors": 0,
+"seconds": 3.366759777069092,
+"punish_num": 15,
+"log": [
+{
+"run": "p1b_fit_finite_0037",
+"status": "ok",
+"seconds": 3.3091148369712755,
+"n_rows": 341,
+"n_masked": 0
+}
+],
+"lock": null,
+"written": "2026-11-22 07:54:35"
+}

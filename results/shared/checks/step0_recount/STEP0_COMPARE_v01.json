@@ -1,0 +1,1720 @@
+{
+ "tolerances": "counts exact; others abs diff <= 1e-9",
+ "main": [
+  {
+   "key": "vehicle_crossing|all|n_runs",
+   "recount": 22,
+   "first": 22,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|runs_with_eval",
+   "recount": 21,
+   "first": 21,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|n_eval_decisions",
+   "recount": 5691,
+   "first": 5691,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|R_pp",
+   "recount": 0.14380740822333604,
+   "first": 0.14380740822333604,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|R_deceq",
+   "recount": 8.184079601990055,
+   "first": 8.184079601990055,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|R_pp.ci95.lo",
+   "recount": 0.0,
+   "first": 0.0,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|R_deceq.ci95.lo",
+   "recount": 0.0,
+   "first": 0.0,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|R_pp.ci95.hi",
+   "recount": 0.3341310889363974,
+   "first": 0.3341310889363974,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|R_deceq.ci95.hi",
+   "recount": 19.034825870646763,
+   "first": 19.034825870646763,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|R_pp.ci90.lo",
+   "recount": 0.0,
+   "first": 0.0,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|R_deceq.ci90.lo",
+   "recount": 0.0,
+   "first": 0.0,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|R_pp.ci90.hi",
+   "recount": 0.29329970664761085,
+   "first": 0.29329970664761085,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|R_deceq.ci90.hi",
+   "recount": 16.6818407960199,
+   "first": 16.6818407960199,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_N.point",
+   "recount": 0.16474164133738625,
+   "first": 0.16474164133738625,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_N.ci95.lo",
+   "recount": -0.02019382565344256,
+   "first": -0.020193825653442535,
+   "abs_diff": 2.42861286636753e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_N.ci95.hi",
+   "recount": 0.49650094080185275,
+   "first": 0.49650094080185275,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_N.ci90.lo",
+   "recount": 0.04759475564224291,
+   "first": 0.047594755642242886,
+   "abs_diff": 2.0816681711721685e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_N.ci90.hi",
+   "recount": 0.4023899635548076,
+   "first": 0.4023899635548076,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_E5N.point",
+   "recount": 0.22553191489361726,
+   "first": 0.22553191489361726,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_E5N.ci95.lo",
+   "recount": 0.11478876119340153,
+   "first": 0.11478876119340156,
+   "abs_diff": 2.7755575615628914e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_E5N.ci95.hi",
+   "recount": 0.8333333333333333,
+   "first": 0.8333333333333333,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_E5N.ci90.lo",
+   "recount": 0.13940291459850424,
+   "first": 0.13940291459850424,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_E5N.ci90.hi",
+   "recount": 0.7272727272727273,
+   "first": 0.7272727272727273,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_E5.point",
+   "recount": 0.09848024316109452,
+   "first": 0.09848024316109452,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_E5.ci95.lo",
+   "recount": 0.0,
+   "first": 0.0,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_E5.ci95.hi",
+   "recount": 0.13343216890962012,
+   "first": 0.13343216890962012,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_E5.ci90.lo",
+   "recount": 0.0,
+   "first": 0.0,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|RR_E5.ci90.hi",
+   "recount": 0.12369188410199332,
+   "first": 0.12369188410199332,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|share_resamples_room_pos",
+   "recount": 0.8734,
+   "first": 0.8734,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|n_resamples_valid_for_shares",
+   "recount": 17468,
+   "first": 17468,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|margin.median",
+   "recount": 0.9145991640166353,
+   "first": 0.9145991640166353,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|margin.q05",
+   "recount": 0.31611505084189123,
+   "first": 0.31611505084189123,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|margin.q95",
+   "recount": 1.9463134091069485,
+   "first": 1.9463134091069485,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|margin.A",
+   "recount": 0.8912091889007052,
+   "first": 0.8912091889007052,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|margin.share_within5",
+   "recount": 0.040928730829495275,
+   "first": 0.040928730829495275,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|margin.n_rows",
+   "recount": 42122,
+   "first": 42122,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|share_no_binding_F0",
+   "recount": 0.39184677561061326,
+   "first": 0.39184677561061326,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|all|share_some_row_unsafe_3s",
+   "recount": 0.20470918994904236,
+   "first": 0.20470918994904236,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|n_runs",
+   "recount": 20,
+   "first": 20,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|runs_with_eval",
+   "recount": 19,
+   "first": 19,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|n_eval_decisions",
+   "recount": 5149,
+   "first": 5149,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|R_pp",
+   "recount": 0.14783337149946532,
+   "first": 0.14783337149946532,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|R_deceq",
+   "recount": 7.611940298507469,
+   "first": 7.611940298507469,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|R_pp.ci95.lo",
+   "recount": 0.0,
+   "first": 0.0,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|R_deceq.ci95.lo",
+   "recount": 0.0,
+   "first": 0.0,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|R_pp.ci95.hi",
+   "recount": 0.3474843242725667,
+   "first": 0.3474843242725667,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|R_deceq.ci95.hi",
+   "recount": 17.845895522388044,
+   "first": 17.845895522388044,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|R_pp.ci90.lo",
+   "recount": 0.0,
+   "first": 0.0,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|R_deceq.ci90.lo",
+   "recount": 0.0,
+   "first": 0.0,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|R_pp.ci90.hi",
+   "recount": 0.30542755676312977,
+   "first": 0.30542755676312977,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|R_deceq.ci90.hi",
+   "recount": 15.696766169154225,
+   "first": 15.696766169154225,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_N.point",
+   "recount": 0.1431372549019616,
+   "first": 0.1431372549019616,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_N.ci95.lo",
+   "recount": -0.07353684334234327,
+   "first": -0.07353684334234319,
+   "abs_diff": 8.326672684688674e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_N.ci95.hi",
+   "recount": 0.32557047643254533,
+   "first": 0.32557047643254533,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_N.ci90.lo",
+   "recount": -0.03413483595033364,
+   "first": -0.034134835950333675,
+   "abs_diff": 3.469446951953614e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_N.ci90.hi",
+   "recount": 0.30725064219236065,
+   "first": 0.30725064219236065,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_E5N.point",
+   "recount": 0.20849673202614458,
+   "first": 0.20849673202614458,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_E5N.ci95.lo",
+   "recount": 0.0905254736074969,
+   "first": 0.09052547360749691,
+   "abs_diff": 1.3877787807814457e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_E5N.ci95.hi",
+   "recount": 0.42233494491558987,
+   "first": 0.42233494491558987,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_E5N.ci90.lo",
+   "recount": 0.11199739009868666,
+   "first": 0.11199739009868664,
+   "abs_diff": 1.3877787807814457e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_E5N.ci90.hi",
+   "recount": 0.3836998456790123,
+   "first": 0.3836998456790123,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_E5.point",
+   "recount": 0.10784313725490279,
+   "first": 0.10784313725490279,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_E5.ci95.lo",
+   "recount": 0.0027372262773722707,
+   "first": 0.0027372262773722707,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_E5.ci95.hi",
+   "recount": 0.14296721872597992,
+   "first": 0.14296721872597992,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_E5.ci90.lo",
+   "recount": 0.003563220652348456,
+   "first": 0.0035632206523484554,
+   "abs_diff": 4.336808689942018e-19,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|RR_E5.ci90.hi",
+   "recount": 0.13265159521580472,
+   "first": 0.13265159521580472,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|share_resamples_room_pos",
+   "recount": 0.63975,
+   "first": 0.63975,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|n_resamples_valid_for_shares",
+   "recount": 12795,
+   "first": 12795,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|margin.median",
+   "recount": 0.9228793813728415,
+   "first": 0.9228793813728415,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|margin.q05",
+   "recount": 0.36262044340963,
+   "first": 0.36262044340963,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|margin.q95",
+   "recount": 2.08937689356249,
+   "first": 2.08937689356249,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|margin.A",
+   "recount": 0.9355266164816686,
+   "first": 0.9355266164816686,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|margin.share_within5",
+   "recount": 0.04915756588609116,
+   "first": 0.04915756588609116,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|margin.n_rows",
+   "recount": 37451,
+   "first": 37451,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|share_no_binding_F0",
+   "recount": 0.42726743056904254,
+   "first": 0.42726743056904254,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "vehicle_crossing|tuning|share_some_row_unsafe_3s",
+   "recount": 0.17964653330743835,
+   "first": 0.17964653330743835,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|n_runs",
+   "recount": 51,
+   "first": 51,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|runs_with_eval",
+   "recount": 51,
+   "first": 51,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|n_eval_decisions",
+   "recount": 13821,
+   "first": 13821,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|R_pp",
+   "recount": 0.08002099336182125,
+   "first": 0.08002099336182125,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|R_deceq",
+   "recount": 11.059701492537316,
+   "first": 11.059701492537316,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|R_pp.ci95.lo",
+   "recount": -0.05518316816179573,
+   "first": -0.05518316816179573,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|R_deceq.ci95.lo",
+   "recount": -7.626865671641788,
+   "first": -7.626865671641788,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|R_pp.ci95.hi",
+   "recount": 0.2494995538190671,
+   "first": 0.2494995538190671,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|R_deceq.ci95.hi",
+   "recount": 34.48333333333326,
+   "first": 34.48333333333326,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|R_pp.ci90.lo",
+   "recount": -0.03250875353354061,
+   "first": -0.03250875353354062,
+   "abs_diff": 1.3877787807814457e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|R_deceq.ci90.lo",
+   "recount": -4.493034825870647,
+   "first": -4.493034825870649,
+   "abs_diff": 1.7763568394002505e-15,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|R_pp.ci90.hi",
+   "recount": 0.22574343390492718,
+   "first": 0.22574343390492718,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|R_deceq.ci90.hi",
+   "recount": 31.19999999999999,
+   "first": 31.19999999999999,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_N.point",
+   "recount": -0.43229869545659005,
+   "first": -0.43229869545659005,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_N.ci95.lo",
+   "recount": -3.382881471237705,
+   "first": -3.3828814712377047,
+   "abs_diff": 4.440892098500626e-16,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_N.ci95.hi",
+   "recount": 0.055091713069111904,
+   "first": 0.055091713069111904,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_N.ci90.lo",
+   "recount": -1.8220143225631282,
+   "first": -1.822014322563129,
+   "abs_diff": 6.661338147750939e-16,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_N.ci90.hi",
+   "recount": -0.013827160927864788,
+   "first": -0.013827160927864788,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_E5N.point",
+   "recount": 0.6383265856950067,
+   "first": 0.6383265856950067,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_E5N.ci95.lo",
+   "recount": -1.24935765723455,
+   "first": -1.249357657234546,
+   "abs_diff": 3.9968028886505635e-15,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_E5N.ci95.hi",
+   "recount": 0.8600681592398532,
+   "first": 0.8600681592398532,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_E5N.ci90.lo",
+   "recount": -0.244785838914842,
+   "first": -0.24478583891484232,
+   "abs_diff": 3.0531133177191805e-16,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_E5N.ci90.hi",
+   "recount": 0.8438994607704353,
+   "first": 0.8438994607704353,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_E5.point",
+   "recount": 0.17768780926675662,
+   "first": 0.17768780926675662,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_E5.ci95.lo",
+   "recount": 0.06995388814431669,
+   "first": 0.06995388814431669,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_E5.ci95.hi",
+   "recount": 1.2357428386745517,
+   "first": 1.2357428386745517,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_E5.ci90.lo",
+   "recount": 0.0760984115670502,
+   "first": 0.0760984115670502,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|RR_E5.ci90.hi",
+   "recount": 0.6451796799978358,
+   "first": 0.6451796799978358,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|share_resamples_room_pos",
+   "recount": 0.8925,
+   "first": 0.8925,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|n_resamples_valid_for_shares",
+   "recount": 17850,
+   "first": 17850,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|margin.median",
+   "recount": 0.8826208135301157,
+   "first": 0.8826208135301157,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|margin.q05",
+   "recount": 0.43461984524184166,
+   "first": 0.43461984524184166,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|margin.q95",
+   "recount": 1.9577039092602955,
+   "first": 1.9577039092602955,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|margin.A",
+   "recount": 0.8628190275316259,
+   "first": 0.8628190275316259,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|margin.share_within5",
+   "recount": 0.08505304737548426,
+   "first": 0.08505304737548426,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|margin.n_rows",
+   "recount": 157972,
+   "first": 157972,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|share_no_binding_F0",
+   "recount": 0.25772375370812534,
+   "first": 0.25772375370812534,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|all|share_some_row_unsafe_3s",
+   "recount": 0.08689675132045438,
+   "first": 0.08689675132045438,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|n_runs",
+   "recount": 20,
+   "first": 20,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|runs_with_eval",
+   "recount": 20,
+   "first": 20,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|n_eval_decisions",
+   "recount": 5420,
+   "first": 5420,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|R_pp",
+   "recount": 0.18468542894384168,
+   "first": 0.18468542894384168,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|R_deceq",
+   "recount": 10.009950248756219,
+   "first": 10.009950248756219,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|R_pp.ci95.lo",
+   "recount": 0.04754594187732922,
+   "first": 0.04754594187732925,
+   "abs_diff": 3.469446951953614e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|R_deceq.ci95.lo",
+   "recount": 2.5769900497512435,
+   "first": 2.5769900497512457,
+   "abs_diff": 2.220446049250313e-15,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|R_pp.ci95.hi",
+   "recount": 0.34147069082631093,
+   "first": 0.34147069082631093,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|R_deceq.ci95.hi",
+   "recount": 18.507711442786054,
+   "first": 18.507711442786054,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|R_pp.ci90.lo",
+   "recount": 0.06498870958858842,
+   "first": 0.06498870958858842,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|R_deceq.ci90.lo",
+   "recount": 3.5223880597014925,
+   "first": 3.5223880597014925,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|R_pp.ci90.hi",
+   "recount": 0.3053918598887481,
+   "first": 0.3053918598887481,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|R_deceq.ci90.hi",
+   "recount": 16.55223880597015,
+   "first": 16.55223880597015,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_N.point",
+   "recount": -0.33598409542743535,
+   "first": -0.33598409542743535,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_N.ci95.lo",
+   "recount": -0.9657534246575341,
+   "first": -0.9657534246575341,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_N.ci95.hi",
+   "recount": 0.0008356562315095636,
+   "first": 0.0008356562315095636,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_N.ci90.lo",
+   "recount": -0.8184037723088685,
+   "first": -0.8184037723088685,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_N.ci90.hi",
+   "recount": -0.04963982954911068,
+   "first": -0.04963982954911068,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_E5N.point",
+   "recount": 0.7609343936381708,
+   "first": 0.7609343936381708,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_E5N.ci95.lo",
+   "recount": 0.43927562158098055,
+   "first": 0.4392756215809806,
+   "abs_diff": 5.551115123125783e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_E5N.ci95.hi",
+   "recount": 0.8775084339684132,
+   "first": 0.8775084339684132,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_E5N.ci90.lo",
+   "recount": 0.5126998606563936,
+   "first": 0.5126998606563936,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_E5N.ci90.hi",
+   "recount": 0.8609899656229676,
+   "first": 0.8609899656229676,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_E5.point",
+   "recount": 0.06013916500994035,
+   "first": 0.06013916500994035,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_E5.ci95.lo",
+   "recount": 0.030064996872535426,
+   "first": 0.030064996872535433,
+   "abs_diff": 6.938893903907228e-18,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_E5.ci95.hi",
+   "recount": 0.2629323554767018,
+   "first": 0.2629323554767018,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_E5.ci90.lo",
+   "recount": 0.03515580711451252,
+   "first": 0.035155807114512515,
+   "abs_diff": 6.938893903907228e-18,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|RR_E5.ci90.hi",
+   "recount": 0.21928738207175066,
+   "first": 0.21928738207175066,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|share_resamples_room_pos",
+   "recount": 1.0,
+   "first": 1.0,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|n_resamples_valid_for_shares",
+   "recount": 20000,
+   "first": 20000,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|margin.median",
+   "recount": 0.868290267494963,
+   "first": 0.868290267494963,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|margin.q05",
+   "recount": 0.3365893967069106,
+   "first": 0.3365893967069106,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|margin.q95",
+   "recount": 2.3719418070936817,
+   "first": 2.3719418070936817,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|margin.A",
+   "recount": 1.1720460810063027,
+   "first": 1.1720460810063027,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|margin.share_within5",
+   "recount": 0.08416788567570609,
+   "first": 0.08416788567570609,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|margin.n_rows",
+   "recount": 44435,
+   "first": 44435,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|share_no_binding_F0",
+   "recount": 0.4280442804428044,
+   "first": 0.4280442804428044,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "pedestrian_crossing|tuning|share_some_row_unsafe_3s",
+   "recount": 0.10092250922509226,
+   "first": 0.10092250922509226,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "lead_braking|tuning|n_runs",
+   "recount": 20,
+   "first": 20,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "lead_braking|tuning|n_eval_decisions",
+   "recount": 3018,
+   "first": 3018,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "lead_braking|tuning|R_pp",
+   "recount": 1.159543567780712,
+   "first": 1.159543567780712,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "lead_braking|tuning|R_deceq",
+   "recount": 34.99502487562189,
+   "first": 34.99502487562189,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  }
+ ],
+ "export45": [
+  {
+   "key": "A_EXPORT_S0|S0.VC.n_runs",
+   "recount": 22,
+   "first": 22,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.VC.n_dec",
+   "recount": 5691,
+   "first": 5691,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.VC.R",
+   "recount": 0.14380740822333604,
+   "first": 0.14380740822333604,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.VC.R.ci[0]",
+   "recount": 0.0,
+   "first": 0.0,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.VC.R.ci[1]",
+   "recount": 0.3341310889363974,
+   "first": 0.3341310889363974,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.VC.R_deceq",
+   "recount": 8.184079601990055,
+   "first": 8.184079601990055,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.VC.RR_N",
+   "recount": 0.16474164133738625,
+   "first": 0.16474164133738625,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.VC.RR_N.ci[0]",
+   "recount": -0.02019382565344256,
+   "first": -0.020193825653442535,
+   "abs_diff": 2.42861286636753e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.VC.RR_N.ci[1]",
+   "recount": 0.49650094080185275,
+   "first": 0.49650094080185275,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.VC.RR_E5N",
+   "recount": 0.22553191489361726,
+   "first": 0.22553191489361726,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.VC.RR_E5N.ci[0]",
+   "recount": 0.11478876119340153,
+   "first": 0.11478876119340156,
+   "abs_diff": 2.7755575615628914e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.VC.RR_E5N.ci[1]",
+   "recount": 0.8333333333333333,
+   "first": 0.8333333333333333,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.VC.nobind",
+   "recount": 0.39184677561061326,
+   "first": 0.39184677561061326,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.VC.unsafe3s",
+   "recount": 0.20470918994904236,
+   "first": 0.20470918994904236,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.VC.n_runs",
+   "recount": 20,
+   "first": 20,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.VC.n_dec",
+   "recount": 5149,
+   "first": 5149,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.VC.R",
+   "recount": 0.14783337149946532,
+   "first": 0.14783337149946532,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.VC.R.ci[0]",
+   "recount": 0.0,
+   "first": 0.0,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.VC.R.ci[1]",
+   "recount": 0.3474843242725667,
+   "first": 0.3474843242725667,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.VC.R_deceq",
+   "recount": 7.611940298507469,
+   "first": 7.611940298507469,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.VC.RR_N",
+   "recount": 0.1431372549019616,
+   "first": 0.1431372549019616,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.VC.RR_N.ci[0]",
+   "recount": -0.07353684334234327,
+   "first": -0.07353684334234319,
+   "abs_diff": 8.326672684688674e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.VC.RR_N.ci[1]",
+   "recount": 0.32557047643254533,
+   "first": 0.32557047643254533,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.VC.RR_E5N",
+   "recount": 0.20849673202614458,
+   "first": 0.20849673202614458,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.VC.RR_E5N.ci[0]",
+   "recount": 0.0905254736074969,
+   "first": 0.09052547360749691,
+   "abs_diff": 1.3877787807814457e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.VC.RR_E5N.ci[1]",
+   "recount": 0.42233494491558987,
+   "first": 0.42233494491558987,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.VC.nobind",
+   "recount": 0.42726743056904254,
+   "first": 0.42726743056904254,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.VC.unsafe3s",
+   "recount": 0.17964653330743835,
+   "first": 0.17964653330743835,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.PC.n_runs",
+   "recount": 51,
+   "first": 51,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.PC.n_dec",
+   "recount": 13821,
+   "first": 13821,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.PC.R",
+   "recount": 0.08002099336182125,
+   "first": 0.08002099336182125,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.PC.R.ci[0]",
+   "recount": -0.05518316816179573,
+   "first": -0.05518316816179573,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.PC.R.ci[1]",
+   "recount": 0.2494995538190671,
+   "first": 0.2494995538190671,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.PC.R_deceq",
+   "recount": 11.059701492537316,
+   "first": 11.059701492537316,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.PC.RR_N",
+   "recount": -0.43229869545659005,
+   "first": -0.43229869545659005,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.PC.RR_N.ci[0]",
+   "recount": -3.382881471237705,
+   "first": -3.3828814712377047,
+   "abs_diff": 4.440892098500626e-16,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.PC.RR_N.ci[1]",
+   "recount": 0.055091713069111904,
+   "first": 0.055091713069111904,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.PC.RR_E5N",
+   "recount": 0.6383265856950067,
+   "first": 0.6383265856950067,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.PC.RR_E5N.ci[0]",
+   "recount": -1.24935765723455,
+   "first": -1.249357657234546,
+   "abs_diff": 3.9968028886505635e-15,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.PC.RR_E5N.ci[1]",
+   "recount": 0.8600681592398532,
+   "first": 0.8600681592398532,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.PC.nobind",
+   "recount": 0.25772375370812534,
+   "first": 0.25772375370812534,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.PC.unsafe3s",
+   "recount": 0.08689675132045438,
+   "first": 0.08689675132045438,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.PC.n_runs",
+   "recount": 20,
+   "first": 20,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.PC.n_dec",
+   "recount": 5420,
+   "first": 5420,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.PC.R",
+   "recount": 0.18468542894384168,
+   "first": 0.18468542894384168,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.PC.R.ci[0]",
+   "recount": 0.04754594187732922,
+   "first": 0.04754594187732925,
+   "abs_diff": 3.469446951953614e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.PC.R.ci[1]",
+   "recount": 0.34147069082631093,
+   "first": 0.34147069082631093,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.PC.R_deceq",
+   "recount": 10.009950248756219,
+   "first": 10.009950248756219,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.PC.RR_N",
+   "recount": -0.33598409542743535,
+   "first": -0.33598409542743535,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.PC.RR_N.ci[0]",
+   "recount": -0.9657534246575341,
+   "first": -0.9657534246575341,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.PC.RR_N.ci[1]",
+   "recount": 0.0008356562315095636,
+   "first": 0.0008356562315095636,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.PC.RR_E5N",
+   "recount": 0.7609343936381708,
+   "first": 0.7609343936381708,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.PC.RR_E5N.ci[0]",
+   "recount": 0.43927562158098055,
+   "first": 0.4392756215809806,
+   "abs_diff": 5.551115123125783e-17,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.PC.RR_E5N.ci[1]",
+   "recount": 0.8775084339684132,
+   "first": 0.8775084339684132,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.PC.nobind",
+   "recount": 0.4280442804428044,
+   "first": 0.4280442804428044,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0T.PC.unsafe3s",
+   "recount": 0.10092250922509226,
+   "first": 0.10092250922509226,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  },
+  {
+   "key": "A_EXPORT_S0|S0.LB.R",
+   "recount": 1.159543567780712,
+   "first": 1.159543567780712,
+   "abs_diff": 0.0,
+   "tol": 1e-09,
+   "result": "pass"
+  }
+ ],
+ "export_keys_only_in_first": [],
+ "summary": {
+  "main_compared": 156,
+  "main_pass": 156,
+  "main_fail": 0,
+  "export_compared": 57,
+  "export_pass": 57,
+  "export_fail": 0
+ }
+}

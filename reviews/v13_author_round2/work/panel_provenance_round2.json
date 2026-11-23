@@ -1,0 +1,29 @@
+{
+ "schema_version": "review-panel-provenance/1.0",
+ "panel_id": "ars-review-v13-author-round-2",
+ "written_by": "coordinating session (Claude Opus 5.5), 22 Nov 2026, from 21:23 EST (Get-Date)",
+ "requested_by": "Paper work summary (Claude Fable 5.2), request revision_v13\\work\\A_text\\notes\\REVIEW_REQUEST_AUTHOR_ROUND2_v13.md (21:23 EST by that session's clock); read by the coordinator only, not by any seat",
+ "package_reviewed": {
+  "folder": "revision_v13\\work\\A_text\\package_v13_2115 (frozen 21:15:53 EST, packaged 21:16:16; equal to out\\freeze_v13_2115 for .md, .tex and supplement .md, checked by the coordinator; 14 typeset pages, official ieeeoj.cls)",
+  "MANUSCRIPT_v13.md": "c440adca7a70b2b74a373ee3a135d3eeac2c44a35ee6e28cb1c7280893d771b7",
+  "MANUSCRIPT_v13.tex": "8e9e648ef0290856f5c0dbdb841ebb2ecf0dea57cca6b8e2cc81749e856386ac",
+  "SUPPLEMENT_v13.md": "d18eee97e3f02f08159b1aaf81311a2663870818a42268dba706a1ba24d31b2b",
+  "MANUSCRIPT_v13.pdf": "dc83ce17a652e734399f84005631649fe3801b936a589499a9ed1f0f68a51ccb",
+  "SUPPLEMENT_v13.pdf": "084091af1a419f0bff64b643da112a70133ad382d2e51c929fb077ceee8e5692",
+  "RESPONSE_TO_REVIEW_v13.md (seats get only the section on N-1 to N-20)": "326765eadd389d95d55a8a27ca1580dd2376b559352b85d8f95ef153e82f2153"
+ },
+ "page_images": "review_v13_author_round2_output\\pages (14), pages_supplement (43), pages_template (9), rendered by Paper work summary; 66 images, all 1224 x 1584 (checked); sha256 in work\\pages_sha256.txt",
+ "writers": "earlier text: Claude Opus 5.5; later text and this fix round: session A on Claude Fable 5.2; claim audits of the changed passages by fresh Claude Sonnet 5.5 agents (not read by seats); author: full name and the ACKNOWLEDGMENT's AI paragraph (N-1 untouched, waiting for the author)",
+ "route": "second round by the same five seat roles and models as the author-round panel (review_v13_author_round_output), as fresh sub-agents (the round-1 agents are not resumed); each seat gets its own round-1 report, the record's sections 5, 7 and 8 (work\\round1_record_sections_5_7_8.md, verbatim) and the response letter's section on N-1 to N-20 (work\\letter_section_author_round.md, verbatim); it does not get other seats' reports, the rest of the record or the author letter, the claim audits, session A's reports, AMENDMENT_14's draft or the author's target. Each seat reads the whole text, marks N-1 to N-20, lists REQUIRED-major/minor/OPTIONAL (N kept, P-1 new), and gives judgement (a) as it stands and (b) conditional on N-1, N-5 and N-20 (6) settled as the record proposes. Synthesis by a separate Claude Sonnet 5.5 sub-agent.",
+ "seats": [
+  {"seat_id": "EIC", "model": "Claude Sonnet 5.5", "round1_report": "review_v13_author_round_output\\phase1\\01_eic_journal_fit.md", "output": "phase1\\01_eic_journal_fit_round2.md", "extra_duty": "Q7 in full on all 14 pages and the template; Q8"},
+  {"seat_id": "R1", "model": "Claude Fable 5.2 (writer model of the later text; told to be skeptical)", "round1_report": "review_v13_author_round_output\\phase1\\02_r1_methodology.md", "output": "phase1\\02_r1_methodology_round2.md", "extra_reads": "AMENDMENT_10-13, LOCK_A11*/A12a-e/A13a-c, export pairs, A12/A13 Holm files and the recovered Holm second programs, RECOUNT_COVERAGE_v13.md of freeze_v13_2115; spot-check at least 40 values, including every value the fix round brought into the main text"},
+  {"seat_id": "R2", "model": "Claude Opus 5.5 (writer model of the earlier text; told to be skeptical)", "round1_report": "review_v13_author_round_output\\phase1\\03_r2_domain.md", "output": "phase1\\03_r2_domain_round2.md"},
+  {"seat_id": "R3", "model": "Claude Sonnet 5.5", "round1_report": "review_v13_author_round_output\\phase1\\04_r3_practical.md", "output": "phase1\\04_r3_practical_round2.md", "extra_duty": "second Q7 pass on the first page, ACKNOWLEDGMENT, abstract, index terms and references"},
+  {"seat_id": "DA", "model": "Claude Fable 5.2 (writer model of the later text; told to be skeptical)", "round1_report": "review_v13_author_round_output\\phase1\\05_devils_advocate.md", "output": "phase1\\05_devils_advocate_round2.md", "extra_reads": "AMENDMENT_11, AMENDMENT_12, AMENDMENT_13"}
+ ],
+ "synthesis": {"model": "Claude Sonnet 5.5", "outputs": ["ARS_REVIEW_ROUND2_v01.md", "ARS_AUTHOR_LETTER_ROUND2_v01.md"]},
+ "web_access": "none; no manuscript text to any external service",
+ "correlated_error_disclosure": "All seats and the synthesis are Claude models of one family; two seats (R1, DA) share the later text's writer model, one (R2) the earlier text's; the same family wrote the text, audited its claims and ran the earlier panels whose items it answers. Second-round seats also read their own round-1 reports, which can anchor them.",
+ "gates_not_findings": "repository name and DOI bracket; N-1, N-5 and N-20 (6) wait for the author (judgement (b) assumes them settled as the record proposes)"
+}

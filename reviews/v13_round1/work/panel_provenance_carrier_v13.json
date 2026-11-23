@@ -1,0 +1,18 @@
+{
+  "artifact_path": "work/panel_provenance_v13.json",
+  "artifact_sha256": "4e0c1a61aa7f860f0612f1fe2ad698530080ea722a198febd4ce3728c95e2fd5",
+  "axes": {
+    "blind_to_peer_outputs": "unknown",
+    "fresh_context": true,
+    "human_distinct": false,
+    "model_family_distinct": false,
+    "provider_distinct": false,
+    "role_separated": true
+  },
+  "execution_topology_sha256": "b7e84332d480b461e6a7a3ad6578006edda0842a2bb5d43f96ec083b62bb3094",
+  "fresh_context_scope": "within_panel_attempt_only",
+  "normalized_manifest_sha256": "55d0596f63428bbb10487158591aed5737431f1bdfd7ea27ff7dd218800c8a7f",
+  "review_mode": "reviewer_full",
+  "schema_version": "review-panel-provenance-carrier/1.0",
+  "status": "valid"
+}

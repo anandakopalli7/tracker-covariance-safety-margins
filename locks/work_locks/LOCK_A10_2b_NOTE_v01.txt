@@ -1,0 +1,8 @@
+NOTE to LOCK_A10_2b.txt (SHA-256 81d3a77ada225718987d745e7ee2faaa4ef49c3c5e50b7a2ab81ade76cd5e867), written 19 Nov 2026, about 20:55 EST, by session E (Claude Opus 5.5), after the coordinator's question; LOCK_A10_2b.txt itself is not rewritten (its hash is recorded elsewhere).
+
+PS is NOT caution-matched to F0.
+- Reading of A10 7.3 ("For PS, its H4 triple at that caution level"): the H4 choice rule of A10 5.5 applied at the level l = F0's open-loop caution at g_L: among the scale triples whose design caution is at most l, the one with the lowest wrong-go; ties to the lowest caution, then the lowest index. The rule bounds the triple's caution by l; it does not target l.
+- Result: a triple with zero design wrong-go exists at design caution 11.8775 %, below both levels, so the rule returns the same triple at both levels: (before braking, braking, stopped) = (125.89254117941688, 105.92537251772897, 0.44668359215096326), grid indices (165, 162, 67). F0's open-loop caution is 14.1001 % at lo (g = 4) and 22.2951 % at hi (g = 16). Every other arm is matched within 0.53 percentage points of F0.
+- A triple with caution near 14.10 % or 22.30 % would be chosen by a different rule than the pre-registered one; it is not used.
+- Consequence for the text: E3 / E3b comparisons of PS with F0 are descriptive (PS carries no E hypothesis) and must carry the caveat "PS is not caution-matched: its design caution is 11.88 % against F0's 14.10 % (lo) and 22.30 % (hi); the per-phase schedule reaches zero design wrong-go below both levels."
+- Both programs (first: e2_matched_v01.py; second: e_recount_v01.py matched, Sonnet) gave this triple and these cautions independently.

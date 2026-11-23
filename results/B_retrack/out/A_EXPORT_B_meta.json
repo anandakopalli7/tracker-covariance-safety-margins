@@ -1,0 +1,150 @@
+{
+ "code": "b_fresh_export_v05.py",
+ "written": "2026-11-22 02:33:12",
+ "sources": {
+  "CV": {
+   "file": "out\\fresh\\B_FRESH_CV0_v02.json",
+   "sha256": "ce6c01daaf44cfc243428c158dd3ca4e757a095799414a040f5e852410b44f11",
+   "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6",
+   "status": "descriptive (A10 section 5.7)",
+   "nboot": 20000,
+   "draw": "optA_lib_v02.boot_counts(105, 20000, 20261911), runs in ascending id order"
+  },
+  "CV2": {
+   "file": "out\\fresh\\B_FRESH_B3_v02.json",
+   "sha256": "7b5a3170174f32c12c1a4e9155a2b5547080800291aefdb7951f4d5cd234bc1d",
+   "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6",
+   "status": "descriptive (A10 section 5.7)",
+   "nboot": 20000,
+   "draw": "optA_lib_v02.boot_counts(105, 20000, 20261911), runs in ascending id order"
+  },
+  "CA": {
+   "file": "out\\fresh\\B_FRESH_B4_v02.json",
+   "sha256": "7f4bb0e0cb19ce24ec0e9a9897bee155604b38aeb48ad775f9dbbc9937879d49",
+   "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6",
+   "status": "descriptive (A10 section 5.7)",
+   "nboot": 20000,
+   "draw": "optA_lib_v02.boot_counts(105, 20000, 20261911), runs in ascending id order"
+  },
+  "IMM": {
+   "file": "out\\fresh\\B_FRESH_B1_v02.json",
+   "sha256": "9e7f4c30b842411c469717edbe26a9c8d9a2b91d3bd451b10eef9a75bd729d9a",
+   "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6",
+   "status": "descriptive (A10 section 5.7)",
+   "nboot": 20000,
+   "draw": "optA_lib_v02.boot_counts(105, 20000, 20261911), runs in ascending id order"
+  },
+  "AQ": {
+   "file": "out\\fresh\\B_FRESH_B2_v02.json",
+   "sha256": "513c21c9cae8bc199ae596e2d438b4d21874be8fa1eeda3e9e9a0ba3da61c962",
+   "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6",
+   "status": "descriptive (A10 section 5.7)",
+   "nboot": 20000,
+   "draw": "optA_lib_v02.boot_counts(105, 20000, 20261911), runs in ascending id order"
+  },
+  "IMM090": {
+   "file": "out\\fresh\\B_FRESH_B1_d090_v02.json",
+   "sha256": "e375492ab7e434c50f6d5f247e535d2be21d18fca4c269da56e206ce168b42ec",
+   "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6",
+   "status": "descriptive (A10 section 5.7)",
+   "nboot": 20000,
+   "draw": "optA_lib_v02.boot_counts(105, 20000, 20261911), runs in ascending id order"
+  },
+  "IMM098": {
+   "file": "out\\fresh\\B_FRESH_B1_d098_v02.json",
+   "sha256": "c12de831997c65cfc42672b36fef426a683c8ec5148f726baa1e7e4473ad6509",
+   "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6",
+   "status": "descriptive (A10 section 5.7)",
+   "nboot": 20000,
+   "draw": "optA_lib_v02.boot_counts(105, 20000, 20261911), runs in ascending id order"
+  },
+  "IMMr": {
+   "file": "out\\fresh\\B_FRESH_B1R_v03.json",
+   "sha256": "35c530917ebe987498658a9a8827c73845962037d3f9622f03197704d84fd8da",
+   "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6; LOCK_A11 sha256 7ee8d706a9579c677accab6bab014c3c38acfca43d8e2628e2af81b5c853959f",
+   "status": "descriptive (A10 section 5.7)",
+   "nboot": 20000,
+   "draw": "optA_lib_v02.boot_counts(105, 20000, 20261911), runs in ascending id order"
+  },
+  "B6": {
+   "file": "out\\fresh_b6\\B6_FRESH_v02.json",
+   "sha256": "ea9596f1f9846e9238eae434d6ba4b21302e602015214c3508d87912140bfbec",
+   "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6",
+   "status": "descriptive (A10 section 5.7)",
+   "nboot": 20000,
+   "draw": "optA_lib_v02.boot_counts(n, 20000, 20261911) per run set (all 105, or a tercile), runs ascending"
+  },
+  "TU": {
+   "file": "out\\tu\\TU_v03.json",
+   "sha256": "b120aa27fc6e1e1370def9d8e6b903fbdf7c6738e2fb5389d9cfcd2c72d03722",
+   "status": "descriptive (A10 section 5.6), old tuning runs",
+   "nboot": 20000,
+   "draw": "optA_lib_v02.boot_counts(20, 20000, 20261918), runs in name order"
+  },
+  "IMM2C": {
+   "file": "out\\fresh\\B_FRESH_IMM2_v04.json",
+   "sha256": "215fe2a81d979d131d4e2020672f3a67d7742b1d6f82f31542f8e8d899f47cbb",
+   "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6; LOCK_A11 sha256 7ee8d706a9579c677accab6bab014c3c38acfca43d8e2628e2af81b5c853959f; LOCK_A12a sha256 0c4d4872946ba85d2ed91a0471eb8da7188333d2dfe462b68a6df555345b2766",
+   "status": "descriptive (A10 section 5.7)",
+   "nboot": 20000,
+   "draw": "optA_lib_v02.boot_counts(105, 20000, 20261911), runs in ascending id order",
+   "run_set": "fresh"
+  },
+  "IMM2N": {
+   "file": "out\\new\\B_NEW_IMM2_v04.json",
+   "sha256": "aaddb15bbb21259c32461f3ac9fd3ed4f476f5756dcfc07fd3c4893f4f2e59c8",
+   "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6; LOCK_A11 sha256 7ee8d706a9579c677accab6bab014c3c38acfca43d8e2628e2af81b5c853959f; LOCK_A12a sha256 0c4d4872946ba85d2ed91a0471eb8da7188333d2dfe462b68a6df555345b2766",
+   "status": "descriptive (A10 section 5.7)",
+   "nboot": 20000,
+   "draw": "optA_lib_v02.boot_counts(150, 20000, 20261911), runs in ascending id order",
+   "run_set": "new"
+  }
+ },
+ "definitions": "B_retrack/B_FRESH_DEFINITIONS_v02.md",
+ "gate": [
+  "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6",
+  "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6; LOCK_A11 sha256 7ee8d706a9579c677accab6bab014c3c38acfca43d8e2628e2af81b5c853959f",
+  "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df; LOCK_A10_2c sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6; LOCK_A11 sha256 7ee8d706a9579c677accab6bab014c3c38acfca43d8e2628e2af81b5c853959f; LOCK_A12a sha256 0c4d4872946ba85d2ed91a0471eb8da7188333d2dfe462b68a6df555345b2766"
+ ],
+ "status": [
+  "descriptive (A10 section 5.6), old tuning runs",
+  "descriptive (A10 section 5.7)"
+ ],
+ "n_keys": 304,
+ "v05_check": {
+  "previous_keys": 276,
+  "unchanged": 276,
+  "new_keys": [
+   "B.IMM2N.A",
+   "B.IMM2N.R",
+   "B.IMM2N.R.ci",
+   "B.IMM2N.R.dec",
+   "B.IMM2N.RR",
+   "B.IMM2N.RR.ci",
+   "B.IMM2N.RR_CK3",
+   "B.IMM2N.RR_CK3.ci",
+   "B.IMM2N.RR_minus_c",
+   "B.IMM2N.RR_minus_c.ci",
+   "B.IMM2N.as_room",
+   "B.IMM2N.as_room.pp",
+   "B.IMM2N.barely",
+   "B.IMM2N.c",
+   "B.IMM2N.c.ci",
+   "B.IMM2N.class",
+   "B.IMM2N.lag",
+   "B.IMM2N.m",
+   "B.IMM2N.n_dec",
+   "B.IMM2N.n_runs",
+   "B.IMM2N.p_n_finite",
+   "B.IMM2N.p_one_sided",
+   "B.IMM2N.q05",
+   "B.IMM2N.q95",
+   "B.IMM2N.room_brk",
+   "B.IMM2N.room_pre",
+   "B.IMM2N.room_stop",
+   "B.IMM2N.within5"
+  ],
+  "previous_kept_as": "A_EXPORT_B_v04_276keys.json",
+  "previous_sha256": "2d9e01aa0bad51bbaa8fdca38cc946de684b9733e1bdaf0dee44bf2ca7ffa3d0"
+ }
+}

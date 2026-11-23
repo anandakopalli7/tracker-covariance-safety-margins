@@ -1,0 +1,236 @@
+{
+ "family": "D2_RS",
+ "program": "rc_d2_rs_v13.py",
+ "test_old": true,
+ "model": "claude-fable-5-2",
+ "values": {
+  "D2.F0.c2.rs.runs": 1,
+  "D2.F0.c2.rs.vclose": 3.7250251708972586,
+  "D2.F0.c5.rs.runs": 1,
+  "D2.F0.c5.rs.vclose": 4.405958065753853,
+  "D2.N.c2.rs.runs": 1,
+  "D2.N.c2.rs.vclose": 3.7250251708972586,
+  "D2.N.c5.rs.runs": 1,
+  "D2.N.c5.rs.vclose": 4.405958065753853,
+  "D2.CK3.c2.rs.runs": 0,
+  "D2.CK3.c2.rs.vclose": null,
+  "D2.CK3.c5.rs.runs": 0,
+  "D2.CK3.c5.rs.vclose": null,
+  "D2.TG.c2.rs.runs": 1,
+  "D2.TG.c2.rs.vclose": 4.544107242555562,
+  "D2.TG.c5.rs.runs": 1,
+  "D2.TG.c5.rs.vclose": 2.8080536400134783
+ },
+ "details": {
+  "mode": "TEST ON OLD RUNS (exploratory; not a D2 result)",
+  "spec": "AMENDMENT_10_v13.md sections 1 and 6 D2; CD_DEFINITIONS_v13.md D2 and the superseding note of 20 Nov 2026",
+  "scoring": "extended: safe iff clean_clear(clearX_t0p75_a6p0) > 0 (rev_e2 est); caution by the 3 s commitment",
+  "arrays": "revision_v11 analysis out\\ext (extended clearances of record)",
+  "n_runs": 4,
+  "runs": [
+   "p1b_fit_finite_0005",
+   "p1b_fit_finite_0006",
+   "p1b_fit_finite_0007",
+   "p1b_fit_finite_0008"
+  ],
+  "table": {
+   "F0": {
+    "c2": {
+     "grid_index": 44,
+     "g": 0.11885022274370183,
+     "caution": 2.3457735963062083,
+     "wrong_go": 2.5,
+     "n_frontier_points": 157,
+     "n_tied_nearest": 1,
+     "n_decisions": 840,
+     "n_wrong_go_decisions": 21,
+     "n_wrong_go_from_table": 21,
+     "n_runs_with_wrong_go": 1,
+     "n_wrong_go_without_loss_tick": 0,
+     "n_runs_with_a_median": 1,
+     "median_of_run_medians_mps": 3.7250251708972586,
+     "median_over_decisions_mps": 3.7250251708972586,
+     "per_run": {
+      "p1b_fit_finite_0007": {
+       "n_wrong_go": 21,
+       "n_with_loss_tick": 21,
+       "median_closing_mps": 3.7250251708972586,
+       "max_loss_tick": 59
+      }
+     }
+    },
+    "c5": {
+     "grid_index": 72,
+     "g": 0.5956621435290106,
+     "caution": 5.449756555562067,
+     "wrong_go": 2.380952380952381,
+     "n_frontier_points": 157,
+     "n_tied_nearest": 1,
+     "n_decisions": 840,
+     "n_wrong_go_decisions": 20,
+     "n_wrong_go_from_table": 20,
+     "n_runs_with_wrong_go": 1,
+     "n_wrong_go_without_loss_tick": 0,
+     "n_runs_with_a_median": 1,
+     "median_of_run_medians_mps": 4.405958065753853,
+     "median_over_decisions_mps": 4.405958065753853,
+     "per_run": {
+      "p1b_fit_finite_0007": {
+       "n_wrong_go": 20,
+       "n_with_loss_tick": 20,
+       "median_closing_mps": 4.405958065753853,
+       "max_loss_tick": 59
+      }
+     }
+    }
+   },
+   "N": {
+    "c2": {
+     "grid_index": 41,
+     "g": 0.1,
+     "caution": 2.346226457252504,
+     "wrong_go": 2.5,
+     "n_frontier_points": 160,
+     "n_tied_nearest": 1,
+     "n_decisions": 840,
+     "n_wrong_go_decisions": 21,
+     "n_wrong_go_from_table": 21,
+     "n_runs_with_wrong_go": 1,
+     "n_wrong_go_without_loss_tick": 0,
+     "n_runs_with_a_median": 1,
+     "median_of_run_medians_mps": 3.7250251708972586,
+     "median_over_decisions_mps": 3.7250251708972586,
+     "per_run": {
+      "p1b_fit_finite_0007": {
+       "n_wrong_go": 21,
+       "n_with_loss_tick": 21,
+       "median_closing_mps": 3.7250251708972586,
+       "max_loss_tick": 59
+      }
+     }
+    },
+    "c5": {
+     "grid_index": 68,
+     "g": 0.4731512589614805,
+     "caution": 5.118866537093637,
+     "wrong_go": 2.380952380952381,
+     "n_frontier_points": 160,
+     "n_tied_nearest": 1,
+     "n_decisions": 840,
+     "n_wrong_go_decisions": 20,
+     "n_wrong_go_from_table": 20,
+     "n_runs_with_wrong_go": 1,
+     "n_wrong_go_without_loss_tick": 0,
+     "n_runs_with_a_median": 1,
+     "median_of_run_medians_mps": 4.405958065753853,
+     "median_over_decisions_mps": 4.405958065753853,
+     "per_run": {
+      "p1b_fit_finite_0007": {
+       "n_wrong_go": 20,
+       "n_with_loss_tick": 20,
+       "median_closing_mps": 4.405958065753853,
+       "max_loss_tick": 59
+      }
+     }
+    }
+   },
+   "CK3": {
+    "c2": {
+     "grid_index": 39,
+     "g": 0.08912509381337459,
+     "caution": 2.009771071835928,
+     "wrong_go": 0.0,
+     "n_frontier_points": 202,
+     "n_tied_nearest": 1,
+     "n_decisions": 840,
+     "n_wrong_go_decisions": 0,
+     "n_wrong_go_from_table": 0,
+     "n_runs_with_wrong_go": 0,
+     "n_wrong_go_without_loss_tick": 0,
+     "n_runs_with_a_median": 0,
+     "median_of_run_medians_mps": NaN,
+     "median_over_decisions_mps": NaN,
+     "per_run": {}
+    },
+    "c5": {
+     "grid_index": 69,
+     "g": 0.5011872336272725,
+     "caution": 4.80347900524263,
+     "wrong_go": 0.0,
+     "n_frontier_points": 202,
+     "n_tied_nearest": 1,
+     "n_decisions": 840,
+     "n_wrong_go_decisions": 0,
+     "n_wrong_go_from_table": 0,
+     "n_runs_with_wrong_go": 0,
+     "n_wrong_go_without_loss_tick": 0,
+     "n_runs_with_a_median": 0,
+     "median_of_run_medians_mps": NaN,
+     "median_over_decisions_mps": NaN,
+     "per_run": {}
+    }
+   },
+   "TG": {
+    "c2": {
+     "grid_index": 22,
+     "g": 0.03349654391578276,
+     "caution": 2.1743126150469494,
+     "wrong_go": 2.380952380952381,
+     "n_frontier_points": 179,
+     "n_tied_nearest": 1,
+     "n_decisions": 840,
+     "n_wrong_go_decisions": 20,
+     "n_wrong_go_from_table": 20,
+     "n_runs_with_wrong_go": 1,
+     "n_wrong_go_without_loss_tick": 0,
+     "n_runs_with_a_median": 1,
+     "median_of_run_medians_mps": 4.544107242555562,
+     "median_over_decisions_mps": 4.544107242555562,
+     "per_run": {
+      "p1b_fit_finite_0007": {
+       "n_wrong_go": 20,
+       "n_with_loss_tick": 20,
+       "median_closing_mps": 4.544107242555562,
+       "max_loss_tick": 59
+      }
+     }
+    },
+    "c5": {
+     "grid_index": 53,
+     "g": 0.19952623149688797,
+     "caution": 5.8953336059863615,
+     "wrong_go": 1.4285714285714286,
+     "n_frontier_points": 179,
+     "n_tied_nearest": 1,
+     "n_decisions": 840,
+     "n_wrong_go_decisions": 12,
+     "n_wrong_go_from_table": 12,
+     "n_runs_with_wrong_go": 1,
+     "n_wrong_go_without_loss_tick": 0,
+     "n_runs_with_a_median": 1,
+     "median_of_run_medians_mps": 2.8080536400134783,
+     "median_over_decisions_mps": 2.8080536400134783,
+     "per_run": {
+      "p1b_fit_finite_0007": {
+       "n_wrong_go": 12,
+       "n_with_loss_tick": 12,
+       "median_closing_mps": 2.8080536400134783,
+       "max_loss_tick": 60
+      }
+     }
+    }
+   }
+  },
+  "identity_dmin_vs_clearX": {
+   "n_pairs": 45,
+   "max_abs_diff": 0.0,
+   "n_above_1e9": 0,
+   "n_censored": 0,
+   "n_tick_beyond_60": 0,
+   "ok": true
+  },
+  "n_captures_read": 1
+ },
+ "written": "2026-11-20 03:00:44",
+ "seconds": 84.81428647041321
+}

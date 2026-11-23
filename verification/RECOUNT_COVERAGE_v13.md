@@ -1,0 +1,189 @@
+# Recount coverage v13 (A10 §10.1(a))
+
+Named passages: Abstract, Sections I and V-VII, Tables II-V, figure captions. "Agreeing" means a second program's value exists for the export key and agrees (counts exact, values within 1e-9). Values read from records (v12 record, lock hashes, build counts) are listed apart.
+
+- Abstract: 9 value placeholders; typed constants: 0.10, 15
+- I. Introduction: 2 value placeholders; typed constants: 0.10
+- V. Results: 484 value placeholders; typed constants: 0.05, 0.1, 0.10, 0.2, 0.20, 0.30, 0.5, 0.75, 0.95, 1.5, 10, 10,, 15, 16, 2.0, 20, 25, 30, 50, 60, 75, 95, 99
+- VI. Discussion and Limits: 7 value placeholders; typed constants: 0.1, 15
+- VII. Conclusion: 3 value placeholders; typed constants: none
+- Fig. 1.: 0 value placeholders; typed constants: none
+- TABLE II.: 37 value placeholders; typed constants: 25, 50, 75, 95
+- Fig. 2.: 0 value placeholders; typed constants: none
+- TABLE III.: 70 value placeholders; typed constants: 95
+- TABLE IV.: 104 value placeholders; typed constants: 0.10, 0.5, 95
+- Fig. 3.: 0 value placeholders; typed constants: 95
+- Fig. 4.: 0 value placeholders; typed constants: 0.1, 0.2, 0.75
+- TABLE V.: 83 value placeholders; typed constants: 0.05, 0.1, 0.10, 0.20, 0.30, 10, 16, 95, 99
+
+## Coverage of the named passages: 413 of 413 printed values have an agreeing second program (100.0%)
+
+Supplement S12 counts the whole main text (abstract to conclusion, tables and captions; a value once per print format): 418 of 418 values agree; Supplement S12 prints 418 of 418: equal. Of them 416 are in Sections III to VII. Old-run values in the whole main text: 7, of which 6 stand in table rows; Supplement S12 prints 7 and 6 (second program: the stored-run recount for 4, package CD's recount for the 3 per-set shares).
+
+
+## Supplement: 164 result values without an agreeing second program, each marked ‡ in a final build (99 from package files, 65 from records); the supplement prints 188 marks: one after each number or interval of these results (a cell may hold a point and its interval, or two values) and one in its opening legend
+
+- `B:B.AQ.E5q.RR.ci|ci3`
+- `B:B.AQ.E5q.RR|sh3`
+- `B:B.AQ.nees_brk.ci|ci2`
+- `B:B.AQ.nees_brk|f2`
+- `B:B.AQ.nees_pre.ci|ci2`
+- `B:B.AQ.nees_pre|f2`
+- `B:B.AQ.nees_stop.ci|ci2`
+- `B:B.AQ.nees_stop|f2`
+- `B:B.AQ.nis_brk.ci|ci2`
+- `B:B.AQ.nis_brk|f2`
+- `B:B.AQ.nis_pre.ci|ci2`
+- `B:B.AQ.nis_pre|f2`
+- `B:B.AQ.nis_stop.ci|ci2`
+- `B:B.AQ.nis_stop|f2`
+- `B:B.AQ.outside_band|pct0`
+- `B:B.CA.nees_brk.ci|ci2`
+- `B:B.CA.nees_brk|f2`
+- `B:B.CA.nees_pre.ci|ci2`
+- `B:B.CA.nees_pre|f2`
+- `B:B.CA.nees_stop.ci|ci2`
+- `B:B.CA.nees_stop|f2`
+- `B:B.CA.nis_brk.ci|ci2`
+- `B:B.CA.nis_brk|f2`
+- `B:B.CA.nis_pre.ci|ci2`
+- `B:B.CA.nis_pre|f2`
+- `B:B.CA.nis_stop.ci|ci2`
+- `B:B.CA.nis_stop|f2`
+- `B:B.CV.nees_brk.ci|ci2`
+- `B:B.CV.nees_brk|f2`
+- `B:B.CV.nees_pre.ci|ci2`
+- `B:B.CV.nees_pre|f2`
+- `B:B.CV.nees_stop.ci|ci2`
+- `B:B.CV.nees_stop|f2`
+- `B:B.CV.nis_brk.ci|ci2`
+- `B:B.CV.nis_brk|f2`
+- `B:B.CV.nis_pre.ci|ci2`
+- `B:B.CV.nis_pre|f2`
+- `B:B.CV.nis_stop.ci|ci2`
+- `B:B.CV.nis_stop|f2`
+- `B:B.CV2.nees_brk.ci|ci2`
+- `B:B.CV2.nees_brk|f2`
+- `B:B.CV2.nees_pre.ci|ci2`
+- `B:B.CV2.nees_pre|f2`
+- `B:B.CV2.nees_stop.ci|ci2`
+- `B:B.CV2.nees_stop|f2`
+- `B:B.CV2.nis_brk.ci|ci2`
+- `B:B.CV2.nis_brk|f2`
+- `B:B.CV2.nis_pre.ci|ci2`
+- `B:B.CV2.nis_pre|f2`
+- `B:B.CV2.nis_stop.ci|ci2`
+- `B:B.CV2.nis_stop|f2`
+- `B:B.IMM.nees_brk.ci|ci2`
+- `B:B.IMM.nees_brk|f2`
+- `B:B.IMM.nees_pre.ci|ci2`
+- `B:B.IMM.nees_pre|f2`
+- `B:B.IMM.nees_stop.ci|ci2`
+- `B:B.IMM.nees_stop|f2`
+- `B:B.IMM.nis_brk.ci|ci2`
+- `B:B.IMM.nis_brk|f2`
+- `B:B.IMM.nis_pre.ci|ci2`
+- `B:B.IMM.nis_pre|f2`
+- `B:B.IMM.nis_stop.ci|ci2`
+- `B:B.IMM.nis_stop|f2`
+- `B:B.kappa|f3`
+- `B:B.sigma_a2|f3`
+- `B:B9.events|int`
+- `B:B9.threshold|f2`
+- `BSUM:B0a.bit_identical|int`
+- `BSUM:B0a.lead_braking_runs|int`
+- `BSUM:B0a.max_abs_diff_other|sci1`
+- `BSUM:B0a.runs|int`
+- `BSUM:B0b.all_ok|int`
+- `BSUM:B0b.runs_checked|int`
+- `BSUM:B0b.worst_abs|sci1`
+- `BSUM:B6.delayed_stop.R_pp|pp`
+- `BSUM:B6.delayed_stop.den0_deceq|dec1`
+- `BSUM:B6.terciles.0.decel_min_max|rng2`
+- `BSUM:B6.terciles.0.den0_deceq|dec1`
+- `BSUM:B6.terciles.0.room_ratio_WR_over_3s|sh3`
+- `BSUM:B6.terciles.1.decel_min_max|rng2`
+- `BSUM:B6.terciles.1.den0_deceq|dec1`
+- `BSUM:B6.terciles.1.room_ratio_WR_over_3s|sh3`
+- `BSUM:B6.terciles.2.decel_min_max|rng2`
+- `BSUM:B6.terciles.2.den0_deceq|dec1`
+- `BSUM:B6.terciles.2.room_ratio_WR_over_3s|sh3`
+- `BSUM:B6.terciles.3.decel_min_max|rng2`
+- `BSUM:B6.terciles.3.den0_deceq|dec1`
+- `BSUM:B6.terciles.3.room_ratio_WR_over_3s|sh3`
+- `BSUM:B6_v01_61frame_sensitivity.delayed_stop.R_pp|pp`
+- `BSUM:B6_v01_61frame_sensitivity.terciles.0.room_ratio_WR_over_3s|sh3`
+- `BSUM:B6_v01_61frame_sensitivity.terciles.1.room_ratio_WR_over_3s|sh3`
+- `BSUM:B6_v01_61frame_sensitivity.terciles.2.room_ratio_WR_over_3s|sh3`
+- `BSUM:B6_v01_61frame_sensitivity.terciles.3.room_ratio_WR_over_3s|sh3`
+- `BSUM:constants.tuning.kappa.median_lead_nis|f2`
+- `BSUM:constants.tuning.sigma_a2.median_lead_nis|f2`
+- `BSUM:second_imm.max_rel|sci1`
+- `BSUM:second_imm.runs|int`
+- `BSUM:second_imm_fresh.max_rel|sci1`
+- `X:X.PC.RR_N.dec.ci|ci1`
+- `REC:B0b.n_fail`
+- `REC:B1r.chosen_median`
+- `REC:imm2tune.median_brk`
+- `REC:imm2tune.sigma_a2_hi`
+- `REC:kappa_nis.hi_max`
+- `REC:kappa_nis.hi_min`
+- `REC:kappa_nis.lo_max`
+- `REC:kappa_nis.lo_min`
+- `REC:kappa_nis.n_hi`
+- `REC:kappa_nis.n_lo`
+- `REC:v12S26|Benign driving|Decision rows`
+- `REC:v12S26|Benign driving|Median ratio`
+- `REC:v12S26|Benign driving|Rows within 5% of the median (%)`
+- `REC:v12S26|Benign driving|Runs`
+- `REC:v12S26|Benign driving|Tuning runs alone: median; within 5% (%)`
+- `REC:v12S26|Cut-in|Decision rows`
+- `REC:v12S26|Cut-in|Median ratio`
+- `REC:v12S26|Cut-in|Rows within 5% of the median (%)`
+- `REC:v12S26|Cut-in|Runs`
+- `REC:v12S26|Cut-in|Tuning runs alone: median; within 5% (%)`
+- `REC:v12S26|Lead braking|Decision rows`
+- `REC:v12S26|Lead braking|Median ratio`
+- `REC:v12S26|Lead braking|Rows within 5% of the median (%)`
+- `REC:v12S26|Lead braking|Runs`
+- `REC:v12S26|Lead braking|Tuning runs alone: median; within 5% (%)`
+- `REC:v12S26|Pedestrian crossing|Decision rows`
+- `REC:v12S26|Pedestrian crossing|Median ratio`
+- `REC:v12S26|Pedestrian crossing|Rows within 5% of the median (%)`
+- `REC:v12S26|Pedestrian crossing|Runs`
+- `REC:v12S26|Pedestrian crossing|Tuning runs alone: median; within 5% (%)`
+- `REC:v12S26|Stopped vehicle|Decision rows`
+- `REC:v12S26|Stopped vehicle|Median ratio`
+- `REC:v12S26|Stopped vehicle|Rows within 5% of the median (%)`
+- `REC:v12S26|Stopped vehicle|Runs`
+- `REC:v12S26|Stopped vehicle|Tuning runs alone: median; within 5% (%)`
+- `REC:v12S26|Vehicle crossing|Decision rows`
+- `REC:v12S26|Vehicle crossing|Median ratio`
+- `REC:v12S26|Vehicle crossing|Rows within 5% of the median (%)`
+- `REC:v12S26|Vehicle crossing|Runs`
+- `REC:v12S26|Vehicle crossing|Tuning runs alone: median; within 5% (%)`
+- `REC:v12S5|Evaluated decisions|All`
+- `REC:v12S5|Evaluated decisions|Ego moving`
+- `REC:v12S5|Evaluated decisions|Lead braking`
+- `REC:v12S5|Evaluated decisions|Lead stopped`
+- `REC:v12S5|RR(AM)|All`
+- `REC:v12S5|RR(AM)|Ego moving`
+- `REC:v12S5|RR(AM)|Lead braking`
+- `REC:v12S5|RR(AM)|Lead stopped`
+- `REC:v12S5|RR(CK3)|All`
+- `REC:v12S5|RR(CK3)|Ego moving`
+- `REC:v12S5|RR(CK3)|Lead braking`
+- `REC:v12S5|RR(CK3)|Lead stopped`
+- `REC:v12S5|RR(N)|All`
+- `REC:v12S5|RR(N)|All|basic`
+- `REC:v12S5|RR(N)|Ego moving`
+- `REC:v12S5|RR(N)|Lead braking`
+- `REC:v12S5|RR(N)|Lead stopped`
+- `REC:v12S5|RR(NA)|All`
+- `REC:v12S5|RR(NA)|Ego moving`
+- `REC:v12S5|RR(NA)|Lead braking`
+- `REC:v12S5|RR(NA)|Lead stopped`
+- `REC:v12S5|Room $R$ (pp)|All`
+- `REC:v12S5|Room $R$ (pp)|Ego moving`
+- `REC:v12S5|Room $R$ (pp)|Lead braking`
+- `REC:v12S5|Room $R$ (pp)|Lead stopped`

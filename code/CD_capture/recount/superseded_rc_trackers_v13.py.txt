@@ -1,0 +1,704 @@
+"""Recount (second program) of package CD, revision v13: tracker variants (Table III, A10 section 3 rows B1-B4, section 5.7)
+and the rate x latency variants (B7). New file, 20 Nov 2026 (Claude Fable 5.2).
+
+Written from AMENDMENT_10_v13.md (sections 2, 3, 5.7, 5.8, 10.1), CD_DEFINITIONS_v13.md, the writer's CD_DEFINITIONS_TRK_v13.md,
+package B's method of record (B_ANALYSIS_DEFINITIONS_v01.md, B_FRESH_DEFINITIONS_v02.md, b_analysis_v01.py for the lag) and A's key
+list. No first program of work\\CD_capture\\analysis or work\\CD_capture\\tools was read. The gridless engine is this recount's own
+(rc_core_v13 / rc_kern_v13: selection paths, curves, numba kernel); the scoring library of record is used for cross-checks only.
+Shared with the first program (A10 section 10.1(b)): the extracted arrays, the B7 detection files, the resample draws.
+
+Modes
+  --test-old          the 35 old evaluation runs, variant arrays of package B (B_retrack\\out\\retrack\\<x>\\<run>_arrays.npz);
+                      compares with package B's values of record and writes the values under A's key names. B7: the (i) identity
+                      check on the one old run with sweeps (p1b_fit_finite_0037); no old-run B7 arrays are defined.
+  --test-b7-format    the B7 scoring path on OLD arrays of the same format (stand-ins; the values are NOT B7 values).
+  (none)              fresh runs. Refused unless revision_v13\\LOCK_A10_2.txt exists.
+
+Output: {"family", "program", "test_old", "values": {A key: value}, "details": {...}} (BRIEF_COMMON_v13 convention).
+"""
+import os
+os.environ.setdefault('OPENBLAS_NUM_THREADS', '1')
+import argparse, csv, json, pathlib, sys, time
+import numpy as np
+
+HERE = pathlib.Path(__file__).resolve().parent
+if str(HERE) not in sys.path:
+    sys.path.insert(0, str(HERE))
+import rc_core_v13 as K                      # noqa: E402  (this recount's own core)
+L = K.L
+
+PROGRAM = 'rc_trackers_v13.py'
+BRT = K.ROOT13 / 'work' / 'B_retrack'
+OLD_RETRACK = BRT / 'out' / 'retrack'
+OLD_RUNS = ['p1b_fit_finite_%04d' % i for i in range(5, 40)]
+OLD_B7_RUN = 'p1b_fit_finite_0037'
+SEED_OLD = 20261113
+NBOOT_OLD = 2000                             # the draw of record's first 2,000 rows (gridless practice of record)
+TRK_CONST = K.SHARED / 'trk_constants_v01.json'
+B_SUMMARY = BRT / 'out' / 'B_RESULTS_SUMMARY_v13.json'
+B7_DIR = K.CD / 'b7'
+IDENT_TOL = 1e-6
+DELTA = K.DELTA
+
+# name in A's keys -> arrays folder (CD_DEFINITIONS_TRK section 2)
+VARIANTS = [('CV', 'CV0'), ('CV2', 'B3'), ('CA', 'B4'), ('IMM', 'B1'), ('AQ', 'B2')]
+OPTIONAL = [('IMM090', 'B1_d090'), ('IMM098', 'B1_d098')]     # B1's transition sensitivities: only if every run has arrays
+B7_CONFIGS = [(2, 0.0), (2, 0.1), (5, 0.0), (5, 0.1), (5, 0.2), (10, 0.0), (10, 0.1), (10, 0.2)]
+CRIT = {'F0': 'cF0', 'E': 'cE', 'N': 'cN', 'CK3': 'cCK3'}
+NEEDED = ['k', 'evaluated', 'clear', 'vbar', 'idx55', 'des', 'phase', 'lead_found', 'vhat', 'ahat_long', 'dx_pred3', 'now']
+POPS = ['all', 'pre', 'brk', 'stop', 'tru_stop']
+
+
+def lat_txt(lat):
+    return '0' if lat == 0 else ('%g' % lat)
+
+
+def b7_key(r, lat):
+    return 'B7.%d.%s' % (r, lat_txt(lat))
+
+
+def b7_folder(r, lat):
+    return 'B7_%d_%s' % (r, lat_txt(lat))
+
+
+# ------------------------------------------------------------------------------------------------ loading
+def run_from_npz(path, rid):
+    z = np.load(K.check_path(path), allow_pickle=False)
+    miss = [k for k in list(CRIT.values()) + NEEDED if k not in z.files]
+    if miss:
+        raise SystemExit('REFUSED: %s lacks %s' % (path, miss))
+    r = K._run_from_arrays(z, rid, CRIT)
+    r['ph'] = np.asarray(z['phase']).astype(np.int64)
+    r['lead_found'] = np.asarray(z['lead_found']).astype(bool)
+    for k in ('vhat', 'ahat_long', 'dx_pred3', 'now'):
+        r[k] = np.asarray(z[k], float)
+    r['meta'] = None
+    if 'meta' in z.files:
+        try:
+            r['meta'] = json.loads(str(z['meta']))
+        except ValueError:
+            pass
+    return r
+
+
+def load_old_variant(folder):
+    return [run_from_npz(OLD_RETRACK / folder / (rid + '_arrays.npz'), rid) for rid in OLD_RUNS]
+
+
+def fresh_cv0_lead():
+    """The fresh lead-braking runs of arrays\\CV0 (meta: family lead_braking, no lead variant; ids pc13_*), ascending run id.
+    Cross-checked with the lead-braking cases of CASES_C_v13.json: a difference is accepted only as a recorded replacement
+    (REPLACEMENTS_C_v13.json present), and the count must be 105."""
+    K.require_lock2('fresh-run arrays')
+    d = K.ARRAYS / 'CV0'
+    runs = []
+    for f in sorted(d.glob('pc13_*.npz')):
+        z = np.load(f, allow_pickle=False)
+        m = json.loads(str(z['meta'])) if 'meta' in z.files else {}
+        if m.get('family') != 'lead_braking' or m.get('lead_variant'):
+            continue
+        runs.append(run_from_npz(f, f.stem))
+    ids = [r['run'] for r in runs]
+    listed = K.fresh_run_ids('lead_braking')
+    rep_file = K.CD / 'REPLACEMENTS_C_v13.json'
+    info = dict(n=len(ids), in_arrays_not_in_cases=sorted(set(ids) - set(listed)), in_cases_not_in_arrays=sorted(set(listed) - set(ids)),
+                replacements_file_present=rep_file.is_file())
+    if ids != listed and not rep_file.is_file():
+        raise SystemExit('REFUSED: the lead-braking runs of arrays\\CV0 differ from CASES_C_v13.json and there is no '
+                         'REPLACEMENTS_C_v13.json: %s' % info)
+    if len(ids) != 105:
+        raise SystemExit('REFUSED: %d fresh lead-braking runs in arrays\\CV0 (105 expected)' % len(ids))
+    return runs, info
+
+
+def load_fresh_folder(folder, ids):
+    """arrays\\<folder>\\<rid>.npz for the given run ids; (None, reason) if the folder or any run is missing."""
+    K.require_lock2('fresh-run arrays')
+    d = K.ARRAYS / folder
+    if not d.is_dir():
+        return None, 'folder arrays\\%s not found' % folder
+    miss = [rid for rid in ids if not (d / (rid + '.npz')).is_file()]
+    if miss:
+        return None, 'arrays\\%s lacks %d of %d runs (first: %s)' % (folder, len(miss), len(ids), miss[0])
+    return [run_from_npz(d / (rid + '.npz'), rid) for rid in ids], None
+
+
+def bind_to_cv0(runs, cv0, label):
+    """CD_DEFINITIONS_TRK sections 2-3: k, idx55, evaluated and the cleaned clearance must equal the run's CV0 array (they depend on
+    the ego state and truth only), otherwise stop; the truth phase of every tracker and chain is the CV0 file's. Returns the number
+    of decisions whose own phase array differs (diagnostic only)."""
+    ndiff = 0
+    for r, c in zip(runs, cv0):
+        if r['run'] != c['run']:
+            raise SystemExit('REFUSED: %s: run order differs from CV0' % label)
+        for key in ('k', 'idx55', 'ev', 'clear1'):
+            if not np.array_equal(r[key], c[key]):
+                raise SystemExit('REFUSED: %s %s: %s differs from the CV0 array' % (label, r['run'], key))
+        ndiff += int((r['ph'] != c['ph']).sum())
+        r['ph'] = c['ph'].copy()
+    return ndiff
+
+
+# ------------------------------------------------------------------------------------------------ one tracker / one chain
+def lag_of(runs):
+    """Method of record (package B, b_analysis_v01; CD_DEFINITIONS_TRK section 6): per run t_stop = `now` of the first decision
+    (evaluated or not) with truth phase 2; selected: evaluated, truth phase 2, 0 <= now - t_stop < 1, lead_found; finite dx_pred3
+    pooled over runs; median. Beside (diagnostics, never exported): the tick clock (k - k_stop in 0..19) and t_stop taken from the
+    evaluated decisions only."""
+    v_main, v_tick, v_evstop = [], [], []
+    for r in runs:
+        ph = r['ph']; ev = r['ev']; k = r['k'].astype(np.int64); dx = r['dx_pred3']; lf = r['lead_found']
+        i2 = np.flatnonzero(ph == 2)
+        if not i2.size:
+            continue
+        fin = np.isfinite(dx)
+        with np.errstate(invalid='ignore'):
+            t = r['now'] - r['now'][i2[0]]
+            v_main.append(dx[ev & (ph == 2) & (t >= 0) & (t < 1) & lf & fin])
+        d = k - k[i2[0]]
+        v_tick.append(dx[ev & (ph == 2) & (d >= 0) & (d < 20) & lf & fin])
+        j2 = np.flatnonzero((ph == 2) & ev)
+        if j2.size:
+            de = k - k[j2[0]]
+            v_evstop.append(dx[ev & (ph == 2) & (de >= 0) & (de < 20) & lf & fin])
+
+    def med(v):
+        v = np.concatenate(v) if v else np.zeros(0)
+        if not v.size:
+            return dict(median=None, n=0, q25=None, q75=None)
+        return dict(median=float(np.median(v)), n=int(v.size), q25=float(np.percentile(v, 25)), q75=float(np.percentile(v, 75)))
+    o = med(v_main)
+    o['tick_clock'] = med(v_tick); o['tstop_from_evaluated_tick_clock'] = med(v_evstop)
+    o['tick_clock_selects_same_n'] = bool(o['tick_clock']['n'] == o['n'])
+    return o
+
+
+def pop_masks(r):
+    ev = r['ev']
+    ep = K.est_phase(r['vhat'], r['ahat_long'], r['lead_found'], -1.0)
+    return [ev, ev & (ep == 0), ev & (ep == 1), ev & (ep == 2), ev & (r['ph'] == 2)]
+
+
+def analyse(runs, CNT, label, with_ceiling, a9=None, save_boot=None, boot_ck3=True):
+    """All quantities of one tracker (with_ceiling) or one B7 chain on one run set, each on its own room (F0_x, E_x).
+    CNT (B, nrun): bootstrap run counts. The bootstrap covers the all-decisions population: N, E5_x (tracker) and CK3 (boot_ck3).
+    m_x, A_x and the ranks u stay at their full-sample values in every resample."""
+    t0 = time.time()
+    n = len(runs)
+    out = dict(label=label, n_runs=n, n_dec=int(sum(int(r['ev'].sum()) for r in runs)))
+    names = ['F0', 'E', 'N', 'CK3']
+    rs = K.ratio_summary(np.concatenate([K.margin_ratio_values(r) for r in runs]))
+    out['margin_ratio'] = rs
+    if with_ceiling:
+        u, uinfo = K.e5_u(runs, 'F0', 'E')
+        for r, uu in zip(runs, u):
+            r['crit']['E5x'] = K.oracle_crit(r['crit']['F0'], rs['median'], rs['A'], uu)
+        out['e5_ranks'] = uinfo
+        names = ['F0', 'E', 'N', 'E5x', 'CK3']
+    preps = [K.Prep(r) for r in runs]
+    masks = [pop_masks(r) for r in runs]
+    curves = {nm: K.build_curves(runs, preps, nm, lambda k: masks[k]) for nm in names}
+    one = np.ones((1, n))
+    pops = {}
+    for pi, pn in enumerate(POPS):
+        nm_p = names if pn == 'all' else ['F0', 'E', 'N', 'CK3']
+        e = K.Problem(nm_p, [curves[x][pi] for x in nm_p]).evaluate(one)
+        den = float(e['denE'][0]); nn = float(e['n'][0])
+        pops[pn] = dict(n=int(round(nn)), denE=den, R_pp=den / K.NLEV, R_dec=(L.dec_eq(den, nn) if nn else None),
+                        D={x: float(e['D'][x][0]) for x in e['D']}, RR={x: L.ratio(float(e['D'][x][0]), den) for x in e['D']})
+    out['populations'] = pops
+    p = pops['all']
+    if a9 is not None:                                          # library of record, full sample, all decisions
+        el, _ = K.library_point(a9, runs, names, lambda k: (masks[k][0],), 0, 'F0', 'E')
+        out['library_of_record'] = dict(denE=el['denE'], D=el['D'],
+                                        max_abs_diff=float(max([abs(el['denE'] - p['denE'])] + [abs(el['D'][x] - p['D'][x]) for x in p['D']])))
+    bn = ['F0', 'E', 'N'] + (['E5x'] if with_ceiling else []) + (['CK3'] if boot_ck3 else [])
+    e = K.Problem(bn, [curves[x][0] for x in bn]).evaluate(CNT)
+    den = e['denE']
+    b = dict(RR_N=K.ratio_arr(e['D']['N'], den), R_pp=den / K.NLEV)
+    pts = dict(RR_N=p['RR']['N'], R_pp=p['R_pp'])
+    if boot_ck3:
+        b['RR_CK3'] = K.ratio_arr(e['D']['CK3'], den); pts['RR_CK3'] = p['RR']['CK3']
+    if with_ceiling:
+        b['c'] = K.ratio_arr(e['D']['E5x'], den); b['RR_minus_c'] = b['RR_N'] - b['c']
+        pts['c'] = p['RR']['E5x']; pts['RR_minus_c'] = p['RR']['N'] - p['RR']['E5x']
+    out['intervals'] = {k: dict(point=pts[k], ci=K.pct_interval(v, 0.95), n_resamples=int(v.size),
+                                n_invalid=int((~np.isfinite(v)).sum())) for k, v in b.items()}
+    out['bootstrap'] = dict(sources=bn, n_resamples=int(CNT.shape[0]), n_den_le0_dropped=int((~(den > 0)).sum()))
+    if with_ceiling:
+        cls = K.classify_h3(out['intervals']['RR_N']['ci'], out['intervals']['c']['ci'])
+        out['class_descriptive'] = dict(code=cls[0], wording=cls[1], barely_varies=rs['barely_varies'])
+    if save_boot is not None and not pathlib.Path(save_boot).exists():
+        arr = dict(denE=den, n=e['n'], D_N=e['D']['N'])
+        if boot_ck3:
+            arr['D_CK3'] = e['D']['CK3']
+        if with_ceiling:
+            arr['D_E5x'] = e['D']['E5x']
+        np.savez_compressed(save_boot, **arr)
+    out['lag'] = lag_of(runs)
+    out['seconds'] = time.time() - t0
+    return out
+
+
+# ------------------------------------------------------------------------------------------------ values under A's keys
+def nz(x):
+    """JSON null for anything undefined."""
+    if x is None:
+        return None
+    if isinstance(x, (list, tuple)):
+        return [nz(v) for v in x]
+    x = float(x)
+    return x if np.isfinite(x) else None
+
+
+def put_ci(values, key, ci):
+    ci = nz(ci)
+    values[key] = None if (ci is None or None in ci) else ci
+    values[key[:-3] + '.level'] = 0.95; values[key[:-3] + '.cal'] = 'nominal95'
+
+
+TRACKER_KEYS = ('within5', 'RR', 'RR.ci', 'c', 'c.ci', 'RR_minus_c', 'RR_minus_c.ci', 'room_pre', 'room_brk', 'room_stop', 'lag', 'RR_CK3',
+                'RR_CK3.ci', 'as_room', 'as_room.pp')
+
+
+def tracker_values(values, name, res):
+    p = res['populations']; iv = res['intervals']; pre = 'B.%s.' % name
+    values[pre + 'within5'] = nz(res['margin_ratio']['share_within_5pct'])
+    values[pre + 'RR'] = nz(p['all']['RR']['N']); put_ci(values, pre + 'RR.ci', iv['RR_N']['ci'])
+    values[pre + 'c'] = nz(p['all']['RR']['E5x']); put_ci(values, pre + 'c.ci', iv['c']['ci'])
+    values[pre + 'RR_minus_c'] = nz(iv['RR_minus_c']['point']); put_ci(values, pre + 'RR_minus_c.ci', iv['RR_minus_c']['ci'])
+    values[pre + 'room_pre'] = nz(p['pre']['R_pp']); values[pre + 'room_brk'] = nz(p['brk']['R_pp'])
+    values[pre + 'room_stop'] = nz(p['stop']['R_pp'])
+    values[pre + 'lag'] = nz(res['lag']['median'])
+    values[pre + 'RR_CK3'] = nz(p['all']['RR']['CK3'])
+    if 'RR_CK3' in iv:
+        put_ci(values, pre + 'RR_CK3.ci', iv['RR_CK3']['ci'])
+    values[pre + 'as_room'] = nz(p['tru_stop']['R_dec'])
+    values[pre + 'as_room.pp'] = nz(p['tru_stop']['R_pp'])
+
+
+def b7_values(values, r, lat, res):
+    p = res['populations']; pre = b7_key(r, lat) + '.'
+    values[pre + 'R'] = nz(p['all']['R_pp'])
+    values[pre + 'as_room'] = nz(p['tru_stop']['R_dec'])
+    values[pre + 'as_room.pp'] = nz(p['tru_stop']['R_pp'])
+    values[pre + 'RR_N'] = nz(p['all']['RR']['N']); put_ci(values, pre + 'RR_N.ci', res['intervals']['RR_N']['ci'])
+    values[pre + 'RR_CK3'] = nz(p['all']['RR']['CK3'])
+    values[pre + 'lag'] = nz(res['lag']['median'])
+
+
+def b7_rules(values, details):
+    """A10 section 3 row B7 (consequence rules), with the strings of CD_DEFINITIONS_TRK section 7. A rule whose inputs are missing
+    is null."""
+    a10 = values.get('B7.10.0.1.as_room'); a2 = values.get('B7.2.0.as_room')
+    values['B7.ratio_10_2'] = (a10 / a2) if (a10 is not None and a2 is not None and a2 > 0) else None
+    values['B7.rule_rate'] = None if (a10 is None or a2 is None) else ('consequence' if a10 < 0.5 * a2 else 'holds')
+    leaves = {}
+    for r, lat in B7_CONFIGS:
+        ci = values.get(b7_key(r, lat) + '.RR_N.ci')
+        leaves[b7_key(r, lat)] = None if ci is None else (not (ci[0] > -DELTA and ci[1] < DELTA))
+    details['B7_rule_N_leaves_by_config'] = leaves
+    if any(v is True for v in leaves.values()):
+        values['B7.rule_N'] = 'qualified'
+    elif all(v is False for v in leaves.values()):
+        values['B7.rule_N'] = 'holds'
+    else:
+        values['B7.rule_N'] = None                      # an interval is missing or undefined, and none is known to leave
+
+
+def ca_window():
+    """B.ca_window: did the CA filter (B4) reach the NIS window [1.8, 2.2]? A tuning-run property (not a fresh-run value), read from
+    the frozen constants of package B, checked against the recorded median itself and against B_RESULTS_SUMMARY_v13.json."""
+    d = json.loads(TRK_CONST.read_text(encoding='utf-8'))
+    t = d['tuning']['sigma_a2']
+    med = float(t['median_lead_nis'])
+    mine = bool(1.8 <= med <= 2.2)
+    if bool(t['window_reached']) != mine:
+        raise SystemExit('REFUSED: trk_constants window_reached %s contradicts its median NIS %r' % (t['window_reached'], med))
+    info = dict(source=str(TRK_CONST), median_lead_nis=med, window_reached_recorded=bool(t['window_reached']), sigma_a2=d['sigma_a2'])
+    try:
+        w = json.loads(B_SUMMARY.read_text(encoding='utf-8'))['constants']['tuning']['sigma_a2']['window_reached']
+    except (KeyError, OSError, ValueError) as ex:
+        info['B_RESULTS_SUMMARY_window_reached'] = 'not read: %r' % (ex,)
+    else:
+        info['B_RESULTS_SUMMARY_window_reached'] = bool(w)
+        if bool(w) != mine:
+            raise SystemExit('REFUSED: B_RESULTS_SUMMARY_v13.json and trk_constants_v01.json disagree on the CA NIS window')
+    return mine, info
+
+
+def b3b4_rule(values):
+    """A10 section 3, row B3 (point values): "depends" if under CV2 or CA the after-stop room is below half its online-CV value, or
+    RR(CK3) differs from the online CV's by more than 0.10; else "persists"."""
+    o = {}
+    for x in ('CV2', 'CA'):
+        a = values.get('B.%s.as_room' % x); a0 = values.get('B.CV.as_room'); c = values.get('B.%s.RR_CK3' % x); c0 = values.get('B.CV.RR_CK3')
+        if None in (a, a0, c, c0):
+            o[x] = None; continue
+        o[x] = dict(as_room=a, online_as_room=a0, below_half=bool(a < 0.5 * a0), RR_CK3=c, online_RR_CK3=c0, ck3_diff=c - c0,
+                    ck3_differs_gt_0p10=bool(abs(c - c0) > 0.10))
+    if o['CV2'] is None or o['CA'] is None:
+        o['outcome'] = None
+    else:
+        o['outcome'] = 'depends' if any(o[x]['below_half'] or o[x]['ck3_differs_gt_0p10'] for x in ('CV2', 'CA')) else 'persists'
+    return o
+
+
+# ------------------------------------------------------------------------------------------------ B7 (i) identity
+def read_jsonl(path):
+    with open(K.check_path(path), encoding='utf-8') as f:
+        return [json.loads(x) for x in f if x.strip()]
+
+
+def identity_run(logged_path, b7_path, last_decision_k=None):
+    """A10 B7 (i) for one run: every logged detector row (the online 2 Hz ticks) has a B7 row with the same k, the same
+    combined-cloud hash and the same number of boxes, and for each box in order every component of translation and size agrees
+    within 1e-6 m. Velocity, rotation, score and class differences are reported only (CD_DEFINITIONS_TRK section 9.4)."""
+    lg = read_jsonl(logged_path); b7 = read_jsonl(b7_path)
+    ks = [int(r['k']) for r in b7]
+    if any(y <= x for x, y in zip(ks, ks[1:])):
+        raise SystemExit('REFUSED: %s is not in strictly ascending k' % b7_path)
+    byk = {int(r['k']): r for r in b7}
+    o = dict(ticks=len(lg), b7_rows=len(b7), missing_k=0, hash_mismatch=0, count_mismatch=0, name_mismatch=0, no_rate2_flag=0,
+             not_online_tick_flag=0, boxes=0, max_translation=0., max_size=0., max_velocity=0., max_rotation=0., max_score=0., max_time=0.)
+    for r in lg:
+        q = byk.get(int(r['k']))
+        if q is None:
+            o['missing_k'] += 1; continue
+        if q.get('combined_hash') != r.get('combined_hash'):
+            o['hash_mismatch'] += 1
+        if 2 not in q.get('rates_hz', []):
+            o['no_rate2_flag'] += 1
+        if not q.get('online_tick', False):
+            o['not_online_tick_flag'] += 1
+        o['max_time'] = max(o['max_time'], abs(float(q['time']) - float(r['time'])))
+        A = r['model']; B = q['model']
+        if len(A) != len(B):
+            o['count_mismatch'] += 1; continue
+        for x, y in zip(A, B):
+            o['boxes'] += 1
+            if x.get('detection_name') != y.get('detection_name'):
+                o['name_mismatch'] += 1
+            for key, nm in (('translation', 'max_translation'), ('size', 'max_size'), ('velocity', 'max_velocity'),
+                            ('rotation', 'max_rotation')):
+                dv = float(np.max(np.abs(np.asarray(x[key], float) - np.asarray(y[key], float))))
+                o[nm] = max(o[nm], dv) if np.isfinite(dv) else float('inf')
+            ds = abs(float(x['detection_score']) - float(y['detection_score']))
+            o['max_score'] = max(o['max_score'], ds) if np.isfinite(ds) else float('inf')
+    logged_k = set(int(r['k']) for r in lg)
+    o['b7_2hz_rows_not_logged'] = int(sum(1 for r in b7 if 2 in r.get('rates_hz', []) and int(r['k']) not in logged_k
+                                         and (last_decision_k is None or int(r['k']) <= last_decision_k)))
+    o['pass'] = bool(o['missing_k'] == 0 and o['hash_mismatch'] == 0 and o['count_mismatch'] == 0
+                     and o['max_translation'] <= IDENT_TOL and o['max_size'] <= IDENT_TOL)
+    o['pass_every_component_1e-6'] = bool(o['pass'] and o['name_mismatch'] == 0
+                                          and max(o['max_velocity'], o['max_rotation'], o['max_score']) <= IDENT_TOL)
+    return o
+
+
+def fresh_capture_dir(rid):
+    """runs\\<rid>\\<rid>\\capture\\<case>\\ (its single capture folder)."""
+    K.require_lock2('fresh-run logs')
+    base = K.RUNS_DIR / rid / rid / 'capture'
+    caps = [p for p in base.iterdir() if p.is_dir()] if base.is_dir() else []
+    if len(caps) != 1:
+        raise SystemExit('REFUSED: %s does not hold exactly one capture folder' % base)
+    return caps[0]
+
+
+def old_capture_dir(rid):
+    with open(K.RUN_INDEX, newline='', encoding='utf-8') as f:
+        for row in csv.DictReader(f):
+            if row['archive'] == rid:
+                return pathlib.Path(row['cap'])
+    raise SystemExit('REFUSED: %s is not in the run index' % rid)
+
+
+def identity_all(ids, cap_of, last_k):
+    per = {}; missing = []
+    for rid in ids:
+        f7 = B7_DIR / rid / 'b7_detections_v13.jsonl'
+        if not f7.is_file():
+            missing.append(rid); continue
+        fl = cap_of(rid) / 'detections.jsonl'
+        if not fl.is_file():
+            missing.append(rid); continue
+        per[rid] = identity_run(fl, f7, last_k.get(rid))
+    npass = sum(1 for v in per.values() if v['pass'])
+    if per and npass < len(per):
+        status = 'fail'                                  # one failing run decides
+    elif per and not missing:
+        status = 'pass'
+    else:
+        status = None                                    # not every run could be checked, and none failed
+    mx = {k: (max(v[k] for v in per.values()) if per else None)
+          for k in ('max_translation', 'max_size', 'max_velocity', 'max_rotation', 'max_score', 'max_time')}
+    tot = {k: (int(sum(v[k] for v in per.values())) if per else None)
+           for k in ('ticks', 'boxes', 'missing_k', 'hash_mismatch', 'count_mismatch', 'name_mismatch', 'no_rate2_flag',
+                     'not_online_tick_flag', 'b7_2hz_rows_not_logged')}
+    return status, dict(runs_checked=len(per), runs_pass=npass, runs_without_files=missing, tolerance_m=IDENT_TOL, maxima=mx, totals=tot,
+                        runs_pass_every_component=sum(1 for v in per.values() if v['pass_every_component_1e-6']), per_run=per)
+
+
+# ------------------------------------------------------------------------------------------------ comparisons (old runs)
+def cmp_old(name, folder, res, values):
+    """Against package B's values of record (first program b_analysis_v01, out\\banalysis\\B_<variant>_v01.json; RR - c against
+    <variant>_ORACLE_CHECK_v01.json intervals.diff_N_minus_E5x). Same draw, same 2,000 rows."""
+    f = BRT / 'out' / 'banalysis' / ('B_%s_v01.json' % folder)
+    d = json.loads(f.read_text(encoding='utf-8'))
+    P = d['points']; I = d['intervals']['all']; pre = 'B.%s.' % name; iv = res['intervals']
+    pairs = [('n_dec', res['n_dec'], P['all']['n']),
+             ('within5', values[pre + 'within5'], d['ratio_N_F0']['share_within_5pct']),
+             ('m_x', res['margin_ratio']['median'], d['ceiling']['m_x']), ('A_x', res['margin_ratio']['A'], d['ceiling']['A_x']),
+             ('R_pp', res['populations']['all']['R_pp'], P['all']['R_pp']),
+             ('RR', values[pre + 'RR'], P['all']['RR']['N']), ('c', values[pre + 'c'], P['all']['RR']['E5x']),
+             ('RR_CK3', values[pre + 'RR_CK3'], P['all']['RR']['CK3']),
+             ('room_pre', values[pre + 'room_pre'], P['est_before']['R_pp']),
+             ('room_brk', values[pre + 'room_brk'], P['est_braking']['R_pp']),
+             ('room_stop', values[pre + 'room_stop'], P['est_stopped']['R_pp']),
+             ('as_room', values[pre + 'as_room'], P['tru_stopped']['R_deceq']),
+             ('as_room.pp', values[pre + 'as_room.pp'], P['tru_stopped']['R_pp']),
+             ('lag', values[pre + 'lag'], d['lag_dx3_first_second_after_stop']['median']),
+             ('lag_n', res['lag']['n'], d['lag_dx3_first_second_after_stop']['n'])]
+    for k, mk, bk in (('RR.ci', 'RR_N', 'RR_N'), ('c.ci', 'c', 'RR_E5x'), ('RR_CK3.ci', 'RR_CK3', 'RR_CK3'), ('R_pp.ci', 'R_pp', 'R_pp')):
+        if mk in iv and bk in I:
+            pairs += [(k + '.lo', iv[mk]['ci'][0], I[bk]['ci'][0]), (k + '.hi', iv[mk]['ci'][1], I[bk]['ci'][1])]
+    oc = BRT / 'out' / 'banalysis' / ('%s_ORACLE_CHECK_v01.json' % folder)
+    if oc.is_file():
+        try:
+            v = json.loads(oc.read_text(encoding='utf-8'))['intervals']['diff_N_minus_E5x']
+            pairs += [('RR_minus_c', iv['RR_minus_c']['point'], v['point']), ('RR_minus_c.ci.lo', iv['RR_minus_c']['ci'][0], v['ci'][0]),
+                      ('RR_minus_c.ci.hi', iv['RR_minus_c']['ci'][1], v['ci'][1])]
+        except (KeyError, ValueError):
+            pass
+    rows = []
+    for k, mine, ref in pairs:
+        dv = None if (mine is None or ref is None) else abs(float(mine) - float(ref))
+        rows.append(dict(key=k, recount=mine, B_record=ref, abs_diff=dv))
+    dd = [r['abs_diff'] for r in rows if r['abs_diff'] is not None]
+    mx = max(dd) if dd else float('nan')
+    return dict(reference=str(f), nboot_reference=d.get('nboot'), n_compared=len(dd), n_not_comparable=len(rows) - len(dd), rows=rows,
+                max_abs_diff=mx, agree_1e9=bool(mx <= 1e-9))
+
+
+# ------------------------------------------------------------------------------------------------ pieces
+def combine(a, stem, outf, old):
+    """Merge piece outputs of the same mode (made with --only and their own --tag): values are taken from the piece that computed
+    them (a non-null value never meets a different non-null value); then the rules, B.ca_window and (fresh) B7.identity."""
+    base = stem[:len(stem) - len(a.tag)] if a.tag else stem
+    values = {}; pieces = {}
+    for tag in [x for x in a.combine.split(',') if x]:
+        f = K.OUT / ('%s%s.json' % (base, tag))
+        d = json.loads(f.read_text(encoding='utf-8'))
+        if d.get('program') != PROGRAM or bool(d.get('test_old')) != bool(old) or d.get('WARNING'):
+            raise SystemExit('REFUSED: %s is not a piece of this mode' % f)
+        for k, v in d['values'].items():
+            if k in ('B.tuning', 'B.ca_window', 'B7.identity', 'B7.ratio_10_2', 'B7.rule_rate', 'B7.rule_N'):
+                continue
+            if values.get(k) is not None and v is not None and values[k] != v:
+                raise SystemExit('REFUSED: %s differs between pieces' % k)
+            if values.get(k) is None:
+                values[k] = v
+        pieces[tag] = dict(file=str(f), sha256=K.KN.sha256_file(f), only=d['details'].get('only'), draw=d['details'].get('draw'),
+                           runs=d['details'].get('runs'), trackers=d['details'].get('trackers'), B7=d['details'].get('B7'))
+    runs = [p['runs'] for p in pieces.values()]
+    if any(r != runs[0] for r in runs) or len(set(p['draw'] for p in pieces.values())) != 1:
+        raise SystemExit('REFUSED: the pieces do not share the run set and the draw')
+    details = dict(role='second program (recount), AMENDMENT_10_v13 section 10.1(b)', model='claude-fable-5-2', combined_from=pieces,
+                   runs=runs[0], draw=next(iter(pieces.values()))['draw'])
+    rule = b3b4_rule(values); details['B3_B4_rule'] = rule; values['B.tuning'] = rule['outcome']
+    cw, cwd = ca_window(); values['B.ca_window'] = cw; details['ca_window'] = cwd
+    b7_rules(values, details)
+    values['B7.identity'] = None
+    if not old:
+        cv0, _ = fresh_cv0_lead()
+        if [r['run'] for r in cv0] != runs[0]:
+            raise SystemExit('REFUSED: the pieces were made on another run set')
+        st, det = identity_all(runs[0], fresh_capture_dir, {r['run']: int(r['k'][-1]) for r in cv0})
+        values['B7.identity'] = st; details['B7_identity'] = det
+    details['written'] = K.clock()
+    print('written %s' % K.write_new(outf, dict(family='TRK', program=PROGRAM, test_old=bool(old), values=values, details=details)), flush=True)
+
+
+# ------------------------------------------------------------------------------------------------ main
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--test-old', action='store_true')
+    ap.add_argument('--test-b7-format', action='store_true')
+    ap.add_argument('--part', default='all', choices=['all', 'trackers', 'b7'])
+    ap.add_argument('--only', default='', help='comma list of tracker names (CV,CV2,CA,IMM,AQ,IMM090,IMM098) and/or B7 folders '
+                                               '(B7_10_0.1), for a run in pieces; use with --tag')
+    ap.add_argument('--tag', default='')
+    ap.add_argument('--threads', type=int, default=2)
+    ap.add_argument('--boot', type=int, default=0, help='resamples (default: 20,000 fresh; 2,000 old runs)')
+    ap.add_argument('--b7-ck3-ci', action='store_true', help='also bootstrap RR_CK3 of the B7 chains (details only; slower)')
+    ap.add_argument('--no-library', action='store_true')
+    ap.add_argument('--combine', default='', help='comma list of the tags of piece outputs (runs made with --only): merges their '
+                                                  'values, then computes the rules and the B7 identity; writes <stem><tag>.json')
+    a = ap.parse_args()
+    t00 = time.time()
+    nthreads = K.set_workers(min(a.threads, 2))
+    old = a.test_old or a.test_b7_format
+    stem = ('TESTOLD_RC_TRK_v13' if a.test_old else 'TESTB7FMT_RC_TRK_v13' if a.test_b7_format else 'RC_TRK_v13') + a.tag
+    outf = K.OUT / (stem + '.json')
+    if outf.exists():
+        raise SystemExit('REFUSED: %s exists (outputs are never overwritten)' % outf)
+    if not old:
+        K.require_lock2('fresh-run arrays')                    # before anything else
+    A9 = None if a.no_library else K.try_a9()
+    only = [x for x in a.only.split(',') if x]
+    if a.combine:
+        return combine(a, stem, outf, old)
+    values = {}
+    details = dict(role='second program (recount), AMENDMENT_10_v13 section 10.1(b)', model='claude-fable-5-2', started=K.clock(),
+                   threads=nthreads, delta=DELTA, only=only or 'everything',
+                   shared='extracted arrays, B7 detection files, resample draws; scoring library of record for cross-checks only',
+                   status='descriptive (A10 section 5.7); every interval nominal 95% percentile', trackers={}, B7={})
+    if old:
+        nb = a.boot or NBOOT_OLD
+        CNT_OLD = K.counts_of(np.random.default_rng(SEED_OLD).integers(0, 35, (20000, 35))[:nb], 35)
+        details['draw'] = ('first %d rows of default_rng(%d).integers(0, 35, (20000, 35)), runs p1b_fit_finite_0005..0039 in name '
+                           'order (the draw of record)' % (nb, SEED_OLD))
+    else:
+        nb = a.boot or K.NBOOT
+        details['draw'] = ('first %d rows of default_rng(%d).integers(0, n, (20000, n)) as counts per run, runs in ascending run id '
+                           'order' % (nb, K.SEED_BOOT))
+    cnt_cache = {}
+
+    def counts(n):
+        if old:
+            if n != 35:
+                raise SystemExit('REFUSED: old run set of %d runs' % n)
+            return CNT_OLD
+        if n not in cnt_cache:
+            cnt_cache[n] = K.boot_counts(n, K.NBOOT, K.SEED_BOOT)[:nb]
+        return cnt_cache[n]
+
+    # ---------------- the CV0 arrays: run set, truth phase and consistency reference of every tracker and chain
+    if old:
+        cv0 = load_old_variant('CV0'); ids = list(OLD_RUNS)
+    else:
+        cv0, info = fresh_cv0_lead(); ids = [r['run'] for r in cv0]
+        details['run_set'] = info
+    details['runs'] = ids
+    details['n_evaluated_per_run'] = [int(r['ev'].sum()) for r in cv0]
+    last_k = {r['run']: int(r['k'][-1]) for r in cv0}
+
+    def get(folder):
+        if folder == 'CV0':
+            runs = [dict(r, crit=dict(r['crit'])) for r in cv0]
+            return runs, None, 0
+        if old:
+            runs, note = load_old_variant(folder), None
+        else:
+            runs, note = load_fresh_folder(folder, ids)
+        if runs is None:
+            return None, note, None
+        return runs, None, bind_to_cv0(runs, cv0, folder)
+
+    # ---------------- Table III trackers
+    if a.part in ('all', 'trackers') and not a.test_b7_format:
+        for name, folder in VARIANTS + OPTIONAL:
+            if only and name not in only:
+                continue
+            optional = (name, folder) in OPTIONAL
+            runs, note, ndiff = get(folder)
+            if runs is None:
+                details['trackers'][name] = dict(not_done=note)
+                for k in TRACKER_KEYS:
+                    values['B.%s.%s' % (name, k)] = None
+                print('%s: not done (%s)%s' % (name, note, '; optional sensitivity' if optional else ''), flush=True)
+                continue
+            res = analyse(runs, counts(len(runs)), '%s (%s)' % (name, folder), True, A9,
+                          save_boot=K.OUT / ('%s_boot_%s.npz' % (stem, name)))
+            res['decisions_own_phase_differs_from_CV0'] = ndiff
+            tracker_values(values, name, res)
+            details['trackers'][name] = res
+            print('%-6s n %d R %.6f pp RR %.6g c %.6g RR_CK3 %.6f as_room %s lag %s (%.0f s)'
+                  % (name, res['n_dec'], res['populations']['all']['R_pp'], res['populations']['all']['RR']['N'],
+                     res['populations']['all']['RR']['E5x'], res['populations']['all']['RR']['CK3'], values['B.%s.as_room' % name],
+                     values['B.%s.lag' % name], res['seconds']), flush=True)
+            if a.test_old:
+                c = cmp_old(name, folder, res, values)
+                details['trackers'][name]['check_vs_B_record'] = c
+                print('   vs package B record (%s): %d values, max |diff| %.3g, agree within 1e-9: %s'
+                      % (folder, c['n_compared'], c['max_abs_diff'], c['agree_1e9']), flush=True)
+        rule = b3b4_rule(values)
+        details['B3_B4_rule'] = rule
+        values['B.tuning'] = rule['outcome']
+        if a.test_old and rule['outcome'] is not None:
+            s = json.loads(B_SUMMARY.read_text(encoding='utf-8'))['B3_B4_rule']
+            rows = []
+            for x, bx in (('CV2', 'B3'), ('CA', 'B4')):
+                for k, mk in (('after_stop_room', 'as_room'), ('online_after_stop_room', 'online_as_room'), ('RR_CK3', 'RR_CK3'),
+                              ('online_RR_CK3', 'online_RR_CK3'), ('ck3_diff', 'ck3_diff')):
+                    rows.append(dict(key=x + '.' + k, recount=rule[x][mk], B_summary=s['tests'][bx][k],
+                                     abs_diff=abs(rule[x][mk] - s['tests'][bx][k])))
+                for k in ('below_half', 'ck3_differs_gt_0p10'):
+                    rows.append(dict(key=x + '.' + k, recount=rule[x][k], B_summary=s['tests'][bx][k], equal=bool(rule[x][k] == s['tests'][bx][k])))
+            mx = max(r['abs_diff'] for r in rows if 'abs_diff' in r)
+            same = all(r.get('equal', True) for r in rows) and (('persists' in s['outcome']) == (rule['outcome'] == 'persists'))
+            details['B3_B4_rule_check_vs_B_summary'] = dict(rows=rows, B_outcome=s['outcome'], recount_outcome=rule['outcome'],
+                                                             max_abs_diff=mx, flags_and_outcome_equal=bool(same))
+            print('B3/B4 rule vs B_RESULTS_SUMMARY_v13.json: max |diff| %.3g, flags and outcome equal: %s (%s)'
+                  % (mx, same, rule['outcome']), flush=True)
+        cw, cwd = ca_window()
+        values['B.ca_window'] = cw; details['ca_window'] = cwd
+
+    # ---------------- B7
+    if a.part in ('all', 'b7'):
+        if a.test_old:
+            st, det = identity_all([OLD_B7_RUN], old_capture_dir, last_k)
+            values['B7.identity'] = st
+            det['note'] = 'old-run test: the one old run with kept sweeps (%s) only; no old-run B7 arrays are defined, no B7 score here' % OLD_B7_RUN
+            details['B7_identity'] = det
+            print('B7 identity on %s: %s (ticks %s, boxes %s, max |d translation| %.3g, max |d size| %.3g)'
+                  % (OLD_B7_RUN, st, det['totals']['ticks'], det['totals']['boxes'], det['maxima']['max_translation'], det['maxima']['max_size']),
+                  flush=True)
+        else:
+            stand = ['CV0', 'B3', 'B4', 'B1', 'B2', 'B1_d090', 'B1_d098', 'B3']
+            for j, (r, lat) in enumerate(B7_CONFIGS):
+                fo = b7_folder(r, lat); key = b7_key(r, lat)
+                if only and fo not in only:
+                    continue
+                if a.test_b7_format:
+                    runs, note, ndiff = get(stand[j]); lab = 'STAND-IN: old arrays of %s (format test; not a B7 value)' % stand[j]
+                else:
+                    runs, note, ndiff = get(fo); lab = fo
+                if runs is None:
+                    details['B7'][key] = dict(not_done=note)
+                    for k in ('R', 'as_room', 'as_room.pp', 'RR_N', 'RR_N.ci', 'RR_CK3', 'lag'):
+                        values['%s.%s' % (key, k)] = None
+                    print('%s: not done (%s)' % (key, note), flush=True)
+                    continue
+                res = analyse(runs, counts(len(runs)), lab, False, A9, save_boot=K.OUT / ('%s_boot_%s.npz' % (stem, fo)),
+                              boot_ck3=bool(a.b7_ck3_ci or old))
+                res['decisions_own_phase_differs_from_CV0'] = ndiff
+                if (r, lat) == (2, 0.0):                        # diagnostic of B7 (i) at the array level
+                    res['max_abs_diff_vs_CV0_arrays'] = {
+                        nm: float(max(np.nanmax(np.abs(np.where(np.isfinite(x['crit'][nm]) & np.isfinite(c['crit'][nm]),
+                                                                  x['crit'][nm] - c['crit'][nm], 0.))) for x, c in zip(runs, cv0)))
+                        for nm in CRIT}
+                b7_values(values, r, lat, res)
+                details['B7'][key] = res
+                print('%-10s n %d R %.6f pp as_room %s RR_N %.6g RR_CK3 %.6f lag %s (%.0f s)'
+                      % (key, res['n_dec'], res['populations']['all']['R_pp'], values[key + '.as_room'], res['populations']['all']['RR']['N'],
+                         res['populations']['all']['RR']['CK3'], values[key + '.lag'], res['seconds']), flush=True)
+            b7_rules(values, details)
+            if not a.test_b7_format and not only:
+                st, det = identity_all(ids, fresh_capture_dir, last_k)
+                values['B7.identity'] = st; details['B7_identity'] = det
+                print('B7 identity: %s (%d of %d runs pass; %d without files)' % (st, det['runs_pass'], det['runs_checked'],
+                                                                                 len(det['runs_without_files'])), flush=True)
+
+    details['keys_beyond_A_KEYS_CD_v13'] = ['B.<x>.RR_minus_c(.ci)', 'B.<x>.RR_CK3.ci', 'B.<x>.as_room.pp', 'B.IMM.as_room', 'B.AQ.as_room',
+                                            'B.IMM090.*', 'B.IMM098.*', 'B.ca_window', 'B.tuning', 'B7.<r>.<L>.as_room.pp', 'B7.ratio_10_2',
+                                            'B7.rule_rate', 'B7.rule_N', '*.level', '*.cal']
+    details['written'] = K.clock(); details['seconds'] = time.time() - t00
+    doc = dict(family='TRK', program=PROGRAM, test_old=bool(old), values=values, details=details)
+    if a.test_b7_format:
+        doc['WARNING'] = 'format test of the B7 scoring path on OLD tracker-variant arrays; the B7.* values here are NOT B7 values'
+    print('written %s (%.0f s)' % (K.write_new(outf, doc), time.time() - t00), flush=True)
+
+
+if __name__ == '__main__':
+    main()

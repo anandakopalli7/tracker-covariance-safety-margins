@@ -1,0 +1,1749 @@
+{
+ "code": "d2_event_table_v13.py",
+ "amendment": "AMENDMENT_10_v13 sec. 6 D2",
+ "gate": "TEST_OLD: old runs only; no fresh value",
+ "test_old": true,
+ "n_runs": 35,
+ "table": {
+  "3s": {
+   "F0": {
+    "2%": {
+     "operating_point": {
+      "index": 1,
+      "g": 0.01,
+      "caution_pp": 2.5030902606006666,
+      "wrong_go_pp": 8.661037394451146
+     },
+     "runs_with_wrong_go": 34,
+     "median_of_run_medians": 9.24444911726304,
+     "range_of_run_medians": [
+      4.494163657803206,
+      15.00350592466716
+     ],
+     "per_run": [
+      {
+       "run": "p1b_fit_finite_0005",
+       "wrong_go_decisions": 14,
+       "with_first_loss": 14,
+       "median_closing_speed": 4.843672612297891
+      },
+      {
+       "run": "p1b_fit_finite_0006",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 9.999998987324766
+      },
+      {
+       "run": "p1b_fit_finite_0007",
+       "wrong_go_decisions": 45,
+       "with_first_loss": 45,
+       "median_closing_speed": 9.693016629097855
+      },
+      {
+       "run": "p1b_fit_finite_0008",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 9.999926629560937
+      },
+      {
+       "run": "p1b_fit_finite_0009",
+       "wrong_go_decisions": 21,
+       "with_first_loss": 21,
+       "median_closing_speed": 4.928087776558833
+      },
+      {
+       "run": "p1b_fit_finite_0010",
+       "wrong_go_decisions": 18,
+       "with_first_loss": 18,
+       "median_closing_speed": 9.981390752275017
+      },
+      {
+       "run": "p1b_fit_finite_0011",
+       "wrong_go_decisions": 27,
+       "with_first_loss": 27,
+       "median_closing_speed": 4.725477440222459
+      },
+      {
+       "run": "p1b_fit_finite_0012",
+       "wrong_go_decisions": 47,
+       "with_first_loss": 47,
+       "median_closing_speed": 9.243418557614808
+      },
+      {
+       "run": "p1b_fit_finite_0013",
+       "wrong_go_decisions": 22,
+       "with_first_loss": 22,
+       "median_closing_speed": 9.407038303536172
+      },
+      {
+       "run": "p1b_fit_finite_0014",
+       "wrong_go_decisions": 14,
+       "with_first_loss": 14,
+       "median_closing_speed": 6.956661024376016
+      },
+      {
+       "run": "p1b_fit_finite_0015",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 6.386659452647377
+      },
+      {
+       "run": "p1b_fit_finite_0016",
+       "wrong_go_decisions": 31,
+       "with_first_loss": 31,
+       "median_closing_speed": 9.245479676911271
+      },
+      {
+       "run": "p1b_fit_finite_0017",
+       "wrong_go_decisions": 44,
+       "with_first_loss": 44,
+       "median_closing_speed": 10.137085032238517
+      },
+      {
+       "run": "p1b_fit_finite_0018",
+       "wrong_go_decisions": 38,
+       "with_first_loss": 38,
+       "median_closing_speed": 7.867538310391829
+      },
+      {
+       "run": "p1b_fit_finite_0019",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 4.932602316963188
+      },
+      {
+       "run": "p1b_fit_finite_0020",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 4.827348093191695
+      },
+      {
+       "run": "p1b_fit_finite_0021",
+       "wrong_go_decisions": 17,
+       "with_first_loss": 17,
+       "median_closing_speed": 4.7872381516420335
+      },
+      {
+       "run": "p1b_fit_finite_0022",
+       "wrong_go_decisions": 19,
+       "with_first_loss": 19,
+       "median_closing_speed": 5.242384651729924
+      },
+      {
+       "run": "p1b_fit_finite_0023",
+       "wrong_go_decisions": 27,
+       "with_first_loss": 27,
+       "median_closing_speed": 9.467179549413341
+      },
+      {
+       "run": "p1b_fit_finite_0024",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 4.842082119873936
+      },
+      {
+       "run": "p1b_fit_finite_0025",
+       "wrong_go_decisions": 3,
+       "with_first_loss": 3,
+       "median_closing_speed": 15.002682158793785
+      },
+      {
+       "run": "p1b_fit_finite_0027",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 9.924505781819475
+      },
+      {
+       "run": "p1b_fit_finite_0028",
+       "wrong_go_decisions": 13,
+       "with_first_loss": 13,
+       "median_closing_speed": 4.739148430249488
+      },
+      {
+       "run": "p1b_fit_finite_0029",
+       "wrong_go_decisions": 9,
+       "with_first_loss": 9,
+       "median_closing_speed": 4.494163657803206
+      },
+      {
+       "run": "p1b_fit_finite_0030",
+       "wrong_go_decisions": 37,
+       "with_first_loss": 37,
+       "median_closing_speed": 10.998039647255924
+      },
+      {
+       "run": "p1b_fit_finite_0031",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 14.723407439995942
+      },
+      {
+       "run": "p1b_fit_finite_0032",
+       "wrong_go_decisions": 21,
+       "with_first_loss": 21,
+       "median_closing_speed": 4.911310913942514
+      },
+      {
+       "run": "p1b_fit_finite_0033",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 15.00350592466716
+      },
+      {
+       "run": "p1b_fit_finite_0034",
+       "wrong_go_decisions": 10,
+       "with_first_loss": 10,
+       "median_closing_speed": 9.999997164544114
+      },
+      {
+       "run": "p1b_fit_finite_0035",
+       "wrong_go_decisions": 44,
+       "with_first_loss": 44,
+       "median_closing_speed": 9.592312016352356
+      },
+      {
+       "run": "p1b_fit_finite_0036",
+       "wrong_go_decisions": 28,
+       "with_first_loss": 28,
+       "median_closing_speed": 8.634718721047637
+      },
+      {
+       "run": "p1b_fit_finite_0037",
+       "wrong_go_decisions": 34,
+       "with_first_loss": 34,
+       "median_closing_speed": 9.374437520117748
+      },
+      {
+       "run": "p1b_fit_finite_0038",
+       "wrong_go_decisions": 27,
+       "with_first_loss": 27,
+       "median_closing_speed": 9.292104937449619
+      },
+      {
+       "run": "p1b_fit_finite_0039",
+       "wrong_go_decisions": 6,
+       "with_first_loss": 6,
+       "median_closing_speed": 4.687813722455376
+      }
+     ]
+    },
+    "5%": {
+     "operating_point": {
+      "index": 55,
+      "g": 0.223872113856834,
+      "caution_pp": 4.960979845326949,
+      "wrong_go_pp": 7.973462002412545
+     },
+     "runs_with_wrong_go": 34,
+     "median_of_run_medians": 9.255891346096929,
+     "range_of_run_medians": [
+      4.633432866208661,
+      15.00350592466716
+     ],
+     "per_run": [
+      {
+       "run": "p1b_fit_finite_0005",
+       "wrong_go_decisions": 11,
+       "with_first_loss": 11,
+       "median_closing_speed": 4.87651968070941
+      },
+      {
+       "run": "p1b_fit_finite_0006",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 9.999998987324766
+      },
+      {
+       "run": "p1b_fit_finite_0007",
+       "wrong_go_decisions": 44,
+       "with_first_loss": 44,
+       "median_closing_speed": 9.659883374604098
+      },
+      {
+       "run": "p1b_fit_finite_0008",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 9.999926629560937
+      },
+      {
+       "run": "p1b_fit_finite_0009",
+       "wrong_go_decisions": 19,
+       "with_first_loss": 19,
+       "median_closing_speed": 4.9286811782523685
+      },
+      {
+       "run": "p1b_fit_finite_0010",
+       "wrong_go_decisions": 18,
+       "with_first_loss": 18,
+       "median_closing_speed": 9.981390752275017
+      },
+      {
+       "run": "p1b_fit_finite_0011",
+       "wrong_go_decisions": 24,
+       "with_first_loss": 24,
+       "median_closing_speed": 4.74182073315288
+      },
+      {
+       "run": "p1b_fit_finite_0012",
+       "wrong_go_decisions": 44,
+       "with_first_loss": 44,
+       "median_closing_speed": 9.518822734047273
+      },
+      {
+       "run": "p1b_fit_finite_0013",
+       "wrong_go_decisions": 20,
+       "with_first_loss": 20,
+       "median_closing_speed": 9.745892917991466
+      },
+      {
+       "run": "p1b_fit_finite_0014",
+       "wrong_go_decisions": 13,
+       "with_first_loss": 13,
+       "median_closing_speed": 6.9661054837184455
+      },
+      {
+       "run": "p1b_fit_finite_0015",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 6.386659452647377
+      },
+      {
+       "run": "p1b_fit_finite_0016",
+       "wrong_go_decisions": 28,
+       "with_first_loss": 28,
+       "median_closing_speed": 9.07798081018309
+      },
+      {
+       "run": "p1b_fit_finite_0017",
+       "wrong_go_decisions": 43,
+       "with_first_loss": 43,
+       "median_closing_speed": 9.895443958361602
+      },
+      {
+       "run": "p1b_fit_finite_0018",
+       "wrong_go_decisions": 35,
+       "with_first_loss": 35,
+       "median_closing_speed": 8.027812239953379
+      },
+      {
+       "run": "p1b_fit_finite_0019",
+       "wrong_go_decisions": 11,
+       "with_first_loss": 11,
+       "median_closing_speed": 4.940251336443605
+      },
+      {
+       "run": "p1b_fit_finite_0020",
+       "wrong_go_decisions": 11,
+       "with_first_loss": 11,
+       "median_closing_speed": 4.806761538650882
+      },
+      {
+       "run": "p1b_fit_finite_0021",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 4.78637177241669
+      },
+      {
+       "run": "p1b_fit_finite_0022",
+       "wrong_go_decisions": 17,
+       "with_first_loss": 17,
+       "median_closing_speed": 5.067642609749476
+      },
+      {
+       "run": "p1b_fit_finite_0023",
+       "wrong_go_decisions": 23,
+       "with_first_loss": 23,
+       "median_closing_speed": 9.76376546802168
+      },
+      {
+       "run": "p1b_fit_finite_0024",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 4.842082119873936
+      },
+      {
+       "run": "p1b_fit_finite_0025",
+       "wrong_go_decisions": 3,
+       "with_first_loss": 3,
+       "median_closing_speed": 15.002682158793785
+      },
+      {
+       "run": "p1b_fit_finite_0027",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 9.924505781819475
+      },
+      {
+       "run": "p1b_fit_finite_0028",
+       "wrong_go_decisions": 10,
+       "with_first_loss": 10,
+       "median_closing_speed": 4.864310291790964
+      },
+      {
+       "run": "p1b_fit_finite_0029",
+       "wrong_go_decisions": 6,
+       "with_first_loss": 6,
+       "median_closing_speed": 4.856612554282551
+      },
+      {
+       "run": "p1b_fit_finite_0030",
+       "wrong_go_decisions": 34,
+       "with_first_loss": 34,
+       "median_closing_speed": 12.821001511632062
+      },
+      {
+       "run": "p1b_fit_finite_0031",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 14.723407439995942
+      },
+      {
+       "run": "p1b_fit_finite_0032",
+       "wrong_go_decisions": 19,
+       "with_first_loss": 19,
+       "median_closing_speed": 4.925932728840632
+      },
+      {
+       "run": "p1b_fit_finite_0033",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 15.00350592466716
+      },
+      {
+       "run": "p1b_fit_finite_0034",
+       "wrong_go_decisions": 10,
+       "with_first_loss": 10,
+       "median_closing_speed": 9.999997164544114
+      },
+      {
+       "run": "p1b_fit_finite_0035",
+       "wrong_go_decisions": 41,
+       "with_first_loss": 41,
+       "median_closing_speed": 10.24132203980953
+      },
+      {
+       "run": "p1b_fit_finite_0036",
+       "wrong_go_decisions": 25,
+       "with_first_loss": 25,
+       "median_closing_speed": 8.90692150901861
+      },
+      {
+       "run": "p1b_fit_finite_0037",
+       "wrong_go_decisions": 29,
+       "with_first_loss": 29,
+       "median_closing_speed": 9.464830681308692
+      },
+      {
+       "run": "p1b_fit_finite_0038",
+       "wrong_go_decisions": 25,
+       "with_first_loss": 25,
+       "median_closing_speed": 9.433801882010767
+      },
+      {
+       "run": "p1b_fit_finite_0039",
+       "wrong_go_decisions": 4,
+       "with_first_loss": 4,
+       "median_closing_speed": 4.633432866208661
+      }
+     ]
+    }
+   },
+   "N": {
+    "2%": {
+     "operating_point": {
+      "index": 1,
+      "g": 0.01,
+      "caution_pp": 2.531551607203504,
+      "wrong_go_pp": 8.636911942098914
+     },
+     "runs_with_wrong_go": 34,
+     "median_of_run_medians": 9.228544533052094,
+     "range_of_run_medians": [
+      4.494163657803206,
+      15.00350592466716
+     ],
+     "per_run": [
+      {
+       "run": "p1b_fit_finite_0005",
+       "wrong_go_decisions": 14,
+       "with_first_loss": 14,
+       "median_closing_speed": 4.843672612297891
+      },
+      {
+       "run": "p1b_fit_finite_0006",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 9.999998987324766
+      },
+      {
+       "run": "p1b_fit_finite_0007",
+       "wrong_go_decisions": 45,
+       "with_first_loss": 45,
+       "median_closing_speed": 9.693016629097855
+      },
+      {
+       "run": "p1b_fit_finite_0008",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 9.999926629560937
+      },
+      {
+       "run": "p1b_fit_finite_0009",
+       "wrong_go_decisions": 21,
+       "with_first_loss": 21,
+       "median_closing_speed": 4.928087776558833
+      },
+      {
+       "run": "p1b_fit_finite_0010",
+       "wrong_go_decisions": 18,
+       "with_first_loss": 18,
+       "median_closing_speed": 9.981390752275017
+      },
+      {
+       "run": "p1b_fit_finite_0011",
+       "wrong_go_decisions": 27,
+       "with_first_loss": 27,
+       "median_closing_speed": 4.725477440222459
+      },
+      {
+       "run": "p1b_fit_finite_0012",
+       "wrong_go_decisions": 47,
+       "with_first_loss": 47,
+       "median_closing_speed": 9.211609389192917
+      },
+      {
+       "run": "p1b_fit_finite_0013",
+       "wrong_go_decisions": 22,
+       "with_first_loss": 22,
+       "median_closing_speed": 9.407038303536172
+      },
+      {
+       "run": "p1b_fit_finite_0014",
+       "wrong_go_decisions": 14,
+       "with_first_loss": 14,
+       "median_closing_speed": 6.956661024376016
+      },
+      {
+       "run": "p1b_fit_finite_0015",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 6.386659452647377
+      },
+      {
+       "run": "p1b_fit_finite_0016",
+       "wrong_go_decisions": 31,
+       "with_first_loss": 31,
+       "median_closing_speed": 9.245479676911271
+      },
+      {
+       "run": "p1b_fit_finite_0017",
+       "wrong_go_decisions": 44,
+       "with_first_loss": 44,
+       "median_closing_speed": 10.137085032238517
+      },
+      {
+       "run": "p1b_fit_finite_0018",
+       "wrong_go_decisions": 38,
+       "with_first_loss": 38,
+       "median_closing_speed": 7.867538310391829
+      },
+      {
+       "run": "p1b_fit_finite_0019",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 4.932602316963188
+      },
+      {
+       "run": "p1b_fit_finite_0020",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 4.827348093191695
+      },
+      {
+       "run": "p1b_fit_finite_0021",
+       "wrong_go_decisions": 17,
+       "with_first_loss": 17,
+       "median_closing_speed": 4.7872381516420335
+      },
+      {
+       "run": "p1b_fit_finite_0022",
+       "wrong_go_decisions": 19,
+       "with_first_loss": 19,
+       "median_closing_speed": 5.242384651729924
+      },
+      {
+       "run": "p1b_fit_finite_0023",
+       "wrong_go_decisions": 27,
+       "with_first_loss": 27,
+       "median_closing_speed": 9.467179549413341
+      },
+      {
+       "run": "p1b_fit_finite_0024",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 4.842082119873936
+      },
+      {
+       "run": "p1b_fit_finite_0025",
+       "wrong_go_decisions": 3,
+       "with_first_loss": 3,
+       "median_closing_speed": 15.002682158793785
+      },
+      {
+       "run": "p1b_fit_finite_0027",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 9.924505781819475
+      },
+      {
+       "run": "p1b_fit_finite_0028",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 4.782312978171557
+      },
+      {
+       "run": "p1b_fit_finite_0029",
+       "wrong_go_decisions": 9,
+       "with_first_loss": 9,
+       "median_closing_speed": 4.494163657803206
+      },
+      {
+       "run": "p1b_fit_finite_0030",
+       "wrong_go_decisions": 37,
+       "with_first_loss": 37,
+       "median_closing_speed": 10.998039647255924
+      },
+      {
+       "run": "p1b_fit_finite_0031",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 14.723407439995942
+      },
+      {
+       "run": "p1b_fit_finite_0032",
+       "wrong_go_decisions": 21,
+       "with_first_loss": 21,
+       "median_closing_speed": 4.911310913942514
+      },
+      {
+       "run": "p1b_fit_finite_0033",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 15.00350592466716
+      },
+      {
+       "run": "p1b_fit_finite_0034",
+       "wrong_go_decisions": 10,
+       "with_first_loss": 10,
+       "median_closing_speed": 9.999997164544114
+      },
+      {
+       "run": "p1b_fit_finite_0035",
+       "wrong_go_decisions": 44,
+       "with_first_loss": 44,
+       "median_closing_speed": 9.592312016352356
+      },
+      {
+       "run": "p1b_fit_finite_0036",
+       "wrong_go_decisions": 27,
+       "with_first_loss": 27,
+       "median_closing_speed": 8.706445829723146
+      },
+      {
+       "run": "p1b_fit_finite_0037",
+       "wrong_go_decisions": 34,
+       "with_first_loss": 34,
+       "median_closing_speed": 9.374437520117748
+      },
+      {
+       "run": "p1b_fit_finite_0038",
+       "wrong_go_decisions": 27,
+       "with_first_loss": 27,
+       "median_closing_speed": 9.292104937449619
+      },
+      {
+       "run": "p1b_fit_finite_0039",
+       "wrong_go_decisions": 6,
+       "with_first_loss": 6,
+       "median_closing_speed": 4.687813722455376
+      }
+     ]
+    },
+    "5%": {
+     "operating_point": {
+      "index": 52,
+      "g": 0.18836490894898011,
+      "caution_pp": 5.0282541411627415,
+      "wrong_go_pp": 7.973462002412545
+     },
+     "runs_with_wrong_go": 34,
+     "median_of_run_medians": 9.255891346096929,
+     "range_of_run_medians": [
+      4.633432866208661,
+      15.00350592466716
+     ],
+     "per_run": [
+      {
+       "run": "p1b_fit_finite_0005",
+       "wrong_go_decisions": 11,
+       "with_first_loss": 11,
+       "median_closing_speed": 4.87651968070941
+      },
+      {
+       "run": "p1b_fit_finite_0006",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 9.999998987324766
+      },
+      {
+       "run": "p1b_fit_finite_0007",
+       "wrong_go_decisions": 44,
+       "with_first_loss": 44,
+       "median_closing_speed": 9.659883374604098
+      },
+      {
+       "run": "p1b_fit_finite_0008",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 9.999926629560937
+      },
+      {
+       "run": "p1b_fit_finite_0009",
+       "wrong_go_decisions": 19,
+       "with_first_loss": 19,
+       "median_closing_speed": 4.9286811782523685
+      },
+      {
+       "run": "p1b_fit_finite_0010",
+       "wrong_go_decisions": 18,
+       "with_first_loss": 18,
+       "median_closing_speed": 9.981390752275017
+      },
+      {
+       "run": "p1b_fit_finite_0011",
+       "wrong_go_decisions": 24,
+       "with_first_loss": 24,
+       "median_closing_speed": 4.74182073315288
+      },
+      {
+       "run": "p1b_fit_finite_0012",
+       "wrong_go_decisions": 44,
+       "with_first_loss": 44,
+       "median_closing_speed": 9.518822734047273
+      },
+      {
+       "run": "p1b_fit_finite_0013",
+       "wrong_go_decisions": 20,
+       "with_first_loss": 20,
+       "median_closing_speed": 9.745892917991466
+      },
+      {
+       "run": "p1b_fit_finite_0014",
+       "wrong_go_decisions": 13,
+       "with_first_loss": 13,
+       "median_closing_speed": 6.9661054837184455
+      },
+      {
+       "run": "p1b_fit_finite_0015",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 6.386659452647377
+      },
+      {
+       "run": "p1b_fit_finite_0016",
+       "wrong_go_decisions": 28,
+       "with_first_loss": 28,
+       "median_closing_speed": 9.07798081018309
+      },
+      {
+       "run": "p1b_fit_finite_0017",
+       "wrong_go_decisions": 43,
+       "with_first_loss": 43,
+       "median_closing_speed": 9.895443958361602
+      },
+      {
+       "run": "p1b_fit_finite_0018",
+       "wrong_go_decisions": 35,
+       "with_first_loss": 35,
+       "median_closing_speed": 8.027812239953379
+      },
+      {
+       "run": "p1b_fit_finite_0019",
+       "wrong_go_decisions": 11,
+       "with_first_loss": 11,
+       "median_closing_speed": 4.940251336443605
+      },
+      {
+       "run": "p1b_fit_finite_0020",
+       "wrong_go_decisions": 11,
+       "with_first_loss": 11,
+       "median_closing_speed": 4.806761538650882
+      },
+      {
+       "run": "p1b_fit_finite_0021",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 4.78637177241669
+      },
+      {
+       "run": "p1b_fit_finite_0022",
+       "wrong_go_decisions": 17,
+       "with_first_loss": 17,
+       "median_closing_speed": 5.067642609749476
+      },
+      {
+       "run": "p1b_fit_finite_0023",
+       "wrong_go_decisions": 23,
+       "with_first_loss": 23,
+       "median_closing_speed": 9.76376546802168
+      },
+      {
+       "run": "p1b_fit_finite_0024",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 4.842082119873936
+      },
+      {
+       "run": "p1b_fit_finite_0025",
+       "wrong_go_decisions": 3,
+       "with_first_loss": 3,
+       "median_closing_speed": 15.002682158793785
+      },
+      {
+       "run": "p1b_fit_finite_0027",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 9.924505781819475
+      },
+      {
+       "run": "p1b_fit_finite_0028",
+       "wrong_go_decisions": 10,
+       "with_first_loss": 10,
+       "median_closing_speed": 4.864310291790964
+      },
+      {
+       "run": "p1b_fit_finite_0029",
+       "wrong_go_decisions": 6,
+       "with_first_loss": 6,
+       "median_closing_speed": 4.856612554282551
+      },
+      {
+       "run": "p1b_fit_finite_0030",
+       "wrong_go_decisions": 34,
+       "with_first_loss": 34,
+       "median_closing_speed": 12.821001511632062
+      },
+      {
+       "run": "p1b_fit_finite_0031",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 14.723407439995942
+      },
+      {
+       "run": "p1b_fit_finite_0032",
+       "wrong_go_decisions": 19,
+       "with_first_loss": 19,
+       "median_closing_speed": 4.925932728840632
+      },
+      {
+       "run": "p1b_fit_finite_0033",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 15.00350592466716
+      },
+      {
+       "run": "p1b_fit_finite_0034",
+       "wrong_go_decisions": 10,
+       "with_first_loss": 10,
+       "median_closing_speed": 9.999997164544114
+      },
+      {
+       "run": "p1b_fit_finite_0035",
+       "wrong_go_decisions": 41,
+       "with_first_loss": 41,
+       "median_closing_speed": 10.24132203980953
+      },
+      {
+       "run": "p1b_fit_finite_0036",
+       "wrong_go_decisions": 25,
+       "with_first_loss": 25,
+       "median_closing_speed": 8.90692150901861
+      },
+      {
+       "run": "p1b_fit_finite_0037",
+       "wrong_go_decisions": 29,
+       "with_first_loss": 29,
+       "median_closing_speed": 9.464830681308692
+      },
+      {
+       "run": "p1b_fit_finite_0038",
+       "wrong_go_decisions": 25,
+       "with_first_loss": 25,
+       "median_closing_speed": 9.433801882010767
+      },
+      {
+       "run": "p1b_fit_finite_0039",
+       "wrong_go_decisions": 4,
+       "with_first_loss": 4,
+       "median_closing_speed": 4.633432866208661
+      }
+     ]
+    }
+   },
+   "CK3": {
+    "2%": {
+     "operating_point": {
+      "index": 0,
+      "g": 0.0,
+      "caution_pp": 1.7182278844479144,
+      "wrong_go_pp": 4.837153196622436
+     },
+     "runs_with_wrong_go": 33,
+     "median_of_run_medians": 5.779771712693652,
+     "range_of_run_medians": [
+      0.8335422248232234,
+      15.00350592466716
+     ],
+     "per_run": [
+      {
+       "run": "p1b_fit_finite_0005",
+       "wrong_go_decisions": 9,
+       "with_first_loss": 9,
+       "median_closing_speed": 4.096985730064468
+      },
+      {
+       "run": "p1b_fit_finite_0006",
+       "wrong_go_decisions": 10,
+       "with_first_loss": 10,
+       "median_closing_speed": 9.999998987324766
+      },
+      {
+       "run": "p1b_fit_finite_0007",
+       "wrong_go_decisions": 35,
+       "with_first_loss": 35,
+       "median_closing_speed": 7.072191711723541
+      },
+      {
+       "run": "p1b_fit_finite_0008",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 9.999926629560937
+      },
+      {
+       "run": "p1b_fit_finite_0009",
+       "wrong_go_decisions": 2,
+       "with_first_loss": 2,
+       "median_closing_speed": 0.8335422248232234
+      },
+      {
+       "run": "p1b_fit_finite_0010",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 6.934549909955546
+      },
+      {
+       "run": "p1b_fit_finite_0011",
+       "wrong_go_decisions": 4,
+       "with_first_loss": 4,
+       "median_closing_speed": 1.9911124217570817
+      },
+      {
+       "run": "p1b_fit_finite_0012",
+       "wrong_go_decisions": 41,
+       "with_first_loss": 41,
+       "median_closing_speed": 3.813117418754868
+      },
+      {
+       "run": "p1b_fit_finite_0013",
+       "wrong_go_decisions": 19,
+       "with_first_loss": 19,
+       "median_closing_speed": 5.8266495020110955
+      },
+      {
+       "run": "p1b_fit_finite_0014",
+       "wrong_go_decisions": 1,
+       "with_first_loss": 1,
+       "median_closing_speed": 6.639577423315703
+      },
+      {
+       "run": "p1b_fit_finite_0016",
+       "wrong_go_decisions": 19,
+       "with_first_loss": 19,
+       "median_closing_speed": 6.282750332269039
+      },
+      {
+       "run": "p1b_fit_finite_0017",
+       "wrong_go_decisions": 6,
+       "with_first_loss": 6,
+       "median_closing_speed": 5.019804183766363
+      },
+      {
+       "run": "p1b_fit_finite_0018",
+       "wrong_go_decisions": 3,
+       "with_first_loss": 3,
+       "median_closing_speed": 2.105737444360958
+      },
+      {
+       "run": "p1b_fit_finite_0019",
+       "wrong_go_decisions": 8,
+       "with_first_loss": 8,
+       "median_closing_speed": 4.110563307606993
+      },
+      {
+       "run": "p1b_fit_finite_0020",
+       "wrong_go_decisions": 7,
+       "with_first_loss": 7,
+       "median_closing_speed": 4.847934647732509
+      },
+      {
+       "run": "p1b_fit_finite_0021",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 5.803654219611726
+      },
+      {
+       "run": "p1b_fit_finite_0022",
+       "wrong_go_decisions": 3,
+       "with_first_loss": 3,
+       "median_closing_speed": 5.779771712693652
+      },
+      {
+       "run": "p1b_fit_finite_0023",
+       "wrong_go_decisions": 19,
+       "with_first_loss": 19,
+       "median_closing_speed": 7.522265841311167
+      },
+      {
+       "run": "p1b_fit_finite_0024",
+       "wrong_go_decisions": 8,
+       "with_first_loss": 8,
+       "median_closing_speed": 4.40028771522393
+      },
+      {
+       "run": "p1b_fit_finite_0025",
+       "wrong_go_decisions": 3,
+       "with_first_loss": 3,
+       "median_closing_speed": 15.002682158793785
+      },
+      {
+       "run": "p1b_fit_finite_0027",
+       "wrong_go_decisions": 11,
+       "with_first_loss": 11,
+       "median_closing_speed": 9.999997067269947
+      },
+      {
+       "run": "p1b_fit_finite_0028",
+       "wrong_go_decisions": 11,
+       "with_first_loss": 11,
+       "median_closing_speed": 4.140181739150002
+      },
+      {
+       "run": "p1b_fit_finite_0029",
+       "wrong_go_decisions": 10,
+       "with_first_loss": 10,
+       "median_closing_speed": 4.624794868816139
+      },
+      {
+       "run": "p1b_fit_finite_0030",
+       "wrong_go_decisions": 32,
+       "with_first_loss": 32,
+       "median_closing_speed": 7.80853470149356
+      },
+      {
+       "run": "p1b_fit_finite_0031",
+       "wrong_go_decisions": 6,
+       "with_first_loss": 6,
+       "median_closing_speed": 10.196577144265337
+      },
+      {
+       "run": "p1b_fit_finite_0032",
+       "wrong_go_decisions": 4,
+       "with_first_loss": 4,
+       "median_closing_speed": 3.476719541600426
+      },
+      {
+       "run": "p1b_fit_finite_0033",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 15.00350592466716
+      },
+      {
+       "run": "p1b_fit_finite_0034",
+       "wrong_go_decisions": 10,
+       "with_first_loss": 10,
+       "median_closing_speed": 9.99999708935674
+      },
+      {
+       "run": "p1b_fit_finite_0035",
+       "wrong_go_decisions": 33,
+       "with_first_loss": 33,
+       "median_closing_speed": 4.0380975876393475
+      },
+      {
+       "run": "p1b_fit_finite_0036",
+       "wrong_go_decisions": 7,
+       "with_first_loss": 7,
+       "median_closing_speed": 5.900870249970433
+      },
+      {
+       "run": "p1b_fit_finite_0037",
+       "wrong_go_decisions": 23,
+       "with_first_loss": 23,
+       "median_closing_speed": 5.129003036633603
+      },
+      {
+       "run": "p1b_fit_finite_0038",
+       "wrong_go_decisions": 23,
+       "with_first_loss": 23,
+       "median_closing_speed": 5.556441419609224
+      },
+      {
+       "run": "p1b_fit_finite_0039",
+       "wrong_go_decisions": 3,
+       "with_first_loss": 3,
+       "median_closing_speed": 4.705358704181568
+      }
+     ]
+    },
+    "5%": {
+     "operating_point": {
+      "index": 50,
+      "g": 0.16788040181225605,
+      "caution_pp": 5.016395807245434,
+      "wrong_go_pp": 2.9553679131483714
+     },
+     "runs_with_wrong_go": 29,
+     "median_of_run_medians": 6.639577423315703,
+     "range_of_run_medians": [
+      0.5518613105465571,
+      15.00350592466716
+     ],
+     "per_run": [
+      {
+       "run": "p1b_fit_finite_0005",
+       "wrong_go_decisions": 3,
+       "with_first_loss": 3,
+       "median_closing_speed": 4.096985730064468
+      },
+      {
+       "run": "p1b_fit_finite_0006",
+       "wrong_go_decisions": 9,
+       "with_first_loss": 9,
+       "median_closing_speed": 9.99999900972676
+      },
+      {
+       "run": "p1b_fit_finite_0007",
+       "wrong_go_decisions": 20,
+       "with_first_loss": 20,
+       "median_closing_speed": 7.720048187891105
+      },
+      {
+       "run": "p1b_fit_finite_0008",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 9.999926710510431
+      },
+      {
+       "run": "p1b_fit_finite_0010",
+       "wrong_go_decisions": 15,
+       "with_first_loss": 15,
+       "median_closing_speed": 5.869102899584449
+      },
+      {
+       "run": "p1b_fit_finite_0011",
+       "wrong_go_decisions": 1,
+       "with_first_loss": 1,
+       "median_closing_speed": 0.5518613105465571
+      },
+      {
+       "run": "p1b_fit_finite_0012",
+       "wrong_go_decisions": 23,
+       "with_first_loss": 23,
+       "median_closing_speed": 5.747981118324782
+      },
+      {
+       "run": "p1b_fit_finite_0013",
+       "wrong_go_decisions": 10,
+       "with_first_loss": 10,
+       "median_closing_speed": 9.000003839851242
+      },
+      {
+       "run": "p1b_fit_finite_0014",
+       "wrong_go_decisions": 1,
+       "with_first_loss": 1,
+       "median_closing_speed": 6.639577423315703
+      },
+      {
+       "run": "p1b_fit_finite_0016",
+       "wrong_go_decisions": 13,
+       "with_first_loss": 13,
+       "median_closing_speed": 5.982986647219935
+      },
+      {
+       "run": "p1b_fit_finite_0017",
+       "wrong_go_decisions": 1,
+       "with_first_loss": 1,
+       "median_closing_speed": 6.718146804336845
+      },
+      {
+       "run": "p1b_fit_finite_0019",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 2.1580317134618086
+      },
+      {
+       "run": "p1b_fit_finite_0020",
+       "wrong_go_decisions": 4,
+       "with_first_loss": 4,
+       "median_closing_speed": 2.348311023577737
+      },
+      {
+       "run": "p1b_fit_finite_0021",
+       "wrong_go_decisions": 1,
+       "with_first_loss": 1,
+       "median_closing_speed": 5.8382875607123
+      },
+      {
+       "run": "p1b_fit_finite_0022",
+       "wrong_go_decisions": 1,
+       "with_first_loss": 1,
+       "median_closing_speed": 5.779771712693652
+      },
+      {
+       "run": "p1b_fit_finite_0023",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 7.8647809212874495
+      },
+      {
+       "run": "p1b_fit_finite_0024",
+       "wrong_go_decisions": 1,
+       "with_first_loss": 1,
+       "median_closing_speed": 4.949809905715248
+      },
+      {
+       "run": "p1b_fit_finite_0025",
+       "wrong_go_decisions": 3,
+       "with_first_loss": 3,
+       "median_closing_speed": 15.002682158793785
+      },
+      {
+       "run": "p1b_fit_finite_0027",
+       "wrong_go_decisions": 11,
+       "with_first_loss": 11,
+       "median_closing_speed": 9.999996936864335
+      },
+      {
+       "run": "p1b_fit_finite_0028",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 4.473887507469968
+      },
+      {
+       "run": "p1b_fit_finite_0029",
+       "wrong_go_decisions": 2,
+       "with_first_loss": 2,
+       "median_closing_speed": 4.141536134713799
+      },
+      {
+       "run": "p1b_fit_finite_0030",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 7.860442181768689
+      },
+      {
+       "run": "p1b_fit_finite_0031",
+       "wrong_go_decisions": 1,
+       "with_first_loss": 1,
+       "median_closing_speed": 8.56669340984877
+      },
+      {
+       "run": "p1b_fit_finite_0033",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 15.00350592466716
+      },
+      {
+       "run": "p1b_fit_finite_0034",
+       "wrong_go_decisions": 9,
+       "with_first_loss": 9,
+       "median_closing_speed": 9.99999707123216
+      },
+      {
+       "run": "p1b_fit_finite_0035",
+       "wrong_go_decisions": 25,
+       "with_first_loss": 25,
+       "median_closing_speed": 7.813449492586557
+      },
+      {
+       "run": "p1b_fit_finite_0036",
+       "wrong_go_decisions": 2,
+       "with_first_loss": 2,
+       "median_closing_speed": 4.1238190356640585
+      },
+      {
+       "run": "p1b_fit_finite_0037",
+       "wrong_go_decisions": 17,
+       "with_first_loss": 17,
+       "median_closing_speed": 7.573342201831831
+      },
+      {
+       "run": "p1b_fit_finite_0038",
+       "wrong_go_decisions": 20,
+       "with_first_loss": 20,
+       "median_closing_speed": 6.20826983808022
+      }
+     ]
+    }
+   },
+   "TG": {
+    "2%": {
+     "operating_point": {
+      "index": 1,
+      "g": 0.01,
+      "caution_pp": 2.664717235224314,
+      "wrong_go_pp": 8.443908323281061
+     },
+     "runs_with_wrong_go": 34,
+     "median_of_run_medians": 8.675101912861095,
+     "range_of_run_medians": [
+      4.670268740729185,
+      15.00350592466716
+     ],
+     "per_run": [
+      {
+       "run": "p1b_fit_finite_0005",
+       "wrong_go_decisions": 13,
+       "with_first_loss": 13,
+       "median_closing_speed": 4.869297139119186
+      },
+      {
+       "run": "p1b_fit_finite_0006",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 9.999998987324766
+      },
+      {
+       "run": "p1b_fit_finite_0007",
+       "wrong_go_decisions": 45,
+       "with_first_loss": 45,
+       "median_closing_speed": 9.547546760865012
+      },
+      {
+       "run": "p1b_fit_finite_0008",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 9.999926629560937
+      },
+      {
+       "run": "p1b_fit_finite_0009",
+       "wrong_go_decisions": 21,
+       "with_first_loss": 21,
+       "median_closing_speed": 4.928087776558833
+      },
+      {
+       "run": "p1b_fit_finite_0010",
+       "wrong_go_decisions": 18,
+       "with_first_loss": 18,
+       "median_closing_speed": 9.981390752275017
+      },
+      {
+       "run": "p1b_fit_finite_0011",
+       "wrong_go_decisions": 27,
+       "with_first_loss": 27,
+       "median_closing_speed": 4.725477440222459
+      },
+      {
+       "run": "p1b_fit_finite_0012",
+       "wrong_go_decisions": 46,
+       "with_first_loss": 46,
+       "median_closing_speed": 9.099421579872768
+      },
+      {
+       "run": "p1b_fit_finite_0013",
+       "wrong_go_decisions": 22,
+       "with_first_loss": 22,
+       "median_closing_speed": 7.9079652183496325
+      },
+      {
+       "run": "p1b_fit_finite_0014",
+       "wrong_go_decisions": 14,
+       "with_first_loss": 14,
+       "median_closing_speed": 6.956661024376016
+      },
+      {
+       "run": "p1b_fit_finite_0015",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 6.386659452647377
+      },
+      {
+       "run": "p1b_fit_finite_0016",
+       "wrong_go_decisions": 31,
+       "with_first_loss": 31,
+       "median_closing_speed": 8.869432014694901
+      },
+      {
+       "run": "p1b_fit_finite_0017",
+       "wrong_go_decisions": 43,
+       "with_first_loss": 43,
+       "median_closing_speed": 9.795721926670302
+      },
+      {
+       "run": "p1b_fit_finite_0018",
+       "wrong_go_decisions": 37,
+       "with_first_loss": 37,
+       "median_closing_speed": 7.917047715951094
+      },
+      {
+       "run": "p1b_fit_finite_0019",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 4.932602316963188
+      },
+      {
+       "run": "p1b_fit_finite_0020",
+       "wrong_go_decisions": 11,
+       "with_first_loss": 11,
+       "median_closing_speed": 4.847934647732509
+      },
+      {
+       "run": "p1b_fit_finite_0021",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 4.78637177241669
+      },
+      {
+       "run": "p1b_fit_finite_0022",
+       "wrong_go_decisions": 18,
+       "with_first_loss": 18,
+       "median_closing_speed": 5.1550136307397
+      },
+      {
+       "run": "p1b_fit_finite_0023",
+       "wrong_go_decisions": 27,
+       "with_first_loss": 27,
+       "median_closing_speed": 9.467179549413341
+      },
+      {
+       "run": "p1b_fit_finite_0024",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 4.842082119873936
+      },
+      {
+       "run": "p1b_fit_finite_0025",
+       "wrong_go_decisions": 3,
+       "with_first_loss": 3,
+       "median_closing_speed": 15.002682158793785
+      },
+      {
+       "run": "p1b_fit_finite_0027",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 9.924505781819475
+      },
+      {
+       "run": "p1b_fit_finite_0028",
+       "wrong_go_decisions": 11,
+       "with_first_loss": 11,
+       "median_closing_speed": 4.825477526093627
+      },
+      {
+       "run": "p1b_fit_finite_0029",
+       "wrong_go_decisions": 7,
+       "with_first_loss": 7,
+       "median_closing_speed": 4.854515333153499
+      },
+      {
+       "run": "p1b_fit_finite_0030",
+       "wrong_go_decisions": 36,
+       "with_first_loss": 36,
+       "median_closing_speed": 11.597984788385077
+      },
+      {
+       "run": "p1b_fit_finite_0031",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 14.723407439995942
+      },
+      {
+       "run": "p1b_fit_finite_0032",
+       "wrong_go_decisions": 20,
+       "with_first_loss": 20,
+       "median_closing_speed": 4.918621821391573
+      },
+      {
+       "run": "p1b_fit_finite_0033",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 15.00350592466716
+      },
+      {
+       "run": "p1b_fit_finite_0034",
+       "wrong_go_decisions": 10,
+       "with_first_loss": 10,
+       "median_closing_speed": 9.999997164544114
+      },
+      {
+       "run": "p1b_fit_finite_0035",
+       "wrong_go_decisions": 42,
+       "with_first_loss": 42,
+       "median_closing_speed": 9.724620690928727
+      },
+      {
+       "run": "p1b_fit_finite_0036",
+       "wrong_go_decisions": 27,
+       "with_first_loss": 27,
+       "median_closing_speed": 8.48077181102729
+      },
+      {
+       "run": "p1b_fit_finite_0037",
+       "wrong_go_decisions": 33,
+       "with_first_loss": 33,
+       "median_closing_speed": 9.404914907462446
+      },
+      {
+       "run": "p1b_fit_finite_0038",
+       "wrong_go_decisions": 27,
+       "with_first_loss": 27,
+       "median_closing_speed": 9.292104937449619
+      },
+      {
+       "run": "p1b_fit_finite_0039",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 4.670268740729185
+      }
+     ]
+    },
+    "5%": {
+     "operating_point": {
+      "index": 24,
+      "g": 0.03758374042884443,
+      "caution_pp": 5.003130793466694,
+      "wrong_go_pp": 8.178528347406514
+     },
+     "runs_with_wrong_go": 34,
+     "median_of_run_medians": 8.888176761856755,
+     "range_of_run_medians": [
+      4.633432866208661,
+      15.00350592466716
+     ],
+     "per_run": [
+      {
+       "run": "p1b_fit_finite_0005",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 4.872908409914298
+      },
+      {
+       "run": "p1b_fit_finite_0006",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 9.999998987324766
+      },
+      {
+       "run": "p1b_fit_finite_0007",
+       "wrong_go_decisions": 45,
+       "with_first_loss": 45,
+       "median_closing_speed": 9.174206000300256
+      },
+      {
+       "run": "p1b_fit_finite_0008",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 9.999926629560937
+      },
+      {
+       "run": "p1b_fit_finite_0009",
+       "wrong_go_decisions": 21,
+       "with_first_loss": 21,
+       "median_closing_speed": 4.928087776558833
+      },
+      {
+       "run": "p1b_fit_finite_0010",
+       "wrong_go_decisions": 18,
+       "with_first_loss": 18,
+       "median_closing_speed": 9.981390752275017
+      },
+      {
+       "run": "p1b_fit_finite_0011",
+       "wrong_go_decisions": 26,
+       "with_first_loss": 26,
+       "median_closing_speed": 4.729638097851512
+      },
+      {
+       "run": "p1b_fit_finite_0012",
+       "wrong_go_decisions": 44,
+       "with_first_loss": 44,
+       "median_closing_speed": 9.251225655064964
+      },
+      {
+       "run": "p1b_fit_finite_0013",
+       "wrong_go_decisions": 23,
+       "with_first_loss": 23,
+       "median_closing_speed": 7.900928066651835
+      },
+      {
+       "run": "p1b_fit_finite_0014",
+       "wrong_go_decisions": 13,
+       "with_first_loss": 13,
+       "median_closing_speed": 6.9661054837184455
+      },
+      {
+       "run": "p1b_fit_finite_0015",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 6.386659452647377
+      },
+      {
+       "run": "p1b_fit_finite_0016",
+       "wrong_go_decisions": 29,
+       "with_first_loss": 29,
+       "median_closing_speed": 8.869432014694901
+      },
+      {
+       "run": "p1b_fit_finite_0017",
+       "wrong_go_decisions": 43,
+       "with_first_loss": 43,
+       "median_closing_speed": 9.362340074214204
+      },
+      {
+       "run": "p1b_fit_finite_0018",
+       "wrong_go_decisions": 35,
+       "with_first_loss": 35,
+       "median_closing_speed": 8.027812239953379
+      },
+      {
+       "run": "p1b_fit_finite_0019",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 4.932602316963188
+      },
+      {
+       "run": "p1b_fit_finite_0020",
+       "wrong_go_decisions": 11,
+       "with_first_loss": 11,
+       "median_closing_speed": 4.806761538650882
+      },
+      {
+       "run": "p1b_fit_finite_0021",
+       "wrong_go_decisions": 15,
+       "with_first_loss": 15,
+       "median_closing_speed": 4.785505393191347
+      },
+      {
+       "run": "p1b_fit_finite_0022",
+       "wrong_go_decisions": 17,
+       "with_first_loss": 17,
+       "median_closing_speed": 4.924717910435841
+      },
+      {
+       "run": "p1b_fit_finite_0023",
+       "wrong_go_decisions": 26,
+       "with_first_loss": 26,
+       "median_closing_speed": 9.553777768564865
+      },
+      {
+       "run": "p1b_fit_finite_0024",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 4.842082119873936
+      },
+      {
+       "run": "p1b_fit_finite_0025",
+       "wrong_go_decisions": 3,
+       "with_first_loss": 3,
+       "median_closing_speed": 15.002682158793785
+      },
+      {
+       "run": "p1b_fit_finite_0027",
+       "wrong_go_decisions": 16,
+       "with_first_loss": 16,
+       "median_closing_speed": 9.924505781819475
+      },
+      {
+       "run": "p1b_fit_finite_0028",
+       "wrong_go_decisions": 10,
+       "with_first_loss": 10,
+       "median_closing_speed": 4.864310291790964
+      },
+      {
+       "run": "p1b_fit_finite_0029",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 4.858709775411603
+      },
+      {
+       "run": "p1b_fit_finite_0030",
+       "wrong_go_decisions": 35,
+       "with_first_loss": 35,
+       "median_closing_speed": 12.107978014097965
+      },
+      {
+       "run": "p1b_fit_finite_0031",
+       "wrong_go_decisions": 12,
+       "with_first_loss": 12,
+       "median_closing_speed": 14.723407439995942
+      },
+      {
+       "run": "p1b_fit_finite_0032",
+       "wrong_go_decisions": 20,
+       "with_first_loss": 20,
+       "median_closing_speed": 4.918621821391573
+      },
+      {
+       "run": "p1b_fit_finite_0033",
+       "wrong_go_decisions": 5,
+       "with_first_loss": 5,
+       "median_closing_speed": 15.00350592466716
+      },
+      {
+       "run": "p1b_fit_finite_0034",
+       "wrong_go_decisions": 10,
+       "with_first_loss": 10,
+       "median_closing_speed": 9.999997164544114
+      },
+      {
+       "run": "p1b_fit_finite_0035",
+       "wrong_go_decisions": 41,
+       "with_first_loss": 41,
+       "median_closing_speed": 9.503978049006768
+      },
+      {
+       "run": "p1b_fit_finite_0036",
+       "wrong_go_decisions": 25,
+       "with_first_loss": 25,
+       "median_closing_speed": 8.90692150901861
+      },
+      {
+       "run": "p1b_fit_finite_0037",
+       "wrong_go_decisions": 30,
+       "with_first_loss": 30,
+       "median_closing_speed": 9.405866552745158
+      },
+      {
+       "run": "p1b_fit_finite_0038",
+       "wrong_go_decisions": 27,
+       "with_first_loss": 27,
+       "median_closing_speed": 9.292104937449619
+      },
+      {
+       "run": "p1b_fit_finite_0039",
+       "wrong_go_decisions": 4,
+       "with_first_loss": 4,
+       "median_closing_speed": 4.633432866208661
+      }
+     ]
+    }
+   }
+  }
+ },
+ "seconds": 946.8250346183777,
+ "written": "2026-11-20 03:40:02",
+ "code_sha256": {
+  "d2_event_table_v13.py": "2b0f4eaadf4c062cbfb1212d58a02826d149bc4814ec857de52c46657bf0b879",
+  "cd_common_v13.py": "978dc19c136484b2514848536d6430beab4e45ec02e8099b0bd9ae11491cf0c2"
+ }
+}

@@ -1,0 +1,129 @@
+{
+ "schema": "CLAUDE_MAIN_JOBS_V01",
+ "protocol": "DEVELOPMENT_PROTOCOL_SMOKE_v01.json",
+ "volume_folder": "claude_v13_e_v01",
+ "capture_timeout_s": 600,
+ "review_timeout_s": 600,
+ "actor_review_timeout_s": 180,
+ "server_ready_timeout_s": 120,
+ "concurrent_start_stagger_s": 15,
+ "max_attempts": 1,
+ "protocol_main_sha256": "32d683a0a8ca2e91ff0245759ad78b43e7953c33bd12847c5193cafcdaa5735d",
+ "note": "Revision v13 package E, E0 pod integration check on claude-v13e-01: A1 admission (crash, benign), 6 smoke runs; packet_e; volume folder claude_v13_e_v01; one attempt per job (no worker retry).",
+ "made_by": {
+  "script": "make_jobs_e_v01.py",
+  "sha256": "45f6ff5880e6897ba5a0734713e593aacda28cdbba1c715eb4d1a6310a908e6f",
+  "imports_read_only": "make_phase1_jobs_v01.py 5a2364eecf5aeb9862c79ee87d6968cc8427898bcbedc3f6e1629dec49f54ef7"
+ },
+ "jobs": [
+  {
+   "id": "a1e13_e1s_01_v01_crash",
+   "case": "canonical_lead_braking_v10_r0_finite",
+   "arm": "native",
+   "phase": "A1",
+   "role": "control",
+   "scenario": "canonical_lead_braking_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 1.0,
+    "T": 0.18142429254388814,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 215
+   },
+   "alpha": 0.07595887787405835,
+   "beta": 0.056961122665147565
+  },
+  {
+   "id": "a1e13_e1s_01_v01_benign",
+   "case": "canonical_benign_v10_r0_finite",
+   "arm": "native",
+   "phase": "A1",
+   "role": "control",
+   "scenario": "canonical_benign_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 0.0,
+    "T": 0.9999999494794277,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 700
+   },
+   "alpha": 0.07595887787405835,
+   "beta": 0.056961122665147565
+  },
+  {
+   "id": "e1s_v01_e_z_c1109_tune_0000",
+   "case": "c1109_tune_0000",
+   "arm": "E_Z",
+   "phase": "E1S",
+   "role": "smoke",
+   "scenario": "c1109_tune_0000",
+   "keep_raw": false,
+   "tracker": "CANMOT",
+   "note": "E0 pod integration smoke run (design data)"
+  },
+  {
+   "id": "e1s_v01_e_f0_c1109_tune_0000",
+   "case": "c1109_tune_0000",
+   "arm": "E_F0",
+   "phase": "E1S",
+   "role": "smoke",
+   "scenario": "c1109_tune_0000",
+   "keep_raw": false,
+   "tracker": "CANMOT",
+   "g": 1.0,
+   "note": "E0 pod integration smoke run (design data)"
+  },
+  {
+   "id": "e1s_v01_e_n_c1109_tune_0000",
+   "case": "c1109_tune_0000",
+   "arm": "E_N",
+   "phase": "E1S",
+   "role": "smoke",
+   "scenario": "c1109_tune_0000",
+   "keep_raw": false,
+   "tracker": "CANMOT",
+   "g": 1.0,
+   "note": "E0 pod integration smoke run (design data)"
+  },
+  {
+   "id": "e1s_v01_e_ck3_c1109_tune_0000",
+   "case": "c1109_tune_0000",
+   "arm": "E_CK3",
+   "phase": "E1S",
+   "role": "smoke",
+   "scenario": "c1109_tune_0000",
+   "keep_raw": false,
+   "tracker": "CANMOT",
+   "g": 1.0,
+   "note": "E0 pod integration smoke run (design data)"
+  },
+  {
+   "id": "e1s_v01_e_tg_c1109_tune_0000",
+   "case": "c1109_tune_0000",
+   "arm": "E_TG",
+   "phase": "E1S",
+   "role": "smoke",
+   "scenario": "c1109_tune_0000",
+   "keep_raw": false,
+   "tracker": "CANMOT",
+   "g": 1.0,
+   "note": "E0 pod integration smoke run (design data)"
+  },
+  {
+   "id": "e1s_v01_e_ps_c1109_tune_0000",
+   "case": "c1109_tune_0000",
+   "arm": "E_PS",
+   "phase": "E1S",
+   "role": "smoke",
+   "scenario": "c1109_tune_0000",
+   "keep_raw": false,
+   "tracker": "CANMOT",
+   "triple": [
+    0.25,
+    1.0,
+    4.0
+   ],
+   "note": "E0 pod integration smoke run (design data)"
+  }
+ ]
+}

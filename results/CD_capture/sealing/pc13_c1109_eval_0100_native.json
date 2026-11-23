@@ -1,0 +1,22 @@
+{
+ "run_id": "pc13_c1109_eval_0100_native",
+ "checks": {
+  "receipt_sha256": true,
+  "receipt_status": true,
+  "receipt_frames_dropped_zero": true,
+  "receipt_keep_raw": true,
+  "sweeps_present": true,
+  "sweep_counts_consistent": true,
+  "noisy_sweep_file_sha256_equals_file_hashes": true,
+  "noisy_sweep_array_hash_equals_noise_receipt": true
+ },
+ "failures": {
+  "file_sha": 0,
+  "noise_receipt": 0
+ },
+ "logs_archive": "pc13_c1109_eval_0100_native_logs.tar.gz",
+ "logs_sha256": "270334214d349ef2b389ff4cdbff142cbb592603eea477daddee7b66a0a0dcdb",
+ "logs_bytes": 8489682,
+ "archive_sha256": "43ad9e19fce28cdb707c1eb437f0198681b402d5c8264bf72e3ffab7ec941b80",
+ "pass": true
+}

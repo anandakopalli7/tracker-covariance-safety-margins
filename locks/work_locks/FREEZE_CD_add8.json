@@ -1,0 +1,120 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "addendum_to": "work/locks/FREEZE_CD.json (sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7); FREEZE_CD_add7.json (sha256 2a44dacba439196a97d3468b61af505f9ecf592363a299440d08cac3220c81cb)",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5)",
+ "written": "2026-11-22 00:45 Eastern Standard Time",
+ "approval": "Coordinator, 22 Nov 2026 (verbatim excerpts): \"Hedge now, at almost no cost: capture the new runs with keep_raw = TRUE, sweeps kept on POD-LOCAL disk only. Don't download them to the laptop (about 40 GB). Download logs and receipts as planned.\"; \"GO NOW ... keep_raw = TRUE, sweeps on pod-local disk only, for the 10 Hz option; logs and receipts download as planned.\" The add7 programs required keep_raw false; this addendum changes only that value, before LOCK_A12a and before any value of a new run.",
+ "kind": "keep_raw-true change of the L12 capture (A12 sec. 2.2), before LOCK_A12a and before any value of a new run; and the exploratory crossing heading programs (A12 task 4; their test on two X runs, pc13x 0002/0008, was seen)",
+ "adds": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\make_jobs_l12_raw_v13.py",
+   "sha256": "5f51af40d19e9ee0ace8d4ed6e7f7fbb69f8da542db1fef29a9697b13e2e97c4"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\jobs_l12\\JOBS_PL12_claude-v13cd-l1_v02.json",
+   "sha256": "45a981caaa5cf627c20d1f84c38726e486a0a3aff8cc174e34080727310b3160"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\jobs_l12\\JOBS_PL12_claude-v13cd-l2_v02.json",
+   "sha256": "2706cc5f812cc15dba0d631ebc5e57013c6d852b260da1fa6b3be25d2b21d075"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\jobs_l12\\JOBS_PL12_claude-v13cd-l3_v02.json",
+   "sha256": "66bd53a3f65459e82f14f67e351944f168a4128a7b848db75872ccae9003bf3d"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\jobs_l12\\JOBS_PL12_claude-v13cd-l4_v02.json",
+   "sha256": "9eaf810650fd4bd0bdfdc37ea4b753c181ac6f6cd8250b4e03d5232b3d4d9258"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\jobs_l12\\JOBS_PL12_claude-v13cd-l5_v02.json",
+   "sha256": "c54f91556426a9ffc6ece0825d50bc65d1ae7f8ef56380716ee4f6d2711fb1b2"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\jobs_l12\\JOBS_PL12_claude-v13cd-l6_v02.json",
+   "sha256": "c452d4e35e7494cdae0f7cabe4fbf909b775c3171d80bab898141409dad6a475"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\l_logs_v13.py",
+   "sha256": "32032a007518864374ed3472aa10758c0f230754dc60ad76ffed71c311e001d5"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\A12_SECTIONS_2_3b_CD_v02.md",
+   "sha256": "10d5691cdfe232c79498bbb96a60fdfe0d6fff7c178e544875ce2ce2139a652e"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\out\\TESTOLD_L_EXTRACT_20261122T004340.json",
+   "sha256": "f01eb476a5de39554c78bb88556687d9381d8e2abfe53029d2de1ca453597762"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\x_heading_v13.py",
+   "sha256": "da9fb63c32402542f31b69c3f9c7e3a40a07a3475c2168f140528432dd6f0a83"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\x_heading_analyse_v13.py",
+   "sha256": "bf671bd51f21932068f51ca99adebc28f4702d2139e3e9b60a489289ae639f21"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\SPEC_RC_X_HEADING_v13.md",
+   "sha256": "c68fc4ec15821d6422a2f9ef6776f9505e4be8653a2c1483e8c1d8d6dc03df57"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\make_freeze_add8_v13.py",
+   "sha256": "553d216048223182f19f114d1eacc8b0ffa188c5baa88d973b0a82b3af792d07"
+  }
+ ],
+ "uses": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\seal_extract_v13.py",
+   "sha256": "be03ea2f185413180d8d349e4219ef7be80feb0c83e190dfa4f5285617085e86"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\b7_redetect_v13.py",
+   "sha256": "d95d7e0d60d58548174ad17628927099abe3794a70c1bf6b46cc5301f7dd63a9"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\x_trk_extract_v13.py",
+   "sha256": "ae0526121b4cfd70734c9cadd135cf1af83d9d6126f1cf1a628c044e05a94aaf"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\jobs_l12\\JOBS_PL12_claude-v13cd-l1_v01.json",
+   "sha256": "616c233d6426a23205767526d7e050ea65d4766eadfad5efbe0b61a2c0838909"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\jobs_l12\\JOBS_PL12_claude-v13cd-l2_v01.json",
+   "sha256": "911ec461cdb10a2859979096b0bde3f0e77d96c1a1b0ae3e6fd0d170628fdb89"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\jobs_l12\\JOBS_PL12_claude-v13cd-l3_v01.json",
+   "sha256": "c3c5a15964f34a17854d044d9e2eb2c95adfc6870243a409897d54dace598461"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\jobs_l12\\JOBS_PL12_claude-v13cd-l4_v01.json",
+   "sha256": "1eee26a9aa33bd84829c0c578f693cdd1720cc194492ea7115995c949e0e5f4b"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\jobs_l12\\JOBS_PL12_claude-v13cd-l5_v01.json",
+   "sha256": "cb92c8a81017ae7787f27079bc3d70b2bcac4b8f39b582b94aa3cafee0804ec0"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\jobs_l12\\JOBS_PL12_claude-v13cd-l6_v01.json",
+   "sha256": "5982c0d00826ca100ca9a7c0edcb187af9752585c4155154d8348a83cd927096"
+  }
+ ],
+ "replaces": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\l_extract_v13.py",
+   "sha256_before": "e45b3226fa8890387bce8802ab9264ac9c4e95b074014450402e3f7bea17d3b9",
+   "sha256_after": "00b01a048fa5b7b1e916ecf07ea4d82354840d9e833f91aa19abb50ecf50f4df",
+   "change": "extract_logs(): the receipt must have keep_raw true (was false); docstring lines 6-10 say so. No other byte changed. Old-run test re-run: bit-identical (l12/out/TESTOLD_L_EXTRACT_20261122T004340.json).",
+   "why": "Coordinator 22 Nov about 00:35-00:40 EST: capture the new runs with keep_raw = TRUE, sweeps on pod-local disk only, logs and receipts downloaded as planned (a second configuration, 10 Hz with 0.1 s latency, may be assessed). The add7 programs required keep_raw false."
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\l_pods_v13.py",
+   "sha256_before": "9ee8e88eca973c35389e118e6c4373f248af8abc73f45fa3a198c540f061e5a3",
+   "sha256_after": "49568a3b95c3cf767d3f27186ffc43a13f769ca9ce5bd680afd75c6199c24cc7",
+   "change": "SEAL_PY: the keep_raw check requires true (was false); the seal() docstring says so. No other byte changed. Sealing of record is now C's tools/seal_extract_v13.py via l12/l_logs_v13.py.",
+   "why": "Coordinator 22 Nov about 00:35-00:40 EST: capture the new runs with keep_raw = TRUE, sweeps on pod-local disk only, logs and receipts downloaded as planned (a second configuration, 10 Hz with 0.1 s latency, may be assessed). The add7 programs required keep_raw false."
+  }
+ ]
+}

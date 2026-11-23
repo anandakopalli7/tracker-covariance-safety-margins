@@ -1,0 +1,74 @@
+{
+ "first": "analysis\\out\\TESTOLD_S57A_v13.json",
+ "second": "recount\\out\\TESTOLD_RC_S57A_v13.json",
+ "tolerance": 1e-09,
+ "summary": {
+  "agree": 69,
+  "disagree": 5,
+  "only_first": 0,
+  "only_second": 4,
+  "ignored": 0
+ },
+ "verdict": "DISAGREE",
+ "rows": [
+  {
+   "key": "CI.RR_N.dec.cal",
+   "status": "DISAGREE",
+   "first": "nominal99",
+   "second": "nominal95"
+  },
+  {
+   "key": "CI.RR_N.dec.level",
+   "status": "DISAGREE",
+   "first": 0.99,
+   "second": 0.95
+  },
+  {
+   "key": "LB.PS.single",
+   "status": "only_second",
+   "value": 0.0
+  },
+  {
+   "key": "LB.PS.single.cal",
+   "status": "only_second",
+   "value": "nominal95"
+  },
+  {
+   "key": "LB.PS.single.ci",
+   "status": "only_second",
+   "value": [
+    -0.0011126964298686169,
+    -0.00021236290995061612
+   ]
+  },
+  {
+   "key": "LB.PS.single.level",
+   "status": "only_second",
+   "value": 0.95
+  },
+  {
+   "key": "LB.RR_N.dec.cal",
+   "status": "DISAGREE",
+   "first": "nominal99",
+   "second": "nominal95"
+  },
+  {
+   "key": "LB.RR_N.dec.ci",
+   "status": "DISAGREE",
+   "first": [
+    -0.42291044776119446,
+    0.05970149253731333
+   ],
+   "second": [
+    -0.33830845771144286,
+    0.024875621890547612
+   ]
+  },
+  {
+   "key": "LB.RR_N.dec.level",
+   "status": "DISAGREE",
+   "first": 0.99,
+   "second": 0.95
+  }
+ ]
+}

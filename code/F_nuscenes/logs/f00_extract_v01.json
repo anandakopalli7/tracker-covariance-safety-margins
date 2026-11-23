@@ -1,0 +1,35 @@
+{
+ "started": "2026-11-19 14:22:22",
+ "archives": {
+  "v1.0-trainval_meta.tgz": {
+   "bytes": 461678030,
+   "md5": "537d3954ec34e5bcb89a35d4f6fb0d4a",
+   "sha256": "db48746b10e3544d5ef619eaa3d687e3960626fe1b4422ed856711da5aa7325b",
+   "md5_listed": "3eee698806fcf52330faa2e682b9f3a1",
+   "md5_ok": false,
+   "members": 21,
+   "seconds": 88.1
+  },
+  "nuScenes-map-expansion-v1.3.zip": {
+   "bytes": 398535531,
+   "md5": "b3a717def24130beb4becdbbd8c8cd56",
+   "sha256": "9dbc80a095b6b28d9b79fc9a43471a750dc92ca78c6d0db288fd92b34be5a144",
+   "md5_listed": null,
+   "md5_ok": null,
+   "members": 13,
+   "dest": "ARS_TRIAL\\revision_v13\\data\\nuscenes\\map_expansion",
+   "seconds": 11.0
+  },
+  "can_bus.zip": {
+   "bytes": 780974697,
+   "md5": "1f36bdbc4ebb301fff43791a4985987b",
+   "sha256": "3c68b94c001e8bd05a19886ecb2c6854e0cd69d7005ed9a94d13d45d2951e83f",
+   "md5_listed": null,
+   "md5_ok": null,
+   "members": 7834,
+   "dest": "ARS_TRIAL\\revision_v13\\data\\nuscenes",
+   "seconds": 126.9
+  }
+ },
+ "finished": "2026-11-19 14:26:22"
+}

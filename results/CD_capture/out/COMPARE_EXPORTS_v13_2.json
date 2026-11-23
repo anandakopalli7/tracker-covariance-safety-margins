@@ -1,0 +1,184 @@
+{
+ "schema": "COMPARE_EXPORTS_V13",
+ "test_old": false,
+ "tolerance": 1e-09,
+ "verdict": "DISAGREE OR MISSING",
+ "summary": {
+  "C": {
+   "agree": 615,
+   "disagree": 1,
+   "only_first": 0,
+   "only_second": 0,
+   "required_missing_first": [],
+   "required_missing_second": []
+  },
+  "D": {
+   "agree": 138,
+   "disagree": 0,
+   "only_first": 0,
+   "only_second": 0,
+   "required_missing_first": [],
+   "required_missing_second": []
+  }
+ },
+ "rows": [
+  {
+   "package": "C",
+   "key": "TRANSFER.structured",
+   "status": "DISAGREE",
+   "first": {
+    "N_inside_delta_all_sets": true,
+    "orderings": [
+     [
+      "CK3",
+      "AM"
+     ],
+     [
+      "CK3",
+      "TG"
+     ],
+     [
+      "CK3",
+      "NA"
+     ],
+     [
+      "CK3",
+      "N"
+     ],
+     [
+      "AM",
+      "TG"
+     ],
+     [
+      "AM",
+      "NA"
+     ],
+     [
+      "AM",
+      "N"
+     ],
+     [
+      "TG",
+      "NA"
+     ],
+     [
+      "TG",
+      "N"
+     ],
+     [
+      "NA",
+      "N"
+     ]
+    ],
+    "sets": [
+     "fresh",
+     "old",
+     "tuning"
+    ],
+    "sets_missing": [
+     "F (A_EXPORT_F.json)"
+    ],
+    "per_set": {
+     "tuning": {
+      "CK3": 0.37944270685243103,
+      "AM": 0.2783622405459198,
+      "TG": null,
+      "NA": 0.06397497867500711,
+      "N": -2.381755109694855e-19
+     },
+     "old": {
+      "N": -0.00041369549833977597,
+      "NA": 0.01506722551848021,
+      "AM": 0.38239616787327857,
+      "CK3": 0.8366011648794295,
+      "TG": 0.3212018942899134
+     },
+     "fresh": {
+      "N": -8.266717369203164e-06,
+      "CK3": 0.7828126679176965,
+      "NA": 0.02399414716410259,
+      "AM": 0.3694437325882265,
+      "TG": 0.2874420296444485
+     }
+    }
+   },
+   "second": {
+    "N_inside_delta_all_sets": true,
+    "orderings": [
+     [
+      "CK3",
+      "AM"
+     ],
+     [
+      "CK3",
+      "TG"
+     ],
+     [
+      "CK3",
+      "NA"
+     ],
+     [
+      "CK3",
+      "N"
+     ],
+     [
+      "AM",
+      "TG"
+     ],
+     [
+      "AM",
+      "NA"
+     ],
+     [
+      "AM",
+      "N"
+     ],
+     [
+      "TG",
+      "NA"
+     ],
+     [
+      "TG",
+      "N"
+     ],
+     [
+      "NA",
+      "N"
+     ]
+    ],
+    "sets": [
+     "fresh",
+     "old",
+     "tuning"
+    ],
+    "sets_missing": [
+     "F (A_RECOUNT_F.json)"
+    ],
+    "per_set": {
+     "tuning": {
+      "CK3": 0.37944270685243103,
+      "AM": 0.2783622405459198,
+      "TG": null,
+      "NA": 0.06397497867500711,
+      "N": -2.381755109694855e-19
+     },
+     "old": {
+      "N": -0.00041369549833977597,
+      "NA": 0.01506722551848021,
+      "AM": 0.38239616787327857,
+      "CK3": 0.8366011648794295,
+      "TG": 0.3212018942899134
+     },
+     "fresh": {
+      "N": -8.266717369203164e-06,
+      "CK3": 0.7828126679176965,
+      "NA": 0.02399414716410259,
+      "AM": 0.3694437325882265,
+      "TG": 0.2874420296444485
+     }
+    }
+   },
+   "required": false
+  }
+ ]
+}

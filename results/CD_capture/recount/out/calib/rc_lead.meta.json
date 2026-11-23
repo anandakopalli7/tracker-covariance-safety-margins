@@ -1,0 +1,49 @@
+{
+ "label": "rc_lead",
+ "kind": "lead",
+ "program": "rc_c_lead_v13.py",
+ "mode": "fresh",
+ "n_outer": 2000,
+ "n_inner": 1000,
+ "n_run": 105,
+ "n_stat": 18,
+ "stats": [
+  "R_gl_pp",
+  "RR_E5",
+  "RR_E5_minus_E5p",
+  "RR_N",
+  "RR_CK3",
+  "RR_E5p",
+  "IMM_R_gl_pp",
+  "IMM_r",
+  "IMM_c",
+  "IMM_r_over_c",
+  "H4_rec_est_-1.0",
+  "H4_lfl_est_-1.0",
+  "H4_rec_truth",
+  "H4_lfl_truth",
+  "H4_rec_est_-0.5",
+  "H4_lfl_est_-0.5",
+  "H4_rec_est_-2.0",
+  "H4_lfl_est_-2.0"
+ ],
+ "pod_seeds": [
+  20261913,
+  20261914
+ ],
+ "seed_outer": 20261912,
+ "b_outer_full_draw": 2000,
+ "b_inner_full_draw": 1000,
+ "job_file": "rc_lead.job.npz",
+ "job_sha256": "a0f2b529d1b2c1d26ac878042fe106d8922b207d78c0041afa14971b551816f6",
+ "job_bytes": 8067509,
+ "runner_files": [
+  "rc_calib_remote_v13.py",
+  "rc_kern_v13.py"
+ ],
+ "runner_call": "python -I -B rc_calib_remote_v13.py JOBDIR rc_lead --seeds SEED --outer LO:HI --threads 1",
+ "chunk_name": "rc_lead_<SEED>_o<LO>_<HI>.npz",
+ "written": "2026-11-20 06:43:32",
+ "seconds_outer_estimates": 145.6608567237854,
+ "dryrun": false
+}

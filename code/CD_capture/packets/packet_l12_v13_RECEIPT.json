@@ -1,0 +1,23 @@
+{
+  "packet": "packet_l12_v13",
+  "tar": "packet_l12_v13.tar.gz",
+  "tar_sha256": "451f776d41b0df858699a3fa4a6bb41d6257f70f1bec404a77889b7528968fca",
+  "tar_bytes": 7743267,
+  "changes": [
+    {
+      "path": "claude_smoke_v01/DEVELOPMENT_PROTOCOL_SMOKE_v01.json",
+      "source": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\l12\\DEVELOPMENT_PROTOCOL_L12_v13.json",
+      "old_sha256": "32d683a0a8ca2e91ff0245759ad78b43e7953c33bd12847c5193cafcdaa5735d",
+      "new_sha256": "0b35dbd694965c5ecb9e201590ba5c43beae7445969b2a39466a915353074c60",
+      "added": false
+    }
+  ],
+  "binding_sha256": "fa791c3ae26dbbdc3fdf9adde0e8113cc0adbb5b98bb207aff2d0e586f5ee2dd",
+  "protocol_sha256": "0b35dbd694965c5ecb9e201590ba5c43beae7445969b2a39466a915353074c60",
+  "smoke_files": 19,
+  "source_packet": "<library folder>\\packet_main_v03",
+  "made_by": {
+    "script": "build_packet_l12_v13.py",
+    "sha256": "ac53af9035ebbdb19fabff678b36210f90945b1d7800403583c22d40746fcc99"
+  }
+}

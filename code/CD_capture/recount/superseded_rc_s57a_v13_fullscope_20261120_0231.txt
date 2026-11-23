@@ -1,0 +1,1213 @@
+"""Recount (second program) of package CD, revision v13: the A10 section 5.6-5.7 keys of A's interface ("S57A").
+New file, 20 Nov 2026 (Claude Fable 5.2). AMENDMENT_10_v13 section 10.1(b).
+
+Written from AMENDMENT_10_v13.md, CD_DEFINITIONS_v13.md, the writer's specification CD_DEFINITIONS_S57A_v13.md, A's interface
+(RESULTS_INTERFACE_v13.md, A_KEYS_CD_v13.json) and the methods of record:
+  revision_v11\\analysis\\rev_g_partial_oracle_draws_v01.py, revision_v12\\analysis\\a9_8_grading_before_stop_v01.py  (partial oracles)
+  revision_v12\\analysis\\a9_6_stop_reliance_v01.py                                                                  (stop reliance)
+  revision_v12\\analysis\\a9_5_tuning_runs_v01.py                                                                    (tuning runs)
+  revision_v13\\work\\B_retrack\\code\\b6_stop_v01.py + shared\\trackers\\trk_score_v01.py                           (B6 terciles, delayed stop)
+No first program of work\\CD_capture\\analysis or work\\CD_capture\\tools was read. Reused: the scoring library of record
+optA_lib_v02 (imported unchanged), the earlier recount modules rc_core_v13 / rc_kern_v13 (own gridless kernel, E5 family, phase,
+Lock 2 gate), rc_c_lead_v13 (H4 design and transfer) and rc_c_cutin_v13 (event tick, track age), and, as data, extracted arrays.
+Everything else (grid tables, argmin frontier, reliance, terciles, realised deceleration, delay draw, masks, decision-equivalents,
+intervals) is implemented here.
+
+Sections (function names)
+  sec_dec      .dec / .dec.ci of the lead-braking and cut-in shares                       (keys LB.R.dec ... CI.Y.R.dec)
+  sec_po       partial oracles 25/50/75 per population and the grading check             (LB.PO*, LB.<pop>.PO*, CI.PO*, *.grading_ok)
+  sec_ci       cut-in event window: CK3, E5, E5 - E5p                                     (CI.RR_CK3, CI.RR_E5, CI.RR_E5mP)
+  sec_rs       reaction-and-stop room at 0.75 s, 6 m/s^2 relative to the 3 s room         (LB.RS075.rel)
+  sec_b6       terciles of realised lead deceleration; delayed, variable stop             (LB.T<i>.*, LB.T.relmin/relmax, LB.DS.*)
+  sec_rel      stop reliance                                                              (LB.REL_F0, LB.REL_N, LB.REL_CK3)
+  sec_tu       the 20 lead-braking tuning runs                                            (TU.*)
+  sec_ps       the transferred single scale and schedule on the record basis              (LB.PS.single, LB.PS.rec.dec)
+
+Usage (python -I -B -X utf8):
+  rc_s57a_v13.py --selftest                 reproduce the values of record on old runs (B6_STOP_v01, A9_6, A9_5, REV_G, A9_8)
+  rc_s57a_v13.py --test-old [--boot N]      old runs under A's keys -> out\\TESTOLD_RC_S57A_v13<tag>.json
+  rc_s57a_v13.py [--boot N]                 fresh runs -> out\\RC_S57A_v13<tag>.json; refuses before LOCK_A10_2.txt exists
+  --only dec,po,ci,rs,b6,rel,tu,ps          sections to run (default all);  --workers N (default 2);  --tag TEXT
+"""
+import os
+os.environ.setdefault('OPENBLAS_CORETYPE', 'Haswell')
+import argparse, json, math, pathlib, sys, time
+import numpy as np
+HERE = pathlib.Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))                    # python -I: the script folder is not on sys.path
+import rc_core_v13 as K                          # noqa: E402
+
+L = K.L
+NLEV = K.NLEV
+OUT = K.OUT
+S57A_SPEC = K.CD / 'CD_DEFINITIONS_S57A_v13.md'
+ARR_S57A = K.ARRAYS / 'S57A'
+B_OUT = K.ROOT13 / 'work' / 'B_retrack' / 'out'
+OLD_ARCH = K.P / '07_fit_runs' / 'archives'
+TUNE_X = K.P / '11_ojits' / 'A4' / 'dryrun' / 'extract'
+TG_TUNE = K.CD / 'analysis' / 'out' / 's57a_old' / 'tg_tune'     # extracted arrays of the first program (old data; shared, A10 10.1(b))
+B_RETRACK = B_OUT / 'retrack'
+EXT_FRESH = OUT / 's57a_ext'                                     # this program's own extended-truth clearances of fresh runs
+EXT_TEST = OUT / 's57a_ext_testold'
+REPL_C = K.CD / 'REPLACEMENTS_C_v13.json'
+
+SEED_PO_FRESH = 20261919
+SEED_PO_RECORD = 20261118
+SEED_DELAY = 20261916
+SEED_TUNE = 20261918
+SEED_RECORD = 20261113
+PO_P = (0.25, 0.5, 0.75); PO_NM = ('P25', 'P50', 'P75')
+VMIN = 0.5
+RS_KEY = 't0p75_a6p0'
+LB_POPS = ('all', 'mov', 'pre', 'brk', 'stop')
+
+
+def log(*a):
+    print(*a, flush=True)
+
+
+def deceq(D, n):
+    """Decision-equivalents of a sum over the 201 levels: D / 201 / 100 * n."""
+    return np.asarray(D, float) / NLEV / 100. * np.asarray(n, float)
+
+
+def fnum(x):
+    """float, or None for anything not finite (the interface's null)."""
+    x = float(x)
+    return x if math.isfinite(x) else None
+
+
+def ci_of(b, level=0.95):
+    c = K.pct_interval(np.asarray(b, float), level)
+    return [fnum(c[0]), fnum(c[1])]
+
+
+# ================================================================================================ scoring-general gridless
+class PrepX:
+    """Row statistics of a run for the gridless curves under a scoring X (duck type of rc_core_v13.Prep, which is the 3 s
+    commitment): wrong go by the scoring's safe set, caution's oracle row and counted set by the 3 s commitment (optA_lib_v02.
+    stats_scored), the perfect oracle = first scoring-safe row, else the fallback row."""
+
+    def __init__(self, r, safe_x=None):
+        clear1 = r['clear1']; vbar = r['vbar']; des = r['desired']
+        n = clear1.shape[0]; ar = np.arange(n)
+        safe = clear1 > 0.
+        sx = safe if safe_x is None else np.asarray(safe_x, bool)
+        orc = safe.argmax(axis=1)
+        self.n = n
+        self.RS = np.zeros((4, n, 17))
+        self.RS[0] = ~sx
+        self.RS[1] = np.where(safe, (vbar[ar, orc][:, None] - vbar) / des, 0.)
+        self.RS[2] = safe
+        self.RS[3] = sx.any(axis=1)[:, None] & ~sx
+        self.idx55 = np.asarray(r['idx55']).astype(np.int64)
+        self.first_safe = np.where(sx.any(axis=1), sx.argmax(axis=1), self.idx55)
+
+
+def problems(runs, names, masks, safe_key=None):
+    """One rc_kern_v13.Problem per population. names[0] plays F0, names[1] plays E; 'O' is the scoring's perfect oracle.
+    masks: per run a list of (n,) bool. safe_key: key of the run dict holding the scoring's (n, 17) safe set (None: 3 s)."""
+    preps = [PrepX(r, None if safe_key is None else r[safe_key]) for r in runs]
+    mfn = lambda k: masks[k]                                    # noqa: E731
+    cur = {nm: K.build_curves(runs, preps, nm, mfn, oracle=(nm == 'O')) for nm in names}
+    return [K.Problem(list(names), [cur[nm][pi] for nm in names]) for pi in range(len(masks[0]))]
+
+
+def ev_point(P, n):
+    e = P.evaluate(np.ones((1, n)))
+    return dict(n=float(e['n'][0]), denE=float(e['denE'][0]), D={a: float(v[0]) for a, v in e['D'].items()})
+
+
+def share(D, den):
+    return L.ratio(D, den)
+
+
+# ================================================================================================ grid (202 scales) helpers
+def grid_tables(runs, names, masks_key, safe_key=None):
+    """{name: (202, npop, 5)} pooled statistics on the grid of record (optA_lib_v02.stats_scored summed over the runs in order)."""
+    out = {}
+    for a in names:
+        acc = None
+        for r in runs:
+            sx = (r['clear1'] > 0.) if safe_key is None else r[safe_key]
+            sel = L.select_first_safe(sx, r['idx55']) if a == 'O' else grid_sel(r, a)
+            t = L.stats_scored(sel, r['clear1'], sx, r['vbar'], r['desired'], r[masks_key])
+            acc = t if acc is None else acc + t
+        out[a] = acc
+    return out
+
+
+def grid_sel(r, a):
+    c = r.setdefault('_sel', {})
+    if a not in c:
+        c[a] = L.select_grid(r['crit'][a], K.GRID, r['idx55']).astype(np.int16)
+    return c[a]
+
+
+def drop_sel(runs, names):
+    for r in runs:
+        for a in names:
+            r.get('_sel', {}).pop(a, None)
+
+
+def grid_point(T, pi, names):
+    """optA_lib_v02.eval_scoring on one population of grid tables."""
+    return L.eval_scoring({a: T[a][:, pi, :] for a in T}, list(names))
+
+
+def argmin_frontier(c, w, lev):
+    """Per level the index of the point with the lowest w among finite points with c <= level (the first in caution order among
+    equal minima; equal cautions in index order); -1 where none."""
+    ok = np.isfinite(c) & np.isfinite(w)
+    idx = np.flatnonzero(ok)
+    res = np.full(len(lev), -1, np.int64)
+    if idx.size == 0:
+        return res
+    o = np.argsort(c[idx], kind='stable')
+    cs = c[idx][o]; ws = w[idx][o]; src = idx[o]
+    hold = np.empty(ws.size, np.int64); best = np.inf; hb = -1
+    for q in range(ws.size):
+        if ws[q] < best:
+            best = ws[q]; hb = src[q]
+        hold[q] = hb
+    j = np.searchsorted(cs, lev, side='right') - 1
+    res[j >= 0] = hold[j[j >= 0]]
+    return res
+
+
+# ================================================================================================ loaders
+def load_old_eval():
+    """The 35 old evaluation runs (rev_common_v01.load_runs, the loader of record), with the tracker's lead state (v12 out\\lead),
+    TG (v12 out\\tg, cTG2), the reaction-and-stop clearances of record (cache, tau 0.75 s / 6 m/s^2) and the extended ones (v11
+    out\\ext: plans judged until the stop ends)."""
+    if str(K.V11) not in sys.path:
+        sys.path.insert(0, str(K.V11))
+    import rev_common_v01 as C
+    runs = []
+    for r in C.load_runs():
+        z = np.load(K.V12 / 'out' / 'lead' / (r['run'] + '.npz'), allow_pickle=False)
+        t = np.load(K.V12 / 'out' / 'tg' / (r['run'] + '.npz'), allow_pickle=False)
+        x = np.load(K.V11 / 'out' / 'ext' / (r['run'] + '.npz'), allow_pickle=False)
+        for q in (z, t, x):
+            if not np.array_equal(q['k'], r['k']):
+                raise SystemExit('REFUSED: side arrays of %s do not match its decisions' % r['run'])
+        crit = dict(r['crit']); crit['TG'] = t['cTG2']
+        runs.append(dict(run=r['run'], desired=float(r['desired']), k=np.asarray(r['k']), ev=np.asarray(r['ev'], bool),
+                         v0=np.asarray(r['v0'], float), clear1=r['clear1'], vbar=r['vbar'],
+                         idx55=np.asarray(r['idx55']).astype(np.int64), crit=crit, ph=np.asarray(r['ph']).astype(np.int64),
+                         vhat=z['vhat'], ahat_long=z['ahat_long'], lead_found=z['lead_found'].astype(bool), n_dec=int(len(r['k'])),
+                         safe_rs=L.clean_clear(r['cache'][RS_KEY]) > 0., safe_ext=L.clean_clear(x['clearX_' + RS_KEY]) > 0.))
+    return runs
+
+
+def b_arrays(variant, run, ref, what=('cF0', 'cE', 'cN')):
+    """Package B's re-track arrays of an old run, accepted only if they describe the stored decisions: equal k and, for the
+    arrays named in what, equal NaN patterns and values within 1e-12 of the stored ones (ref: the run dict of record)."""
+    z = np.load(B_RETRACK / variant / (run + '_arrays.npz'), allow_pickle=False)
+    if not np.array_equal(z['k'], ref['k']):
+        raise SystemExit('REFUSED: B %s arrays of %s do not have the stored decisions' % (variant, run))
+    mx = 0.
+    for key in what:
+        a = np.asarray(z[key], float); b = np.asarray(ref['crit'][key[1:]], float)
+        fa = np.isfinite(a); fb = np.isfinite(b)
+        if not (np.array_equal(np.isnan(a), np.isnan(b)) and np.array_equal(fa, fb) and np.array_equal(a[~fa & ~np.isnan(a)], b[~fb & ~np.isnan(b)])):
+            raise SystemExit('REFUSED: B %s arrays of %s: %s has another NaN / inf pattern than the stored one' % (variant, run, key))
+        if fa.any():
+            mx = max(mx, float(np.max(np.abs(a[fa] - b[fa]))))
+    if mx > 1e-12:
+        raise SystemExit('REFUSED: B %s arrays of %s differ from the stored ones by %.3g' % (variant, run, mx))
+    return z, mx
+
+
+def b_variant_run(variant, r):
+    """A run dict from package B's re-track arrays of tracker variant x (its own F0_x, E_x, N_x), for the decisions of r."""
+    z = np.load(B_RETRACK / variant / (r['run'] + '_arrays.npz'), allow_pickle=False)
+    if not (np.array_equal(z['k'], r['k']) and np.array_equal(np.asarray(z['evaluated']).astype(bool), r['ev'])):
+        raise SystemExit('REFUSED: B %s arrays of %s do not describe the same decisions' % (variant, r['run']))
+    return dict(run=r['run'], desired=float(np.asarray(z['des'], float)[0]), k=np.asarray(z['k']), ev=r['ev'],
+                clear1=L.clean_clear(z['clear']), vbar=np.asarray(z['vbar'], float), idx55=np.asarray(z['idx55']).astype(np.int64),
+                n_dec=int(len(z['k'])), crit={'F0': np.asarray(z['cF0'], float), 'E': np.asarray(z['cE'], float),
+                                              'N': np.asarray(z['cN'], float)})
+
+
+def old_cap(run):
+    d = [p for p in (OLD_ARCH / run / 'x' / run / 'capture').iterdir() if p.is_dir()]
+    if len(d) != 1:
+        raise SystemExit('REFUSED: expected one capture folder for %s' % run)
+    return K.check_path(d[0])
+
+
+def load_old_tuning():
+    """The 20 lead-braking tuning runs as a9_5_tuning_runs_v01.load_tuning (stored arrays + the A4 tuning extraction)."""
+    names = sorted(p.stem for p in TUNE_X.glob('*.npz'))
+    runs = []
+    for run in names:
+        z = np.load(K.STORED_OLD / (run + '.npz'), allow_pickle=False)
+        m = json.loads(str(z['meta']))
+        if m.get('family') != 'lead_braking':
+            raise SystemExit('REFUSED: %s is not a lead-braking run' % run)
+        x = np.load(TUNE_X / (run + '.npz'), allow_pickle=False)
+        if not np.array_equal(x['k'], z['k']):
+            raise SystemExit('REFUSED: decision ticks differ for %s' % run)
+        runs.append(dict(run=run, desired=float(m['desired']), k=np.asarray(z['k']), ev=z['evaluated'].astype(bool),
+                         v0=np.asarray(z['v0'], float), clear1=L.clean_clear(z['clear']), vbar=z['vbar'],
+                         idx55=np.asarray(z['idx55']).astype(np.int64), ph=x['phase'].astype(np.int64), n_dec=int(len(z['k'])),
+                         crit={'F0': z['cF0'], 'E': z['cE'], 'N': z['cN'], 'NA': x['cNA'], 'A1': x['cA1'], 'CK3': x['cCK3'],
+                               'Q': x['cQ']}))
+    return runs
+
+
+def attach_tuning_extras(runs):
+    """TG (the first program's A9-7a rebuild, shared extracted arrays of OLD runs) and the tracker's lead state (package B's CV0
+    re-track arrays, accepted by b_arrays' identity check). Returns notes."""
+    notes = dict(tg='attached', tg_missing=[], b_cv0_max_abs_diff=0.)
+    for r in runs:
+        f = TG_TUNE / (r['run'] + '.npz')
+        if f.is_file():
+            t = np.load(f, allow_pickle=False)
+            if not np.array_equal(t['k'], r['k']):
+                raise SystemExit('REFUSED: TG arrays of %s do not match its decisions' % r['run'])
+            r['crit']['TG'] = np.asarray(t['cTG2'], float)
+        else:
+            notes['tg_missing'].append(r['run'])
+        z, mx = b_arrays('CV0', r['run'], r)
+        notes['b_cv0_max_abs_diff'] = max(notes['b_cv0_max_abs_diff'], mx)
+        r['vhat'] = np.asarray(z['vhat'], float); r['ahat_long'] = np.asarray(z['ahat_long'], float)
+        r['lead_found'] = np.asarray(z['lead_found']).astype(bool)
+    if notes['tg_missing']:
+        notes['tg'] = 'missing for %d runs: TU.RR_TG is null' % len(notes['tg_missing'])
+    return notes
+
+
+def fresh_ids(family):
+    """Run ids of a family in ascending order: CASES_C_v13.json; if REPLACEMENTS_C_v13.json exists, the ids present in
+    arrays/CV0 with that family in their meta (pc13_*_native, no lead variant), which must number 105; the differences from the
+    case list are returned for the record."""
+    ids = K.fresh_run_ids(family)
+    if not REPL_C.is_file():
+        return ids, None
+    K.require_lock2('fresh-run arrays')
+    have = []
+    for f in sorted((K.ARRAYS / 'CV0').glob('pc13_*_native.npz')):
+        with np.load(f, allow_pickle=False) as z:
+            meta = json.loads(str(z['meta']))
+        if meta.get('family') == family and not meta.get('lead_variant'):
+            have.append(f.stem)
+    have = sorted(have)
+    if len(have) != len(ids):
+        raise SystemExit('REFUSED: %d %s runs in arrays/CV0, expected %d' % (len(have), family, len(ids)))
+    return have, dict(replacements_file=str(REPL_C), dropped=sorted(set(ids) - set(have)), added=sorted(set(have) - set(ids)))
+
+
+def load_fresh(family, variant='CV0'):
+    """Fresh arrays arrays\\<variant>\\<run id>.npz in run-id order. Gated by Lock 2."""
+    K.require_lock2('fresh-run arrays (%s, %s)' % (family, variant))
+    cm = {'F0': 'cF0', 'E': 'cE', 'N': 'cN', 'NA': 'cNA', 'Q': 'cQ', 'A1': 'cA1', 'CK3': 'cCK3', 'TG': 'cTG2'}
+    runs = []
+    for rid in fresh_ids(family)[0]:
+        z = np.load(K.check_path(K.ARRAYS / variant / (rid + '.npz')), allow_pickle=False)
+        meta = json.loads(str(z['meta']))
+        if meta.get('family') != family or meta.get('lead_variant'):
+            raise SystemExit('REFUSED: %s is not a plain %s run' % (rid, family))
+        des = np.asarray(z['des'], float)
+        if des.size and not np.all(des == des[0]):
+            raise SystemExit('REFUSED: %s has more than one desired speed' % rid)
+        r = dict(run=rid, desired=float(des[0]), k=np.asarray(z['k']), ev=np.asarray(z['evaluated']).astype(bool),
+                 v0=np.asarray(z['v0'], float), clear1=K.clean_clear(z['clear']), vbar=np.asarray(z['vbar'], float),
+                 idx55=np.asarray(z['idx55']).astype(np.int64), n_dec=int(len(z['k'])),
+                 crit={nm: np.asarray(z[key], float) for nm, key in cm.items() if key in z.files})
+        if 'phase' in z.files:
+            r['ph'] = np.asarray(z['phase']).astype(np.int64)
+        for kx in ('vhat', 'ahat_long'):
+            if kx in z.files:
+                r[kx] = np.asarray(z[kx], float)
+        if 'lead_found' in z.files:
+            r['lead_found'] = np.asarray(z['lead_found']).astype(bool)
+        if 'clearR075' in z.files:
+            r['safe_rs'] = K.clean_clear(z['clearR075']) > 0.
+        runs.append(r)
+    return runs
+
+
+def fresh_cap(rid):
+    rd = K.check_path(K.RUNS_DIR / rid / rid)
+    d = [p for p in (rd / 'capture').iterdir() if p.is_dir()]
+    if len(d) != 1:
+        raise SystemExit('REFUSED: expected one capture folder in %s' % (rd / 'capture'))
+    return rd, d[0]
+
+
+# ================================================================================================ masks
+def lb_masks(r, phase='est'):
+    """Populations of LB_POPS: all evaluated; ego moving (v0 > 0.5 m/s); before braking / braking / stopped by the tracker's
+    phase estimate at -1.0 m/s^2 (A10 2.4), or by the truth phase of record (phase='truth': 0, 1, 2)."""
+    ev = r['ev']
+    ph = K.est_phase(r['vhat'], r['ahat_long'], r['lead_found'], -1.0) if phase == 'est' else r['ph']
+    return [ev, ev & (r['v0'] > VMIN), ev & (ph == 0), ev & (ph == 1), ev & (ph == 2)]
+
+
+# ================================================================================================ partial oracles
+def add_partial(runs, seed):
+    """Method of record (rev_g_partial_oracle_draws_v01.one): u = default_rng(seed).random(total stored decisions), one uniform
+    per stored decision, runs in the given order and decisions in stored (k) order; the partial oracle with share p takes E's
+    critical scales where u < p and F0's elsewhere."""
+    tot = int(sum(r['n_dec'] for r in runs))
+    U = np.random.default_rng(seed).random(tot)
+    pos = 0
+    for r in runs:
+        u = U[pos:pos + r['n_dec']]; pos += r['n_dec']
+        for p, nm in zip(PO_P, PO_NM):
+            r['crit'][nm] = np.where((u < p)[:, None], r['crit']['E'], r['crit']['F0'])
+    drop_sel(runs, PO_NM)
+    return tot
+
+
+def grades(v):
+    """A10 5.7 / a9_8 rule: strictly increasing with the 25% share above zero. NaN anywhere -> False."""
+    a, b, c = (float('nan') if x is None else float(x) for x in v)
+    return bool(a < b < c and a > 0)
+
+
+def partial_shares(runs, masks, pop_names, frontier='gridless'):
+    """{pop: dict(P25, P50, P75, grading_ok, n, R_pp)} on each population's own frontier."""
+    out = {}
+    n = len(runs)
+    if frontier == 'gridless':
+        PB = problems(runs, ['F0', 'E'] + list(PO_NM), masks)
+        for pi, pn in enumerate(pop_names):
+            e = ev_point(PB[pi], n)
+            sh = [share(e['D'][nm], e['denE']) for nm in PO_NM]
+            out[pn] = dict(zip(PO_NM, sh)); out[pn].update(grading_ok=grades(sh), n=e['n'], R_pp=e['denE'] / NLEV,
+                                                          D_deceq={nm: float(deceq(e['D'][nm], e['n'])) for nm in PO_NM})
+    else:
+        for r, m in zip(runs, masks):
+            r['_m'] = tuple(m)
+        T = grid_tables(runs, ['F0', 'E'] + list(PO_NM), '_m')
+        for pi, pn in enumerate(pop_names):
+            e = grid_point(T, pi, PO_NM)
+            sh = [share(e['D'][nm], e['denE']) for nm in PO_NM]
+            out[pn] = dict(zip(PO_NM, sh)); out[pn].update(grading_ok=grades(sh), n=e['n'], R_pp=e['denE'] / NLEV,
+                                                          D_deceq={nm: float(deceq(e['D'][nm], e['n'])) for nm in PO_NM})
+    return out
+
+
+# ================================================================================================ B6: terciles, delays
+def read_jsonl(p):
+    with open(p, encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                yield json.loads(line)
+
+
+def realised_decel(cap):
+    """Table S28 rule (rev_h_run_facts_v01, as trk_score_v01.realised_decel states it): the true lead speed |velocity_lh| of the
+    truth record's target at every truth tick, time t = 0.05 k; v_before = median speed for 3 < t < 5 + brake_start_s - 0.2 (the
+    largest of the first 20 samples if none); samples with 0.1 v_before < v < 0.9 v_before and t > 5 + brake_start_s - 0.5; from
+    the first to the last such sample (all samples between), minus the least-squares slope of speed on time; None if fewer than 4
+    samples qualify."""
+    cap = pathlib.Path(cap)
+    bs = float(json.loads((cap / 'contract.json').read_text(encoding='utf-8'))['case']['draw']['brake_start_s'])
+    tt = []; vv = []
+    for rec in read_jsonl(cap / 'evaluation_truth.jsonl'):
+        tg = rec.get('target')
+        if not tg:
+            continue
+        hit = [a for a in (rec.get('scenario_actors') or []) if a['actor_id'] == tg['actor_id']]
+        if not hit:
+            continue
+        vel = hit[0]['velocity_lh']
+        tt.append(rec['k'] * 0.05); vv.append(math.hypot(vel[0], vel[1]))
+    t = np.array(tt); v = np.array(vv)
+    before = (t > 3) & (t < 5 + bs - 0.2)
+    vb = float(np.median(v[before])) if before.any() else float(v[:20].max())
+    q = (v < 0.9 * vb) & (v > 0.1 * vb) & (t > 5 + bs - 0.5)
+    if int(q.sum()) < 4:
+        return None
+    w = np.flatnonzero(q)
+    sl = slice(w[0], w[-1] + 1)
+    return float(-np.polyfit(t[sl], v[sl], 1)[0])
+
+
+def terciles(ids, dec):
+    """Ascending realised deceleration, ties by id, runs without a value last; split into three as numpy.array_split
+    (sizes differ by at most one, the larger parts first)."""
+    order = [i for i, _ in sorted(zip(ids, dec), key=lambda x: (x[1] is None, 0. if x[1] is None else x[1], x[0]))]
+    n = len(order); base, extra = divmod(n, 3)
+    out = []; pos = 0
+    for j in range(3):
+        sz = base + (1 if j < extra else 0)
+        out.append(order[pos:pos + sz]); pos += sz
+    return out
+
+
+def delay_draw(runs):
+    """tau_i = 0.75 + delta_i, delta_i ~ U(0, 0.75): one default_rng(20261916).uniform(0, 0.75, N) over the evaluated decisions,
+    runs in the given (name) order and decisions in k order. Returns per run an (n,) array (NaN where not evaluated)."""
+    N = int(sum(r['ev'].sum() for r in runs))
+    d = np.random.default_rng(SEED_DELAY).uniform(0., 0.75, size=N)
+    out = []; pos = 0
+    for r in runs:
+        t = np.full(r['ev'].size, np.nan); m = int(r['ev'].sum())
+        t[r['ev']] = 0.75 + d[pos:pos + m]; pos += m
+        out.append(t)
+    return out
+
+
+def range_str(lo, hi):
+    return '%.2f–%.2f' % (lo, hi)
+
+
+# ================================================================================================ extended truth (own extraction)
+def ext_clearance(rd, cap, ev, k_expected, tau=0.75, A=6.0):
+    """The reaction-and-stop clearance judged against the logged truth until the stop ends (the v11 rev_e1 definition, which
+    a9_6_stop_reliance_v01 uses as its safe set), written here from that definition:
+      the row until j_r = tau / 0.05, then the jerk-limited stop of record (optA_lib_v02.brake_profile from the row's speed at j_r
+      and its acceleration in the step ending there), position held after standstill, along the route direction of the decision;
+      the stop ends at t_stop = tau + profile stop time, J = max(60, ceil(t_stop / 0.05)); truth: true frames only, each actor of
+      the decision tick up to its first missing frame, no extrapolation; clearance = the smallest rectangle distance over frames
+      0..J (over the frames that exist if the recording ends earlier: 'censored').
+    Returns clearX (n, 17), clear61 (n, 17) (the 3 s window, frames 0..60), late (n, 17), cens (n, 17); NaN / False where not
+    evaluated. Geometry: olcore_v01.rect_corners / poly_dist (the modules of record, through package B's trk_arrays_v01)."""
+    if str(K.SHARED) not in sys.path:
+        sys.path.insert(0, str(K.SHARED))
+    import trk_env_v01 as env
+    env.setup()
+    import trk_arrays_v01 as TA
+    oc = TA.oc
+    Lr = TA.load_capture(rd, cap)
+    T = Lr['T']; kmax = int(Lr['kmax'])
+    decs = list(TA.gc.decisions(Lr['cap']))
+    ks = np.array([k for k, _ in decs], dtype=np.int64)
+    if not np.array_equal(ks, np.asarray(k_expected)):
+        raise SystemExit('REFUSED: the logged decisions of %s do not match its arrays' % cap)
+    jr = L.j_of(tau); H = L.H
+    nd = len(decs)
+    cX = np.full((nd, 17), np.nan); c61 = np.full((nd, 17), np.nan)
+    late = np.zeros((nd, 17), bool); cens = np.zeros((nd, 17), bool)
+    for di, (k, dec) in enumerate(decs):
+        if not ev[di]:
+            continue
+        ms = dec['model_state']; Lg, Wd = dec['ego_length'], dec['ego_width']
+        rows = TA.finite_primitive.build_library(ms['model_speed_mps'], ms['model_acceleration_mps2'], dec['desired_mps'],
+                                                 dec['actors'], Lg, Wd, dec['now'], TA.consumer.Diagnostics())
+        if len(rows) != 17:
+            raise SystemExit('REFUSED: %d planner rows at decision %d of %s' % (len(rows), di, cap))
+        prof = []; tst = np.empty(17)
+        for ri, x in enumerate(rows):
+            pos, t_stop, _ = L.brake_profile(float(x['v'][jr]), float(x['a'][jr - 1]), A)
+            prof.append(pos); tst[ri] = jr * H + t_stop
+        jend = np.maximum(60, np.ceil(tst / H - 1e-9).astype(np.int64))
+        left = kmax - int(k)
+        nfr = int(min(jend.max(), max(left, 60))) + 1
+        S = np.empty((17, nfr))
+        for ri, x in enumerate(rows):
+            srow = np.asarray(x['s'], float)
+            S[ri, :jr + 1] = srow[:jr + 1]
+            for j in range(jr + 1, nfr):
+                S[ri, j] = srow[jr] + prof[ri]((j - jr) * H)
+        ego = T[k]['ego']
+        ux, uy = math.cos(ego[2]), math.sin(ego[2])
+        E = oc.rect_corners(ego[0] + S * ux, ego[1] + S * uy, ego[2], Lg / 2, Wd / 2)          # (17, nfr, 4, 2)
+        Dall = np.full((17, nfr), np.inf)
+        nreal = min(nfr - 1, left) + 1
+        for aid in list(T[k]['actors']):
+            c = np.full((nfr, 2), np.nan); hd = np.full(nfr, np.nan); hl = hw = None
+            for j in range(nreal):
+                a_ = T[k + j]['actors'].get(aid)
+                if a_ is None:
+                    break
+                c[j] = a_[0], a_[1]; hd[j] = a_[2]; hl, hw = a_[3], a_[4]
+            ok = np.isfinite(c[:, 0])
+            if not ok.any():
+                continue
+            Arect = oc.rect_corners(c[:, 0][ok], c[:, 1][ok], hd[ok], hl, hw)
+            Dall[:, ok] = np.minimum(Dall[:, ok], oc.poly_dist(E[:, ok], Arect[None]))
+        c61[di] = Dall[:, :61].min(axis=1)
+        for ri in range(17):
+            cX[di, ri] = Dall[ri, :int(min(jend[ri], nfr - 1)) + 1].min()
+        late[di] = tst > 3.0 + 1e-9
+        cens[di] = late[di] & (jend > left)
+    return cX, c61, late, cens
+
+
+def stage_ext(test_old, part, nparts, limit=None):
+    """Write this program's extended-truth clearances: fresh lead-braking runs -> out/s57a_ext/<rid>.npz (after Lock 2);
+    --test-old: the old evaluation runs -> out/s57a_ext_testold/, each compared with the v11 extraction of record."""
+    if test_old:
+        runs = load_old_eval(); outd = EXT_TEST
+        jobs = [(r, OLD_ARCH / r['run'], old_cap(r['run'])) for r in runs]
+    else:
+        K.require_lock2('fresh-run logs')
+        runs = load_fresh('lead_braking', 'CV0'); outd = EXT_FRESH
+        jobs = [(r,) + tuple(fresh_cap(r['run'])) for r in runs]
+    outd.mkdir(parents=True, exist_ok=True)
+    done = 0
+    for i, (r, rd, cap) in enumerate(jobs):
+        if i % nparts != part:
+            continue
+        f = outd / (r['run'] + '.npz')
+        if f.exists():
+            continue
+        if limit is not None and done >= limit:
+            break
+        t0 = time.time()
+        cX, c61, late, cens = ext_clearance(rd, cap, r['ev'], r['k'])
+        ev = r['ev']
+        meta = dict(run=r['run'], code='rc_s57a_v13.py', tau=0.75, A=6.0, n_eval=int(ev.sum()), seconds=None,
+                    n_late=int(late[ev].sum()), n_cens=int(cens[ev].sum()),
+                    n_flag_changed_by_extension=int(((c61[ev] > 0) & ~(cX[ev] > 0)).sum()))
+        if 'safe_rs' in r:                                   # the 3 s window recomputed here against the shared / cached clearance
+            meta['flags61_differ_from_arrays'] = int(((L.clean_clear(c61) > 0.) != r['safe_rs'])[ev].sum())
+        if test_old:
+            x = np.load(K.V11 / 'out' / 'ext' / (r['run'] + '.npz'), allow_pickle=False)
+            ref = x['clearX_' + RS_KEY][ev]; mine = cX[ev]
+            fin = np.isfinite(ref) & np.isfinite(mine)
+            meta['vs_v11_ext'] = dict(inf_pattern_equal=bool(np.array_equal(np.isfinite(ref), np.isfinite(mine))),
+                                      max_abs_diff=float(np.max(np.abs(ref[fin] - mine[fin]))) if fin.any() else 0.,
+                                      flags_differ=int(((ref > 0) != (mine > 0)).sum()))
+        meta['seconds'] = time.time() - t0
+        with open(f, 'xb') as fh:
+            np.savez_compressed(fh, meta=json.dumps(meta), k=r['k'], clearX=cX, clear61=c61, late=late, cens=cens)
+        done += 1
+        log('ext %s (%d of %d, %.0f s): %s' % (r['run'], i + 1, len(jobs), meta['seconds'],
+                                              {k: v for k, v in meta.items() if k not in ('run', 'code', 'seconds')}))
+
+
+def attach_ext(runs, folder):
+    """safe_ext from this program's extended-truth files; returns the number of runs without a file."""
+    miss = 0
+    for r in runs:
+        f = folder / (r['run'] + '.npz')
+        if not f.is_file():
+            miss += 1; continue
+        z = np.load(f, allow_pickle=False)
+        if not np.array_equal(z['k'], r['k']):
+            raise SystemExit('REFUSED: extended-truth file of %s does not match its decisions' % r['run'])
+        r['safe_ext'] = L.clean_clear(z['clearX']) > 0.
+    return miss
+
+
+# ================================================================================================ sections
+def boot_eval(P, CNT):
+    e = P.evaluate(CNT)
+    return e
+
+
+def sec_dec_lb(V, D, runs, imm, CNT, level_of, tag='LB'):
+    """Decision-equivalents of the gridless room and of the shares' numerators (all evaluated decisions, 3 s)."""
+    n = len(runs)
+    u, uinfo = K.e5_u(runs, 'F0', 'E')
+    up = K.permute_u(runs, u)
+    for r, uu, pp in zip(runs, u, up):
+        r['crit']['E5'] = K.oracle_crit(r['crit']['F0'], K.RATIO, K.E5_AMP, uu)
+        r['crit']['E5p'] = K.oracle_crit(r['crit']['F0'], K.RATIO, K.E5_AMP, pp)
+    names = ['F0', 'E', 'N', 'E5', 'E5p', 'CK3']
+    P = problems(runs, names, [[r['ev']] for r in runs])[0]
+    e = ev_point(P, n)
+    b = P.evaluate(CNT)
+    D['dec_lb'] = dict(n=e['n'], denE=e['denE'], D=e['D'], e5=uinfo,
+                       RR={a: share(e['D'][a], e['denE']) for a in e['D']},
+                       boot=dict(n_resamples=int(CNT.shape[0]), share_den_gt0=float(np.mean(b['denE'] > 0))))
+
+    def put(key, pt, bs, stat):
+        lv, cal = level_of(stat)
+        V[key] = fnum(pt); V[key + '.ci'] = ci_of(bs, lv); V[key + '.level'] = lv; V[key + '.cal'] = cal
+        if lv != 0.95:
+            D.setdefault('ci95', {})[key] = ci_of(bs, 0.95)
+
+    V[tag + '.R.dec'] = fnum(deceq(e['denE'], e['n']))
+    D['dec_lb']['R.dec.ci95'] = ci_of(deceq(b['denE'], b['n']), 0.95)
+    put(tag + '.RR_N.dec', deceq(e['D']['N'], e['n']), deceq(b['D']['N'], b['n']), 'RR_N')
+    put(tag + '.RR_E5.dec', deceq(e['D']['E5'], e['n']), deceq(b['D']['E5'], b['n']), 'RR_E5')
+    put(tag + '.RR_E5mP.dec', deceq(e['D']['E5'] - e['D']['E5p'], e['n']), deceq(b['D']['E5'] - b['D']['E5p'], b['n']),
+        'RR_E5_minus_E5p')
+    put(tag + '.RR_CK3.dec', deceq(e['D']['CK3'], e['n']), deceq(b['D']['CK3'], b['n']), 'RR_CK3')
+    room3 = dict(pt=e, bs=dict(denE=b['denE'], n=b['n']))
+    if imm is not None:
+        ui, _ = K.e5_u(imm, 'F0', 'E')
+        rsi = K.ratio_summary(np.concatenate([K.margin_ratio_values(r) for r in imm]))
+        for r, uu in zip(imm, ui):
+            r['crit']['E5x'] = K.oracle_crit(r['crit']['F0'], rsi['median'], rsi['A'], uu)
+        PI = problems(imm, ['F0', 'E', 'N', 'E5x'], [[r['ev']] for r in imm])[0]
+        ei = ev_point(PI, n); bi = PI.evaluate(CNT)
+        D['dec_imm'] = dict(n=ei['n'], denE=ei['denE'], D=ei['D'], m=rsi['median'], A=rsi['A'],
+                            r=share(ei['D']['N'], ei['denE']), c=share(ei['D']['E5x'], ei['denE']))
+        put(tag + '.IMM.r.dec', deceq(ei['D']['N'], ei['n']), deceq(bi['D']['N'], bi['n']), 'IMM_r')
+        put(tag + '.IMM.c.dec', deceq(ei['D']['E5x'], ei['n']), deceq(bi['D']['E5x'], bi['n']), 'IMM_c')
+    return room3
+
+
+def sec_ps(V, D, runs, CNT, level_of, tag='LB'):
+    """H4 on the grid (rc_c_lead_v13: design on the 35 old runs, transfer once): the schedule's numerator in decision-equivalents
+    and the transferred single scale's share on the record basis, sum(F_F0 - F_1) / sum(F_F0 - F_E)."""
+    import rc_c_lead_v13 as RL
+    design_runs = K.load_old_eval_runs()
+    designs = {nm: RL.h4_design(design_runs, kind, thr) for nm, kind, thr in RL.VARIANTS}
+    hx = RL.H4(runs, designs)
+    n = len(runs)
+    h = hx.evaluate(np.ones((1, n))); hb = hx.evaluate(CNT)
+    den = float(h['den'][0]); nn = float(h['n'][0])
+    D['ps'] = dict(den=den, n=nn, D_ps=float(h['D_ps'][0, 0]), D_1=float(h['D_1'][0]), rec=float(h['rec'][0, 0]),
+                   lfl=float(h['lfl'][0, 0]), variant=hx.names[0])
+    lv, cal = level_of('H4_rec_' + hx.names[0])
+    k = tag + '.PS.rec.dec'
+    V[k] = fnum(deceq(h['D_ps'][0, 0], nn)); V[k + '.ci'] = ci_of(deceq(hb['D_ps'][:, 0], hb['n']), lv)
+    V[k + '.level'] = lv; V[k + '.cal'] = cal
+    k = tag + '.PS.single'
+    V[k] = fnum(share(float(h['D_1'][0]), den)); V[k + '.ci'] = ci_of(K.ratio_arr(hb['D_1'], hb['den']), 0.95)
+    V[k + '.level'] = 0.95; V[k + '.cal'] = 'nominal95'
+
+
+def sec_po_lb(V, D, runs, seed, phase='est', frontier='gridless', tag='LB'):
+    tot = add_partial(runs, seed)
+    masks = [lb_masks(r, phase) for r in runs]
+    res = partial_shares(runs, masks, LB_POPS, frontier)
+    other = partial_shares(runs, masks, LB_POPS, 'grid' if frontier == 'gridless' else 'gridless')
+    D['po_lb'] = dict(seed=seed, n_uniforms=tot, phase=phase, frontier=frontier, pops=res, other_frontier=other)
+    for pn in LB_POPS:
+        for nm in PO_NM:
+            V['%s.%s.PO%s' % (tag, pn, nm[1:])] = fnum(res[pn][nm])
+        V['%s.%s.grading_ok' % (tag, pn)] = res[pn]['grading_ok']
+    for nm in PO_NM:
+        V['%s.PO%s' % (tag, nm[1:])] = fnum(res['all'][nm])
+    V[tag + '.grading_ok'] = res['all']['grading_ok']
+
+
+def cutin_truth(runs, test_old):
+    """Event tick and track age per run (rc_c_cutin_v13.truth_of_run), or the truth file an earlier recount run wrote."""
+    import rc_c_cutin_v13 as RC
+    f = OUT / ('RC_C_CUTIN_TESTOLD_TRUTH_v13.json' if test_old else 'RC_C_CUTIN_TRUTH_v13.json')
+    if f.is_file():
+        tdoc = json.loads(f.read_text(encoding='utf-8'))
+        if [t['run'] for t in tdoc['truth']] == [r['run'] for r in runs] and all(
+                np.array_equal(np.asarray(t['k']), np.asarray(r['k'])) for t, r in zip(tdoc['truth'], runs)):
+            return tdoc['truth'], str(f), RC
+    return [RC.truth_of_run(r) for r in runs], 'computed here (rc_c_cutin_v13.truth_of_run)', RC
+
+
+def sec_ci(V, D, runs, CNT, po_seed, level_of, test_old, tag='CI', frontier='gridless'):
+    """Cut-in event window (A10 2.5): CK3, E5, E5 - E5p with intervals; RR(N) and the young-track room in decision-equivalents;
+    partial oracles and the grading check."""
+    n = len(runs)
+    truth, src, RC = cutin_truth(runs, test_old)
+    M = [RC.masks_of(r, t) for r, t in zip(runs, truth)]
+    WY = [[m[1], m[2]] for m in M]                       # event window; young tracks (< 1 s) in the window
+    u, uinfo = K.e5_u(runs, 'F0', 'E')                   # u over all evaluated decisions of the cut-in runs
+    up = K.permute_u(runs, u)
+    for r, uu, pp in zip(runs, u, up):
+        r['crit']['E5'] = K.oracle_crit(r['crit']['F0'], K.RATIO, K.E5_AMP, uu)
+        r['crit']['E5p'] = K.oracle_crit(r['crit']['F0'], K.RATIO, K.E5_AMP, pp)
+    have_ck3 = all('CK3' in r['crit'] for r in runs)
+    names = ['F0', 'E', 'N', 'E5', 'E5p'] + (['CK3'] if have_ck3 else [])
+    PW, PY = problems(runs, names, WY)
+    e = ev_point(PW, n); b = PW.evaluate(CNT); ey = ev_point(PY, n)
+    D['ci'] = dict(truth_source=src, events=int(sum(t['event_tick'] is not None for t in truth)), n_window=e['n'], n_young=ey['n'],
+                   denE=e['denE'], D=e['D'], e5=uinfo, have_ck3=have_ck3, RR_N=share(e['D']['N'], e['denE']),
+                   young=dict(denE=ey['denE'], R_pp=ey['denE'] / NLEV))
+    rr = lambda a: K.ratio_arr(b['D'][a], b['denE'])            # noqa: E731
+
+    def put(key, pt, bs, stat=None):
+        lv, cal = level_of(stat) if stat else (0.95, 'nominal95')
+        V[key] = fnum(pt); V[key + '.ci'] = ci_of(bs, lv); V[key + '.level'] = lv; V[key + '.cal'] = cal
+
+    if have_ck3:
+        put(tag + '.RR_CK3', share(e['D']['CK3'], e['denE']), rr('CK3'))
+    else:
+        V[tag + '.RR_CK3'] = None; V[tag + '.RR_CK3.ci'] = [None, None]; V[tag + '.RR_CK3.level'] = 0.95; V[tag + '.RR_CK3.cal'] = 'nominal95'
+    put(tag + '.RR_E5', share(e['D']['E5'], e['denE']), rr('E5'))
+    put(tag + '.RR_E5mP', share(e['D']['E5'], e['denE']) - share(e['D']['E5p'], e['denE']), rr('E5') - rr('E5p'))
+    put(tag + '.RR_N.dec', deceq(e['D']['N'], e['n']), deceq(b['D']['N'], b['n']), 'W_RR_N')
+    V[tag + '.Y.R.dec'] = fnum(deceq(ey['denE'], ey['n']))
+    tot = add_partial(runs, po_seed)
+    res = partial_shares(runs, [[m[1]] for m in M], ['window'], frontier)
+    other = partial_shares(runs, [[m[1]] for m in M], ['window'], 'grid' if frontier == 'gridless' else 'gridless')
+    D['po_ci'] = dict(seed=po_seed, n_uniforms=tot, frontier=frontier, window=res['window'], other_frontier=other['window'])
+    for nm in PO_NM:
+        V['%s.PO%s' % (tag, nm[1:])] = fnum(res['window'][nm])
+    V[tag + '.grading_ok'] = res['window']['grading_ok']
+
+
+def stop_room(runs, safe_key, CNT=None, masks=None):
+    """Room, den0 = D(O, F0) and the numerators under a stop scoring (gridless; caution by the 3 s commitment)."""
+    n = len(runs)
+    P = problems(runs, ['F0', 'E', 'O'], masks if masks is not None else [[r['ev']] for r in runs], safe_key)[0]
+    e = ev_point(P, n)
+    b = P.evaluate(CNT) if CNT is not None else None
+    return e, b
+
+
+def sec_rs(V, D, runs, CNT, room3, tag='LB'):
+    """Reaction-and-stop room at tau 0.75 s, 6 m/s^2 relative to the 3 s room (both gridless, all evaluated decisions)."""
+    e, b = stop_room(runs, 'safe_rs', CNT)
+    e3 = room3['pt']; b3 = room3['bs']
+    rel = share(e['denE'] / NLEV, e3['denE'] / NLEV)
+    relb = K.ratio_arr(b['denE'], b3['denE'])
+    D['rs'] = dict(R_rs_pp=e['denE'] / NLEV, R_3s_pp=e3['denE'] / NLEV, den0_deceq=float(deceq(e['D']['O'], e['n'])), n=e['n'])
+    V[tag + '.RS075.rel'] = fnum(rel); V[tag + '.RS075.rel.ci'] = ci_of(relb, 0.95)
+    V[tag + '.RS075.rel.level'] = 0.95; V[tag + '.RS075.rel.cal'] = 'nominal95'
+    if all('safe_ext' in r for r in runs):               # A10 section 1's wording (judged until the stop ends): beside, in details
+        ex, _ = stop_room(runs, 'safe_ext')
+        D['rs']['extended_truth_variant'] = dict(R_rs_pp=ex['denE'] / NLEV, rel=share(ex['denE'], e3['denE']),
+                                                 den0_deceq=float(deceq(ex['D']['O'], ex['n'])))
+
+
+def sec_b6(V, D, runs, caps, CNT, room3, tag='LB'):
+    """B6(a): terciles of realised lead deceleration, each on its own frontier; B6(b): the delayed, variable stop."""
+    ids = [r['run'] for r in runs]
+    dec = [realised_decel(c) for c in caps]
+    T3 = terciles(ids, dec)
+    byid = dict(zip(ids, runs)); dd = dict(zip(ids, dec))
+    D['b6'] = dict(realised_decel=dd, terciles=[])
+    if all('decel_s57a' in r for r in runs):                 # own value from the logs against the shared extraction's
+        bad = [r['run'] for r, d in zip(runs, dec) if not ((d is None and math.isnan(r['decel_s57a'])) or
+                                                          (d is not None and abs(d - r['decel_s57a']) <= 1e-12))]
+        D['b6']['decel_differs_from_S57A_arrays'] = bad
+        if bad:
+            raise SystemExit('REFUSED: realised deceleration computed here differs from arrays/S57A for %s' % bad)
+    rels = []
+    for ti, members in enumerate(T3, 1):
+        sub = [byid[x] for x in ids if x in set(members)]
+        e, _ = stop_room(sub, 'safe_rs'); e3, _ = stop_room(sub, None)
+        rel = (e['denE'] / NLEV) / (e3['denE'] / NLEV) if e3['denE'] / NLEV > 0 else float('nan')
+        den0 = float(deceq(e['D']['O'], e['n']))
+        vals = [dd[x] for x in members if dd[x] is not None]
+        evaluable = bool(den0 >= 10.)
+        k = '%s.T%d' % (tag, ti)
+        V[k + '.rel'] = fnum(rel); V[k + '.den0.dec'] = fnum(den0); V[k + '.evaluable'] = evaluable
+        V[k + '.range'] = range_str(min(vals), max(vals)) if vals else None
+        D['b6']['terciles'].append(dict(tercile=ti, runs=members, decel_min_max=[min(vals), max(vals)] if vals else None,
+                                        R_rs_pp=e['denE'] / NLEV, R_3s_pp=e3['denE'] / NLEV, rel=rel, den0_deceq=den0, n=e['n'],
+                                        evaluable=evaluable))
+        if evaluable and math.isfinite(rel):
+            rels.append(rel)
+    V[tag + '.T.relmin'] = fnum(min(rels)) if rels else None
+    V[tag + '.T.relmax'] = fnum(max(rels)) if rels else None
+    if all('safe_ds' in r for r in runs):
+        e, b = stop_room(runs, 'safe_ds', CNT)
+        e3 = room3['pt']; b3 = room3['bs']
+        D['b6']['delayed'] = dict(R_ds_pp=e['denE'] / NLEV, R_3s_pp=e3['denE'] / NLEV, n=e['n'])
+        V[tag + '.DS.rel'] = fnum(share(e['denE'], e3['denE'])); V[tag + '.DS.rel.ci'] = ci_of(K.ratio_arr(b['denE'], b3['denE']), 0.95)
+        V[tag + '.DS.rel.level'] = 0.95; V[tag + '.DS.rel.cal'] = 'nominal95'
+        V[tag + '.DS.den0.dec'] = fnum(deceq(e['D']['O'], e['n']))
+    else:
+        D['b6']['delayed'] = 'no delayed-stop clearances for this run set'
+
+
+def reliance(runs, safe_key, sources, mask_fn=lambda r: r['ev']):
+    """a9_6_stop_reliance_v01 (1), own implementation. Under the stop scoring, on the grid of record: for each of the 201 levels
+    of the population, the source's frontier operating point (argmin_frontier; point 0 of a source other than F0 and E is F0's
+    zero-margin point); the share of the population's decisions whose selected row is unsafe under the 3 s commitment and safe
+    with the stop (also: unsafe under 3 s; unsafe with the stop), averaged over the 201 levels (levels without a point add 0)."""
+    for r in runs:
+        r['_m'] = (mask_fn(r),)
+    T = grid_tables(runs, ['F0', 'E'] + [a for a in sources if a not in ('F0', 'E')], '_m', safe_key)
+    cur = L.curves_w({a: T[a][:, 0, :] for a in T}, 0)
+    cF0, wF0 = cur['F0']; cE, wE = cur['E']
+    lev = L.levels_of(cF0, cE, cF0[0])
+    n = float(T['F0'][0, 0, 0])
+    G = len(K.GRID)
+
+    def counts(a):
+        """(3, G): per grid scale the population's decisions selected (unsafe 3 s & safe stop; unsafe 3 s; unsafe stop)."""
+        acc = np.zeros((3, G))
+        for r in runs:
+            m = r['_m'][0]; sx = r[safe_key]; s1 = r['clear1'] > 0.
+            sel = grid_sel(r, a).astype(np.int64); ar = np.arange(sel.shape[1])
+            u1 = ~s1[ar[None, :], sel]; ux = ~sx[ar[None, :], sel]
+            acc[0] += (u1 & ~ux & m[None, :]).sum(axis=1); acc[1] += (u1 & m[None, :]).sum(axis=1); acc[2] += (ux & m[None, :]).sum(axis=1)
+        return acc
+    cF = counts('F0')
+    out = dict(n=n)
+    for a in sources:
+        ix = argmin_frontier(cur[a][0], cur[a][1], lev)
+        ca = cF if a == 'F0' else counts(a)
+        tot = np.zeros(3)
+        for i in ix:
+            if i < 0:
+                continue
+            if a in ('F0', 'E'):
+                tot += ca[:, i]
+            elif i == 0:
+                tot += cF[:, 0]
+            else:
+                tot += ca[:, i - 1]
+        out[a] = dict(share_safe_only_with_stop=float(tot[0] / NLEV / n), share_unsafe_3s=float(tot[1] / NLEV / n),
+                      share_unsafe_with_stop=float(tot[2] / NLEV / n), n_levels_without_point=int((ix < 0).sum()))
+    return out
+
+
+def sec_rel(V, D, runs, rel_values, tag='LB'):
+    """LB.REL_*: the method of record (a9_6: safe set = extended truth, plans judged until the stop ends) when rel_values is
+    'ext' and extended-truth clearances exist for every run; the writer's specification (section 8: the 3 s-window clearance
+    clearR075, 'WR075') when rel_values is 'wr075'. Both variants are written to details whenever they can be formed."""
+    D['rel'] = dict(values_from=None)
+    var = {}
+    for nm, key in (('ext', 'safe_ext'), ('wr075', 'safe_rs')):
+        if all(key in r for r in runs):
+            res = reliance(runs, key, ['F0', 'N', 'CK3'])
+            D['rel'][nm] = res
+            var[nm] = {a: res[a]['share_safe_only_with_stop'] for a in ('F0', 'N', 'CK3')}
+        else:
+            D['rel'][nm] = 'not available: %d runs without %s' % (sum(key not in r for r in runs), key)
+    use = rel_values if rel_values in var else None
+    D['rel']['values_from'] = use
+    D['rel']['variant_keys'] = {nm: {'%s.REL_%s' % (tag, a): v for a, v in d.items()} for nm, d in var.items()}
+    for a in ('F0', 'N', 'CK3'):
+        V['%s.REL_%s' % (tag, a)] = fnum(var[use][a]) if use else None
+
+
+def sec_tu(V, D, runs, nboot, phase='truth', tag='TU'):
+    """The 20 lead-braking tuning runs (A10 5.6): gridless room and shares with tuning-run bootstrap intervals
+    (default_rng(20261918), 20,000 resamples of the 20 runs); the per-phase rooms; the grid values beside."""
+    n = len(runs)
+    arms = [a for a in ('N', 'NA', 'A1', 'CK3', 'TG') if all(a in r['crit'] for r in runs)]
+    CNT = K.boot_counts(n, K.NBOOT, SEED_TUNE)[:nboot]
+    M = [lb_masks(r, phase) for r in runs]
+    other = 'truth' if phase == 'est' else 'est'
+    PB = problems(runs, ['F0', 'E'] + arms, M)
+    e = ev_point(PB[0], n); b = PB[0].evaluate(CNT)
+    lab = {'N': 'N', 'NA': 'NA', 'A1': 'AM', 'CK3': 'CK3', 'TG': 'TG'}
+    V[tag + '.R'] = fnum(e['denE'] / NLEV); V[tag + '.R.ci'] = ci_of(b['denE'] / NLEV, 0.95)
+    V[tag + '.R.level'] = 0.95; V[tag + '.R.cal'] = 'nominal95'
+    for a in ('N', 'NA', 'A1', 'CK3', 'TG'):
+        k = '%s.RR_%s' % (tag, lab[a])
+        if a in arms:
+            V[k] = fnum(share(e['D'][a], e['denE'])); V[k + '.ci'] = ci_of(K.ratio_arr(b['D'][a], b['denE']), 0.95)
+        else:
+            V[k] = None; V[k + '.ci'] = [None, None]
+        V[k + '.level'] = 0.95; V[k + '.cal'] = 'nominal95'
+    ph = {}
+    for pi, pn in ((2, 'pre'), (3, 'brk'), (4, 'stop')):
+        ep = ev_point(PB[pi], n)
+        V['%s.R_%s' % (tag, pn)] = fnum(ep['denE'] / NLEV)
+        ph[pn] = dict(n=ep['n'], R_gl_pp=ep['denE'] / NLEV)
+    oth = None
+    if other == 'truth' or all('vhat' in r for r in runs):
+        PO_ = problems(runs, ['F0', 'E'], [lb_masks(r, other) for r in runs])
+        oth = {pn: ev_point(PO_[pi], n)['denE'] / NLEV for pi, pn in ((2, 'pre'), (3, 'brk'), (4, 'stop'))}
+    for r in runs:
+        r['_m'] = tuple(lb_masks(r, 'truth'))
+    T = grid_tables(runs, ['F0', 'E'] + arms, '_m')
+    g = grid_point(T, 0, arms)
+    D['tu'] = dict(n_runs=n, n=e['n'], phase=phase, arms=arms, boot=dict(seed=SEED_TUNE, n_resamples=int(CNT.shape[0]),
+                                                                          share_den_gt0=float(np.mean(b['denE'] > 0))),
+                   gridless=dict(denE=e['denE'], D=e['D']), phases=ph, phases_other={'phase': other, 'R_gl_pp': oth},
+                   grid=dict(R_pp=g['denE'] / NLEV, R_summed=g['denE'], RR={lab[a]: share(g['D'][a], g['denE']) for a in arms},
+                             R_truth_phase_pp={pn: grid_point(T, pi, [])['denE'] / NLEV for pi, pn in ((2, 'pre'), (3, 'brk'), (4, 'stop'))}))
+
+
+# ================================================================================================ selftest: values of record
+def selftest():
+    """Reproduce the methods' values of record on old runs. Returns (doc, all_ok)."""
+    t0 = time.time()
+    doc = dict(program='rc_s57a_v13.py', what='selftest: values of record on old runs', started=K.clock(), checks={})
+    ok_all = True
+
+    def chk(name, here, rec, tol):
+        nonlocal ok_all
+        if here is None or rec is None or isinstance(here, (bool, str)) or isinstance(rec, (bool, str)):
+            good = here == rec; diff = None
+        else:
+            diff = abs(float(here) - float(rec)); good = bool(diff <= tol) or (math.isnan(float(here)) and math.isnan(float(rec)))
+        doc['checks'][name] = dict(here=here, of_record=rec, abs_diff=diff, tol=tol, ok=good)
+        ok_all = ok_all and good
+        if not good:
+            log('  MISMATCH %s: here %r, of record %r' % (name, here, rec))
+
+    runs = load_old_eval()
+    n = len(runs)
+    # ---- partial oracles: REV_G (draw of record 20261118; grid step frontier; truth phases), A9-8 (before the stop)
+    g = json.loads((K.V11 / 'out' / 'REV_G_PARTIAL_DRAWS_v01.json').read_text(encoding='utf-8'))
+    tot = add_partial(runs, SEED_PO_RECORD)
+    chk('po.n_uniforms', tot, 9307, 0)
+    masks = [lb_masks(r, 'truth') for r in runs]
+    res = partial_shares(runs, masks, LB_POPS, 'grid')
+    for pn, rn in zip(LB_POPS, ('all', 'moving', 'phase0', 'phase1', 'phase2')):
+        for nm in PO_NM:
+            chk('REV_G.%s.%s' % (rn, nm), res[pn][nm], g['pops'][rn][nm]['of_record'], 1e-12)
+    a8 = json.loads((K.V12 / 'out' / 'A9_8_GRADING_BEFORE_STOP_v01.json').read_text(encoding='utf-8'))
+    bs = partial_shares(runs, [[r['ev'] & (r['ph'] <= 1)] for r in runs], ['before_stop'], 'grid')['before_stop']
+    for nm in PO_NM:
+        chk('A9_8.%s' % nm, bs[nm], a8['of_record'][nm], 1e-12)
+    chk('A9_8.n', bs['n'], a8['n'], 0); chk('A9_8.R_pp', bs['R_pp'], a8['R_pp'], 1e-12)
+    chk('A9_8.grades_by_rule', bs['grading_ok'], a8['grades_by_rule'], 0)
+    log('selftest: partial oracles done (%.0f s)' % (time.time() - t0))
+    # ---- stop reliance: A9-6 (extended clearances)
+    a6 = json.loads((K.V12 / 'out' / 'A9_6_STOP_RELIANCE_v01.json').read_text(encoding='utf-8'))['reliance']
+    mk = {'all': lambda r: r['ev'], 'moving': lambda r: r['ev'] & (r['v0'] > VMIN), 'phase0': lambda r: r['ev'] & (r['ph'] == 0),
+          'phase1': lambda r: r['ev'] & (r['ph'] == 1), 'phase2': lambda r: r['ev'] & (r['ph'] == 2)}
+    for pn in ('all', 'moving', 'phase0', 'phase1', 'phase2'):
+        rel = reliance(runs, 'safe_ext', ['F0', 'E', 'N', 'NA', 'A1', 'CK3'], mk[pn])
+        chk('A9_6.%s.n' % pn, rel['n'], a6[pn]['n'], 0)
+        for a in ('F0', 'E', 'N', 'NA', 'A1', 'CK3'):
+            for q in ('share_safe_only_with_stop', 'share_unsafe_3s', 'share_unsafe_with_stop'):
+                chk('A9_6.%s.%s.%s' % (pn, a, q), rel[a][q], a6[pn][a][q], 1e-12)
+    log('selftest: reliance done (%.0f s)' % (time.time() - t0))
+    # ---- tuning runs: A9-5 (grid, truth phases, points)
+    a5 = json.loads((K.V12 / 'out' / 'A9_5_TUNING_RUNS_v01.json').read_text(encoding='utf-8'))
+    tr = load_old_tuning()
+    chk('A9_5.tuning_runs', ','.join(r['run'] for r in tr), ','.join(a5['tuning_runs']), 0)
+    for nmset, rs_ in (('tuning', tr), ('evaluation', runs)):
+        for r in rs_:
+            r['_m'] = tuple(lb_masks(r, 'truth'))
+        arms = ['N', 'NA', 'A1', 'CK3', 'Q']
+        T = grid_tables(rs_, ['F0', 'E'] + arms, '_m')
+        for pi, pn in enumerate(('all', 'moving', 'phase0', 'phase1', 'phase2')):
+            p = grid_point(T, pi, arms); ref = a5[nmset][pn]
+            chk('A9_5.%s.%s.n' % (nmset, pn), p['n'], ref['n'], 0)
+            chk('A9_5.%s.%s.R_pp' % (nmset, pn), p['denE'] / NLEV, ref['R_pp'], 1e-12)
+            chk('A9_5.%s.%s.R_deceq' % (nmset, pn), float(deceq(p['denE'], p['n'])), ref['R_deceq'], 1e-9)
+            for a in arms:
+                chk('A9_5.%s.%s.RR_%s' % (nmset, pn, a), share(p['D'][a], p['denE']), ref['RR_' + a], 1e-12)
+    log('selftest: tuning runs done (%.0f s)' % (time.time() - t0))
+    # ---- B6 (package B, old runs): terciles, fixed tau, delayed stop; intervals on the first 2,000 rows of the draw of record
+    b6 = json.loads((B_OUT / 'b6' / 'B6_STOP_v01.json').read_text(encoding='utf-8'))
+    ids = [r['run'] for r in runs]
+    dec = [realised_decel(old_cap(x)) for x in ids]
+    for x, d in zip(ids, dec):
+        chk('B6.realised_decel.%s' % x, d, b6['realised_decel'][x], 1e-12)
+    T3 = terciles(ids, dec)
+    byid = dict(zip(ids, runs)); dd = dict(zip(ids, dec))
+    for ti, members in enumerate([ids] + T3):
+        ref = b6['terciles'][ti]
+        chk('B6.T%d.runs' % ti, ','.join(members), ','.join(ref['runs']), 0)
+        sub = [byid[x] for x in ids if x in set(members)]
+        e, _ = stop_room(sub, 'safe_rs'); e3, _ = stop_room(sub, None)
+        chk('B6.T%d.W_R.R_pp' % ti, e['denE'] / NLEV, ref['W_R']['R_pp'], 1e-12)
+        chk('B6.T%d.W_R.den0_deceq' % ti, float(deceq(e['D']['O'], e['n'])), ref['W_R']['den0_deceq'], 1e-9)
+        chk('B6.T%d.W1.R_pp' % ti, e3['denE'] / NLEV, ref['W1']['R_pp'], 1e-12)
+        chk('B6.T%d.room_ratio' % ti, (e['denE'] / NLEV) / (e3['denE'] / NLEV), ref['room_ratio_WR_over_3s'], 1e-12)
+        vals = [dd[x] for x in members if dd[x] is not None]
+        chk('B6.T%d.decel_min' % ti, min(vals), ref['decel_min_max'][0], 1e-12)
+        chk('B6.T%d.decel_max' % ti, max(vals), ref['decel_min_max'][1], 1e-12)
+    taus = delay_draw(runs)
+    for r, t in zip(runs, taus):
+        z = np.load(B_OUT / 'b6' / 'clear' / (r['run'] + '.npz'), allow_pickle=False)
+        if not np.array_equal(z['k'], r['k']):
+            raise SystemExit('REFUSED: delayed-stop clearances of %s do not match its decisions' % r['run'])
+        if not np.array_equal(z['tau'], t, equal_nan=True):
+            ok_all = False; doc['checks']['B6.tau_draw.%s' % r['run']] = dict(ok=False, max_abs_diff=float(np.nanmax(np.abs(z['tau'] - t))))
+        r['safe_ds'] = L.clean_clear(z['clear']) > 0.
+    doc['checks']['B6.tau_draw'] = dict(ok=not any(k.startswith('B6.tau_draw.') for k in doc['checks']),
+                                        note='own default_rng(20261916) draw equals the tau stored with every clearance file')
+    CNT = L.boot_counts(n, 20000, SEED_RECORD)[:2000]
+    P = problems(runs, ['F0', 'E', 'N', 'NA', 'A1', 'CK3', 'Q', 'O'], [[r['ev']] for r in runs], 'safe_ds')[0]
+    e = ev_point(P, n); b = P.evaluate(CNT); ref = b6['delayed_stop']
+    chk('B6.DS.R_pp', e['denE'] / NLEV, ref['R_pp'], 1e-12); chk('B6.DS.n', e['n'], ref['n'], 0)
+    chk('B6.DS.den0_deceq', float(deceq(e['D']['O'], e['n'])), ref['den0_deceq'], 1e-9)
+    for a, an in (('N', 'N'), ('NA', 'NA'), ('A1', 'AM'), ('CK3', 'CK3'), ('Q', 'Q')):
+        chk('B6.DS.RR_%s' % an, share(e['D'][a], e['denE']), ref['RR'][an], 1e-12)
+        c = K.pct_interval(K.ratio_arr(b['D'][a], b['denE']), 0.95)
+        chk('B6.DS.RR_%s.ci_lo' % an, c[0], ref['RR_ci'][an][0], 1e-9); chk('B6.DS.RR_%s.ci_hi' % an, c[1], ref['RR_ci'][an][1], 1e-9)
+    c = K.pct_interval(b['denE'] / NLEV, 0.95)
+    chk('B6.DS.R_pp.ci_lo', c[0], ref['R_pp_ci'][0], 1e-9); chk('B6.DS.R_pp.ci_hi', c[1], ref['R_pp_ci'][1], 1e-9)
+    c = K.pct_interval(deceq(b['D']['O'], b['n']), 0.95)
+    chk('B6.DS.den0_deceq.ci_lo', c[0], ref['den0_deceq_ci'][0], 1e-9); chk('B6.DS.den0_deceq.ci_hi', c[1], ref['den0_deceq_ci'][1], 1e-9)
+    P = problems(runs, ['F0', 'E', 'N', 'NA', 'A1', 'CK3', 'Q', 'O'], [[r['ev']] for r in runs], 'safe_rs')[0]
+    e = ev_point(P, n); ref = b6['fixed_tau_0p75_point']
+    chk('B6.fixed.R_pp', e['denE'] / NLEV, ref['R_pp'], 1e-12); chk('B6.fixed.den0_deceq', float(deceq(e['D']['O'], e['n'])), ref['den0_deceq'], 1e-9)
+    for a, an in (('N', 'N'), ('NA', 'NA'), ('A1', 'AM'), ('CK3', 'CK3'), ('Q', 'Q')):
+        chk('B6.fixed.RR_%s' % an, share(e['D'][a], e['denE']), ref['RR'][an], 1e-12)
+    log('selftest: B6 done (%.0f s)' % (time.time() - t0))
+    nbad = sum(1 for v in doc['checks'].values() if not v['ok'])
+    doc['summary'] = dict(n_checks=len(doc['checks']), n_failed=nbad, all_ok=bool(ok_all and nbad == 0),
+                          max_abs_diff=max([v['abs_diff'] for v in doc['checks'].values() if v.get('abs_diff') is not None] or [0.]))
+    doc['seconds'] = time.time() - t0; doc['written'] = K.clock()
+    return doc, bool(ok_all and nbad == 0)
+
+
+# ================================================================================================ main
+def levels_from(path):
+    """Calibrated levels (A10 2.6) of the hypothesis statistics from an output of rc_c_lead_v13 / rc_c_cutin_v13:
+    {statistic: level_used}. Statistics without a decided level are left out (nominal 95% is then used and said)."""
+    d = json.loads(pathlib.Path(path).read_text(encoding='utf-8'))
+    cal = d.get('calibration')
+    out = {}
+    if isinstance(cal, dict) and isinstance(cal.get('stats'), dict):
+        for s, c in cal['stats'].items():
+            if c.get('level_used') is not None:
+                out[s] = float(c['level_used'])
+    return out
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--selftest', action='store_true')
+    ap.add_argument('--test-old', action='store_true')
+    ap.add_argument('--boot', type=int, default=K.NBOOT)
+    ap.add_argument('--workers', type=int, default=2)
+    ap.add_argument('--only', default='dec,po,ci,rs,b6,rel,tu,ps')
+    ap.add_argument('--levels-lead', default=None, help='output of rc_c_lead_v13 with the calibrated levels (for .dec.ci)')
+    ap.add_argument('--levels-cutin', default=None, help='output of rc_c_cutin_v13 with the calibrated levels (for CI.RR_N.dec.ci)')
+    ap.add_argument('--tag', default='')
+    ap.add_argument('--stage', default='keys', choices=['keys', 'ext'], help="ext: write this program's extended-truth clearances")
+    ap.add_argument('--part', type=int, default=0)
+    ap.add_argument('--nparts', type=int, default=1)
+    ap.add_argument('--limit', type=int, default=None)
+    ap.add_argument('--rel', default='ext', choices=['ext', 'wr075'],
+                    help='LB.REL_* in values: ext = the method of record (a9_6, extended truth); wr075 = the writer\'s section 8')
+    ap.add_argument('--old-seed', type=int, default=SEED_RECORD, help='--test-old: seed of the run bootstrap (LB and CI stand-ins)')
+    a = ap.parse_args()
+    nthreads = K.set_workers(min(a.workers, 2))
+    t00 = time.time()
+    if a.selftest:
+        outf = OUT / ('SELFTEST_RC_S57A_v13%s.json' % a.tag)
+        if outf.exists():
+            raise SystemExit('REFUSED: %s exists (outputs are never overwritten)' % outf)
+        doc, ok = selftest()
+        K.write_new(outf, doc)
+        log('selftest: %d checks, %d failed, max |diff| %.3g -> %s' % (doc['summary']['n_checks'], doc['summary']['n_failed'],
+                                                                       doc['summary']['max_abs_diff'], outf))
+        raise SystemExit(0 if ok else 1)
+    if a.stage == 'ext':
+        stage_ext(a.test_old, a.part, a.nparts, a.limit)
+        return
+    only = set(x for x in a.only.split(',') if x)
+    full = a.boot == K.NBOOT and only == set('dec,po,ci,rs,b6,rel,tu,ps'.split(','))
+    full = full and (not a.test_old or a.old_seed == SEED_RECORD) and a.rel == 'ext'
+    name = '%s_v13%s%s.json' % ('TESTOLD_RC_S57A' if a.test_old else 'RC_S57A', '' if full else '_PART_b%d' % a.boot, a.tag)
+    outf = OUT / name
+    if outf.exists():
+        raise SystemExit('REFUSED: %s exists (outputs are never overwritten)' % outf)
+    if not a.test_old:
+        K.require_lock2('fresh-run arrays and logs')            # before anything of a fresh run is opened
+    V = {}; D = {}
+    doc = dict(family='S57A', program='rc_s57a_v13.py', test_old=bool(a.test_old), values=V, details=D,
+               role='second program (recount), AMENDMENT_10_v13 section 10.1(b)', model='claude-fable-5-2', started=K.clock(),
+               threads=nthreads, sections=sorted(only), n_boot=int(a.boot))
+    lv_lead = levels_from(a.levels_lead) if a.levels_lead else {}
+    lv_cut = levels_from(a.levels_cutin) if a.levels_cutin else {}
+    D['levels'] = dict(lead_file=a.levels_lead, cutin_file=a.levels_cutin, lead=lv_lead, cutin=lv_cut)
+
+    def lev(table):
+        def f(stat):
+            if stat in table:
+                lv = table[stat]
+                return lv, ('nominal95' if abs(lv - 0.95) < 1e-12 else ('nominal99' if abs(lv - 0.99) < 1e-12 else 'calibrated'))
+            return 0.95, 'nominal95'
+        return f
+
+    CFG = old_config(a) if a.test_old else fresh_config(a)
+    D['config'] = {k: v for k, v in CFG.items() if isinstance(v, (str, int, float, bool, type(None)))}
+    if a.test_old:
+        D['old_run_convention'] = ('run bootstrap default_rng(%d), first %d rows; partial oracles default_rng(%d) '
+                                   '(draw of record); tuning runs default_rng(%d)' % (CFG['seed_boot'], a.boot, CFG['seed_po'], SEED_TUNE))
+    need_lb = only & {'dec', 'po', 'rs', 'b6', 'rel', 'ps'}
+    if need_lb:
+        runs, imm, caps = CFG['load_lb']()
+        n = len(runs)
+        D['lb_runs'] = [r['run'] for r in runs]
+        CNT = K.boot_counts(n, K.NBOOT, CFG['seed_boot'])[:a.boot]
+        room3 = None
+        if only & {'dec', 'rs', 'b6'}:
+            room3 = sec_dec_lb(V, D, runs, imm, CNT, lev(lv_lead))
+            if 'dec' not in only:
+                for k in [k for k in V if '.dec' in k]:
+                    del V[k]
+            log('dec (lead braking) done (%.0f s)' % (time.time() - t00))
+        if 'ps' in only:
+            sec_ps(V, D, runs, CNT, lev(lv_lead)); log('ps done (%.0f s)' % (time.time() - t00))
+        if 'po' in only:
+            sec_po_lb(V, D, runs, CFG['seed_po'], CFG['po_phase'], CFG['po_frontier']); log('po (lead braking) done (%.0f s)' % (time.time() - t00))
+        if 'rs' in only:
+            sec_rs(V, D, runs, CNT, room3); log('rs done (%.0f s)' % (time.time() - t00))
+        if 'b6' in only:
+            sec_b6(V, D, runs, caps, CNT, room3); log('b6 done (%.0f s)' % (time.time() - t00))
+        if 'rel' in only:
+            sec_rel(V, D, runs, CFG['rel_values']); log('rel done (%.0f s)' % (time.time() - t00))
+    if 'ci' in only:
+        cruns = CFG['load_ci']()
+        D['ci_runs'] = [r['run'] for r in cruns]
+        CNTC = K.boot_counts(len(cruns), K.NBOOT, CFG['seed_boot'])[:a.boot]
+        sec_ci(V, D, cruns, CNTC, CFG['seed_po'], lev(lv_cut), a.test_old, frontier=CFG['po_frontier'])
+        log('ci done (%.0f s)' % (time.time() - t00))
+    if 'tu' in only:
+        truns = CFG['load_tu']()
+        D['tu_runs'] = [r['run'] for r in truns]
+        sec_tu(V, D, truns, a.boot, CFG['tu_phase']); log('tu done (%.0f s)' % (time.time() - t00))
+    D['notes'] = CFG['notes']
+    D['seeds'] = dict(boot=CFG['seed_boot'], partial_oracles=CFG['seed_po'], delay=SEED_DELAY, e5_perm=K.SEED_PERM, tuning=SEED_TUNE)
+    doc['written'] = K.clock(); doc['seconds'] = time.time() - t00
+    log('written %s (%d keys, %.0f s)' % (K.write_new(outf, doc), len(V), time.time() - t00))
+
+
+def old_config(a):
+    """Old-run stand-ins (writer's specification section 10): LB = the 35 old evaluation runs (WR075 = the cache of record; IMM =
+    package B's B1 re-track arrays; delayed-stop clearances = package B's out/b6/clear with the delay draw checked here; extended
+    truth = the v11 extraction of record); CI = the 20 cut-in tuning runs (cCK3 from package B's CV0 re-track arrays, identity
+    checked); TU = the 20 lead-braking tuning runs."""
+    notes = {}
+
+    def load_lb():
+        runs = load_old_eval()
+        taus = delay_draw(runs)
+        for r, t in zip(runs, taus):
+            z = np.load(B_OUT / 'b6' / 'clear' / (r['run'] + '.npz'), allow_pickle=False)
+            if not (np.array_equal(z['k'], r['k']) and np.array_equal(z['tau'], t, equal_nan=True)):
+                raise SystemExit('REFUSED: delayed-stop clearances of %s do not match its decisions or the delay draw' % r['run'])
+            r['safe_ds'] = L.clean_clear(z['clear']) > 0.
+        imm = [b_variant_run('B1', r) for r in runs]
+        return runs, imm, [old_cap(r['run']) for r in runs]
+
+    def load_ci():
+        runs = K.load_old_cutin_runs()
+        mx = 0.
+        for r in runs:
+            r['n_dec'] = int(len(r['k']))
+            z, m = b_arrays('CV0', r['run'], r)
+            mx = max(mx, m)
+            r['crit']['CK3'] = np.asarray(z['cCK3'], float)
+        notes['ci_b_cv0_max_abs_diff'] = mx
+        return runs
+
+    def load_tu():
+        runs = load_old_tuning()
+        notes['tu'] = attach_tuning_extras(runs)
+        return runs
+    return dict(load_lb=load_lb, load_ci=load_ci, load_tu=load_tu, seed_boot=a.old_seed, seed_po=SEED_PO_RECORD,
+                po_phase='est', po_frontier='gridless', rel_values=a.rel, tu_phase='est', notes=notes)
+
+
+def fresh_config(a):
+    notes = {}
+
+    def load_lb():
+        runs = load_fresh('lead_braking', 'CV0')
+        notes['lb_ids'] = fresh_ids('lead_braking')[1]
+        imm = load_fresh('lead_braking', 'B1')
+        for r, q in zip(runs, imm):
+            if not (r['run'] == q['run'] and np.array_equal(r['k'], q['k']) and np.array_equal(r['ev'], q['ev'])):
+                raise SystemExit('REFUSED: CV0 and B1 arrays of %s do not describe the same decisions' % r['run'])
+        taus = delay_draw(runs)
+        caps = []
+        for r, t in zip(runs, taus):
+            caps.append(fresh_cap(r['run'])[1])
+            z = np.load(K.check_path(ARR_S57A / (r['run'] + '.npz')), allow_pickle=False)
+            if not np.array_equal(z['k'], r['k']):
+                raise SystemExit('REFUSED: S57A arrays of %s do not match its decisions' % r['run'])
+            if not np.array_equal(np.asarray(z['tau'], float), t, equal_nan=True):
+                raise SystemExit('REFUSED: the delays stored for %s differ from default_rng(20261916) over the evaluated '
+                                 'decisions in ascending run id' % r['run'])
+            r['safe_ds'] = K.clean_clear(z['clearDS']) > 0.
+            r['decel_s57a'] = float(z['decel'])
+        notes['ext_runs_missing'] = attach_ext(runs, EXT_FRESH)
+        return runs, imm, caps
+
+    def load_ci():
+        runs = load_fresh('cutin', 'CV0')
+        notes['ci_ids'] = fresh_ids('cutin')[1]
+        for r in runs:
+            r['rd'], r['cap'] = fresh_cap(r['run'])
+        return runs
+
+    def load_tu():
+        runs = load_old_tuning()
+        notes['tu'] = attach_tuning_extras(runs)
+        return runs
+    return dict(load_lb=load_lb, load_ci=load_ci, load_tu=load_tu, seed_boot=K.SEED_BOOT, seed_po=SEED_PO_FRESH,
+                po_phase='est', po_frontier='gridless', rel_values=a.rel, tu_phase='est', notes=notes)
+
+
+if __name__ == '__main__':
+    main()

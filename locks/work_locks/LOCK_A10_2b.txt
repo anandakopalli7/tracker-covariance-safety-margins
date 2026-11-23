@@ -1,0 +1,42 @@
+LOCK_A10_2b (AMENDMENT_10_v13.md 7.3): matched settings for E3 and E3b
+written 2026-11-19T20:33:30.894668-05:00 by session E (Claude Opus 5.5), from design data only (E2 on the 30 lead-braking tuning cases; stored open-loop arrays of the 35 old evaluation runs)
+
+matched-settings file (input of make_jobs_e_v01.py e3 / e3b):
+  ARS_TRIAL\revision_v13\work\E_closedloop\out\E2_MATCHED_v01.json  sha256 dee03e7d75ee00ccf29acf56a68a7efe18c2591e5812406c8852a03fcf54769e
+inputs:
+  E2 outcomes (first program)  ARS_TRIAL\revision_v13\work\E_closedloop\out\OUTCOMES_E2_v01.json  sha256 69af869a03b9749bc00e11a48ec5495dc881964d7d05aa9dd69f703b95a4cf70
+  E2 calibration (second program, Sonnet)  ARS_TRIAL\revision_v13\work\E_closedloop\out\E2_RECOUNT_CALIB_v01.json  sha256 df19290c23b7e589ff15ed43e5b0e0e247fc2e0bb6eedc2e992c20b4492212ac
+  matched settings (second program, Sonnet; identical grid indices, triple and cautions)  ARS_TRIAL\revision_v13\work\E_closedloop\out\E2_RECOUNT_MATCHED_v01.json  sha256 7c88269ae639af4bdd3158755ae8057ffca5144509acd9a0ee58da86457ed97f
+  IMM pair arrays (session B, variant B1): 35 files, sha256 of the sorted list of their sha256: 9f16bc9a01dcf338a0d0ce3c574b22eab9672e8b1155b5ac6a0d7f441505e58b
+  E_PBAR_IMM_v01.json  sha256 1cba70a1029c5c764d473a1682f55d4283f391642b946665d8417e84d9d95f68
+code:
+  analysis/e_outcomes_v01.py  sha256 f2f0f7ff2269d282f3c433c0c526aaf823ec4822339875c72c2a94c51693cd65
+  analysis/e_collect_v01.py  sha256 a8d0af04e40424cc3327b0d0a3cdc47d4f1170b9ce515af053356fb0d1682b4f
+  analysis/e2_matched_v01.py  sha256 543ee616eee656c425dda60f9052508b48a641540bbba4e89620290aa7e7746b
+  recount/e_recount_v01.py  sha256 8bc518ca654f6cefbe0dff1fba1b1eb5265a26f645af7ee040f5f556724ea045
+
+E2 F0 contact shares (valid runs):
+  g = 0.0     12 / 30  share 0.400000
+  g = 0.25    11 / 30  share 0.366667
+  g = 1.0     8 / 30  share 0.266667
+  g = 4.0     5 / 30  share 0.166667
+  g = 16.0    2 / 30  share 0.066667
+  g = 64.0    0 / 30  share 0.000000
+levels: g_lo = 4, g_hi = 16, low_power = False
+
+level lo: F0 g = 4 (open-loop caution 14.100056 %)
+  N      g = 3.34965439158 (grid index 102), open-loop caution 14.191757 % (|diff| 0.091701)
+  CK3    g = 2.6607250598 (grid index 98), open-loop caution 14.120933 % (|diff| 0.020877)
+  TG     g = 1.05925372518 (grid index 82), open-loop caution 14.119352 % (|diff| 0.019296)
+  F0_IMM g = 11.8850222744 (grid index 124), open-loop caution 13.943781 % (|diff| 0.156275)
+  N_IMM  g = 10.5925372518 (grid index 122), open-loop caution 14.094114 % (|diff| 0.005941)
+  PS   triple (before braking, braking, stopped) = [125.89254117941688, 105.92537251772897, 0.44668359215096326]  design caution 11.877505 %
+level hi: F0 g = 16 (open-loop caution 22.295068 %)
+  N      g = 13.3352143216 (grid index 126), open-loop caution 22.315928 % (|diff| 0.020860)
+  CK3    g = 8.41395141645 (grid index 118), open-loop caution 22.249130 % (|diff| 0.045938)
+  TG     g = 2.98538261892 (grid index 100), open-loop caution 22.825413 % (|diff| 0.530346)
+  F0_IMM g = 53.0884444231 (grid index 150), open-loop caution 22.297060 % (|diff| 0.001992)
+  N_IMM  g = 47.3151258961 (grid index 148), open-loop caution 22.318787 % (|diff| 0.023720)
+  PS   triple (before braking, braking, stopped) = [125.89254117941688, 105.92537251772897, 0.44668359215096326]  design caution 11.877505 %
+
+note: E2 ran 19 Nov 17:25-19:37 EST on three RTX 4090 pods, packet_e_v02 (451a317d...); every A1 admission and crash control bit-identical; all 180 study runs valid. First and second programs identical on every E2 value and on every matched setting.

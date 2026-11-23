@@ -1,0 +1,512 @@
+{
+ "compared": 83,
+ "disagreements": 0,
+ "rows": [
+  {
+   "item": "c_star",
+   "first": 8.96842530569466,
+   "second": 8.96842530569466,
+   "agree": true
+  },
+  {
+   "item": "matched_index_N",
+   "first": 78,
+   "second": 78,
+   "agree": true
+  },
+  {
+   "item": "matched_index_NA",
+   "first": 78,
+   "second": 78,
+   "agree": true
+  },
+  {
+   "item": "matched_index_A1",
+   "first": 51,
+   "second": 51,
+   "agree": true
+  },
+  {
+   "item": "matched_index_CK3",
+   "first": 74,
+   "second": 74,
+   "agree": true
+  },
+  {
+   "item": "matched_index_Q",
+   "first": 54,
+   "second": 54,
+   "agree": true
+  },
+  {
+   "item": "matched_index_TG",
+   "first": 63,
+   "second": 63,
+   "agree": true
+  },
+  {
+   "item": "PS_triple",
+   "first": [
+    164,
+    162,
+    38
+   ],
+   "second": [
+    164,
+    162,
+    38
+   ],
+   "agree": true
+  },
+  {
+   "item": "constant/D-H1",
+   "first": "inconclusive",
+   "second": "inconclusive",
+   "agree": true
+  },
+  {
+   "item": "constant/D-H2",
+   "first": "inconclusive",
+   "second": "inconclusive",
+   "agree": true
+  },
+  {
+   "item": "constant/N/caution_diff_pp/point",
+   "first": 0.01690456755148162,
+   "second": 0.01690456755148162,
+   "agree": true
+  },
+  {
+   "item": "constant/N/caution_diff_pp/lo",
+   "first": 0.005665461940548133,
+   "second": 0.005665461940548133,
+   "agree": true
+  },
+  {
+   "item": "constant/N/caution_diff_pp/hi",
+   "first": 0.03099773242951745,
+   "second": 0.03099773242951745,
+   "agree": true
+  },
+  {
+   "item": "constant/N/wrong_go_diff_pp/point",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/N/wrong_go_diff_pp/lo",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/N/wrong_go_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/N/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "constant/NA/caution_diff_pp/point",
+   "first": 0.03750480288648639,
+   "second": 0.03750480288648461,
+   "agree": true
+  },
+  {
+   "item": "constant/NA/caution_diff_pp/lo",
+   "first": 0.020989550373138276,
+   "second": 0.020989550373138276,
+   "agree": true
+  },
+  {
+   "item": "constant/NA/caution_diff_pp/hi",
+   "first": 0.05603824508613577,
+   "second": 0.05603824508613577,
+   "agree": true
+  },
+  {
+   "item": "constant/NA/wrong_go_diff_pp/point",
+   "first": -0.03618817852834688,
+   "second": -0.03618817852834688,
+   "agree": true
+  },
+  {
+   "item": "constant/NA/wrong_go_diff_pp/lo",
+   "first": -0.11554830900785873,
+   "second": -0.11554830900785873,
+   "agree": true
+  },
+  {
+   "item": "constant/NA/wrong_go_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/NA/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "constant/A1/caution_diff_pp/point",
+   "first": 0.07525195150078012,
+   "second": 0.07525195150077657,
+   "agree": true
+  },
+  {
+   "item": "constant/A1/caution_diff_pp/lo",
+   "first": -0.12017695568616667,
+   "second": -0.12017695568616667,
+   "agree": true
+  },
+  {
+   "item": "constant/A1/caution_diff_pp/hi",
+   "first": 0.2668847101000128,
+   "second": 0.2668847101000128,
+   "agree": true
+  },
+  {
+   "item": "constant/A1/wrong_go_diff_pp/point",
+   "first": -1.8817852834740645,
+   "second": -1.8817852834740645,
+   "agree": true
+  },
+  {
+   "item": "constant/A1/wrong_go_diff_pp/lo",
+   "first": -2.2175421209117943,
+   "second": -2.2175421209117943,
+   "agree": true
+  },
+  {
+   "item": "constant/A1/wrong_go_diff_pp/hi",
+   "first": -1.5502913753423055,
+   "second": -1.5502913753423055,
+   "agree": true
+  },
+  {
+   "item": "constant/A1/classification",
+   "first": "inconclusive",
+   "second": "inconclusive",
+   "agree": true
+  },
+  {
+   "item": "constant/CK3/caution_diff_pp/point",
+   "first": 0.08811567309833102,
+   "second": 0.08811567309833279,
+   "agree": true
+  },
+  {
+   "item": "constant/CK3/caution_diff_pp/lo",
+   "first": -0.5393433850338463,
+   "second": -0.5393433850338463,
+   "agree": true
+  },
+  {
+   "item": "constant/CK3/caution_diff_pp/hi",
+   "first": 0.6676481013710933,
+   "second": 0.6676481013710933,
+   "agree": true
+  },
+  {
+   "item": "constant/CK3/wrong_go_diff_pp/point",
+   "first": -5.910735826296743,
+   "second": -5.910735826296743,
+   "agree": true
+  },
+  {
+   "item": "constant/CK3/wrong_go_diff_pp/lo",
+   "first": -7.348764973549735,
+   "second": -7.348764973549735,
+   "agree": true
+  },
+  {
+   "item": "constant/CK3/wrong_go_diff_pp/hi",
+   "first": -4.577585828271699,
+   "second": -4.577585828271699,
+   "agree": true
+  },
+  {
+   "item": "constant/CK3/classification",
+   "first": "inconclusive",
+   "second": "inconclusive",
+   "agree": true
+  },
+  {
+   "item": "constant/Q/caution_diff_pp/point",
+   "first": -0.016777533235631026,
+   "second": -0.01677753323562925,
+   "agree": true
+  },
+  {
+   "item": "constant/Q/caution_diff_pp/lo",
+   "first": -0.07400194452298989,
+   "second": -0.07400194452298989,
+   "agree": true
+  },
+  {
+   "item": "constant/Q/caution_diff_pp/hi",
+   "first": 0.027708411353860166,
+   "second": 0.027708411353860166,
+   "agree": true
+  },
+  {
+   "item": "constant/Q/wrong_go_diff_pp/point",
+   "first": 0.024125452352231846,
+   "second": 0.024125452352231846,
+   "agree": true
+  },
+  {
+   "item": "constant/Q/wrong_go_diff_pp/lo",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/Q/wrong_go_diff_pp/hi",
+   "first": 0.06165988407941649,
+   "second": 0.06165988407941649,
+   "agree": true
+  },
+  {
+   "item": "constant/Q/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "constant/TG/caution_diff_pp/point",
+   "first": -0.06761576607817332,
+   "second": -0.06761576607817155,
+   "agree": true
+  },
+  {
+   "item": "constant/TG/caution_diff_pp/lo",
+   "first": -0.5308468486873459,
+   "second": -0.5308468486873459,
+   "agree": true
+  },
+  {
+   "item": "constant/TG/caution_diff_pp/hi",
+   "first": 0.4228030802670938,
+   "second": 0.4228030802670938,
+   "agree": true
+  },
+  {
+   "item": "constant/TG/wrong_go_diff_pp/point",
+   "first": -0.398069963811821,
+   "second": -0.398069963811821,
+   "agree": true
+  },
+  {
+   "item": "constant/TG/wrong_go_diff_pp/lo",
+   "first": -0.6817113305124582,
+   "second": -0.6817113305124582,
+   "agree": true
+  },
+  {
+   "item": "constant/TG/wrong_go_diff_pp/hi",
+   "first": -0.17533401222538228,
+   "second": -0.17533401222538228,
+   "agree": true
+  },
+  {
+   "item": "constant/TG/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "constant/PS/caution_diff_pp/point",
+   "first": -0.029990267086789757,
+   "second": -0.02999026708679331,
+   "agree": true
+  },
+  {
+   "item": "constant/PS/caution_diff_pp/lo",
+   "first": -2.4135023997163314,
+   "second": -2.413502399716333,
+   "agree": true
+  },
+  {
+   "item": "constant/PS/caution_diff_pp/hi",
+   "first": 2.2593056988468305,
+   "second": 2.2593056988468323,
+   "agree": true
+  },
+  {
+   "item": "constant/PS/wrong_go_diff_pp/point",
+   "first": -7.322074788902292,
+   "second": -7.322074788902292,
+   "agree": true
+  },
+  {
+   "item": "constant/PS/wrong_go_diff_pp/lo",
+   "first": -8.913279806199043,
+   "second": -8.913279806199043,
+   "agree": true
+  },
+  {
+   "item": "constant/PS/wrong_go_diff_pp/hi",
+   "first": -5.839148334456512,
+   "second": -5.839148334456512,
+   "agree": true
+  },
+  {
+   "item": "constant/PS/classification",
+   "first": "inconclusive",
+   "second": "inconclusive",
+   "agree": true
+  },
+  {
+   "item": "D2/3s/F0/2%/g",
+   "first": 0.01,
+   "second": 0.01,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/F0/2%/runs_with_wrong_go",
+   "first": 34,
+   "second": 34,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/F0/2%/median_of_medians",
+   "first": 9.24444911726304,
+   "second": 9.24444911726304,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/F0/5%/g",
+   "first": 0.223872113856834,
+   "second": 0.223872113856834,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/F0/5%/runs_with_wrong_go",
+   "first": 34,
+   "second": 34,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/F0/5%/median_of_medians",
+   "first": 9.255891346096929,
+   "second": 9.255891346096929,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/N/2%/g",
+   "first": 0.01,
+   "second": 0.01,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/N/2%/runs_with_wrong_go",
+   "first": 34,
+   "second": 34,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/N/2%/median_of_medians",
+   "first": 9.228544533052094,
+   "second": 9.228544533052094,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/N/5%/g",
+   "first": 0.18836490894898011,
+   "second": 0.18836490894898011,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/N/5%/runs_with_wrong_go",
+   "first": 34,
+   "second": 34,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/N/5%/median_of_medians",
+   "first": 9.255891346096929,
+   "second": 9.255891346096929,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/CK3/2%/g",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/CK3/2%/runs_with_wrong_go",
+   "first": 33,
+   "second": 33,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/CK3/2%/median_of_medians",
+   "first": 5.779771712693652,
+   "second": 5.779771712693652,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/CK3/5%/g",
+   "first": 0.16788040181225605,
+   "second": 0.16788040181225605,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/CK3/5%/runs_with_wrong_go",
+   "first": 29,
+   "second": 29,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/CK3/5%/median_of_medians",
+   "first": 6.639577423315703,
+   "second": 6.639577423315703,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/TG/2%/g",
+   "first": 0.01,
+   "second": 0.01,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/TG/2%/runs_with_wrong_go",
+   "first": 34,
+   "second": 34,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/TG/2%/median_of_medians",
+   "first": 8.675101912861095,
+   "second": 8.675101912861095,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/TG/5%/g",
+   "first": 0.03758374042884443,
+   "second": 0.03758374042884443,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/TG/5%/runs_with_wrong_go",
+   "first": 34,
+   "second": 34,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/TG/5%/median_of_medians",
+   "first": 8.888176761856755,
+   "second": 8.888176761856755,
+   "agree": true
+  }
+ ]
+}

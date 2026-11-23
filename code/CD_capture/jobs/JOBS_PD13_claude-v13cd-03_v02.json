@@ -1,0 +1,285 @@
+{
+ "schema": "CLAUDE_MAIN_JOBS_V01",
+ "protocol": "DEVELOPMENT_PROTOCOL_SMOKE_v01.json",
+ "volume_folder": "/opt/claude_v13_local",
+ "capture_timeout_s": 600,
+ "review_timeout_s": 600,
+ "actor_review_timeout_s": 180,
+ "server_ready_timeout_s": 120,
+ "concurrent_start_stagger_s": 15,
+ "max_attempts": 2,
+ "protocol_d1_sha256": "1a8328644c610f477be9a605e70bbf2f0c46893d4716ce50d2f7319450bff601",
+ "note": "Revision v13 package D1 (A10 sec. 6), list claude-v13cd-03 (3 of 6); 18 of 105 study jobs; packet_d1_v13; native arm alpha = beta by the A10 cycle; keep_raw true.",
+ "made_by": {
+  "script": "make_jobs_d1_v13.py",
+  "sha256": "00bbb4d9474f517510e03c7d93f562d391cebbf967dd4052d53e35055ab85177",
+  "case_file_sha256": "6aef155dfd1acaa6c423bf3bcac22f93dc401c33a5ac319659e63ce197931ea6"
+ },
+ "jobs": [
+  {
+   "id": "a1d13_03_crash",
+   "case": "canonical_lead_braking_v10_r0_finite",
+   "arm": "native",
+   "phase": "A1",
+   "role": "control",
+   "scenario": "canonical_lead_braking_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 1.0,
+    "T": 0.18142429254388814,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 215
+   },
+   "alpha": 0.07595887787405835,
+   "beta": 0.056961122665147565
+  },
+  {
+   "id": "a1d13_03_benign",
+   "case": "canonical_benign_v10_r0_finite",
+   "arm": "native",
+   "phase": "A1",
+   "role": "control",
+   "scenario": "canonical_benign_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 0.0,
+    "T": 0.9999999494794277,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 700
+   },
+   "alpha": 0.07595887787405835,
+   "beta": 0.056961122665147565
+  },
+  {
+   "id": "a1d13_03_learned",
+   "case": "canonical_vehicle_crossing_v10_r0_finite",
+   "arm": "learned_without",
+   "phase": "A1",
+   "role": "control",
+   "scenario": "canonical_vehicle_crossing_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 0.0,
+    "T": 0.06592746377472082,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 700
+   },
+   "kappa": 1.0
+  },
+  {
+   "id": "ctl_pd13_03_v02_000",
+   "case": "canonical_lead_braking_v10_r0_finite",
+   "arm": "native",
+   "phase": "CTL",
+   "role": "control",
+   "scenario": "canonical_lead_braking_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 1.0,
+    "T": 0.18142429254388814,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 215
+   },
+   "alpha": 0.07595887787405835,
+   "beta": 0.056961122665147565
+  },
+  {
+   "id": "pd13_d1v13_constant_0002_native",
+   "case": "d1v13_constant_0002",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_constant_0002",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_stop_and_go_0002_native",
+   "case": "d1v13_stop_and_go_0002",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_stop_and_go_0002",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_constant_0004_native",
+   "case": "d1v13_constant_0004",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_constant_0004",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_stop_and_go_0004_native",
+   "case": "d1v13_stop_and_go_0004",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_stop_and_go_0004",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_constant_0006_native",
+   "case": "d1v13_constant_0006",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_constant_0006",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_stop_and_go_0006_native",
+   "case": "d1v13_stop_and_go_0006",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_stop_and_go_0006",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_mild_braking_0011_native",
+   "case": "d1v13_mild_braking_0011",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_mild_braking_0011",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_mild_braking_0013_native",
+   "case": "d1v13_mild_braking_0013",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_mild_braking_0013",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_mild_braking_0015_native",
+   "case": "d1v13_mild_braking_0015",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_mild_braking_0015",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_constant_0020_native",
+   "case": "d1v13_constant_0020",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_constant_0020",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_stop_and_go_0020_native",
+   "case": "d1v13_stop_and_go_0020",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_stop_and_go_0020",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_constant_0022_native",
+   "case": "d1v13_constant_0022",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_constant_0022",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_stop_and_go_0022_native",
+   "case": "d1v13_stop_and_go_0022",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_stop_and_go_0022",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_constant_0024_native",
+   "case": "d1v13_constant_0024",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_constant_0024",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_stop_and_go_0024_native",
+   "case": "d1v13_stop_and_go_0024",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_stop_and_go_0024",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_mild_braking_0029_native",
+   "case": "d1v13_mild_braking_0029",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_mild_braking_0029",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_mild_braking_0031_native",
+   "case": "d1v13_mild_braking_0031",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_mild_braking_0031",
+   "keep_raw": true
+  },
+  {
+   "id": "pd13_d1v13_mild_braking_0034_native",
+   "case": "d1v13_mild_braking_0034",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PD13",
+   "role": "eval",
+   "scenario": "d1v13_mild_braking_0034",
+   "keep_raw": true
+  }
+ ]
+}

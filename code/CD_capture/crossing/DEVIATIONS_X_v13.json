@@ -1,0 +1,28 @@
+{
+ "schema": "DEVIATIONS_X_V13",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5): X (A11 sec. 3) and Y (A11 sec. 6b)",
+ "written": "2026-11-21 about 17:10 EST, before the X analysis of record and before any calibrated Y value was read",
+ "note": "Departures from A11's text and records of implementation choices for Table S5. Details and times: CD_capture/STATUS.md.",
+ "items": [
+  {"id": "X-1", "kind": "record", "title": "Case list: protocol cases plus a generator extension",
+   "what": "The protocol holds 102/101/97 never-run pedestrian-crossing evaluation cases (5/10/15 m/s); 135 per speed were needed (130 + 5 reserves). The list was extended with the protocol's own generator (make_main_protocol_v01.new_case continued past index 1799; SAMPLER_C1109_v01.draw), 105 cases (indices 1802-2534); the replica reproduces all 1,800 protocol evaluation cases exactly. crossing/CASES_X_PC_v13.json (58902be5...). A11 sec. 3.1 allows the extension."},
+  {"id": "X-2", "kind": "record", "title": "Two packets; L4 and RTX 4090 pods",
+   "what": "Protocol cases ran on packet_main_v03 unchanged; extension cases on packet_x_v13 (packet_main_v03 with only the protocol file replaced by the main protocol plus the appended extension cases; no code change). RTX 4090 stock was low, so three capture pods were L4. Every pod's admission and control runs were identical to their references (S equal, T bit-identical), the packet worker's own rule."},
+  {"id": "X-3", "kind": "record", "title": "Archives without sweeps, on the pod-local disk",
+   "what": "keep_raw false (A11 sec. 3.2: sweeps not kept unless needed); FILE_HASHES.json still lists every frame. Archives on /opt/claude_v13_xlocal (not the network volume); all 437 archives (study, replacements, controls) downloaded to the laptop and checked against their receipts before any pod was deleted."},
+  {"id": "X-4", "kind": "deviation", "title": "Extraction on the capture pods (Linux)",
+   "what": "The frozen extractor crossing/x_extract_v13.py ran on the capture pods. Its acceptance on two old crossing runs passed A10 B0(b) (within 1e-12, equal NaN pattern; max 2.3e-13) but was not bit-identical to the Windows-made stored arrays (the platform's last-bit difference, as CD-5). Both programs read the same arrays. One symlink that x_pods_v13's link list lacked (the openloop folder's full Windows path, which trk_arrays_v01 puts on sys.path) was created by SSH on each pod; no code changed."},
+  {"id": "X-5", "kind": "record", "title": "Six replacements (A11 sec. 3.2)",
+   "what": "0722->2480, 0542->2420, 1286->2486, 1304->2426 (capture_exit 1 twice), 1958->2186, 2162->2504 (capture TIMEOUT twice, L4): each the next unused reserve of the same speed, with the failed case's alpha. crossing/REPLACEMENTS_X_v13.json (7b983d55...); job lists JOBS_PX13_claude-v13cd-x6_v02/_v03."},
+  {"id": "X-6", "kind": "deviation", "title": "Three runs captured on an allowed retry aliased to their job id",
+   "what": "Three study runs captured on an allowed retry carry a suffixed run id; their arrays were aliased to the job id without any numeric change, so both frozen programs read all 390. (0410__p1, 0950__p1 after a pre-launch failure; 1574__r1, second attempt.) crossing/alias_retries_x_v13.py; record crossing/out/ALIAS_RETRIES_X_v13.json (bc0a53b1...). Approved by the coordinator, about 17:05 EST."},
+  {"id": "X-7", "kind": "record", "title": "Grid placebo with the family's own median ratio",
+   "what": "A11 sec. 3.6's grid placebo P = F0 / m_N^2 with m_N the fresh pedestrian runs' median N/F0 ratio; the record-amplitude placebo (1.1029) is reported beside it. Fixed before any value (crossing/CD_DEFINITIONS_X_DESC_v13.md), accepted by the coordinator at 14:55."},
+  {"id": "X-8", "kind": "record", "title": "Calibration on GPU-image pods",
+   "what": "A10 sec. 2.6 double bootstraps ran as chunks on the RTX 4090 capture pods' spare cores (nice 19, behind capture) and later pods, with the frozen runners. CPU-only pods were not used: our API key may not create them via GraphQL, the REST host did not resolve from Python on this laptop, runpodctl has no vCPU option, and at list price they are not >= 30% cheaper per real core."},
+  {"id": "Y-1", "kind": "record", "title": "Y implementation choices fixed before any value",
+   "what": "ycheck/CD_DEFINITIONS_Y_v13.md (frozen in add4): twins drawn for k = 1..20 then runs in ascending id, each permuted among the run's evaluated decisions that have a factor; 'own scales' = N_B2's scales; the online-N reference uses its own default_rng(20261931) stream. Accepted by the coordinator at 14:38."},
+  {"id": "Y-2", "kind": "record", "title": "Y computed on a Linux pod",
+   "what": "Both Y programs and their calibration chunks ran on RTX 4090 pods (x3; chunks on x3, x4, x6). First and second programs agree at the full sample on RR_gl(N_B2) and all 20 twins. Seed-1 coverage of Delta at nominal 95% = 0.9485 (first program), so A10 sec. 2.6's nominal 95% level applies and no second inner seed was needed for it."}
+ ]
+}

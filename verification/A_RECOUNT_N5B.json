@@ -1,0 +1,95 @@
+{
+ "package": "F worker (real-log dropout decision test, AMENDMENT_12 sec. 5b)",
+ "written": "2026-11-22 05:20:36",
+ "program": "work\\F_dropout_nus\\recount\\FN5B_RECOUNT_masked_v02.json",
+ "program_sha256": "1bb4180a7edc9e07b91fed8c6a708e2e7076517d4bd23779d73dc76ad2da379e",
+ "renamer": "f24_export_n5b_v01.py",
+ "renamer_sha256": "33acc8b49e493fe3e878f62971a4703e09cfdb7bfb32854afce4628b2c5a0298",
+ "lock_sha256": "913807a6ab479458a9507c155117f5c955ab6c550b799f03af79d3663f79a9a4",
+ "note": "pure renaming; second program mapped by the inverse of f23 name map",
+ "values": {
+  "N5b.status": "ran",
+  "N5b.n_scenes": 150.0,
+  "N5b.n_dec": 18987.0,
+  "N5b.n_in_dropout": 3140.0,
+  "N5b.dec_in_share": 0.16537631010691525,
+  "N5b.masked_share": 0.16298388436617378,
+  "N5b.R_gl": -0.0052405586749980256,
+  "N5b.R_gl.ci": [
+   -0.0785673748638427,
+   0.12443130225341746
+  ],
+  "N5b.R_gl.level": 0.95,
+  "N5b.R_gl.share_pos": 0.35515,
+  "N5b.R_gl.share_nonpos": 0.6448499999999999,
+  "N5b.R_deceq": -0.9950248756218751,
+  "N5b.R_deceq.ci": [
+   -14.900870646766192,
+   23.666666666666657
+  ],
+  "N5b.D_N_deceq": -0.9950248756218751,
+  "N5b.D_N_deceq.ci": [
+   -25.373258706467716,
+   0.0
+  ],
+  "N5b.c": NaN,
+  "N5b.c.ci": [
+   -4.631470588235297,
+   94.65818181818852
+  ],
+  "N5b.c.level": 0.99,
+  "N5b.cdiff": NaN,
+  "N5b.cdiff.ci": [
+   -0.451622495679541,
+   127.5722727272679
+  ],
+  "N5b.cdiff.level": 0.99,
+  "N5b.r": NaN,
+  "N5b.r.ci": [
+   -105.18222222221976,
+   0.8927589384854504
+  ],
+  "N5b.r.level": 0.99,
+  "N5b.eff": null,
+  "N5b.eff.ci": null,
+  "N5b.m": 1.7902973935851545,
+  "N5b.A": 1.008689760463953,
+  "N5b.within5": 0.056287013909468504,
+  "N5b.barely_varies": false,
+  "N5b.room.passes": false,
+  "N5b.E5N.passes": false,
+  "N5b.class": "inconclusive",
+  "N5b.class.passes": false,
+  "N5b.p_r": 0.9947502624868757,
+  "N5b.in.R_gl": 0.24717178439015225,
+  "N5b.in.R_gl.ci": [
+   -0.12115019827876557,
+   0.717226024479746
+  ],
+  "N5b.in.RR_N": 0.0,
+  "N5b.in.RR_N.ci": [
+   -0.8073671993572031,
+   3.704937853107354
+  ],
+  "N5b.in.c": 0.0,
+  "N5b.in.c.ci": [
+   -0.7843623614685729,
+   4.8085160427807
+  ],
+  "N5b.in.R_deceq": 7.76119402985078,
+  "N5b.in.R_deceq.ci": [
+   -3.791293532338336,
+   23.01007462686571
+  ],
+  "N5b.in.D_N_deceq": 0.0,
+  "N5b.in.D_N_deceq.ci": [
+   -3.1442786069651865,
+   9.547761194029786
+  ],
+  "N5b.in.within5": 0.07554039995376258,
+  "N5b.in.m": 2.7528194185038357,
+  "N5b.in.q05": 1.484784291769306,
+  "N5b.in.q95": 4.965814557273049,
+  "N5b.masks_identical": true
+ }
+}

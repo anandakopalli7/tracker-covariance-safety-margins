@@ -1,0 +1,46 @@
+17:42:58  recount2_ext_v01 started: 35 runs, 9 settings ['t0p50_a6p0', 't0p75_a6p0', 't1p00_a6p0', 't1p25_a6p0', 't1p50_a6p0', 't1p80_a6p0', 't0p75_a4p0', 't0p75_a5p0', 't0p75_a7p6']
+17:43:20  1/35 p1b_fit_finite_0005 ev 271 cpu 22.6 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:43:40  2/35 p1b_fit_finite_0006 ev 271 cpu 18.9 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 144 cens 0 flips 0
+17:43:59  3/35 p1b_fit_finite_0007 ev 271 cpu 19.1 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 519 cens 0 flips 0
+17:44:01  4/35 p1b_fit_finite_0008 ev 27 cpu 2.2 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 108 cens 4 flips 0
+17:44:19  5/35 p1b_fit_finite_0009 ev 271 cpu 17.4 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:44:37  6/35 p1b_fit_finite_0010 ev 271 cpu 17.6 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 160 cens 0 flips 0
+17:44:54  7/35 p1b_fit_finite_0011 ev 271 cpu 17.1 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:45:13  8/35 p1b_fit_finite_0012 ev 271 cpu 18.8 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 497 cens 0 flips 8
+17:45:30  9/35 p1b_fit_finite_0013 ev 271 cpu 17.5 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 168 cens 0 flips 0
+17:45:47  10/35 p1b_fit_finite_0014 ev 271 cpu 16.4 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:46:04  11/35 p1b_fit_finite_0015 ev 271 cpu 16.7 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:46:21  12/35 p1b_fit_finite_0016 ev 271 cpu 16.9 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 136 cens 0 flips 0
+17:46:39  13/35 p1b_fit_finite_0017 ev 271 cpu 17.9 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 631 cens 0 flips 4
+17:46:56  14/35 p1b_fit_finite_0018 ev 271 cpu 17.0 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 12 cens 0 flips 0
+17:47:13  15/35 p1b_fit_finite_0019 ev 271 cpu 17.2 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:47:31  16/35 p1b_fit_finite_0020 ev 271 cpu 17.2 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:47:48  17/35 p1b_fit_finite_0021 ev 271 cpu 17.1 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:48:05  18/35 p1b_fit_finite_0022 ev 271 cpu 17.0 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:48:22  19/35 p1b_fit_finite_0023 ev 271 cpu 17.3 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 104 cens 0 flips 0
+17:48:40  20/35 p1b_fit_finite_0024 ev 271 cpu 17.2 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:48:41  21/35 p1b_fit_finite_0025 ev 18 cpu 1.5 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 234 cens 65 flips 0
+17:48:58  22/35 p1b_fit_finite_0026 ev 271 cpu 16.7 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:49:16  23/35 p1b_fit_finite_0027 ev 271 cpu 17.9 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 124 cens 0 flips 0
+17:49:33  24/35 p1b_fit_finite_0028 ev 271 cpu 17.2 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:49:51  25/35 p1b_fit_finite_0029 ev 271 cpu 17.4 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:50:09  26/35 p1b_fit_finite_0030 ev 271 cpu 18.3 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 606 cens 0 flips 4
+17:50:14  27/35 p1b_fit_finite_0031 ev 53 cpu 4.3 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 643 cens 19 flips 8
+17:50:31  28/35 p1b_fit_finite_0032 ev 271 cpu 17.2 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:50:33  29/35 p1b_fit_finite_0033 ev 25 cpu 2.2 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 321 cens 65 flips 0
+17:50:36  30/35 p1b_fit_finite_0034 ev 37 cpu 2.8 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 136 cens 0 flips 0
+17:50:55  31/35 p1b_fit_finite_0035 ev 271 cpu 18.8 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 561 cens 0 flips 4
+17:51:13  32/35 p1b_fit_finite_0036 ev 271 cpu 17.4 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 160 cens 0 flips 0
+17:51:31  33/35 p1b_fit_finite_0037 ev 271 cpu 17.7 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 8 cens 0 flips 0
+17:51:51  34/35 p1b_fit_finite_0038 ev 271 cpu 19.8 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 84 cens 0 flips 0
+17:52:13  35/35 p1b_fit_finite_0039 ev 271 cpu 21.7 s | a: flags 0 maxdiff 0.00e+00 | b: maxdiff 0.00e+00 | t0p75_a6p0 late&safe61 0 cens 0 flips 0
+17:52:13  done in 555 s; anchors: {"a_flags_identical_all_settings": true, "a_max_abs_diff_all_settings": 0.0, "a_within_1e9": true, "a_pack_max_abs_diff": 6.394884621840902e-14, "a_pack_flags_differ": 0, "b_tstop_max_abs_diff": 0.0, "b_tstop_n_not_bitwise_equal": 0, "c_t0p75_a6p0": {"n_pairs": 140930, "expected_pairs": 140930, "n_late_safe61": 5356, "expected_late_safe61": 5356, "n_cens_safe61": 153, "expected_cens_safe61": 153, "holds": true}, "decisions_k_equal_stored": "checked per run (the program stops otherwise)", "n_evaluated_flag_mismatch": 0, "n_prefix_differs": 0, "n_tstop_differs_between_replan_s_and_brake_profile": 0, "truth_frames_contiguous_all_runs": true, "actor_extents_constant_all_runs": true, "n_actor_ends_before_window": 0, "max_true_actors_per_run": 1}
+17:52:13  t0p50_a6p0: late&safe61 2897, censored 94, flips 8 (censored 4), unsafe61 1417, unsafeX 1425
+17:52:13  t0p75_a6p0: late&safe61 5356, censored 153, flips 28 (censored 8), unsafe61 3334, unsafeX 3362
+17:52:13  t1p00_a6p0: late&safe61 5301, censored 230, flips 126 (censored 30), unsafe61 5631, unsafeX 5757
+17:52:13  t1p25_a6p0: late&safe61 7048, censored 296, flips 215 (censored 49), unsafe61 8530, unsafeX 8745
+17:52:13  t1p50_a6p0: late&safe61 8583, censored 372, flips 374 (censored 81), unsafe61 12714, unsafeX 13088
+17:52:13  t1p80_a6p0: late&safe61 9900, censored 487, flips 651 (censored 139), unsafe61 15824, unsafeX 16475
+17:52:13  t0p75_a4p0: late&safe61 8905, censored 773, flips 440 (censored 59), unsafe61 4373, unsafeX 4813
+17:52:13  t0p75_a5p0: late&safe61 6781, censored 365, flips 161 (censored 26), unsafe61 3740, unsafeX 3901
+17:52:13  t0p75_a7p6: late&safe61 2431, censored 37, flips 0 (censored 0), unsafe61 2802, unsafeX 2802

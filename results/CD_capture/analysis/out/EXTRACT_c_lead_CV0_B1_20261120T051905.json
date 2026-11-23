@@ -1,0 +1,746 @@
+{
+ "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df",
+ "set": "c_lead",
+ "variants": [
+  "CV0",
+  "B1"
+ ],
+ "runs": [
+  {
+   "run": "pc13_c1109_eval_0000_native",
+   "res": {
+    "CV0": "ok 76 s",
+    "B1": "ok 54 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0006_native",
+   "res": {
+    "CV0": "ok 16 s",
+    "B1": "ok 15 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0012_native",
+   "res": {
+    "CV0": "ok 74 s",
+    "B1": "ok 58 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0018_native",
+   "res": {
+    "CV0": "ok 76 s",
+    "B1": "ok 45 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0024_native",
+   "res": {
+    "CV0": "ok 65 s",
+    "B1": "ok 38 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0030_native",
+   "res": {
+    "CV0": "ok 18 s",
+    "B1": "ok 7 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0036_native",
+   "res": {
+    "CV0": "ok 16 s",
+    "B1": "ok 4 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0042_native",
+   "res": {
+    "CV0": "ok 23 s",
+    "B1": "ok 10 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0048_native",
+   "res": {
+    "CV0": "ok 22 s",
+    "B1": "ok 5 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0054_native",
+   "res": {
+    "CV0": "ok 89 s",
+    "B1": "ok 34 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0060_native",
+   "res": {
+    "CV0": "ok 91 s",
+    "B1": "ok 33 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0066_native",
+   "res": {
+    "CV0": "ok 66 s",
+    "B1": "ok 40 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0072_native",
+   "res": {
+    "CV0": "ok 22 s",
+    "B1": "ok 8 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0078_native",
+   "res": {
+    "CV0": "ok 21 s",
+    "B1": "ok 6 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0084_native",
+   "res": {
+    "CV0": "ok 77 s",
+    "B1": "ok 30 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0090_native",
+   "res": {
+    "CV0": "ok 76 s",
+    "B1": "ok 26 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0096_native",
+   "res": {
+    "CV0": "ok 81 s",
+    "B1": "ok 44 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0102_native",
+   "res": {
+    "CV0": "ok 20 s",
+    "B1": "ok 8 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0108_native",
+   "res": {
+    "CV0": "ok 72 s",
+    "B1": "ok 41 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0114_native",
+   "res": {
+    "CV0": "ok 67 s",
+    "B1": "ok 37 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0120_native",
+   "res": {
+    "CV0": "ok 65 s",
+    "B1": "ok 32 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0126_native",
+   "res": {
+    "CV0": "ok 81 s",
+    "B1": "ok 39 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0132_native",
+   "res": {
+    "CV0": "ok 13 s",
+    "B1": "ok 13 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0138_native",
+   "res": {
+    "CV0": "ok 77 s",
+    "B1": "ok 42 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0144_native",
+   "res": {
+    "CV0": "ok 81 s",
+    "B1": "ok 30 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0150_native",
+   "res": {
+    "CV0": "ok 34 s",
+    "B1": "ok 14 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0156_native",
+   "res": {
+    "CV0": "ok 22 s",
+    "B1": "ok 11 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0162_native",
+   "res": {
+    "CV0": "ok 76 s",
+    "B1": "ok 55 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0168_native",
+   "res": {
+    "CV0": "ok 17 s",
+    "B1": "ok 4 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0174_native",
+   "res": {
+    "CV0": "ok 81 s",
+    "B1": "ok 29 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0180_native",
+   "res": {
+    "CV0": "ok 75 s",
+    "B1": "ok 46 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0186_native",
+   "res": {
+    "CV0": "ok 82 s",
+    "B1": "ok 32 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0192_native",
+   "res": {
+    "CV0": "ok 74 s",
+    "B1": "ok 35 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0198_native",
+   "res": {
+    "CV0": "ok 38 s",
+    "B1": "ok 11 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0204_native",
+   "res": {
+    "CV0": "ok 76 s",
+    "B1": "ok 45 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0210_native",
+   "res": {
+    "CV0": "ok 23 s",
+    "B1": "ok 8 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0216_native",
+   "res": {
+    "CV0": "ok 86 s",
+    "B1": "ok 32 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0222_native",
+   "res": {
+    "CV0": "ok 34 s",
+    "B1": "ok 15 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0228_native",
+   "res": {
+    "CV0": "ok 67 s",
+    "B1": "ok 36 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0234_native",
+   "res": {
+    "CV0": "ok 69 s",
+    "B1": "ok 40 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0240_native",
+   "res": {
+    "CV0": "ok 76 s",
+    "B1": "ok 37 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0246_native",
+   "res": {
+    "CV0": "ok 95 s",
+    "B1": "ok 34 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0252_native",
+   "res": {
+    "CV0": "ok 17 s",
+    "B1": "ok 17 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0258_native",
+   "res": {
+    "CV0": "ok 74 s",
+    "B1": "ok 28 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0264_native",
+   "res": {
+    "CV0": "ok 32 s",
+    "B1": "ok 9 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0270_native",
+   "res": {
+    "CV0": "ok 18 s",
+    "B1": "ok 7 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0276_native",
+   "res": {
+    "CV0": "ok 81 s",
+    "B1": "ok 35 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0282_native",
+   "res": {
+    "CV0": "ok 74 s",
+    "B1": "ok 34 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0288_native",
+   "res": {
+    "CV0": "ok 23 s",
+    "B1": "ok 8 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0294_native",
+   "res": {
+    "CV0": "ok 9 s",
+    "B1": "ok 3 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0300_native",
+   "res": {
+    "CV0": "ok 72 s",
+    "B1": "ok 29 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0306_native",
+   "res": {
+    "CV0": "ok 84 s",
+    "B1": "ok 35 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0312_native",
+   "res": {
+    "CV0": "ok 67 s",
+    "B1": "ok 52 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0318_native",
+   "res": {
+    "CV0": "ok 72 s",
+    "B1": "ok 33 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0324_native",
+   "res": {
+    "CV0": "ok 27 s",
+    "B1": "ok 9 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0330_native",
+   "res": {
+    "CV0": "ok 82 s",
+    "B1": "ok 36 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0336_native",
+   "res": {
+    "CV0": "ok 85 s",
+    "B1": "ok 50 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0342_native",
+   "res": {
+    "CV0": "ok 85 s",
+    "B1": "ok 42 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0348_native",
+   "res": {
+    "CV0": "ok 86 s",
+    "B1": "ok 37 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0354_native",
+   "res": {
+    "CV0": "ok 107 s",
+    "B1": "ok 46 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0360_native",
+   "res": {
+    "CV0": "ok 73 s",
+    "B1": "ok 35 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0366_native",
+   "res": {
+    "CV0": "ok 81 s",
+    "B1": "ok 42 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0372_native",
+   "res": {
+    "CV0": "ok 74 s",
+    "B1": "ok 45 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0378_native",
+   "res": {
+    "CV0": "ok 26 s",
+    "B1": "ok 18 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0384_native",
+   "res": {
+    "CV0": "ok 76 s",
+    "B1": "ok 39 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0390_native",
+   "res": {
+    "CV0": "ok 100 s",
+    "B1": "ok 33 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0396_native",
+   "res": {
+    "CV0": "ok 18 s",
+    "B1": "ok 8 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0402_native",
+   "res": {
+    "CV0": "ok 89 s",
+    "B1": "ok 49 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0408_native",
+   "res": {
+    "CV0": "ok 90 s",
+    "B1": "ok 42 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0414_native",
+   "res": {
+    "CV0": "ok 87 s",
+    "B1": "ok 43 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0420_native",
+   "res": {
+    "CV0": "ok 90 s",
+    "B1": "ok 46 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0426_native",
+   "res": {
+    "CV0": "ok 78 s",
+    "B1": "ok 39 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0432_native",
+   "res": {
+    "CV0": "ok 14 s",
+    "B1": "ok 8 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0438_native",
+   "res": {
+    "CV0": "ok 14 s",
+    "B1": "ok 9 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0444_native",
+   "res": {
+    "CV0": "ok 77 s",
+    "B1": "ok 36 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0450_native",
+   "res": {
+    "CV0": "ok 23 s",
+    "B1": "ok 9 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0456_native",
+   "res": {
+    "CV0": "ok 19 s",
+    "B1": "ok 14 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0462_native",
+   "res": {
+    "CV0": "ok 76 s",
+    "B1": "ok 61 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0468_native",
+   "res": {
+    "CV0": "ok 76 s",
+    "B1": "ok 54 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0474_native",
+   "res": {
+    "CV0": "ok 75 s",
+    "B1": "ok 40 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0486_native",
+   "res": {
+    "CV0": "ok 87 s",
+    "B1": "ok 35 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0498_native",
+   "res": {
+    "CV0": "ok 81 s",
+    "B1": "ok 44 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0510_native",
+   "res": {
+    "CV0": "ok 79 s",
+    "B1": "ok 65 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0516_native",
+   "res": {
+    "CV0": "ok 74 s",
+    "B1": "ok 44 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0528_native",
+   "res": {
+    "CV0": "ok 90 s",
+    "B1": "ok 36 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0534_native",
+   "res": {
+    "CV0": "ok 77 s",
+    "B1": "ok 40 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0546_native",
+   "res": {
+    "CV0": "ok 67 s",
+    "B1": "ok 55 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0552_native",
+   "res": {
+    "CV0": "ok 76 s",
+    "B1": "ok 34 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0558_native",
+   "res": {
+    "CV0": "ok 97 s",
+    "B1": "ok 45 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0564_native",
+   "res": {
+    "CV0": "ok 88 s",
+    "B1": "ok 49 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0570_native",
+   "res": {
+    "CV0": "ok 82 s",
+    "B1": "ok 42 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0576_native",
+   "res": {
+    "CV0": "ok 91 s",
+    "B1": "ok 46 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0582_native",
+   "res": {
+    "CV0": "ok 81 s",
+    "B1": "ok 40 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0594_native",
+   "res": {
+    "CV0": "ok 95 s",
+    "B1": "ok 35 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0600_native",
+   "res": {
+    "CV0": "ok 18 s",
+    "B1": "ok 11 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0606_native",
+   "res": {
+    "CV0": "ok 11 s",
+    "B1": "ok 4 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0618_native",
+   "res": {
+    "CV0": "ok 84 s",
+    "B1": "ok 34 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0624_native",
+   "res": {
+    "CV0": "ok 84 s",
+    "B1": "ok 33 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0630_native",
+   "res": {
+    "CV0": "ok 70 s",
+    "B1": "ok 29 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0648_native",
+   "res": {
+    "CV0": "ok 77 s",
+    "B1": "ok 35 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0660_native",
+   "res": {
+    "CV0": "ok 68 s",
+    "B1": "ok 27 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0666_native",
+   "res": {
+    "CV0": "ok 58 s",
+    "B1": "ok 26 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0678_native",
+   "res": {
+    "CV0": "ok 71 s",
+    "B1": "ok 33 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0696_native",
+   "res": {
+    "CV0": "ok 62 s",
+    "B1": "ok 39 s"
+   }
+  },
+  {
+   "run": "pc13_c1109_eval_0720_native",
+   "res": {
+    "CV0": "ok 63 s",
+    "B1": "ok 20 s"
+   }
+  }
+ ],
+ "seconds": 2191.0149557590485
+}

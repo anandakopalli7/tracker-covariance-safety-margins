@@ -1,0 +1,207 @@
+{
+ "family": "S57B",
+ "program": "rc_s57b_v13.py",
+ "test_old": true,
+ "what": "checks of the key path on the 35 old runs (points)",
+ "model": "claude-fable-5-2",
+ "values": {},
+ "details": {
+  "checks": {
+   "n_checks": 19,
+   "n_failed": 0,
+   "rows": [
+    {
+     "check": "grid identity",
+     "case": "W1 populations",
+     "n_values": 27270,
+     "max_abs_diff_counts": 0.0,
+     "max_abs_diff_caution_sum": 1.8735590856522322e-10,
+     "ok": true
+    },
+    {
+     "check": "library of record (a9 gridless + eval_scoring) vs own point path",
+     "case": "W1 populations",
+     "n_values": 45,
+     "max_abs_diff": 0.0,
+     "identical": true,
+     "ok": true
+    },
+    {
+     "check": "grid identity",
+     "case": "W1 IMM populations",
+     "n_values": 9090,
+     "max_abs_diff_counts": 0.0,
+     "max_abs_diff_caution_sum": 1.7917045624926686e-10,
+     "ok": true
+    },
+    {
+     "check": "library of record (a9 gridless + eval_scoring) vs own point path",
+     "case": "W1 IMM populations",
+     "n_values": 15,
+     "max_abs_diff": 0.0,
+     "identical": true,
+     "ok": true
+    },
+    {
+     "check": "grid identity",
+     "case": "W1 truncation",
+     "n_values": 10908,
+     "max_abs_diff_counts": 0.0,
+     "max_abs_diff_caution_sum": 1.623448042664677e-10,
+     "ok": true
+    },
+    {
+     "check": "library of record (a9 gridless + eval_scoring) vs own point path",
+     "case": "W1 truncation",
+     "n_values": 18,
+     "max_abs_diff": 0.0,
+     "identical": true,
+     "ok": true
+    },
+    {
+     "check": "grid identity",
+     "case": "W1 cut5",
+     "n_values": 1818,
+     "max_abs_diff_counts": 0.0,
+     "max_abs_diff_caution_sum": 2.4556356947869062e-11,
+     "ok": true
+    },
+    {
+     "check": "library of record (a9 gridless + eval_scoring) vs own point path",
+     "case": "W1 cut5",
+     "n_values": 3,
+     "max_abs_diff": 0.0,
+     "identical": true,
+     "ok": true
+    },
+    {
+     "check": "grid identity",
+     "case": "W1 signed",
+     "n_values": 2424,
+     "max_abs_diff_counts": 0.0,
+     "max_abs_diff_caution_sum": 1.8781065591610968e-10,
+     "ok": true
+    },
+    {
+     "check": "grid identity",
+     "case": "est t0p75_a6p0",
+     "n_values": 2427,
+     "max_abs_diff_counts": 0.0,
+     "max_abs_diff_caution_sum": 1.8735590856522322e-10,
+     "ok": true
+    },
+    {
+     "check": "library of record (a9 gridless + eval_scoring) vs own point path",
+     "case": "est t0p75_a6p0",
+     "n_values": 5,
+     "max_abs_diff": 0.0,
+     "identical": true,
+     "ok": true
+    },
+    {
+     "check": "grid identity",
+     "case": "est t1p80_a6p0",
+     "n_values": 2427,
+     "max_abs_diff_counts": 0.0,
+     "max_abs_diff_caution_sum": 1.8735590856522322e-10,
+     "ok": true
+    },
+    {
+     "check": "library of record (a9 gridless + eval_scoring) vs own point path",
+     "case": "est t1p80_a6p0",
+     "n_values": 5,
+     "max_abs_diff": 0.0,
+     "identical": true,
+     "ok": true
+    },
+    {
+     "check": "grid identity",
+     "case": "est t0p75_a4p0",
+     "n_values": 2427,
+     "max_abs_diff_counts": 0.0,
+     "max_abs_diff_caution_sum": 1.8735590856522322e-10,
+     "ok": true
+    },
+    {
+     "check": "library of record (a9 gridless + eval_scoring) vs own point path",
+     "case": "est t0p75_a4p0",
+     "n_values": 5,
+     "max_abs_diff": 0.0,
+     "identical": true,
+     "ok": true
+    },
+    {
+     "check": "grid identity",
+     "case": "gap2 est t0p75_a6p0",
+     "n_values": 2427,
+     "max_abs_diff_counts": 0.0,
+     "max_abs_diff_caution_sum": 1.5279510989785194e-10,
+     "ok": true
+    },
+    {
+     "check": "library of record (a9 gridless + eval_scoring) vs own point path",
+     "case": "gap2 est t0p75_a6p0",
+     "n_values": 5,
+     "max_abs_diff": 0.0,
+     "identical": true,
+     "ok": true
+    },
+    {
+     "check": "grid identity",
+     "case": "gap2 cens-unsafe t0p75_a6p0",
+     "n_values": 2427,
+     "max_abs_diff_counts": 0.0,
+     "max_abs_diff_caution_sum": 1.5279510989785194e-10,
+     "ok": true
+    },
+    {
+     "check": "library of record (a9 gridless + eval_scoring) vs own point path",
+     "case": "gap2 cens-unsafe t0p75_a6p0",
+     "n_values": 5,
+     "max_abs_diff": 0.0,
+     "identical": true,
+     "ok": true
+    }
+   ]
+  },
+  "runs": [
+   "p1b_fit_finite_0005",
+   "p1b_fit_finite_0006",
+   "p1b_fit_finite_0007",
+   "p1b_fit_finite_0008",
+   "p1b_fit_finite_0009",
+   "p1b_fit_finite_0010",
+   "p1b_fit_finite_0011",
+   "p1b_fit_finite_0012",
+   "p1b_fit_finite_0013",
+   "p1b_fit_finite_0014",
+   "p1b_fit_finite_0015",
+   "p1b_fit_finite_0016",
+   "p1b_fit_finite_0017",
+   "p1b_fit_finite_0018",
+   "p1b_fit_finite_0019",
+   "p1b_fit_finite_0020",
+   "p1b_fit_finite_0021",
+   "p1b_fit_finite_0022",
+   "p1b_fit_finite_0023",
+   "p1b_fit_finite_0024",
+   "p1b_fit_finite_0025",
+   "p1b_fit_finite_0026",
+   "p1b_fit_finite_0027",
+   "p1b_fit_finite_0028",
+   "p1b_fit_finite_0029",
+   "p1b_fit_finite_0030",
+   "p1b_fit_finite_0031",
+   "p1b_fit_finite_0032",
+   "p1b_fit_finite_0033",
+   "p1b_fit_finite_0034",
+   "p1b_fit_finite_0035",
+   "p1b_fit_finite_0036",
+   "p1b_fit_finite_0037",
+   "p1b_fit_finite_0038",
+   "p1b_fit_finite_0039"
+  ]
+ },
+ "written": "2026-11-20 03:35:10",
+ "seconds": 130.9337887763977
+}

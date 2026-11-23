@@ -1,0 +1,7810 @@
+{
+ "schema": "E_OUTCOMES_V01",
+ "stage": "e3",
+ "code": "e_collect_v01.py",
+ "n_jobs": 300,
+ "n_valid": 0,
+ "multiple_attempts": [],
+ "runs": [
+  {
+   "run_id": "e3_E_CK3_hi_c00",
+   "job": "e3_E_CK3_hi_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c01",
+   "job": "e3_E_CK3_hi_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c02",
+   "job": "e3_E_CK3_hi_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c03",
+   "job": "e3_E_CK3_hi_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c04",
+   "job": "e3_E_CK3_hi_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c05",
+   "job": "e3_E_CK3_hi_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c06",
+   "job": "e3_E_CK3_hi_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c07",
+   "job": "e3_E_CK3_hi_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c08",
+   "job": "e3_E_CK3_hi_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c09",
+   "job": "e3_E_CK3_hi_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c10",
+   "job": "e3_E_CK3_hi_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c11",
+   "job": "e3_E_CK3_hi_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c12",
+   "job": "e3_E_CK3_hi_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c13",
+   "job": "e3_E_CK3_hi_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c14",
+   "job": "e3_E_CK3_hi_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c15",
+   "job": "e3_E_CK3_hi_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c16",
+   "job": "e3_E_CK3_hi_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c17",
+   "job": "e3_E_CK3_hi_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c18",
+   "job": "e3_E_CK3_hi_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_hi_c19",
+   "job": "e3_E_CK3_hi_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c00",
+   "job": "e3_E_CK3_lo_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c01",
+   "job": "e3_E_CK3_lo_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c02",
+   "job": "e3_E_CK3_lo_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c03",
+   "job": "e3_E_CK3_lo_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c04",
+   "job": "e3_E_CK3_lo_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c05",
+   "job": "e3_E_CK3_lo_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c06",
+   "job": "e3_E_CK3_lo_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c07",
+   "job": "e3_E_CK3_lo_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c08",
+   "job": "e3_E_CK3_lo_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c09",
+   "job": "e3_E_CK3_lo_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c10",
+   "job": "e3_E_CK3_lo_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c11",
+   "job": "e3_E_CK3_lo_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c12",
+   "job": "e3_E_CK3_lo_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c13",
+   "job": "e3_E_CK3_lo_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c14",
+   "job": "e3_E_CK3_lo_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c15",
+   "job": "e3_E_CK3_lo_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c16",
+   "job": "e3_E_CK3_lo_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c17",
+   "job": "e3_E_CK3_lo_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c18",
+   "job": "e3_E_CK3_lo_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_CK3_lo_c19",
+   "job": "e3_E_CK3_lo_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_CK3",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c00",
+   "job": "e3_E_F0_IMM_hi_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c01",
+   "job": "e3_E_F0_IMM_hi_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c02",
+   "job": "e3_E_F0_IMM_hi_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c03",
+   "job": "e3_E_F0_IMM_hi_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c04",
+   "job": "e3_E_F0_IMM_hi_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c05",
+   "job": "e3_E_F0_IMM_hi_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c06",
+   "job": "e3_E_F0_IMM_hi_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c07",
+   "job": "e3_E_F0_IMM_hi_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c08",
+   "job": "e3_E_F0_IMM_hi_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c09",
+   "job": "e3_E_F0_IMM_hi_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c10",
+   "job": "e3_E_F0_IMM_hi_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c11",
+   "job": "e3_E_F0_IMM_hi_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c12",
+   "job": "e3_E_F0_IMM_hi_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c13",
+   "job": "e3_E_F0_IMM_hi_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c14",
+   "job": "e3_E_F0_IMM_hi_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c15",
+   "job": "e3_E_F0_IMM_hi_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c16",
+   "job": "e3_E_F0_IMM_hi_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c17",
+   "job": "e3_E_F0_IMM_hi_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c18",
+   "job": "e3_E_F0_IMM_hi_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_hi_c19",
+   "job": "e3_E_F0_IMM_hi_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c00",
+   "job": "e3_E_F0_IMM_lo_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c01",
+   "job": "e3_E_F0_IMM_lo_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c02",
+   "job": "e3_E_F0_IMM_lo_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c03",
+   "job": "e3_E_F0_IMM_lo_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c04",
+   "job": "e3_E_F0_IMM_lo_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c05",
+   "job": "e3_E_F0_IMM_lo_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c06",
+   "job": "e3_E_F0_IMM_lo_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c07",
+   "job": "e3_E_F0_IMM_lo_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c08",
+   "job": "e3_E_F0_IMM_lo_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c09",
+   "job": "e3_E_F0_IMM_lo_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c10",
+   "job": "e3_E_F0_IMM_lo_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c11",
+   "job": "e3_E_F0_IMM_lo_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c12",
+   "job": "e3_E_F0_IMM_lo_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c13",
+   "job": "e3_E_F0_IMM_lo_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c14",
+   "job": "e3_E_F0_IMM_lo_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c15",
+   "job": "e3_E_F0_IMM_lo_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c16",
+   "job": "e3_E_F0_IMM_lo_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c17",
+   "job": "e3_E_F0_IMM_lo_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c18",
+   "job": "e3_E_F0_IMM_lo_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_IMM_lo_c19",
+   "job": "e3_E_F0_IMM_lo_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_F0_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c00",
+   "job": "e3_E_F0_hi_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c01",
+   "job": "e3_E_F0_hi_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c02",
+   "job": "e3_E_F0_hi_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c03",
+   "job": "e3_E_F0_hi_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c04",
+   "job": "e3_E_F0_hi_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c05",
+   "job": "e3_E_F0_hi_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c06",
+   "job": "e3_E_F0_hi_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c07",
+   "job": "e3_E_F0_hi_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c08",
+   "job": "e3_E_F0_hi_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c09",
+   "job": "e3_E_F0_hi_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c10",
+   "job": "e3_E_F0_hi_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c11",
+   "job": "e3_E_F0_hi_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c12",
+   "job": "e3_E_F0_hi_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c13",
+   "job": "e3_E_F0_hi_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c14",
+   "job": "e3_E_F0_hi_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c15",
+   "job": "e3_E_F0_hi_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c16",
+   "job": "e3_E_F0_hi_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c17",
+   "job": "e3_E_F0_hi_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c18",
+   "job": "e3_E_F0_hi_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_hi_c19",
+   "job": "e3_E_F0_hi_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c00",
+   "job": "e3_E_F0_lo_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c01",
+   "job": "e3_E_F0_lo_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c02",
+   "job": "e3_E_F0_lo_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c03",
+   "job": "e3_E_F0_lo_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c04",
+   "job": "e3_E_F0_lo_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c05",
+   "job": "e3_E_F0_lo_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c06",
+   "job": "e3_E_F0_lo_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c07",
+   "job": "e3_E_F0_lo_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c08",
+   "job": "e3_E_F0_lo_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c09",
+   "job": "e3_E_F0_lo_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c10",
+   "job": "e3_E_F0_lo_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c11",
+   "job": "e3_E_F0_lo_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c12",
+   "job": "e3_E_F0_lo_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c13",
+   "job": "e3_E_F0_lo_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c14",
+   "job": "e3_E_F0_lo_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c15",
+   "job": "e3_E_F0_lo_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c16",
+   "job": "e3_E_F0_lo_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c17",
+   "job": "e3_E_F0_lo_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c18",
+   "job": "e3_E_F0_lo_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_F0_lo_c19",
+   "job": "e3_E_F0_lo_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_F0",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c00",
+   "job": "e3_E_N_IMM_hi_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c01",
+   "job": "e3_E_N_IMM_hi_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c02",
+   "job": "e3_E_N_IMM_hi_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c03",
+   "job": "e3_E_N_IMM_hi_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c04",
+   "job": "e3_E_N_IMM_hi_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c05",
+   "job": "e3_E_N_IMM_hi_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c06",
+   "job": "e3_E_N_IMM_hi_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c07",
+   "job": "e3_E_N_IMM_hi_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c08",
+   "job": "e3_E_N_IMM_hi_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c09",
+   "job": "e3_E_N_IMM_hi_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c10",
+   "job": "e3_E_N_IMM_hi_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c11",
+   "job": "e3_E_N_IMM_hi_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c12",
+   "job": "e3_E_N_IMM_hi_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c13",
+   "job": "e3_E_N_IMM_hi_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c14",
+   "job": "e3_E_N_IMM_hi_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c15",
+   "job": "e3_E_N_IMM_hi_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c16",
+   "job": "e3_E_N_IMM_hi_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c17",
+   "job": "e3_E_N_IMM_hi_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c18",
+   "job": "e3_E_N_IMM_hi_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_hi_c19",
+   "job": "e3_E_N_IMM_hi_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c00",
+   "job": "e3_E_N_IMM_lo_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c01",
+   "job": "e3_E_N_IMM_lo_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c02",
+   "job": "e3_E_N_IMM_lo_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c03",
+   "job": "e3_E_N_IMM_lo_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c04",
+   "job": "e3_E_N_IMM_lo_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c05",
+   "job": "e3_E_N_IMM_lo_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c06",
+   "job": "e3_E_N_IMM_lo_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c07",
+   "job": "e3_E_N_IMM_lo_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c08",
+   "job": "e3_E_N_IMM_lo_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c09",
+   "job": "e3_E_N_IMM_lo_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c10",
+   "job": "e3_E_N_IMM_lo_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c11",
+   "job": "e3_E_N_IMM_lo_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c12",
+   "job": "e3_E_N_IMM_lo_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c13",
+   "job": "e3_E_N_IMM_lo_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c14",
+   "job": "e3_E_N_IMM_lo_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c15",
+   "job": "e3_E_N_IMM_lo_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c16",
+   "job": "e3_E_N_IMM_lo_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c17",
+   "job": "e3_E_N_IMM_lo_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c18",
+   "job": "e3_E_N_IMM_lo_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_IMM_lo_c19",
+   "job": "e3_E_N_IMM_lo_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_N_IMM",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c00",
+   "job": "e3_E_N_hi_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c01",
+   "job": "e3_E_N_hi_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c02",
+   "job": "e3_E_N_hi_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c03",
+   "job": "e3_E_N_hi_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c04",
+   "job": "e3_E_N_hi_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c05",
+   "job": "e3_E_N_hi_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c06",
+   "job": "e3_E_N_hi_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c07",
+   "job": "e3_E_N_hi_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c08",
+   "job": "e3_E_N_hi_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c09",
+   "job": "e3_E_N_hi_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c10",
+   "job": "e3_E_N_hi_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c11",
+   "job": "e3_E_N_hi_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c12",
+   "job": "e3_E_N_hi_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c13",
+   "job": "e3_E_N_hi_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c14",
+   "job": "e3_E_N_hi_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c15",
+   "job": "e3_E_N_hi_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c16",
+   "job": "e3_E_N_hi_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c17",
+   "job": "e3_E_N_hi_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c18",
+   "job": "e3_E_N_hi_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_hi_c19",
+   "job": "e3_E_N_hi_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c00",
+   "job": "e3_E_N_lo_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c01",
+   "job": "e3_E_N_lo_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c02",
+   "job": "e3_E_N_lo_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c03",
+   "job": "e3_E_N_lo_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c04",
+   "job": "e3_E_N_lo_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c05",
+   "job": "e3_E_N_lo_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c06",
+   "job": "e3_E_N_lo_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c07",
+   "job": "e3_E_N_lo_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c08",
+   "job": "e3_E_N_lo_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c09",
+   "job": "e3_E_N_lo_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c10",
+   "job": "e3_E_N_lo_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c11",
+   "job": "e3_E_N_lo_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c12",
+   "job": "e3_E_N_lo_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c13",
+   "job": "e3_E_N_lo_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c14",
+   "job": "e3_E_N_lo_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c15",
+   "job": "e3_E_N_lo_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c16",
+   "job": "e3_E_N_lo_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c17",
+   "job": "e3_E_N_lo_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c18",
+   "job": "e3_E_N_lo_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_N_lo_c19",
+   "job": "e3_E_N_lo_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_N",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c00",
+   "job": "e3_E_PS_hi_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c01",
+   "job": "e3_E_PS_hi_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c02",
+   "job": "e3_E_PS_hi_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c03",
+   "job": "e3_E_PS_hi_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c04",
+   "job": "e3_E_PS_hi_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c05",
+   "job": "e3_E_PS_hi_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c06",
+   "job": "e3_E_PS_hi_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c07",
+   "job": "e3_E_PS_hi_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c08",
+   "job": "e3_E_PS_hi_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c09",
+   "job": "e3_E_PS_hi_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c10",
+   "job": "e3_E_PS_hi_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c11",
+   "job": "e3_E_PS_hi_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c12",
+   "job": "e3_E_PS_hi_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c13",
+   "job": "e3_E_PS_hi_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c14",
+   "job": "e3_E_PS_hi_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c15",
+   "job": "e3_E_PS_hi_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c16",
+   "job": "e3_E_PS_hi_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c17",
+   "job": "e3_E_PS_hi_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c18",
+   "job": "e3_E_PS_hi_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_hi_c19",
+   "job": "e3_E_PS_hi_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c00",
+   "job": "e3_E_PS_lo_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c01",
+   "job": "e3_E_PS_lo_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c02",
+   "job": "e3_E_PS_lo_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c03",
+   "job": "e3_E_PS_lo_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c04",
+   "job": "e3_E_PS_lo_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c05",
+   "job": "e3_E_PS_lo_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c06",
+   "job": "e3_E_PS_lo_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c07",
+   "job": "e3_E_PS_lo_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c08",
+   "job": "e3_E_PS_lo_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c09",
+   "job": "e3_E_PS_lo_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c10",
+   "job": "e3_E_PS_lo_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c11",
+   "job": "e3_E_PS_lo_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c12",
+   "job": "e3_E_PS_lo_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c13",
+   "job": "e3_E_PS_lo_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c14",
+   "job": "e3_E_PS_lo_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c15",
+   "job": "e3_E_PS_lo_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c16",
+   "job": "e3_E_PS_lo_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c17",
+   "job": "e3_E_PS_lo_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c18",
+   "job": "e3_E_PS_lo_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_PS_lo_c19",
+   "job": "e3_E_PS_lo_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_PS",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c00",
+   "job": "e3_E_TG_hi_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c01",
+   "job": "e3_E_TG_hi_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c02",
+   "job": "e3_E_TG_hi_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c03",
+   "job": "e3_E_TG_hi_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c04",
+   "job": "e3_E_TG_hi_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c05",
+   "job": "e3_E_TG_hi_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c06",
+   "job": "e3_E_TG_hi_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c07",
+   "job": "e3_E_TG_hi_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c08",
+   "job": "e3_E_TG_hi_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c09",
+   "job": "e3_E_TG_hi_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c10",
+   "job": "e3_E_TG_hi_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c11",
+   "job": "e3_E_TG_hi_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c12",
+   "job": "e3_E_TG_hi_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c13",
+   "job": "e3_E_TG_hi_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c14",
+   "job": "e3_E_TG_hi_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c15",
+   "job": "e3_E_TG_hi_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c16",
+   "job": "e3_E_TG_hi_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c17",
+   "job": "e3_E_TG_hi_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c18",
+   "job": "e3_E_TG_hi_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_hi_c19",
+   "job": "e3_E_TG_hi_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "hi",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "hi",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c00",
+   "job": "e3_E_TG_lo_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c01",
+   "job": "e3_E_TG_lo_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c02",
+   "job": "e3_E_TG_lo_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c03",
+   "job": "e3_E_TG_lo_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c04",
+   "job": "e3_E_TG_lo_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c05",
+   "job": "e3_E_TG_lo_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c06",
+   "job": "e3_E_TG_lo_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c07",
+   "job": "e3_E_TG_lo_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c08",
+   "job": "e3_E_TG_lo_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c09",
+   "job": "e3_E_TG_lo_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c10",
+   "job": "e3_E_TG_lo_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c11",
+   "job": "e3_E_TG_lo_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c12",
+   "job": "e3_E_TG_lo_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c13",
+   "job": "e3_E_TG_lo_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c14",
+   "job": "e3_E_TG_lo_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c15",
+   "job": "e3_E_TG_lo_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c16",
+   "job": "e3_E_TG_lo_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c17",
+   "job": "e3_E_TG_lo_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c18",
+   "job": "e3_E_TG_lo_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_TG_lo_c19",
+   "job": "e3_E_TG_lo_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_TG",
+   "e_job": {
+    "g": 1.0,
+    "triple": null,
+    "level": "lo",
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 1.0,
+   "triple": null,
+   "tracker": null,
+   "level": "lo",
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c00",
+   "job": "e3_E_Z_c00",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case00",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c01",
+   "job": "e3_E_Z_c01",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case01",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c02",
+   "job": "e3_E_Z_c02",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case02",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c03",
+   "job": "e3_E_Z_c03",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case03",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c04",
+   "job": "e3_E_Z_c04",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case04",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c05",
+   "job": "e3_E_Z_c05",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case05",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c06",
+   "job": "e3_E_Z_c06",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case06",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c07",
+   "job": "e3_E_Z_c07",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case07",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c08",
+   "job": "e3_E_Z_c08",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case08",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c09",
+   "job": "e3_E_Z_c09",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case09",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c10",
+   "job": "e3_E_Z_c10",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case10",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c11",
+   "job": "e3_E_Z_c11",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case11",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('heading_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c12",
+   "job": "e3_E_Z_c12",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case12",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c13",
+   "job": "e3_E_Z_c13",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case13",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c14",
+   "job": "e3_E_Z_c14",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case14",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c15",
+   "job": "e3_E_Z_c15",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case15",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c16",
+   "job": "e3_E_Z_c16",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case16",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c17",
+   "job": "e3_E_Z_c17",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case17",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c18",
+   "job": "e3_E_Z_c18",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case18",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  },
+  {
+   "run_id": "e3_E_Z_c19",
+   "job": "e3_E_Z_c19",
+   "attempt": 1,
+   "status": "CAPTURED_AND_REVIEWED",
+   "case": "case19",
+   "arm": "E_Z",
+   "e_job": {
+    "g": 0,
+    "triple": null,
+    "level": null,
+    "tracker": null
+   },
+   "pod_id": null,
+   "desired_mps": 15.0,
+   "family": "lead_braking",
+   "lead_variant": null,
+   "g": 0,
+   "triple": null,
+   "tracker": null,
+   "level": null,
+   "valid": false,
+   "reasons": [
+    "outcomes error: KeyError('vertices_rh')"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+LOCK_A13b (A13 section 3): N_DR against a fixed dropout-flag margin (F0_flag), open loop, on the 150 new runs
+Written: 22 Nov 2026 06:40:47 EST by the laptop clock, by the coordinating session (Claude Opus 5.5), with work\shared\tools\make_lock_a11_v01.py (sha256 e52e7e67673ea96bd008690703a8df5aba27891a2a2428b5f3cd6279e5638ee8).
+
+Amendment: revision_v13\AMENDMENT_13_v13.md, sha256 507af801899a845113ff524713070e290f011937d4ecd6ef85c8752ac5866158, modified 22 Nov 06:40:39.
+Snapshot copy at this lock: revision_v13\AMENDMENT_13_v13_at_LOCK_A13b.md (identical bytes).
+
+Freezes, verified layered at writing (verify_freeze.layered; 0 mismatches required):
+- DR (FREEZE_DR + DR_A12 + ADD01-ADD03 + DR_A13): layered 6 manifests: 109 files, 109 match, 0 not
+    FREEZE_DR.json  sha256 e1348c40b656fb9db32fb874195fcb6265c7e7b82bce3d7301fcca298c1f2c26  modified 21 Nov 15:07:07
+    FREEZE_DR_A12.json  sha256 59a402b080a010466a2dd5fbaef23a710febb54971caf8aaa7a6c78935204d96  modified 22 Nov 00:45:26
+    FREEZE_DR_A12_ADD01.json  sha256 fc3b00177bb881def52223f5121aa4e818643e595a5384c05129a8f2a5dadb2f  modified 22 Nov 02:32:24
+    FREEZE_DR_A12_ADD02.json  sha256 7af38b297cd7b8143467d83f83fa07120aea613cc94ab2dd0cfdd14ab48ccc3f  modified 22 Nov 03:11:14
+    FREEZE_DR_A12_ADD03.json  sha256 42f95596309c0f0d47c2c60fb6afb540c0a4afb4224f19e220e4af88d6a4877c  modified 22 Nov 03:20:55
+    FREEZE_DR_A13.json  sha256 6155b02390e6e87dc81ffeb744ddd688a3b80be340e35467ff27fb7b90c7a816  modified 22 Nov 06:38:35
+
+Files (path, sha256, modified):
+- LOCK_A12e (the last A12 lock): LOCK_A12e.txt  sha256 913807a6ab479458a9507c155117f5c955ab6c550b799f03af79d3663f79a9a4  modified 22 Nov 03:37:26
+- F's section 3 text v01 (merged verbatim into A13 section 3): F_dropout/A13_3_DRFLAG_v01.md  sha256 84c8737447d43e4efbfb6080d45b1e2691410a9ea01d5fd498fd4cbdb9fb0a83  modified 22 Nov 06:35:47
+- F's draft v01: F_dropout/A13_DRFLAG_DRAFT_v01.md  sha256 83838c9edca4cf48a5cd034d68257b1a0c15db0108dc7dfc0537819c3f4d8305  modified 22 Nov 06:33:35
+- Pre-lock code test on the 35 old test runs (design data): F_dropout/out_a13/TESTOLD_DRF_RESULTS_v01.json  sha256 66c54a84f7638d876be16eba94cb01bc2fe75cff9310bf15cd96ae4f7ea4d1a7  modified 22 Nov 06:38:05
+- Post hoc A11 DR count p, first program: F_dropout/out/posthoc/DR_A11_PR_POSTHOC_v01.json  sha256 ffe77340a333fe9289391fc2a801990591ff66b9bf17cb14d0fa982ee3c24f37  modified 22 Nov 06:31:40
+
+Sealing evidence (each pattern must match no file at writing):
+- no real DRF result: F_dropout/out_a13/DRF*  -> 0 file(s)
+- no DRF export: F_nuscenes/out/A_EXPORT_DRF*  -> 0 file(s)
+- no DRF recount export: F_nuscenes/out/A_RECOUNT_DRF*  -> 0 file(s)
+
+State at writing (coordinator's statement):
+- AMENDMENT_13 is new. Section 3 holds F's v01 text verbatim with the coordinator's note above it; section 2 (E6) is a placeholder, added and locked later by LOCK_A13a.
+- No value of F0_flag on A11's 105 fit runs or on the 150 new runs exists. The only DRF values are the pre-lock code test on the 35 old test runs (k fitted and scored there): k_in 0.107, k_re 0.924, RR_N 0.0116, RR_flag 0.0173, delta -0.0058 [-0.0135, 0.0008]. F and the coordinator have seen them; no choice in the text or code was changed after them.
+- The coordinator's coast-count refinement (sent before F's freeze, read after it) is not adopted, because the code-test values were known by then; this is disclosed in the amendment.
+- The Sonnet second program is being written from the v01 text in test mode; it is frozen in FREEZE_DR_A13_ADD01 before any real run.
+- The stage letter follows the section: LOCK_A13a (section 2, E6) is written after this file.

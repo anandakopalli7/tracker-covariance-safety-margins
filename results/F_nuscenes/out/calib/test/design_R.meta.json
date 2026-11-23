@@ -1,0 +1,27 @@
+{
+ "job": "design_R",
+ "kind": "R",
+ "n_run": 700,
+ "full": [
+  0.09070910365848811
+ ],
+ "n_outer": 40,
+ "n_inner": 200,
+ "seed_outer": 20261912,
+ "seeds_inner": [
+  20261913,
+  20261914
+ ],
+ "job_sha256": "3bf8ed5bb5f6ba817a46331f19288b7e8faa14435ee747ecc6abf43060f0e5a9",
+ "written": "2026-11-20 02:57:13",
+ "split": "train (design)",
+ "horizon_s": 3,
+ "clearance": {
+  "version": "v02",
+  "rule": "departure: (actor, frame) pairs with the actor's centre behind the ego dropped",
+  "file": "notes\\F_DEPARTURE_CLEARANCE_v01.md",
+  "sha256": "a0be0de7e462281a7e8b95b6b0acf31dd99cdbc38299b6214edd08ad3bd18259",
+  "arrays": "cache\\clear_v02\\<split>\\<scene>.npz (f15_clear_v02.py)"
+ },
+ "statistic": "R = D_gl(E, F0) / 201"
+}

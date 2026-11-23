@@ -1,0 +1,304 @@
+{
+ "first": "analysis\\out\\TESTOLD_B7_v13_ci.json",
+ "second": "recount\\out\\TESTOLD_RC_B7_v13_cutin_v1.json",
+ "tolerance": 1e-09,
+ "summary": {
+  "agree": 8,
+  "disagree": 1,
+  "only_first": 0,
+  "only_second": 56,
+  "ignored": 0
+ },
+ "verdict": "DISAGREE",
+ "rows": [
+  {
+   "key": "B7CI.10.0.1.R",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.10.0.1.RR_CK3",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.10.0.1.RR_N",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.10.0.1.RR_N.cal",
+   "status": "only_second",
+   "value": "nominal95"
+  },
+  {
+   "key": "B7CI.10.0.1.RR_N.ci",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.10.0.1.RR_N.level",
+   "status": "only_second",
+   "value": 0.95
+  },
+  {
+   "key": "B7CI.10.0.1.as_room",
+   "status": "only_second",
+   "value": "not applicable"
+  },
+  {
+   "key": "B7CI.10.0.1.lag",
+   "status": "only_second",
+   "value": "not applicable"
+  },
+  {
+   "key": "B7CI.10.0.2.R",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.10.0.2.RR_CK3",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.10.0.2.RR_N",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.10.0.2.RR_N.cal",
+   "status": "only_second",
+   "value": "nominal95"
+  },
+  {
+   "key": "B7CI.10.0.2.RR_N.ci",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.10.0.2.RR_N.level",
+   "status": "only_second",
+   "value": 0.95
+  },
+  {
+   "key": "B7CI.10.0.2.as_room",
+   "status": "only_second",
+   "value": "not applicable"
+  },
+  {
+   "key": "B7CI.10.0.2.lag",
+   "status": "only_second",
+   "value": "not applicable"
+  },
+  {
+   "key": "B7CI.10.0.R",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.10.0.RR_CK3",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.10.0.RR_N",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.10.0.RR_N.cal",
+   "status": "only_second",
+   "value": "nominal95"
+  },
+  {
+   "key": "B7CI.10.0.RR_N.ci",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.10.0.RR_N.level",
+   "status": "only_second",
+   "value": 0.95
+  },
+  {
+   "key": "B7CI.10.0.as_room",
+   "status": "only_second",
+   "value": "not applicable"
+  },
+  {
+   "key": "B7CI.10.0.lag",
+   "status": "only_second",
+   "value": "not applicable"
+  },
+  {
+   "key": "B7CI.2.0.1.R",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.2.0.1.RR_CK3",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.2.0.1.RR_N",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.2.0.1.RR_N.cal",
+   "status": "only_second",
+   "value": "nominal95"
+  },
+  {
+   "key": "B7CI.2.0.1.RR_N.ci",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.2.0.1.RR_N.level",
+   "status": "only_second",
+   "value": 0.95
+  },
+  {
+   "key": "B7CI.2.0.1.as_room",
+   "status": "only_second",
+   "value": "not applicable"
+  },
+  {
+   "key": "B7CI.2.0.1.lag",
+   "status": "only_second",
+   "value": "not applicable"
+  },
+  {
+   "key": "B7CI.2.0.RR_N.ci",
+   "status": "DISAGREE",
+   "first": [
+    null,
+    null
+   ],
+   "second": null
+  },
+  {
+   "key": "B7CI.5.0.1.R",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.5.0.1.RR_CK3",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.5.0.1.RR_N",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.5.0.1.RR_N.cal",
+   "status": "only_second",
+   "value": "nominal95"
+  },
+  {
+   "key": "B7CI.5.0.1.RR_N.ci",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.5.0.1.RR_N.level",
+   "status": "only_second",
+   "value": 0.95
+  },
+  {
+   "key": "B7CI.5.0.1.as_room",
+   "status": "only_second",
+   "value": "not applicable"
+  },
+  {
+   "key": "B7CI.5.0.1.lag",
+   "status": "only_second",
+   "value": "not applicable"
+  },
+  {
+   "key": "B7CI.5.0.2.R",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.5.0.2.RR_CK3",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.5.0.2.RR_N",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.5.0.2.RR_N.cal",
+   "status": "only_second",
+   "value": "nominal95"
+  },
+  {
+   "key": "B7CI.5.0.2.RR_N.ci",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.5.0.2.RR_N.level",
+   "status": "only_second",
+   "value": 0.95
+  },
+  {
+   "key": "B7CI.5.0.2.as_room",
+   "status": "only_second",
+   "value": "not applicable"
+  },
+  {
+   "key": "B7CI.5.0.2.lag",
+   "status": "only_second",
+   "value": "not applicable"
+  },
+  {
+   "key": "B7CI.5.0.R",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.5.0.RR_CK3",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.5.0.RR_N",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.5.0.RR_N.cal",
+   "status": "only_second",
+   "value": "nominal95"
+  },
+  {
+   "key": "B7CI.5.0.RR_N.ci",
+   "status": "only_second",
+   "value": null
+  },
+  {
+   "key": "B7CI.5.0.RR_N.level",
+   "status": "only_second",
+   "value": 0.95
+  },
+  {
+   "key": "B7CI.5.0.as_room",
+   "status": "only_second",
+   "value": "not applicable"
+  },
+  {
+   "key": "B7CI.5.0.lag",
+   "status": "only_second",
+   "value": "not applicable"
+  }
+ ]
+}

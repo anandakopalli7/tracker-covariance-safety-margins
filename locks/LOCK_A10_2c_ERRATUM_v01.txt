@@ -1,0 +1,25 @@
+LOCK_A10_2c erratum v01 (the lock files themselves are not edited)
+Written: 2026-11-21, about 04:25 EST, by the coordinating session (Claude Opus 5.5), which wrote both lock stages.
+Found by: package A's claim audit v07 (finding G12), 21 Nov 2026.
+
+What the locks say
+- LOCK_A10_2.txt (stage 1, 20 Nov 03:41:21 EST, sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df)
+  lists TU among the "fresh B value(s) (Table III, TU, B6)" not to be computed until LOCK_A10_2c.txt exists.
+- LOCK_A10_2c.txt (stage 2, 20 Nov 06:03 EST, sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6)
+  states that no fresh B value "(Table III, TU, B6)" had been computed when it was written.
+
+Correction
+- TU (A10 section 5.6: intervals on the 20 old tuning runs; descriptive) had been computed before both lock stages:
+  B_retrack\out\tu\TU_v02.json and boot_tu.npz, written 20 Nov 2026 02:28:34 EST by B_retrack\code\b_tu_v02.py;
+  the second program's TU part, B_retrack\recount_fresh\out\boot_tu.npz, written 20 Nov 02:47 EST.
+  Package B treated TU as ungated because it uses no fresh run. The stage-1 rule grouped it with fresh values.
+  So the stage-2 statement is wrong for TU.
+- b_tu_v02.py was then frozen unchanged in FREEZE_B_add3 (20 Nov 03:36 EST, inside LOCK_A10_2).
+  The frozen code reproduces every TU_v02 value exactly: TU_v03.json (21 Nov 02:38 EST) has 127 of 127 identical,
+  and its per-resample rows are identical.
+- TU uses no fresh, held-out or closed-loop data. Its tuning runs were already analysed in revision v12;
+  its grid points equal v12 A9-5 (35 of 35).
+- Checked for the other values named in the stage-2 statement: every fresh-run B value (Table III, B6) was written
+  after LOCK_A10_2c (first: B_retrack\out\fresh\B_FRESH_CV0_v02.json, 20 Nov 06:26 EST). Fresh re-tracking arrays
+  and B's five-run second-IMM check before it were allowed by the stage-1 rule.
+- Reported in the supplement's deviation table (Table S5) as a record correction.

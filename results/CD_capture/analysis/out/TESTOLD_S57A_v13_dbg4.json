@@ -1,0 +1,1046 @@
+{
+ "family": "C_S57A",
+ "program": "c_s57a_v13.py",
+ "test_old": true,
+ "values": {
+  "LB.R.dec": 456.99004975124376,
+  "LB.RR_N.dec": -0.1890547263681598,
+  "LB.RR_N.dec.ci": [
+   -0.36318407960198856,
+   0.0200248756218908
+  ],
+  "LB.RR_N.dec.level": 0.95,
+  "LB.RR_N.dec.cal": "nominal95",
+  "LB.RR_E5.dec": 6.223880597014923,
+  "LB.RR_E5.dec.ci": [
+   3.954975124378109,
+   8.9681592039801
+  ],
+  "LB.RR_E5.dec.level": 0.95,
+  "LB.RR_E5.dec.cal": "nominal95",
+  "LB.RR_CK3.dec": 382.318407960199,
+  "LB.RR_CK3.dec.ci": [
+   289.8048507462686,
+   462.01554726368164
+  ],
+  "LB.RR_CK3.dec.level": 0.95,
+  "LB.RR_CK3.dec.cal": "nominal95",
+  "LB.RR_E5mP.dec": 4.542288557213934,
+  "LB.RR_E5mP.dec.ci": [
+   2.72599502487562,
+   6.505597014925368
+  ],
+  "LB.RR_E5mP.dec.level": 0.95,
+  "LB.RR_E5mP.dec.cal": "nominal95",
+  "LB.all.PO25": 0.26834685101518696,
+  "LB.all.PO50": 0.536214686190191,
+  "LB.all.PO75": 0.7777039899842142,
+  "LB.all.grading_ok": true,
+  "LB.mov.PO25": -0.11937341009505957,
+  "LB.mov.PO50": 0.04056767974293747,
+  "LB.mov.PO75": 0.4325076984870799,
+  "LB.mov.grading_ok": false,
+  "LB.pre.PO25": -0.3713603818615753,
+  "LB.pre.PO50": -0.3183770883054893,
+  "LB.pre.PO75": 0.17541766109785206,
+  "LB.pre.grading_ok": false,
+  "LB.brk.PO25": -0.1396383114649368,
+  "LB.brk.PO50": 0.02931347977787606,
+  "LB.brk.PO75": 0.4436335937883925,
+  "LB.brk.grading_ok": false,
+  "LB.stop.PO25": -0.37499999999999994,
+  "LB.stop.PO50": -0.21955128205128197,
+  "LB.stop.PO75": 0.19711538461538464,
+  "LB.stop.grading_ok": false,
+  "LB.PO25": 0.26834685101518696,
+  "LB.PO50": 0.536214686190191,
+  "LB.PO75": 0.7777039899842142,
+  "LB.grading_ok": true,
+  "LB.IMM.r.dec": -0.049751243781092566,
+  "LB.IMM.r.dec.ci": [
+   -0.5385572139303477,
+   0.28395522388059696
+  ],
+  "LB.IMM.r.dec.level": 0.95,
+  "LB.IMM.r.dec.cal": "nominal95",
+  "LB.IMM.c.dec": 0.33830845771144347,
+  "LB.IMM.c.dec.ci": [
+   0.23358208955223966,
+   0.5478855721393047
+  ],
+  "LB.IMM.c.dec.level": 0.95,
+  "LB.IMM.c.dec.cal": "nominal95",
+  "LB.PS.rec.dec": 453.1194029850746,
+  "LB.PS.rec.dec.ci": [
+   348.4754975124378,
+   541.4595771144279
+  ],
+  "LB.PS.rec.dec.level": 0.95,
+  "LB.PS.rec.dec.cal": "nominal95",
+  "CI.RR_CK3": null,
+  "CI.RR_CK3.ci": [
+   null,
+   null
+  ],
+  "CI.RR_CK3.level": 0.95,
+  "CI.RR_CK3.cal": "nominal95",
+  "CI.RR_E5": null,
+  "CI.RR_E5.ci": [
+   null,
+   null
+  ],
+  "CI.RR_E5.level": 0.95,
+  "CI.RR_E5.cal": "nominal95",
+  "CI.RR_E5mP": null,
+  "CI.RR_E5mP.ci": [
+   null,
+   null
+  ],
+  "CI.RR_E5mP.level": 0.95,
+  "CI.RR_E5mP.cal": "nominal95",
+  "CI.RR_N.dec": 0.0,
+  "CI.RR_N.dec.ci": [
+   0.0,
+   0.0
+  ],
+  "CI.RR_N.dec.level": 0.95,
+  "CI.RR_N.dec.cal": "nominal95",
+  "CI.Y.R.dec": 0.0,
+  "CI.PO25": null,
+  "CI.PO50": null,
+  "CI.PO75": null,
+  "CI.grading_ok": false
+ },
+ "details": {
+  "gate": "TEST_OLD: old runs only; no fresh value",
+  "nboot": 200,
+  "definitions": "CD_DEFINITIONS_S57A_v13.md",
+  "LB.runs": [
+   "p1b_fit_finite_0005",
+   "p1b_fit_finite_0006",
+   "p1b_fit_finite_0007",
+   "p1b_fit_finite_0008",
+   "p1b_fit_finite_0009",
+   "p1b_fit_finite_0010",
+   "p1b_fit_finite_0011",
+   "p1b_fit_finite_0012",
+   "p1b_fit_finite_0013",
+   "p1b_fit_finite_0014",
+   "p1b_fit_finite_0015",
+   "p1b_fit_finite_0016",
+   "p1b_fit_finite_0017",
+   "p1b_fit_finite_0018",
+   "p1b_fit_finite_0019",
+   "p1b_fit_finite_0020",
+   "p1b_fit_finite_0021",
+   "p1b_fit_finite_0022",
+   "p1b_fit_finite_0023",
+   "p1b_fit_finite_0024",
+   "p1b_fit_finite_0025",
+   "p1b_fit_finite_0026",
+   "p1b_fit_finite_0027",
+   "p1b_fit_finite_0028",
+   "p1b_fit_finite_0029",
+   "p1b_fit_finite_0030",
+   "p1b_fit_finite_0031",
+   "p1b_fit_finite_0032",
+   "p1b_fit_finite_0033",
+   "p1b_fit_finite_0034",
+   "p1b_fit_finite_0035",
+   "p1b_fit_finite_0036",
+   "p1b_fit_finite_0037",
+   "p1b_fit_finite_0038",
+   "p1b_fit_finite_0039"
+  ],
+  "LB.partial_oracle_draw": {
+   "seed": 20261118,
+   "n_uniforms": 9307
+  },
+  "LB.draw": "boot_counts(35, 200, 20261113)",
+  "LB.R": {
+   "R_pp": 5.512545835358791,
+   "n": 8290.0,
+   "R_pp_ci": [
+    4.426346866983154,
+    6.433254349148353
+   ],
+   "R_dec_ci": [
+    348.87164179104474,
+    550.0213930348258
+   ]
+  },
+  "LB.RR_N": {
+   "point": -0.00041369549833977597,
+   "ci": [
+    -0.0007805549552048662,
+    4.979891589825408e-05
+   ]
+  },
+  "LB.RR_E5": {
+   "point": 0.013619291274290995,
+   "ci": [
+    0.008831934123291727,
+    0.01868239217642007
+   ]
+  },
+  "LB.RR_CK3": {
+   "point": 0.8366011648794295,
+   "ci": [
+    0.75256756706678,
+    0.9159628714727963
+   ]
+  },
+  "LB.RR_E5mP": {
+   "point": 0.009939578683795119,
+   "ci": [
+    0.005777822107144297,
+    0.014333210998337695
+   ]
+  },
+  "LB.all": {
+   "n": 8290.0,
+   "R_pp": 5.512545835358791,
+   "R_deceq": 456.99004975124376,
+   "PO_D_deceq": {
+    "PO25": 122.6318407960199,
+    "PO50": 245.04477611940294,
+    "PO75": 355.4029850746268
+   }
+  },
+  "LB.mov": {
+   "n": 1863.0,
+   "R_pp": 9.972947928099705,
+   "R_deceq": 185.79601990049753,
+   "PO_D_deceq": {
+    "PO25": -22.179104477611936,
+    "PO50": 7.53731343283582,
+    "PO75": 80.35820895522389
+   }
+  },
+  "LB.pre": {
+   "n": 905.0,
+   "R_pp": 2.303400126439625,
+   "R_deceq": 20.845771144278608,
+   "PO_D_deceq": {
+    "PO25": -7.741293532338309,
+    "PO50": -6.63681592039801,
+    "PO75": 3.656716417910448
+   }
+  },
+  "LB.brk": {
+   "n": 660.0,
+   "R_pp": 30.678426051560383,
+   "R_deceq": 202.47761194029852,
+   "PO_D_deceq": {
+    "PO25": -28.273631840796007,
+    "PO50": 5.935323383084578,
+    "PO75": 89.82587064676616
+   }
+  },
+  "LB.stop": {
+   "n": 6725.0,
+   "R_pp": 0.04616323586528326,
+   "R_deceq": 3.104477611940299,
+   "PO_D_deceq": {
+    "PO25": -1.164179104477612,
+    "PO50": -0.6815920398009948,
+    "PO75": 0.6119402985074629
+   }
+  },
+  "LB.e5_u": {
+   "n_evaluated": 8290,
+   "n_with_ratio": 8290
+  },
+  "LB.grid_PO": {
+   "all": [
+    0.2689217210990151,
+    0.5360182305166755,
+    0.7775401762571281
+   ],
+   "mov": [
+    -0.10874648590420641,
+    0.05115472530937179,
+    0.44013557184519586
+   ],
+   "pre": [
+    -0.3532558139534883,
+    -0.29581395348837214,
+    0.19069767441860463
+   ],
+   "brk": [
+    -0.1318392844121436,
+    0.038307284703823434,
+    0.44836051627330403
+   ],
+   "stop": [
+    -0.19226118500604591,
+    -0.0072551390568318785,
+    0.34824667472793225
+   ]
+  },
+  "LB.grid_PO_truth_phase_of_record": {
+   "all": [
+    0.2689217210990151,
+    0.5360182305166755,
+    0.7775401762571281
+   ],
+   "moving": [
+    -0.10874648590420641,
+    0.05115472530937179,
+    0.44013557184519586
+   ],
+   "phase0": [
+    -1.0357142857142858,
+    -1.1394557823129254,
+    -0.7585034013605445
+   ],
+   "phase1": [
+    -0.6815895159585712,
+    -0.6295497780596069,
+    0.0462481504967238
+   ],
+   "phase2": [
+    0.2768346595932803,
+    0.5405835543766578,
+    0.7787798408488064
+   ],
+   "phase3": [
+    null,
+    null,
+    null
+   ],
+   "before_stop": [
+    -0.36452982810920115,
+    -0.2584024266936299,
+    0.23191102123356916
+   ]
+  },
+  "LB.IMM": {
+   "r": -0.00010324179227750986,
+   "c": 0.0007020441874870961,
+   "R_pp": 5.812913718500381,
+   "R_deceq": 481.8905472636816,
+   "ratio": {
+    "n": 119856,
+    "median": 1.0703311196043916,
+    "q05": 1.0690760003852677,
+    "q95": 1.0757934000078007,
+    "A": 0.0031380007081433666,
+    "share_within_5pct": 0.9980893739153651,
+    "barely_varies": true,
+    "q25": 1.0697584684957753,
+    "q75": 1.0711343486666305
+   },
+   "e5_u": {
+    "n_evaluated": 8290,
+    "n_with_ratio": 8238
+   },
+   "r_ci": [
+    -0.001258912773645542,
+    0.0005992524441469451
+   ],
+   "c_ci": [
+    0.00046936392137186654,
+    0.0011749115714420066
+   ]
+  },
+  "LB.PS.rec": {
+   "point": 0.9836378952825299,
+   "like": 0.9836378952825299,
+   "ci": [
+    0.929735193245995,
+    1.06848972839328
+   ],
+   "num_rec_sum": 1098.6369119420988,
+   "den_sum": 1116.911942098914,
+   "n": 8290.0,
+   "grid_room_dec": 460.65671641791033
+  },
+  "reference_c_lead": {
+   "path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\TESTOLD_C_LEAD_H0_H5_v13.json",
+   "draw": "default_rng(20261911), 200 run resamples",
+   "written": "2026-11-20 02:56:34"
+  },
+  "CI.partial_oracle_draw": {
+   "seed": 20261919,
+   "n_uniforms": 6000
+  },
+  "CI.e5_u": {
+   "n_evaluated": 5420,
+   "n_with_ratio": 5420
+  },
+  "CI.draw": "boot_counts(20, 200, 20261113)",
+  "CI.window": {
+   "n": 1007.0,
+   "R_pp": 0.0,
+   "R_deceq": 0.0,
+   "RR": {
+    "N": null,
+    "E5": null,
+    "E5p": null,
+    "CK3": null,
+    "PO25": null,
+    "PO50": null,
+    "PO75": null
+   },
+   "D_deceq": {
+    "N": 0.0,
+    "E5": 0.0,
+    "E5p": 0.0,
+    "CK3": 0.0,
+    "PO25": 0.0,
+    "PO50": 0.0,
+    "PO75": 0.0
+   },
+   "R_pp_ci": [
+    0.0,
+    0.0
+   ],
+   "RR_N_ci": [
+    null,
+    null
+   ]
+  },
+  "CI.young": {
+   "n": 0.0,
+   "R_pp": null,
+   "R_deceq": null
+  },
+  "CI.runs": [
+   {
+    "run": "p2_c1109_tune_0004_fixed_c1",
+    "event_tick": 136,
+    "n_window": 50,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0010_fixed_c1",
+    "event_tick": 134,
+    "n_window": 50,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0016_fixed_c1",
+    "event_tick": 145,
+    "n_window": 51,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0022_fixed_c1",
+    "event_tick": 134,
+    "n_window": 50,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0028_fixed_c1",
+    "event_tick": 146,
+    "n_window": 50,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0034_fixed_c1",
+    "event_tick": 138,
+    "n_window": 50,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0040_fixed_c1",
+    "event_tick": 146,
+    "n_window": 50,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0046_fixed_c1",
+    "event_tick": 137,
+    "n_window": 51,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0052_fixed_c1",
+    "event_tick": 136,
+    "n_window": 50,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0058_fixed_c1",
+    "event_tick": 136,
+    "n_window": 50,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0064_fixed_c1",
+    "event_tick": 147,
+    "n_window": 51,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0070_fixed_c1",
+    "event_tick": 143,
+    "n_window": 51,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0076_fixed_c1",
+    "event_tick": 143,
+    "n_window": 51,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0082_fixed_c1",
+    "event_tick": 136,
+    "n_window": 50,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0088_fixed_c1",
+    "event_tick": 136,
+    "n_window": 50,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0094_fixed_c1",
+    "event_tick": 138,
+    "n_window": 50,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0100_fixed_c1",
+    "event_tick": 138,
+    "n_window": 50,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0106_fixed_c1",
+    "event_tick": 134,
+    "n_window": 50,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0112_fixed_c1",
+    "event_tick": 139,
+    "n_window": 51,
+    "n_young": 0
+   },
+   {
+    "run": "p2_c1109_tune_0118_fixed_c1",
+    "event_tick": 145,
+    "n_window": 51,
+    "n_young": 0
+   }
+  ],
+  "reference_c_cutin": {
+   "path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\TESTOLD_C_CUTIN_K0_K2_v13.json",
+   "draw": "default_rng(20261911), 200 run resamples",
+   "written": "2026-11-20 03:10:59"
+  },
+  "CI_path_on_old_lead_runs": {
+   "CI.RR_CK3": 0.8366011648794295,
+   "CI.RR_CK3.ci": [
+    0.75256756706678,
+    0.9159628714727963
+   ],
+   "CI.RR_CK3.level": 0.95,
+   "CI.RR_CK3.cal": "nominal95",
+   "CI.RR_E5": 0.013619291274290995,
+   "CI.RR_E5.ci": [
+    0.008831934123291727,
+    0.01868239217642007
+   ],
+   "CI.RR_E5.level": 0.95,
+   "CI.RR_E5.cal": "nominal95",
+   "CI.RR_E5mP": 0.009939578683795119,
+   "CI.RR_E5mP.ci": [
+    0.005777822107144297,
+    0.014333210998337695
+   ],
+   "CI.RR_E5mP.level": 0.95,
+   "CI.RR_E5mP.cal": "nominal95",
+   "CI.RR_N.dec": -0.1890547263681598,
+   "CI.RR_N.dec.ci": [
+    -0.36318407960198856,
+    0.0200248756218908
+   ],
+   "CI.RR_N.dec.level": 0.95,
+   "CI.RR_N.dec.cal": "nominal95",
+   "CI.Y.R.dec": 0.0,
+   "CI.PO25": 0.26834685101518696,
+   "CI.PO50": 0.536214686190191,
+   "CI.PO75": 0.7777039899842142,
+   "CI.grading_ok": true
+  },
+  "seconds": 686.2895395755768,
+  "written": "2026-11-20 03:25:04",
+  "code_sha256": {
+   "c_s57a_v13.py": "bb28d7cf672d68b117813c2e9dace758ddb44576f6aa33e6e24729334c58803e",
+   "x_s57a_extract_v13.py": "64d90de90a722460a54bf0d2c745337007d361d7ac8d3ea4f765e72f5fa98aab",
+   "cd_common_v13.py": "978dc19c136484b2514848536d6430beab4e45ec02e8099b0bd9ae11491cf0c2",
+   "gl_fast_v13.py": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789",
+   "c_lead_choice_v13.py": "ea9024990b97b9436452baf02ef95c8b3bf098a41af2efb58f89b7e2c42d9fb7"
+  },
+  "moved_to_package_B": [
+   "LB.RS075.rel",
+   "LB.T*",
+   "LB.DS.*",
+   "LB.REL_*",
+   "TU.*"
+  ]
+ },
+ "checks": {
+  "PO grid truth-phase all (rev_g of record, draw 20261118)": {
+   "mine": [
+    0.2689217210990151,
+    0.5360182305166755,
+    0.7775401762571281
+   ],
+   "record": [
+    0.2689217210990151,
+    0.5360182305166755,
+    0.7775401762571281
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "PO grid truth-phase moving (rev_g of record, draw 20261118)": {
+   "mine": [
+    -0.10874648590420641,
+    0.05115472530937179,
+    0.44013557184519586
+   ],
+   "record": [
+    -0.10874648590420641,
+    0.05115472530937179,
+    0.44013557184519586
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "PO grid truth-phase phase0 (rev_g of record, draw 20261118)": {
+   "mine": [
+    -1.0357142857142858,
+    -1.1394557823129254,
+    -0.7585034013605445
+   ],
+   "record": [
+    -1.0357142857142858,
+    -1.1394557823129254,
+    -0.7585034013605445
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "PO grid truth-phase phase1 (rev_g of record, draw 20261118)": {
+   "mine": [
+    -0.6815895159585712,
+    -0.6295497780596069,
+    0.0462481504967238
+   ],
+   "record": [
+    -0.6815895159585712,
+    -0.6295497780596069,
+    0.0462481504967238
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "PO grid truth-phase phase2 (rev_g of record, draw 20261118)": {
+   "mine": [
+    0.2768346595932803,
+    0.5405835543766578,
+    0.7787798408488064
+   ],
+   "record": [
+    0.2768346595932803,
+    0.5405835543766578,
+    0.7787798408488064
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "PO grid before stop (A9-8 of record)": {
+   "mine": [
+    -0.36452982810920115,
+    -0.2584024266936299,
+    0.23191102123356916
+   ],
+   "record": [
+    -0.36452982810920115,
+    -0.2584024266936299,
+    0.23191102123356916
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "grading rule before stop = A9-8 grades_by_rule": {
+   "mine": 0.0,
+   "record": 0.0,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "IMM r (B_B1_v01 all)": {
+   "mine": -0.00010324179227750986,
+   "record": -0.00010324179227750986,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "IMM c (B_B1_v01 all, E5x)": {
+   "mine": 0.0007020441874870961,
+   "record": 0.0007020441874870961,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "LB.IMM.r.dec (B_B1_v01 D_deceq N)": {
+   "mine": -0.049751243781092566,
+   "record": -0.049751243781092566,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "LB.IMM.c.dec (B_B1_v01 D_deceq E5x)": {
+   "mine": 0.33830845771144347,
+   "record": 0.33830845771144347,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "IMM room R_deceq (B_B1_v01)": {
+   "mine": 481.8905472636816,
+   "record": 481.8905472636816,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "LB.R.dec = c_lead room R_deceq": {
+   "mine": 456.99004975124376,
+   "record": 456.99004975124376,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "LB.R.dec ci (c_lead draw 20261911) = c_lead R_deceq_ci": {
+   "mine": [
+    357.1578358208956,
+    553.5351990049751
+   ],
+   "record": [
+    357.1578358208956,
+    553.5351990049751
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "D_deceq N point = c_lead descriptive_D_deceq": {
+   "mine": -0.1890547263681598,
+   "record": -0.1890547263681598,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "D_deceq N ci (c_lead draw 20261911) = c_lead": {
+   "mine": [
+    -0.3236318407960192,
+    0.025124378109453015
+   ],
+   "record": [
+    -0.3236318407960192,
+    0.025124378109453015
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "D_deceq E5 point = c_lead descriptive_D_deceq": {
+   "mine": 6.223880597014923,
+   "record": 6.223880597014923,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "D_deceq E5 ci (c_lead draw 20261911) = c_lead": {
+   "mine": [
+    4.270646766169153,
+    8.795024875621891
+   ],
+   "record": [
+    4.270646766169153,
+    8.795024875621891
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "D_deceq E5p point = c_lead descriptive_D_deceq": {
+   "mine": 1.6815920398009887,
+   "record": 1.6815920398009887,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "D_deceq E5p ci (c_lead draw 20261911) = c_lead": {
+   "mine": [
+    0.09353233830845652,
+    3.019900497512434
+   ],
+   "record": [
+    0.09353233830845652,
+    3.019900497512434
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "D_deceq CK3 point = c_lead descriptive_D_deceq": {
+   "mine": 382.318407960199,
+   "record": 382.318407960199,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "D_deceq CK3 ci (c_lead draw 20261911) = c_lead": {
+   "mine": [
+    290.94937810945277,
+    463.7181592039801
+   ],
+   "record": [
+    290.94937810945277,
+    463.7181592039801
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "LB.RR_E5mP.dec = D_deceq(E5) - D_deceq(E5p) of c_lead": {
+   "mine": 4.542288557213934,
+   "record": 4.542288557213935,
+   "abs_diff": 8.881784197001252e-16,
+   "ok": true
+  },
+  "RR_E5 - RR_E5p point = c_lead main RR_E5_minus_E5p": {
+   "mine": 0.009939578683795119,
+   "record": 0.009939578683795119,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "share N point = c_lead main": {
+   "mine": -0.00041369549833977597,
+   "record": -0.00041369549833977597,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "share N = LB.RR_N.dec / LB.R.dec": {
+   "mine": -0.00041369549833977597,
+   "record": -0.0004136954983397759,
+   "abs_diff": 5.421010862427522e-20,
+   "ok": true
+  },
+  "share N ci (c_lead draw 20261911) = c_lead main ci (nominal)": {
+   "mine": [
+    -0.0007511392943708756,
+    6.403601027839496e-05
+   ],
+   "record": [
+    -0.0007511392943708756,
+    6.403601027839496e-05
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "share E5 point = c_lead main": {
+   "mine": 0.013619291274290995,
+   "record": 0.013619291274290995,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "share E5 = LB.RR_E5.dec / LB.R.dec": {
+   "mine": 0.013619291274290995,
+   "record": 0.013619291274290998,
+   "abs_diff": 3.469446951953614e-18,
+   "ok": true
+  },
+  "share E5 ci (c_lead draw 20261911) = c_lead main ci (nominal)": {
+   "mine": [
+    0.009742791098013726,
+    0.018592328567958692
+   ],
+   "record": [
+    0.009742791098013726,
+    0.018592328567958692
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "share CK3 point = c_lead main": {
+   "mine": 0.8366011648794295,
+   "record": 0.8366011648794295,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "share CK3 = LB.RR_CK3.dec / LB.R.dec": {
+   "mine": 0.8366011648794295,
+   "record": 0.8366011648794296,
+   "abs_diff": 1.1102230246251565e-16,
+   "ok": true
+  },
+  "share CK3 ci (c_lead draw 20261911) = c_lead main ci (nominal)": {
+   "mine": [
+    0.7602924127507821,
+    0.9035550218531021
+   ],
+   "record": [
+    0.7602924127507821,
+    0.9035550218531021
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "LB.PS.rec share = c_lead H4 record basis": {
+   "mine": 0.9836378952825299,
+   "record": 0.9836378952825299,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "LB.PS.rec like-for-like = c_lead H4 like_for_like": {
+   "mine": 0.9836378952825299,
+   "record": 0.9836378952825299,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "LB.PS.rec.dec / grid room dec = share": {
+   "mine": 0.98363789528253,
+   "record": 0.9836378952825299,
+   "abs_diff": 1.1102230246251565e-16,
+   "ok": true
+  },
+  "cut-in event ticks (20 runs) = c_cutin": {
+   "mine": 1.0,
+   "record": 1.0,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "cut-in window sizes (20 runs) = c_cutin": {
+   "mine": 1.0,
+   "record": 1.0,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "cut-in young sizes (20 runs) = c_cutin window_strata <1s": {
+   "mine": 1.0,
+   "record": 1.0,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "cut-in window room R_deceq = c_cutin descriptive.window": {
+   "mine": 0.0,
+   "record": 0.0,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "cut-in window n = c_cutin descriptive.window": {
+   "mine": 1007.0,
+   "record": 1007.0,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "cut-in window RR_N point = c_cutin K1": {
+   "mine": null,
+   "record": null,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "CI young R_deceq = c_cutin descriptive.young (NaN: no young-track decision)": {
+   "mine": null,
+   "record": null,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "cut-in e5_u n_evaluated = c_cutin": {
+   "mine": 5420,
+   "record": 5420,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "CI path on LB runs: CI.RR_E5 point = LB.RR_E5": {
+   "mine": 0.013619291274290995,
+   "record": 0.013619291274290995,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "CI path on LB runs: CI.RR_E5 ci = LB.RR_E5": {
+   "mine": [
+    0.008831934123291727,
+    0.01868239217642007
+   ],
+   "record": [
+    0.008831934123291727,
+    0.01868239217642007
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "CI path on LB runs: CI.RR_CK3 point = LB.RR_CK3": {
+   "mine": 0.8366011648794295,
+   "record": 0.8366011648794295,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "CI path on LB runs: CI.RR_CK3 ci = LB.RR_CK3": {
+   "mine": [
+    0.75256756706678,
+    0.9159628714727963
+   ],
+   "record": [
+    0.75256756706678,
+    0.9159628714727963
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "CI path on LB runs: CI.RR_E5mP point = LB": {
+   "mine": 0.009939578683795119,
+   "record": 0.009939578683795119,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "CI path on LB runs: CI.RR_E5mP ci = LB": {
+   "mine": [
+    0.005777822107144297,
+    0.014333210998337695
+   ],
+   "record": [
+    0.005777822107144297,
+    0.014333210998337695
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "CI path on LB runs: CI.RR_N.dec = LB.RR_N.dec": {
+   "mine": -0.1890547263681598,
+   "record": -0.1890547263681598,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "CI path on LB runs: CI.RR_N.dec.ci = LB.RR_N.dec.ci": {
+   "mine": [
+    -0.36318407960198856,
+    0.0200248756218908
+   ],
+   "record": [
+    -0.36318407960198856,
+    0.0200248756218908
+   ],
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "CI path on LB runs: CI.PO25 = LB.all.PO25": {
+   "mine": 0.26834685101518696,
+   "record": 0.26834685101518696,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "CI path on LB runs: CI.PO50 = LB.all.PO50": {
+   "mine": 0.536214686190191,
+   "record": 0.536214686190191,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "CI path on LB runs: CI.PO75 = LB.all.PO75": {
+   "mine": 0.7777039899842142,
+   "record": 0.7777039899842142,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  "CI path on LB runs: grading_ok": {
+   "mine": 1.0,
+   "record": 1.0,
+   "abs_diff": 0.0,
+   "ok": true
+  }
+ }
+}

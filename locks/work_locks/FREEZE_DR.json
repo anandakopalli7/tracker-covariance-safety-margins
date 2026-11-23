@@ -1,0 +1,300 @@
+{
+ "name": "FREEZE_DR",
+ "amendment": "AMENDMENT_11 sec. 6c.9",
+ "written": "2026-11-21 15:07:07",
+ "writer": "session F (Claude Opus 5.5)",
+ "punish_num": 3,
+ "n": 58,
+ "entries": [
+  {
+   "group": "spec",
+   "path": "work\\F_dropout\\A11_6c_DROPOUT_SPEC_v04.md",
+   "sha256": "c26b093f0215a37691af3b4c128d897fec8f8172d2720404866f9a90ece053e8"
+  },
+  {
+   "group": "spec",
+   "path": "work\\F_dropout\\A11_6c_DROPOUT_SPEC_v03.md",
+   "sha256": "66f287fd8d3406b402aa3da4ce96cb2e3e4b89f092808cd267b9bfaf0916f518"
+  },
+  {
+   "group": "spec",
+   "path": "work\\F_dropout\\A11_6c_DROPOUT_SPEC_v02.md",
+   "sha256": "446381f221050d6c8689e75a240585ce06705ec013d52fe2d0e405cb9b3cb14f"
+  },
+  {
+   "group": "spec",
+   "path": "work\\F_dropout\\A11_6c_DROPOUT_SPEC_v01.md",
+   "sha256": "8d6e1450b44521f96b94040c9bbcce15e569d97a062316a614f6721535a37f29"
+  },
+  {
+   "group": "notes",
+   "path": "work\\F_dropout\\notes\\DR_RECORDS_v01.md",
+   "sha256": "fe0f16e96e1c395a421e1a68c356b55712f2d9cdb51744188f56dcfb81a764f0"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_analysis_v01.py",
+   "sha256": "83915e5c5592d5683f4e0de2a372574aff695fd08e146f94e5517ca66c2522cc"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_compare_v01.py",
+   "sha256": "ce15ccc22393e7b752560e7bd008d8a631d3f28f554c2bd9c22208eff83b6925"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\DR_CONFIG_v01.json",
+   "sha256": "ed6b1f2148f93164c4e21db59bd6956e7c75f2ab76111005ad6ac560c6fca7e6"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_export_v01.py",
+   "sha256": "3555b50ddd8ecae28682271078c1cc8a3ff785232e07cf1766f15f4451422147"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_extract_v01.py",
+   "sha256": "26d205819ac33725b37795d0587a9a1b118aa34c2b106b0781c7ed69ee1ff047"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_identity_v01.py",
+   "sha256": "d12e5702ce8d5ca4482abb6cf876a7189642960f3f643bc9f4948032d3ecc0ad"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_masks_v01.py",
+   "sha256": "7f37afa5c5ee5291fc603b0d060c0f2080e8c8483bc356193d4e3538b4d0f807"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_masks_v02.py",
+   "sha256": "63f786c540f41aa87c41047daf0f327c68e850c1f76757682c7d3ce02c11d953"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_pod_postlock_v01.sh",
+   "sha256": "85803b4cebd2023374cf429ea90305a3653266f981b1714ca00a8c8586c1052b"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_pod_prelock_v01.sh",
+   "sha256": "9d8bb9f0baeb55a3dbda70c5b34c8e370b64ff5b8b1e5055a575733ff66203f5"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_pod_prelock_v02.sh",
+   "sha256": "720f134b77b4abdbb54ac08ba6451de88269bcda78ab977b7249cfbc2fdae2b1"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_pod_testanalysis_v01.sh",
+   "sha256": "bd2c0de9d59c7c9e4b8301fd70303c24454b0f5948d68ac92629f59ea18f7580"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\dr_pods_v01.py",
+   "sha256": "4aa895049825a1f2ae7821e7aa2f8b6883cc1e8450a697cfc9606d8535f811f6"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout\\code\\make_freeze_dr_v01.py",
+   "sha256": "fd7c798fb6d79deafa01138ceee7d55446d811c0408993904179fb1594988d97"
+  },
+  {
+   "group": "masks",
+   "path": "work\\F_dropout\\masks\\DR_MASKS_v02.json",
+   "sha256": "0746c0d399e751947fd98d7b12b7c2e233442c9f9870e449639a24f8045e2098"
+  },
+  {
+   "group": "masks",
+   "path": "work\\F_dropout\\masks\\DR_MASKS_v01.json",
+   "sha256": "cc3be01282a23f3b499f7b467c50c66949ae0c711c839de0df456113662fd402"
+  },
+  {
+   "group": "recount",
+   "path": "work\\F_dropout\\recount\\dr_recount_v01.py",
+   "sha256": "ad690290346150175f5cf3b6d4eb69268e99dd7b75b4528e8941cad423bc163b"
+  },
+  {
+   "group": "recount",
+   "path": "work\\F_dropout\\recount\\dr_recount_v02.py",
+   "sha256": "5c1cc1c1399f30f2d3678d834041a35d9d33d8c87f8ba94d41e2c57f3c00766a"
+  },
+  {
+   "group": "recount",
+   "path": "work\\F_dropout\\recount\\TESTOLD_DR_RECOUNT_v01.json",
+   "sha256": "496ee6b8cb2e97a30868c2ee460e368a1f996bbd36ae84750d8228b603d78912"
+  },
+  {
+   "group": "recount",
+   "path": "work\\F_dropout\\recount\\TESTOLD_DR_RECOUNT_v02.json",
+   "sha256": "43d1388a1926b3f197ec29a079ca371e72838f462bae988213ef6f0fb4e193de"
+  },
+  {
+   "group": "identity",
+   "path": "work\\F_dropout\\out\\DR_IDENTITY_v01.json",
+   "sha256": "4d4571776ddcd8358d237ff35874c4533d9131a713d216a9b6aac6592d2b0a63"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\IMM_AND_VARIANTS_SPEC_v01.md",
+   "sha256": "36295aed56a19f042bff1d2c055189dedb3ea2023e2291c53ab2d4740b8ec876"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\README.md",
+   "sha256": "c6377c9b5352aa72b5d045dead95f12d12ef6fb9b611137a88fe136480385ef3"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\shims_v01\\hydra\\__init__.py",
+   "sha256": "3e04377812b92d89be393011cf4d00abae149265a96e1d52fa6b9932e8e8f1a9"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\shims_v01\\hydra\\utils.py",
+   "sha256": "ff50ad09edef0ca2a20eeaaca0598468cd58dc3596e5d77c05e8ca761542b88b"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\shims_v01\\lap\\__init__.py",
+   "sha256": "55a6afe044761f06fa0083e91628327c14738917ecc5b8eafb7aba12ce33e192"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\shims_v01\\numba\\__init__.py",
+   "sha256": "ed9de5401ec78ff0e4b37b45abf895a70e79dc4b941890437441c5ce48edae12"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\shims_v01\\omegaconf\\__init__.py",
+   "sha256": "1f8baabb30afacf77a3fcf35171538ba4e19ec70935b500fa9b5c3a3e28c76f9"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\shims_v01\\pyquaternion\\__init__.py",
+   "sha256": "1adeea625407d116c3ffda0cc8ce9a04a8cde60d7299ec1fb033735dbeca700d"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\shims_v01\\shapely\\__init__.py",
+   "sha256": "9562727d4d12ba5da97c724af75f551a0e6670e5e60578107186147e7b532baf"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\shims_v01\\shapely\\geometry.py",
+   "sha256": "89a97551c364c96f00a07b90e643ef5273da1179babbb83ed1c6aa1c53436c47"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\trk_arrays_v01.py",
+   "sha256": "300b42bfb301680cb469784145837f8db8d5241c7e2f63c1c1dc6d58ed55dd1b"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\trk_constants_v01.json",
+   "sha256": "d8455cb50b637a3ce45460a0dee38f79b69fce4c085c913f713b56ac23338a9d"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\trk_env_v01.py",
+   "sha256": "0219dd2ed6517109a3c913430a2f30ca756fc01f4f003c1347c4ddd4a9628cad"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\trk_exact_math_v01.py",
+   "sha256": "6a42ece0b2255e4c2ec15a5651ee8ac65671e63cce01895e1ff4227ead86f541"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\trk_filters_v01.py",
+   "sha256": "9edfdd6cb5642c1618d41ccb3def176251074a3beaf703d8589df58018304dbb"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\trk_score_v01.py",
+   "sha256": "1cab6f300ad85fc6007d9b46dae75f41202f010c2080c5987ef06a79921417b4"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\trk_tracker_v01.py",
+   "sha256": "5cf4ad3baf81b614b18facc3fe4b3bc6506f867350d5b6216fce5ed725cfdef8"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\shared\\trackers\\trk_tracker_v02.py",
+   "sha256": "2143e00f24a53d86e6d740aa6472b00dbb4165ab40165f5ca572dd79bf4deb10"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\CD_capture\\analysis\\cd_common_v13.py",
+   "sha256": "28a7238a2f7135aec35f3018879af25566665856ff163502b6286b0249d6bdd0"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\CD_capture\\analysis\\gl_fast_v13.py",
+   "sha256": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\CD_capture\\analysis\\calib_remote_v13.py",
+   "sha256": "4709a2f25cc767d2d57f1ede4a2d7f8d8c45da5d093445095b397e075d075d6b"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\CD_capture\\tools\\calib_merge_v13.py",
+   "sha256": "d5ae7d4508def26966baae115a64c4ddb147c9b1cacbc18096035d94c66185e1"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\CD_capture\\CASES_C_v13.json",
+   "sha256": "59b7129ba46de5acd4c80425c1df3b8f846ee5635ecf8b0711177c38a9836ebb"
+  },
+  {
+   "group": "libraries",
+   "path": "work\\CD_capture\\REPLACEMENTS_C_v13.json",
+   "sha256": "05e26a6d23f44fbc1a3c119d7123365ceb823643469fe5185e3d6a9cb22ce58b"
+  },
+  {
+   "group": "libraries",
+   "path": "<library folder>\\tracker_config.json",
+   "sha256": "a3bfe2f344e15b96392d5b372366ae95450211446f1781eed4afacb21d8dd586"
+  },
+  {
+   "group": "libraries",
+   "path": "<library folder>\\optA_lib_v02.py",
+   "sha256": "b32a619a07f494e919f8d0bf112c8df4bed0957f051412c73819982a9a3f9898"
+  },
+  {
+   "group": "libraries",
+   "path": "<library folder>\\run_index_m4_v02.csv",
+   "sha256": "9ef70c25b87f2463da734d49706c01dd6e205a77d211e25beed2cf9d6a6e891c"
+  },
+  {
+   "group": "libraries",
+   "path": "<library folder>\\pbar_tuning_v01.json",
+   "sha256": "73025559a71aa1d72f0cb91eea17a9313a0695798e2fab3d7d568d9a71bd8718"
+  },
+  {
+   "group": "tests",
+   "path": "work\\F_dropout\\out\\TESTOLD_DR_RESULTS_v01.json",
+   "sha256": "1fab6d6018d783b77ba7ac9b5ac6b89b84d7146841baaacff33c7b1a060cbc39"
+  },
+  {
+   "group": "tests",
+   "path": "work\\F_dropout\\out\\TESTOLD_DR_RESULTS_v01_PENDING_CALIB.json",
+   "sha256": "fedd4e5e679a1a5c1e982a080d63d7744533e981240a882602a09bc4d72fc189"
+  },
+  {
+   "group": "tests",
+   "path": "work\\F_dropout\\out\\testold\\PBAR_DR_v01.json",
+   "sha256": "5355d1e41515ae3020eff646dc21eb4a85d91dff14b3fb1522a063934e6e8fbd"
+  },
+  {
+   "group": "tests",
+   "path": "work\\F_dropout\\out\\DR_COMPARE_TESTOLD_v01.json",
+   "sha256": "d4441debe153427af3ef1f778adca98be620225ab1023c3725640702fd38963c"
+  }
+ ]
+}

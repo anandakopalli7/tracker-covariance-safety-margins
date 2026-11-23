@@ -1,0 +1,196 @@
+{
+ "schema": "E_COMPARE_OUTCOMES_V01",
+ "runs_compared": 180,
+ "disagreements": 31,
+ "by_field": {
+  "fallback_share": 31
+ },
+ "list": [
+  {
+   "job": "e2_c1109_tune_0006_f0_g0",
+   "field": "fallback_share",
+   "mine": 0.24242424242424243,
+   "theirs": 0.16666666666666666
+  },
+  {
+   "job": "e2_c1109_tune_0006_f0_g0p25",
+   "field": "fallback_share",
+   "mine": 0.25,
+   "theirs": 0.19117647058823528
+  },
+  {
+   "job": "e2_c1109_tune_0006_f0_g1",
+   "field": "fallback_share",
+   "mine": 0.2463768115942029,
+   "theirs": 0.2028985507246377
+  },
+  {
+   "job": "e2_c1109_tune_0006_f0_g16",
+   "field": "fallback_share",
+   "mine": 0.83,
+   "theirs": 0.8166666666666667
+  },
+  {
+   "job": "e2_c1109_tune_0006_f0_g4",
+   "field": "fallback_share",
+   "mine": 0.32432432432432434,
+   "theirs": 0.25675675675675674
+  },
+  {
+   "job": "e2_c1109_tune_0006_f0_g64",
+   "field": "fallback_share",
+   "mine": 0.8366666666666667,
+   "theirs": 0.8166666666666667
+  },
+  {
+   "job": "e2_c1109_tune_0018_f0_g0",
+   "field": "fallback_share",
+   "mine": 0.15,
+   "theirs": 0.08333333333333333
+  },
+  {
+   "job": "e2_c1109_tune_0018_f0_g0p25",
+   "field": "fallback_share",
+   "mine": 0.16666666666666666,
+   "theirs": 0.08333333333333333
+  },
+  {
+   "job": "e2_c1109_tune_0018_f0_g1",
+   "field": "fallback_share",
+   "mine": 0.18032786885245902,
+   "theirs": 0.09836065573770492
+  },
+  {
+   "job": "e2_c1109_tune_0018_f0_g16",
+   "field": "fallback_share",
+   "mine": 0.24242424242424243,
+   "theirs": 0.16666666666666666
+  },
+  {
+   "job": "e2_c1109_tune_0018_f0_g4",
+   "field": "fallback_share",
+   "mine": 0.1935483870967742,
+   "theirs": 0.11290322580645161
+  },
+  {
+   "job": "e2_c1109_tune_0018_f0_g64",
+   "field": "fallback_share",
+   "mine": 0.8333333333333334,
+   "theirs": 0.8166666666666667
+  },
+  {
+   "job": "e2_c1109_tune_0024_f0_g0p25",
+   "field": "fallback_share",
+   "mine": 0.17105263157894737,
+   "theirs": 0.14473684210526316
+  },
+  {
+   "job": "e2_c1109_tune_0024_f0_g1",
+   "field": "fallback_share",
+   "mine": 0.18181818181818182,
+   "theirs": 0.15584415584415584
+  },
+  {
+   "job": "e2_c1109_tune_0024_f0_g16",
+   "field": "fallback_share",
+   "mine": 0.79,
+   "theirs": 0.7833333333333333
+  },
+  {
+   "job": "e2_c1109_tune_0024_f0_g4",
+   "field": "fallback_share",
+   "mine": 0.7966666666666666,
+   "theirs": 0.7833333333333333
+  },
+  {
+   "job": "e2_c1109_tune_0036_f0_g0",
+   "field": "fallback_share",
+   "mine": 0.2465753424657534,
+   "theirs": 0.1780821917808219
+  },
+  {
+   "job": "e2_c1109_tune_0036_f0_g0p25",
+   "field": "fallback_share",
+   "mine": 0.25675675675675674,
+   "theirs": 0.1891891891891892
+  },
+  {
+   "job": "e2_c1109_tune_0036_f0_g64",
+   "field": "fallback_share",
+   "mine": 0.8333333333333334,
+   "theirs": 0.8166666666666667
+  },
+  {
+   "job": "e2_c1109_tune_0054_f0_g16",
+   "field": "fallback_share",
+   "mine": 0.85,
+   "theirs": 0.8466666666666667
+  },
+  {
+   "job": "e2_c1109_tune_0060_f0_g0",
+   "field": "fallback_share",
+   "mine": 0.24489795918367346,
+   "theirs": 0.1836734693877551
+  },
+  {
+   "job": "e2_c1109_tune_0060_f0_g0p25",
+   "field": "fallback_share",
+   "mine": 0.2857142857142857,
+   "theirs": 0.22448979591836735
+  },
+  {
+   "job": "e2_c1109_tune_0060_f0_g1",
+   "field": "fallback_share",
+   "mine": 0.8766666666666667,
+   "theirs": 0.8666666666666667
+  },
+  {
+   "job": "e2_c1109_tune_0060_f0_g4",
+   "field": "fallback_share",
+   "mine": 0.8833333333333333,
+   "theirs": 0.8666666666666667
+  },
+  {
+   "job": "e2_c1109_tune_0132_f0_g16",
+   "field": "fallback_share",
+   "mine": 0.7366666666666667,
+   "theirs": 0.7333333333333333
+  },
+  {
+   "job": "e2_c1109_tune_0138_f0_g0",
+   "field": "fallback_share",
+   "mine": 0.13725490196078433,
+   "theirs": 0.11764705882352941
+  },
+  {
+   "job": "e2_c1109_tune_0138_f0_g0p25",
+   "field": "fallback_share",
+   "mine": 0.17647058823529413,
+   "theirs": 0.11764705882352941
+  },
+  {
+   "job": "e2_c1109_tune_0138_f0_g1",
+   "field": "fallback_share",
+   "mine": 0.21568627450980393,
+   "theirs": 0.11764705882352941
+  },
+  {
+   "job": "e2_c1109_tune_0138_f0_g4",
+   "field": "fallback_share",
+   "mine": 0.23076923076923078,
+   "theirs": 0.1346153846153846
+  },
+  {
+   "job": "e2_c1109_tune_0138_f0_g64",
+   "field": "fallback_share",
+   "mine": 0.8533333333333334,
+   "theirs": 0.85
+  },
+  {
+   "job": "e2_c1109_tune_0144_f0_g16",
+   "field": "fallback_share",
+   "mine": 0.8433333333333334,
+   "theirs": 0.8333333333333334
+  }
+ ]
+}

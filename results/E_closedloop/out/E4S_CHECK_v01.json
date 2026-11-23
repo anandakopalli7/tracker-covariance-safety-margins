@@ -1,0 +1,127 @@
+{
+ "schema": "E4S_CHECK_V01",
+ "masked_runs": {
+  "e4s_v01_e_f0_lo": {
+   "status": "CAPTURED_AND_REVIEWED",
+   "review": "PASS769_RECORDED_SENSOR_EGO_PREFIX",
+   "review_stages": {
+    "outcome_accounting": "PASS_INDEPENDENT_OUTCOME_ACCOUNTING_ONLY",
+    "perception": "PASS_SAME_RUNTIME_SUCCESSFUL_PERCEPTION_PREFIX",
+    "e_record": "PASS_E_RECORD"
+   },
+   "case": "c1109_tune_0000",
+   "law": true,
+   "rows_follow_mask": true,
+   "punish_num": 3,
+   "masked_rows_in_window": 4,
+   "rows": 69,
+   "pass": true
+  },
+  "e4s_v01_e_n_lo": {
+   "status": "CAPTURED_AND_REVIEWED",
+   "review": "PASS769_RECORDED_SENSOR_EGO_PREFIX",
+   "review_stages": {
+    "outcome_accounting": "PASS_INDEPENDENT_OUTCOME_ACCOUNTING_ONLY",
+    "perception": "PASS_SAME_RUNTIME_SUCCESSFUL_PERCEPTION_PREFIX",
+    "e_record": "PASS_E_RECORD"
+   },
+   "case": "c1109_tune_0000",
+   "law": true,
+   "rows_follow_mask": true,
+   "punish_num": 3,
+   "masked_rows_in_window": 4,
+   "rows": 69,
+   "pass": true
+  },
+  "e4s_v01_e_f0_imm_lo": {
+   "status": "CAPTURED_AND_REVIEWED",
+   "review": "PASS769_RECORDED_SENSOR_EGO_PREFIX",
+   "review_stages": {
+    "outcome_accounting": "PASS_INDEPENDENT_OUTCOME_ACCOUNTING_ONLY",
+    "perception": "SKIPPED_TRACKER_NOT_CANMOT",
+    "e_record": "PASS_E_RECORD"
+   },
+   "case": "c1109_tune_0000",
+   "law": true,
+   "rows_follow_mask": true,
+   "punish_num": 3,
+   "masked_rows_in_window": 4,
+   "rows": 69,
+   "pass": true
+  },
+  "e4s_v01_e_n_imm_lo": {
+   "status": "CAPTURED_AND_REVIEWED",
+   "review": "PASS769_RECORDED_SENSOR_EGO_PREFIX",
+   "review_stages": {
+    "outcome_accounting": "PASS_INDEPENDENT_OUTCOME_ACCOUNTING_ONLY",
+    "perception": "SKIPPED_TRACKER_NOT_CANMOT",
+    "e_record": "PASS_E_RECORD"
+   },
+   "case": "c1109_tune_0000",
+   "law": true,
+   "rows_follow_mask": true,
+   "punish_num": 3,
+   "masked_rows_in_window": 4,
+   "rows": 69,
+   "pass": true
+  }
+ },
+ "repro": {
+  "run": "e4s_v01_repro_e3_c1109_eval_0480_e_f0_lo",
+  "reference": "e3_c1109_eval_0480_e_f0_lo",
+  "files": {
+   "detections.jsonl": {
+    "rows": [
+     69,
+     69
+    ],
+    "identical": true,
+    "first_difference_row": null
+   },
+   "e_decisions.jsonl": {
+    "rows": [
+     300,
+     300
+    ],
+    "identical": true,
+    "first_difference_row": null
+   },
+   "frames.jsonl": {
+    "rows": [
+     700,
+     700
+    ],
+    "identical": true,
+    "first_difference_row": null
+   },
+   "evaluation_truth.jsonl": {
+    "rows": [
+     700,
+     700
+    ],
+    "identical": true,
+    "first_difference_row": null
+   }
+  },
+  "no_dropout_record": true,
+  "frame_offsets": [
+   437
+  ],
+  "pass": true
+ },
+ "admission": {
+  "a1e13_e4s_10_v01_benign": {
+   "status": "CAPTURED_AND_REVIEWED",
+   "control_identical": true
+  },
+  "a1e13_e4s_10_v01_crash": {
+   "status": "CAPTURED_AND_REVIEWED",
+   "control_identical": true
+  },
+  "ctl_e4s_10_v01_000": {
+   "status": "CAPTURED_AND_REVIEWED",
+   "control_identical": true
+  }
+ },
+ "pass": true
+}

@@ -1,0 +1,28 @@
+{
+ "name": "FREEZE_DR_A12_ADD02",
+ "layered_on": [
+  "work\\locks\\FREEZE_DR.json",
+  "work\\locks\\FREEZE_DR_A12.json",
+  "work\\locks\\FREEZE_DR_A12_ADD01.json"
+ ],
+ "reason": "second program dr_recount_a12_v02: case_of_run maps the new runs pl12_<case>_native (record B2, F_dropout\\notes\\DR_A12_RECORDS_ADD02.md); dr_pod_multi_v01 creates the multi-GPU recount pod (moves no data, computes no value)",
+ "written": "2026-11-22 03:11:14",
+ "n": 3,
+ "entries": [
+  {
+   "group": "recount",
+   "path": "work\\F_dropout\\recount\\dr_recount_a12_v02.py",
+   "sha256": "337d0fc2d9b21787f385761622393069e8317bf6bca126d009bcca96973f5f34"
+  },
+  {
+   "group": "records",
+   "path": "work\\F_dropout\\notes\\DR_A12_RECORDS_ADD02.md",
+   "sha256": "8137d35cb43ced00ba846f4071da2f87bad76f089c80830f6f8f82c2f869f2f4"
+  },
+  {
+   "group": "tools",
+   "path": "work\\F_dropout\\code\\dr_pod_multi_v01.py",
+   "sha256": "99e28cd8f576fd6db87cb20e67980e9ae2eb5864f937ab63cb2ceacf1b1b826a"
+  }
+ ]
+}

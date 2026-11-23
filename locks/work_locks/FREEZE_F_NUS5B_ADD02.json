@@ -1,0 +1,83 @@
+{
+ "name": "FREEZE_F_NUS5B_ADD02",
+ "layered_on": [
+  "work\\locks\\FREEZE_F_NUS5B.json",
+  "work\\locks\\FREEZE_F_NUS5B_ADD01.json"
+ ],
+ "reason": "post-lock (LOCK_A12e) scope change approved by the coordinator at 03:57, before any masked value: in BOTH programs the float part of the sec. 5b.4 tracker-independent check applies to evaluated decisions only; the exact-key check stays on all decisions. Cause: a CPU-dependent last-bit tie-break of two equal-cost planner rows (scene-0966, decision 151, not evaluated, clearance NaN on both sides). Scoring runs once on the masked arrays already fetched (pinned by pods\\masked_bundle.json); nothing is re-tracked. Note: f22_check_indep_v01.py had a docstring escape corrected after it wrote its output; code unchanged.",
+ "masked_val_output_exists_at_writing": false,
+ "written": "2026-11-22 04:01:17",
+ "n": 14,
+ "entries": [
+  {
+   "group": "first_program",
+   "path": "work\\F_dropout_nus\\code\\fn06_score_v02.py",
+   "sha256": "6c8256bca8c24101f662997b3576b3b64aa2ea08cb4fa9efe7eb0be168b0886a"
+  },
+  {
+   "group": "runner",
+   "path": "work\\F_dropout_nus\\code\\fn_run_score_v02.sh",
+   "sha256": "6144d9d1c0bae715fa04d5118a960a911dde111b0827c83a99a7cf06ed09f7b5"
+  },
+  {
+   "group": "runner",
+   "path": "work\\F_dropout_nus\\post\\fn_post_v02.py",
+   "sha256": "c86bba5916882ed9298ea520d7eb1f7bdd7885b1c72a50f1e5ff4f5a555e208b"
+  },
+  {
+   "group": "runner",
+   "path": "work\\F_dropout_nus\\post\\fn_post_v01.py",
+   "sha256": "efb4295b0fcb467fb8aac40f66b225a0f06012e395d481855b7867c1fae309ec"
+  },
+  {
+   "group": "bundles",
+   "path": "work\\F_dropout_nus\\pods\\masked_bundle.json",
+   "sha256": "a8f70a40f035fcb497b4348a71ac2f91677aea47d862e0eb3f872256233f692e"
+  },
+  {
+   "group": "bundles",
+   "path": "work\\F_dropout_nus\\pods\\score2_bundle.json",
+   "sha256": "77d26e8bc598af04860077e9f3107c98893669b3ba43e7d7ce84b2d3e900148d"
+  },
+  {
+   "group": "diagnosis",
+   "path": "work\\F_dropout_nus\\post\\fn_diag_indep_v01.py",
+   "sha256": "039f9d0c999138f7b3bae1f2515fb473ef037b6ddbe99ec83afdb9840adcb0cd"
+  },
+  {
+   "group": "diagnosis",
+   "path": "work\\F_dropout_nus\\post\\DIAG_INDEP_v01.json",
+   "sha256": "420c76c0d2b0a02470ff92e694f15715fd3b97bc0663dc76c10ab1fda689ab40"
+  },
+  {
+   "group": "diagnosis",
+   "path": "work\\F_nuscenes\\code\\f22_check_indep_v01.py",
+   "sha256": "3ffd58c0c0f11645d7680cdd0cb523fb3a58b9c21cec61961bd7699f844b23ef"
+  },
+  {
+   "group": "diagnosis",
+   "path": "work\\F_nuscenes\\out\\nus5b\\CHECK_INDEP_F_v01.json",
+   "sha256": "6653baabaf8b5b58a162ecc6c6e0900c410c849fb9cb113f0d6a2a5ea3363cd4"
+  },
+  {
+   "group": "diff",
+   "path": "work\\F_dropout_nus\\post\\fn06_v01_to_v02.diff",
+   "sha256": "b9aecaebc1e7784d963a505916d91be4789461cd9cea54194be20c330a3f688d"
+  },
+  {
+   "group": "second_program",
+   "path": "work\\F_dropout_nus\\recount\\fn_recount_v02.py",
+   "sha256": "fc3b93cfffa1efe9ec15157492c801ade9fc5110a359e65f22ea284d00d5b9d2"
+  },
+  {
+   "group": "second_program",
+   "path": "work\\F_dropout_nus\\recount\\FN5B_RECOUNT_unmasked_v02.json",
+   "sha256": "c559eec4a7fc193cf553fd0d1df602dc5b2e642f7d920882835f8aac37d68e47"
+  },
+  {
+   "group": "records",
+   "path": "work\\F_dropout_nus\\notes\\FN5B_RECORDS_ADD02.md",
+   "sha256": "135e5afe43d0ba79cb9acae761080bcdcfbaeff00335d39ca1e18e35f1abe9dd"
+  }
+ ]
+}

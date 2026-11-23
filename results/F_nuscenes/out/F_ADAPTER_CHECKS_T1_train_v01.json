@@ -1,0 +1,86 @@
+{
+ "code": "f10_adapter_checks_v01.py",
+ "tracker": "T1",
+ "split": "train",
+ "counts": {
+  "n_scenes": 700,
+  "n_dec": 110266,
+  "n_excluded_speed": 72,
+  "n_eval": 88737,
+  "n_eval2": 95871,
+  "n_inpath_eval": 23503
+ },
+ "missing_scenes": [],
+ "identity": {
+  "n": 1400,
+  "crit_pattern_differ": 0,
+  "crit_max_rel": 6.301238357156824e-13,
+  "d_max_abs": 2.842170943040401e-14,
+  "proj_max_abs": 0.0,
+  "lib_errors": 0,
+  "clear_max_abs": 0.0,
+  "clear_inf_differ": 0
+ },
+ "logged_motion": {
+  "rule": "the ego's own logged motion has true clearance > 0 (the real car did not collide)",
+  "n_eval_clear_le0_3s": 138,
+  "share_3s": 0.0015551573751648128,
+  "n_eval2_clear_le0_2s": 128,
+  "share_2s": 0.0013351274107915845,
+  "scenes_3s": [
+   [
+    "scene-0218",
+    36,
+    125,
+    0.0
+   ],
+   [
+    "scene-0991",
+    36,
+    130,
+    0.0
+   ],
+   [
+    "scene-0861",
+    32,
+    129,
+    0.0
+   ],
+   [
+    "scene-0397",
+    31,
+    125,
+    0.0
+   ],
+   [
+    "scene-0238",
+    3,
+    123,
+    0.0
+   ]
+  ],
+  "n_scenes_3s": 5
+ },
+ "l_ego_abs_quantiles": [
+  0.0,
+  0.0,
+  0.0,
+  0.044926671168022916,
+  0.5305449095818148
+ ],
+ "desired_quantiles": [
+  1.0,
+  1.0,
+  7.825297958800212,
+  15.298281219169228,
+  18.45349894335574
+ ],
+ "v0_quantiles": [
+  0.0,
+  0.0,
+  5.316900283832816,
+  13.893793937924817,
+  18.451029635371142
+ ],
+ "written": "2026-11-19 23:17:54"
+}

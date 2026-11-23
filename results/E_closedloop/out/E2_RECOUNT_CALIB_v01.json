@@ -1,0 +1,56 @@
+{
+ "schema": "E_RECOUNT_CALIBRATION_v01",
+ "per_g": [
+  {
+   "g": 0.0,
+   "n_runs": 30,
+   "n_valid": 30,
+   "n_invalid": 0,
+   "contacts": 12,
+   "share": 0.4
+  },
+  {
+   "g": 0.25,
+   "n_runs": 30,
+   "n_valid": 30,
+   "n_invalid": 0,
+   "contacts": 11,
+   "share": 0.36666666666666664
+  },
+  {
+   "g": 1.0,
+   "n_runs": 30,
+   "n_valid": 30,
+   "n_invalid": 0,
+   "contacts": 8,
+   "share": 0.26666666666666666
+  },
+  {
+   "g": 4.0,
+   "n_runs": 30,
+   "n_valid": 30,
+   "n_invalid": 0,
+   "contacts": 5,
+   "share": 0.16666666666666666
+  },
+  {
+   "g": 16.0,
+   "n_runs": 30,
+   "n_valid": 30,
+   "n_invalid": 0,
+   "contacts": 2,
+   "share": 0.06666666666666667
+  },
+  {
+   "g": 64.0,
+   "n_runs": 30,
+   "n_valid": 30,
+   "n_invalid": 0,
+   "contacts": 0,
+   "share": 0.0
+  }
+ ],
+ "g_lo": 4.0,
+ "g_hi": 16.0,
+ "low_power": false
+}

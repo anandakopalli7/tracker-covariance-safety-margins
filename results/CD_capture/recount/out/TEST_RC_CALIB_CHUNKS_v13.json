@@ -1,0 +1,225 @@
+{
+ "code": "test_rc_calib_chunks_v13.py",
+ "started": "2026-11-20 01:50:40",
+ "sizes": [
+  "--boot",
+  "200",
+  "--outer",
+  "12",
+  "--inner",
+  "50",
+  "--mc",
+  "200"
+ ],
+ "chunks": [
+  [
+   0,
+   5
+  ],
+  [
+   5,
+   12
+  ]
+ ],
+ "seeds": [
+  20261913,
+  20261914
+ ],
+ "note": "old runs only; the laptop was shared and heavily loaded during every measurement",
+ "not_compared": [
+  "started",
+  "written",
+  "threads",
+  "calib_mode",
+  "calib_import",
+  "seconds*"
+ ],
+ "log": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\test_rc_calib_chunks_log.txt",
+ "lead": {
+  "seconds_inprocess": 44.66770315170288,
+  "seconds_export": 29.65647530555725,
+  "seconds_chunks_wall": 15.533538103103638,
+  "runner_calls": [
+   "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\rc_calib_remote_v13.py ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\calib_testold rc_lead --seeds 20261913 --outer 0:5 --threads 1",
+   "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\rc_calib_remote_v13.py ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\calib_testold rc_lead --seeds 20261913 --outer 5:12 --threads 1",
+   "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\rc_calib_remote_v13.py ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\calib_testold rc_lead --seeds 20261914 --outer 0:5 --threads 1",
+   "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\rc_calib_remote_v13.py ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\calib_testold rc_lead --seeds 20261914 --outer 5:12 --threads 1"
+  ],
+  "seconds_import": 26.205288887023926,
+  "json": {
+   "a": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_C_LEAD_TESTOLD_b200_o12_i50_inproc.json",
+   "b": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_C_LEAD_TESTOLD_b200_o12_i50_pod.json",
+   "values_compared": 5600,
+   "values_differing": 0,
+   "first_differences": []
+  },
+  "second_seed_used": true,
+  "needed_second_seed": [
+   "RR_E5p"
+  ],
+  "pending_output": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_C_LEAD_TESTOLD_b200_o12_i50_pod.PENDING.json",
+  "meta": {
+   "label": "rc_lead",
+   "kind": "lead",
+   "program": "rc_c_lead_v13.py",
+   "mode": "test-old",
+   "n_outer": 12,
+   "n_inner": 50,
+   "n_run": 35,
+   "n_stat": 14,
+   "stats": [
+    "R_gl_pp",
+    "RR_E5",
+    "RR_E5_minus_E5p",
+    "RR_N",
+    "RR_CK3",
+    "RR_E5p",
+    "H4_rec_est_-1.0",
+    "H4_lfl_est_-1.0",
+    "H4_rec_truth",
+    "H4_lfl_truth",
+    "H4_rec_est_-0.5",
+    "H4_lfl_est_-0.5",
+    "H4_rec_est_-2.0",
+    "H4_lfl_est_-2.0"
+   ],
+   "pod_seeds": [
+    20261913,
+    20261914
+   ],
+   "seed_outer": 20261912,
+   "b_outer_full_draw": 2000,
+   "b_inner_full_draw": 1000,
+   "job_file": "rc_lead.job.npz",
+   "job_sha256": "f243739234edb46c50e711992d4d1fc0fa58aa185bccfe70bcf01ce6d7671f7d",
+   "job_bytes": 1793864,
+   "runner_files": [
+    "rc_calib_remote_v13.py",
+    "rc_kern_v13.py"
+   ],
+   "runner_call": "python -I -B rc_calib_remote_v13.py JOBDIR rc_lead --seeds SEED --outer LO:HI --threads 1",
+   "chunk_name": "rc_lead_<SEED>_o<LO>_<HI>.npz",
+   "written": "2026-11-20 01:51:54",
+   "seconds_outer_estimates": 0.7418003082275391,
+   "dryrun": false
+  },
+  "old_code_checkpoint": {
+   "ckpt": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\ckpt\\RC_C_LEAD_TESTOLD_b200_o10_i50_v2_inner1.npz",
+   "available": true,
+   "rows": 10,
+   "values_compared": 840,
+   "entries_differing": [],
+   "full_sample_values_equal": true
+  },
+  "pass": true
+ },
+ "cutin": {
+  "seconds_inprocess": 9.307965517044067,
+  "seconds_export": 8.805548906326294,
+  "seconds_chunks_wall": 6.753190279006958,
+  "runner_calls": [
+   "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\rc_calib_remote_v13.py ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\calib_testold rc_cutin --seeds 20261913 --outer 0:5 --threads 1",
+   "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\rc_calib_remote_v13.py ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\calib_testold rc_cutin --seeds 20261913 --outer 5:12 --threads 1",
+   "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\rc_calib_remote_v13.py ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\calib_testold rc_cutin --seeds 20261914 --outer 0:5 --threads 1",
+   "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\rc_calib_remote_v13.py ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\calib_testold rc_cutin --seeds 20261914 --outer 5:12 --threads 1"
+  ],
+  "seconds_import": 7.389138698577881,
+  "json": {
+   "a": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_C_CUTIN_TESTOLD_b200_o12_i50_inproc.json",
+   "b": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_C_CUTIN_TESTOLD_b200_o12_i50_pod.json",
+   "values_compared": 1461,
+   "values_differing": 0,
+   "first_differences": []
+  },
+  "second_seed_used": false,
+  "needed_second_seed": [],
+  "pending_output": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_C_CUTIN_TESTOLD_b200_o12_i50_pod.PENDING.json",
+  "meta": {
+   "label": "rc_cutin",
+   "kind": "cutin",
+   "program": "rc_c_cutin_v13.py",
+   "mode": "test-old",
+   "n_outer": 12,
+   "n_inner": 50,
+   "n_run": 20,
+   "n_stat": 6,
+   "stats": [
+    "W_R_gl_pp",
+    "W_RR_N",
+    "Y_R_gl_pp",
+    "Y_r",
+    "Y_c",
+    "Y_r_over_c"
+   ],
+   "pod_seeds": [
+    20261913,
+    20261914
+   ],
+   "seed_outer": 20261912,
+   "b_outer_full_draw": 2000,
+   "b_inner_full_draw": 1000,
+   "job_file": "rc_cutin.job.npz",
+   "job_sha256": "99200104bb94946db3359107b9b621eb33a4e91b1d8c5342ce828834a1e47fcc",
+   "job_bytes": 89062,
+   "runner_files": [
+    "rc_calib_remote_v13.py",
+    "rc_kern_v13.py"
+   ],
+   "runner_call": "python -I -B rc_calib_remote_v13.py JOBDIR rc_cutin --seeds SEED --outer LO:HI --threads 1",
+   "chunk_name": "rc_cutin_<SEED>_o<LO>_<HI>.npz",
+   "written": "2026-11-20 01:52:54",
+   "seconds_outer_estimates": 0.06826281547546387,
+   "dryrun": false
+  },
+  "old_code_checkpoint": {
+   "ckpt": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\ckpt\\RC_C_CUTIN_TESTOLD_b200_o10_i50_inner1.npz",
+   "available": true,
+   "rows": 10,
+   "values_compared": 360,
+   "entries_differing": [],
+   "full_sample_values_equal": true
+  },
+  "pass": true
+ },
+ "standalone": {
+  "a": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\calib_testold\\rc_lead_20261913_o5_12.npz",
+  "b": "<user folder>\\rc_lead_20261913_o5_12.npz",
+  "values_compared": 588,
+  "entries_differing": [],
+  "versions_a": "python 3.12.2; numpy 2.5.4; numba 0.68.1; Windows-11-10.0.26200-SP0; OPENBLAS_CORETYPE=Haswell",
+  "versions_b": "python 3.12.2; numpy 2.5.4; numba 0.68.1; Windows-11-10.0.26200-SP0; OPENBLAS_CORETYPE=Haswell",
+  "folder": "<user folder>\\rc_standalone_wbsgdqap",
+  "files_copied": [
+   "rc_lead.job.npz",
+   "rc_lead.meta.json",
+   "rc_calib_remote_v13.py",
+   "rc_kern_v13.py"
+  ],
+  "working_directory": "<user folder>",
+  "call": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\.venv\\Scripts\\python.exe -I -B <user folder>\\rc_calib_remote_v13.py <user folder>\\rc_standalone_wbsgdqap rc_lead --seeds 20261913 --outer 5:12 --threads 1",
+  "seconds": 28.136306047439575,
+  "folder_listing_after": [
+   "__pycache__",
+   "rc_calib_remote_v13.py",
+   "rc_kern_v13.py",
+   "rc_lead.job.npz",
+   "rc_lead.meta.json",
+   "rc_lead_20261913_o5_12.npz"
+  ],
+  "pass": true
+ },
+ "timing": {
+  "job": "rc_lead_timing",
+  "n_run": 35,
+  "n_inner": 1000,
+  "threads": 1,
+  "outer_samples": 3,
+  "seconds_total": 32.19973063468933,
+  "seconds_first_outer_incl_compilation": 11.0110342502594,
+  "seconds_per_outer_sample": 10.594348192214966,
+  "job_bytes": 1793024,
+  "note": "loaded laptop; an upper bound"
+ },
+ "all_pass": true,
+ "written": "2026-11-20 01:54:29"
+}

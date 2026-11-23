@@ -1,0 +1,42 @@
+{
+ "schema": "ALIAS_RETRIES_X_V13",
+ "tool_sha256": "8091b01879cd2d026a5743d7594c853154b548707a8497154e0658d20c75459a",
+ "cases_sha256": "58902be5ce022b314148308140cb8fc9373bc7aee401531367d456755409a31e",
+ "statement": "Three study runs CAPTURED_AND_REVIEWED on an allowed retry (A10 sec. 5.1) carry the worker's suffixed run id (__p1 after a pre-launch failure, __r1 for the second attempt). Their arrays were aliased to the job id: every numeric array is byte-identical (np.array_equal, dtype and shape checked on every key); only meta changed (run_id := job id; capture_run_id := the suffixed id; alias_of := the source file SHA-256), so both frozen programs read all 390 runs. Approved by the coordinator, 21 Nov 2026 about 17:05 EST.",
+ "replacements_sha256": "7b983d5507ab194c95d479ddf605a72278d55189304ef98b03e343a60a91cd3a",
+ "aliases": [
+  {
+   "job": "pc13x_c1109_eval_0410_native",
+   "capture_run_id": "pc13x_c1109_eval_0410_native__p1",
+   "source": "pc13x_c1109_eval_0410_native__p1.npz",
+   "source_sha256": "6d1beeb78c6bf67aeffb6b6e034886fd39bc4acc495a4bcf262f2ac794efb40d",
+   "receipt_sha256": "5c95e3b47b70009a04bc4ca05340a8138b8e26284f4cbb5e58042b6f60e6ddcd",
+   "alias": "pc13x_c1109_eval_0410_native.npz",
+   "alias_sha256": "7581f33109e6e263e89ec386129bde4275958a59b644f21c14941523b3da2f64",
+   "arrays_identical": true,
+   "n_keys": 22
+  },
+  {
+   "job": "pc13x_c1109_eval_0950_native",
+   "capture_run_id": "pc13x_c1109_eval_0950_native__p1",
+   "source": "pc13x_c1109_eval_0950_native__p1.npz",
+   "source_sha256": "afb4f4d19c203b2ad40a2845918df3dc2ab87cb234e9407652e59f1e2719d74f",
+   "receipt_sha256": "b373f2c4165b4a44fb4a0b5bbc6515a8f7044a4f66040a7b513ec145be316f39",
+   "alias": "pc13x_c1109_eval_0950_native.npz",
+   "alias_sha256": "33524af610dbe9bfd608c56b93ea63b6f7770e80daed8c4351ff4251112510e1",
+   "arrays_identical": true,
+   "n_keys": 22
+  },
+  {
+   "job": "pc13x_c1109_eval_1574_native",
+   "capture_run_id": "pc13x_c1109_eval_1574_native__r1",
+   "source": "pc13x_c1109_eval_1574_native__r1.npz",
+   "source_sha256": "ea4104b7cc6d05046b5df92bbb6feed6a065505c609816c1f2bbc70ee2e28c54",
+   "receipt_sha256": "3108e7b186f003d3fe012ee00456f6445a906ac9e4cd8131158ba8b560da2314",
+   "alias": "pc13x_c1109_eval_1574_native.npz",
+   "alias_sha256": "ec6fc8049ef7d781159360e30e3f4bb6958feb028df205f7c4ebf04990b1a450",
+   "arrays_identical": true,
+   "n_keys": 22
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "package": "YN (A12 sec. 3b, Y on the L12 runs)",
+ "written": "2026-11-22T11:17:18.587720+00:00",
+ "program": "make_export_yn_v13.py (second)",
+ "program_sha256": "f03a47735f582ae987cbb884fa0dba8fbcb841e5d404b7b8e8e6ab0ef5a63755",
+ "lock_sha256": "0c4d4872946ba85d2ed91a0471eb8da7188333d2dfe462b68a6df555345b2766",
+ "values": {
+  "YN.status": "ran",
+  "YN.n_runs": 150,
+  "YN.R": 5.3101963283894635,
+  "YN.RR_B2p": -0.005635771645038588,
+  "YN.RR_B2p.ci": [
+   -0.01275576253637062,
+   0.0007296812811630389
+  ],
+  "YN.RR_B2p.level": 0.95,
+  "YN.RR_B2s": 0.0452827825869167,
+  "YN.RR_B2s.ci": [
+   0.039179122922483024,
+   0.05113029093145456
+  ],
+  "YN.RR_B2s.level": 0.95,
+  "YN.RR_NB2": 0.04517946871624689,
+  "YN.RR_NB2.ci": [
+   0.03903602360194159,
+   0.051071588390867236
+  ],
+  "YN.RR_NB2.level": 0.95,
+  "YN.Y1": true,
+  "YN.delta": 0.05081524036128548,
+  "YN.delta.ci": [
+   0.04488030602158614,
+   0.05665008057318942
+  ],
+  "YN.delta.level": 0.95,
+  "YN.delta_s": 0.05091855423195529,
+  "YN.delta_s.ci": [
+   0.0450304216475916,
+   0.05671100963982372
+  ],
+  "YN.delta_s.level": 0.95,
+  "YN.n_dec": 29926,
+  "YN.n_factor": 29922,
+  "YN.n_factor_ref": 29926,
+  "YN.p_one_sided": 0.0,
+  "YN.ref.R": 5.162950867529625,
+  "YN.ref.RR_N": -8.050026082084647e-05,
+  "YN.ref.RR_N.ci": [
+   -0.0011999114715904662,
+   0.0007188792059837712
+  ],
+  "YN.ref.RR_N.level": 0.95,
+  "YN.ref.RR_Np": -0.0006924632435809103,
+  "YN.ref.RR_Np.ci": [
+   -0.0019522463936866021,
+   -5.292939466720323e-05
+  ],
+  "YN.ref.RR_Np.level": 0.95,
+  "YN.ref.RR_Ns": -0.00010626034428351573,
+  "YN.ref.RR_Ns.ci": [
+   -0.0011279556307864083,
+   0.0007685232430217763
+  ],
+  "YN.ref.RR_Ns.level": 0.95,
+  "YN.ref.delta": 0.0006119629827600638,
+  "YN.ref.delta.ci": [
+   -5.264785742940435e-05,
+   0.001340944104246102
+  ],
+  "YN.ref.delta.level": 0.95,
+  "YN.ref.delta_s": 0.0005862028992973946,
+  "YN.ref.delta_s.ci": [
+   2.2268467784310925e-05,
+   0.0013846428711253521
+  ],
+  "YN.ref.delta_s.level": 0.95,
+  "YN.share_pos": 1.0,
+  "YN.p_count_le0": 0,
+  "YN.p_count_finite": 20000
+ },
+ "inputs": {
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_Y_TWIN_L12_v13.json": "8f7ea7f26041da1d1983ba491f6617883856b5aa952f96cfcacaae0f84cd96c9"
+ }
+}

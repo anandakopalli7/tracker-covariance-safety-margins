@@ -1,0 +1,131 @@
+{
+ "schema": "E_COMPARE_EXPORT_V01",
+ "keys_mine": 45,
+ "keys_theirs": 45,
+ "disagreements": 17,
+ "list": [
+  {
+   "key": "E5.class",
+   "field": "value",
+   "mine": "safer at no extra cost",
+   "theirs": "no pairs"
+  },
+  {
+   "key": "E5.d_fallback",
+   "field": "value",
+   "mine": -0.0051150290864592236,
+   "theirs": null
+  },
+  {
+   "key": "E5.d_fallback.ci",
+   "field": "value",
+   "mine": [
+    -0.06375061536787335,
+    0.05314576760076598
+   ],
+   "theirs": null
+  },
+  {
+   "key": "E5.d_jerk",
+   "field": "value",
+   "mine": -5.557150060704113,
+   "theirs": null
+  },
+  {
+   "key": "E5.d_jerk.ci",
+   "field": "value",
+   "mine": [
+    -8.123320353194266,
+    -3.22110658632141
+   ],
+   "theirs": null
+  },
+  {
+   "key": "E5.d_peakdec",
+   "field": "value",
+   "mine": -2.987619454495569,
+   "theirs": null
+  },
+  {
+   "key": "E5.d_peakdec.ci",
+   "field": "value",
+   "mine": [
+    -4.3219529793839655,
+    -1.7419199958849816
+   ],
+   "theirs": null
+  },
+  {
+   "key": "E5.d_restgap",
+   "field": "value",
+   "mine": 0.9838590577662831,
+   "theirs": null
+  },
+  {
+   "key": "E5.d_restgap.ci",
+   "field": "value",
+   "mine": [
+    0.6012515518218338,
+    1.3938465658429404
+   ],
+   "theirs": null
+  },
+  {
+   "key": "E5.d_vimp",
+   "field": "value",
+   "mine": -0.9241963816503428,
+   "theirs": null
+  },
+  {
+   "key": "E5.d_vimp.ci",
+   "field": "value",
+   "mine": [
+    -1.9104343097050085,
+    -0.05061957617808293
+   ],
+   "theirs": null
+  },
+  {
+   "key": "E5.dc",
+   "field": "value",
+   "mine": -0.11851851851851852,
+   "theirs": null
+  },
+  {
+   "key": "E5.dc.ci",
+   "field": "value",
+   "mine": [
+    -0.1827344880208958,
+    -0.054964074964306484
+   ],
+   "theirs": null
+  },
+  {
+   "key": "E5.dt",
+   "field": "value",
+   "mine": 0.18143094858943176,
+   "theirs": null
+  },
+  {
+   "key": "E5.dt.ci",
+   "field": "value",
+   "mine": [
+    0.11074028961096519,
+    0.2579109026087967
+   ],
+   "theirs": null
+  },
+  {
+   "key": "E5.mcnemar_p",
+   "field": "value",
+   "mine": 0.0004024505615234375,
+   "theirs": null
+  },
+  {
+   "key": "E5.p_one",
+   "field": "value",
+   "mine": 5e-05,
+   "theirs": null
+  }
+ ]
+}

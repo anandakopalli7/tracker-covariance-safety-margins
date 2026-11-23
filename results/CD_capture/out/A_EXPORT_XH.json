@@ -1,0 +1,88 @@
+{
+ "package": "XH (exploratory crossing heading decomposition; A12 task 4; Supplement S15)",
+ "written": "2026-11-22T08:59:34.567241+00:00",
+ "program": "make_export_xh_v13.py (first)",
+ "program_sha256": "2eed5ee54bd1d58840c54c6e93bc33622b7c7eb21c9fc65759e91d9a3f8d8c24",
+ "values": {
+  "XH.status": "exploratory",
+  "XH.n_runs": 366,
+  "XH.n_ticks": 58970,
+  "XH.y_bind.median": -0.3766684234958755,
+  "XH.y_bind.q25": -0.5625630639391086,
+  "XH.y_bind.q75": -0.20997435411726206,
+  "XH.bind.r2": 0.46991706087907525,
+  "XH.bind.r2.ci": [
+   0.45434186170786545,
+   0.48578467519375984
+  ],
+  "XH.bind.share.geometry": 0.3777158361637862,
+  "XH.bind.shapley.geometry": 0.17749511557756872,
+  "XH.bind.shapley.geometry.ci": [
+   0.15579057178134262,
+   0.19931366243750692
+  ],
+  "XH.bind.r2_single.geometry": 0.1983626401343147,
+  "XH.bind.share.schedule": 0.5412421438111509,
+  "XH.bind.shapley.schedule": 0.2543389174436258,
+  "XH.bind.shapley.schedule.ci": [
+   0.23449388422938355,
+   0.2765064514330117
+  ],
+  "XH.bind.r2_single.schedule": 0.2509946420703062,
+  "XH.bind.share.error": 0.08104202002506275,
+  "XH.bind.shapley.error": 0.03808302785788065,
+  "XH.bind.shapley.error.ci": [
+   0.03055638091832832,
+   0.04546822769681144
+  ],
+  "XH.bind.r2_single.error": 0.057042680439475246,
+  "XH.bind.rho.cos_phi2": 0.742939255034053,
+  "XH.bind.rho.te": 0.01705283534683605,
+  "XH.bind.rho.miss": 0.19013843536869907,
+  "XH.bind.rho.ln1p_age_upd": 0.3112096009383696,
+  "XH.bind.rho.abs_e_n": 0.2512965394118755,
+  "XH.dec.r2": 0.06297228271919286,
+  "XH.dec.r2.ci": [
+   0.0484254880590394,
+   0.08557828740308909
+  ],
+  "XH.dec.share.geometry": 0.07644268167964517,
+  "XH.dec.shapley.geometry": 0.0048137701625438805,
+  "XH.dec.shapley.geometry.ci": [
+   0.0015296834381474046,
+   0.014153636117098432
+  ],
+  "XH.dec.r2_single.geometry": 0.004193528114276868,
+  "XH.dec.share.schedule": 0.8929966047080911,
+  "XH.dec.shapley.schedule": 0.056234034658957224,
+  "XH.dec.shapley.schedule.ci": [
+   0.04436544605846391,
+   0.070476147350368
+  ],
+  "XH.dec.r2_single.schedule": 0.055353011985132095,
+  "XH.dec.share.error": 0.030560713612263653,
+  "XH.dec.shapley.error": 0.0019244778976917525,
+  "XH.dec.shapley.error.ci": [
+   6.294235884397822e-05,
+   0.007379072270837381
+  ],
+  "XH.dec.r2_single.error": 0.0026838092641255917,
+  "XH.dec.rho.cos_phi2": -0.02332319581848771,
+  "XH.dec.rho.te": 0.022830340811465143,
+  "XH.dec.rho.miss": 0.2185677618770079,
+  "XH.dec.rho.ln1p_age_upd": 0.029931996503313373,
+  "XH.dec.rho.abs_e_n": 0.037086400341391684,
+  "XH.dec.n_ticks": 58939,
+  "XH.frame.aligned10": 0.3886382906562659,
+  "XH.frame.across10": 0.4797015431575377,
+  "XH.frame.abs_sin.median": 0.9699580631372393,
+  "XH.frame.axis_ratio.median": 1.6587268742458916,
+  "XH.frame.axis_ratio.iqr": [
+   1.463792143274497,
+   1.6744463404669037
+  ]
+ },
+ "inputs": {
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\crossing\\out\\X_HEADING_v13.json": "bc6c8da2adb537c47fec9b61eb7d5c4c476624a09d6374bcbc235a36a34988eb"
+ }
+}

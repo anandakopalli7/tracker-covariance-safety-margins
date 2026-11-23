@@ -1,0 +1,36 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "package": "E",
+ "session": "E (Claude Opus 5.5)",
+ "written": "2026-11-20T01:14:31.288247-05:00",
+ "before": "any E3 / E3b value (LOCK_A10_2.txt does not exist)",
+ "lock2_exists": false,
+ "note": "Coordinator request 20 Nov 01:12: the A10 7.5 \"Other outcomes: descriptive, with the same bootstrap\" paired differences reach the export. Export of record is analysis/e_export_v03.py (v02 + E3.<arm>.<lev>.d_<vimp|restgap|peakdec|jerk|fallback>[.ci] and E3b.<v>.<arm>.d_<...>[.ci], from e3_analyse_v01 paired_diff; an undefined interval is written None, as A prints n.c.). Second program: recount/e_recount_export_v02.py (Sonnet), from its compare outcomes block. Dry run on E2 values relabelled into the E3/E3b design: 438 keys each (217 interface + PS caveat + 220 paired differences), 0 disagreements. Interpretation recorded in STATUS.md under A10 11 before any E3 value. No classification changes: E-H1..E-H3 use contact and time lost only.",
+ "files": [
+  {
+   "path": "E_closedloop/analysis/e_export_v03.py",
+   "bytes": 8812,
+   "sha256": "1045bcfcaecb0e8fb5e19d2cded901341bed426de488dcb4bb4caa0350c1af81"
+  },
+  {
+   "path": "E_closedloop/recount/e_recount_export_v02.py",
+   "bytes": 8231,
+   "sha256": "67040ed29d45bb5301ebd0c592eab19fca2523967d2c62524fb905068a6cd68d"
+  },
+  {
+   "path": "E_closedloop/tests/out/RELABEL_A_EXPORT_DRYRUN_v03.json",
+   "bytes": 24129,
+   "sha256": "f1cf1231bffa06836939f7338b36c86519d07eade28b7663ed4dd518c28ef388"
+  },
+  {
+   "path": "E_closedloop/tests/out/RELABEL_A_RECOUNT_DRYRUN_v02.json",
+   "bytes": 24220,
+   "sha256": "7228e78929e53e64615088d9642b2a8ce9c61595a7297da4a628ca7020004fb4"
+  },
+  {
+   "path": "E_closedloop/tests/out/RELABEL_EXPORT_COMPARE_v02.json",
+   "bytes": 117,
+   "sha256": "f13e18a1ff97969d0a1aafb4fbe5cb1e6d014bacee1d010fda097c7f10f43fbe"
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "first": "out\\A_EXPORT_F.json",
+ "second": "out\\A_RECOUNT_F.json",
+ "tolerance": 1e-09,
+ "ignored_keys": [
+  "code",
+  "elapsed",
+  "elapsed_s",
+  "host",
+  "lock2",
+  "note",
+  "package",
+  "platform",
+  "program",
+  "program_sha256",
+  "python",
+  "runtime_s",
+  "seconds",
+  "threads",
+  "time",
+  "writer",
+  "written"
+ ],
+ "n_numbers": 99,
+ "n_other": 11,
+ "max_abs_diff": 2.8421709430404007e-12,
+ "differ": [
+  {
+   "path": "/extras",
+   "why": "missing in second"
+  },
+  {
+   "path": "/own_statuses",
+   "why": "missing in second"
+  },
+  {
+   "path": "/values/deviations",
+   "why": "missing in second"
+  }
+ ],
+ "agree": false
+}

@@ -1,0 +1,93 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "addendum_to": "work/locks/FREEZE_CD.json (sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7)",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5)",
+ "written": "2026-11-21 14:55 Eastern Standard Time",
+ "approval": "Coordinator's message to CD, 21 Nov 2026 about 14:43 EST: add5 for X's sec. 3.6 descriptives as a third addendum, before their first run (pattern of LOCK_A10_2c); first program (written by a Claude Opus 5.5 subagent of session CD) and the Sonnet second program agree 22/22 on the 51 old pedestrian runs (ycheck/out/TESTOLD_COMPARE_X_DESC_v13.json)",
+ "kind": "adds files: X sec. 3.6 descriptives (A11), after LOCK_A11 and before their first fresh run; orchestration tools; no frozen file changed",
+ "adds": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\CD_DEFINITIONS_X_DESC_v13.md",
+   "sha256": "062f57484a56890314e15ab26d46b2f5d19a343280cf2ab5ec0dbd8c3e87a4ce"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\x_desc_v13.py",
+   "sha256": "ff4700aeb0205a9bfc257db66d9b817e738853e9814320a2da2307aec9e3c9be"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_x_desc_v13.py",
+   "sha256": "b0ed84453a02f2894b2387ea86542c424757e80e23a3479386b3a0b8146de6ee"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\README_RECOUNT_X_DESC.md",
+   "sha256": "a11f061e870a10a11e8302889e8700605ab1acaaf4b90b8892c65970ceb855eb"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\x_extract_loop_v13.py",
+   "sha256": "56c94b577acea7fb92dcac6f3f5f554f6651d171da3cc9f4fbe2e2fe63ace021"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\ycheck\\y_pods_v13.py",
+   "sha256": "ac783bc4b664410bdd6ee4c387bcb58ce5e8552e159ada0132580b2b60633710"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\ycheck\\calib_capture_pods_v13.py",
+   "sha256": "1dab45eaa43b227c6d8153433b40ede68839c8fb8183f56c990adc79e9f894f7"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\make_freeze_add5_v13.py",
+   "sha256": "845fb8ac062b48c165594bd843b11056660505ab036a0a5b73bb366ec88a2aee"
+  }
+ ],
+ "uses": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\cd_common_v13.py",
+   "sha256": "28a7238a2f7135aec35f3018879af25566665856ff163502b6286b0249d6bdd0"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\gl_fast_v13.py",
+   "sha256": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_core_v13.py",
+   "sha256": "ab4bc14a05086822586a28da2ec791e214a3638275d669e0396602113d1cbae2"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_kern_v13.py",
+   "sha256": "e404e6f823503ea2adc22657d62dd3116f2a6a43794dec85fbe971efecffac4a"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_x_cross_v13.py",
+   "sha256": "bb8c05993794f868ddfb1255d1ee08c7ff7a44e701252ec53033f37f10c7c4b1"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_s57a_v13.py",
+   "sha256": "db127f48b6c2a19f863b15d59902bf1131f64a4e3f1cc47cef30355a3f0ae4b0"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\rc_s57b_v13.py",
+   "sha256": "30b2ebf960436cf8a8a96a1490f09f6561c78a0d320bbd82039af9adc0cb5df7"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\calib_worker_v13.sh",
+   "sha256": "67fa942f1fcf2be5dd15e39979b09decc11088c54ec0df325bf6b631d542d733"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\b7_pods_v13.py",
+   "sha256": "1b1791b1e0d0d616c6b3a586a88e71b80742f447f0a42c2fb0bdcb64f56e3ffa"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\pods_v13.py",
+   "sha256": "f124c41081a75afac313d148af8327c8236d1031a3bc59ccc70a8561690562a2"
+  },
+  {
+   "path": "revision_v13\\work\\shared\\trackers\\trk_score_v01.py",
+   "sha256": "1cab6f300ad85fc6007d9b46dae75f41202f010c2080c5987ef06a79921417b4"
+  },
+  {
+   "path": "revision_v13\\work\\shared\\trackers\\trk_env_v01.py",
+   "sha256": "0219dd2ed6517109a3c913430a2f30ca756fc01f4f003c1347c4ddd4a9628cad"
+  }
+ ],
+ "replaces": []
+}

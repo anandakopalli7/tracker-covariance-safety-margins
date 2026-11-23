@@ -1,0 +1,56 @@
+{
+ "what": "negative control: own blocks est_t0p75_a6p0 and cens_t0p75_a6p0 swapped, pair counts of t1p00 and t1p25 swapped",
+ "total": {
+  "compared": 8618,
+  "differ": 1170,
+  "undefined_in_both": 223,
+  "flags": 557,
+  "max_abs_diff": 12670.0
+ },
+ "by_scoring": {
+  "est_t0p75_a6p0": {
+   "compared": 973,
+   "differ": 579,
+   "undefined_in_both": 0,
+   "flags": 79,
+   "max_abs_diff": 12670.0
+  },
+  "cens_t0p75_a6p0": {
+   "compared": 973,
+   "differ": 579,
+   "undefined_in_both": 0,
+   "flags": 79,
+   "max_abs_diff": 12670.0
+  },
+  "pair_counts": {
+   "compared": 81,
+   "differ": 12,
+   "undefined_in_both": 0,
+   "flags": 0,
+   "max_abs_diff": 2988.0
+  }
+ },
+ "by_class": {
+  "A": {
+   "compared": 5082,
+   "differ": 808,
+   "undefined_in_both": 151,
+   "flags": 0,
+   "max_abs_diff": 2988.0
+  },
+  "B": {
+   "compared": 3077,
+   "differ": 362,
+   "undefined_in_both": 72,
+   "flags": 557,
+   "max_abs_diff": 12670.0
+  },
+  "C": {
+   "compared": 459,
+   "differ": 0,
+   "undefined_in_both": 0,
+   "flags": 0,
+   "max_abs_diff": 0.0
+  }
+ }
+}

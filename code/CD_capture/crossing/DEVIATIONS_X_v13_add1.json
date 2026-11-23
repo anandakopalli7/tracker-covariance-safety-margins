@@ -1,0 +1,25 @@
+{
+ "schema": "DEVIATIONS_X_V13_ADD1",
+ "addendum_to": "crossing/DEVIATIONS_X_v13.json (frozen in FREEZE_CD_add6)",
+ "written": "2026-11-21 about 19:35 EST, after the X and Y results (records only; no value changed)",
+ "items": [
+  {"id": "X-9", "kind": "deviation", "title": "BLAS kernel for the second program's calibration import",
+   "what": "The second program's X import (recount/rc_x_cross_v13.py --calib import) stopped twice with a segmentation fault inside OpenBLAS: the 2000 x 2000 matrix product of the A10 sec. 2.6 Monte Carlo level check (rc_core_v13.mc_levels), with OPENBLAS_CORETYPE forced to Haswell on the pod's AMD Ryzen 9 7950X. It was re-run with OPENBLAS_CORETYPE=SkylakeX, the library's own autodetected kernel on that CPU. The product is of integer counts and 0/1 flags (exact in float64 under any kernel), so no value depends on the kernel; the crashed runs wrote no output. Both programs agree on all 40 X keys, levels included."},
+  {"id": "X-10", "kind": "record", "title": "Three extra RTX 4090 pods for the second inner seed",
+   "what": "Approved by the coordinator (about 18:55): claude-v13cd-x7, x8, x9 ran 78 of the 202 seed-20261914 chunks (both programs) from 18:54 to about 19:20; deleted 19:22 after their chunks were fetched and SHA-checked."},
+  {"id": "X-11", "kind": "record", "title": "RR_gl(E5_N) at the nominal 99% level, by A10 sec. 2.6's rule",
+   "what": "Seed-1 coverage of the nominal 95% interval 0.923 < 0.94; calibrated level 0.972, second inner seed 0.970 (within 0.002), Monte Carlo SD 0.0035 > 0.002, so the rule's fallback nominal 99% applies (both programs). R_gl, RR_E5N - RR_E5pN and RR_N kept nominal 95% (coverage 0.9555, 0.9465, 0.943). Y's Delta kept nominal 95% (coverage 0.9485)."}
+ ],
+ "results": {
+  "crossing/out/X_CROSS_pedestrian_crossing_v13.json": "f50ac5960712415aa0108e44ae2826b634149cfbdf36a9678877d6773d064cf2",
+  "crossing/out/X_DESC_pedestrian_crossing_v13.json": "ec282079067e6f5e7b5132be223b61a92c3e97fc5f2f9819d7696544f5860d6d",
+  "recount/out/RC_X_CROSS_pedestrian_crossing_v13.json": "2a1aa7b1349fd63500e2013c71768121279111dd34a41b9d0d460319623c5f14",
+  "recount/out/RC_X_DESC_pedestrian_crossing_v13.json": "b88ee8f1ced271a6ccc548afb37e4660bbaa1167910de071f4b2c8636cad3d57",
+  "ycheck/out/Y_TWIN_v13.json": "9c1a4c703d1ff85ccee0d19a4005397b787b4b6817829b57554f79d980aac81a",
+  "recount/out/RC_Y_TWIN_v13.json": "bb3acb115edd1cc25fd76788b2e9ee55eea4feef86b561b0aabbb3d6e4ec8949",
+  "out/A_EXPORT_X.json": "163c2d3fec0dca01003cefc8e6a25d0ea2106fd04db627db63d18308c289b9c6",
+  "out/A_RECOUNT_X.json": "0f485a03e8c936567004ffe8ac3a7fea92063c5a334410bd92e873e230824c59",
+  "out/A_EXPORT_Y.json": "1608c107c68b9b067de4e446b5d83e11bba4643a7c2d1feab4ea2ad1ce91df44",
+  "out/A_RECOUNT_Y.json": "28e9facef75f6df9338fe7c65fd8e0ae62a12b85bfe7df2185a938779f14321f"
+ }
+}

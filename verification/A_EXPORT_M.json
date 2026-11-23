@@ -1,0 +1,121 @@
+{
+ "package": "F (real-sensor mechanism check, AMENDMENT_12 sec. 5 v02)",
+ "written": "2026-11-22 03:41:28",
+ "programs": {
+  "MECH_val_T1_v02.json": "a244f5413ca8d2db525aee2cdc65345e8080e9f1ba82edddfd91a3f85d8c7d98",
+  "MECH_val_IMM_v02.json": "2b5eba71a44ba7ee15655e6d2aabe99b2e290ef4b70be505fc8b60f216e7c3c7"
+ },
+ "renamer": "f21_export_m_v01.py",
+ "renamer_sha256": "a38dcde065fab795cfb6c203a6e9de32b7d9f072f43f3e9f8d9e50e32180b1bd",
+ "lock_sha256": "f289eea79c16ed55b4884369d355a7fffe14a3ea1219a71937ec81ac41271bce",
+ "note": "CANMOT (primary) under M.*, the IMM (secondary) under M.IMM.*; M.tau / M.ci / M.passes = the miss-pair primary",
+ "values": {
+  "M.status": "ran",
+  "M.n_scenes": 150,
+  "M.tau": 0.10782487694311477,
+  "M.tau.ci95": [
+   0.055264088777890075,
+   0.15732946959654737
+  ],
+  "M.p": 4.999750012499375e-05,
+  "M.tau_pooled": 0.022586935509288503,
+  "M.twin_mean": 0.0011989075020031057,
+  "M.all.tau": -0.038007000866636616,
+  "M.all.tau.ci95": [
+   -0.07020597503466813,
+   -0.006285646968478848
+  ],
+  "M.all.p": 0.992050397480126,
+  "M.n_rows.steady": 40228,
+  "M.s.steady.tau": -0.07524436141120407,
+  "M.s.steady.ci95": [
+   -0.10878618374665636,
+   -0.043174193769920655
+  ],
+  "M.s.steady.mean_s": 2.4487661158752543,
+  "M.s.steady.mean_e": 1.3881890834186281,
+  "M.n_rows.in_miss": 1848,
+  "M.s.in_miss.tau": 0.16008442219554803,
+  "M.s.in_miss.ci95": [
+   0.11215594120362264,
+   0.202680071227456
+  ],
+  "M.s.in_miss.mean_s": 5.210986508639124,
+  "M.s.in_miss.mean_e": 1.568084245189243,
+  "M.n_rows.post_miss": 2742,
+  "M.s.post_miss.tau": 0.06567259335068612,
+  "M.s.post_miss.ci95": [
+   0.0069082486069623,
+   0.12283141234950529
+  ],
+  "M.s.post_miss.mean_s": 2.512177757190472,
+  "M.s.post_miss.mean_e": 1.4008175725011547,
+  "M.n_rows.young": 7921,
+  "M.s.young.tau": 0.1366148170958438,
+  "M.s.young.ci95": [
+   0.10102264991182178,
+   0.17020619073581192
+  ],
+  "M.s.young.mean_s": 2.7723771270659046,
+  "M.s.young.mean_e": 2.6679105423735874,
+  "M.level": 0.99,
+  "M.ci": [
+   0.039375490007128734,
+   0.17233287122561378
+  ],
+  "M.passes": true,
+  "M.IMM.n_scenes": 150,
+  "M.IMM.tau": 0.20966752545699915,
+  "M.IMM.tau.ci95": [
+   0.1695004612380656,
+   0.24416172991159404
+  ],
+  "M.IMM.p": 4.999750012499375e-05,
+  "M.IMM.tau_pooled": 0.07484895194137522,
+  "M.IMM.twin_mean": 0.0007667668410442871,
+  "M.IMM.all.tau": 0.09315598758332405,
+  "M.IMM.all.tau.ci95": [
+   0.06569379354070548,
+   0.11603612312299726
+  ],
+  "M.IMM.all.p": 4.999750012499375e-05,
+  "M.IMM.n_rows.steady": 40212,
+  "M.IMM.s.steady.tau": 0.06373437427389748,
+  "M.IMM.s.steady.ci95": [
+   0.036705282456696915,
+   0.08652469826895423
+  ],
+  "M.IMM.s.steady.mean_s": 1.5876897856838992,
+  "M.IMM.s.steady.mean_e": 1.428539262954585,
+  "M.IMM.n_rows.in_miss": 1817,
+  "M.IMM.s.in_miss.tau": 0.264268223770955,
+  "M.IMM.s.in_miss.ci95": [
+   0.2083159268310902,
+   0.3153680736696148
+  ],
+  "M.IMM.s.in_miss.mean_s": 3.1634105019544667,
+  "M.IMM.s.in_miss.mean_e": 1.7229522337333119,
+  "M.IMM.n_rows.post_miss": 2720,
+  "M.IMM.s.post_miss.tau": 0.16515926071569012,
+  "M.IMM.s.post_miss.ci95": [
+   0.13089442797243747,
+   0.19590897583064515
+  ],
+  "M.IMM.s.post_miss.mean_s": 1.6633514718477116,
+  "M.IMM.s.post_miss.mean_e": 1.5097121818297947,
+  "M.IMM.n_rows.young": 7960,
+  "M.IMM.s.young.tau": 0.1786195149532682,
+  "M.IMM.s.young.ci95": [
+   0.1481994006066589,
+   0.20750507598315177
+  ],
+  "M.IMM.s.young.mean_s": 1.8983098828204465,
+  "M.IMM.s.young.mean_e": 2.661395708719992,
+  "M.IMM.level": 0.99,
+  "M.IMM.ci": [
+   0.15758464931588892,
+   0.25458986954198387
+  ],
+  "M.IMM.passes": true
+ }
+}

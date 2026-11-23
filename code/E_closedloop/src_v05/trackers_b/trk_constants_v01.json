@@ -1,0 +1,37 @@
+{
+ "R_car_diag": {
+  "R_x": 0.046851677873796724,
+  "R_y": 0.005920073314371262,
+  "R_vx": 0.26689842565895483,
+  "R_vy": 0.044646723127441834
+ },
+ "kappa": 0.16788040181225605,
+ "sigma_a2": 0.001,
+ "ca_acc_init_var": 10.0,
+ "tuning": {
+  "R": {
+   "n_boxes": 4933,
+   "runs": 120,
+   "rule": "A10 B3 (1)"
+  },
+  "kappa": {
+   "median_lead_nis": 1.9944344860529792,
+   "window_reached": true,
+   "j_first_sign_change": 44,
+   "rule": "A10 B3 (2)"
+  },
+  "sigma_a2": {
+   "median_lead_nis": 1.634454782498468,
+   "window_reached": false,
+   "status": "no sign change on the grid; nearest grid value taken",
+   "rule": "A10 B4 (B3 rule (2)); window not reachable: nearest grid value"
+  }
+ },
+ "sources_sha256": {
+  "B_retrack/out/b3/B3_R_EXTRACT_v01.json": "793f5044807713a935df9481cc15b31c39094dd836ef34d071a235451f5aad40",
+  "B_retrack/out/b3/B3_TUNE_KAPPA_v01.json": "9114f7a810cad1b368c0f15834cff8c61958494a1a2a49e1e21631856f4cacbc",
+  "B_retrack/out/b3/B3_TUNE_SIGMA_A2_v01.json": "9cd37ec5dc77c8d00e6ca95205ca44569c855008a2611c0546ccb9e7c153f54c"
+ },
+ "b4_filter_class": "CANMOT LinearKalmanFilter arithmetic (world-frame noise); ExtendedKalmanFilterRotate cannot take the CA model unchanged (code check, spec section 4)",
+ "written": "2026-11-19 by package B (b3_R_extract_v01.py, b3_nis_tune_v01.py)"
+}

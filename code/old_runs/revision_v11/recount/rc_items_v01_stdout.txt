@@ -1,0 +1,55 @@
+rc_items_v01 start, items ['1', '2', '3', '5', '6'], nboot 20000
+  R11 signed bootstrap 400 / 20000, 0 s
+  R11 signed bootstrap 4400 / 20000, 5 s
+  R11 signed bootstrap 8400 / 20000, 10 s
+  R11 signed bootstrap 12400 / 20000, 15 s
+  R11 signed bootstrap 16400 / 20000, 21 s
+  R11 signed bootstrap 20000 / 20000, 26 s
+item 1 done 27 s
+  R17 W1 bootstrap 400 / 20000, 1 s
+  R17 W1 bootstrap 4400 / 20000, 6 s
+  R17 W1 bootstrap 8400 / 20000, 12 s
+  R17 W1 bootstrap 12400 / 20000, 17 s
+  R17 W1 bootstrap 16400 / 20000, 22 s
+  R17 W1 bootstrap 20000 / 20000, 27 s
+  R17 RS bootstrap 400 / 20000, 1 s
+  R17 RS bootstrap 4400 / 20000, 6 s
+  R17 RS bootstrap 8400 / 20000, 11 s
+  R17 RS bootstrap 12400 / 20000, 15 s
+  R17 RS bootstrap 16400 / 20000, 20 s
+  R17 RS bootstrap 20000 / 20000, 25 s
+ARS_TRIAL\revision_v11\recount\rc_items_v01.py:44: RuntimeWarning: invalid value encountered in scalar divide
+  e['RR0_E'] = entry(denE / den0, ratio(bE, b0) if hb else None, b0)
+ARS_TRIAL\revision_v11\recount\rc_items_v01.py:50: RuntimeWarning: invalid value encountered in scalar divide
+  e['RR_' + a] = entry(Da / denE, ratio(ba, bE) if hb else None, bE)
+ARS_TRIAL\revision_v11\recount\rc_items_v01.py:51: RuntimeWarning: invalid value encountered in scalar divide
+  e['RR0_' + a] = entry(Da / den0, ratio(ba, b0) if hb else None, b0)
+item 2 done 54 s
+  R12a truncation bootstrap 400 / 20000, 1 s
+  R12a truncation bootstrap 4400 / 20000, 6 s
+  R12a truncation bootstrap 8400 / 20000, 11 s
+  R12a truncation bootstrap 12400 / 20000, 17 s
+  R12a truncation bootstrap 16400 / 20000, 23 s
+  R12a truncation bootstrap 20000 / 20000, 27 s
+item 3 done 28 s
+  R9 record bootstrap 400 / 20000, 0 s
+  R9 record bootstrap 4400 / 20000, 1 s
+  R9 record bootstrap 8400 / 20000, 2 s
+  R9 record bootstrap 12400 / 20000, 3 s
+  R9 record bootstrap 16400 / 20000, 4 s
+  R9 record bootstrap 20000 / 20000, 5 s
+  R9 stratified bootstrap 400 / 20000, 0 s
+  R9 stratified bootstrap 4400 / 20000, 1 s
+  R9 stratified bootstrap 8400 / 20000, 2 s
+  R9 stratified bootstrap 12400 / 20000, 3 s
+  R9 stratified bootstrap 16400 / 20000, 4 s
+  R9 stratified bootstrap 20000 / 20000, 5 s
+  R9 long runs bootstrap 400 / 20000, 0 s
+  R9 long runs bootstrap 4400 / 20000, 1 s
+  R9 long runs bootstrap 8400 / 20000, 2 s
+  R9 long runs bootstrap 12400 / 20000, 3 s
+  R9 long runs bootstrap 16400 / 20000, 4 s
+  R9 long runs bootstrap 20000 / 20000, 5 s
+item 5 (single bootstraps) done 15 s
+item 6 done 0 s
+rc_items_v01 end

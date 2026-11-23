@@ -1,0 +1,538 @@
+{
+ "schema": "VOLUME_CLEANUP_RECEIPTS_V13",
+ "approval": "coordinator session, 19 Nov 2026 ~15:10 EST (option 1)",
+ "rule": "delete only these archive files, each re-hashed on the pod and equal to sha256 below; receipts and SUMMARY.json stay",
+ "utc": "2026-11-19T22:29:21.854347+00:00",
+ "files": [
+  {
+   "run_id": "a1v13_01_benign",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_01_benign/claude_main_a1v13_01_benign.tar.gz",
+   "sha256": "dbf05364e6837451bf3c9087410b043213ceb1fb04dbb7ddad34e3835b6cba0e",
+   "bytes": 6938497,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_01_benign\\claude_main_a1v13_01_benign.tar.gz",
+   "laptop_sha256": "dbf05364e6837451bf3c9087410b043213ceb1fb04dbb7ddad34e3835b6cba0e"
+  },
+  {
+   "run_id": "a1v13_01_crash",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_01_crash/claude_main_a1v13_01_crash.tar.gz",
+   "sha256": "5cef54d4733cddad86e101ae8726123abe391b336fa344510a7555ec112aa9a9",
+   "bytes": 2919425,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_01_crash\\claude_main_a1v13_01_crash.tar.gz",
+   "laptop_sha256": "5cef54d4733cddad86e101ae8726123abe391b336fa344510a7555ec112aa9a9"
+  },
+  {
+   "run_id": "a1v13_01_learned",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_01_learned/claude_main_a1v13_01_learned.tar.gz",
+   "sha256": "ee8fd5e6660cfac07d80e7e0e4bb02c63c1e62b8249d5c483e916ff1729bbd0e",
+   "bytes": 11110464,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_01_learned\\claude_main_a1v13_01_learned.tar.gz",
+   "laptop_sha256": "ee8fd5e6660cfac07d80e7e0e4bb02c63c1e62b8249d5c483e916ff1729bbd0e"
+  },
+  {
+   "run_id": "a1v13_02_benign",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_02_benign/claude_main_a1v13_02_benign.tar.gz",
+   "sha256": "23294387a4303dee87ec5b82734c889d1c0dffd8ce59d7f66a0794814c37a005",
+   "bytes": 6943781,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_02_benign\\claude_main_a1v13_02_benign.tar.gz",
+   "laptop_sha256": "23294387a4303dee87ec5b82734c889d1c0dffd8ce59d7f66a0794814c37a005"
+  },
+  {
+   "run_id": "a1v13_02_crash",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_02_crash/claude_main_a1v13_02_crash.tar.gz",
+   "sha256": "afaa7975044e946342c4bf1153c794ed67349f83943a4334e160dcb34e53ac98",
+   "bytes": 2921230,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_02_crash\\claude_main_a1v13_02_crash.tar.gz",
+   "laptop_sha256": "afaa7975044e946342c4bf1153c794ed67349f83943a4334e160dcb34e53ac98"
+  },
+  {
+   "run_id": "a1v13_02_learned",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_02_learned/claude_main_a1v13_02_learned.tar.gz",
+   "sha256": "a073eaac9a356c2733093af520c39989d412b9de59778ec0fcf0eba18bb3eac8",
+   "bytes": 11115888,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_02_learned\\claude_main_a1v13_02_learned.tar.gz",
+   "laptop_sha256": "a073eaac9a356c2733093af520c39989d412b9de59778ec0fcf0eba18bb3eac8"
+  },
+  {
+   "run_id": "a1v13_03_benign",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_03_benign/claude_main_a1v13_03_benign.tar.gz",
+   "sha256": "9382eee944c9d1bbb8b5bf469da2c0ad3fb89014beecb10cb302f1d8b41e5408",
+   "bytes": 6945139,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_03_benign\\claude_main_a1v13_03_benign.tar.gz",
+   "laptop_sha256": "9382eee944c9d1bbb8b5bf469da2c0ad3fb89014beecb10cb302f1d8b41e5408"
+  },
+  {
+   "run_id": "a1v13_03_crash",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_03_crash/claude_main_a1v13_03_crash.tar.gz",
+   "sha256": "462033736d79bc43d87007af4d9661fe82e24e24180c67feae4a604e331514c8",
+   "bytes": 2923159,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_03_crash\\claude_main_a1v13_03_crash.tar.gz",
+   "laptop_sha256": "462033736d79bc43d87007af4d9661fe82e24e24180c67feae4a604e331514c8"
+  },
+  {
+   "run_id": "a1v13_03_learned",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_03_learned/claude_main_a1v13_03_learned.tar.gz",
+   "sha256": "48412e41d5360c558d68354e136d69fbac8ff704465cb37d27ebc023ed0cafb3",
+   "bytes": 11117219,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_03_learned\\claude_main_a1v13_03_learned.tar.gz",
+   "laptop_sha256": "48412e41d5360c558d68354e136d69fbac8ff704465cb37d27ebc023ed0cafb3"
+  },
+  {
+   "run_id": "a1v13_04_benign",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_04_benign/claude_main_a1v13_04_benign.tar.gz",
+   "sha256": "ef058dc92f11338084dc634f33913af4dc2aa6a4da567fc1e3d41848c0d3f13e",
+   "bytes": 6948242,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_04_benign\\claude_main_a1v13_04_benign.tar.gz",
+   "laptop_sha256": "ef058dc92f11338084dc634f33913af4dc2aa6a4da567fc1e3d41848c0d3f13e"
+  },
+  {
+   "run_id": "a1v13_04_crash",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_04_crash/claude_main_a1v13_04_crash.tar.gz",
+   "sha256": "43582cdaeefcb2386b83f41bc0fc43c92f4a1c6591be25f880f65022f8bfe59b",
+   "bytes": 2923341,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_04_crash\\claude_main_a1v13_04_crash.tar.gz",
+   "laptop_sha256": "43582cdaeefcb2386b83f41bc0fc43c92f4a1c6591be25f880f65022f8bfe59b"
+  },
+  {
+   "run_id": "a1v13_04_learned",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_04_learned/claude_main_a1v13_04_learned.tar.gz",
+   "sha256": "0e79313ddd7c0d7278cc0160574e9a70a308f657d140931b53ca56de310fccc2",
+   "bytes": 11116120,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_04_learned\\claude_main_a1v13_04_learned.tar.gz",
+   "laptop_sha256": "0e79313ddd7c0d7278cc0160574e9a70a308f657d140931b53ca56de310fccc2"
+  },
+  {
+   "run_id": "a1v13_05_benign",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_05_benign/claude_main_a1v13_05_benign.tar.gz",
+   "sha256": "24e1fd0d15df6765c7afb4d380d9bde9f15cd47a28960d782d4c7b4f6225a19d",
+   "bytes": 6945265,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_05_benign\\claude_main_a1v13_05_benign.tar.gz",
+   "laptop_sha256": "24e1fd0d15df6765c7afb4d380d9bde9f15cd47a28960d782d4c7b4f6225a19d"
+  },
+  {
+   "run_id": "a1v13_05_crash",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_05_crash/claude_main_a1v13_05_crash.tar.gz",
+   "sha256": "ab33d5a6b44b9f914f53c959f9cb5c65fed10251482fe0207f697e3bdd020dd0",
+   "bytes": 2923017,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_05_crash\\claude_main_a1v13_05_crash.tar.gz",
+   "laptop_sha256": "ab33d5a6b44b9f914f53c959f9cb5c65fed10251482fe0207f697e3bdd020dd0"
+  },
+  {
+   "run_id": "a1v13_05_learned",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_05_learned/claude_main_a1v13_05_learned.tar.gz",
+   "sha256": "c0ad2b379984dc5b7f7e046270a9dd55ba3bbf7963c10024e77eaa8242d5b206",
+   "bytes": 11118110,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_05_learned\\claude_main_a1v13_05_learned.tar.gz",
+   "laptop_sha256": "c0ad2b379984dc5b7f7e046270a9dd55ba3bbf7963c10024e77eaa8242d5b206"
+  },
+  {
+   "run_id": "a1v13_06_benign",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_06_benign/claude_main_a1v13_06_benign.tar.gz",
+   "sha256": "bad2bce9eaea84907291cc448c62a9e37b8c4eddb2cf96f65e2be189d8944cdd",
+   "bytes": 6947790,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_06_benign\\claude_main_a1v13_06_benign.tar.gz",
+   "laptop_sha256": "bad2bce9eaea84907291cc448c62a9e37b8c4eddb2cf96f65e2be189d8944cdd"
+  },
+  {
+   "run_id": "a1v13_06_crash",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_06_crash/claude_main_a1v13_06_crash.tar.gz",
+   "sha256": "cb82ab7553dc6b0d758176fa3e127b0f4ff6b3d433bf4d0cf4009bae4167787d",
+   "bytes": 2923927,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_06_crash\\claude_main_a1v13_06_crash.tar.gz",
+   "laptop_sha256": "cb82ab7553dc6b0d758176fa3e127b0f4ff6b3d433bf4d0cf4009bae4167787d"
+  },
+  {
+   "run_id": "a1v13_06_learned",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/a1v13_06_learned/claude_main_a1v13_06_learned.tar.gz",
+   "sha256": "643572dabfbd3bbb78bbf96ff1134db6f81072aea385d128abef4ee9f2e0a241",
+   "bytes": 11118670,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\a1v13_06_learned\\claude_main_a1v13_06_learned.tar.gz",
+   "laptop_sha256": "643572dabfbd3bbb78bbf96ff1134db6f81072aea385d128abef4ee9f2e0a241"
+  },
+  {
+   "run_id": "ctl_pc13_01_v01_000",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/ctl_pc13_01_v01_000/claude_main_ctl_pc13_01_v01_000.tar.gz",
+   "sha256": "df1759688964b1cefe642b5cae4e447423cbe4d05b6ef1d8ead569212a0eee38",
+   "bytes": 2924430,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\ctl_pc13_01_v01_000\\claude_main_ctl_pc13_01_v01_000.tar.gz",
+   "laptop_sha256": "df1759688964b1cefe642b5cae4e447423cbe4d05b6ef1d8ead569212a0eee38"
+  },
+  {
+   "run_id": "ctl_pc13_02_v01_000",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/ctl_pc13_02_v01_000/claude_main_ctl_pc13_02_v01_000.tar.gz",
+   "sha256": "378b9711830ed33759e4d3416171bc4b7e858d05e8cbfa1b98c5b1e523f69b75",
+   "bytes": 2926633,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\ctl_pc13_02_v01_000\\claude_main_ctl_pc13_02_v01_000.tar.gz",
+   "laptop_sha256": "378b9711830ed33759e4d3416171bc4b7e858d05e8cbfa1b98c5b1e523f69b75"
+  },
+  {
+   "run_id": "ctl_pc13_03_v01_000",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/ctl_pc13_03_v01_000/claude_main_ctl_pc13_03_v01_000.tar.gz",
+   "sha256": "276d48cd5d81d1280c2a0a9a675486374305a40953ed579454c29359dc387b7d",
+   "bytes": 2927694,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\ctl_pc13_03_v01_000\\claude_main_ctl_pc13_03_v01_000.tar.gz",
+   "laptop_sha256": "276d48cd5d81d1280c2a0a9a675486374305a40953ed579454c29359dc387b7d"
+  },
+  {
+   "run_id": "ctl_pc13_04_v01_000",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/ctl_pc13_04_v01_000/claude_main_ctl_pc13_04_v01_000.tar.gz",
+   "sha256": "9c2932ecf3a222a06375a165af391648963e82df696fb8fd9678799668622337",
+   "bytes": 2928175,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\ctl_pc13_04_v01_000\\claude_main_ctl_pc13_04_v01_000.tar.gz",
+   "laptop_sha256": "9c2932ecf3a222a06375a165af391648963e82df696fb8fd9678799668622337"
+  },
+  {
+   "run_id": "ctl_pc13_05_v01_000",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/ctl_pc13_05_v01_000/claude_main_ctl_pc13_05_v01_000.tar.gz",
+   "sha256": "a20a9dd1f0d5d8318c314a26854262b88115b726105582fea0b60247d694be4c",
+   "bytes": 2927677,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\ctl_pc13_05_v01_000\\claude_main_ctl_pc13_05_v01_000.tar.gz",
+   "laptop_sha256": "a20a9dd1f0d5d8318c314a26854262b88115b726105582fea0b60247d694be4c"
+  },
+  {
+   "run_id": "ctl_pc13_06_v01_000",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/ctl_pc13_06_v01_000/claude_main_ctl_pc13_06_v01_000.tar.gz",
+   "sha256": "2fa040a2156534bddfc443910c53e79cec94dfebd9d459b9cfcdb1d60f9df3f8",
+   "bytes": 2928192,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\ctl_pc13_06_v01_000\\claude_main_ctl_pc13_06_v01_000.tar.gz",
+   "laptop_sha256": "2fa040a2156534bddfc443910c53e79cec94dfebd9d459b9cfcdb1d60f9df3f8"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0000_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0000_native/claude_main_pc13_c1109_eval_0000_native.tar.gz",
+   "sha256": "6a0bbb146875bfd0d79f2dcc46fbc37e02e3f858e6ba5bf0208e5c37c033d7b4",
+   "bytes": 397423738,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0000_native\\claude_main_pc13_c1109_eval_0000_native.tar.gz",
+   "laptop_sha256": "6a0bbb146875bfd0d79f2dcc46fbc37e02e3f858e6ba5bf0208e5c37c033d7b4"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0004_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0004_native/claude_main_pc13_c1109_eval_0004_native.tar.gz",
+   "sha256": "c77632af30943db697b308fa7059e933a4f45bde158b044d8feee304ebf15ca0",
+   "bytes": 407945076,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0004_native\\claude_main_pc13_c1109_eval_0004_native.tar.gz",
+   "laptop_sha256": "c77632af30943db697b308fa7059e933a4f45bde158b044d8feee304ebf15ca0"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0006_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0006_native/claude_main_pc13_c1109_eval_0006_native.tar.gz",
+   "sha256": "ebc6b9ba85002718497e6b71506cbfd8f17cf6871d0c0341d3c8c5ce9f6c2718",
+   "bytes": 127621965,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0006_native\\claude_main_pc13_c1109_eval_0006_native.tar.gz",
+   "laptop_sha256": "ebc6b9ba85002718497e6b71506cbfd8f17cf6871d0c0341d3c8c5ce9f6c2718"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0010_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0010_native/claude_main_pc13_c1109_eval_0010_native.tar.gz",
+   "sha256": "42a18bb5054bf4fcb73d245c32c6784a4b8dc2fd62cefeeb617fa507a4f4cc51",
+   "bytes": 400971822,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0010_native\\claude_main_pc13_c1109_eval_0010_native.tar.gz",
+   "laptop_sha256": "42a18bb5054bf4fcb73d245c32c6784a4b8dc2fd62cefeeb617fa507a4f4cc51"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0012_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0012_native/claude_main_pc13_c1109_eval_0012_native.tar.gz",
+   "sha256": "9313f35fbba9a05c2cd2eb5fefc3130fb723251f91221e32c04d66f92428cdb1",
+   "bytes": 396294303,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0012_native\\claude_main_pc13_c1109_eval_0012_native.tar.gz",
+   "laptop_sha256": "9313f35fbba9a05c2cd2eb5fefc3130fb723251f91221e32c04d66f92428cdb1"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0016_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0016_native/claude_main_pc13_c1109_eval_0016_native.tar.gz",
+   "sha256": "f4800a3514620c4ed6e368fd5b50f6c9f4cf967fcaca2445fbd63ec702139255",
+   "bytes": 409756760,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0016_native\\claude_main_pc13_c1109_eval_0016_native.tar.gz",
+   "laptop_sha256": "f4800a3514620c4ed6e368fd5b50f6c9f4cf967fcaca2445fbd63ec702139255"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0018_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0018_native/claude_main_pc13_c1109_eval_0018_native.tar.gz",
+   "sha256": "132c72436102b3ba5fb42a7b746bc1238248f2eec14d24c9a71b082555ffaf04",
+   "bytes": 398091051,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0018_native\\claude_main_pc13_c1109_eval_0018_native.tar.gz",
+   "laptop_sha256": "132c72436102b3ba5fb42a7b746bc1238248f2eec14d24c9a71b082555ffaf04"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0022_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0022_native/claude_main_pc13_c1109_eval_0022_native.tar.gz",
+   "sha256": "e00b3764f8e2382be29553a0c4b07da4b9ed53fc40895e8cbda70a92f3021336",
+   "bytes": 398498291,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0022_native\\claude_main_pc13_c1109_eval_0022_native.tar.gz",
+   "laptop_sha256": "e00b3764f8e2382be29553a0c4b07da4b9ed53fc40895e8cbda70a92f3021336"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0024_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0024_native/claude_main_pc13_c1109_eval_0024_native.tar.gz",
+   "sha256": "36096667aba0ed2108367f1619e586212a13c86a0dbdb460237800deceff088c",
+   "bytes": 393579837,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0024_native\\claude_main_pc13_c1109_eval_0024_native.tar.gz",
+   "laptop_sha256": "36096667aba0ed2108367f1619e586212a13c86a0dbdb460237800deceff088c"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0028_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0028_native/claude_main_pc13_c1109_eval_0028_native.tar.gz",
+   "sha256": "f119bd55328172f66a44cc1701fae6e36a473fef7be5e1f01e3e59cf8bbb926b",
+   "bytes": 407887942,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0028_native\\claude_main_pc13_c1109_eval_0028_native.tar.gz",
+   "laptop_sha256": "f119bd55328172f66a44cc1701fae6e36a473fef7be5e1f01e3e59cf8bbb926b"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0030_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0030_native/claude_main_pc13_c1109_eval_0030_native.tar.gz",
+   "sha256": "7b81bec6029ed5cfa760b81fc9e761b95ce4d153a639de27c4aa55065b500e71",
+   "bytes": 139662824,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0030_native\\claude_main_pc13_c1109_eval_0030_native.tar.gz",
+   "laptop_sha256": "7b81bec6029ed5cfa760b81fc9e761b95ce4d153a639de27c4aa55065b500e71"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0034_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0034_native/claude_main_pc13_c1109_eval_0034_native.tar.gz",
+   "sha256": "f0d939c85b37830cbf7e3a3127999aa437c8f260c332458f3a4c63bb64187511",
+   "bytes": 417745430,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0034_native\\claude_main_pc13_c1109_eval_0034_native.tar.gz",
+   "laptop_sha256": "f0d939c85b37830cbf7e3a3127999aa437c8f260c332458f3a4c63bb64187511"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0036_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0036_native/claude_main_pc13_c1109_eval_0036_native.tar.gz",
+   "sha256": "c472b7939c33e64892311bdc5c81866916327105687205bd61beb4116246ded1",
+   "bytes": 106067981,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0036_native\\claude_main_pc13_c1109_eval_0036_native.tar.gz",
+   "laptop_sha256": "c472b7939c33e64892311bdc5c81866916327105687205bd61beb4116246ded1"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0040_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0040_native/claude_main_pc13_c1109_eval_0040_native.tar.gz",
+   "sha256": "b99ca7d20e7f7e358411be05d67460debfb54dfd3535824bbacf7ce279c5aa0f",
+   "bytes": 410460266,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0040_native\\claude_main_pc13_c1109_eval_0040_native.tar.gz",
+   "laptop_sha256": "b99ca7d20e7f7e358411be05d67460debfb54dfd3535824bbacf7ce279c5aa0f"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0042_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0042_native/claude_main_pc13_c1109_eval_0042_native.tar.gz",
+   "sha256": "91d41c5af9343b4a4495b89f08e031e523f8a73924b563db831ca8de5083b88a",
+   "bytes": 144075420,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0042_native\\claude_main_pc13_c1109_eval_0042_native.tar.gz",
+   "laptop_sha256": "91d41c5af9343b4a4495b89f08e031e523f8a73924b563db831ca8de5083b88a"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0046_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0046_native/claude_main_pc13_c1109_eval_0046_native.tar.gz",
+   "sha256": "3b120d36936900dc5832ee6b57f194dda6d069d71715c0ebb281a3b52eb7ff6a",
+   "bytes": 411910813,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0046_native\\claude_main_pc13_c1109_eval_0046_native.tar.gz",
+   "laptop_sha256": "3b120d36936900dc5832ee6b57f194dda6d069d71715c0ebb281a3b52eb7ff6a"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0048_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0048_native/claude_main_pc13_c1109_eval_0048_native.tar.gz",
+   "sha256": "9a83266bf3d77c8abb456cbe723bc1a505105b4f7e33950992a7b30f2bb1b049",
+   "bytes": 127570554,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0048_native\\claude_main_pc13_c1109_eval_0048_native.tar.gz",
+   "laptop_sha256": "9a83266bf3d77c8abb456cbe723bc1a505105b4f7e33950992a7b30f2bb1b049"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0052_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0052_native/claude_main_pc13_c1109_eval_0052_native.tar.gz",
+   "sha256": "6b5c250d5aaf77cb155ae2b5164252c5305c448c97ce859b1693f4d25455815d",
+   "bytes": 413563775,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0052_native\\claude_main_pc13_c1109_eval_0052_native.tar.gz",
+   "laptop_sha256": "6b5c250d5aaf77cb155ae2b5164252c5305c448c97ce859b1693f4d25455815d"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0054_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0054_native/claude_main_pc13_c1109_eval_0054_native.tar.gz",
+   "sha256": "6e8a77630db017f8534fc637fbd0f32730220f8079fe306c7cccf45d8baacdd8",
+   "bytes": 400038591,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0054_native\\claude_main_pc13_c1109_eval_0054_native.tar.gz",
+   "laptop_sha256": "6e8a77630db017f8534fc637fbd0f32730220f8079fe306c7cccf45d8baacdd8"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0058_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0058_native/claude_main_pc13_c1109_eval_0058_native.tar.gz",
+   "sha256": "3cdad08ee8abe945a119f424ea73a228ec5b388f2c253dab6798d3f0506fef25",
+   "bytes": 412393515,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0058_native\\claude_main_pc13_c1109_eval_0058_native.tar.gz",
+   "laptop_sha256": "3cdad08ee8abe945a119f424ea73a228ec5b388f2c253dab6798d3f0506fef25"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0060_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0060_native/claude_main_pc13_c1109_eval_0060_native.tar.gz",
+   "sha256": "be26d0eb5055804e20eb99e7b745e749361c3b307919ac5e6ceed8d0e8a9c626",
+   "bytes": 394361347,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0060_native\\claude_main_pc13_c1109_eval_0060_native.tar.gz",
+   "laptop_sha256": "be26d0eb5055804e20eb99e7b745e749361c3b307919ac5e6ceed8d0e8a9c626"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0064_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0064_native/claude_main_pc13_c1109_eval_0064_native.tar.gz",
+   "sha256": "5b5382ed9bf1542edc2c4716e8ba47d353c1f3a42b633cc1468b32cb7102b73b",
+   "bytes": 406862522,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0064_native\\claude_main_pc13_c1109_eval_0064_native.tar.gz",
+   "laptop_sha256": "5b5382ed9bf1542edc2c4716e8ba47d353c1f3a42b633cc1468b32cb7102b73b"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0066_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0066_native/claude_main_pc13_c1109_eval_0066_native.tar.gz",
+   "sha256": "7fae8208f912a8d4c8a4353dc68040f695f1037a6d6e12f4453ada2db1c8464a",
+   "bytes": 388401320,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0066_native\\claude_main_pc13_c1109_eval_0066_native.tar.gz",
+   "laptop_sha256": "7fae8208f912a8d4c8a4353dc68040f695f1037a6d6e12f4453ada2db1c8464a"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0070_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0070_native/claude_main_pc13_c1109_eval_0070_native.tar.gz",
+   "sha256": "dfee9c4338e27c76cbdada4344cdb522639214ff40a36b47f5ea5a8225dcf78d",
+   "bytes": 398532552,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0070_native\\claude_main_pc13_c1109_eval_0070_native.tar.gz",
+   "laptop_sha256": "dfee9c4338e27c76cbdada4344cdb522639214ff40a36b47f5ea5a8225dcf78d"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0072_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0072_native/claude_main_pc13_c1109_eval_0072_native.tar.gz",
+   "sha256": "05c059f564e258364124c8574ebc81ea3f75a3da688cc8d8c72d587144deab78",
+   "bytes": 144823361,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0072_native\\claude_main_pc13_c1109_eval_0072_native.tar.gz",
+   "laptop_sha256": "05c059f564e258364124c8574ebc81ea3f75a3da688cc8d8c72d587144deab78"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0076_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0076_native/claude_main_pc13_c1109_eval_0076_native.tar.gz",
+   "sha256": "ab2c575a69efe0a9c2e05bb327148ee121db3ce15d152c5f32dec045406e184c",
+   "bytes": 409254705,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0076_native\\claude_main_pc13_c1109_eval_0076_native.tar.gz",
+   "laptop_sha256": "ab2c575a69efe0a9c2e05bb327148ee121db3ce15d152c5f32dec045406e184c"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0082_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0082_native/claude_main_pc13_c1109_eval_0082_native.tar.gz",
+   "sha256": "c81600480e39a88d83956e0b9b0e41629777af0b1d7338366bac37fed4f084d3",
+   "bytes": 407921109,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0082_native\\claude_main_pc13_c1109_eval_0082_native.tar.gz",
+   "laptop_sha256": "c81600480e39a88d83956e0b9b0e41629777af0b1d7338366bac37fed4f084d3"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0084_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0084_native/claude_main_pc13_c1109_eval_0084_native.tar.gz",
+   "sha256": "a43dbe6bc96a16006cf601225e0480a83ad86454ac831c64d016980e02838222",
+   "bytes": 396982198,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0084_native\\claude_main_pc13_c1109_eval_0084_native.tar.gz",
+   "laptop_sha256": "a43dbe6bc96a16006cf601225e0480a83ad86454ac831c64d016980e02838222"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0088_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0088_native/claude_main_pc13_c1109_eval_0088_native.tar.gz",
+   "sha256": "ac95a285ceabe43f41ec7c981218e87384091ac759b3c7f6c93c979841e8005e",
+   "bytes": 412571204,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0088_native\\claude_main_pc13_c1109_eval_0088_native.tar.gz",
+   "laptop_sha256": "ac95a285ceabe43f41ec7c981218e87384091ac759b3c7f6c93c979841e8005e"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0090_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0090_native/claude_main_pc13_c1109_eval_0090_native.tar.gz",
+   "sha256": "f9a023743ad8a01531c8c9859d65ad3d1b40483208a89a204ce79f9ef17f3f58",
+   "bytes": 386989925,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0090_native\\claude_main_pc13_c1109_eval_0090_native.tar.gz",
+   "laptop_sha256": "f9a023743ad8a01531c8c9859d65ad3d1b40483208a89a204ce79f9ef17f3f58"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0096_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0096_native/claude_main_pc13_c1109_eval_0096_native.tar.gz",
+   "sha256": "db67e968b8ece138b765e65f2c06ff193b9690d93bf5287050e8bde996b1718e",
+   "bytes": 385814963,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0096_native\\claude_main_pc13_c1109_eval_0096_native.tar.gz",
+   "laptop_sha256": "db67e968b8ece138b765e65f2c06ff193b9690d93bf5287050e8bde996b1718e"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0100_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0100_native/claude_main_pc13_c1109_eval_0100_native.tar.gz",
+   "sha256": "43ad9e19fce28cdb707c1eb437f0198681b402d5c8264bf72e3ffab7ec941b80",
+   "bytes": 387011872,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0100_native\\claude_main_pc13_c1109_eval_0100_native.tar.gz",
+   "laptop_sha256": "43ad9e19fce28cdb707c1eb437f0198681b402d5c8264bf72e3ffab7ec941b80"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0102_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0102_native/claude_main_pc13_c1109_eval_0102_native.tar.gz",
+   "sha256": "d9e96aefbd7de67a1cff2eb219272ead85bf73069dbfedae9b5a39d983b35000",
+   "bytes": 135353722,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0102_native\\claude_main_pc13_c1109_eval_0102_native.tar.gz",
+   "laptop_sha256": "d9e96aefbd7de67a1cff2eb219272ead85bf73069dbfedae9b5a39d983b35000"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0112_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0112_native/claude_main_pc13_c1109_eval_0112_native.tar.gz",
+   "sha256": "e39387e9ab1f67486c5eb0a141d25948af9c960746f13497b69679ea1bdb77e4",
+   "bytes": 412610237,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0112_native\\claude_main_pc13_c1109_eval_0112_native.tar.gz",
+   "laptop_sha256": "e39387e9ab1f67486c5eb0a141d25948af9c960746f13497b69679ea1bdb77e4"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0114_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0114_native/claude_main_pc13_c1109_eval_0114_native.tar.gz",
+   "sha256": "1e53be16b08a61afde0a4813c1c73055c840a9aa8fc72bd2b6c2f27e22f39ecb",
+   "bytes": 388184791,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0114_native\\claude_main_pc13_c1109_eval_0114_native.tar.gz",
+   "laptop_sha256": "1e53be16b08a61afde0a4813c1c73055c840a9aa8fc72bd2b6c2f27e22f39ecb"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0126_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0126_native/claude_main_pc13_c1109_eval_0126_native.tar.gz",
+   "sha256": "18691bff11316d9d1021de4eb5c690ea7566fab3b4b21079f498a65eb09539f3",
+   "bytes": 389139699,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0126_native\\claude_main_pc13_c1109_eval_0126_native.tar.gz",
+   "laptop_sha256": "18691bff11316d9d1021de4eb5c690ea7566fab3b4b21079f498a65eb09539f3"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0142_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0142_native/claude_main_pc13_c1109_eval_0142_native.tar.gz",
+   "sha256": "2c873fb0e0abb15a15c66d0af33be416b894151c7123a8f5cd1c1d40332ec7fe",
+   "bytes": 407878409,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0142_native\\claude_main_pc13_c1109_eval_0142_native.tar.gz",
+   "laptop_sha256": "2c873fb0e0abb15a15c66d0af33be416b894151c7123a8f5cd1c1d40332ec7fe"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0144_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0144_native/claude_main_pc13_c1109_eval_0144_native.tar.gz",
+   "sha256": "f20c4809263826c9d844a04451757a7e96729391a46d02771c9ce3b5e7181a51",
+   "bytes": 390132322,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0144_native\\claude_main_pc13_c1109_eval_0144_native.tar.gz",
+   "laptop_sha256": "f20c4809263826c9d844a04451757a7e96729391a46d02771c9ce3b5e7181a51"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0148_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0148_native/claude_main_pc13_c1109_eval_0148_native.tar.gz",
+   "sha256": "2ef8e61f7adbd7d979c7a7e453e54a73dca40fe6fc1b99ac69ca14383e9678f8",
+   "bytes": 407856850,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0148_native\\claude_main_pc13_c1109_eval_0148_native.tar.gz",
+   "laptop_sha256": "2ef8e61f7adbd7d979c7a7e453e54a73dca40fe6fc1b99ac69ca14383e9678f8"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0180_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0180_native/claude_main_pc13_c1109_eval_0180_native.tar.gz",
+   "sha256": "f68fb8bca9f96c9e8ef21486027020384166e19ea7c36e75529299b72a3b8f7d",
+   "bytes": 388454170,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0180_native\\claude_main_pc13_c1109_eval_0180_native.tar.gz",
+   "laptop_sha256": "f68fb8bca9f96c9e8ef21486027020384166e19ea7c36e75529299b72a3b8f7d"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0192_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0192_native/claude_main_pc13_c1109_eval_0192_native.tar.gz",
+   "sha256": "dff65a226f749916e59b5bf6a33dfff2f05889e344ea952dd6c8ef9865f9bc55",
+   "bytes": 386307423,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0192_native\\claude_main_pc13_c1109_eval_0192_native.tar.gz",
+   "laptop_sha256": "dff65a226f749916e59b5bf6a33dfff2f05889e344ea952dd6c8ef9865f9bc55"
+  },
+  {
+   "run_id": "pc13_c1109_eval_0204_native",
+   "volume_path": "/workspace/claude_v13_cd_v01/results/pc13_c1109_eval_0204_native/claude_main_pc13_c1109_eval_0204_native.tar.gz",
+   "sha256": "e1f57422cdcdeff0fc4a5a9fe369795c6266d5d15be2e7f28abcfe532e56c082",
+   "bytes": 377817252,
+   "laptop_path": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\archives\\pc13_c1109_eval_0204_native\\claude_main_pc13_c1109_eval_0204_native.tar.gz",
+   "laptop_sha256": "e1f57422cdcdeff0fc4a5a9fe369795c6266d5d15be2e7f28abcfe532e56c082"
+  }
+ ],
+ "total_bytes": 15068283992,
+ "result": "{\"deleted\": 66, \"hash_mismatch_kept\": 0}"
+}

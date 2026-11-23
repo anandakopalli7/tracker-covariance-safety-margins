@@ -1,0 +1,94 @@
+{
+ "values": {
+  "DRF.n_runs": 35.0,
+  "DRF.n_fit_runs": 35.0,
+  "DRF.M_1": 0.4593249468630566,
+  "DRF.n_fit_rows.1": 9352.0,
+  "DRF.M_2": 0.22601862044593038,
+  "DRF.n_fit_rows.2": 6305.0,
+  "DRF.M_3": 0.13725685498426238,
+  "DRF.n_fit_rows.3": 3665.0,
+  "DRF.M_re": 1.9603147948377804,
+  "DRF.n_fit_rows.re": 17255.0,
+  "DRF.M_st": 2.121860759952116,
+  "DRF.n_fit_rows.st": 84200.0,
+  "DRF.M_in": 0.22677518388152357,
+  "DRF.n_fit_rows.in": 19322.0,
+  "DRF.k_1": 0.21647270901669444,
+  "DRF.k_1.fallback": false,
+  "DRF.k_2": 0.10651906322591635,
+  "DRF.k_2.fallback": false,
+  "DRF.k_3": 0.06468702262412347,
+  "DRF.k_3.fallback": false,
+  "DRF.k_re": 0.9238658972523808,
+  "DRF.k_in": 0.10687561981524234,
+  "DRF.n_dec.c1": 645.0,
+  "DRF.n_dec.c2": 434.0,
+  "DRF.n_dec.c3": 250.0,
+  "DRF.n_dec.reacq": 1189.0,
+  "DRF.n_dec.steady": 5772.0,
+  "DRF.RR_N": 0.01157877933273026,
+  "DRF.RR_N.ci": [
+   -0.029482599959862757,
+   0.053321529163753566
+  ],
+  "DRF.RR_coast": 0.012791997020167058,
+  "DRF.RR_coast.ci": [
+   -0.028304350494967302,
+   0.054732859043036014
+  ],
+  "DRF.delta": -0.001213217687436798,
+  "DRF.delta.ci": [
+   -0.0027821439229755536,
+   -2.358547342933114e-05
+  ],
+  "DRF.delta.p": 0.9791010449477526,
+  "DRF.passes": false,
+  "DRF.within_equiv": true,
+  "DRF.status": "failed (amendment)",
+  "DRF.RR_flag2": 0.01734688447826316,
+  "DRF.RR_flag2.ci": [
+   -0.027250190137436757,
+   0.06253323853612124
+  ],
+  "DRF.delta_flag2": -0.005768105145532902,
+  "DRF.delta_flag2.ci": [
+   -0.013492013804502398,
+   0.0007561829712634585
+  ]
+ },
+ "details": {
+  "test_old": true,
+  "nboot": 20000,
+  "numba": true,
+  "seed": 20261911,
+  "full_D": [
+   NaN,
+   1133.474065138722,
+   13.124246079613986,
+   14.499396863691173,
+   19.662243667068743
+  ],
+  "n_resamples_delta_nan": 0,
+  "n_resamples_delta_le0_or_nan": 19582,
+  "n_resamples_abs_delta_le_1e12": 27,
+  "delta_flag2_p": 0.9567021648917554,
+  "in_dropout_decisions_with_age_below_1": {
+   "fit": 0,
+   "test": 0
+  },
+  "des_nonconstant_runs": [],
+  "fit_ids": [
+   "p1b_fit_finite_0005",
+   "p1b_fit_finite_0039"
+  ],
+  "test_ids": [
+   "p1b_fit_finite_0005",
+   "p1b_fit_finite_0039"
+  ],
+  "lock": "ARS_TRIAL\\revision_v13\\LOCK_A13b.txt",
+  "library_sha256": "b32a619a07f494e919f8d0bf112c8df4bed0957f051412c73819982a9a3f9898",
+  "code_sha256": "bdb63f3c220a0fcb3b1af7e313b94441c3dc8ecb185107ea67327ecbe1d5d5cf",
+  "seconds": 65.90234637260437
+ }
+}

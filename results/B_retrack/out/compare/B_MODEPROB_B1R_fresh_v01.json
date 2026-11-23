@@ -1,0 +1,12 @@
+{
+ "code": "b_imm2_checks_v01.py modeprob",
+ "label": "B1R",
+ "run_set": "fresh",
+ "first": "out\\modeprob\\MODEPROB_B1R_fresh_v01.json",
+ "second": "recount_fresh\\out\\MODEPROB2_B1R_fresh_v01.json",
+ "compared": 21,
+ "agree": 21,
+ "differing": [],
+ "all_agree": true,
+ "written": "2026-11-22 00:50:25"
+}

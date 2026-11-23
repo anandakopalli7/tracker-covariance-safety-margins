@@ -1,0 +1,36 @@
+{
+ "label": "rc_x",
+ "kind": "cross",
+ "program": "rc_x_cross_v13.py",
+ "mode": "test-old",
+ "n_outer": 10,
+ "n_inner": 50,
+ "n_run": 51,
+ "n_stat": 4,
+ "stats": [
+  "R_gl_pp",
+  "RR_E5N",
+  "RR_E5NmP",
+  "RR_N"
+ ],
+ "pod_seeds": [
+  20261913,
+  20261914
+ ],
+ "seed_outer": 20261912,
+ "b_outer_full_draw": 2000,
+ "b_inner_full_draw": 1000,
+ "job_file": "rc_x.job.npz",
+ "job_sha256": "ee4c3e6fc29c9a2687a414d62f4362fa241c287b5e54af4a0f1082832346c71b",
+ "job_bytes": 1300369,
+ "runner_files": [
+  "rc_x_calib_remote_v13.py",
+  "rc_x_kern_v13.py",
+  "rc_kern_v13.py"
+ ],
+ "runner_call": "python -I -B rc_calib_remote_v13.py JOBDIR rc_x --seeds SEED --outer LO:HI --threads 1",
+ "chunk_name": "rc_x_<SEED>_o<LO>_<HI>.npz",
+ "written": "2026-11-21 14:17:36",
+ "seconds_outer_estimates": 0.41777968406677246,
+ "dryrun": false
+}

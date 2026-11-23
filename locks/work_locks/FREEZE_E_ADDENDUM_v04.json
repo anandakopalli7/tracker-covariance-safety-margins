@@ -1,0 +1,62 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "package": "E",
+ "session": "E (Claude Opus 5.5)",
+ "written": "2026-11-20T01:10:22.832543-05:00",
+ "before": "any E3 / E3b value (LOCK_A10_2.txt does not exist)",
+ "lock2_exists": false,
+ "supersedes": "analysis/e_compare_v01.py of FREEZE_E_ADDENDUM_v03 (an export mode was added; nothing else changed)",
+ "note": "Export of record is analysis/e_export_v02.py (v01 stays frozen, not used): checked against RESULTS_INTERFACE_v13 (19 Nov 21:15) and the text captions (Table IV, Table S9): per-arm summaries contact share, MEDIAN impact speed, mean time lost, mean rest gap, MEDIAN peak deceleration, MEDIAN RMS jerk, fallback pooled over decisions; caution keys E3.<F0|PS>.<lev>.caution (%); E3.NIMM.dropped; E3.PS.caution_matched False kept. Second program: recount/e_recount_export_v01.py (Sonnet) writes A_RECOUNT_E.json from the interface and captions. Dry run on E2 values relabelled into the E3/E3b design: both exports 218 keys (217 interface + the PS caveat), 0 disagreements (e_compare_v01.py export). terminate_e_v01.py: pod logistics (confirmed delete).",
+ "files": [
+  {
+   "path": "E_closedloop/analysis/e_export_v02.py",
+   "bytes": 7354,
+   "sha256": "56fb32b27c4635d4d3a16d1208b5605734754e5b7c616d7cbf5c40e4655ff6ec"
+  },
+  {
+   "path": "E_closedloop/analysis/e_compare_v01.py",
+   "bytes": 7737,
+   "sha256": "e6f887ab8781b2101c12315ad558f6788d583599073f77e1bff4c2092cc778a4"
+  },
+  {
+   "path": "E_closedloop/recount/e_recount_export_v01.py",
+   "bytes": 7648,
+   "sha256": "1545dd95a79bf2c10fcc4c90a7166c2feeed16e9d05cbe69e9a98d625cb219a9"
+  },
+  {
+   "path": "E_closedloop/recount/README_EXPORT_v01.md",
+   "bytes": 2586,
+   "sha256": "4d8b9836373a7f61eb61824b9072b3d6ebc6429f9c78c14a6fa14a113e510a9e"
+  },
+  {
+   "path": "E_closedloop/tools/terminate_e_v01.py",
+   "bytes": 2834,
+   "sha256": "457f575e2e70650c36d2611e16feda119369ab12eda3b54029773ec87158ebf0"
+  },
+  {
+   "path": "E_closedloop/tests/out/INTERFACE_E_KEYS_v13.json",
+   "bytes": 4204,
+   "sha256": "811d81e032bd369d68d2ec4951acb50fc9e89f380434a3ab6ece0b1b3368d223"
+  },
+  {
+   "path": "E_closedloop/tests/out/RELABEL_A_EXPORT_DRYRUN_v02.json",
+   "bytes": 10383,
+   "sha256": "4f58f27dd66d27f6fd69bcc3d7b24480040380b1e338c40982462e6be3dd29b2"
+  },
+  {
+   "path": "E_closedloop/tests/out/RELABEL_A_RECOUNT_DRYRUN.json",
+   "bytes": 10457,
+   "sha256": "7bee423bb097e1c63c28bb1ed468acae8c4da34084f8c566a1e2615de37e2ded"
+  },
+  {
+   "path": "E_closedloop/tests/out/RELABEL_EXPORT_COMPARE_v01.json",
+   "bytes": 117,
+   "sha256": "78ae05e65d5d08c5974988a386bf35bdde35449bdb68c541ab1205d66579f9ac"
+  },
+  {
+   "path": "E_closedloop/tests/out/RELABEL_RESULTS_SECOND_v03.json",
+   "bytes": 77529,
+   "sha256": "15554d4cf79145484412ffa9c558e7d00686d50fc5eb5c155f2e40cf5da764fa"
+  }
+ ]
+}

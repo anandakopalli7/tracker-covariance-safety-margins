@@ -1,0 +1,302 @@
+{
+ "schema": "CLAUDE_MAIN_JOBS_V01",
+ "protocol": "DEVELOPMENT_PROTOCOL_SMOKE_v01.json",
+ "volume_folder": "/opt/claude_v13_local",
+ "capture_timeout_s": 600,
+ "review_timeout_s": 600,
+ "actor_review_timeout_s": 180,
+ "server_ready_timeout_s": 120,
+ "concurrent_start_stagger_s": 15,
+ "max_attempts": 2,
+ "protocol_main_sha256": "32d683a0a8ca2e91ff0245759ad78b43e7953c33bd12847c5193cafcdaa5735d",
+ "note": "Revision v13 package C, pod claude-v13cd-01: the 24 study jobs of JOBS_PC13_claude-v13cd-01_v01.json not yet captured when the network volume hit its quota (19 Nov ~14:55 EST); archives to the pod-local disk /opt/claude_v13_local; packet_main_v03 unchanged.",
+ "made_by": {
+  "script": "make_jobs_c_v13_remaining.py",
+  "sha256": "87c36d8cba5aff7f8f7ef781e50554effdfff20c7e2b27b819460188dec69438",
+  "from_list": "JOBS_PC13_claude-v13cd-01_v01.json",
+  "from_list_sha256": "4533ab6bf97955beba7f0592991b5ba8cb12d71123c6f69b848f2f61461199a4"
+ },
+ "jobs": [
+  {
+   "id": "ctl_pc13_01_v02_000",
+   "case": "canonical_lead_braking_v10_r0_finite",
+   "arm": "native",
+   "phase": "CTL",
+   "role": "control",
+   "scenario": "canonical_lead_braking_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 1.0,
+    "T": 0.18142429254388814,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 215
+   },
+   "alpha": 0.07595887787405835,
+   "beta": 0.056961122665147565
+  },
+  {
+   "id": "pc13_c1109_eval_0184_native",
+   "case": "c1109_eval_0184",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0184",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0342_native",
+   "case": "c1109_eval_0342",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0342",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0220_native",
+   "case": "c1109_eval_0220",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0220",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0162_native",
+   "case": "c1109_eval_0162",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0162",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0316_native",
+   "case": "c1109_eval_0316",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0316",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0330_native",
+   "case": "c1109_eval_0330",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0330",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0286_native",
+   "case": "c1109_eval_0286",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0286",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0444_native",
+   "case": "c1109_eval_0444",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0444",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0376_native",
+   "case": "c1109_eval_0376",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0376",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0216_native",
+   "case": "c1109_eval_0216",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0216",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0448_native",
+   "case": "c1109_eval_0448",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0448",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0402_native",
+   "case": "c1109_eval_0402",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0402",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0340_native",
+   "case": "c1109_eval_0340",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0340",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0546_native",
+   "case": "c1109_eval_0546",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0546",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0550_native",
+   "case": "c1109_eval_0550",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0550",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0264_native",
+   "case": "c1109_eval_0264",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0264",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0586_native",
+   "case": "c1109_eval_0586",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0586",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0570_native",
+   "case": "c1109_eval_0570",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0570",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0424_native",
+   "case": "c1109_eval_0424",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0424",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0648_native",
+   "case": "c1109_eval_0648",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0648",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0634_native",
+   "case": "c1109_eval_0634",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0634",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0450_native",
+   "case": "c1109_eval_0450",
+   "arm": "native",
+   "alpha": 7.550302542198003,
+   "beta": 7.550302542198003,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0450",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0676_native",
+   "case": "c1109_eval_0676",
+   "arm": "native",
+   "alpha": 1.642374415149816,
+   "beta": 1.642374415149816,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0676",
+   "keep_raw": true
+  },
+  {
+   "id": "pc13_c1109_eval_0660_native",
+   "case": "c1109_eval_0660",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PC13",
+   "role": "eval",
+   "scenario": "c1109_eval_0660",
+   "keep_raw": true
+  }
+ ]
+}

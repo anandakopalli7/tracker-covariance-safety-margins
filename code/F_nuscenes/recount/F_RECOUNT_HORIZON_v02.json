@@ -1,0 +1,194 @@
+{
+ "code": "fr_horizon_v02.py",
+ "clearance": "departure: cache\\clear_v02 (actors behind the ego dropped)",
+ "writer": "Claude Fable 5.2 (claude-fable-5-2), independent second program",
+ "amendment": "AMENDMENT_10_v13.md 8.3",
+ "split": "train (design)",
+ "tracker": "T1",
+ "synthetic": false,
+ "n_scenes": 700,
+ "first_scene": "scene-0001",
+ "last_scene": "scene-1110",
+ "draw": "default_rng(20261923).integers(0, n_scenes, (20000, n_scenes)), scenes in sorted name order",
+ "frontier": "gridless step frontier, margin scales in [0, 1e3], 201 caution levels",
+ "horizons": {
+  "3s": {
+   "counts": {
+    "scenes": 700,
+    "decisions_built": 110266,
+    "evaluated": 88737,
+    "evaluated_inpath": 23503
+   },
+   "removed_contacts_g1": {
+    "F0": {
+     "evaluated": 88737,
+     "removed": 6122,
+     "added": 0,
+     "selected_unsafe_old": 8081,
+     "selected_unsafe_new": 1959,
+     "pairs_unsafe_to_safe": 65560,
+     "pairs_safe_to_unsafe": 0,
+     "pairs_evaluated": 1508529
+    },
+    "E": {
+     "evaluated": 88737,
+     "removed": 5337,
+     "added": 0,
+     "selected_unsafe_old": 6922,
+     "selected_unsafe_new": 1585,
+     "pairs_unsafe_to_safe": 65560,
+     "pairs_safe_to_unsafe": 0,
+     "pairs_evaluated": 1508529
+    }
+   },
+   "all": {
+    "n_decisions": 88737.0,
+    "c0_pp": 17.058360564741513,
+    "C_pp": 63.97870463745663,
+    "D_gl_E_F0": 18.23252983535611,
+    "R_gl_pp": {
+     "point": 0.09070910365848811,
+     "ci95": [
+      0.01522585127517936,
+      0.27972546001349496
+     ],
+     "share_le0": 0.0041,
+     "n_le0": 82,
+     "n_nonfinite": 0,
+     "n_resamples": 20000
+    },
+    "room_decision_equivalents": 80.49253731343259,
+    "sources": {
+     "F0": {
+      "events": 310796,
+      "points": 310797
+     },
+     "E": {
+      "events": 287378,
+      "points": 287379
+     }
+    }
+   },
+   "inpath": {
+    "n_decisions": 23503.0,
+    "c0_pp": 20.923105333251332,
+    "C_pp": 63.54924731392943,
+    "D_gl_E_F0": 80.21954644087982,
+    "R_gl_pp": {
+     "point": 0.3991022210989046,
+     "ci95": [
+      -0.004196930424726871,
+      0.8326454470399088
+     ],
+     "share_le0": 0.02955,
+     "n_le0": 591,
+     "n_nonfinite": 0,
+     "n_resamples": 20000
+    },
+    "room_decision_equivalents": 93.80099502487555,
+    "sources": {
+     "F0": {
+      "events": 73693,
+      "points": 73694
+     },
+     "E": {
+      "events": 76025,
+      "points": 76026
+     }
+    }
+   }
+  },
+  "2s": {
+   "counts": {
+    "scenes": 700,
+    "decisions_built": 110266,
+    "evaluated": 95871,
+    "evaluated_inpath": 25506
+   },
+   "removed_contacts_g1": {
+    "F0": {
+     "evaluated": 95871,
+     "removed": 851,
+     "added": 0,
+     "selected_unsafe_old": 1006,
+     "selected_unsafe_new": 155,
+     "pairs_unsafe_to_safe": 9430,
+     "pairs_safe_to_unsafe": 0,
+     "pairs_evaluated": 1629807
+    },
+    "E": {
+     "evaluated": 95871,
+     "removed": 794,
+     "added": 0,
+     "selected_unsafe_old": 848,
+     "selected_unsafe_new": 54,
+     "pairs_unsafe_to_safe": 9430,
+     "pairs_safe_to_unsafe": 0,
+     "pairs_evaluated": 1629807
+    }
+   },
+   "all": {
+    "n_decisions": 95871.0,
+    "c0_pp": 13.67688870889987,
+    "C_pp": 64.92639635965442,
+    "D_gl_E_F0": 9.672372250211222,
+    "R_gl_pp": {
+     "point": 0.04812125497617523,
+     "ci95": [
+      0.016330477558620434,
+      0.08250144753146542
+     ],
+     "share_le0": 5e-05,
+     "n_le0": 1,
+     "n_nonfinite": 0,
+     "n_resamples": 20000
+    },
+    "room_decision_equivalents": 46.13432835820896,
+    "sources": {
+     "F0": {
+      "events": 345312,
+      "points": 345313
+     },
+     "E": {
+      "events": 316862,
+      "points": 316863
+     }
+    }
+   },
+   "inpath": {
+    "n_decisions": 25506.0,
+    "c0_pp": 17.413583448016272,
+    "C_pp": 66.87646325879682,
+    "D_gl_E_F0": 28.887320630439834,
+    "R_gl_pp": {
+     "point": 0.14371801308676535,
+     "ci95": [
+      0.03794523184567786,
+      0.2776602019383381
+     ],
+     "share_le0": 5e-05,
+     "n_le0": 1,
+     "n_nonfinite": 0,
+     "n_resamples": 20000
+    },
+    "room_decision_equivalents": 36.65671641791037,
+    "sources": {
+     "F0": {
+      "events": 83558,
+      "points": 83559
+     },
+     "E": {
+      "events": 82619,
+      "points": 82620
+     }
+    }
+   }
+  }
+ },
+ "horizon_rule": {
+  "primary_horizon_s": 3,
+  "reason": "the lower 95% end of D(E, F0) at 3 s is > 0 on the design split"
+ },
+ "written": "2026-11-20 02:33:13",
+ "seconds": 722.3675031661987
+}

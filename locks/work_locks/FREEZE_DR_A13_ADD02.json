@@ -1,0 +1,27 @@
+{
+ "name": "FREEZE_DR_A13_ADD02",
+ "layered_on": [
+  "work\\locks\\FREEZE_DR_A13.json"
+ ],
+ "reason": "LOCK_A13b (06:40:47) locks section 3 v01, the two-population flag F0_flag, and names the Sonnet second program as frozen before any real run. This addendum freezes that program, recount\\dr_recount_a13_flag_v01.py (written from the v01 text without reading the first program), its code test on the 35 old runs, and the agreement of both programs' v01 code tests (23 keys, max 4.2e-17, DRF.delta.p equal). FREEZE_DR_A13_ADD01 (v02, coast count; written at about 06:46, after the lock) is not part of the locked design and is not run.",
+ "real_DRF_outputs_existing": [],
+ "written": "2026-11-22 06:48:05",
+ "n": 3,
+ "entries": [
+  {
+   "group": "recount",
+   "path": "work\\F_dropout\\recount\\dr_recount_a13_flag_v01.py",
+   "sha256": "519170694dd99e9596c6992c2d5a8664f7ce6689429a62eb8a07523361e4abbf"
+  },
+  {
+   "group": "recount",
+   "path": "work\\F_dropout\\recount\\TESTOLD_DRF_RECOUNT_v01.json",
+   "sha256": "0703042a74ccb1ede9ffd2db25e5ca8b5fba65a98dc086c8b6c93a6decbdbf82"
+  },
+  {
+   "group": "agreement",
+   "path": "work\\F_dropout\\out_a13\\DRF_COMPARE_TESTOLD_v01.json",
+   "sha256": "7e96697b243bfea13008cf3919b4404fb41a7b7c84795a2afcf46f6370e87d07"
+  }
+ ]
+}

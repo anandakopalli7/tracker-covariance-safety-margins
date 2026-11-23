@@ -1,0 +1,30 @@
+{
+ "n_scenes_differing": 1,
+ "scenes": {
+  "scene-0966": {
+   "vbar": {
+    "nan_pattern_differ": 0,
+    "inf_pattern_differ": 0,
+    "finite_max_abs": 2.410000000000016,
+    "examples": [
+     {
+      "index": [
+       151,
+       6
+      ],
+      "F": 8.690892967039806,
+      "masked": 6.280892967039839
+     },
+     {
+      "index": [
+       151,
+       7
+      ],
+      "F": 6.280892967039815,
+      "masked": 8.690892967039831
+     }
+    ]
+   }
+  }
+ }
+}

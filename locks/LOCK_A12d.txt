@@ -1,0 +1,67 @@
+LOCK_A12d (round 2, stage 4 of 4, written before stage 3): AMENDMENT_12 section 3d - the DR replication at 10 Hz with 0.1 s latency, a second configuration
+Written: 22 Nov 2026 03:21:55 EST by the laptop clock, by the coordinating session (Claude Opus 5.5), with work\shared\tools\make_lock_a11_v01.py (sha256 ece77e031fef3729814375e6ff1f2a87a0828fdd4113e032df67d707834266f7).
+
+Amendment: revision_v13\AMENDMENT_12_v13.md, sha256 33367fec0920a53f2c761cbfbaa80b65ee6b26a96ace4175182255faed4e65d4, modified 22 Nov 01:09:12.
+Snapshot copy at this lock: revision_v13\AMENDMENT_12_v13_at_LOCK_A12d.md (identical bytes).
+
+Freezes, verified layered at writing (verify_freeze.layered; 0 mismatches required):
+- DR (FREEZE_DR + DR_A12 + ADD01-ADD03): layered 5 manifests: 98 files, 98 match, 0 not
+    FREEZE_DR.json  sha256 e1348c40b656fb9db32fb874195fcb6265c7e7b82bce3d7301fcca298c1f2c26  modified 21 Nov 15:07:07
+    FREEZE_DR_A12.json  sha256 59a402b080a010466a2dd5fbaef23a710febb54971caf8aaa7a6c78935204d96  modified 22 Nov 00:45:26
+    FREEZE_DR_A12_ADD01.json  sha256 fc3b00177bb881def52223f5121aa4e818643e595a5384c05129a8f2a5dadb2f  modified 22 Nov 02:32:24
+    FREEZE_DR_A12_ADD02.json  sha256 7af38b297cd7b8143467d83f83fa07120aea613cc94ab2dd0cfdd14ab48ccc3f  modified 22 Nov 03:11:14
+    FREEZE_DR_A12_ADD03.json  sha256 42f95596309c0f0d47c2c60fb6afb540c0a4afb4224f19e220e4af88d6a4877c  modified 22 Nov 03:20:55
+- CD (FREEZE_CD chain + add3-add9): layered 15 manifests: 333 files, 333 match, 0 not
+    FREEZE_CD.json  sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7  modified 20 Nov 03:40:55
+    FREEZE_CD_add1.json  sha256 0e562f346cdd64feaed605041565d44b3d6f2f2a8639d33ff955a33fadb2730f  modified 20 Nov 03:44:34
+    FREEZE_CD_add2.json  sha256 df4e03c9a00df30f7b0159f8585df911a4b202745817241854462030f4d46d02  modified 20 Nov 23:43:41
+    FREEZE_CD_2.json  sha256 1039025ce46a9de60163f4468535b227ca0ec3e8d2705af293bfbaa54797a8a0  modified 20 Nov 05:59:53
+    FREEZE_CD_2_add1.json  sha256 e4e311049433f80a6f7a29cbe89543d95aceaa2377163c85fe8cdeded0b74161  modified 21 Nov 00:58:31
+    FREEZE_CD_2_add2.json  sha256 1e8f131d6b992e5e47efb5b8ef170f95cd41c755353046cd84da3e2b4c9114e2  modified 21 Nov 01:04:05
+    FREEZE_CD_2_add3.json  sha256 dc48da9fe515eb05a93f51aca51cab6e8ec6fa8223b59927990ef72a59c72b3b  modified 21 Nov 01:08:49
+    FREEZE_CD_2_add4.json  sha256 9686b38f308553c5d090d32d8c011ba1f3edf6cd97cdd44d034de2a1c91b7e92  modified 21 Nov 02:35:17
+    FREEZE_CD_add3.json  sha256 c372c0dd2aa874cef9b3599d15731a24f1dd82e1cc37c49208a7d2d785bcad40  modified 21 Nov 14:23:05
+    FREEZE_CD_add4.json  sha256 e45a141f0a376069483644567402f1d9ad5a7de35690050b26d676014d050674  modified 21 Nov 14:38:54
+    FREEZE_CD_add5.json  sha256 a33ab443fe68a271b223d4d0a7cbdd5cc529b58c3b65698b4370170e61199663  modified 21 Nov 14:55:01
+    FREEZE_CD_add6.json  sha256 52214172c4f283daaf3a9d1a79f11584a227ac3a240d884d4bdabddedcb2a0b7  modified 21 Nov 17:05:17
+    FREEZE_CD_add7.json  sha256 2a44dacba439196a97d3468b61af505f9ecf592363a299440d08cac3220c81cb  modified 22 Nov 00:21:10
+    FREEZE_CD_add8.json  sha256 3fe15ff6e92601de448d84ffad17249c14944e4daf7c46294239045df216eb42  modified 22 Nov 00:45:17
+    FREEZE_CD_add9.json  sha256 913afc9cf85249891edef20c73bdf170cb7f1ce55931d3eeeba4f416bed04acd  modified 22 Nov 00:54:09
+- B (FREEZE_B + add1-add14): layered 15 manifests: 560 files, 560 match, 0 not
+    FREEZE_B.json  sha256 1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152  modified 19 Nov 20:38:46
+    FREEZE_B_add1.json  sha256 9b71225a10645bfd28b2e43a2a05578f6131ed6ec8443f14125672d480927ad6  modified 19 Nov 21:03:04
+    FREEZE_B_add2.json  sha256 6ffc5cd975b5ba91c597a1f989a1c649ca4bbbcf2244642577484f4b4341c39b  modified 20 Nov 01:09:19
+    FREEZE_B_add3.json  sha256 549ac106adb20e6eb9cae16088c231665c6f006fada64ec3eea15d1025970831  modified 20 Nov 03:36:24
+    FREEZE_B_add4.json  sha256 23f374c013510e0eadd8f7de574f61c8eaec1021669d799148266e8c9f269e7e  modified 21 Nov 02:32:44
+    FREEZE_B_add5.json  sha256 d91d1e5a55edb5224f8c150c46cee58ce30d70681fab8d76f1830ae6f5672ee0  modified 21 Nov 02:37:32
+    FREEZE_B_add6.json  sha256 bd24dc97ca4f0e2b7817e5ea6d0bc3da043aa68d8aa4dc1ca2ff21445b0bd4ed  modified 21 Nov 13:38:26
+    FREEZE_B_add7.json  sha256 d06cc48bbe89ec87b3927c962c041b31b5e7aab1dccbe570188a331e0a7b0c12  modified 21 Nov 13:45:37
+    FREEZE_B_add8.json  sha256 9c87f029ec3ed6438aea9dd60835a1ad1067ec0490190d5d89beee6a13d7b751  modified 21 Nov 14:06:57
+    FREEZE_B_add9.json  sha256 2e51dae7edb9aa9bd6da4203ee30c4cbb386a3bf31998ed537f3c173b415a341  modified 21 Nov 14:22:48
+    FREEZE_B_add10.json  sha256 ee63f804caf5111eea43e0389831a5e55171285cb943f74a1b70964326a534f2  modified 22 Nov 00:40:38
+    FREEZE_B_add11.json  sha256 c5ae85ea837301fd8b42996f7a82c9dd98652932551e16db6a3eb9c821ac5901  modified 22 Nov 00:44:32
+    FREEZE_B_add12.json  sha256 d4343ce3cb5c93de768796a83195425fd4ba56db859d944089cc1fdabe115b53  modified 22 Nov 02:23:29
+    FREEZE_B_add13.json  sha256 e3cade5beca00b5a70b6218427e437c07ebd2e4046b265657f9431e21395c49b  modified 22 Nov 02:23:52
+    FREEZE_B_add14.json  sha256 47ce4e8b7f9582982c72a2057cf66e7c9a8e2423f45371fbd0ad36fd2a311a20  modified 22 Nov 02:27:48
+
+Files (path, sha256, modified):
+- LOCK_A12a: LOCK_A12a.txt  sha256 0c4d4872946ba85d2ed91a0471eb8da7188333d2dfe462b68a6df555345b2766  modified 22 Nov 00:47:53
+- LOCK_A12b: LOCK_A12b.txt  sha256 8fe336698b36ce334601d4928c179c1eccfcc9936e449b673c79a92d21e2324e  modified 22 Nov 01:44:34
+- A12 snapshot at LOCK_A12b: AMENDMENT_12_v13_at_LOCK_A12b.md  sha256 33367fec0920a53f2c761cbfbaa80b65ee6b26a96ace4175182255faed4e65d4  modified 22 Nov 01:44:34
+- F's section 3d text v01 (merged verbatim into A12 section 3d): F_dropout/A12_3d_DR_10HZ_v01.md  sha256 0f268a93152b2cb25ca9a2bd5d11c8b7f41b24f8d0d2bcb67e6b9e825f28a6c0  modified 22 Nov 00:49:14
+- F's ADD03 record (10 Hz code, the gap-row reading C3.1): F_dropout/notes/DR_A12_RECORDS_ADD03.md  sha256 d47db6ee8154b097377a5320821c7cd1983a605cb21fcda6a549808f0ba08044  modified 22 Nov 03:20:52
+- F's ADD01 record (post-lock path fix, no value): F_dropout/notes/DR_A12_RECORDS_ADD01.md  sha256 452e5238f712ab9c8709b14aa2917486f19412bdd4e5526675d4653b54d8c6c7  modified 22 Nov 02:32:22
+- F's ADD02 record (post-lock second-program id fix, no value): F_dropout/notes/DR_A12_RECORDS_ADD02.md  sha256 8137d35cb43ced00ba846f4071da2f87bad76f089c80830f6f8f82c2f869f2f4  modified 22 Nov 03:11:03
+
+Sealing evidence (each pattern must match no file at writing):
+- no DR10 export: F_nuscenes/out/A_EXPORT_DR10*  -> 0 file(s)
+- no DR10 recount: F_nuscenes/out/A_RECOUNT_DR10*  -> 0 file(s)
+- no DR10 results file: F_dropout/out/*DR10*  -> 0 file(s)
+
+State at writing (coordinator's statement):
+- AMENDMENT_12 has not changed since LOCK_A12b (same SHA-256 as that lock's snapshot). Section 3d holds F's v01 text verbatim; it was added before LOCK_A12b and is locked only now.
+- The 10 Hz inputs: CD's B7 10 Hz detections and B7_10_0.1 arrays of all 150 L12 runs were made after LOCK_A12a by frozen tools (C's b7_redetect unchanged; l_trk_extract in FREEZE_CD_add9) and SHA-verified against the pods. They are detections and tracker arrays, not DR values.
+- F's 10 Hz code (FREEZE_DR_A12_ADD03) passed its pre-lock tests on old run 0037: the identity against CD's accepted 10 Hz array (45 keys, max 7.1e-15), and the Sonnet second program against F's on all 66 test keys (max 2.1e-14). No DR value at 10 Hz on any L12 run exists.
+- Post-lock fixes recorded since LOCK_A12a, none computing a value: FREEZE_DR_A12_ADD01 (path mapping), ADD02 (the second program's pl12_ id mapping), FREEZE_CD_add9 (tooling), FREEZE_B_add12-14 (data manifests and the twin launcher).
+- LOCK_A12c (sections 5 and 5b, nuScenes) is written after this file, once F's train design result is in; the stage letters follow the sections, not the writing order.
+- Section 3d is secondary, outside section 4's Holm family, and is dropped (and the text says so) if it would push any 2 Hz result past 07:30 or the RunPod balance would reach about $3 with pods running (the author's rule of about 03:25: no spend cap, keep the account above $0; stop 10 Hz first, then the real-log test, never the core recounts).

@@ -1,0 +1,22 @@
+{
+ "run_id": "pd13_d1v13_constant_0023_native",
+ "checks": {
+  "receipt_sha256": true,
+  "receipt_status": true,
+  "receipt_frames_dropped_zero": true,
+  "receipt_keep_raw": true,
+  "sweeps_present": true,
+  "sweep_counts_consistent": true,
+  "noisy_sweep_file_sha256_equals_file_hashes": true,
+  "noisy_sweep_array_hash_equals_noise_receipt": true
+ },
+ "failures": {
+  "file_sha": 0,
+  "noise_receipt": 0
+ },
+ "logs_archive": "pd13_d1v13_constant_0023_native_logs.tar.gz",
+ "logs_sha256": "15e7a0ab23303650a84b4544921facd93aa24b345571c0f4efa97a855d834981",
+ "logs_bytes": 8979580,
+ "archive_sha256": "be5c96ef2e9b177feed64bdfaf2667159efb9a7c8cd3af1d321220d8732add80",
+ "pass": true
+}

@@ -1,0 +1,203 @@
+{
+"149_supported_sensor_preparation_20261101/code/consumer.py": {
+"bound": "ff62710a4415ef99df5d85b57c2fbfe741d93d8da4898186868b27e6710406ff",
+"local": "ff62710a4415ef99df5d85b57c2fbfe741d93d8da4898186868b27e6710406ff",
+"equal": true
+},
+"149_supported_sensor_preparation_20261101/code/finite_primitive.py": {
+"bound": "13da04ec7f8b47827b85555da6e3b190f7dd6b0c08941fdde8b738c51c1cf4fe",
+"local": "13da04ec7f8b47827b85555da6e3b190f7dd6b0c08941fdde8b738c51c1cf4fe",
+"equal": true
+},
+"149_supported_sensor_preparation_20261101/code/sensor_policy.py": {
+"bound": "05755d0cf0ce82dcb7d868cae3da430dac7ff559e4daf6cd69e43d9a6949e7d1",
+"local": "05755d0cf0ce82dcb7d868cae3da430dac7ff559e4daf6cd69e43d9a6949e7d1",
+"equal": true
+},
+"149_supported_sensor_preparation_20261101/code/sensor_execution.py": {
+"bound": "5dc81a1c5f8a060a95f1d68a38c94d1ee5393181768269023c0d8da1b256ebe9",
+"local": "5dc81a1c5f8a060a95f1d68a38c94d1ee5393181768269023c0d8da1b256ebe9",
+"equal": true
+},
+"149_supported_sensor_preparation_20261101/code/acceleration_servo.py": {
+"bound": "bbb87942f3b1551ee7b0e3f41d2be62b143a7b0d5c0539c9d33debefa68537eb",
+"local": "bbb87942f3b1551ee7b0e3f41d2be62b143a7b0d5c0539c9d33debefa68537eb",
+"equal": true
+},
+"149_supported_sensor_preparation_20261101/code/execution_core.py": {
+"bound": "1514050649d46ace8053e9e45185117e3857e3be9d3bdd647de66a78a7dde5bd",
+"local": "1514050649d46ace8053e9e45185117e3857e3be9d3bdd647de66a78a7dde5bd",
+"equal": true
+},
+"149_supported_sensor_preparation_20261101/code/pi_servo.py": {
+"bound": "058bac2f6b38bb16d5b3b322c9e12bb56e0161b45cff5d909f98fc9fd17cde7f",
+"local": "058bac2f6b38bb16d5b3b322c9e12bb56e0161b45cff5d909f98fc9fd17cde7f",
+"equal": true
+},
+"149_supported_sensor_preparation_20261101/code/forward_state_interface.py": {
+"bound": "6ff3f13cf11f51ccecd1201b51fa56b3f52fc1c7b90c6b78a182be9c764307bc",
+"local": "6ff3f13cf11f51ccecd1201b51fa56b3f52fc1c7b90c6b78a182be9c764307bc",
+"equal": true
+},
+"149_supported_sensor_preparation_20261101/code/online_tracker.py": {
+"bound": "69edbc02b6653889b4fb8b12d6ad23dd95ae0b7f932b7c93f76749ce4b22508f",
+"local": "69edbc02b6653889b4fb8b12d6ad23dd95ae0b7f932b7c93f76749ce4b22508f",
+"equal": true
+},
+"149_supported_sensor_preparation_20261101/vendor/design_core_v85.py": {
+"bound": "06ef12a0de4a3da3d31c6387e28bba068204f2651209cfeaec626fbc2fdc09b8",
+"local": "06ef12a0de4a3da3d31c6387e28bba068204f2651209cfeaec626fbc2fdc09b8",
+"equal": true
+},
+"711_native_decision_capture_20261103/native_capture_v02.py": {
+"bound": "8085fe5fa0ce200c4f520836233c95d0120bfec238ece5da1aaa1ad0df5f27da",
+"local": "8085fe5fa0ce200c4f520836233c95d0120bfec238ece5da1aaa1ad0df5f27da",
+"equal": true
+},
+"712_sensor_capture_integration_20261103/policy_capture_v01.py": {
+"bound": "b0f313b9a156018af39bd594b4a84c58569b31971d57ea6314f8ffa7d79b0323",
+"local": "b0f313b9a156018af39bd594b4a84c58569b31971d57ea6314f8ffa7d79b0323",
+"equal": true
+},
+"807_shared_model_runtime_20261104/shared_policy_v01.py": {
+"bound": "274998b53442e15120c5087ab207c2d713e1c0f42aa1cf2a1cbdf8fecc4fc429",
+"local": "274998b53442e15120c5087ab207c2d713e1c0f42aa1cf2a1cbdf8fecc4fc429",
+"equal": true
+},
+"747_full_scenario_binding_20261103/outcome_bridge_v01.py": {
+"bound": "dcf603676b376620ae7f58b3f52260d7fbd38ce98855e2b07187922843d8d73a",
+"local": "dcf603676b376620ae7f58b3f52260d7fbd38ce98855e2b07187922843d8d73a",
+"equal": true
+}
+}
+{"run": "p2_c1109_tune_0072_fixed_c1", "kind": "tune", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "seconds": 828.8}
+{"run": "p2_c1109_tune_0078_fixed_c1", "kind": "tune", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "seconds": 820.3}
+{"run": "p2_c1109_tune_0084_fixed_c1", "kind": "tune", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "seconds": 775.1}
+{"run": "p2_c1109_tune_0090_fixed_c1", "kind": "tune", "decisions": 68, "A1_rows": 1156, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [68, 68], "E_F0@0.25": [68, 68], "E_F0@1": [68, 68], "E_F0@4": [68, 68], "E_F0@16": [68, 68], "E_N@0": [68, 68], "E_N@0.25": [68, 68], "E_N@1": [68, 68], "E_N@4": [68, 68], "E_N@16": [68, 68], "E_CK3@0": [68, 68], "E_CK3@0.25": [68, 68], "E_CK3@1": [68, 68], "E_CK3@4": [68, 68], "E_CK3@16": [68, 68]}, "B2_f2_plan_mismatch": 0, "seconds": 207.9}
+{"run": "p2_c1109_tune_0096_fixed_c1", "kind": "tune", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "seconds": 812.3}
+{"run": "p2_c1109_tune_0102_fixed_c1", "kind": "tune", "decisions": 63, "A1_rows": 1071, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [63, 63], "E_F0@0.25": [63, 63], "E_F0@1": [63, 63], "E_F0@4": [63, 63], "E_F0@16": [63, 63], "E_N@0": [63, 63], "E_N@0.25": [63, 63], "E_N@1": [63, 63], "E_N@4": [63, 63], "E_N@16": [63, 63], "E_CK3@0": [63, 63], "E_CK3@0.25": [63, 63], "E_CK3@1": [63, 63], "E_CK3@4": [63, 63], "E_CK3@16": [63, 63]}, "B2_f2_plan_mismatch": 0, "seconds": 134.6}
+{"run": "p2_c1109_tune_0108_fixed_c1", "kind": "tune", "decisions": 56, "A1_rows": 952, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [56, 56], "E_F0@0.25": [56, 56], "E_F0@1": [56, 56], "E_F0@4": [56, 56], "E_F0@16": [56, 56], "E_N@0": [56, 56], "E_N@0.25": [56, 56], "E_N@1": [56, 56], "E_N@4": [56, 56], "E_N@16": [56, 56], "E_CK3@0": [56, 56], "E_CK3@0.25": [56, 56], "E_CK3@1": [56, 56], "E_CK3@4": [56, 56], "E_CK3@16": [56, 56]}, "B2_f2_plan_mismatch": 0, "seconds": 186.7}
+{"run": "p2_c1109_tune_0114_fixed_c1", "kind": "tune", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "seconds": 966.0}
+{"run": "p1b_fit_finite_0017", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [289, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 28, "1|0": 7, "1|1": 46, "2|1": 4, "2|2": 215}, "seconds": 989.8}
+{"run": "p1b_fit_finite_0018", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [289, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 11, "1|0": 9, "1|1": 33, "2|1": 2, "2|2": 245}, "seconds": 1011.6}
+{"run": "p1b_fit_finite_0019", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [284, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 22, "1|0": 8, "1|1": 2, "2|1": 8, "2|2": 260}, "seconds": 1728.5}
+{"run": "p1b_fit_finite_0020", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [288, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 19, "1|0": 6, "1|1": 4, "2|1": 6, "2|2": 265}, "seconds": 1732.6}
+{"run": "p1b_fit_finite_0021", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [295, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 11, "1|0": 4, "1|1": 9, "2|1": 1, "2|2": 275}, "seconds": 1269.7}
+{"run": "p1b_fit_finite_0022", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [292, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 11, "1|0": 4, "1|1": 6, "2|1": 4, "2|2": 275}, "seconds": 1035.9}
+{"run": "p1b_fit_finite_0023", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [288, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 15, "1|0": 5, "1|1": 18, "2|1": 7, "2|2": 255}, "seconds": 628.7}
+{"run": "p1b_fit_finite_0024", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [289, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 20, "1|0": 5, "1|1": 9, "2|1": 6, "2|2": 260}, "seconds": 564.1}
+{"run": "p1b_fit_finite_0025", "kind": "fit", "decisions": 48, "A1_rows": 816, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [48, 48], "E_F0@0.25": [48, 48], "E_F0@1": [48, 48], "E_F0@4": [48, 48], "E_F0@16": [48, 48], "E_N@0": [48, 48], "E_N@0.25": [48, 48], "E_N@1": [48, 48], "E_N@4": [48, 48], "E_N@16": [48, 48], "E_CK3@0": [48, 48], "E_CK3@0.25": [48, 48], "E_CK3@1": [48, 48], "E_CK3@4": [48, 48], "E_CK3@16": [48, 48], "E_TG@0": [48, 48], "E_TG@0.25": [48, 48], "E_TG@1": [48, 48], "E_TG@4": [48, 48], "E_TG@16": [48, 48]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [37, 48], "C1_same_lead_track": 48, "C1_confusion_stored|online": {"0|0": 13, "1|0": 7, "1|1": 21, "2|1": 4, "2|2": 3}, "seconds": 90.7}
+{"run": "p1b_fit_finite_0026", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [288, 300], "C1_same_lead_track": 299, "C1_confusion_stored|online": {"0|0": 28, "1|0": 8, "1|1": 10, "2|0": 4, "2|2": 250}, "seconds": 462.9}
+{"run": "p1b_fit_finite_0027", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [287, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 19, "1|0": 6, "1|1": 13, "2|1": 7, "2|2": 255}, "seconds": 500.6}
+{"run": "p1b_fit_finite_0028", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [289, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 12, "1|0": 3, "1|1": 7, "2|1": 8, "2|2": 270}, "seconds": 926.7}
+{"run": "p1b_fit_finite_0029", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [293, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 25, "1|0": 5, "1|1": 8, "2|1": 2, "2|2": 260}, "seconds": 409.3}
+{"run": "p1b_fit_finite_0030", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [291, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 18, "1|0": 7, "1|1": 43, "2|1": 2, "2|2": 230}, "seconds": 395.3}
+{"run": "p1b_fit_finite_0031", "kind": "fit", "decisions": 82, "A1_rows": 1394, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [82, 82], "E_F0@0.25": [82, 82], "E_F0@1": [82, 82], "E_F0@4": [82, 82], "E_F0@16": [82, 82], "E_N@0": [82, 82], "E_N@0.25": [82, 82], "E_N@1": [82, 82], "E_N@4": [82, 82], "E_N@16": [82, 82], "E_CK3@0": [82, 82], "E_CK3@0.25": [82, 82], "E_CK3@1": [82, 82], "E_CK3@4": [82, 82], "E_CK3@16": [82, 82], "E_TG@0": [82, 82], "E_TG@0.25": [82, 82], "E_TG@1": [82, 82], "E_TG@4": [82, 82], "E_TG@16": [82, 82]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [65, 82], "C1_same_lead_track": 82, "C1_confusion_stored|online": {"0|0": 10, "0|1": 3, "1|1": 48, "1|0": 10, "2|1": 4, "2|2": 7}, "seconds": 91.6}
+{"run": "p1b_fit_finite_0032", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [288, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 26, "1|0": 9, "1|1": 2, "2|1": 3, "2|2": 260}, "seconds": 363.7}
+{"run": "p1b_fit_finite_0033", "kind": "fit", "decisions": 54, "A1_rows": 918, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [54, 54], "E_F0@0.25": [54, 54], "E_F0@1": [54, 54], "E_F0@4": [54, 54], "E_F0@16": [54, 54], "E_N@0": [54, 54], "E_N@0.25": [54, 54], "E_N@1": [54, 54], "E_N@4": [54, 54], "E_N@16": [54, 54], "E_CK3@0": [54, 54], "E_CK3@0.25": [54, 54], "E_CK3@1": [54, 54], "E_CK3@4": [54, 54], "E_CK3@16": [54, 54], "E_TG@0": [54, 54], "E_TG@0.25": [54, 54], "E_TG@1": [54, 54], "E_TG@4": [54, 54], "E_TG@16": [54, 54]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [44, 54], "C1_same_lead_track": 54, "C1_confusion_stored|online": {"0|0": 21, "1|0": 4, "1|1": 23, "2|1": 6}, "seconds": 83.0}
+{"run": "p1b_fit_finite_0034", "kind": "fit", "decisions": 66, "A1_rows": 1122, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [66, 66], "E_F0@0.25": [66, 66], "E_F0@1": [66, 66], "E_F0@4": [66, 66], "E_F0@16": [66, 66], "E_N@0": [66, 66], "E_N@0.25": [66, 66], "E_N@1": [66, 66], "E_N@4": [66, 66], "E_N@16": [66, 66], "E_CK3@0": [66, 66], "E_CK3@0.25": [66, 66], "E_CK3@1": [66, 66], "E_CK3@4": [66, 66], "E_CK3@16": [66, 66], "E_TG@0": [66, 66], "E_TG@0.25": [66, 66], "E_TG@1": [66, 66], "E_TG@4": [66, 66], "E_TG@16": [66, 66]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [57, 66], "C1_same_lead_track": 66, "C1_confusion_stored|online": {"0|0": 21, "1|0": 4, "1|1": 15, "2|1": 5, "2|2": 21}, "seconds": 74.8}
+{"run": "p1b_fit_finite_0035", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [290, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 28, "1|0": 7, "1|1": 37, "2|1": 3, "2|2": 225}, "seconds": 300.9}
+{"run": "p1b_fit_finite_0036", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [287, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 16, "1|0": 9, "1|1": 36, "2|1": 4, "2|2": 235}, "seconds": 622.7}
+{"run": "p1b_fit_finite_0037", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [288, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 15, "1|0": 5, "1|1": 13, "2|1": 7, "2|2": 260}, "seconds": 619.8}
+{"run": "p1b_fit_finite_0038", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [289, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 12, "1|0": 8, "1|1": 17, "2|1": 3, "2|2": 260}, "seconds": 611.8}
+{"run": "p1b_fit_finite_0039", "kind": "fit", "decisions": 300, "A1_rows": 5100, "A1_rows_differ": 0, "A2_F0_rows_differ": 0, "A2_F0_maxrel": 0.0, "A2_N_rows_differ": 0, "A2_N_maxrel": 0.0, "A2_CK3_rows_differ": 0, "A2_CK3_maxrel": 0.0, "A2_TG_rows_differ": 0, "A2_TG_maxrel": 0.0, "B1": {"E_F0@0": [300, 300], "E_F0@0.25": [300, 300], "E_F0@1": [300, 300], "E_F0@4": [300, 300], "E_F0@16": [300, 300], "E_N@0": [300, 300], "E_N@0.25": [300, 300], "E_N@1": [300, 300], "E_N@4": [300, 300], "E_N@16": [300, 300], "E_CK3@0": [300, 300], "E_CK3@0.25": [300, 300], "E_CK3@1": [300, 300], "E_CK3@4": [300, 300], "E_CK3@16": [300, 300], "E_TG@0": [300, 300], "E_TG@0.25": [300, 300], "E_TG@1": [300, 300], "E_TG@4": [300, 300], "E_TG@16": [300, 300]}, "B2_f2_plan_mismatch": 0, "C1_phase_agree": [285, 300], "C1_same_lead_track": 300, "C1_confusion_stored|online": {"0|0": 12, "1|0": 8, "1|1": 3, "2|1": 7, "2|2": 270}, "seconds": 619.6}
+TOTALS {
+ "decisions": 7637,
+ "A1_rows": 129829,
+ "A1_rows_differ": 0,
+ "A2_F0_rows_differ": 0,
+ "A2_F0_maxrel": 0.0,
+ "A2_N_rows_differ": 0,
+ "A2_N_maxrel": 0.0,
+ "A2_CK3_rows_differ": 0,
+ "A2_CK3_maxrel": 0.0,
+ "A2_TG_rows_differ": 0,
+ "A2_TG_maxrel": 0.0,
+ "B1": {
+  "E_F0@0": [
+   7637,
+   7637
+  ],
+  "E_F0@0.25": [
+   7637,
+   7637
+  ],
+  "E_F0@1": [
+   7637,
+   7637
+  ],
+  "E_F0@4": [
+   7637,
+   7637
+  ],
+  "E_F0@16": [
+   7637,
+   7637
+  ],
+  "E_N@0": [
+   7637,
+   7637
+  ],
+  "E_N@0.25": [
+   7637,
+   7637
+  ],
+  "E_N@1": [
+   7637,
+   7637
+  ],
+  "E_N@4": [
+   7637,
+   7637
+  ],
+  "E_N@16": [
+   7637,
+   7637
+  ],
+  "E_CK3@0": [
+   7637,
+   7637
+  ],
+  "E_CK3@0.25": [
+   7637,
+   7637
+  ],
+  "E_CK3@1": [
+   7637,
+   7637
+  ],
+  "E_CK3@4": [
+   7637,
+   7637
+  ],
+  "E_CK3@16": [
+   7637,
+   7637
+  ],
+  "E_TG@0": [
+   5950,
+   5950
+  ],
+  "E_TG@0.25": [
+   5950,
+   5950
+  ],
+  "E_TG@1": [
+   5950,
+   5950
+  ],
+  "E_TG@4": [
+   5950,
+   5950
+  ],
+  "E_TG@16": [
+   5950,
+   5950
+  ]
+ },
+ "B2_f2_plan_mismatch": 0,
+ "C1_phase_agree": [
+  5692,
+  5950
+ ]
+}

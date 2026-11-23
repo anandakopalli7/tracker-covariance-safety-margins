@@ -1,0 +1,311 @@
+{
+ "package": "F",
+ "written": "2026-11-21 02:19:00",
+ "program": "f12_export_v01.py",
+ "program_sha256": "1fe6a86b01d019a530a49a63964a3aa38da76a5ae17b2d130023a95a4f558afc",
+ "lock2_sha256": "02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df",
+ "values": {
+  "F.provenance": "confirmed",
+  "F.n_design": 700,
+  "F.prereg.status": "no_room_design",
+  "F.prereg.horizon": "no measurable room on design data at 2 or 3 s",
+  "F.prereg.design.R3": 0.0,
+  "F.prereg.design.R3.ci": [
+   -0.001121508933525342,
+   0.00224367600918398
+  ],
+  "F.prereg.design.R2": 0.0,
+  "F.prereg.design.R2.ci": [
+   -0.0010266653536866147,
+   0.14191037646077873
+  ],
+  "F.clearance": "departure",
+  "F.design.removed3.F0": 6122,
+  "F.design.removed3.E": 5337,
+  "F.design.removed2.F0": 851,
+  "F.design.removed2.E": 794,
+  "F.design.R3": 0.0907091036584884,
+  "F.design.R3.ci": [
+   0.015225851275179355,
+   0.27972546001349496
+  ],
+  "F.design.R2": 0.04812125497617524,
+  "F.design.R2.ci": [
+   0.01633047755862043,
+   0.08250144753146542
+  ],
+  "F.status": "heldout",
+  "F.horizon": 3,
+  "F.n_heldout": 150,
+  "F.n_dec": 18987,
+  "F.R": -0.0052405586749980256,
+  "F.R.ci": [
+   -0.12711242689910027,
+   0.13370141931318907
+  ],
+  "F.R.level": 0.95,
+  "F.R.cal": "nominal95",
+  "F.R.dec": -0.9950248756218751,
+  "F.R.dec.ci": [
+   -24.13445273631832,
+   25.37350746268668
+  ],
+  "F.RR_N": NaN,
+  "F.RR_N.ci": [
+   -65.69261261261227,
+   4.890753985351354
+  ],
+  "F.RR_N.level": 0.99,
+  "F.RR_N.cal": "nominal99",
+  "F.RR_N.dec": 0.0,
+  "F.RR_N.dec.ci": [
+   -35.617313432835836,
+   7.950373134328353
+  ],
+  "F.IMM.r": -65.33333333333333,
+  "F.IMM.r.ci": [
+   -198.7433333333333,
+   2.0988413134482973
+  ],
+  "F.IMM.r.level": 0.99,
+  "F.IMM.r.cal": "nominal99",
+  "F.IMM.r.dec": -0.9751243781094375,
+  "F.IMM.r.dec.ci": [
+   -53.33870646766184,
+   2.8408208955223833
+  ],
+  "F.IMM.c": 528.0000000000056,
+  "F.IMM.c.ci": [
+   -2.464471195737573,
+   797.1150000000115
+  ],
+  "F.IMM.c.level": 0.99,
+  "F.IMM.c.cal": "nominal99",
+  "F.IMM.c.dec": 7.8805970149253355,
+  "F.IMM.c.dec.ci": [
+   -18.114477611940274,
+   34.86572139303482
+  ],
+  "F.IMM.eff": -0.12373737373737242,
+  "F.IMM.eff.ci": [
+   -5.567502382760129,
+   2.6465703108503047
+  ],
+  "F.IMM.eff.level": 0.95,
+  "F.IMM.eff.cal": "nominal95",
+  "F.R.nonpos_share": 0.77715,
+  "F.IMM.within5": 0.06899843276193521,
+  "F.RR_TG": NaN,
+  "F.RR_TG.ci": [
+   -36.423750000000545,
+   0.4044645669291303
+  ],
+  "F.RR_TG.dec": -1.9900497512438342,
+  "F.RR_TG.dec.ci": [
+   -28.438059701492424,
+   0.9502487562189061
+  ],
+  "F.RR_E5": NaN,
+  "F.RR_E5.ci": [
+   -0.0231610516487962,
+   2.8130434782609415
+  ],
+  "F.RR_E5.dec": 0.0,
+  "F.RR_E5.dec.ci": [
+   -0.47263681592039863,
+   2.7662935323382967
+  ],
+  "F.RR_E5mP": NaN,
+  "F.RR_E5mP.ci": [
+   -0.08322206950716655,
+   4.015181431840372
+  ],
+  "F.RR_E5mP.dec": 0.0,
+  "F.RR_E5mP.dec.ci": [
+   -0.6965174129353057,
+   5.154353233830844
+  ],
+  "F.PO25": NaN,
+  "F.PO25.ci": [
+   -3.184099489229351,
+   2.057325010097272
+  ],
+  "F.PO25.dec": 0.0,
+  "F.PO25.dec.ci": [
+   -14.83171641791041,
+   7.512810945273551
+  ],
+  "F.PO50": NaN,
+  "F.PO50.ci": [
+   -3.8957074721780636,
+   2.9526623014060838
+  ],
+  "F.PO50.dec": -0.9950248756218751,
+  "F.PO50.dec.ci": [
+   -20.33905472636825,
+   10.03532338308461
+  ],
+  "F.PO75": NaN,
+  "F.PO75.ci": [
+   -4.65935609756108,
+   2.960119402985157
+  ],
+  "F.PO75.dec": -1.9900497512438342,
+  "F.PO75.dec.ci": [
+   -22.92039800995027,
+   16.25012437810933
+  ],
+  "F.inpath.R": -0.03444999866817025,
+  "F.inpath.R.ci": [
+   -0.3818374726704522,
+   0.1904186835434826
+  ],
+  "F.inpath.RR_N": NaN,
+  "F.inpath.RR_N.ci": [
+   -20.794920634921706,
+   1.3951700511757492
+  ],
+  "F.inpath.RR_N.dec": -1.900497512437816,
+  "F.inpath.RR_N.dec.ci": [
+   -21.005099502487635,
+   2.164179104477613
+  ],
+  "deviations": [
+   {
+    "item": "True clearance of F (A10 sections 8.1 F-B and 11; departure file notes\\F_DEPARTURE_CLEARANCE_v01.md)",
+    "planned": "clearance of record: minimum rectangle distance to every truth actor over the window (W1)",
+    "done": "(actor, frame) pairs whose actor centre has a negative longitudinal coordinate in the ego frame are dropped; chosen by the coordinator on 19 Nov 2026 (23:58 EST) after the design-split horizon rule stopped F; pinned before any value under it; val unread at the time; the pre-registered outcome is exported as F.prereg.*",
+    "why": "on the design split the stop came from rear-end contacts of the hard-brake fallback by replayed traffic, which does not react to the counterfactual brake (out\\F_ROOM_MECHANISM_T1_train_v01.json)"
+   },
+   {
+    "item": "F sources CK3 and AM (A10 sections 8.2 and 11)",
+    "planned": "RR_gl(CK3) and RR_gl(AM) on the held-out nuScenes scenes",
+    "done": "not computed; F.RR_CK3 and F.RR_AM are absent (departure accepted by the coordinator, 19 Nov 2026, 19:25 EST)",
+    "why": "The triggers need the filter's acceleration-sign history and a primary actor, which the real-log tracker does not provide."
+   },
+   {
+    "item": "TG on nuScenes",
+    "planned": "as of record",
+    "done": "computed, descriptive only",
+    "why": "see the CK3 item; reported for orderings with N"
+   },
+   {
+    "item": "Package B's IMM (B1) on nuScenes",
+    "planned": "frozen B1 tracker",
+    "done": "frozen B1 with exact_trig=False",
+    "why": "the correctly rounded trig functions exist only to reproduce Linux pod logs bit for bit; nuScenes has none"
+   }
+  ]
+ },
+ "own_statuses": {
+  "F_H0": {
+   "passes": false,
+   "rule": "R_gl's lower end > 0 and fewer than 2.5% of scene resamples non-positive"
+  },
+  "F_H1": {
+   "passes": false,
+   "rule": "RR_gl(N) interval inside (-0.05, 0.05)",
+   "confirmed": false
+  },
+  "F_H2": {
+   "classification": "d: inconclusive",
+   "passes": false,
+   "barely_varies": false,
+   "efficiency": null,
+   "confirmed": false
+  }
+ },
+ "extras": {
+  "prereg_share_nonpositive": {
+   "3 s": 0.75265,
+   "2 s": 0.4166
+  },
+  "departure": {
+   "file": "notes\\F_DEPARTURE_CLEARANCE_v01.md",
+   "sha256": "a0be0de7e462281a7e8b95b6b0acf31dd99cdbc38299b6214edd08ad3bd18259"
+  },
+  "design_share_nonpositive": {
+   "3 s": 0.0041,
+   "2 s": 5e-05
+  },
+  "design_removed_contacts_g1": {
+   "3 s": {
+    "n_evaluated": 88737,
+    "rows_unsafe_to_safe": 65560,
+    "rows_safe_to_unsafe": 0,
+    "rows_unsafe_v01": 98890,
+    "rows_unsafe_v02": 33330,
+    "F0": {
+     "wrong_go_v01": 8081,
+     "wrong_go_v02": 1959,
+     "removed": 6122,
+     "added": 0
+    },
+    "E": {
+     "wrong_go_v01": 6922,
+     "wrong_go_v02": 1585,
+     "removed": 5337,
+     "added": 0
+    }
+   },
+   "2 s": {
+    "n_evaluated": 95871,
+    "rows_unsafe_to_safe": 9430,
+    "rows_safe_to_unsafe": 0,
+    "rows_unsafe_v01": 16478,
+    "rows_unsafe_v02": 7048,
+    "F0": {
+     "wrong_go_v01": 1006,
+     "wrong_go_v02": 155,
+     "removed": 851,
+     "added": 0
+    },
+    "E": {
+     "wrong_go_v01": 848,
+     "wrong_go_v02": 54,
+     "removed": 794,
+     "added": 0
+    }
+   }
+  },
+  "design_n_evaluated": {
+   "3 s": 88737,
+   "2 s": 95871
+  },
+  "heldout_n_evaluated_inpath": 8405.0,
+  "IMM_R_pp": 7.860838012497039e-05,
+  "IMM_ratio": {
+   "n": 225237,
+   "median": 1.258951046403781,
+   "q05": 0.549806589703518,
+   "q95": 2.971253638637079,
+   "A": 0.961692297667361,
+   "share_within_5pct": 0.06899843276193521,
+   "barely_varies": false,
+   "q25": 0.862893293038033,
+   "q75": 1.7568704339247565
+  },
+  "T1_ratio": {
+   "n": 226001,
+   "median": 1.1274086993055172,
+   "q05": 0.5720826695565546,
+   "q95": 2.3320097915527334,
+   "A": 0.7805186899304095,
+   "share_within_5pct": 0.18452573218702573,
+   "barely_varies": false,
+   "q25": 0.8273714404707644,
+   "q75": 1.3838529259506334
+  },
+  "second_inner_seed_run": {
+   "run": true,
+   "because": [
+    "r_IMM",
+    "c_IMM"
+   ],
+   "note": "computed on the pod in parallel with the first seed; used only if needed"
+  },
+  "detector_val_NDS": 0.6845417768947929,
+  "detector_val_mAP": 0.6153713531012205,
+  "detector_NDS_reference": 0.685
+ }
+}

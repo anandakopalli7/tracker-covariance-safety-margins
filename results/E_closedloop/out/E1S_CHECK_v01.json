@@ -1,0 +1,165 @@
+{
+ "e1s_pass": true,
+ "jobs": [
+  {
+   "job": "a1e13_e1s_01_v01_crash",
+   "arm": "native",
+   "status": "CAPTURED_AND_REVIEWED",
+   "capture_exit": 0,
+   "review_exit": 0,
+   "review_status": "PASS769_RECORDED_SENSOR_EGO_PREFIX",
+   "review_stages": {
+    "outcome_accounting": "PASS_INDEPENDENT_OUTCOME_ACCOUNTING_ONLY",
+    "perception": "PASS_SAME_RUNTIME_SUCCESSFUL_PERCEPTION_PREFIX",
+    "native_ego_and_geometry": "PASS_ORDERED_GEOMETRY_AND_ARM_EGO_PREFIX"
+   },
+   "actor_review_exit": 0,
+   "actor_review_status": "PASS_RECORDED_ACTOR_REQUEST_AND_PID_REPLAY",
+   "failure": null,
+   "policy_failure": false,
+   "control_identical": true,
+   "capture_wall_seconds": 50.226947,
+   "pass": true
+  },
+  {
+   "job": "a1e13_e1s_01_v01_benign",
+   "arm": "native",
+   "status": "CAPTURED_AND_REVIEWED",
+   "capture_exit": 0,
+   "review_exit": 0,
+   "review_status": "PASS769_RECORDED_SENSOR_EGO_PREFIX",
+   "review_stages": {
+    "outcome_accounting": "PASS_INDEPENDENT_OUTCOME_ACCOUNTING_ONLY",
+    "perception": "PASS_SAME_RUNTIME_SUCCESSFUL_PERCEPTION_PREFIX",
+    "native_ego_and_geometry": "PASS_ORDERED_GEOMETRY_AND_ARM_EGO_PREFIX"
+   },
+   "actor_review_exit": 0,
+   "actor_review_status": "PASS_RECORDED_ACTOR_REQUEST_AND_PID_REPLAY",
+   "failure": null,
+   "policy_failure": false,
+   "control_identical": true,
+   "capture_wall_seconds": 78.608976,
+   "pass": true
+  },
+  {
+   "job": "e1s_v01_e_z_c1109_tune_0000",
+   "arm": "E_Z",
+   "status": "CAPTURED_AND_REVIEWED",
+   "capture_exit": 0,
+   "review_exit": 0,
+   "review_status": "PASS769_RECORDED_SENSOR_EGO_PREFIX",
+   "review_stages": {
+    "outcome_accounting": "PASS_INDEPENDENT_OUTCOME_ACCOUNTING_ONLY",
+    "perception": "PASS_SAME_RUNTIME_SUCCESSFUL_PERCEPTION_PREFIX",
+    "e_record": "PASS_E_RECORD"
+   },
+   "actor_review_exit": 0,
+   "actor_review_status": "PASS_RECORDED_ACTOR_REQUEST_AND_PID_REPLAY",
+   "failure": null,
+   "policy_failure": false,
+   "control_identical": null,
+   "capture_wall_seconds": 74.706547,
+   "pass": true
+  },
+  {
+   "job": "e1s_v01_e_f0_c1109_tune_0000",
+   "arm": "E_F0",
+   "status": "CAPTURED_AND_REVIEWED",
+   "capture_exit": 0,
+   "review_exit": 0,
+   "review_status": "PASS769_RECORDED_SENSOR_EGO_PREFIX",
+   "review_stages": {
+    "outcome_accounting": "PASS_INDEPENDENT_OUTCOME_ACCOUNTING_ONLY",
+    "perception": "PASS_SAME_RUNTIME_SUCCESSFUL_PERCEPTION_PREFIX",
+    "e_record": "PASS_E_RECORD"
+   },
+   "actor_review_exit": 0,
+   "actor_review_status": "PASS_RECORDED_ACTOR_REQUEST_AND_PID_REPLAY",
+   "failure": null,
+   "policy_failure": false,
+   "control_identical": null,
+   "capture_wall_seconds": 76.425283,
+   "pass": true
+  },
+  {
+   "job": "e1s_v01_e_n_c1109_tune_0000",
+   "arm": "E_N",
+   "status": "CAPTURED_AND_REVIEWED",
+   "capture_exit": 0,
+   "review_exit": 0,
+   "review_status": "PASS769_RECORDED_SENSOR_EGO_PREFIX",
+   "review_stages": {
+    "outcome_accounting": "PASS_INDEPENDENT_OUTCOME_ACCOUNTING_ONLY",
+    "perception": "PASS_SAME_RUNTIME_SUCCESSFUL_PERCEPTION_PREFIX",
+    "e_record": "PASS_E_RECORD"
+   },
+   "actor_review_exit": 0,
+   "actor_review_status": "PASS_RECORDED_ACTOR_REQUEST_AND_PID_REPLAY",
+   "failure": null,
+   "policy_failure": false,
+   "control_identical": null,
+   "capture_wall_seconds": 74.049978,
+   "pass": true
+  },
+  {
+   "job": "e1s_v01_e_ck3_c1109_tune_0000",
+   "arm": "E_CK3",
+   "status": "CAPTURED_AND_REVIEWED",
+   "capture_exit": 0,
+   "review_exit": 0,
+   "review_status": "PASS769_RECORDED_SENSOR_EGO_PREFIX",
+   "review_stages": {
+    "outcome_accounting": "PASS_INDEPENDENT_OUTCOME_ACCOUNTING_ONLY",
+    "perception": "PASS_SAME_RUNTIME_SUCCESSFUL_PERCEPTION_PREFIX",
+    "e_record": "PASS_E_RECORD"
+   },
+   "actor_review_exit": 0,
+   "actor_review_status": "PASS_RECORDED_ACTOR_REQUEST_AND_PID_REPLAY",
+   "failure": null,
+   "policy_failure": false,
+   "control_identical": null,
+   "capture_wall_seconds": 76.434549,
+   "pass": true
+  },
+  {
+   "job": "e1s_v01_e_tg_c1109_tune_0000",
+   "arm": "E_TG",
+   "status": "CAPTURED_AND_REVIEWED",
+   "capture_exit": 0,
+   "review_exit": 0,
+   "review_status": "PASS769_RECORDED_SENSOR_EGO_PREFIX",
+   "review_stages": {
+    "outcome_accounting": "PASS_INDEPENDENT_OUTCOME_ACCOUNTING_ONLY",
+    "perception": "PASS_SAME_RUNTIME_SUCCESSFUL_PERCEPTION_PREFIX",
+    "e_record": "PASS_E_RECORD"
+   },
+   "actor_review_exit": 0,
+   "actor_review_status": "PASS_RECORDED_ACTOR_REQUEST_AND_PID_REPLAY",
+   "failure": null,
+   "policy_failure": false,
+   "control_identical": null,
+   "capture_wall_seconds": 74.847184,
+   "pass": true
+  },
+  {
+   "job": "e1s_v01_e_ps_c1109_tune_0000",
+   "arm": "E_PS",
+   "status": "CAPTURED_AND_REVIEWED",
+   "capture_exit": 0,
+   "review_exit": 0,
+   "review_status": "PASS769_RECORDED_SENSOR_EGO_PREFIX",
+   "review_stages": {
+    "outcome_accounting": "PASS_INDEPENDENT_OUTCOME_ACCOUNTING_ONLY",
+    "perception": "PASS_SAME_RUNTIME_SUCCESSFUL_PERCEPTION_PREFIX",
+    "e_record": "PASS_E_RECORD"
+   },
+   "actor_review_exit": 0,
+   "actor_review_status": "PASS_RECORDED_ACTOR_REQUEST_AND_PID_REPLAY",
+   "failure": null,
+   "policy_failure": false,
+   "control_identical": null,
+   "capture_wall_seconds": 72.5718,
+   "pass": true
+  }
+ ]
+}

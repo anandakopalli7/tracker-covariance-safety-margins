@@ -1,0 +1,22 @@
+{
+ "run_id": "pd13_d1v13_stop_and_go_0013_native",
+ "checks": {
+  "receipt_sha256": true,
+  "receipt_status": true,
+  "receipt_frames_dropped_zero": true,
+  "receipt_keep_raw": true,
+  "sweeps_present": true,
+  "sweep_counts_consistent": true,
+  "noisy_sweep_file_sha256_equals_file_hashes": true,
+  "noisy_sweep_array_hash_equals_noise_receipt": true
+ },
+ "failures": {
+  "file_sha": 0,
+  "noise_receipt": 0
+ },
+ "logs_archive": "pd13_d1v13_stop_and_go_0013_native_logs.tar.gz",
+ "logs_sha256": "8bdd65d82bc92f2ea4fa9c38a388a1e6c097744ea1a2fe0c46144a130f269bc1",
+ "logs_bytes": 9292883,
+ "archive_sha256": "eb4a8853da81412035b9076c8900ba4f88761e57376d6ab82dd793853f816247",
+ "pass": true
+}

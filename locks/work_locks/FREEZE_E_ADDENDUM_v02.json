@@ -1,0 +1,34 @@
+{
+ "schema": "FREEZE_ADDENDUM_V13",
+ "package": "E",
+ "addendum": "v02",
+ "freeze_e_sha256": "0a613b6471dfd293a51d1a3e0557e6a830e519759cc65186c033186f4c27da98",
+ "written": "2026-11-19T22:10:26.880120-05:00",
+ "note": "Full laptop arms check (review Minor 10) on all 55 stored lead-braking runs (20 tuning, 35 old evaluation): 12,907 decisions, 219,419 rows; constraint copy, F0/N/CK3/TG critical scales and the E policy decisions at g in {0,0.25,1,4,16} identical to the open-loop arrays of record; F2 plan 0 mismatches. Code tested = FREEZE_E (no code change).",
+ "files": [
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/TEST_E_ARMS_s0n12_v01.json",
+   "bytes": 36819,
+   "sha256": "0cb79c0c0de499fdd925f9b71fb0844f572aa24964cd17c53b6735c3f6c4ba55"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/TEST_E_ARMS_s12n23_v01.json",
+   "bytes": 49366,
+   "sha256": "7c7881de10286da481ebc10867f1bd934d69865adeb3f3562bf22971ab0e22e5"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/arms_all_s0.log",
+   "bytes": 23776,
+   "sha256": "7959b972043626483822835134822a57a7f8dea050ce541155dbe9bbb8bd3ff1"
+  },
+  {
+   "group": "tests",
+   "path": "E_closedloop/tests/out/arms_all_s12.log",
+   "bytes": 31288,
+   "sha256": "c296519ec4476215ec9d482a91c3341df3e89bdcdabafac3fdd58243307a787d"
+  }
+ ]
+}

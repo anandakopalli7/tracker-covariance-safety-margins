@@ -1,0 +1,14 @@
+{
+ "first": "analysis\\out\\C_B7_v13.json",
+ "second": "recount\\out\\RC_B7_v13.json",
+ "tolerance": 1e-09,
+ "summary": {
+  "agree": 76,
+  "disagree": 0,
+  "only_first": 0,
+  "only_second": 0,
+  "ignored": 0
+ },
+ "verdict": "AGREE",
+ "rows": []
+}

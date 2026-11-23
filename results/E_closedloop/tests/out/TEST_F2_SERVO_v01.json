@@ -1,0 +1,42 @@
+{
+ "schema": "E_TEST_F2_SERVO_V01",
+ "runs": [
+  {
+   "desired": 5.0,
+   "ticks": 461,
+   "mismatches": 0,
+   "first_mismatch": null,
+   "brake_k": 199,
+   "first_fallback_k": 199,
+   "model_dist_m": 3.858466866136586,
+   "standstill_k": 226,
+   "standin_car_dist_m": 3.952504012710378,
+   "ratio": 1.0243716351173309
+  },
+  {
+   "desired": 10.0,
+   "ticks": 461,
+   "mismatches": 0,
+   "first_mismatch": null,
+   "brake_k": 199,
+   "first_fallback_k": 199,
+   "model_dist_m": 12.798425506950235,
+   "standstill_k": 244,
+   "standin_car_dist_m": 12.67841660672569,
+   "ratio": 0.990623151249396
+  },
+  {
+   "desired": 15.0,
+   "ticks": 461,
+   "mismatches": 0,
+   "first_mismatch": null,
+   "brake_k": 199,
+   "first_fallback_k": 199,
+   "model_dist_m": 26.738218893709004,
+   "standstill_k": 264,
+   "standin_car_dist_m": 26.240543068230295,
+   "ratio": 0.9813870988394143
+  }
+ ],
+ "all_equal": true
+}

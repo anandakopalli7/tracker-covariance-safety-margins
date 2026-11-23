@@ -1,0 +1,29 @@
+r3_items_v01 start, nboot 20000, numpy 2.5.4
+identity check cCK3: 35 / 35 runs bit-identical; elements differing 0 of 158219
+item 1 done 4 s
+  S17 m=15 400 / 5000, 0 s
+  S17 m=15 4400 / 5000, 1 s
+  S17 m=15 5000 / 5000, 1 s
+  S17 m=20 400 / 5000, 0 s
+  S17 m=20 4400 / 5000, 1 s
+  S17 m=20 5000 / 5000, 1 s
+  S17 m=25 400 / 5000, 0 s
+  S17 m=25 4400 / 5000, 1 s
+  S17 m=25 5000 / 5000, 1 s
+item 2 done 3 s
+  S24b bootstrap 400 / 20000, 0 s
+  S24b bootstrap 4400 / 20000, 4 s
+  S24b bootstrap 8400 / 20000, 8 s
+  S24b bootstrap 12400 / 20000, 12 s
+  S24b bootstrap 16400 / 20000, 15 s
+  S24b bootstrap 20000 / 20000, 19 s
+item 3 done 20 s
+  S25 bootstrap 400 / 20000, 0 s
+  S25 bootstrap 4400 / 20000, 5 s
+  S25 bootstrap 8400 / 20000, 9 s
+  S25 bootstrap 12400 / 20000, 14 s
+  S25 bootstrap 16400 / 20000, 18 s
+  S25 bootstrap 20000 / 20000, 22 s
+item 4 (Table S25) done 24 s
+benign check done: 20 runs, 5420 evaluated decisions, differ g0 0, g1 3, wrong go g0 CK3 0 F0 0
+r3_items_v01 end, 52 s

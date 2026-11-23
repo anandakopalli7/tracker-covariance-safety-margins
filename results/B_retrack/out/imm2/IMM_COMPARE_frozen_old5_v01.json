@@ -1,0 +1,74 @@
+{
+ "code": "imm_compare_v01.py",
+ "constants": "ARS_TRIAL\\revision_v13\\work\\shared\\trackers\\trk_constants_v01.json",
+ "diag": 0.95,
+ "runs": [
+  {
+   "cap": "<library folder>\\fit_finite_0007",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 7.700726378810237e-15,
+   "centre_max_abs_diff": 1.1368683772161603e-13,
+   "velocity_max_abs_diff": 2.1316282072803006e-14,
+   "pass_1e9": true,
+   "seconds": 62.9
+  },
+  {
+   "cap": "<library folder>\\fit_finite_0019",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 1.4379385612173626e-15,
+   "centre_max_abs_diff": 5.684341886080802e-14,
+   "velocity_max_abs_diff": 3.552713678800501e-15,
+   "pass_1e9": true,
+   "seconds": 68.0
+  },
+  {
+   "cap": "<library folder>\\fit_finite_0033",
+   "frames": 19,
+   "frames_b": 19,
+   "ids_identical": true,
+   "track_states": 19,
+   "car_states": 19,
+   "P9_max_rel_diff": 4.704880954038684e-15,
+   "centre_max_abs_diff": 5.684341886080802e-14,
+   "velocity_max_abs_diff": 7.771561172376096e-15,
+   "pass_1e9": true,
+   "seconds": 61.4
+  },
+  {
+   "cap": "<library folder>\\c1109_tune_0004",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 1.1102494578405805e-14,
+   "centre_max_abs_diff": 2.2737367544323206e-13,
+   "velocity_max_abs_diff": 1.0658141036401503e-14,
+   "pass_1e9": true,
+   "seconds": 59.0
+  },
+  {
+   "cap": "<library folder>\\c1109_tune_0064",
+   "frames": 69,
+   "frames_b": 69,
+   "ids_identical": true,
+   "track_states": 69,
+   "car_states": 69,
+   "P9_max_rel_diff": 7.210421263280558e-15,
+   "centre_max_abs_diff": 1.1368683772161603e-13,
+   "velocity_max_abs_diff": 1.7763568394002505e-14,
+   "pass_1e9": true,
+   "seconds": 61.1
+  }
+ ],
+ "all_pass": true,
+ "written": "2026-11-19 15:27:47"
+}

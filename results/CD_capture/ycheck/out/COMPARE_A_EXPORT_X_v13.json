@@ -1,0 +1,23 @@
+{
+ "schema": "COMPARE_Y_V13",
+ "first": "out\\A_EXPORT_X.json",
+ "second": "out\\A_RECOUNT_X.json",
+ "tolerance": 1e-09,
+ "verdict": "AGREE",
+ "summary": {
+  "agree": 68,
+  "disagree": 0,
+  "only_first": 1,
+  "only_second": 0
+ },
+ "rows": [
+  {
+   "key": "X.PC.RR_N.dec.ci",
+   "status": "only_first",
+   "value": [
+    -32.43283582089552,
+    6.303606965174128
+   ]
+  }
+ ]
+}

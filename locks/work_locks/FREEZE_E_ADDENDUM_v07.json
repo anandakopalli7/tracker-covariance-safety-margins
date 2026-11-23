@@ -1,0 +1,306 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "package": "E",
+ "set": "E4 (A11 \u00a76d)",
+ "session": "E (Claude Opus 5.5)",
+ "written": "2026-11-21T14:46:32.812424-05:00",
+ "before": "any E4 study run (LOCK_A11b.txt does not exist; only the smoke ran, its runs are not study runs)",
+ "lock_a11b_exists": false,
+ "pretext": {
+  "path": "shared notes E_DROPOUT_A11_6d_v03.md (merged into A11 \u00a76d)",
+  "sha256": "51352d7f9b10361e6fa47c042e20fda56b27c14dbe070c6716c6af62ac33cf93"
+ },
+ "note": "E4 build of record: packet_e_v04 (src_v04 overlay on packet_d1_v13), law A11D2 (A11 \u00a76c final), punish_num 3 pinned; locked mask table E4_MASKS_v01 (61 cases) = E law = F dr_masks_v02 = second program (0 mismatches). Cross-model review (Fable 5.2) PASS WITH FIXES, re-review PASS. Laptop tests PASS (law, CANMOT output rule, masked IMM replay identity 0.0). Smoke on claude-v13e-10 PASS (E4S_CHECK_v01: 4 masked runs pass incl. exact CANMOT perception replay and IMM no-update check; unmasked E3 reproduction bit-identical apart from a constant CARLA frame offset 437; A1 admission and control identical). Lists: E4L then E4H on claude-v13e-11..16 (240 + 240). First program e4_analyse_v01 / run_e4_v01; second program e_recount_v04 + e_recount_export_e4_v01 (Sonnet).",
+ "files": [
+  {
+   "path": "E_closedloop/src_v04/cuda_entry_smoke_v01.py",
+   "bytes": 1598,
+   "sha256": "2bf8d6cb4d022e1545a7eab8c9fb6bcac2021d4baedd70d0ff41de3c8782dcfa"
+  },
+  {
+   "path": "E_closedloop/src_v04/e_arms_v01.py",
+   "bytes": 19264,
+   "sha256": "81aa894ad4f14f24e2c2a4b1413b8882c3c85bd156125e1226ce49c2a2e09771"
+  },
+  {
+   "path": "E_closedloop/src_v04/e_dropout_v01.py",
+   "bytes": 3682,
+   "sha256": "6d47f1317af07a51daa5d19baf1b66bc0c1191085777c677c10414f39cb5d26d"
+  },
+  {
+   "path": "E_closedloop/src_v04/E_F2_PLANT_v01.json",
+   "bytes": 788,
+   "sha256": "55b8eb4051d736e63b37ac26d46c956903598228640c95d4258724488d04b6fc"
+  },
+  {
+   "path": "E_closedloop/src_v04/e_imm_v01.py",
+   "bytes": 3278,
+   "sha256": "73df9d62923d3f56cd32303d1dac426c21e4e33fbd95beb63a5df80604300300"
+  },
+  {
+   "path": "E_closedloop/src_v04/E_PBAR_CANMOT_v01.json",
+   "bytes": 1589,
+   "sha256": "fd89f69ed5c96589fa70604161d0d68adb5469220be375eab76d62c853ba0b65"
+  },
+  {
+   "path": "E_closedloop/src_v04/E_PBAR_IMM_v01.json",
+   "bytes": 1379,
+   "sha256": "1cba70a1029c5c764d473a1682f55d4283f391642b946665d8417e84d9d95f68"
+  },
+  {
+   "path": "E_closedloop/src_v04/e_sources_v01.py",
+   "bytes": 14305,
+   "sha256": "a72f2bf9c7a0a8837b8c09e28ebc6a43f5b5fb2927f4c9ce1650f6e122ab4369"
+  },
+  {
+   "path": "E_closedloop/src_v04/probe_e_v01.py",
+   "bytes": 32367,
+   "sha256": "dbbbafb79ea3a8848a7436de2084b17154d85320c6926c1984b398f81a54f2ac"
+  },
+  {
+   "path": "E_closedloop/src_v04/worker_main_v01.py",
+   "bytes": 30336,
+   "sha256": "d9fd57f79b1a82a74c13093c24a06996eaff2de817ab0a0679dd527066e51a60"
+  },
+  {
+   "path": "E_closedloop/src_v04/review/review_case_e_v01.py",
+   "bytes": 8484,
+   "sha256": "07b7c638f0344c4214318e28aa5d861b9cae04de1d751da01fb499f780806d55"
+  },
+  {
+   "path": "E_closedloop/src_v04/review/review_perception_prefix_v01.py",
+   "bytes": 11145,
+   "sha256": "5ae72eb6cf8c27d7ce76bcbac4df248d96e97bdce3385b87fe93ee78ccf0cfd8"
+  },
+  {
+   "path": "E_closedloop/src_v04/trackers_b/trk_constants_v01.json",
+   "bytes": 1344,
+   "sha256": "d8455cb50b637a3ce45460a0dee38f79b69fce4c085c913f713b56ac23338a9d"
+  },
+  {
+   "path": "E_closedloop/src_v04/trackers_b/trk_env_v01.py",
+   "bytes": 3533,
+   "sha256": "0219dd2ed6517109a3c913430a2f30ca756fc01f4f003c1347c4ddd4a9628cad"
+  },
+  {
+   "path": "E_closedloop/src_v04/trackers_b/trk_exact_math_v01.py",
+   "bytes": 6649,
+   "sha256": "6a42ece0b2255e4c2ec15a5651ee8ac65671e63cce01895e1ff4227ead86f541"
+  },
+  {
+   "path": "E_closedloop/src_v04/trackers_b/trk_filters_v01.py",
+   "bytes": 18493,
+   "sha256": "9edfdd6cb5642c1618d41ccb3def176251074a3beaf703d8589df58018304dbb"
+  },
+  {
+   "path": "E_closedloop/src_v04/trackers_b/trk_tracker_v01.py",
+   "bytes": 9506,
+   "sha256": "5cf4ad3baf81b614b18facc3fe4b3bc6506f867350d5b6216fce5ed725cfdef8"
+  },
+  {
+   "path": "E_closedloop/packets/packet_e_v04.tar.gz",
+   "bytes": 7810248,
+   "sha256": "b8d3fd1587da32ee3f5f15f8fdf46dbcec933d04819aa229db6e4dc59da13820"
+  },
+  {
+   "path": "E_closedloop/packets/packet_e_v04_RECEIPT.json",
+   "bytes": 6343,
+   "sha256": "255e5901821d89b496c8b706e18cc81ac9870f880e2e9f3a3f5109754e4ce492"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E4H_claude-v13e-11_v01.json",
+   "bytes": 14195,
+   "sha256": "3518b5abec633b9ba8e4dc29e10d244a50f3b2ed662b28cfef4204f8515ca60c"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E4H_claude-v13e-12_v01.json",
+   "bytes": 14195,
+   "sha256": "18120b544a2387e4b7f18d394b8716b90b41a3267f94c35b1f33260c11648a0c"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E4H_claude-v13e-13_v01.json",
+   "bytes": 14195,
+   "sha256": "e8a2a628d070fd777e68c70d1872fea45c0be89220eb0c895dbaa9f986d38342"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E4H_claude-v13e-14_v01.json",
+   "bytes": 14195,
+   "sha256": "2078c7c415532ade86e6e909961260f1f5f00a0d05cf59fe728e8db72dc1ee1e"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E4H_claude-v13e-15_v01.json",
+   "bytes": 14195,
+   "sha256": "bf6be4adabd39b19a5b95b500bd62a6714c8f8ac359d8925c2d04a928923a09e"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E4H_claude-v13e-16_v01.json",
+   "bytes": 14195,
+   "sha256": "b1e1550bfe85d362a89ab3da55b615c61e4ee5cacc8cd7f3f24ad84634d311d0"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E4L_claude-v13e-11_v01.json",
+   "bytes": 14195,
+   "sha256": "fbc5eb689da1206ca811f352e7345b4106d0f8138178f8406b246fab8f52193f"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E4L_claude-v13e-12_v01.json",
+   "bytes": 14195,
+   "sha256": "5cd8e9f49746a07aac14103bd3d7cc3e4562ae81870b76cf4a5db1ef578eeae3"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E4L_claude-v13e-13_v01.json",
+   "bytes": 14195,
+   "sha256": "9d9c92728c623bb2c7292f3ce6de73f7f6768b72256fcd6be90453a90e88f483"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E4L_claude-v13e-14_v01.json",
+   "bytes": 14195,
+   "sha256": "048b104b6ed9978fbcfecddae9d514faf436b4614e7a5429c4928b50c864e269"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E4L_claude-v13e-15_v01.json",
+   "bytes": 14195,
+   "sha256": "c020d9e92418bbc7c952c05d4e86ef545d15551458dccde48d2dcc1198247786"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E4L_claude-v13e-16_v01.json",
+   "bytes": 14195,
+   "sha256": "4c92bd48c639aa02c3d4983106458fb856574b476197f5b42a59d2deca7cd816"
+  },
+  {
+   "path": "E_closedloop/jobs/JOBS_E4S_claude-v13e-10_v01.json",
+   "bytes": 3729,
+   "sha256": "fd4a3c0892b3d76f122e84e9e56e356e52caca8772f7a4c913764b7cece59a73"
+  },
+  {
+   "path": "E_closedloop/out/E4_MASKS_v01.json",
+   "bytes": 21335,
+   "sha256": "c66d91923ae4d87ac7e49ac70fba98828434ae64de0954f15078ff80f2997313"
+  },
+  {
+   "path": "E_closedloop/out/E4S_CHECK_v01.json",
+   "bytes": 3085,
+   "sha256": "69fb44d1809a34eb037a393bebcf94a143c8b6e7edb220f704e28fdcb53d2f35"
+  },
+  {
+   "path": "E_closedloop/analysis/e4_analyse_v01.py",
+   "bytes": 12647,
+   "sha256": "26b42ddcf1aeeabaec85792223487532f325990a4639be76cf3a3570ab0daad7"
+  },
+  {
+   "path": "E_closedloop/analysis/run_e4_v01.py",
+   "bytes": 4866,
+   "sha256": "c4de652032cf76f0bcd59ed461461c2afe297f8bc7eb463e1d47b9f8557748fb"
+  },
+  {
+   "path": "E_closedloop/analysis/e_compare_v01.py",
+   "bytes": 7737,
+   "sha256": "e6f887ab8781b2101c12315ad558f6788d583599073f77e1bff4c2092cc778a4"
+  },
+  {
+   "path": "E_closedloop/tools/make_jobs_e4_v01.py",
+   "bytes": 4757,
+   "sha256": "3901e1bf39bf3f25a7f7cf5c028b50e686141decc0f2f46acba9f83bdd9e14db"
+  },
+  {
+   "path": "E_closedloop/tools/auto_e4h_v01.py",
+   "bytes": 4868,
+   "sha256": "722283ea89378bd5151a2d8ded399a34033e6beae83fc28f154aed69aaf8e1a6"
+  },
+  {
+   "path": "E_closedloop/tools/finish_pod_e4_v01.py",
+   "bytes": 3209,
+   "sha256": "815a14ab41b4e2a0656d17411a6e35c2e4a42638fa982450f52b9460a9ec7515"
+  },
+  {
+   "path": "E_closedloop/tools/e4s_check_v01.py",
+   "bytes": 6378,
+   "sha256": "e1672b165229bac2375ba3be61135fceeffd9a6b8a43704da56bedad9e7a645a"
+  },
+  {
+   "path": "E_closedloop/tools/acquire_e_v02.py",
+   "bytes": 3629,
+   "sha256": "2cced2751aa3d129f38213d8d4cc6ac6bbecb6e4095172bee53b4fbc8471337c"
+  },
+  {
+   "path": "E_closedloop/tools/terminate_e_v01.py",
+   "bytes": 2834,
+   "sha256": "457f575e2e70650c36d2611e16feda119369ab12eda3b54029773ec87158ebf0"
+  },
+  {
+   "path": "E_closedloop/tools/build_e_packet_v01.py",
+   "bytes": 4744,
+   "sha256": "2665cc84e6e816cbe67f8748efad5786c7ebc7b27d5297d5c870f8e2e2b24284"
+  },
+  {
+   "path": "E_closedloop/tests/test_e4_dropout_v01.py",
+   "bytes": 14201,
+   "sha256": "50d9f369bc0ae0539cc31e9d9e10ece15a63e75a07d4780f4dc1a78b488dd21a"
+  },
+  {
+   "path": "E_closedloop/tests/test_e4_analyse_dry_v01.py",
+   "bytes": 1775,
+   "sha256": "53be9914d28b09bc7ff99afab1662ec3a7959420b5bdc30df97f9def7f24a271"
+  },
+  {
+   "path": "E_closedloop/tests/out/E4_LAW_TEST_v02.json",
+   "bytes": 1717,
+   "sha256": "1e030f8f57dca6dd20c81c1ebced41b2dcbcd30d6559ea55a73e098a8fa7ade7"
+  },
+  {
+   "path": "E_closedloop/tests/out/E4_CANMOT_OUTPUT_TEST_v02.json",
+   "bytes": 4004,
+   "sha256": "c77b4579f7b96a01a8c8353cc5ab8c5da39e513c8f3421570138e4940d73b513"
+  },
+  {
+   "path": "E_closedloop/tests/out/E4_IMM_MASKED_REPLAY_v02.json",
+   "bytes": 289,
+   "sha256": "39deeb3d4d2e2289637f70537cf96ddf26c9a89585e98ec5ad5b43d648955a1a"
+  },
+  {
+   "path": "E_closedloop/tests/out/E4_F_CROSSCHECK_v01.json",
+   "bytes": 741,
+   "sha256": "057f85735e3bcbd487b840773021091ade02cdf241a4bd550dfe511a5aefe074"
+  },
+  {
+   "path": "E_closedloop/tests/out/E4_EXPORT_KEYS_v01.json",
+   "bytes": 3848,
+   "sha256": "5be455c26e4ef0a14fba7691f98554e8ea7ac70f9f2ec067bcac40a2d6256219"
+  },
+  {
+   "path": "E_closedloop/review/REVIEW_E4_BUILD_v01.md",
+   "bytes": 10429,
+   "sha256": "3d126fb894940281a063716d59a882e0613a959ade9d76e9f12203a2a9eec83a"
+  },
+  {
+   "path": "E_closedloop/review/E4_V04_DIFF_v03.patch",
+   "bytes": 21448,
+   "sha256": "cd6afd66c80829819754ade56a1454492206bd6d0620f2d06b4ee56e6e3fd6c4"
+  },
+  {
+   "path": "E_closedloop/recount/e_recount_v04.py",
+   "bytes": 51043,
+   "sha256": "2b528c0b917e2cc163263d96fca90f7d3e384ca67ecde02354b8f33d868b5c26"
+  },
+  {
+   "path": "E_closedloop/recount/e_recount_export_e4_v01.py",
+   "bytes": 6886,
+   "sha256": "b0254d6af89c119dcee9416ff5f69acd1f1f84b7bf9cf200d1780a75b8d8e2b5"
+  },
+  {
+   "path": "E_closedloop/recount/README_E4_v01.md",
+   "bytes": 3549,
+   "sha256": "2e4bd8f804e8aefffbe4605bb76fa25b6a4b33a1090481e7d031fbc40353c318"
+  },
+  {
+   "path": "E_closedloop/recount/test/make_synth_e4.py",
+   "bytes": 4150,
+   "sha256": "8527a5bc35f7ab7430d691d9024c34d2b75bbdea5afe1dd6e03c2aad826a6a73"
+  },
+  {
+   "path": "E_closedloop/recount/test/test_mask_law_v04.py",
+   "bytes": 1800,
+   "sha256": "f3a87ad04b5d36e9067615ee87788e65569562d9139758185e5c81d9a13c96e6"
+  }
+ ]
+}

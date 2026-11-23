@@ -1,0 +1,152 @@
+{
+ "program": "x_trk_extract_v13.py",
+ "gate": "TEST_OLD: old runs only; no fresh value",
+ "test_old": true,
+ "combos": [
+  "B7_2_0",
+  "B7_2_0.1",
+  "B7_5_0",
+  "B7_5_0.1",
+  "B7_5_0.2",
+  "B7_10_0",
+  "B7_10_0.1",
+  "B7_10_0.2"
+ ],
+ "runs": [
+  "p1b_fit_finite_0037"
+ ],
+ "out_root": "analysis\\out\\testold_b7_arrays_final",
+ "workers": 2,
+ "jobs": [
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_2_0",
+   "status": "ok",
+   "seconds_retrack": 22.473594299983233,
+   "seconds_extract": 40.75324120000005,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_2_0.1",
+   "status": "ok",
+   "seconds_retrack": 21.069398900028318,
+   "seconds_extract": 55.39559830003418,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_5_0",
+   "status": "ok",
+   "seconds_retrack": 8.017355100018904,
+   "seconds_extract": 61.99679410003591,
+   "n_dec": 300,
+   "n_det_rows": 171
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_5_0.1",
+   "status": "ok",
+   "seconds_retrack": 10.327751900069416,
+   "seconds_extract": 39.683210799936205,
+   "n_dec": 300,
+   "n_det_rows": 171
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_5_0.2",
+   "status": "ok",
+   "seconds_retrack": 6.31489389995113,
+   "seconds_extract": 32.77120279998053,
+   "n_dec": 300,
+   "n_det_rows": 171
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_10_0",
+   "status": "ok",
+   "seconds_retrack": 19.36101490003057,
+   "seconds_extract": 40.761537799960934,
+   "n_dec": 300,
+   "n_det_rows": 341
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_10_0.1",
+   "status": "ok",
+   "seconds_retrack": 27.925157699966803,
+   "seconds_extract": 33.518330899998546,
+   "n_dec": 300,
+   "n_det_rows": 341
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_10_0.2",
+   "status": "ok",
+   "seconds_retrack": 8.575723199988715,
+   "seconds_extract": 33.09159510000609,
+   "n_dec": 300,
+   "n_det_rows": 341
+  }
+ ],
+ "seconds": 451.63553285598755,
+ "written": "2026-11-20 03:27:16",
+ "counts": {
+  "ok": 8,
+  "exists": 0,
+  "waiting": 0,
+  "ERROR": 0
+ },
+ "cost_seconds_per_run": {
+  "B7_2_0": {
+   "n": 1,
+   "retrack_mean": 22.473594299983233,
+   "extract_mean": 40.75324120000005,
+   "total_mean": 63.22683549998328
+  },
+  "B7_2_0.1": {
+   "n": 1,
+   "retrack_mean": 21.069398900028318,
+   "extract_mean": 55.39559830003418,
+   "total_mean": 76.4649972000625
+  },
+  "B7_5_0": {
+   "n": 1,
+   "retrack_mean": 8.017355100018904,
+   "extract_mean": 61.99679410003591,
+   "total_mean": 70.01414920005482
+  },
+  "B7_5_0.1": {
+   "n": 1,
+   "retrack_mean": 10.327751900069416,
+   "extract_mean": 39.683210799936205,
+   "total_mean": 50.01096270000562
+  },
+  "B7_5_0.2": {
+   "n": 1,
+   "retrack_mean": 6.31489389995113,
+   "extract_mean": 32.77120279998053,
+   "total_mean": 39.08609669993166
+  },
+  "B7_10_0": {
+   "n": 1,
+   "retrack_mean": 19.36101490003057,
+   "extract_mean": 40.761537799960934,
+   "total_mean": 60.1225526999915
+  },
+  "B7_10_0.1": {
+   "n": 1,
+   "retrack_mean": 27.925157699966803,
+   "extract_mean": 33.518330899998546,
+   "total_mean": 61.44348859996535
+  },
+  "B7_10_0.2": {
+   "n": 1,
+   "retrack_mean": 8.575723199988715,
+   "extract_mean": 33.09159510000609,
+   "total_mean": 41.667318299994804
+  }
+ }
+}

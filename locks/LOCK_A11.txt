@@ -1,0 +1,57 @@
+LOCK_A11 (stage 1 of 2): AMENDMENT_11's pedestrian-crossing test (X), the adaptive filter against its permuted twin (Y) and the IMM re-tune addendum (B1r)
+Written: 21 Nov 2026 14:23:45 EST by the laptop clock, by the coordinating session (Claude Opus 5.5), with work\shared\tools\make_lock_a11_v01.py (sha256 0f5c6b594e713c409e52fcd4b06526dda04cbed613b0422feed45dfbde81c2d9).
+
+Amendment: revision_v13\AMENDMENT_11_v13.md, sha256 9aab822c88f736c9eb9e7a165c2d8359e062cc3eb9becb00a2c77cffee92c487, modified 21 Nov 14:16:57.
+Snapshot copy at this lock: revision_v13\AMENDMENT_11_v13_at_LOCK_A11.md (identical bytes).
+
+Freezes, verified layered at writing (verify_freeze.layered; 0 mismatches required):
+- B (FREEZE_B + add1-add9): layered 10 manifests: 221 files, 221 match, 0 not
+    FREEZE_B.json  sha256 1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152  modified 19 Nov 20:38:46
+    FREEZE_B_add1.json  sha256 9b71225a10645bfd28b2e43a2a05578f6131ed6ec8443f14125672d480927ad6  modified 19 Nov 21:03:04
+    FREEZE_B_add2.json  sha256 6ffc5cd975b5ba91c597a1f989a1c649ca4bbbcf2244642577484f4b4341c39b  modified 20 Nov 01:09:19
+    FREEZE_B_add3.json  sha256 549ac106adb20e6eb9cae16088c231665c6f006fada64ec3eea15d1025970831  modified 20 Nov 03:36:24
+    FREEZE_B_add4.json  sha256 23f374c013510e0eadd8f7de574f61c8eaec1021669d799148266e8c9f269e7e  modified 21 Nov 02:32:44
+    FREEZE_B_add5.json  sha256 d91d1e5a55edb5224f8c150c46cee58ce30d70681fab8d76f1830ae6f5672ee0  modified 21 Nov 02:37:32
+    FREEZE_B_add6.json  sha256 bd24dc97ca4f0e2b7817e5ea6d0bc3da043aa68d8aa4dc1ca2ff21445b0bd4ed  modified 21 Nov 13:38:26
+    FREEZE_B_add7.json  sha256 d06cc48bbe89ec87b3927c962c041b31b5e7aab1dccbe570188a331e0a7b0c12  modified 21 Nov 13:45:37
+    FREEZE_B_add8.json  sha256 9c87f029ec3ed6438aea9dd60835a1ad1067ec0490190d5d89beee6a13d7b751  modified 21 Nov 14:06:57
+    FREEZE_B_add9.json  sha256 2e51dae7edb9aa9bd6da4203ee30c4cbb386a3bf31998ed537f3c173b415a341  modified 21 Nov 14:22:48
+- CD (FREEZE_CD chain + add3): layered 9 manifests: 263 files, 263 match, 0 not
+    FREEZE_CD.json  sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7  modified 20 Nov 03:40:55
+    FREEZE_CD_add1.json  sha256 0e562f346cdd64feaed605041565d44b3d6f2f2a8639d33ff955a33fadb2730f  modified 20 Nov 03:44:34
+    FREEZE_CD_add2.json  sha256 df4e03c9a00df30f7b0159f8585df911a4b202745817241854462030f4d46d02  modified 20 Nov 23:43:41
+    FREEZE_CD_2.json  sha256 1039025ce46a9de60163f4468535b227ca0ec3e8d2705af293bfbaa54797a8a0  modified 20 Nov 05:59:53
+    FREEZE_CD_2_add1.json  sha256 e4e311049433f80a6f7a29cbe89543d95aceaa2377163c85fe8cdeded0b74161  modified 21 Nov 00:58:31
+    FREEZE_CD_2_add2.json  sha256 1e8f131d6b992e5e47efb5b8ef170f95cd41c755353046cd84da3e2b4c9114e2  modified 21 Nov 01:04:05
+    FREEZE_CD_2_add3.json  sha256 dc48da9fe515eb05a93f51aca51cab6e8ec6fa8223b59927990ef72a59c72b3b  modified 21 Nov 01:08:49
+    FREEZE_CD_2_add4.json  sha256 9686b38f308553c5d090d32d8c011ba1f3edf6cd97cdd44d034de2a1c91b7e92  modified 21 Nov 02:35:17
+    FREEZE_CD_add3.json  sha256 c372c0dd2aa874cef9b3599d15731a24f1dd82e1cc37c49208a7d2d785bcad40  modified 21 Nov 14:23:05
+
+Files (path, sha256, modified):
+- A10 first lock: LOCK_A10_1.txt  sha256 2fe694042145f565fe2800e0679a22a3f2d85fa17c6bbef4680b4af662101581  modified 19 Nov 14:05:39
+- A10 second lock, stage 1: LOCK_A10_2.txt  sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df  modified 20 Nov 03:41:23
+- A10 second lock, stage 2: LOCK_A10_2c.txt  sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6  modified 20 Nov 06:03:04
+- A10 erratum: LOCK_A10_2c_ERRATUM_v01.txt  sha256 9593498993734839b3647e37c6fc62060c2c5bf328c6a468be6786e17d4b6ea4  modified 21 Nov 04:21:24
+- E matched settings lock: locks/LOCK_A10_2b.txt  sha256 81d3a77ada225718987d745e7ee2faaa4ef49c3c5e50b7a2ab81ade76cd5e867  modified 19 Nov 20:33:31
+- Step 0 (first program): B_retrack/out/step0/STEP0_CROSSING_v01.json  sha256 1d0322910e072657e5fdaaaa89f2d82a73f028ae879ad2f6baa82b6822e06610  modified 21 Nov 13:35:36
+- Step 0 export: B_retrack/out/step0/A_EXPORT_S0.json  sha256 2e94463c1fe4841e239cd0fe8beb910534b30f9a9e73914fac5c666ad1cb8b8f  modified 21 Nov 13:42:21
+- Step 0 recount: shared/checks/step0_recount/A_RECOUNT_S0.json  sha256 9c23f698deef875136a37841ce7579757c4bc4c923bbf34c77cdf19e81386769  modified 21 Nov 13:51:22
+- Step 0 comparison: shared/checks/step0_recount/STEP0_COMPARE_v01.json  sha256 b321711fe071b0ad3528bffc9f85af4955e4731281f7b9ec688a3614a033e35a  modified 21 Nov 13:52:02
+- X case file: CD_capture/crossing/CASES_X_PC_v13.json  sha256 58902be5ce022b314148308140cb8fc9373bc7aee401531367d456755409a31e  modified 21 Nov 14:10:10
+- B1r constants: B_retrack/out/b3/B1R_CONSTANTS_v02.json  sha256 28b2e9da92cdb3ebf2d5aa236b05ce09825bcabf84ff8afda469032f8b4b0a45  modified 21 Nov 14:04:38
+- B1r class average (P-bar, tuning runs): B_retrack/out/pbar/PBAR_B1R_v02.json  sha256 075ce6b68d766ae6f8532c001f31f82d836c84006fdeccb75dab248872818c8d  modified 21 Nov 14:22:25
+- X definitions: CD_capture/crossing/CD_DEFINITIONS_X_v13.md  sha256 17e3e29abd87fe71578acd0c976f47f38eba67afc97d1d65fb85d8e97d37a71f  modified 21 Nov 14:20:16
+
+Sealing evidence (each pattern must match no file at writing):
+- X: no fresh pedestrian-crossing arrays or results on the laptop: CD_capture/crossing/**/*pc13x_*  -> 0 file(s)
+- X: no first-program X result file other than old-run tests: CD_capture/crossing/out/X_*  -> 0 file(s)
+- B1r: no fresh re-track under B1r: B_retrack/out/retrack_b1r/**/*pc13_*  -> 0 file(s)
+
+State at writing (coordinator's statement):
+- Capture of the fresh pedestrian-crossing runs (session CD) began on pods at about 14:12 EST, before this lock, as A11 section 3.3 allows. It is sealed: receipts and pass/fail counts only. No fresh crossing run has been extracted, scored or read.
+- No value of Y exists: no permuted or per-decision-factor B2 value on fresh runs (session B, about 13:50). The fresh B2 values B.AQ.* were seen before Y was specified, and A11 section 6b discloses it.
+- B1r: constants were tuned on tuning runs only (FREEZE_B_add8). Its class average on the 120 tuning runs (A10 section 2.1) was computed 14:07-14:22 and frozen as data in FREEZE_B_add9. No fresh run has been re-tracked or scored under B1r.
+- Step 0 values (stored runs, exploratory) exist and were recounted (156 of 156; 57 of 57).
+- The descriptive outputs of A11 section 3.6 and Y's code are frozen in FREEZE_CD_add4 before their first run; its hash is sent to the coordinator and listed in the supplement, as for LOCK_A10_2c.
+- Sections 6c (DR, detection dropouts, open loop) and 6d (E4, closed loop with dropouts) are drafts in this snapshot and are NOT locked by this file. LOCK_A11b locks them before any DR or E4 value or E4 capture, and records which sections changed after this lock.
+- Departure recorded before any fresh value: pedestrian crossing is tested despite the step-0 no-go, by the author's decision of about 14:05 EST (A11 section 2).

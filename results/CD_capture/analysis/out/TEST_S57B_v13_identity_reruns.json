@@ -1,0 +1,49 @@
+{
+ "written": "2026-11-20 05:47:09",
+ "comparisons": [
+  {
+   "a": "TESTOLD_S57B_v13.json",
+   "b": "TESTOLD_S57B_v13_final.json",
+   "what": "per-population table sets (final code) vs one multi-mask table set",
+   "n_keys_a": 282,
+   "n_keys_b": 282,
+   "n_differ": 0,
+   "differ": [],
+   "code_sha256_a": "bd96fe43a04baf950ee0ceec4a7233f00fd014d89da31bd33416760a4ef390fb",
+   "code_sha256_b": "65e459882b211a6c4b9efa371eff899f0fb99079bf5200b3eeab4d9ce8f8d975"
+  },
+  {
+   "a": "TESTOLD_S57B_v13_gridless_truth_b2000.json",
+   "b": "TESTOLD_S57B_v13_gridless_truth_b2000_final.json",
+   "what": "unfiltered vs event-filtered gl_fast",
+   "n_keys_a": 282,
+   "n_keys_b": 282,
+   "n_differ": 0,
+   "differ": [],
+   "code_sha256_a": "bd96fe43a04baf950ee0ceec4a7233f00fd014d89da31bd33416760a4ef390fb",
+   "code_sha256_b": "34a0e2eeb681d5a391e42dd2cfa8053fd4e2e77148711eb6d8d4884bc09dc931"
+  },
+  {
+   "a": "TESTOLD_S57B_v13_grid_truth.json",
+   "b": "TESTOLD_S57B_v13_grid_truth_final.json",
+   "what": "grid path, before vs after the last edits",
+   "n_keys_a": 282,
+   "n_keys_b": 282,
+   "n_differ": 0,
+   "differ": [],
+   "code_sha256_a": "366153ba0bdddb173326a326ba60b93a7dfc1e09160c7d67efdccc6d1adcafa5",
+   "code_sha256_b": "34a0e2eeb681d5a391e42dd2cfa8053fd4e2e77148711eb6d8d4884bc09dc931"
+  },
+  {
+   "a": "TESTOLD_S57B_v13_gridless_est_b2000.json",
+   "b": "TESTOLD_S57B_v13_gridless_est_b2000_extrecord.json",
+   "what": "RSX arrays re-extracted by x_rsx_extract_v13.py vs revision_v11 out/ext of record",
+   "n_keys_a": 282,
+   "n_keys_b": 282,
+   "n_differ": 0,
+   "differ": [],
+   "code_sha256_a": "bd96fe43a04baf950ee0ceec4a7233f00fd014d89da31bd33416760a4ef390fb",
+   "code_sha256_b": "34a0e2eeb681d5a391e42dd2cfa8053fd4e2e77148711eb6d8d4884bc09dc931"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "code": "b_b12x_second_v01.py compare",
+ "keys_compared": 86,
+ "keys_agree": 86,
+ "disagree": [],
+ "only_first": [],
+ "only_second": [],
+ "only_second_by_design": [],
+ "all_agree": true,
+ "first_sha256": "18a99a90ee71ddd54e3e9714a6e035ce085f9c8a3a4c66822d778fb865300698",
+ "second_sha256": "995e9f1f619a3d3e4bbbeef290e907894c37bc5dcfdc2146e0a2e55fa17e6e2a",
+ "written": "2026-11-22 03:39:29"
+}

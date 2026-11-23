@@ -1,0 +1,640 @@
+{
+ "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df",
+ "set": "d1",
+ "variants": [
+  "CV0"
+ ],
+ "runs": [
+  {
+   "run": "pd13_d1v13_constant_0000_native",
+   "res": {
+    "CV0": "ok 64 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0001_native",
+   "res": {
+    "CV0": "ok 99 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0002_native",
+   "res": {
+    "CV0": "ok 66 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0003_native",
+   "res": {
+    "CV0": "ok 112 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0004_native",
+   "res": {
+    "CV0": "ok 91 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0005_native",
+   "res": {
+    "CV0": "ok 64 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0006_native",
+   "res": {
+    "CV0": "ok 104 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0007_native",
+   "res": {
+    "CV0": "ok 83 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0008_native",
+   "res": {
+    "CV0": "ok 108 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0009_native",
+   "res": {
+    "CV0": "ok 98 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0010_native",
+   "res": {
+    "CV0": "ok 65 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0011_native",
+   "res": {
+    "CV0": "ok 66 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0012_native",
+   "res": {
+    "CV0": "ok 76 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0013_native",
+   "res": {
+    "CV0": "ok 69 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0014_native",
+   "res": {
+    "CV0": "ok 77 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0015_native",
+   "res": {
+    "CV0": "ok 66 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0016_native",
+   "res": {
+    "CV0": "ok 84 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0017_native",
+   "res": {
+    "CV0": "ok 71 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0018_native",
+   "res": {
+    "CV0": "ok 90 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0019_native",
+   "res": {
+    "CV0": "ok 82 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0020_native",
+   "res": {
+    "CV0": "ok 72 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0021_native",
+   "res": {
+    "CV0": "ok 63 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0022_native",
+   "res": {
+    "CV0": "ok 68 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0023_native",
+   "res": {
+    "CV0": "ok 75 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0024_native",
+   "res": {
+    "CV0": "ok 60 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0025_native",
+   "res": {
+    "CV0": "ok 72 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0026_native",
+   "res": {
+    "CV0": "ok 68 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0027_native",
+   "res": {
+    "CV0": "ok 71 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0028_native",
+   "res": {
+    "CV0": "ok 58 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0029_native",
+   "res": {
+    "CV0": "ok 56 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0030_native",
+   "res": {
+    "CV0": "ok 57 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0031_native",
+   "res": {
+    "CV0": "ok 64 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0032_native",
+   "res": {
+    "CV0": "ok 69 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0033_native",
+   "res": {
+    "CV0": "ok 78 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_constant_0034_native",
+   "res": {
+    "CV0": "ok 75 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0000_native",
+   "res": {
+    "CV0": "ok 56 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0001_native",
+   "res": {
+    "CV0": "ok 46 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0002_native",
+   "res": {
+    "CV0": "ok 71 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0003_native",
+   "res": {
+    "CV0": "ok 62 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0004_native",
+   "res": {
+    "CV0": "ok 55 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0005_native",
+   "res": {
+    "CV0": "ok 45 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0006_native",
+   "res": {
+    "CV0": "ok 59 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0007_native",
+   "res": {
+    "CV0": "ok 61 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0008_native",
+   "res": {
+    "CV0": "ok 57 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0009_native",
+   "res": {
+    "CV0": "ok 59 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0010_native",
+   "res": {
+    "CV0": "ok 53 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0011_native",
+   "res": {
+    "CV0": "ok 55 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0012_native",
+   "res": {
+    "CV0": "ok 54 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0013_native",
+   "res": {
+    "CV0": "ok 85 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0014_native",
+   "res": {
+    "CV0": "ok 84 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0015_native",
+   "res": {
+    "CV0": "ok 66 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0016_native",
+   "res": {
+    "CV0": "ok 72 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0017_native",
+   "res": {
+    "CV0": "ok 60 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0018_native",
+   "res": {
+    "CV0": "ok 60 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0019_native",
+   "res": {
+    "CV0": "ok 84 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0020_native",
+   "res": {
+    "CV0": "ok 69 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0021_native",
+   "res": {
+    "CV0": "ok 51 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0022_native",
+   "res": {
+    "CV0": "ok 52 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0023_native",
+   "res": {
+    "CV0": "ok 70 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0024_native",
+   "res": {
+    "CV0": "ok 46 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0025_native",
+   "res": {
+    "CV0": "ok 69 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0026_native",
+   "res": {
+    "CV0": "ok 59 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0027_native",
+   "res": {
+    "CV0": "ok 72 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0028_native",
+   "res": {
+    "CV0": "ok 65 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0029_native",
+   "res": {
+    "CV0": "ok 79 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0030_native",
+   "res": {
+    "CV0": "ok 98 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0031_native",
+   "res": {
+    "CV0": "ok 101 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0032_native",
+   "res": {
+    "CV0": "ok 79 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0033_native",
+   "res": {
+    "CV0": "ok 68 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_mild_braking_0034_native",
+   "res": {
+    "CV0": "ok 45 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0000_native",
+   "res": {
+    "CV0": "ok 88 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0001_native",
+   "res": {
+    "CV0": "ok 91 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0002_native",
+   "res": {
+    "CV0": "ok 21 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0003_native",
+   "res": {
+    "CV0": "ok 88 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0004_native",
+   "res": {
+    "CV0": "ok 84 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0005_native",
+   "res": {
+    "CV0": "ok 38 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0006_native",
+   "res": {
+    "CV0": "ok 89 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0007_native",
+   "res": {
+    "CV0": "ok 100 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0008_native",
+   "res": {
+    "CV0": "ok 38 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0009_native",
+   "res": {
+    "CV0": "ok 88 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0010_native",
+   "res": {
+    "CV0": "ok 20 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0011_native",
+   "res": {
+    "CV0": "ok 45 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0012_native",
+   "res": {
+    "CV0": "ok 94 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0013_native",
+   "res": {
+    "CV0": "ok 101 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0014_native",
+   "res": {
+    "CV0": "ok 29 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0015_native",
+   "res": {
+    "CV0": "ok 88 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0016_native",
+   "res": {
+    "CV0": "ok 81 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0017_native",
+   "res": {
+    "CV0": "ok 34 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0018_native",
+   "res": {
+    "CV0": "ok 92 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0019_native",
+   "res": {
+    "CV0": "ok 25 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0020_native",
+   "res": {
+    "CV0": "ok 22 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0021_native",
+   "res": {
+    "CV0": "ok 68 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0022_native",
+   "res": {
+    "CV0": "ok 110 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0023_native",
+   "res": {
+    "CV0": "ok 101 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0024_native",
+   "res": {
+    "CV0": "ok 75 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0025_native",
+   "res": {
+    "CV0": "ok 71 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0026_native",
+   "res": {
+    "CV0": "ok 17 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0027_native",
+   "res": {
+    "CV0": "ok 101 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0028_native",
+   "res": {
+    "CV0": "ok 109 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0029_native",
+   "res": {
+    "CV0": "ok 22 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0030_native",
+   "res": {
+    "CV0": "ok 90 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0031_native",
+   "res": {
+    "CV0": "ok 94 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0032_native",
+   "res": {
+    "CV0": "ok 99 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0033_native",
+   "res": {
+    "CV0": "ok 81 s"
+   }
+  },
+  {
+   "run": "pd13_d1v13_stop_and_go_0034_native",
+   "res": {
+    "CV0": "ok 84 s"
+   }
+  }
+ ],
+ "seconds": 5628.029929637909
+}

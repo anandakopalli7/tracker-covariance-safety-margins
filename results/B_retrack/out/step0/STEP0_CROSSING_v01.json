@@ -1,0 +1,691 @@
+{
+ "code": "b_step0_crossing_v01.py",
+ "status": "descriptive design data on stored runs (needs a second-program recount before print)",
+ "coordinator": "21 Nov 2026 13:27 EST, step 0",
+ "draw": "optA_lib_v02.boot_counts(n_runs, 20000, 20261121), runs in name order",
+ "engine": "CD_capture/analysis/gl_fast_v13.py sha256 8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789",
+ "scoring_notes": [
+  "wrong go = the selected row's 3 s true clearance to any true actor <= 0 (same rule as lead braking)",
+  "F0 = class-average P-bar of record per actor class (vehicle / pedestrian), N = the online tracker of record",
+  "binding constraint = minimum over all actors and samples (crit_rows); a row with no binding constraint has an infinite critical scale",
+  "no lead-specific quantity is used (no lag, no phase)"
+ ],
+ "families": {
+  "vehicle_crossing": {
+   "family": "vehicle_crossing",
+   "set": "all stored runs (tuning + fit)",
+   "n_runs": 22,
+   "runs_by_set": {
+    "fit": 2,
+    "tuning": 20
+   },
+   "runs_with_evaluated": 21,
+   "evaluated_decisions": 5691,
+   "margin_ratio": {
+    "n": 42122,
+    "median": 0.9145991640166353,
+    "q05": 0.31611505084189123,
+    "q95": 1.9463134091069485,
+    "A": 0.8912091889007052,
+    "share_within_5pct": 0.040928730829495275,
+    "barely_varies": false,
+    "q25": 0.5063737300191234,
+    "q75": 1.3737849728898208
+   },
+   "points": {
+    "R_pp": 0.14380740822333604,
+    "R_deceq": 8.184079601990055,
+    "denE": 28.905289052890545,
+    "n": 5691.0,
+    "RR": {
+     "N": 0.16474164133738625,
+     "E5N": 0.22553191489361726,
+     "E5rec": 0.09848024316109452
+    }
+   },
+   "intervals": {
+    "R_pp": {
+     "0.95": [
+      0.0,
+      0.3341310889363974
+     ],
+     "0.9": [
+      0.0,
+      0.29329970664761085
+     ]
+    },
+    "R_deceq": {
+     "0.95": [
+      0.0,
+      19.034825870646763
+     ],
+     "0.9": [
+      0.0,
+      16.6818407960199
+     ]
+    },
+    "RR": {
+     "N": {
+      "0.95": [
+       -0.020193825653442535,
+       0.49650094080185275
+      ],
+      "0.9": [
+       0.047594755642242886,
+       0.4023899635548076
+      ]
+     },
+     "E5N": {
+      "0.95": [
+       0.11478876119340156,
+       0.8333333333333333
+      ],
+      "0.9": [
+       0.13940291459850424,
+       0.7272727272727273
+      ]
+     },
+     "E5rec": {
+      "0.95": [
+       0.0,
+       0.13343216890962012
+      ],
+      "0.9": [
+       0.0,
+       0.12369188410199332
+      ]
+     }
+    },
+    "share_resamples_room_positive": 0.8734,
+    "resamples_valid_for_shares": 17468
+   },
+   "n_needed_robust": {
+    "formula": "as n_needed, with SE_tune = (95% percentile width) / (2 * 1.96): robust to resamples with a near-zero room",
+    "R": {
+     "theta": 0.14380740822333604,
+     "se_tune": 0.08523908897611916,
+     "interval95_power80": 61,
+     "interval95_power90": 82,
+     "interval90_power80": 48,
+     "interval90_power90": 67
+    },
+    "E5N": {
+     "theta": 0.22553191489361726,
+     "se_tune": 0.1833055550529805,
+     "interval95_power80": 115,
+     "interval95_power90": 153,
+     "interval90_power80": 90,
+     "interval90_power90": 125
+    },
+    "E5rec": {
+     "theta": 0.09848024316109452,
+     "se_tune": 0.03403944408216581,
+     "interval95_power80": 21,
+     "interval95_power90": 28,
+     "interval90_power80": 17,
+     "interval90_power90": 23
+    }
+   },
+   "n_needed": {
+    "formula": "n = n_tune * (SE_tune * (z_{1-a/2} + z_power) / theta)^2, SE_tune = bootstrap SD, theta = point",
+    "n_tune": 22,
+    "R": {
+     "theta": 0.14380740822333604,
+     "se_tune": 0.09991306881533886,
+     "interval95_power80": 84,
+     "interval95_power90": 112,
+     "interval90_power80": 66,
+     "interval90_power90": 91
+    },
+    "E5N": {
+     "theta": 0.22553191489361726,
+     "se_tune": 55835590349841.625,
+     "interval95_power80": 10583676709124447759211299864576,
+     "interval95_power90": 14168540287553354118676877410304,
+     "interval90_power80": 8336754950263356380306678480896,
+     "interval90_power90": 11547761567693110937234536660992
+    },
+    "E5rec": {
+     "theta": 0.09848024316109452,
+     "se_tune": 5408533419566.133,
+     "interval95_power80": 520824212726139363173813190656,
+     "interval95_power90": 697235851354159014502754942976,
+     "interval90_power80": 410252878370550380613462917120,
+     "interval90_power90": 568266963602338253928447082496
+    }
+   },
+   "simulation_check_R": {
+    "n": 84,
+    "studies": 2000,
+    "se_plugin": 0.05113214311982076,
+    "power_95": 0.723,
+    "power_90": 0.7765,
+    "note": "studies of n runs drawn with replacement from the stored runs; power = share with theta_hat - z SE(n) > 0"
+   },
+   "flags": {
+    "evaluated": 5691,
+    "share_no_binding_constraint_F0": 0.39184677561061326,
+    "share_F0_cells_nonfinite": 0.5646169907077222,
+    "share_with_some_row_unsafe_3s": 0.20470918994904236,
+    "share_all_rows_unsafe_3s": 0.0021085925144965737,
+    "share_fallback_row_unsafe_3s": 0.026708838516956598
+   },
+   "seconds": 47.10007166862488
+  },
+  "pedestrian_crossing": {
+   "family": "pedestrian_crossing",
+   "set": "all stored runs (tuning + fit)",
+   "n_runs": 51,
+   "runs_by_set": {
+    "fit": 31,
+    "tuning": 20
+   },
+   "runs_with_evaluated": 51,
+   "evaluated_decisions": 13821,
+   "margin_ratio": {
+    "n": 157972,
+    "median": 0.8826208135301157,
+    "q05": 0.43461984524184166,
+    "q95": 1.9577039092602955,
+    "A": 0.8628190275316259,
+    "share_within_5pct": 0.08505304737548426,
+    "barely_varies": false,
+    "q25": 0.650830824021191,
+    "q75": 1.085307573489278
+   },
+   "points": {
+    "R_pp": 0.08002099336182125,
+    "R_deceq": 11.059701492537316,
+    "denE": 16.08421966572607,
+    "n": 13821.0,
+    "RR": {
+     "N": -0.43229869545659005,
+     "E5N": 0.6383265856950067,
+     "E5rec": 0.17768780926675662
+    }
+   },
+   "intervals": {
+    "R_pp": {
+     "0.95": [
+      -0.05518316816179573,
+      0.2494995538190671
+     ],
+     "0.9": [
+      -0.03250875353354062,
+      0.22574343390492718
+     ]
+    },
+    "R_deceq": {
+     "0.95": [
+      -7.626865671641788,
+      34.48333333333326
+     ],
+     "0.9": [
+      -4.493034825870649,
+      31.19999999999999
+     ]
+    },
+    "RR": {
+     "N": {
+      "0.95": [
+       -3.3828814712377047,
+       0.055091713069111904
+      ],
+      "0.9": [
+       -1.822014322563129,
+       -0.013827160927864788
+      ]
+     },
+     "E5N": {
+      "0.95": [
+       -1.249357657234546,
+       0.8600681592398532
+      ],
+      "0.9": [
+       -0.24478583891484232,
+       0.8438994607704353
+      ]
+     },
+     "E5rec": {
+      "0.95": [
+       0.06995388814431669,
+       1.2357428386745517
+      ],
+      "0.9": [
+       0.0760984115670502,
+       0.6451796799978358
+      ]
+     }
+    },
+    "share_resamples_room_positive": 0.8925,
+    "resamples_valid_for_shares": 17850
+   },
+   "n_needed_robust": {
+    "formula": "as n_needed, with SE_tune = (95% percentile width) / (2 * 1.96): robust to resamples with a near-zero room",
+    "R": {
+     "theta": 0.08002099336182125,
+     "se_tune": 0.07772661242353464,
+     "interval95_power80": 378,
+     "interval95_power90": 506,
+     "interval90_power80": 298,
+     "interval90_power90": 413
+    },
+    "E5N": {
+     "theta": 0.6383265856950067,
+     "se_tune": 0.5381287189747569,
+     "interval95_power80": 285,
+     "interval95_power90": 381,
+     "interval90_power80": 225,
+     "interval90_power90": 311
+    },
+    "E5rec": {
+     "theta": 0.17768780926675662,
+     "se_tune": 0.2974006052472978,
+     "interval95_power80": 1122,
+     "interval95_power90": 1502,
+     "interval90_power80": 884,
+     "interval90_power90": 1224
+    }
+   },
+   "n_needed": {
+    "formula": "n = n_tune * (SE_tune * (z_{1-a/2} + z_power) / theta)^2, SE_tune = bootstrap SD, theta = point",
+    "n_tune": 51,
+    "R": {
+     "theta": 0.08002099336182125,
+     "se_tune": 0.07892353607563281,
+     "interval95_power80": 390,
+     "interval95_power90": 522,
+     "interval90_power80": 307,
+     "interval90_power90": 425
+    },
+    "E5N": {
+     "theta": 0.6383265856950067,
+     "se_tune": 11.66528516961486,
+     "interval95_power80": 133686,
+     "interval95_power90": 178967,
+     "interval90_power80": 105304,
+     "interval90_power90": 145863
+    },
+    "E5rec": {
+     "theta": 0.17768780926675662,
+     "se_tune": 4.247831994343836,
+     "interval95_power80": 228770,
+     "interval95_power90": 306257,
+     "interval90_power80": 180202,
+     "interval90_power90": 249608
+    }
+   },
+   "simulation_check_R": {
+    "n": 390,
+    "studies": 2000,
+    "se_plugin": 0.02854035163569551,
+    "power_95": 0.835,
+    "power_90": 0.907,
+    "note": "studies of n runs drawn with replacement from the stored runs; power = share with theta_hat - z SE(n) > 0"
+   },
+   "flags": {
+    "evaluated": 13821,
+    "share_no_binding_constraint_F0": 0.25772375370812534,
+    "share_F0_cells_nonfinite": 0.32765569870231576,
+    "share_with_some_row_unsafe_3s": 0.08689675132045438,
+    "share_all_rows_unsafe_3s": 0.0,
+    "share_fallback_row_unsafe_3s": 0.0027494392590984734
+   },
+   "seconds": 92.75157761573792
+  }
+ },
+ "tuning_only": {
+  "vehicle_crossing": {
+   "family": "vehicle_crossing",
+   "set": "tuning only",
+   "n_runs": 20,
+   "runs_by_set": {
+    "tuning": 20
+   },
+   "runs_with_evaluated": 19,
+   "evaluated_decisions": 5149,
+   "margin_ratio": {
+    "n": 37451,
+    "median": 0.9228793813728415,
+    "q05": 0.36262044340963,
+    "q95": 2.08937689356249,
+    "A": 0.9355266164816686,
+    "share_within_5pct": 0.04915756588609116,
+    "barely_varies": false,
+    "q25": 0.528217023166398,
+    "q75": 1.2618495059809438
+   },
+   "points": {
+    "R_pp": 0.14783337149946532,
+    "R_deceq": 7.611940298507469,
+    "denE": 29.71450767139253,
+    "n": 5149.0,
+    "RR": {
+     "N": 0.1431372549019616,
+     "E5N": 0.20849673202614458,
+     "E5rec": 0.10784313725490279
+    }
+   },
+   "intervals": {
+    "R_pp": {
+     "0.95": [
+      0.0,
+      0.3474843242725667
+     ],
+     "0.9": [
+      0.0,
+      0.30542755676312977
+     ]
+    },
+    "R_deceq": {
+     "0.95": [
+      0.0,
+      17.845895522388044
+     ],
+     "0.9": [
+      0.0,
+      15.696766169154225
+     ]
+    },
+    "RR": {
+     "N": {
+      "0.95": [
+       -0.07353684334234319,
+       0.32557047643254533
+      ],
+      "0.9": [
+       -0.034134835950333675,
+       0.30725064219236065
+      ]
+     },
+     "E5N": {
+      "0.95": [
+       0.09052547360749691,
+       0.42233494491558987
+      ],
+      "0.9": [
+       0.11199739009868664,
+       0.3836998456790123
+      ]
+     },
+     "E5rec": {
+      "0.95": [
+       0.0027372262773722707,
+       0.14296721872597992
+      ],
+      "0.9": [
+       0.0035632206523484554,
+       0.13265159521580472
+      ]
+     }
+    },
+    "share_resamples_room_positive": 0.63975,
+    "resamples_valid_for_shares": 12795
+   },
+   "n_needed_robust": {
+    "formula": "as n_needed, with SE_tune = (95% percentile width) / (2 * 1.96): robust to resamples with a near-zero room",
+    "R": {
+     "theta": 0.14783337149946532,
+     "se_tune": 0.08864558915711684,
+     "interval95_power80": 57,
+     "interval95_power90": 76,
+     "interval90_power80": 45,
+     "interval90_power90": 62
+    },
+    "E5N": {
+     "theta": 0.20849673202614458,
+     "se_tune": 0.08464682869822195,
+     "interval95_power80": 26,
+     "interval95_power90": 35,
+     "interval90_power80": 21,
+     "interval90_power90": 29
+    },
+    "E5rec": {
+     "theta": 0.10784313725490279,
+     "se_tune": 0.03577361460586111,
+     "interval95_power80": 18,
+     "interval95_power90": 24,
+     "interval90_power80": 14,
+     "interval90_power90": 19
+    }
+   },
+   "n_needed": {
+    "formula": "n = n_tune * (SE_tune * (z_{1-a/2} + z_power) / theta)^2, SE_tune = bootstrap SD, theta = point",
+    "n_tune": 20,
+    "R": {
+     "theta": 0.14783337149946532,
+     "se_tune": 0.1066327511277853,
+     "interval95_power80": 82,
+     "interval95_power90": 110,
+     "interval90_power80": 65,
+     "interval90_power90": 90
+    },
+    "E5N": {
+     "theta": 0.20849673202614458,
+     "se_tune": 0.07602437291334839,
+     "interval95_power80": 21,
+     "interval95_power90": 28,
+     "interval90_power80": 17,
+     "interval90_power90": 23
+    },
+    "E5rec": {
+     "theta": 0.10784313725490279,
+     "se_tune": 0.04965644006979949,
+     "interval95_power80": 34,
+     "interval95_power90": 45,
+     "interval90_power80": 27,
+     "interval90_power90": 37
+    }
+   },
+   "simulation_check_R": {
+    "n": 82,
+    "studies": 2000,
+    "se_plugin": 0.05266216213054172,
+    "power_95": 0.699,
+    "power_90": 0.7645,
+    "note": "studies of n runs drawn with replacement from the stored runs; power = share with theta_hat - z SE(n) > 0"
+   },
+   "flags": {
+    "evaluated": 5149,
+    "share_no_binding_constraint_F0": 0.42726743056904254,
+    "share_F0_cells_nonfinite": 0.572149932025636,
+    "share_with_some_row_unsafe_3s": 0.17964653330743835,
+    "share_all_rows_unsafe_3s": 0.0023305496212856864,
+    "share_fallback_row_unsafe_3s": 0.02952029520295203
+   },
+   "seconds": 23.30204725265503
+  },
+  "pedestrian_crossing": {
+   "family": "pedestrian_crossing",
+   "set": "tuning only",
+   "n_runs": 20,
+   "runs_by_set": {
+    "tuning": 20
+   },
+   "runs_with_evaluated": 20,
+   "evaluated_decisions": 5420,
+   "margin_ratio": {
+    "n": 44435,
+    "median": 0.868290267494963,
+    "q05": 0.3365893967069106,
+    "q95": 2.3719418070936817,
+    "A": 1.1720460810063027,
+    "share_within_5pct": 0.08416788567570609,
+    "barely_varies": false,
+    "q25": 0.5847800677766452,
+    "q75": 1.191886391953975
+   },
+   "points": {
+    "R_pp": 0.18468542894384168,
+    "R_deceq": 10.009950248756219,
+    "denE": 37.12177121771218,
+    "n": 5420.0,
+    "RR": {
+     "N": -0.33598409542743535,
+     "E5N": 0.7609343936381708,
+     "E5rec": 0.06013916500994035
+    }
+   },
+   "intervals": {
+    "R_pp": {
+     "0.95": [
+      0.04754594187732925,
+      0.34147069082631093
+     ],
+     "0.9": [
+      0.06498870958858842,
+      0.3053918598887481
+     ]
+    },
+    "R_deceq": {
+     "0.95": [
+      2.5769900497512457,
+      18.507711442786054
+     ],
+     "0.9": [
+      3.5223880597014925,
+      16.55223880597015
+     ]
+    },
+    "RR": {
+     "N": {
+      "0.95": [
+       -0.9657534246575341,
+       0.0008356562315095636
+      ],
+      "0.9": [
+       -0.8184037723088685,
+       -0.04963982954911068
+      ]
+     },
+     "E5N": {
+      "0.95": [
+       0.4392756215809806,
+       0.8775084339684132
+      ],
+      "0.9": [
+       0.5126998606563936,
+       0.8609899656229676
+      ]
+     },
+     "E5rec": {
+      "0.95": [
+       0.030064996872535433,
+       0.2629323554767018
+      ],
+      "0.9": [
+       0.035155807114512515,
+       0.21928738207175066
+      ]
+     }
+    },
+    "share_resamples_room_positive": 1.0,
+    "resamples_valid_for_shares": 20000
+   },
+   "n_needed_robust": {
+    "formula": "as n_needed, with SE_tune = (95% percentile width) / (2 * 1.96): robust to resamples with a near-zero room",
+    "R": {
+     "theta": 0.18468542894384168,
+     "se_tune": 0.0749821811184855,
+     "interval95_power80": 26,
+     "interval95_power90": 35,
+     "interval90_power80": 21,
+     "interval90_power90": 29
+    },
+    "E5N": {
+     "theta": 0.7609343936381708,
+     "se_tune": 0.11179613907300263,
+     "interval95_power80": 4,
+     "interval95_power90": 5,
+     "interval90_power80": 3,
+     "interval90_power90": 4
+    },
+    "E5rec": {
+     "theta": 0.06013916500994035,
+     "se_tune": 0.059406030019172384,
+     "interval95_power80": 154,
+     "interval95_power90": 206,
+     "interval90_power80": 121,
+     "interval90_power90": 168
+    }
+   },
+   "n_needed": {
+    "formula": "n = n_tune * (SE_tune * (z_{1-a/2} + z_power) / theta)^2, SE_tune = bootstrap SD, theta = point",
+    "n_tune": 20,
+    "R": {
+     "theta": 0.18468542894384168,
+     "se_tune": 0.07440225702800628,
+     "interval95_power80": 26,
+     "interval95_power90": 35,
+     "interval90_power80": 21,
+     "interval90_power90": 28
+    },
+    "E5N": {
+     "theta": 0.7609343936381708,
+     "se_tune": 0.12933097429468599,
+     "interval95_power80": 5,
+     "interval95_power90": 7,
+     "interval90_power80": 4,
+     "interval90_power90": 5
+    },
+    "E5rec": {
+     "theta": 0.06013916500994035,
+     "se_tune": 0.06005295202970391,
+     "interval95_power80": 157,
+     "interval95_power90": 210,
+     "interval90_power80": 124,
+     "interval90_power90": 171
+    }
+   },
+   "simulation_check_R": {
+    "n": 26,
+    "studies": 2000,
+    "se_plugin": 0.06525509618095568,
+    "power_95": 0.7675,
+    "power_90": 0.867,
+    "note": "studies of n runs drawn with replacement from the stored runs; power = share with theta_hat - z SE(n) > 0"
+   },
+   "flags": {
+    "evaluated": 5420,
+    "share_no_binding_constraint_F0": 0.4280442804428044,
+    "share_F0_cells_nonfinite": 0.5177447362708921,
+    "share_with_some_row_unsafe_3s": 0.10092250922509226,
+    "share_all_rows_unsafe_3s": 0.0,
+    "share_fallback_row_unsafe_3s": 0.004981549815498155
+   },
+   "seconds": 25.358089208602905
+  }
+ },
+ "reference_lead_braking_tuning": {
+  "family": "lead_braking",
+  "set": "tuning only (reference)",
+  "n_runs": 20,
+  "evaluated_decisions": 3018,
+  "points": {
+   "R_pp": 1.159543567780712,
+   "R_deceq": 34.99502487562189,
+   "RR_N": -2.381755109694855e-19
+  },
+  "margin_ratio": {
+   "n": 31742,
+   "median": 1.102806542664747,
+   "q05": 1.1009046631621016,
+   "q95": 1.1032226056217371,
+   "A": 0.001050928866469476,
+   "share_within_5pct": 0.9957469598639027,
+   "barely_varies": true,
+   "q25": 1.1025364459185676,
+   "q75": 1.1030628607816513
+  },
+  "flags": {
+   "evaluated": 3018,
+   "share_no_binding_constraint_F0": 0.0,
+   "share_F0_cells_nonfinite": 0.38131992359568084,
+   "share_with_some_row_unsafe_3s": 0.9092113982770046,
+   "share_all_rows_unsafe_3s": 0.0,
+   "share_fallback_row_unsafe_3s": 0.0
+  }
+ },
+ "seconds": 189.529034614563,
+ "written": "2026-11-21 13:35:36"
+}

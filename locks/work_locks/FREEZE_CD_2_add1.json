@@ -1,0 +1,17 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "addendum_to": "work/locks/FREEZE_CD_2.json (sha256 1039025ce46a9de60163f4468535b227ca0ec3e8d2705af293bfbaa54797a8a0)",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5)",
+ "written": "2026-11-21 00:58 Eastern Standard Time",
+ "approval": "coordinator, 21 Nov 2026 about 00:20 EST: approved; deviation CD-12: layout-tolerant read of B's export (line 285) and the same for F's read (line 304), no other change",
+ "replaces": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\export\\make_export_cd_v13.py",
+   "sha256_before": "99fb107d5a4188e2440c6253aab7b69ecd836cc61d1c494f78673e6c7bcedfc2",
+   "sha256_after": "ab4e5b92539cbb5fa9d1cd874399af537458e79f1637c330f373e5512bf40484",
+   "change": "transfer_structured(): line 285 (B's export) and line 304 (F's export) read the file's 'values' dict if it has one, else the file itself as a flat {key: value} dict, as A's loader does (A_text/gen/common_v13.py load_export). No other byte changed.",
+   "why": "The exporter stopped with KeyError: 'values' at line 285 (21 Nov about 01:00 EST) and wrote nothing: package B's A_EXPORT_B.json / A_RECOUNT_B.json are flat {key: value} (provenance in A_EXPORT_B_meta.json), a layout A's loader accepts. Only TRANSFER.structured reads these files (B's TU.RR_*; F's F.status and F.RR_*). No value is computed differently.",
+   "kind": "frozen-code input-format fix (A10 sec. 11 departure record, after LOCK_A10_2c; no value-computing line changed)"
+  }
+ ]
+}

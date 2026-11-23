@@ -1,0 +1,1 @@
+{"label": "y_main", "n_run": 105, "full": [0.04979130975854154], "names": ["delta"], "seeds": [20261912, 20261913, 20261914], "n_outer": 2000, "n_inner": 1000, "job_sha256": "193ff621ddf4f24658db633d047aaa461630100bd0a9b659cb8f245fd3f00628"}

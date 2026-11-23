@@ -1,0 +1,17 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "addendum_to": "work/locks/FREEZE_CD_2.json (sha256 1039025ce46a9de60163f4468535b227ca0ec3e8d2705af293bfbaa54797a8a0), after FREEZE_CD_2_add2",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5)",
+ "written": "2026-11-21 01:08 Eastern Standard Time",
+ "approval": "coordinator, 21 Nov 2026 about 01:20 EST: approved; deviation CD-14: line 262 of the second exporter only; no value changes; the new-subagent plan cancelled",
+ "replaces": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\export\\make_export_cd_v13.py",
+   "sha256_before": "16b84f810f9c0312bd561f8bb3d9f980a27af794449c6140b1f5c6be5ed00940",
+   "sha256_after": "ec1fbc45e59b5bd3f7ccf49c852ad5323c852d0603107de84e0b8863e744ff77",
+   "change": "line 262 (second_d, D2 3 s column): tab = t['table'].get(scn) -> tab = {s_: x.get(scn) or {} for s_, x in t['table'].items()}, i.e. the recount's table[source][scoring][target] nesting is read as table[scoring][source][target], which lines 263-268 expect. No other byte changed.",
+   "why": "The 16 keys D2.{F0,N,CK3,TG}.{c2,c5}.w3.{runs,vclose} were missing from A_RECOUNT_D (21 Nov exports) although the frozen D2 recount (recount_d/rc_d2_event_table_v13.py, output RC_D2_EVENT_TABLE_v13.json) computed them and the sec. 10.1(c) comparison out/COMPARE_D_v13.json (185/185) already compared them (items D2/3s/<src>/<2|5>%/runs_with_wrong_go and median_of_medians, all equal): the exporter looked up table['commit_3s'], a key the recount's table does not have at that level, and skipped the column silently. No value is computed differently.",
+   "kind": "frozen-code input-nesting fix (A10 sec. 11 departure record, after LOCK_A10_2c; no value-computing line changed)"
+  }
+ ]
+}

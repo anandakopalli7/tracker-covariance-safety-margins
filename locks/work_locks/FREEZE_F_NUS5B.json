@@ -1,0 +1,185 @@
+{
+ "name": "FREEZE_F_NUS5B",
+ "amendment": "AMENDMENT_12 sec. 5b",
+ "written": "2026-11-22 03:36:30",
+ "writer": "session F (Claude Opus 5.5)",
+ "n": 35,
+ "text_table_differences": [],
+ "entries": [
+  {
+   "group": "spec",
+   "path": "work\\F_dropout_nus\\A12_5b_TEXT_v01.md",
+   "sha256": "4732c9cfad2440a88d4586417ec443ce8187ac8e30df1bd77bc54a21fa10365b"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout_nus\\code\\dr_masks_v02.py",
+   "sha256": "63f786c540f41aa87c41047daf0f327c68e850c1f76757682c7d3ce02c11d953"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout_nus\\code\\f03_adapter_v01.py",
+   "sha256": "0b8871a40e54a1f928571c616958dab575ecd3a5af81d012eb4163f08aa86b88"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout_nus\\code\\f06k_kernel_v01.py",
+   "sha256": "8d32d5bfb246610059279e508f7c21bf91594fe5b19be6310d9700829a646a99"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout_nus\\code\\fn02_track_v01.py",
+   "sha256": "213b424307ed8d27b09871f3fde655e2e0b812f0dd839ecc5119d19933adae09"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout_nus\\code\\fn05_arrays_v01.py",
+   "sha256": "34c1cac137f7887b5ff2ea8948b4a5e0a6098ad6154a92f6b496cc9733c07bb0"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout_nus\\code\\fn06_score_v01.py",
+   "sha256": "ae8e7e28b40c71c81aa0be26e260176eea3a3dd658c20acfbdd19c13aa6b3359"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout_nus\\code\\fn07_accept_v01.py",
+   "sha256": "afc112655704f7c5c49a70d02e6e77b83d305dadc0f27e4a8d5d75ddf9bfeff8"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout_nus\\code\\fn08_trig_check_v01.py",
+   "sha256": "be297705f98db0da74cd4bf23d16d1df4a38e3af05947a413f68495fb3075af7"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout_nus\\code\\fn09_accept_scored_v01.py",
+   "sha256": "9000741f608bd0b63f34846ee286c1e3cbbaea8bc207e501540e29647894413f"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout_nus\\code\\fn_common_v01.py",
+   "sha256": "13ab9266243272f650c86ca3096781dde3d7b8c2ad99f7329bcd65506fe4c6f1"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout_nus\\code\\fn_pods_v01.py",
+   "sha256": "5f87f050457b8ceeacaf8471d11d4a474327c43f4f12b356e043d92dce5bb0c3"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout_nus\\code\\fn_run_masked_v01.sh",
+   "sha256": "b24b6734bddd89268ada1149e063de34a8c7689f2367b893c0a0783a75e66cf9"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout_nus\\code\\fpods_n_v01.py",
+   "sha256": "00f85a9d9f24da85a7643105121c9db458ddecccf3135b7cec76ced4de0c5b57"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_dropout_nus\\code\\val_order_v01.txt",
+   "sha256": "c48dcba5db06539b001f5d9bcb1a8cd9debf487ac853109bbac729f5f0d41dbb"
+  },
+  {
+   "group": "masks",
+   "path": "work\\F_dropout_nus\\masks\\FN5B_MASKS_v01.json",
+   "sha256": "0c433e37b49124d4de21fb9b6e5959b9b9e7f132e4b700324704039f1ad7d315"
+  },
+  {
+   "group": "acceptance",
+   "path": "work\\F_dropout_nus\\out\\ACCEPT1_TRACKS_v01.json",
+   "sha256": "01a9ceff13e4bbb406b8eacd2d713a692a42026120b89d56a6a4e773027ee265"
+  },
+  {
+   "group": "acceptance",
+   "path": "work\\F_dropout_nus\\out\\ACCEPT2_ARRAYS_v01.json",
+   "sha256": "70a07e03745bbaefb903ed97e7c14a0a86688865a1d44126aa4923a76f070221"
+  },
+  {
+   "group": "acceptance",
+   "path": "work\\F_dropout_nus\\out\\ACCEPT3_SCORED_v01.json",
+   "sha256": "562b93e3a94b1429004446907760a449f6fc5a3c9577b7046a3161b7d9637b2e"
+  },
+  {
+   "group": "acceptance",
+   "path": "work\\F_dropout_nus\\out\\HASH_F_tracks_T1_val.json",
+   "sha256": "0e51c73a1aed9700e1507ccc7182318ed32fd1ec515ec7044408acdb1c8992a3"
+  },
+  {
+   "group": "acceptance",
+   "path": "work\\F_dropout_nus\\out\\HASH_POD_tracks_accept_val.json",
+   "sha256": "e44a6d19317d3f9f524b7038b3ff4f8d91ccfec8508880d24a10f46da5ca86c6"
+  },
+  {
+   "group": "codetest",
+   "path": "work\\F_dropout_nus\\out\\masked_train\\calib_20261913.npz",
+   "sha256": "22ab1f73d8b755c600b350fd49e8cf1ce5cdf8628f369a195ddf970a12f3ab28"
+  },
+  {
+   "group": "codetest",
+   "path": "work\\F_dropout_nus\\out\\masked_train\\calib_20261914.npz",
+   "sha256": "f669e4f3fc03af42b3bff7d5306e46f9f73330331426acb4fba4ca9e5abd4970"
+  },
+  {
+   "group": "codetest",
+   "path": "work\\F_dropout_nus\\out\\masked_train\\calib_job.meta.json",
+   "sha256": "8dcc164f3a0550352ccc31451abfcd7183a6f6f1536d9b616efd0e8e6460646d"
+  },
+  {
+   "group": "codetest",
+   "path": "work\\F_dropout_nus\\out\\masked_train\\calib_job.npz",
+   "sha256": "b5d541bb529ddc9853dee978c93ee43dd37bb491c6564c4cd7a18d5c0693e1fa"
+  },
+  {
+   "group": "codetest",
+   "path": "work\\F_dropout_nus\\out\\masked_train\\FN5B_RESULTS_v01.json",
+   "sha256": "3d87ab2b059fdd600c71c25add714256a0fd8e5b96d7cbdb8ba31c383140a6e7"
+  },
+  {
+   "group": "codetest",
+   "path": "work\\F_dropout_nus\\out\\masked_train\\partial.json",
+   "sha256": "9f9bba41e21c134a936634da133c8367318b2a754113c8c84874959aa0c1a00a"
+  },
+  {
+   "group": "codetest",
+   "path": "work\\F_dropout_nus\\out\\masked_train\\partial.npz",
+   "sha256": "8d7b6a5fd922e432e915b7fde5ae9b199e2aa3db0ad266ff57b097547333b778"
+  },
+  {
+   "group": "codetest",
+   "path": "work\\F_dropout_nus\\out\\masked_train12\\calib_20261913.npz",
+   "sha256": "5eec9256153150d35b6a368721dc697286f96b46bd3a8462d73765a24d6d134b"
+  },
+  {
+   "group": "codetest",
+   "path": "work\\F_dropout_nus\\out\\masked_train12\\calib_20261914.npz",
+   "sha256": "34d95318f6b85b9ea421f4dc42760dca67b892759e518f6c3f92fa0cdb960157"
+  },
+  {
+   "group": "codetest",
+   "path": "work\\F_dropout_nus\\out\\masked_train12\\calib_job.meta.json",
+   "sha256": "d708d617158b3d588d372585853fb6bafcc8e84898db967d71d56cc4de0e59e5"
+  },
+  {
+   "group": "codetest",
+   "path": "work\\F_dropout_nus\\out\\masked_train12\\calib_job.npz",
+   "sha256": "b97e7e40e2c59f3d639124b4b2192473fd213ede8b5fef2caf121e2f378a9cf0"
+  },
+  {
+   "group": "codetest",
+   "path": "work\\F_dropout_nus\\out\\masked_train12\\FN5B_RESULTS_v01.json",
+   "sha256": "75a81904461cd8f93ffe01155f262ab51484204e14994a16f7a017b321bd64d5"
+  },
+  {
+   "group": "codetest",
+   "path": "work\\F_dropout_nus\\out\\masked_train12\\partial.json",
+   "sha256": "b8738f3c74894d336e4472407f664a74b53ec655b58b4290cf0cbcec81817103"
+  },
+  {
+   "group": "codetest",
+   "path": "work\\F_dropout_nus\\out\\masked_train12\\partial.npz",
+   "sha256": "b0069eb790cecdc318231163e227b5501c4560ec32ee17b92a33ea4cab60101c"
+  }
+ ]
+}

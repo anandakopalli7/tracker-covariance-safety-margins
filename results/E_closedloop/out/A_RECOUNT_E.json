@@ -1,0 +1,822 @@
+{
+ "package": "E",
+ "written": "2026-11-20T04:59:32-05:00",
+ "program": "e_recount_export_v02.py",
+ "program_sha256": "67040ed29d45bb5301ebd0c592eab19fca2523967d2c62524fb905068a6cd68d",
+ "lock2_sha256": "02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df",
+ "values": {
+  "E.status": "ran",
+  "E1.v5.dist": 3.8303909943034853,
+  "E1.v5.model": 3.8583458385765024,
+  "E1.v5.err": 0.007245292527569447,
+  "E1.v10.dist": 12.605684203971634,
+  "E1.v10.model": 12.790381657809407,
+  "E1.v10.err": 0.014440339528492663,
+  "E1.v15.dist": 26.22419324836079,
+  "E1.v15.model": 26.703897948845928,
+  "E1.v15.err": 0.017963845630479147,
+  "E1.maxerr": 0.017963845630479147,
+  "E1.attempts": 1,
+  "E2.g0.contact": 0.4,
+  "E2.g0_25.contact": 0.36666666666666664,
+  "E2.g1.contact": 0.26666666666666666,
+  "E2.g4.contact": 0.16666666666666666,
+  "E2.g16.contact": 0.06666666666666667,
+  "E2.g64.contact": 0.0,
+  "E2.g_lo": 4.0,
+  "E2.g_hi": 16.0,
+  "E2.low_power": false,
+  "E3.N.lo.contact": 0.18333333333333332,
+  "E3.N.lo.vimp": 5.552056481355976,
+  "E3.N.lo.tlost": 24.524084971109374,
+  "E3.N.lo.restgap": 3.571760474751323,
+  "E3.N.lo.peakdec": 6.1421086513493925,
+  "E3.N.lo.jerk": 3.3529563985726023,
+  "E3.N.lo.fallback": 0.5288555591783501,
+  "E3.N.lo.dc": -0.01666666666666669,
+  "E3.N.lo.dc.ci": [
+   -0.07626062600778595,
+   0.03970521068562302
+  ],
+  "E3.N.lo.dt": 0.015661098821528885,
+  "E3.N.lo.dt.ci": [
+   -0.0037890029938424147,
+   0.03729209186858443
+  ],
+  "E3.N.lo.d_vimp": 0.0,
+  "E3.N.lo.d_vimp.ci": [
+   0.0,
+   0.0
+  ],
+  "E3.N.lo.d_restgap": 0.06684520757713013,
+  "E3.N.lo.d_restgap.ci": [
+   -0.04529247386151909,
+   0.18298443479905369
+  ],
+  "E3.N.lo.d_peakdec": -0.011781288174233844,
+  "E3.N.lo.d_peakdec.ci": [
+   -0.08960050788856042,
+   0.06641527777443852
+  ],
+  "E3.N.lo.d_jerk": -0.040748574781345255,
+  "E3.N.lo.d_jerk.ci": [
+   -0.13031659081708324,
+   0.07412566226180017
+  ],
+  "E3.N.lo.d_fallback": 0.001999999999999998,
+  "E3.N.lo.d_fallback.ci": [
+   -0.015000000000000003,
+   0.023944444444444442
+  ],
+  "E3.N.hi.contact": 0.05,
+  "E3.N.hi.vimp": 6.0350995941553265,
+  "E3.N.hi.tlost": 24.891187107481777,
+  "E3.N.hi.restgap": 5.93176424672283,
+  "E3.N.hi.peakdec": 6.201131464228595,
+  "E3.N.hi.jerk": 3.3836614673827317,
+  "E3.N.hi.fallback": 0.7948390837924036,
+  "E3.N.hi.dc": 0.0,
+  "E3.N.hi.dc.ci": [
+   -0.06273429805487489,
+   0.06273429805487489
+  ],
+  "E3.N.hi.dt": 0.0011705625358256,
+  "E3.N.hi.dt.ci": [
+   -0.005691085706707211,
+   0.007542865007648479
+  ],
+  "E3.N.hi.d_vimp": 0.0,
+  "E3.N.hi.d_vimp.ci": [
+   0.0,
+   0.0
+  ],
+  "E3.N.hi.d_restgap": 0.019312619085989007,
+  "E3.N.hi.d_restgap.ci": [
+   -0.027932306938212123,
+   0.06737654044450393
+  ],
+  "E3.N.hi.d_peakdec": 0.008270994487847834,
+  "E3.N.hi.d_peakdec.ci": [
+   -0.04177960084107136,
+   0.061693543814574855
+  ],
+  "E3.N.hi.d_jerk": 0.0037283063868365587,
+  "E3.N.hi.d_jerk.ci": [
+   -0.05976085387787378,
+   0.06865093246402006
+  ],
+  "E3.N.hi.d_fallback": 0.008777777777777778,
+  "E3.N.hi.d_fallback.ci": [
+   1.8503717077085942e-18,
+   0.023277777777777776
+  ],
+  "E3.CK3.lo.contact": 0.0,
+  "E3.CK3.lo.vimp": null,
+  "E3.CK3.lo.tlost": 24.780267130343436,
+  "E3.CK3.lo.restgap": 4.827850602912468,
+  "E3.CK3.lo.peakdec": 4.30962657966953,
+  "E3.CK3.lo.jerk": 2.9707486941487797,
+  "E3.CK3.lo.fallback": 0.01633333333333333,
+  "E3.CK3.lo.dc": -0.2,
+  "E3.CK3.lo.dc.ci": [
+   -0.317818058056279,
+   -0.09852101539727064
+  ],
+  "E3.CK3.lo.dt": 0.16318455275375912,
+  "E3.CK3.lo.dt.ci": [
+   0.10457519906222609,
+   0.22462742686628626
+  ],
+  "E3.CK3.lo.d_vimp": null,
+  "E3.CK3.lo.d_vimp.ci": null,
+  "E3.CK3.lo.d_restgap": 1.4126423645124213,
+  "E3.CK3.lo.d_restgap.ci": [
+   0.9377518488172675,
+   1.8994795166853191
+  ],
+  "E3.CK3.lo.d_peakdec": -4.498132993250697,
+  "E3.CK3.lo.d_peakdec.ci": [
+   -6.470835075078836,
+   -2.7989098626459934
+  ],
+  "E3.CK3.lo.d_jerk": -5.52042030298656,
+  "E3.CK3.lo.d_jerk.ci": [
+   -9.598670805102486,
+   -2.0274783592246646
+  ],
+  "E3.CK3.lo.d_fallback": -0.4649134335887451,
+  "E3.CK3.lo.d_fallback.ci": [
+   -0.5564689911862181,
+   -0.3681701902813213
+  ],
+  "E3.CK3.hi.contact": 0.0,
+  "E3.CK3.hi.vimp": null,
+  "E3.CK3.hi.tlost": 25.146764232244752,
+  "E3.CK3.hi.restgap": 7.823570277801838,
+  "E3.CK3.hi.peakdec": 4.116425093147933,
+  "E3.CK3.hi.jerk": 3.0166983603559423,
+  "E3.CK3.hi.fallback": 0.04922222222222222,
+  "E3.CK3.hi.dc": -0.05,
+  "E3.CK3.hi.dc.ci": [
+   -0.1370051647634852,
+   0.018555138379676317
+  ],
+  "E3.CK3.hi.dt": 0.1980608389088962,
+  "E3.CK3.hi.dt.ci": [
+   0.13232420991152247,
+   0.2625401837762265
+  ],
+  "E3.CK3.hi.d_vimp": null,
+  "E3.CK3.hi.d_vimp.ci": null,
+  "E3.CK3.hi.d_restgap": 1.983114953695662,
+  "E3.CK3.hi.d_restgap.ci": [
+   1.371945260446525,
+   2.6016015436938167
+  ],
+  "E3.CK3.hi.d_peakdec": -2.9541330818634006,
+  "E3.CK3.hi.d_peakdec.ci": [
+   -4.019519821061002,
+   -2.1162054575443463
+  ],
+  "E3.CK3.hi.d_jerk": -1.835376152286121,
+  "E3.CK3.hi.d_jerk.ci": [
+   -4.216697731224461,
+   0.05577745213764996
+  ],
+  "E3.CK3.hi.d_fallback": -0.713502484595508,
+  "E3.CK3.hi.d_fallback.ci": [
+   -0.7825555555555556,
+   -0.6294346799840992
+  ],
+  "E3.TG.lo.contact": 0.0,
+  "E3.TG.lo.vimp": null,
+  "E3.TG.lo.tlost": 24.518898086496993,
+  "E3.TG.lo.restgap": 2.837447557242384,
+  "E3.TG.lo.peakdec": 5.042365074225081,
+  "E3.TG.lo.jerk": 2.5166401137716354,
+  "E3.TG.lo.fallback": 0.0855,
+  "E3.TG.lo.dc": -0.2,
+  "E3.TG.lo.dc.ci": [
+   -0.317818058056279,
+   -0.09852101539727064
+  ],
+  "E3.TG.lo.dt": -0.12752293127493997,
+  "E3.TG.lo.dt.ci": [
+   -0.1930577104640373,
+   -0.06441361882326416
+  ],
+  "E3.TG.lo.d_vimp": null,
+  "E3.TG.lo.d_vimp.ci": null,
+  "E3.TG.lo.d_restgap": -0.5692193834553638,
+  "E3.TG.lo.d_restgap.ci": [
+   -1.032136710137585,
+   -0.0950836933629261
+  ],
+  "E3.TG.lo.d_peakdec": -4.253274629148216,
+  "E3.TG.lo.d_peakdec.ci": [
+   -6.170906475995072,
+   -2.5980492704824947
+  ],
+  "E3.TG.lo.d_jerk": -6.172164737611484,
+  "E3.TG.lo.d_jerk.ci": [
+   -10.199051460403235,
+   -2.7627757035836846
+  ],
+  "E3.TG.lo.d_fallback": -0.3957467669220784,
+  "E3.TG.lo.d_fallback.ci": [
+   -0.5079382573684298,
+   -0.2759981607868345
+  ],
+  "E3.TG.hi.contact": 0.0,
+  "E3.TG.hi.vimp": null,
+  "E3.TG.hi.tlost": 24.731640851603448,
+  "E3.TG.hi.restgap": 4.654036143771672,
+  "E3.TG.hi.peakdec": 4.90234428032565,
+  "E3.TG.hi.jerk": 2.7404571294423454,
+  "E3.TG.hi.fallback": 0.026166666666666668,
+  "E3.TG.hi.dc": -0.05,
+  "E3.TG.hi.dc.ci": [
+   -0.1370051647634852,
+   0.018555138379676317
+  ],
+  "E3.TG.hi.dt": -0.2326392234502068,
+  "E3.TG.hi.dt.ci": [
+   -0.3216425164877998,
+   -0.14689957123565597
+  ],
+  "E3.TG.hi.d_vimp": null,
+  "E3.TG.hi.d_vimp.ci": null,
+  "E3.TG.hi.d_restgap": -1.2591662169458822,
+  "E3.TG.hi.d_restgap.ci": [
+   -1.8805586966514884,
+   -0.6188718165565288
+  ],
+  "E3.TG.hi.d_peakdec": -2.666383467480835,
+  "E3.TG.hi.d_peakdec.ci": [
+   -3.8014675035538006,
+   -1.7608290603470413
+  ],
+  "E3.TG.hi.d_jerk": -2.406457185110898,
+  "E3.TG.hi.d_jerk.ci": [
+   -4.749608788054559,
+   -0.5326646670397087
+  ],
+  "E3.TG.hi.d_fallback": -0.7365580401510635,
+  "E3.TG.hi.d_fallback.ci": [
+   -0.780611111111111,
+   -0.6850832985489963
+  ],
+  "E3.PS.lo.contact": 0.0,
+  "E3.PS.lo.vimp": null,
+  "E3.PS.lo.tlost": 24.493766288270887,
+  "E3.PS.lo.restgap": 2.6675022983599326,
+  "E3.PS.lo.peakdec": 5.148249149365602,
+  "E3.PS.lo.jerk": 3.5669477124031035,
+  "E3.PS.lo.fallback": 0.024277777777777777,
+  "E3.PS.lo.dc": -0.2,
+  "E3.PS.lo.dc.ci": [
+   -0.317818058056279,
+   -0.09852101539727064
+  ],
+  "E3.PS.lo.dt": -0.16521036074629727,
+  "E3.PS.lo.dt.ci": [
+   -0.2509732701553036,
+   -0.08067932176749579
+  ],
+  "E3.PS.lo.d_vimp": null,
+  "E3.PS.lo.d_vimp.ci": null,
+  "E3.PS.lo.d_restgap": -0.8774951152389647,
+  "E3.PS.lo.d_restgap.ci": [
+   -1.4534105730615288,
+   -0.2817749765922013
+  ],
+  "E3.PS.lo.d_peakdec": -3.353132117444844,
+  "E3.PS.lo.d_peakdec.ci": [
+   -5.422409465958805,
+   -1.5678441745610703
+  ],
+  "E3.PS.lo.d_jerk": -5.087180129487873,
+  "E3.PS.lo.d_jerk.ci": [
+   -9.235122545400555,
+   -1.583683779472552
+  ],
+  "E3.PS.lo.d_fallback": -0.4569689891443007,
+  "E3.PS.lo.d_fallback.ci": [
+   -0.5417366238919812,
+   -0.3677419228632428
+  ],
+  "E3.PS.lo.caution": 11.877504959846242,
+  "E3.PS.hi.contact": 0.0,
+  "E3.PS.hi.vimp": null,
+  "E3.PS.hi.tlost": 24.493766288270887,
+  "E3.PS.hi.restgap": 2.6675022983599326,
+  "E3.PS.hi.peakdec": 5.148249149365602,
+  "E3.PS.hi.jerk": 3.5669477124031035,
+  "E3.PS.hi.fallback": 0.024277777777777777,
+  "E3.PS.hi.dc": -0.05,
+  "E3.PS.hi.dc.ci": [
+   -0.1370051647634852,
+   0.018555138379676317
+  ],
+  "E3.PS.hi.dt": -0.47380416350467713,
+  "E3.PS.hi.dt.ci": [
+   -0.5957284967292793,
+   -0.357701649480903
+  ],
+  "E3.PS.hi.d_vimp": null,
+  "E3.PS.hi.d_vimp.ci": null,
+  "E3.PS.hi.d_restgap": -3.2118142890929713,
+  "E3.PS.hi.d_restgap.ci": [
+   -3.904561375185219,
+   -2.4991403496385893
+  ],
+  "E3.PS.hi.d_peakdec": -1.791245934253817,
+  "E3.PS.hi.d_peakdec.ci": [
+   -2.960970048109569,
+   -0.8602334205029502
+  ],
+  "E3.PS.hi.d_jerk": -1.5071924526170128,
+  "E3.PS.hi.d_jerk.ci": [
+   -3.91256517861358,
+   0.40844580067942227
+  ],
+  "E3.PS.hi.d_fallback": -0.7384469290399522,
+  "E3.PS.hi.d_fallback.ci": [
+   -0.7802778398926655,
+   -0.6894467327569073
+  ],
+  "E3.PS.hi.caution": 11.877504959846242,
+  "E3.NIMM.lo.contact": 0.2,
+  "E3.NIMM.lo.vimp": 6.479043980654751,
+  "E3.NIMM.lo.tlost": 24.494285249244427,
+  "E3.NIMM.lo.restgap": 3.423048243949373,
+  "E3.NIMM.lo.peakdec": 6.007501090588297,
+  "E3.NIMM.lo.jerk": 3.3725079561984526,
+  "E3.NIMM.lo.fallback": 0.5380740937106502,
+  "E3.NIMM.lo.dc": 0.0,
+  "E3.NIMM.lo.dc.ci": [
+   -0.04802394035107483,
+   0.04802394035107483
+  ],
+  "E3.NIMM.lo.dt": 0.01897458248587543,
+  "E3.NIMM.lo.dt.ci": [
+   0.001457049264334203,
+   0.04016306272055029
+  ],
+  "E3.NIMM.lo.d_vimp": -0.0565167965614819,
+  "E3.NIMM.lo.d_vimp.ci": [
+   -0.18938024686279029,
+   0.006339503359049559
+  ],
+  "E3.NIMM.lo.d_restgap": 0.0891337160500143,
+  "E3.NIMM.lo.d_restgap.ci": [
+   -0.011699112440428022,
+   0.2022614234772918
+  ],
+  "E3.NIMM.lo.d_peakdec": -0.02174014139117221,
+  "E3.NIMM.lo.d_peakdec.ci": [
+   -0.13921605657469893,
+   0.09634728967668757
+  ],
+  "E3.NIMM.lo.d_jerk": 0.013773628535610379,
+  "E3.NIMM.lo.d_jerk.ci": [
+   -0.1332341456845769,
+   0.15619879035182327
+  ],
+  "E3.NIMM.lo.d_fallback": 0.004353318250377076,
+  "E3.NIMM.lo.d_fallback.ci": [
+   -0.002757792860734036,
+   0.011283053670186007
+  ],
+  "E3.NIMM.hi.contact": 0.08333333333333333,
+  "E3.NIMM.hi.vimp": 4.675617014783711,
+  "E3.NIMM.hi.tlost": 24.868180260280816,
+  "E3.NIMM.hi.restgap": 5.776453945180301,
+  "E3.NIMM.hi.peakdec": 6.217737828727043,
+  "E3.NIMM.hi.jerk": 3.329546985837259,
+  "E3.NIMM.hi.fallback": 0.8185015199380103,
+  "E3.NIMM.hi.dc": -0.016666666666666677,
+  "E3.NIMM.hi.dc.ci": [
+   -0.08612620564176103,
+   0.04635627801544523
+  ],
+  "E3.NIMM.hi.dt": -0.002045928167898836,
+  "E3.NIMM.hi.dt.ci": [
+   -0.018672207672964066,
+   0.011782907181209612
+  ],
+  "E3.NIMM.hi.d_vimp": 0.09555550676852817,
+  "E3.NIMM.hi.d_vimp.ci": [
+   -0.03329912821451823,
+   0.35181748410961217
+  ],
+  "E3.NIMM.hi.d_restgap": -0.02210045539885536,
+  "E3.NIMM.hi.d_restgap.ci": [
+   -0.11565945375996231,
+   0.06129057674562981
+  ],
+  "E3.NIMM.hi.d_peakdec": -0.033412131847956786,
+  "E3.NIMM.hi.d_peakdec.ci": [
+   -0.400969901503842,
+   0.23316962330928453
+  ],
+  "E3.NIMM.hi.d_jerk": -0.059810690745766566,
+  "E3.NIMM.hi.d_jerk.ci": [
+   -0.6424486561777233,
+   0.3677510723186764
+  ],
+  "E3.NIMM.hi.d_fallback": 0.010684734636789433,
+  "E3.NIMM.hi.d_fallback.ci": [
+   -0.0016417213201459777,
+   0.03135148321021604
+  ],
+  "E3.F0.lo.contact": 0.2,
+  "E3.F0.lo.vimp": 5.376525166005152,
+  "E3.F0.lo.tlost": 24.518317228584078,
+  "E3.F0.lo.restgap": 3.5745804340085083,
+  "E3.F0.lo.peakdec": 6.165788977045306,
+  "E3.F0.lo.jerk": 3.372719323383499,
+  "E3.F0.lo.fallback": 0.5265079882621454,
+  "E3.F0.lo.caution": 14.100055714724949,
+  "E3.F0.hi.contact": 0.05,
+  "E3.F0.hi.vimp": 6.0350995941553265,
+  "E3.F0.hi.tlost": 24.89001654494595,
+  "E3.F0.hi.restgap": 5.912451627636842,
+  "E3.F0.hi.peakdec": 6.257926268542243,
+  "E3.F0.hi.jerk": 3.3764193780238587,
+  "E3.F0.hi.fallback": 0.785677007828356,
+  "E3.F0.hi.caution": 22.295067553098814,
+  "E3.F0IMM.lo.contact": 0.2,
+  "E3.F0IMM.lo.vimp": 6.479043980654751,
+  "E3.F0IMM.lo.tlost": 24.47531066675855,
+  "E3.F0IMM.lo.restgap": 3.3339145278993585,
+  "E3.F0IMM.lo.peakdec": 5.989225581125202,
+  "E3.F0IMM.lo.jerk": 3.04897167054493,
+  "E3.F0IMM.lo.fallback": 0.5331079737522371,
+  "E3.F0IMM.hi.contact": 0.1,
+  "E3.F0IMM.hi.vimp": 3.708409506829639,
+  "E3.F0IMM.hi.tlost": 24.88879385112151,
+  "E3.F0IMM.hi.restgap": 5.9023838374033275,
+  "E3.F0IMM.hi.peakdec": 6.177670195138003,
+  "E3.F0IMM.hi.jerk": 3.3670061691275963,
+  "E3.F0IMM.hi.fallback": 0.8130626548244819,
+  "E3.PS.caution_matched": false,
+  "E3.n_cases": 60,
+  "E3.NIMM.dropped": false,
+  "EH1": "safer at no extra cost",
+  "EH2": "equivalent",
+  "EH3": "equivalent",
+  "E3b.const.N.dc": 0.0,
+  "E3b.const.N.dc.ci": [
+   -0.16112515805281938,
+   0.16112515805281938
+  ],
+  "E3b.const.N.dt": 0.003270221579983179,
+  "E3b.const.N.dt.ci": [
+   0.0,
+   0.007540001414492537
+  ],
+  "E3b.const.N.d_vimp": null,
+  "E3b.const.N.d_vimp.ci": null,
+  "E3b.const.N.d_restgap": null,
+  "E3b.const.N.d_restgap.ci": null,
+  "E3b.const.N.d_peakdec": 0.02888346355909288,
+  "E3b.const.N.d_peakdec.ci": [
+   -7.465357227598446e-05,
+   0.08672504424955463
+  ],
+  "E3b.const.N.d_jerk": -0.007104015401843256,
+  "E3b.const.N.d_jerk.ci": [
+   -0.021489459601731188,
+   0.0041707448469643586
+  ],
+  "E3b.const.N.d_fallback": 0.0,
+  "E3b.const.N.d_fallback.ci": [
+   0.0,
+   0.0
+  ],
+  "E3b.const.CK3.dc": 0.0,
+  "E3b.const.CK3.dc.ci": [
+   -0.16112515805281938,
+   0.16112515805281938
+  ],
+  "E3b.const.CK3.dt": 0.5175729574865701,
+  "E3b.const.CK3.dt.ci": [
+   0.251202089921885,
+   0.8105684120448685
+  ],
+  "E3b.const.CK3.d_vimp": null,
+  "E3b.const.CK3.d_vimp.ci": null,
+  "E3b.const.CK3.d_restgap": null,
+  "E3b.const.CK3.d_restgap.ci": null,
+  "E3b.const.CK3.d_peakdec": 0.7550239144498505,
+  "E3b.const.CK3.d_peakdec.ci": [
+   0.4188086756800459,
+   1.127275338777491
+  ],
+  "E3b.const.CK3.d_jerk": 0.7127558843156109,
+  "E3b.const.CK3.d_jerk.ci": [
+   0.41008513598340646,
+   1.0371052122648343
+  ],
+  "E3b.const.CK3.d_fallback": 0.0,
+  "E3b.const.CK3.d_fallback.ci": [
+   0.0,
+   0.0
+  ],
+  "E3b.const.PS.dc": 0.0,
+  "E3b.const.PS.dc.ci": [
+   -0.16112515805281938,
+   0.16112515805281938
+  ],
+  "E3b.const.PS.dt": 1.3401693578071543,
+  "E3b.const.PS.dt.ci": [
+   0.745162564756973,
+   1.9781603299707402
+  ],
+  "E3b.const.PS.d_vimp": null,
+  "E3b.const.PS.d_vimp.ci": null,
+  "E3b.const.PS.d_restgap": null,
+  "E3b.const.PS.d_restgap.ci": null,
+  "E3b.const.PS.d_peakdec": 2.1268736653941525,
+  "E3b.const.PS.d_peakdec.ci": [
+   1.322717706483715,
+   2.933448574368494
+  ],
+  "E3b.const.PS.d_jerk": 1.4202664754841643,
+  "E3b.const.PS.d_jerk.ci": [
+   0.99611364896068,
+   1.827005782092133
+  ],
+  "E3b.const.PS.d_fallback": 0.013000000000000001,
+  "E3b.const.PS.d_fallback.ci": [
+   0.003166666666666667,
+   0.024666666666666663
+  ],
+  "E3b.const.TG.dc": 0.0,
+  "E3b.const.TG.dc.ci": [
+   -0.16112515805281938,
+   0.16112515805281938
+  ],
+  "E3b.const.TG.dt": 0.0743873177079708,
+  "E3b.const.TG.dt.ci": [
+   0.0292951446803583,
+   0.12589202742892178
+  ],
+  "E3b.const.TG.d_vimp": null,
+  "E3b.const.TG.d_vimp.ci": null,
+  "E3b.const.TG.d_restgap": null,
+  "E3b.const.TG.d_restgap.ci": null,
+  "E3b.const.TG.d_peakdec": 0.07990112592838639,
+  "E3b.const.TG.d_peakdec.ci": [
+   -0.0012173292154266065,
+   0.18366206309121214
+  ],
+  "E3b.const.TG.d_jerk": 0.11248614417823584,
+  "E3b.const.TG.d_jerk.ci": [
+   -0.011243531527970762,
+   0.2597375237745664
+  ],
+  "E3b.const.TG.d_fallback": 0.0,
+  "E3b.const.TG.d_fallback.ci": [
+   0.0,
+   0.0
+  ],
+  "E3b.mild.N.dc": 0.0,
+  "E3b.mild.N.dc.ci": [
+   -0.16112515805281938,
+   0.16112515805281938
+  ],
+  "E3b.mild.N.dt": 0.004480819737264064,
+  "E3b.mild.N.dt.ci": [
+   -0.006252891139319825,
+   0.01491138262552989
+  ],
+  "E3b.mild.N.d_vimp": null,
+  "E3b.mild.N.d_vimp.ci": null,
+  "E3b.mild.N.d_restgap": null,
+  "E3b.mild.N.d_restgap.ci": null,
+  "E3b.mild.N.d_peakdec": 0.010219764713486956,
+  "E3b.mild.N.d_peakdec.ci": [
+   -0.012294631002173984,
+   0.0470604956237882
+  ],
+  "E3b.mild.N.d_jerk": 0.019391888288109938,
+  "E3b.mild.N.d_jerk.ci": [
+   -0.12775290034878187,
+   0.19785890083815877
+  ],
+  "E3b.mild.N.d_fallback": 0.0,
+  "E3b.mild.N.d_fallback.ci": [
+   0.0,
+   0.0
+  ],
+  "E3b.mild.CK3.dc": 0.0,
+  "E3b.mild.CK3.dc.ci": [
+   -0.16112515805281938,
+   0.16112515805281938
+  ],
+  "E3b.mild.CK3.dt": 0.8221667153972849,
+  "E3b.mild.CK3.dt.ci": [
+   0.7899246926621825,
+   0.8552576051314833
+  ],
+  "E3b.mild.CK3.d_vimp": null,
+  "E3b.mild.CK3.d_vimp.ci": null,
+  "E3b.mild.CK3.d_restgap": null,
+  "E3b.mild.CK3.d_restgap.ci": null,
+  "E3b.mild.CK3.d_peakdec": 0.018875925860749376,
+  "E3b.mild.CK3.d_peakdec.ci": [
+   -0.027440463045755557,
+   0.07473788553884499
+  ],
+  "E3b.mild.CK3.d_jerk": 0.7524876901414121,
+  "E3b.mild.CK3.d_jerk.ci": [
+   0.47418227500182336,
+   1.0301259821487336
+  ],
+  "E3b.mild.CK3.d_fallback": 0.0,
+  "E3b.mild.CK3.d_fallback.ci": [
+   0.0,
+   0.0
+  ],
+  "E3b.mild.PS.dc": 0.0,
+  "E3b.mild.PS.dc.ci": [
+   -0.16112515805281938,
+   0.16112515805281938
+  ],
+  "E3b.mild.PS.dt": 2.3044660752952764,
+  "E3b.mild.PS.dt.ci": [
+   1.8021055775781731,
+   2.8362427017396685
+  ],
+  "E3b.mild.PS.d_vimp": null,
+  "E3b.mild.PS.d_vimp.ci": null,
+  "E3b.mild.PS.d_restgap": null,
+  "E3b.mild.PS.d_restgap.ci": null,
+  "E3b.mild.PS.d_peakdec": 0.8917046402319322,
+  "E3b.mild.PS.d_peakdec.ci": [
+   0.3481950612669381,
+   1.5277423823726903
+  ],
+  "E3b.mild.PS.d_jerk": 1.8259476240305061,
+  "E3b.mild.PS.d_jerk.ci": [
+   1.5859901235751872,
+   2.080362190207089
+  ],
+  "E3b.mild.PS.d_fallback": 0.007666666666666667,
+  "E3b.mild.PS.d_fallback.ci": [
+   0.0018333333333333333,
+   0.015
+  ],
+  "E3b.mild.TG.dc": 0.0,
+  "E3b.mild.TG.dc.ci": [
+   -0.16112515805281938,
+   0.16112515805281938
+  ],
+  "E3b.mild.TG.dt": 0.18264914752974323,
+  "E3b.mild.TG.dt.ci": [
+   0.1348211235914486,
+   0.22630931557184344
+  ],
+  "E3b.mild.TG.d_vimp": null,
+  "E3b.mild.TG.d_vimp.ci": null,
+  "E3b.mild.TG.d_restgap": null,
+  "E3b.mild.TG.d_restgap.ci": null,
+  "E3b.mild.TG.d_peakdec": -0.13836584083312653,
+  "E3b.mild.TG.d_peakdec.ci": [
+   -0.23434782623287126,
+   -0.05195640075107593
+  ],
+  "E3b.mild.TG.d_jerk": -0.1705710576859873,
+  "E3b.mild.TG.d_jerk.ci": [
+   -0.3982153238957517,
+   0.030010627798663907
+  ],
+  "E3b.mild.TG.d_fallback": 0.0,
+  "E3b.mild.TG.d_fallback.ci": [
+   0.0,
+   0.0
+  ],
+  "E3b.stopgo.N.dc": 0.0,
+  "E3b.stopgo.N.dc.ci": [
+   -0.1206092328224812,
+   0.1206092328224812
+  ],
+  "E3b.stopgo.N.dt": -0.005123696612515971,
+  "E3b.stopgo.N.dt.ci": [
+   -0.060683282445065344,
+   0.05323579281221851
+  ],
+  "E3b.stopgo.N.d_vimp": 0.0,
+  "E3b.stopgo.N.d_vimp.ci": [
+   0.0,
+   0.0
+  ],
+  "E3b.stopgo.N.d_restgap": null,
+  "E3b.stopgo.N.d_restgap.ci": null,
+  "E3b.stopgo.N.d_peakdec": 0.13023486587024052,
+  "E3b.stopgo.N.d_peakdec.ci": [
+   -0.014646647140074213,
+   0.3430312151129461
+  ],
+  "E3b.stopgo.N.d_jerk": 0.06849431689277634,
+  "E3b.stopgo.N.d_jerk.ci": [
+   -0.06161291500020348,
+   0.2350084076564734
+  ],
+  "E3b.stopgo.N.d_fallback": 0.0011666666666666687,
+  "E3b.stopgo.N.d_fallback.ci": [
+   -0.0008333333333333318,
+   0.003833333333333337
+  ],
+  "E3b.stopgo.CK3.dc": -0.25,
+  "E3b.stopgo.CK3.dc.ci": [
+   -0.468700877618744,
+   -0.03776544556663036
+  ],
+  "E3b.stopgo.CK3.dt": 0.8022105532618523,
+  "E3b.stopgo.CK3.dt.ci": [
+   0.6817785556827707,
+   0.9163551527338596
+  ],
+  "E3b.stopgo.CK3.d_vimp": null,
+  "E3b.stopgo.CK3.d_vimp.ci": null,
+  "E3b.stopgo.CK3.d_restgap": null,
+  "E3b.stopgo.CK3.d_restgap.ci": null,
+  "E3b.stopgo.CK3.d_peakdec": -5.427309938354406,
+  "E3b.stopgo.CK3.d_peakdec.ci": [
+   -8.82095875191226,
+   -2.5841583034487354
+  ],
+  "E3b.stopgo.CK3.d_jerk": -6.878011939706513,
+  "E3b.stopgo.CK3.d_jerk.ci": [
+   -13.525395732816786,
+   -1.388082942792077
+  ],
+  "E3b.stopgo.CK3.d_fallback": -0.12075443989860465,
+  "E3b.stopgo.CK3.d_fallback.ci": [
+   -0.1535906086031944,
+   -0.0869114716000587
+  ],
+  "E3b.stopgo.PS.dc": -0.25,
+  "E3b.stopgo.PS.dc.ci": [
+   -0.468700877618744,
+   -0.03776544556663036
+  ],
+  "E3b.stopgo.PS.dt": 2.347592235707379,
+  "E3b.stopgo.PS.dt.ci": [
+   2.083351857673036,
+   2.6007975020289598
+  ],
+  "E3b.stopgo.PS.d_vimp": null,
+  "E3b.stopgo.PS.d_vimp.ci": null,
+  "E3b.stopgo.PS.d_restgap": null,
+  "E3b.stopgo.PS.d_restgap.ci": null,
+  "E3b.stopgo.PS.d_peakdec": -3.596403348146788,
+  "E3b.stopgo.PS.d_peakdec.ci": [
+   -7.357738596154706,
+   -0.4493541885642171
+  ],
+  "E3b.stopgo.PS.d_jerk": -5.788129992246779,
+  "E3b.stopgo.PS.d_jerk.ci": [
+   -12.602878952547393,
+   -0.16290469362354176
+  ],
+  "E3b.stopgo.PS.d_fallback": -0.03242110656527132,
+  "E3b.stopgo.PS.d_fallback.ci": [
+   -0.0635689481581644,
+   -0.0009966680535330417
+  ],
+  "E3b.stopgo.TG.dc": -0.2,
+  "E3b.stopgo.TG.dc.ci": [
+   -0.4171142428264243,
+   0.016600499109455574
+  ],
+  "E3b.stopgo.TG.dt": -0.21503900316091748,
+  "E3b.stopgo.TG.dt.ci": [
+   -0.3198979470024603,
+   -0.11262397101044841
+  ],
+  "E3b.stopgo.TG.d_vimp": -5.357897984009469,
+  "E3b.stopgo.TG.d_vimp.ci": null,
+  "E3b.stopgo.TG.d_restgap": null,
+  "E3b.stopgo.TG.d_restgap.ci": null,
+  "E3b.stopgo.TG.d_peakdec": -4.53514701845135,
+  "E3b.stopgo.TG.d_peakdec.ci": [
+   -7.524834103179713,
+   -2.0219983664901813
+  ],
+  "E3b.stopgo.TG.d_jerk": -6.997503077474735,
+  "E3b.stopgo.TG.d_jerk.ci": [
+   -13.019623380974222,
+   -2.058647945561527
+  ],
+  "E3b.stopgo.TG.d_fallback": -0.06966713831130307,
+  "E3b.stopgo.TG.d_fallback.ci": [
+   -0.10383594054580896,
+   -0.030743187335378553
+  ],
+  "E3b.n_cases": 60
+ }
+}

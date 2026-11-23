@@ -1,0 +1,30 @@
+{
+ "job": "synth_full",
+ "kind": "FULL",
+ "n_run": 30,
+ "full": [
+  3.2307866263090173,
+  0.0012114685691210138,
+  -0.03686694731470848,
+  0.008674575838754927,
+  -4.250000000000004
+ ],
+ "n_outer": 40,
+ "n_inner": 60,
+ "seed_outer": 20261912,
+ "seeds_inner": [
+  20261913,
+  20261914
+ ],
+ "job_sha256": "56ad0d1df525a358a95d3a2c2ec7ea5526e5f901456f259bcfd8d9e1eb442c2d",
+ "written": "2026-11-20 01:36:02",
+ "split": "SYNTHETIC (recount\\synth, val)",
+ "horizon_s": 3,
+ "statistics": [
+  "R",
+  "RR_N",
+  "r_IMM",
+  "c_IMM",
+  "eff_IMM"
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "code": "dr_compare_v01.py",
+ "rule": "A10 sec. 10.1(c): counts exact, values within 1e-09, levels and verdicts equal",
+ "first": "MECH_train_IMM_v01_first50.json",
+ "second": "MECH_RECOUNT_train_IMM_v01_first50.json",
+ "n_keys_compared": 26,
+ "only_first": [
+  "M.ci",
+  "M.level",
+  "M.passes"
+ ],
+ "only_second": [],
+ "allowed_missing": [],
+ "max_abs_diff": 8.881784197001252e-16,
+ "n_float_diffs_within_tol": 7,
+ "differ": [],
+ "agree": false,
+ "written": "2026-11-22 03:25:15"
+}

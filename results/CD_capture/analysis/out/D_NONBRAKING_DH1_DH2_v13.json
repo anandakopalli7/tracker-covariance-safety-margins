@@ -1,0 +1,904 @@
+{
+ "code": "d_nonbraking_v13.py",
+ "amendment": "AMENDMENT_10_v13 sec. 6 D1",
+ "gate": "LOCK_A10_2 sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df",
+ "test_old": false,
+ "matched": {
+  "F0_g": 1.0,
+  "caution_F0_g1_pp": 8.96842530569466,
+  "scales": {
+   "N": {
+    "index": 78,
+    "g": 0.8413951416451951,
+    "design_caution_pp": 8.985329873246142
+   },
+   "NA": {
+    "index": 78,
+    "g": 0.8413951416451951,
+    "design_caution_pp": 9.005930108581145
+   },
+   "A1": {
+    "index": 51,
+    "g": 0.1778279410038923,
+    "design_caution_pp": 9.043677257195437
+   },
+   "CK3": {
+    "index": 74,
+    "g": 0.6683439175686149,
+    "design_caution_pp": 9.056540978792993
+   },
+   "Q": {
+    "index": 54,
+    "g": 0.21134890398366477,
+    "design_caution_pp": 8.951647772459031
+   },
+   "TG": {
+    "index": 63,
+    "g": 0.35481338923357547,
+    "design_caution_pp": 8.900809539616489
+   }
+  },
+  "PS_triple": {
+   "indices": [
+    164,
+    162,
+    38
+   ],
+   "g": [
+    118.85022274370189,
+    105.92537251772897,
+    0.08413951416451952
+   ]
+  }
+ },
+ "draw": "default_rng(20261911), 20000 run resamples per variant",
+ "variants": {
+  "constant": {
+   "runs": [
+    "pd13_d1v13_constant_0000_native",
+    "pd13_d1v13_constant_0001_native",
+    "pd13_d1v13_constant_0002_native",
+    "pd13_d1v13_constant_0003_native",
+    "pd13_d1v13_constant_0004_native",
+    "pd13_d1v13_constant_0005_native",
+    "pd13_d1v13_constant_0006_native",
+    "pd13_d1v13_constant_0007_native",
+    "pd13_d1v13_constant_0008_native",
+    "pd13_d1v13_constant_0009_native",
+    "pd13_d1v13_constant_0010_native",
+    "pd13_d1v13_constant_0011_native",
+    "pd13_d1v13_constant_0012_native",
+    "pd13_d1v13_constant_0013_native",
+    "pd13_d1v13_constant_0014_native",
+    "pd13_d1v13_constant_0015_native",
+    "pd13_d1v13_constant_0016_native",
+    "pd13_d1v13_constant_0017_native",
+    "pd13_d1v13_constant_0018_native",
+    "pd13_d1v13_constant_0019_native",
+    "pd13_d1v13_constant_0020_native",
+    "pd13_d1v13_constant_0021_native",
+    "pd13_d1v13_constant_0022_native",
+    "pd13_d1v13_constant_0023_native",
+    "pd13_d1v13_constant_0024_native",
+    "pd13_d1v13_constant_0025_native",
+    "pd13_d1v13_constant_0026_native",
+    "pd13_d1v13_constant_0027_native",
+    "pd13_d1v13_constant_0028_native",
+    "pd13_d1v13_constant_0029_native",
+    "pd13_d1v13_constant_0030_native",
+    "pd13_d1v13_constant_0031_native",
+    "pd13_d1v13_constant_0032_native",
+    "pd13_d1v13_constant_0033_native",
+    "pd13_d1v13_constant_0034_native"
+   ],
+   "n_runs": 35,
+   "D_H1": "costs progress",
+   "D_H2": "costs progress",
+   "sources": {
+    "N": {
+     "caution_diff_pp": {
+      "point": -0.003783276813980066,
+      "ci": [
+       -0.011349830441940212,
+       0.0
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.007566553627960132,
+       0.00378327681398008
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.0,
+       0.0
+      ]
+     },
+     "classification": "no measurable cost",
+     "caution_pp": 0.03071514778177939,
+     "wrong_go_pp": 0.0
+    },
+    "NA": {
+     "caution_diff_pp": {
+      "point": -0.003783276813980066,
+      "ci": [
+       -0.011349830441940212,
+       0.0
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.007566553627960132,
+       0.00378327681398008
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.0,
+       0.0
+      ]
+     },
+     "classification": "no measurable cost",
+     "caution_pp": 0.03071514778177939,
+     "wrong_go_pp": 0.0
+    },
+    "A1": {
+     "caution_diff_pp": {
+      "point": 0.004292173035728236,
+      "ci": [
+       0.0,
+       0.012876519107184722
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.00429217303572825,
+       0.008584346071456472
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.0,
+       0.0
+      ]
+     },
+     "classification": "no measurable cost",
+     "caution_pp": 0.03879059763148769,
+     "wrong_go_pp": 0.0
+    },
+    "CK3": {
+     "caution_diff_pp": {
+      "point": 5.295604858199197,
+      "ci": [
+       2.7127007896353676,
+       8.46017538150503
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       2.1310343348933642,
+       7.878508926763026
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.0,
+       0.0
+      ]
+     },
+     "classification": "costs progress",
+     "caution_pp": 5.330103282794957,
+     "wrong_go_pp": 0.0
+    },
+    "Q": {
+     "caution_diff_pp": {
+      "point": 0.004292173035728236,
+      "ci": [
+       0.0,
+       0.012876519107184722
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.00429217303572825,
+       0.008584346071456472
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.0,
+       0.0
+      ]
+     },
+     "classification": "no measurable cost",
+     "caution_pp": 0.03879059763148769,
+     "wrong_go_pp": 0.0
+    },
+    "TG": {
+     "caution_diff_pp": {
+      "point": 0.006809068248302297,
+      "ci": [
+       0.0,
+       0.017999391026067624
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.00438125452946303,
+       0.013618136496604594
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.0,
+       0.0
+      ]
+     },
+     "classification": "no measurable cost",
+     "caution_pp": 0.04130749284406175,
+     "wrong_go_pp": 0.0
+    },
+    "PS": {
+     "caution_diff_pp": {
+      "point": 35.23227468411714,
+      "ci": [
+       26.280885692418416,
+       44.133962586116844
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       26.33058678211743,
+       44.18366367581586
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.0,
+       0.0
+      ]
+     },
+     "classification": "costs progress",
+     "caution_pp": 35.26677310871288,
+     "wrong_go_pp": 0.0
+    },
+    "F0": {
+     "caution_pp": 0.034498424595759455,
+     "wrong_go_pp": 0.0,
+     "decisions": 9485.0
+    }
+   }
+  },
+  "mild_braking": {
+   "runs": [
+    "pd13_d1v13_mild_braking_0000_native",
+    "pd13_d1v13_mild_braking_0001_native",
+    "pd13_d1v13_mild_braking_0002_native",
+    "pd13_d1v13_mild_braking_0003_native",
+    "pd13_d1v13_mild_braking_0004_native",
+    "pd13_d1v13_mild_braking_0005_native",
+    "pd13_d1v13_mild_braking_0006_native",
+    "pd13_d1v13_mild_braking_0007_native",
+    "pd13_d1v13_mild_braking_0008_native",
+    "pd13_d1v13_mild_braking_0009_native",
+    "pd13_d1v13_mild_braking_0010_native",
+    "pd13_d1v13_mild_braking_0011_native",
+    "pd13_d1v13_mild_braking_0012_native",
+    "pd13_d1v13_mild_braking_0013_native",
+    "pd13_d1v13_mild_braking_0014_native",
+    "pd13_d1v13_mild_braking_0015_native",
+    "pd13_d1v13_mild_braking_0016_native",
+    "pd13_d1v13_mild_braking_0017_native",
+    "pd13_d1v13_mild_braking_0018_native",
+    "pd13_d1v13_mild_braking_0019_native",
+    "pd13_d1v13_mild_braking_0020_native",
+    "pd13_d1v13_mild_braking_0021_native",
+    "pd13_d1v13_mild_braking_0022_native",
+    "pd13_d1v13_mild_braking_0023_native",
+    "pd13_d1v13_mild_braking_0024_native",
+    "pd13_d1v13_mild_braking_0025_native",
+    "pd13_d1v13_mild_braking_0026_native",
+    "pd13_d1v13_mild_braking_0027_native",
+    "pd13_d1v13_mild_braking_0028_native",
+    "pd13_d1v13_mild_braking_0029_native",
+    "pd13_d1v13_mild_braking_0030_native",
+    "pd13_d1v13_mild_braking_0031_native",
+    "pd13_d1v13_mild_braking_0032_native",
+    "pd13_d1v13_mild_braking_0033_native",
+    "pd13_d1v13_mild_braking_0034_native"
+   ],
+   "n_runs": 35,
+   "D_H1": "costs progress",
+   "D_H2": "costs progress",
+   "sources": {
+    "N": {
+     "caution_diff_pp": {
+      "point": 0.008707581581071544,
+      "ci": [
+       0.0025437094559256357,
+       0.017079839913149927
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.0003353232489931614,
+       0.014871453706217452
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": -0.021085925144965767,
+      "ci": [
+       -0.05271481286241442,
+       0.0
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.042171850289931534,
+       0.010542962572482883
+      ]
+     },
+     "classification": "no measurable cost",
+     "caution_pp": 1.7097470901383454,
+     "wrong_go_pp": 0.9277807063784923
+    },
+    "NA": {
+     "caution_diff_pp": {
+      "point": 0.008707581581071544,
+      "ci": [
+       0.0025437094559256357,
+       0.017079839913149927
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.0003353232489931614,
+       0.014871453706217452
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": -0.021085925144965767,
+      "ci": [
+       -0.05271481286241442,
+       0.0
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.042171850289931534,
+       0.010542962572482883
+      ]
+     },
+     "classification": "no measurable cost",
+     "caution_pp": 1.7097470901383454,
+     "wrong_go_pp": 0.9277807063784923
+    },
+    "A1": {
+     "caution_diff_pp": {
+      "point": 0.12204222503159778,
+      "ci": [
+       0.07672912846396844,
+       0.17132622960829058
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.07275822045490499,
+       0.1673553215992271
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": -0.3584607274644175,
+      "ci": [
+       -0.6220347917764891,
+       -0.14760147601476012
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.5693199789140748,
+       -0.09488666315234584
+      ]
+     },
+     "classification": "no measurable cost",
+     "caution_pp": 1.8230817335888712,
+     "wrong_go_pp": 0.5904059040590406
+    },
+    "CK3": {
+     "caution_diff_pp": {
+      "point": 18.68907551254009,
+      "ci": [
+       15.440172021049507,
+       21.857243337845798
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       15.52090768723438,
+       21.937979004030673
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": -0.9488666315234581,
+      "ci": [
+       -1.591987348444913,
+       -0.41117554032683185
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -1.4865577227200844,
+       -0.3057459146020032
+      ]
+     },
+     "classification": "costs progress",
+     "caution_pp": 20.390115021097362,
+     "wrong_go_pp": 0.0
+    },
+    "Q": {
+     "caution_diff_pp": {
+      "point": 0.004525164498709655,
+      "ci": [
+       -0.004283444596551533,
+       0.013285090535731531
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.004234761538312221,
+       0.013333773593970843
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": -0.010542962572482883,
+      "ci": [
+       -0.05271481286241442,
+       0.03162888771744865
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.05271481286241442,
+       0.03162888771744865
+      ]
+     },
+     "classification": "no measurable cost",
+     "caution_pp": 1.705564673055983,
+     "wrong_go_pp": 0.9383236689509752
+    },
+    "TG": {
+     "caution_diff_pp": {
+      "point": 4.563186716242006,
+      "ci": [
+       3.4586397182048905,
+       5.648418345782143
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       3.4779550867018694,
+       5.667733714279121
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": -0.9488666315234581,
+      "ci": [
+       -1.591987348444913,
+       -0.41117554032683185
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -1.4865577227200844,
+       -0.3057459146020032
+      ]
+     },
+     "classification": "costs progress",
+     "caution_pp": 6.2642262247992795,
+     "wrong_go_pp": 0.0
+    },
+    "PS": {
+     "caution_diff_pp": {
+      "point": 53.46293015470048,
+      "ci": [
+       48.17461708041793,
+       58.7084579014487
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       48.21740240795226,
+       58.75124322898303
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": -0.9488666315234581,
+      "ci": [
+       -1.591987348444913,
+       -0.41117554032683185
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -1.4865577227200844,
+       -0.3057459146020032
+      ]
+     },
+     "classification": "costs progress",
+     "caution_pp": 55.16396966325775,
+     "wrong_go_pp": 0.0
+    },
+    "F0": {
+     "caution_pp": 1.7010395085572734,
+     "wrong_go_pp": 0.9488666315234581,
+     "decisions": 9485.0
+    }
+   }
+  },
+  "stop_and_go": {
+   "runs": [
+    "pd13_d1v13_stop_and_go_0000_native",
+    "pd13_d1v13_stop_and_go_0001_native",
+    "pd13_d1v13_stop_and_go_0002_native",
+    "pd13_d1v13_stop_and_go_0003_native",
+    "pd13_d1v13_stop_and_go_0004_native",
+    "pd13_d1v13_stop_and_go_0005_native",
+    "pd13_d1v13_stop_and_go_0006_native",
+    "pd13_d1v13_stop_and_go_0007_native",
+    "pd13_d1v13_stop_and_go_0008_native",
+    "pd13_d1v13_stop_and_go_0009_native",
+    "pd13_d1v13_stop_and_go_0010_native",
+    "pd13_d1v13_stop_and_go_0011_native",
+    "pd13_d1v13_stop_and_go_0012_native",
+    "pd13_d1v13_stop_and_go_0013_native",
+    "pd13_d1v13_stop_and_go_0014_native",
+    "pd13_d1v13_stop_and_go_0015_native",
+    "pd13_d1v13_stop_and_go_0016_native",
+    "pd13_d1v13_stop_and_go_0017_native",
+    "pd13_d1v13_stop_and_go_0018_native",
+    "pd13_d1v13_stop_and_go_0019_native",
+    "pd13_d1v13_stop_and_go_0020_native",
+    "pd13_d1v13_stop_and_go_0021_native",
+    "pd13_d1v13_stop_and_go_0022_native",
+    "pd13_d1v13_stop_and_go_0023_native",
+    "pd13_d1v13_stop_and_go_0024_native",
+    "pd13_d1v13_stop_and_go_0025_native",
+    "pd13_d1v13_stop_and_go_0026_native",
+    "pd13_d1v13_stop_and_go_0027_native",
+    "pd13_d1v13_stop_and_go_0028_native",
+    "pd13_d1v13_stop_and_go_0029_native",
+    "pd13_d1v13_stop_and_go_0030_native",
+    "pd13_d1v13_stop_and_go_0031_native",
+    "pd13_d1v13_stop_and_go_0032_native",
+    "pd13_d1v13_stop_and_go_0033_native",
+    "pd13_d1v13_stop_and_go_0034_native"
+   ],
+   "n_runs": 35,
+   "D_H1": "costs progress",
+   "D_H2": "costs progress",
+   "sources": {
+    "N": {
+     "caution_diff_pp": {
+      "point": 0.03353861603736252,
+      "ci": [
+       0.014387891167760536,
+       0.05431400093999949
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.012763231134725557,
+       0.05268934090696451
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": -0.014463407578825027,
+      "ci": [
+       -0.04730480956681331,
+       0.0
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.028926815157650054,
+       0.018377994409163254
+      ]
+     },
+     "classification": "no measurable cost",
+     "caution_pp": 3.262656825537023,
+     "wrong_go_pp": 6.9568990454151
+    },
+    "NA": {
+     "caution_diff_pp": {
+      "point": 0.058943990885075515,
+      "ci": [
+       0.03137429846269567,
+       0.08838791541098583
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.029500066359165203,
+       0.08651368330745536
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": -0.04339022273647686,
+      "ci": [
+       -0.09422152834717486,
+       0.0
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.08678044547295372,
+       0.0074410828742211416
+      ]
+     },
+     "classification": "no measurable cost",
+     "caution_pp": 3.288062200384736,
+     "wrong_go_pp": 6.927972230257448
+    },
+    "A1": {
+     "caution_diff_pp": {
+      "point": 0.5725233859254804,
+      "ci": [
+       0.39209544511214295,
+       0.7444544040461589
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.4005923678048018,
+       0.7529513267388177
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": -1.3017066820943013,
+      "ci": [
+       -1.5969716737427204,
+       -0.9969079555179997
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -1.606505408670603,
+       -1.0064416904458822
+      ]
+     },
+     "classification": "inconclusive",
+     "caution_pp": 3.8016415954251404,
+     "wrong_go_pp": 5.669655770899624
+    },
+    "CK3": {
+     "caution_diff_pp": {
+      "point": 1.6592859083689513,
+      "ci": [
+       1.1349926642982822,
+       2.237378011399703
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       1.0811938053381995,
+       2.1835791524396204
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": -4.700607463118311,
+      "ci": [
+       -6.27321704186795,
+       -3.401878649403402
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -5.999336276833219,
+       -3.1279978843686713
+      ]
+     },
+     "classification": "costs progress",
+     "caution_pp": 4.888404117868612,
+     "wrong_go_pp": 2.2707549898756145
+    },
+    "Q": {
+     "caution_diff_pp": {
+      "point": -0.008623057032437487,
+      "ci": [
+       -0.043342621500427767,
+       0.019545079808179135
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.03679119387305411,
+       0.026096507435552793
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": 0.0723170378941278,
+      "ci": [
+       0.013972334777141859,
+       0.14961157104053802
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.004977495252282416,
+       0.13066174101111375
+      ]
+     },
+     "classification": "costs safety",
+     "caution_pp": 3.2204951524672225,
+     "wrong_go_pp": 7.043679490888053
+    },
+    "TG": {
+     "caution_diff_pp": {
+      "point": 0.2714268411719214,
+      "ci": [
+       0.15166096707778956,
+       0.4342050355397348
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       0.10864864680410802,
+       0.39119271526605326
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": -0.17356089094590654,
+      "ci": [
+       -0.3093832799159153,
+       -0.06450209221957502
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -0.28261968967223805,
+       -0.03773850197589779
+      ]
+     },
+     "classification": "no measurable cost",
+     "caution_pp": 3.5005450506715823,
+     "wrong_go_pp": 6.7978015620480186
+    },
+    "PS": {
+     "caution_diff_pp": {
+      "point": 21.44276758219422,
+      "ci": [
+       14.766818139639513,
+       28.146785549235926
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       14.738749615152518,
+       28.118717024748932
+      ]
+     },
+     "wrong_go_diff_pp": {
+      "point": -6.4796065953138555,
+      "ci": [
+       -8.03422903683261,
+       -5.196688846899715
+      ],
+      "invalid_share": 0.0,
+      "n_invalid": 0,
+      "outside": false,
+      "basic": [
+       -7.762524343727996,
+       -4.924984153795101
+      ]
+     },
+     "classification": "costs progress",
+     "caution_pp": 24.67188579169388,
+     "wrong_go_pp": 0.4917558576800694
+    },
+    "F0": {
+     "caution_pp": 3.229118209499661,
+     "wrong_go_pp": 6.971362452993925,
+     "decisions": 6914.0
+    }
+   }
+  }
+ },
+ "seconds": 63.8011417388916,
+ "written": "2026-11-20 08:28:37",
+ "code_sha256": {
+  "d_nonbraking_v13.py": "f155e8fcc91bb6f430e6cf54bdfcc3ec1b81edd721fbc85cf593c9fe3c7e64b8",
+  "cd_common_v13.py": "978dc19c136484b2514848536d6430beab4e45ec02e8099b0bd9ae11491cf0c2",
+  "c_lead_choice_v13.py": "ea9024990b97b9436452baf02ef95c8b3bf098a41af2efb58f89b7e2c42d9fb7"
+ }
+}

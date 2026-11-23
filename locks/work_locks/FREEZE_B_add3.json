@@ -1,0 +1,145 @@
+{
+ "addendum": 3,
+ "to": "work\\locks\\FREEZE_B.json",
+ "layers": [
+  {
+   "file": "FREEZE_B.json",
+   "sha256": "1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152"
+  },
+  {
+   "file": "FREEZE_B_add1.json",
+   "sha256": "9b71225a10645bfd28b2e43a2a05578f6131ed6ec8443f14125672d480927ad6"
+  },
+  {
+   "file": "FREEZE_B_add2.json",
+   "sha256": "6ffc5cd975b5ba91c597a1f989a1c649ca4bbbcf2244642577484f4b4341c39b"
+  }
+ ],
+ "written": "2026-11-20 03:36:24 Eastern Standard Time",
+ "writer": "package-B session, Claude Opus 5.5 (claude-opus-5-5)",
+ "code": "make_freeze_add_v02.py",
+ "reason": "Coordinator task of 20 Nov 2026 (~01:48, scope 01:53/01:58, decisions ~02:57 and ~03:20 laptop clock): package B on the 105 fresh lead-braking runs (A10 section 5.7, descriptive): Table III per tracker (CV, CV2, CA, IMM, AQ, IMM090, IMM098: RR_gl(N_x), c_x = RR_gl(E5_x), margin-ratio check, RR(CK3), lag, room by phase, after-stop room), B6 on fresh runs (RS075, terciles, delayed stop, stop reliance) under the A10 section 1 scoring judged until the stop ends, and TU (A10 section 5.6, 20 tuning runs). New code: b_fresh_retrack_v02, b_fresh_analysis_v02, b_fresh_b6_v02, b_stop_ext_v02, b_tu_v02, b_fresh_export_v02, b_fresh_compare_v02, make_freeze_add_v02; second program recount_fresh (Claude Sonnet); definitions B_FRESH_DEFINITIONS_v02.md; run sheet; B venv list. Changed: b_summary_v01.py (old-run B6 of record = B6_TESTOLD_v02 under the A10 section 1 scoring; v01 61-frame values a labelled sensitivity). Library unchanged. Old-run identity: arrays 10/10 bit-identical, analysis 89/89 for each of 7 trackers, B6 100/100 (61-frame) and stop reliance 21/21 vs v12, extended clearance 140,930 cells vs v11 out/ext (max 6.0e-14, 0 flag differences), TU grid 35/35 vs v12; first vs second program in test mode 220/220 keys and all per-resample rows agree. Gates: arrays from LOCK_A10_2; values only from LOCK_A10_2c.",
+ "library_unchanged": true,
+ "changed": [
+  {
+   "path": "B_retrack\\code\\b_summary_v01.py",
+   "sha256": "166098ac745a7fecd912e96529edc14a5396970842aa2c7cba4327475887db96",
+   "bytes": 16026,
+   "mtime": "2026-11-20 03:09:07",
+   "old_sha256": "9efbdfe425b0af9581e539628737e1555badcbcaff3e49007283fee037ab0898"
+  }
+ ],
+ "new": [
+  {
+   "path": "B_retrack\\B_FRESH_DEFINITIONS_v02.md",
+   "sha256": "a4c861c37a4934f5fd9fe2a6a623c0bbc3310ee4de2b8f60432b0e93270c034f",
+   "bytes": 11362,
+   "mtime": "2026-11-20 03:31:15"
+  },
+  {
+   "path": "B_retrack\\RUN_AFTER_LOCK2_B.md",
+   "sha256": "92c2b881754fda2342f1653b90f10efaf9f4b4f197187e5d5ae91d9f54bdfd46",
+   "bytes": 3092,
+   "mtime": "2026-11-20 03:18:25"
+  },
+  {
+   "path": "B_retrack\\VENV_FREEZE_B.txt",
+   "sha256": "e70677341b4487e1f0e60a7f4cd5b07d6c18a02b3e55d3be4361af95ab602dd7",
+   "bytes": 184,
+   "mtime": "2026-11-20 02:13:15"
+  },
+  {
+   "path": "B_retrack\\code\\b_fresh_analysis_v02.py",
+   "sha256": "1851538ef636b4a14a5eefc820f824904346f09869fce7b91dc93c98bd32dec2",
+   "bytes": 13316,
+   "mtime": "2026-11-20 03:17:33"
+  },
+  {
+   "path": "B_retrack\\code\\b_fresh_b6_v02.py",
+   "sha256": "25a5c74db3316637f038f9f2fe586a12bbbaf1c022de13eee3d282f9b5e574ec",
+   "bytes": 22281,
+   "mtime": "2026-11-20 03:28:47"
+  },
+  {
+   "path": "B_retrack\\code\\b_fresh_compare_v02.py",
+   "sha256": "35932d6446238a16bd37a42ecfac5aee0b1b9109d8d6864768e7e0d734d15b02",
+   "bytes": 7435,
+   "mtime": "2026-11-20 03:27:36"
+  },
+  {
+   "path": "B_retrack\\code\\b_fresh_export_v02.py",
+   "sha256": "668026a77775e9c97011c9d240742d272947cf7552a92ad5ad68b4c8f7462bc1",
+   "bytes": 5931,
+   "mtime": "2026-11-20 03:27:25"
+  },
+  {
+   "path": "B_retrack\\code\\b_fresh_retrack_v02.py",
+   "sha256": "2aa5f67b552bf36f6aac9ff07dba9913ed58ac4cc44a83d981d65efccf6f6730",
+   "bytes": 7450,
+   "mtime": "2026-11-20 01:57:22"
+  },
+  {
+   "path": "B_retrack\\code\\b_stop_ext_v02.py",
+   "sha256": "60d3aebcf70d2a3a1ee55ded8dd732498eec2488279d58695022872d2b23a159",
+   "bytes": 10703,
+   "mtime": "2026-11-20 02:45:19"
+  },
+  {
+   "path": "B_retrack\\code\\b_tu_v02.py",
+   "sha256": "d269a084713d04dbf5585394e85a97c6b89ed1e33b7f7285abea457608af3a72",
+   "bytes": 7518,
+   "mtime": "2026-11-20 02:24:32"
+  },
+  {
+   "path": "B_retrack\\code\\make_freeze_add_v02.py",
+   "sha256": "44f809724c100a9bf5fb74887e697672bf5c10300081fd43fc0051d7d5cbd70f",
+   "bytes": 5155,
+   "mtime": "2026-11-20 02:32:07"
+  },
+  {
+   "path": "B_retrack\\recount_fresh\\README_recount_fresh.md",
+   "sha256": "a76f4465d4c03594724e8476e69bed6505bfdb98432231d611297a94727df170",
+   "bytes": 10936,
+   "mtime": "2026-11-20 03:24:11"
+  },
+  {
+   "path": "B_retrack\\recount_fresh\\b6tu.py",
+   "sha256": "cf59570836804f090058eef8cecc06e2af6aa7b40ed8ba48ac42ab0347f09adf",
+   "bytes": 18387,
+   "mtime": "2026-11-20 02:59:00"
+  },
+  {
+   "path": "B_retrack\\recount_fresh\\compare_b6tu.py",
+   "sha256": "81de6216416be518d111328bec64f3381ce21403a5aab364b4b4f5563d95de22",
+   "bytes": 2770,
+   "mtime": "2026-11-20 02:59:32"
+  },
+  {
+   "path": "B_retrack\\recount_fresh\\compare_to_predecessor.py",
+   "sha256": "bba966981374536831384205866d6ffdecb57f219ec061d15549d254598b7fdc",
+   "bytes": 2501,
+   "mtime": "2026-11-20 02:02:34"
+  },
+  {
+   "path": "B_retrack\\recount_fresh\\recount_fresh.py",
+   "sha256": "ab77a768b6dd9d2e5d35eb8167836cff42ebb786c00fc9c8d865843e0c7429e7",
+   "bytes": 13991,
+   "mtime": "2026-11-20 03:20:43"
+  },
+  {
+   "path": "B_retrack\\recount_fresh\\rf_core.py",
+   "sha256": "1e34d659c03d350bee4986dca80353d1493183b17e7ed21016f704ad2ab58846",
+   "bytes": 5986,
+   "mtime": "2026-11-20 01:59:27"
+  }
+ ],
+ "missing": [],
+ "external_read_only": [
+  {
+   "path": "CD_capture\\analysis\\gl_fast_v13.py",
+   "sha256": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789",
+   "note": "package CD file imported read-only by b_fresh_analysis_v02.py"
+  }
+ ],
+ "note": "Reference = FREEZE_B.json with add1..add2 applied in order; this addendum lists every covered file that changed or is new since that state. Earlier manifests are kept as written."
+}

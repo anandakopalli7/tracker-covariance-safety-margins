@@ -1,0 +1,2815 @@
+{
+ "schema": "COMPARE_C_V13",
+ "amendment": "AMENDMENT_10_v13 sec. 10.1(c)",
+ "test_old": true,
+ "tolerance": 1e-09,
+ "inputs": {
+  "analysis\\out\\TESTOLD_C_LEAD_H0_H5_v13.json": "a1536bb9055b358473065c18366f90888d8715636fc3aaa767fffb9866a05e29",
+  "recount\\out\\RC_C_LEAD_TESTOLD_b200_o4_i1000_matched.json": "e3e2357635df5f4445f4aaa3f7a77e2b6494c2e6071069a4700ce693d09856c5",
+  "analysis\\out\\TESTOLD_C_CUTIN_K0_K2_v13.json": "21c850cd14bdb727544b5129908aae064231a1a8249c9606d02664d0f61601e4",
+  "recount\\out\\RC_C_CUTIN_TESTOLD_b200_o4_i1000_matched.json": "482904c1208c03a4858bea75c54ac6ce661e946c8dce5778b31960cb3fe62973"
+ },
+ "summary": {
+  "agree": 343
+ },
+ "verdict": "AGREE",
+ "rows": [
+  {
+   "item": "lead: run list",
+   "status": "agree",
+   "kind": "exact",
+   "first": [
+    "p1b_fit_finite_0005",
+    "p1b_fit_finite_0006",
+    "p1b_fit_finite_0007",
+    "p1b_fit_finite_0008",
+    "p1b_fit_finite_0009",
+    "p1b_fit_finite_0010",
+    "p1b_fit_finite_0011",
+    "p1b_fit_finite_0012",
+    "p1b_fit_finite_0013",
+    "p1b_fit_finite_0014",
+    "p1b_fit_finite_0015",
+    "p1b_fit_finite_0016",
+    "p1b_fit_finite_0017",
+    "p1b_fit_finite_0018",
+    "p1b_fit_finite_0019",
+    "p1b_fit_finite_0020",
+    "p1b_fit_finite_0021",
+    "p1b_fit_finite_0022",
+    "p1b_fit_finite_0023",
+    "p1b_fit_finite_0024",
+    "p1b_fit_finite_0025",
+    "p1b_fit_finite_0026",
+    "p1b_fit_finite_0027",
+    "p1b_fit_finite_0028",
+    "p1b_fit_finite_0029",
+    "p1b_fit_finite_0030",
+    "p1b_fit_finite_0031",
+    "p1b_fit_finite_0032",
+    "p1b_fit_finite_0033",
+    "p1b_fit_finite_0034",
+    "p1b_fit_finite_0035",
+    "p1b_fit_finite_0036",
+    "p1b_fit_finite_0037",
+    "p1b_fit_finite_0038",
+    "p1b_fit_finite_0039"
+   ],
+   "second": [
+    "p1b_fit_finite_0005",
+    "p1b_fit_finite_0006",
+    "p1b_fit_finite_0007",
+    "p1b_fit_finite_0008",
+    "p1b_fit_finite_0009",
+    "p1b_fit_finite_0010",
+    "p1b_fit_finite_0011",
+    "p1b_fit_finite_0012",
+    "p1b_fit_finite_0013",
+    "p1b_fit_finite_0014",
+    "p1b_fit_finite_0015",
+    "p1b_fit_finite_0016",
+    "p1b_fit_finite_0017",
+    "p1b_fit_finite_0018",
+    "p1b_fit_finite_0019",
+    "p1b_fit_finite_0020",
+    "p1b_fit_finite_0021",
+    "p1b_fit_finite_0022",
+    "p1b_fit_finite_0023",
+    "p1b_fit_finite_0024",
+    "p1b_fit_finite_0025",
+    "p1b_fit_finite_0026",
+    "p1b_fit_finite_0027",
+    "p1b_fit_finite_0028",
+    "p1b_fit_finite_0029",
+    "p1b_fit_finite_0030",
+    "p1b_fit_finite_0031",
+    "p1b_fit_finite_0032",
+    "p1b_fit_finite_0033",
+    "p1b_fit_finite_0034",
+    "p1b_fit_finite_0035",
+    "p1b_fit_finite_0036",
+    "p1b_fit_finite_0037",
+    "p1b_fit_finite_0038",
+    "p1b_fit_finite_0039"
+   ]
+  },
+  {
+   "item": "lead: n_runs",
+   "status": "agree",
+   "kind": "exact",
+   "first": 35,
+   "second": 35
+  },
+  {
+   "item": "lead: E5 n_evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 8290,
+   "second": 8290
+  },
+  {
+   "item": "lead: E5 n_with_ratio",
+   "status": "agree",
+   "kind": "exact",
+   "first": 8290,
+   "second": 8290
+  },
+  {
+   "item": "lead: R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 5.512545835358791,
+   "second": 5.512545835358791
+  },
+  {
+   "item": "lead: R_gl calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.99,
+   "second": 0.99
+  },
+  {
+   "item": "lead: R_gl interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    4.105361916771388,
+    6.790636822815397
+   ],
+   "second": [
+    4.105361916771388,
+    6.790636822815397
+   ]
+  },
+  {
+   "item": "lead: R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    4.3211440449656,
+    6.521667477832346
+   ],
+   "second": [
+    4.3211440449656,
+    6.521667477832346
+   ]
+  },
+  {
+   "item": "lead: RR_E5 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.013619291274290995,
+   "second": 0.013619291274290995
+  },
+  {
+   "item": "lead: RR_E5 calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.95,
+   "second": 0.95
+  },
+  {
+   "item": "lead: RR_E5 interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.009742791098013726,
+    0.018592328567958692
+   ],
+   "second": [
+    0.009742791098013726,
+    0.018592328567958692
+   ]
+  },
+  {
+   "item": "lead: RR_E5 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.009742791098013726,
+    0.018592328567958692
+   ],
+   "second": [
+    0.009742791098013726,
+    0.018592328567958692
+   ]
+  },
+  {
+   "item": "lead: RR_E5_minus_E5p point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.009939578683795119,
+   "second": 0.009939578683795119
+  },
+  {
+   "item": "lead: RR_E5_minus_E5p calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.95,
+   "second": 0.95
+  },
+  {
+   "item": "lead: RR_E5_minus_E5p interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.006487662808918194,
+    0.01457130080563639
+   ],
+   "second": [
+    0.006487662808918194,
+    0.01457130080563639
+   ]
+  },
+  {
+   "item": "lead: RR_E5_minus_E5p 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.006487662808918194,
+    0.01457130080563639
+   ],
+   "second": [
+    0.006487662808918194,
+    0.01457130080563639
+   ]
+  },
+  {
+   "item": "lead: RR_N point",
+   "status": "agree",
+   "kind": "num",
+   "first": -0.00041369549833977597,
+   "second": -0.00041369549833977597
+  },
+  {
+   "item": "lead: RR_N calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.99,
+   "second": 0.99
+  },
+  {
+   "item": "lead: RR_N interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    -0.0007983186995208717,
+    0.00014987180060854313
+   ],
+   "second": [
+    -0.0007983186995208717,
+    0.00014987180060854313
+   ]
+  },
+  {
+   "item": "lead: RR_N 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    -0.0007511392943708756,
+    6.403601027839496e-05
+   ],
+   "second": [
+    -0.0007511392943708756,
+    6.403601027839496e-05
+   ]
+  },
+  {
+   "item": "lead: RR_CK3 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.8366011648794295,
+   "second": 0.8366011648794295
+  },
+  {
+   "item": "lead: RR_CK3 calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.95,
+   "second": 0.95
+  },
+  {
+   "item": "lead: RR_CK3 interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.7602924127507821,
+    0.9035550218531021
+   ],
+   "second": [
+    0.7602924127507821,
+    0.9035550218531021
+   ]
+  },
+  {
+   "item": "lead: RR_CK3 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.7602924127507821,
+    0.9035550218531021
+   ],
+   "second": [
+    0.7602924127507821,
+    0.9035550218531021
+   ]
+  },
+  {
+   "item": "lead: H4_rec_est_-1.0 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.9836378952825299,
+   "second": 0.9836378952825299
+  },
+  {
+   "item": "lead: H4_rec_est_-1.0 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.9292907951995037,
+    1.0478731788963096
+   ],
+   "second": [
+    0.9292907951995037,
+    1.0478731788963096
+   ]
+  },
+  {
+   "item": "lead: H4_lfl_est_-1.0 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.9836378952825299,
+   "second": 0.9836378952825299
+  },
+  {
+   "item": "lead: H4_lfl_est_-1.0 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.9298561913929823,
+    1.048490558927881
+   ],
+   "second": [
+    0.9298561913929825,
+    1.048490558927881
+   ]
+  },
+  {
+   "item": "lead: H4_rec_truth point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.892766113703128,
+   "second": 0.892766113703128
+  },
+  {
+   "item": "lead: H4_rec_truth 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.8321521948347522,
+    0.9490762727802904
+   ],
+   "second": [
+    0.8321521948347522,
+    0.9490762727802904
+   ]
+  },
+  {
+   "item": "lead: H4_lfl_truth point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.892766113703128,
+   "second": 0.892766113703128
+  },
+  {
+   "item": "lead: H4_lfl_truth 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.832645110829126,
+    0.949519599256233
+   ],
+   "second": [
+    0.832645110829126,
+    0.9495195992562331
+   ]
+  },
+  {
+   "item": "lead: H4_rec_est_-0.5 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.9803546742699154,
+   "second": 0.9803546742699154
+  },
+  {
+   "item": "lead: H4_rec_est_-0.5 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.9269440500274243,
+    1.0457128107230604
+   ],
+   "second": [
+    0.9269440500274243,
+    1.0457128107230604
+   ]
+  },
+  {
+   "item": "lead: H4_lfl_est_-0.5 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.9803546742699154,
+   "second": 0.9803546742699154
+  },
+  {
+   "item": "lead: H4_lfl_est_-0.5 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.927509446220903,
+    1.0463301907546323
+   ],
+   "second": [
+    0.927509446220903,
+    1.0463301907546323
+   ]
+  },
+  {
+   "item": "lead: H4_rec_est_-2.0 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.9682693969241404,
+   "second": 0.9682693969241404
+  },
+  {
+   "item": "lead: H4_rec_est_-2.0 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.9118153592317779,
+    1.0361435460612523
+   ],
+   "second": [
+    0.9118153592317779,
+    1.0361435460612523
+   ]
+  },
+  {
+   "item": "lead: H4_lfl_est_-2.0 point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.9682693969241404,
+   "second": 0.9682693969241404
+  },
+  {
+   "item": "lead: H4_lfl_est_-2.0 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.9124245014331926,
+    1.0367913110813587
+   ],
+   "second": [
+    0.9124245014331926,
+    1.0367913110813587
+   ]
+  },
+  {
+   "item": "lead: H4 primary (record basis) calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.95,
+   "second": 0.95
+  },
+  {
+   "item": "lead: H4 primary interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.9292907951995037,
+    1.0478731788963096
+   ],
+   "second": [
+    0.9292907951995037,
+    1.0478731788963096
+   ]
+  },
+  {
+   "item": "lead: descriptive RR_gl(NA) point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.01506722551848021,
+   "second": 0.01506722551848021
+  },
+  {
+   "item": "lead: descriptive RR_gl(NA) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0074104681477685395,
+    0.024956521527030616
+   ],
+   "second": [
+    0.0074104681477685395,
+    0.024956521527030616
+   ]
+  },
+  {
+   "item": "lead: descriptive RR_gl(A1) point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.38239616787327857,
+   "second": 0.38239616787327857
+  },
+  {
+   "item": "lead: descriptive RR_gl(A1) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.3209996394917046,
+    0.44257234039298865
+   ],
+   "second": [
+    0.3209996394917046,
+    0.44257234039298865
+   ]
+  },
+  {
+   "item": "lead: descriptive RR_gl(Q) point",
+   "status": "agree",
+   "kind": "num",
+   "first": -0.0023950792009144913,
+   "second": -0.0023950792009144913
+  },
+  {
+   "item": "lead: descriptive RR_gl(Q) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    -0.005958322784430428,
+    0.0009367004308308081
+   ],
+   "second": [
+    -0.005958322784430428,
+    0.0009367004308308081
+   ]
+  },
+  {
+   "item": "lead: descriptive RR_gl(TG) point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.3212018942899134,
+   "second": 0.3212018942899134
+  },
+  {
+   "item": "lead: descriptive RR_gl(TG) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.23199245202010088,
+    0.39338376781376777
+   ],
+   "second": [
+    0.23199245202010088,
+    0.39338376781376777
+   ]
+  },
+  {
+   "item": "lead: H0 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H0 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H1 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H1 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H2 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "lead: H2 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": true,
+   "second": true
+  },
+  {
+   "item": "cut-in: run list",
+   "status": "agree",
+   "kind": "exact",
+   "first": [
+    "p2_c1109_tune_0004_fixed_c1",
+    "p2_c1109_tune_0010_fixed_c1",
+    "p2_c1109_tune_0016_fixed_c1",
+    "p2_c1109_tune_0022_fixed_c1",
+    "p2_c1109_tune_0028_fixed_c1",
+    "p2_c1109_tune_0034_fixed_c1",
+    "p2_c1109_tune_0040_fixed_c1",
+    "p2_c1109_tune_0046_fixed_c1",
+    "p2_c1109_tune_0052_fixed_c1",
+    "p2_c1109_tune_0058_fixed_c1",
+    "p2_c1109_tune_0064_fixed_c1",
+    "p2_c1109_tune_0070_fixed_c1",
+    "p2_c1109_tune_0076_fixed_c1",
+    "p2_c1109_tune_0082_fixed_c1",
+    "p2_c1109_tune_0088_fixed_c1",
+    "p2_c1109_tune_0094_fixed_c1",
+    "p2_c1109_tune_0100_fixed_c1",
+    "p2_c1109_tune_0106_fixed_c1",
+    "p2_c1109_tune_0112_fixed_c1",
+    "p2_c1109_tune_0118_fixed_c1"
+   ],
+   "second": [
+    "p2_c1109_tune_0004_fixed_c1",
+    "p2_c1109_tune_0010_fixed_c1",
+    "p2_c1109_tune_0016_fixed_c1",
+    "p2_c1109_tune_0022_fixed_c1",
+    "p2_c1109_tune_0028_fixed_c1",
+    "p2_c1109_tune_0034_fixed_c1",
+    "p2_c1109_tune_0040_fixed_c1",
+    "p2_c1109_tune_0046_fixed_c1",
+    "p2_c1109_tune_0052_fixed_c1",
+    "p2_c1109_tune_0058_fixed_c1",
+    "p2_c1109_tune_0064_fixed_c1",
+    "p2_c1109_tune_0070_fixed_c1",
+    "p2_c1109_tune_0076_fixed_c1",
+    "p2_c1109_tune_0082_fixed_c1",
+    "p2_c1109_tune_0088_fixed_c1",
+    "p2_c1109_tune_0094_fixed_c1",
+    "p2_c1109_tune_0100_fixed_c1",
+    "p2_c1109_tune_0106_fixed_c1",
+    "p2_c1109_tune_0112_fixed_c1",
+    "p2_c1109_tune_0118_fixed_c1"
+   ]
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0004_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0004_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0004_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0004_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0004_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0004_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0004_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0010_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 134,
+   "second": 134
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0010_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0010_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0010_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0010_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0010_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0010_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0016_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 145,
+   "second": 145
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0016_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0016_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0016_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0016_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0016_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0016_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0022_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 134,
+   "second": 134
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0022_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0022_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0022_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0022_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0022_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0022_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0028_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 146,
+   "second": 146
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0028_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0028_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0028_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0028_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0028_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0028_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0034_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 138,
+   "second": 138
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0034_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0034_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0034_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0034_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0034_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0034_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0040_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 146,
+   "second": 146
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0040_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0040_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0040_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0040_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0040_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0040_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0046_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 137,
+   "second": 137
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0046_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0046_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0046_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0046_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0046_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0046_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0052_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0052_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0052_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0052_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0052_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0052_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0052_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0058_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0058_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0058_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0058_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0058_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0058_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0058_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0064_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 147,
+   "second": 147
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0064_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0064_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0064_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0064_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0064_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0064_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0070_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 143,
+   "second": 143
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0070_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0070_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0070_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0070_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0070_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0070_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0076_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 143,
+   "second": 143
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0076_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0076_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0076_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0076_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0076_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0076_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0082_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0082_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0082_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0082_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0082_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0082_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0082_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0088_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 136,
+   "second": 136
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0088_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0088_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0088_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0088_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0088_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0088_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0094_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 138,
+   "second": 138
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0094_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0094_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0094_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0094_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0094_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0094_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0100_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 138,
+   "second": 138
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0100_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0100_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0100_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0100_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0100_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0100_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0106_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 134,
+   "second": 134
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0106_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0106_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0106_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0106_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0106_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 50,
+   "second": 50
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0106_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0112_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 139,
+   "second": 139
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0112_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0112_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0112_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0112_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0112_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0112_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0118_fixed_c1 event tick",
+   "status": "agree",
+   "kind": "exact",
+   "first": 145,
+   "second": 145
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0118_fixed_c1 evaluated",
+   "status": "agree",
+   "kind": "exact",
+   "first": 271,
+   "second": 271
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0118_fixed_c1 window",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0118_fixed_c1 window <1s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0118_fixed_c1 window 1-4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0118_fixed_c1 window >=4s",
+   "status": "agree",
+   "kind": "exact",
+   "first": 51,
+   "second": 51
+  },
+  {
+   "item": "cut-in: p2_c1109_tune_0118_fixed_c1 window untracked",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: all_evaluated decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 5420,
+   "second": 5420
+  },
+  {
+   "item": "cut-in: all_evaluated R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: all_evaluated R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: all_evaluated den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: all_evaluated RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: all_evaluated ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 90227,
+   "second": 90227
+  },
+  {
+   "item": "cut-in: all_evaluated ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1024835998594007,
+   "second": 1.1024835998594007
+  },
+  {
+   "item": "cut-in: all_evaluated ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.0974226727260716,
+   "second": 1.0974226727260716
+  },
+  {
+   "item": "cut-in: all_evaluated ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1046119427885601,
+   "second": 1.1046119427885601
+  },
+  {
+   "item": "cut-in: all_evaluated ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0032604884387420043,
+   "second": 0.0032604884387420043
+  },
+  {
+   "item": "cut-in: all_evaluated R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: all_evaluated RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: window decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 1007,
+   "second": 1007
+  },
+  {
+   "item": "cut-in: window R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: window R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: window den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: window RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: window ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 16918,
+   "second": 16918
+  },
+  {
+   "item": "cut-in: window ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1026984777620783,
+   "second": 1.1026984777620783
+  },
+  {
+   "item": "cut-in: window ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.0964080391794702,
+   "second": 1.0964080391794702
+  },
+  {
+   "item": "cut-in: window ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1125820003929867,
+   "second": 1.1125820003929867
+  },
+  {
+   "item": "cut-in: window ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0073338095316597945,
+   "second": 0.0073338095316597945
+  },
+  {
+   "item": "cut-in: window R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: window RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: young decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: young R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: young R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: young den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: young RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: young ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: young ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: young ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: young ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: young ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: young R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: young RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: mid decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: mid R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: mid ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: mid R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: mid RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: old decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 1007,
+   "second": 1007
+  },
+  {
+   "item": "cut-in: old R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: old R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: old den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: old RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: old ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 16918,
+   "second": 16918
+  },
+  {
+   "item": "cut-in: old ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1026984777620783,
+   "second": 1.1026984777620783
+  },
+  {
+   "item": "cut-in: old ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.0964080391794702,
+   "second": 1.0964080391794702
+  },
+  {
+   "item": "cut-in: old ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1125820003929867,
+   "second": 1.1125820003929867
+  },
+  {
+   "item": "cut-in: old ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0073338095316597945,
+   "second": 0.0073338095316597945
+  },
+  {
+   "item": "cut-in: old R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: old RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: untracked decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: untracked R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 0,
+   "second": 0
+  },
+  {
+   "item": "cut-in: untracked ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: untracked R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: untracked RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: sec[-1,0) decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 200,
+   "second": 200
+  },
+  {
+   "item": "cut-in: sec[-1,0) R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[-1,0) R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[-1,0) den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[-1,0) RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: sec[-1,0) ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 3380,
+   "second": 3380
+  },
+  {
+   "item": "cut-in: sec[-1,0) ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1019709513874545,
+   "second": 1.1019709513874545
+  },
+  {
+   "item": "cut-in: sec[-1,0) ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.0912947980363383,
+   "second": 1.0912947980363383
+  },
+  {
+   "item": "cut-in: sec[-1,0) ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.10390956233821,
+   "second": 1.10390956233821
+  },
+  {
+   "item": "cut-in: sec[-1,0) ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0057237281463675925,
+   "second": 0.0057237281463675925
+  },
+  {
+   "item": "cut-in: sec[-1,0) R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: sec[-1,0) RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: sec[0,1) decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 200,
+   "second": 200
+  },
+  {
+   "item": "cut-in: sec[0,1) R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[0,1) R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[0,1) den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[0,1) RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: sec[0,1) ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 3391,
+   "second": 3391
+  },
+  {
+   "item": "cut-in: sec[0,1) ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1041382336200056,
+   "second": 1.1041382336200056
+  },
+  {
+   "item": "cut-in: sec[0,1) ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.096242913626448,
+   "second": 1.096242913626448
+  },
+  {
+   "item": "cut-in: sec[0,1) ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1120926587721311,
+   "second": 1.1120926587721311
+  },
+  {
+   "item": "cut-in: sec[0,1) ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.007177427908514,
+   "second": 0.007177427908514
+  },
+  {
+   "item": "cut-in: sec[0,1) R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: sec[0,1) RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: sec[1,2) decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 200,
+   "second": 200
+  },
+  {
+   "item": "cut-in: sec[1,2) R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[1,2) R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[1,2) den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[1,2) RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: sec[1,2) ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 3370,
+   "second": 3370
+  },
+  {
+   "item": "cut-in: sec[1,2) ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1048696656263963,
+   "second": 1.1048696656263963
+  },
+  {
+   "item": "cut-in: sec[1,2) ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1017515646911336,
+   "second": 1.1017515646911336
+  },
+  {
+   "item": "cut-in: sec[1,2) ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1175088558240915,
+   "second": 1.1175088558240915
+  },
+  {
+   "item": "cut-in: sec[1,2) ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.007130837067566936,
+   "second": 0.007130837067566936
+  },
+  {
+   "item": "cut-in: sec[1,2) R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: sec[1,2) RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: sec[2,3) decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 200,
+   "second": 200
+  },
+  {
+   "item": "cut-in: sec[2,3) R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[2,3) R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[2,3) den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[2,3) RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: sec[2,3) ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 3331,
+   "second": 3331
+  },
+  {
+   "item": "cut-in: sec[2,3) ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1023436137255775,
+   "second": 1.1023436137255775
+  },
+  {
+   "item": "cut-in: sec[2,3) ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.099088249336432,
+   "second": 1.099088249336432
+  },
+  {
+   "item": "cut-in: sec[2,3) ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.111495172460027,
+   "second": 1.111495172460027
+  },
+  {
+   "item": "cut-in: sec[2,3) ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.005627520751747954,
+   "second": 0.005627520751747954
+  },
+  {
+   "item": "cut-in: sec[2,3) R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: sec[2,3) RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: sec[3,4) decisions",
+   "status": "agree",
+   "kind": "exact",
+   "first": 207,
+   "second": 207
+  },
+  {
+   "item": "cut-in: sec[3,4) R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[3,4) R_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[3,4) den0_deceq point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: sec[3,4) RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: sec[3,4) ratio n",
+   "status": "agree",
+   "kind": "num",
+   "first": 3446,
+   "second": 3446
+  },
+  {
+   "item": "cut-in: sec[3,4) ratio median",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.100915530392709,
+   "second": 1.100915530392709
+  },
+  {
+   "item": "cut-in: sec[3,4) ratio q05",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.0961126735148103,
+   "second": 1.0961126735148103
+  },
+  {
+   "item": "cut-in: sec[3,4) ratio q95",
+   "status": "agree",
+   "kind": "num",
+   "first": 1.1044355079656516,
+   "second": 1.1044355079656516
+  },
+  {
+   "item": "cut-in: sec[3,4) ratio A",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.003779960506085515,
+   "second": 0.003779960506085515
+  },
+  {
+   "item": "cut-in: sec[3,4) R_gl 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: sec[3,4) RR_gl(N) 95% interval",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: K0 R_gl point",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: K0 den0_deceq",
+   "status": "agree",
+   "kind": "num",
+   "first": 0.0,
+   "second": 0.0
+  },
+  {
+   "item": "cut-in: K1 RR_gl(N) point",
+   "status": "agree",
+   "kind": "num",
+   "first": NaN,
+   "second": NaN
+  },
+  {
+   "item": "cut-in: K0 R_gl calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.95,
+   "second": 0.95
+  },
+  {
+   "item": "cut-in: K0 R_gl interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    0.0,
+    0.0
+   ],
+   "second": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "item": "cut-in: K1 RR_gl(N) calibrated level",
+   "status": "agree",
+   "kind": "exact",
+   "first": 0.99,
+   "second": 0.99
+  },
+  {
+   "item": "cut-in: K1 RR_gl(N) interval at that level",
+   "status": "agree",
+   "kind": "pair",
+   "first": [
+    NaN,
+    NaN
+   ],
+   "second": [
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "item": "cut-in: K2 evaluable",
+   "status": "agree",
+   "kind": "exact",
+   "first": false,
+   "second": false
+  },
+  {
+   "item": "cut-in: K0 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": false,
+   "second": false
+  },
+  {
+   "item": "cut-in: K0 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": false,
+   "second": false
+  },
+  {
+   "item": "cut-in: K1 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": false,
+   "second": false
+  },
+  {
+   "item": "cut-in: K1 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": false,
+   "second": false
+  },
+  {
+   "item": "cut-in: K2 passes",
+   "status": "agree",
+   "kind": "exact",
+   "first": false,
+   "second": false
+  },
+  {
+   "item": "cut-in: K2 confirmed",
+   "status": "agree",
+   "kind": "exact",
+   "first": false,
+   "second": false
+  }
+ ]
+}

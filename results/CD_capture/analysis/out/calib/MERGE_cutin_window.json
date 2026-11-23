@@ -1,0 +1,338 @@
+{
+ "label": "cutin_window",
+ "n_outer": 2000,
+ "seeds": {
+  "20261913": {
+   "table": "cutin_window_20261913.npz",
+   "sha256": "087f7baef93a6413eecf6fa8e37689e1b50a35c5057bc2fd3eb32c2032add760",
+   "chunks": [
+    {
+     "file": "cutin_window_20261913_o0_100.npz",
+     "outer": [
+      0,
+      100
+     ],
+     "sha256": "99875647bafc9d86e0011d9a9c5183648ff854abed47d0032a004803fac8a6f9"
+    },
+    {
+     "file": "cutin_window_20261913_o100_200.npz",
+     "outer": [
+      100,
+      200
+     ],
+     "sha256": "f04a0d9a7750527d28b59f8d97919cbf987b6df28dc2ae84295b2214067668ac"
+    },
+    {
+     "file": "cutin_window_20261913_o200_300.npz",
+     "outer": [
+      200,
+      300
+     ],
+     "sha256": "85459cf3641cff5ed36341e2cbf549f0de8132a980d9a9e71cd0518247081dd6"
+    },
+    {
+     "file": "cutin_window_20261913_o300_400.npz",
+     "outer": [
+      300,
+      400
+     ],
+     "sha256": "fbc1b2020dfed6d1b935bb530054f1b1df69dde0ffe74e725726d6d50497e1f0"
+    },
+    {
+     "file": "cutin_window_20261913_o400_500.npz",
+     "outer": [
+      400,
+      500
+     ],
+     "sha256": "4f9674c1481e19b50b77e5ae7bbe85cb08e051f05a4d788b3cc15022ca4869a5"
+    },
+    {
+     "file": "cutin_window_20261913_o500_600.npz",
+     "outer": [
+      500,
+      600
+     ],
+     "sha256": "abf231fd55c1fb6a7d3f8a369291421843c027e7e7616d330ac8ba10f55bcbfb"
+    },
+    {
+     "file": "cutin_window_20261913_o600_700.npz",
+     "outer": [
+      600,
+      700
+     ],
+     "sha256": "cdf203d7ab50cce65bbb79bc1b00c8f962a93b9f5aac829ae6fc4aef87fa8a0c"
+    },
+    {
+     "file": "cutin_window_20261913_o700_800.npz",
+     "outer": [
+      700,
+      800
+     ],
+     "sha256": "8ad5029c285bf975252e64048cc27fe70f1380c8a092bb235dd34dc788da3175"
+    },
+    {
+     "file": "cutin_window_20261913_o800_900.npz",
+     "outer": [
+      800,
+      900
+     ],
+     "sha256": "aa38c333c926c59cec1d856b4d6dffaf4365d09ef35deaaea0d815f625b18363"
+    },
+    {
+     "file": "cutin_window_20261913_o900_1000.npz",
+     "outer": [
+      900,
+      1000
+     ],
+     "sha256": "ea755c0bfa2b5bf008fad87ccad93e24aa38aff91b4805f9ef397f6fb9c44dca"
+    },
+    {
+     "file": "cutin_window_20261913_o1000_1100.npz",
+     "outer": [
+      1000,
+      1100
+     ],
+     "sha256": "87d4daaa9f45517fec89e0a6222e1a2c3b803f967479727f800f1a56f0464dab"
+    },
+    {
+     "file": "cutin_window_20261913_o1100_1200.npz",
+     "outer": [
+      1100,
+      1200
+     ],
+     "sha256": "9ac4c2025ece7f7d76e5ab4ac4972fa918efbfddd7509bb547f5feb3991e8206"
+    },
+    {
+     "file": "cutin_window_20261913_o1200_1300.npz",
+     "outer": [
+      1200,
+      1300
+     ],
+     "sha256": "efb1f166a253f31213a14cccdf3633dde86f90f16d71003f5902f90dc5078251"
+    },
+    {
+     "file": "cutin_window_20261913_o1300_1400.npz",
+     "outer": [
+      1300,
+      1400
+     ],
+     "sha256": "5a763c0b945bd2a2be83ea7b09ae9b9c4a152fcc07312e6b701ea40ef2834590"
+    },
+    {
+     "file": "cutin_window_20261913_o1400_1500.npz",
+     "outer": [
+      1400,
+      1500
+     ],
+     "sha256": "48a20f89d772eb026e7ed7323e1f8302ef0cd62caf971fa4520dc9ebdbd294f7"
+    },
+    {
+     "file": "cutin_window_20261913_o1500_1600.npz",
+     "outer": [
+      1500,
+      1600
+     ],
+     "sha256": "fa82514bc61f90432c6585842fd99ac6afc7c57fc8555ead6face89ac469df2d"
+    },
+    {
+     "file": "cutin_window_20261913_o1600_1700.npz",
+     "outer": [
+      1600,
+      1700
+     ],
+     "sha256": "f1ae91c7b4904a24bd2f86502daea65138a00ddd2e63090e3b1a5a27c78f5110"
+    },
+    {
+     "file": "cutin_window_20261913_o1700_1800.npz",
+     "outer": [
+      1700,
+      1800
+     ],
+     "sha256": "5e3ae34537ea589bce74f66d83096a1f76a7d4803a1a8655a36a2e292b178047"
+    },
+    {
+     "file": "cutin_window_20261913_o1800_1900.npz",
+     "outer": [
+      1800,
+      1900
+     ],
+     "sha256": "caf03153e63f3e151ab6fe3a1c3714a51ebad99d0be9cc17fd491a29545e27c1"
+    },
+    {
+     "file": "cutin_window_20261913_o1900_2000.npz",
+     "outer": [
+      1900,
+      2000
+     ],
+     "sha256": "a6a9f8490b3ba61ac5d088eaf5dd418f9114f41f7acdc2bb2639085c7fcd34ac"
+    }
+   ]
+  },
+  "20261914": {
+   "table": "cutin_window_20261914.npz",
+   "sha256": "e06b7f5b182f3e2ad287f42b0f5f7ba92cab6b341a1ad65e003e14612868210a",
+   "chunks": [
+    {
+     "file": "cutin_window_20261914_o0_100.npz",
+     "outer": [
+      0,
+      100
+     ],
+     "sha256": "e4ae27b02991b77b5edf84b5105176a9015a9ad4daa9bac7cca375681b5cf4d0"
+    },
+    {
+     "file": "cutin_window_20261914_o100_200.npz",
+     "outer": [
+      100,
+      200
+     ],
+     "sha256": "0434c3b076df71beceb32e3348d6709d947af85fe56c6a40d53cce57a2069bbd"
+    },
+    {
+     "file": "cutin_window_20261914_o200_300.npz",
+     "outer": [
+      200,
+      300
+     ],
+     "sha256": "94d23f95c5c8495960d9fdee0bb770f24c7da147c81999d92c9d126aa15b1862"
+    },
+    {
+     "file": "cutin_window_20261914_o300_400.npz",
+     "outer": [
+      300,
+      400
+     ],
+     "sha256": "f82ab60e03d20741d8053c68f10a4b8f2d82b81189e166de899551c897bceab6"
+    },
+    {
+     "file": "cutin_window_20261914_o400_500.npz",
+     "outer": [
+      400,
+      500
+     ],
+     "sha256": "f8dfcb4e4542e0769f460626f43ee69dcd09065f94a646bafc14713fdb941c2e"
+    },
+    {
+     "file": "cutin_window_20261914_o500_600.npz",
+     "outer": [
+      500,
+      600
+     ],
+     "sha256": "0aa07b7c3c8fb4d9afa5e192fb9142738885c84572067472a7e9dfbefaeac097"
+    },
+    {
+     "file": "cutin_window_20261914_o600_700.npz",
+     "outer": [
+      600,
+      700
+     ],
+     "sha256": "303d79230a14ec519414a800c18de6c5ef80ca1b81ee51614f1c2626fb4b19cb"
+    },
+    {
+     "file": "cutin_window_20261914_o700_800.npz",
+     "outer": [
+      700,
+      800
+     ],
+     "sha256": "6ff009b63e1e72db9dc3364719870771d5fdd33ab65a18a55ebb343f323d5cc4"
+    },
+    {
+     "file": "cutin_window_20261914_o800_900.npz",
+     "outer": [
+      800,
+      900
+     ],
+     "sha256": "a80764b4e1851b9cc75ec13c6abf03fa03e882eef590d1851d8699c45fdbdec5"
+    },
+    {
+     "file": "cutin_window_20261914_o900_1000.npz",
+     "outer": [
+      900,
+      1000
+     ],
+     "sha256": "419d52b61fe71e7bb22f5fba1a88023691af17f73c1938290481fd76d94f784c"
+    },
+    {
+     "file": "cutin_window_20261914_o1000_1100.npz",
+     "outer": [
+      1000,
+      1100
+     ],
+     "sha256": "e940b2a887ab6b68ff57b87a5f29211e1cbd0a9c6cbe529f24fca4713502079b"
+    },
+    {
+     "file": "cutin_window_20261914_o1100_1200.npz",
+     "outer": [
+      1100,
+      1200
+     ],
+     "sha256": "49c2ae589718bd007853348feee37a5e4e39ecb8f578b54869835d5acdb85793"
+    },
+    {
+     "file": "cutin_window_20261914_o1200_1300.npz",
+     "outer": [
+      1200,
+      1300
+     ],
+     "sha256": "7b5f94a2fc8a016993afc779d435478f39b4e43c61b16ad8bf0a61138847de3f"
+    },
+    {
+     "file": "cutin_window_20261914_o1300_1400.npz",
+     "outer": [
+      1300,
+      1400
+     ],
+     "sha256": "6003d43c457050b822ec008fa4f8d15ffb1d641df55bf3caadf84f7bb115a831"
+    },
+    {
+     "file": "cutin_window_20261914_o1400_1500.npz",
+     "outer": [
+      1400,
+      1500
+     ],
+     "sha256": "b324f61587119ed0514271ee6509ebd4a3ee4f13d2a0e6950349e5b774a05e2b"
+    },
+    {
+     "file": "cutin_window_20261914_o1500_1600.npz",
+     "outer": [
+      1500,
+      1600
+     ],
+     "sha256": "0c949d8afdc69acbbb0e806be464c0f4e24400d9a989907b5bdaf2d3c4e430b0"
+    },
+    {
+     "file": "cutin_window_20261914_o1600_1700.npz",
+     "outer": [
+      1600,
+      1700
+     ],
+     "sha256": "469ed35a4617bc6851a03a11ac993666cd00d5a72128280e3196214c570940eb"
+    },
+    {
+     "file": "cutin_window_20261914_o1700_1800.npz",
+     "outer": [
+      1700,
+      1800
+     ],
+     "sha256": "cd9bfbeda0ea9a67e66e19842fb41700381f016aac2e6bdedcb5abf6f4ed37cc"
+    },
+    {
+     "file": "cutin_window_20261914_o1800_1900.npz",
+     "outer": [
+      1800,
+      1900
+     ],
+     "sha256": "9cd1f070f7dcc1ef6be0ae5da2f529090aace2b5424c08dc636dd0aa144472e8"
+    },
+    {
+     "file": "cutin_window_20261914_o1900_2000.npz",
+     "outer": [
+      1900,
+      2000
+     ],
+     "sha256": "75e33cfff84735c25ea3e05a1df22bd8d46a54b01cbf0b1582399ff0ffbf969e"
+    }
+   ]
+  }
+ }
+}

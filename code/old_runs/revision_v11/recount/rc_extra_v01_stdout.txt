@@ -1,0 +1,73 @@
+rc_extra_v01 start
+  W1_g0 bootstrap 400 / 20000, 0 s
+  W1_g0 bootstrap 4400 / 20000, 5 s
+  W1_g0 bootstrap 8400 / 20000, 11 s
+  W1_g0 bootstrap 12400 / 20000, 16 s
+  W1_g0 bootstrap 16400 / 20000, 22 s
+  W1_g0 bootstrap 20000 / 20000, 27 s
+W1_g0 done, 28 s
+  W1_g0_signed bootstrap 400 / 20000, 0 s
+  W1_g0_signed bootstrap 4400 / 20000, 6 s
+  W1_g0_signed bootstrap 8400 / 20000, 11 s
+  W1_g0_signed bootstrap 12400 / 20000, 17 s
+  W1_g0_signed bootstrap 16400 / 20000, 23 s
+  W1_g0_signed bootstrap 20000 / 20000, 28 s
+W1_g0_signed done, 57 s
+  W1_g2 bootstrap 400 / 20000, 1 s
+  W1_g2 bootstrap 4400 / 20000, 6 s
+  W1_g2 bootstrap 8400 / 20000, 12 s
+  W1_g2 bootstrap 12400 / 20000, 17 s
+  W1_g2 bootstrap 16400 / 20000, 25 s
+  W1_g2 bootstrap 20000 / 20000, 30 s
+W1_g2 done, 88 s
+  WR_t0p75_a6p0_g2 bootstrap 400 / 20000, 1 s
+  WR_t0p75_a6p0_g2 bootstrap 4400 / 20000, 7 s
+  WR_t0p75_a6p0_g2 bootstrap 8400 / 20000, 13 s
+  WR_t0p75_a6p0_g2 bootstrap 12400 / 20000, 19 s
+  WR_t0p75_a6p0_g2 bootstrap 16400 / 20000, 24 s
+  WR_t0p75_a6p0_g2 bootstrap 20000 / 20000, 29 s
+WR_t0p75_a6p0_g2 done, 119 s
+  ii_t0p75_a6p0_g2 bootstrap 400 / 20000, 1 s
+  ii_t0p75_a6p0_g2 bootstrap 4400 / 20000, 7 s
+  ii_t0p75_a6p0_g2 bootstrap 8400 / 20000, 12 s
+  ii_t0p75_a6p0_g2 bootstrap 12400 / 20000, 18 s
+  ii_t0p75_a6p0_g2 bootstrap 16400 / 20000, 24 s
+  ii_t0p75_a6p0_g2 bootstrap 20000 / 20000, 29 s
+ii_t0p75_a6p0_g2 done, 148 s
+  WR_t1p80_a6p0_g2 bootstrap 400 / 20000, 1 s
+  WR_t1p80_a6p0_g2 bootstrap 4400 / 20000, 6 s
+  WR_t1p80_a6p0_g2 bootstrap 8400 / 20000, 12 s
+  WR_t1p80_a6p0_g2 bootstrap 12400 / 20000, 18 s
+  WR_t1p80_a6p0_g2 bootstrap 16400 / 20000, 23 s
+  WR_t1p80_a6p0_g2 bootstrap 20000 / 20000, 28 s
+WR_t1p80_a6p0_g2 done, 177 s
+  WR_t0p75_a4p0_g2 bootstrap 400 / 20000, 1 s
+  WR_t0p75_a4p0_g2 bootstrap 4400 / 20000, 6 s
+  WR_t0p75_a4p0_g2 bootstrap 8400 / 20000, 12 s
+  WR_t0p75_a4p0_g2 bootstrap 12400 / 20000, 18 s
+  WR_t0p75_a4p0_g2 bootstrap 16400 / 20000, 23 s
+  WR_t0p75_a4p0_g2 bootstrap 20000 / 20000, 28 s
+WR_t0p75_a4p0_g2 done, 206 s
+  WR_t0p75_a5p0_g2 bootstrap 400 / 20000, 0 s
+  WR_t0p75_a5p0_g2 bootstrap 4400 / 20000, 7 s
+  WR_t0p75_a5p0_g2 bootstrap 8400 / 20000, 12 s
+  WR_t0p75_a5p0_g2 bootstrap 12400 / 20000, 18 s
+  WR_t0p75_a5p0_g2 bootstrap 16400 / 20000, 24 s
+  WR_t0p75_a5p0_g2 bootstrap 20000 / 20000, 29 s
+WR_t0p75_a5p0_g2 done, 236 s
+  WR_t0p75_a7p6_g2 bootstrap 400 / 20000, 1 s
+  WR_t0p75_a7p6_g2 bootstrap 4400 / 20000, 7 s
+  WR_t0p75_a7p6_g2 bootstrap 8400 / 20000, 13 s
+  WR_t0p75_a7p6_g2 bootstrap 12400 / 20000, 19 s
+  WR_t0p75_a7p6_g2 bootstrap 16400 / 20000, 24 s
+  WR_t0p75_a7p6_g2 bootstrap 20000 / 20000, 30 s
+WR_t0p75_a7p6_g2 done, 267 s
+  W1_g0_trunc bootstrap 400 / 20000, 1 s
+  W1_g0_trunc bootstrap 4400 / 20000, 8 s
+  W1_g0_trunc bootstrap 8400 / 20000, 15 s
+  W1_g0_trunc bootstrap 12400 / 20000, 22 s
+  W1_g0_trunc bootstrap 16400 / 20000, 29 s
+  W1_g0_trunc bootstrap 20000 / 20000, 36 s
+W1_g0_trunc done, 304 s
+W1_g0_age done, 304 s
+rc_extra_v01 end, 307 s

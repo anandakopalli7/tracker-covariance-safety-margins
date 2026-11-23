@@ -1,0 +1,22 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "addendum_to": "work/locks/FREEZE_CD_2.json (sha256 1039025ce46a9de60163f4468535b227ca0ec3e8d2705af293bfbaa54797a8a0), after FREEZE_CD_2_add3",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5)",
+ "written": "2026-11-21 02:35 Eastern Standard Time",
+ "approval": "coordinator's message to CD, 21 Nov 2026 (received about 02:25 EST): Fig. 2's frontier curves approved as an exporter-only change (option (a)); write FREEZE_CD_2_add4 before running",
+ "replaces": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\export\\make_export_cd_v13.py",
+   "sha256_before": "ec1fbc45e59b5bd3f7ccf49c852ad5323c852d0603107de84e0b8863e744ff77",
+   "sha256_after": "eed12169cd46a20c3b46236221a225a3898030c688e7b3ed1eeb9da71ca67a17",
+   "change": "Exporter only. (1) Line 4 (docstring) names the new computation. (2) New lines 321-362 (before 'families, assembly'): FRONT and frontiers_first(v, src), which writes A's Fig. 2 keys LB.frontier.{F0,E,E5,N,CK3} (job lead_main), LB.frontier.{IMM,F0_IMM,E_IMM} (job lead_imm: the IMM tracker's own N, F0, E) and CI.frontier.{F0,E,N} (job cutin_window), each [[caution %], [wrong go %]] on the 201 levels. It loads the frozen calibration jobs analysis/out/calib/<label>.job.npz (SHA-256 checked against <label>.meta.json), evaluates them once with unit run weights by the frozen kernel analysis/gl_fast_v13.evaluate (as calib_remote_v13.py does) and refuses unless the curves reproduce the exported LB.R, LB.RR_E5, LB.RR_N, LB.RR_CK3, LB.IMM.r, LB.IMM.c and CI.R exactly. (3) New line 393 in main(): the call, first program only (not in --test-old). No other byte changed; no frozen value-producing program changed.",
+   "why": "A's Fig. 2 as designed (wrong goes %% against caution %% on the 201 levels) needs the full-sample step frontiers, which no frozen program writes to a file. Coordinator's decision (21 Nov 2026, option (a)): an exporter-only change using the same arrays and levels that give LB D_gl/RR_gl; the second program is not changed, and each curve's summed gap to F0 is tied to the recount's values (within 1e-9). Existing keys must be unchanged.",
+   "inputs_read": {
+    "analysis/out/calib/lead_main.job.npz": "94b1e862a7c4d2997bfc2a84afd839b515f338f4ab960ca892e9e6feef57314a",
+    "analysis/out/calib/lead_imm.job.npz": "c3fa85d89d27d21effdd298750981f4753d1cf0a7116e901f4e9a5c55a8e5b8a",
+    "analysis/out/calib/cutin_window.job.npz": "3bcaa3d92e9769c67e2d8b014aef3bdde1ac264800836efd6eb2815abce12eda"
+   },
+   "kind": "frozen-code addition in the exporter (A10 sec. 11 departure record, after LOCK_A10_2c; no value-producing program changed)"
+  }
+ ]
+}

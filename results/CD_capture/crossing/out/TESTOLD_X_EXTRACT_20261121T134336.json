@@ -1,0 +1,119 @@
+{
+ "code_sha256": "239a7c2cbb9aa00115f44d0e0b7f31ecaa1e3260bf023aa5d8a9de7c800a4854",
+ "runs": [
+  {
+   "run": "p2_c1109_tune_0002_fixed_c1",
+   "family": "pedestrian_crossing",
+   "seconds": 32.4,
+   "compare": {
+    "k": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "evaluated": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "v0": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "des": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "clear": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "vbar": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "idx55": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cF0": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cN": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cE": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    }
+   }
+  },
+  {
+   "run": "p2_c1109_tune_0003_fixed_c1",
+   "family": "vehicle_crossing",
+   "seconds": 0.8,
+   "compare": {
+    "k": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "evaluated": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "v0": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "des": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "clear": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "vbar": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "idx55": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cF0": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cN": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    },
+    "cE": {
+     "same_nan": true,
+     "n_diff": 0,
+     "max_abs": 0.0
+    }
+   }
+  }
+ ]
+}

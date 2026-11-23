@@ -1,0 +1,227 @@
+"""Revision v13, package C, A10 sec. 5.6-5.7 additions ("S57A"): per-run inputs that c_extract_v13.py does not produce. New file,
+20 Nov 2026 (Claude Opus 5.5). Definitions: CD_capture\\CD_DEFINITIONS_S57A_v13.md sec. 2 (formats) and sec. 9 (tuning-run TG).
+
+Sets:
+  c_lead   (fresh, after Lock 2) per lead-braking run: decel = trk_score_v01.realised_decel(cap) (rev_h_run_facts_v01 rule; B6(a));
+           tau and clearDS = trk_score_v01.delayed_stop_clearance(rd, cap, {i: tau_i}, A=6.0) with tau_i = 0.75 + delta_i,
+           delta = trk_score_v01.draw_delays(N) (default_rng(20261916).uniform(0, 0.75, N)), N = evaluated decisions of the 105
+           lead runs (arrays/CV0), runs in ascending id, decisions in k order (B6(b)).  -> arrays/S57A/<rid>.npz
+  c_cutin  (fresh, after Lock 2) per cut-in run: kc, rel, stratum, spread (event and track age as c_cutin_v13 / b9_cutin_v01, same
+           expressions, copied below).  -> arrays/S57A/<rid>.npz
+  test_lead (old runs only) the same as c_lead on the 35 old evaluation runs (delays over their 8,290 evaluated decisions, as
+           package B's b6_stop_v01.delays), for the runs given with --runs, into analysis/out/s57a_old/x/<run>.npz: the identity test
+           against package B's B_retrack/out/b6/clear/<run>.npz and the per-run cost.
+  test_cutin (old runs only) the same as c_cutin on the 20 cut-in tuning runs, into analysis/out/s57a_old/x/<run>.npz.
+  tg_tune  (old runs only; A10 sec. 5.6) TG critical scales of the 20 lead-braking tuning runs by the A9-7a construction
+           (c_extract_v13.tg_arrays), with the identity check that F0's critical values recomputed with the P-bar of record equal the
+           stored cF0 in every row.  -> analysis/out/s57a_old/tg_tune/<run>.npz
+Fresh sets refuse unless revision_v13/LOCK_A10_2.txt exists. Nothing is overwritten: an existing output file is skipped.
+Usage: .venv\\Scripts\\python.exe -I -B -X utf8 analysis\\x_s57a_extract_v13.py --set c_lead|c_cutin|test_lead|test_cutin|tg_tune
+       [--workers 2] [--runs id1,id2,...]
+"""
+import argparse, csv, json, math, os, pathlib, sys, time
+os.environ.setdefault('OPENBLAS_CORETYPE', 'Haswell')
+sys.dont_write_bytecode = True
+HERE = pathlib.Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
+import numpy as np                  # noqa: E402
+import cd_common_v13 as CC          # noqa: E402
+
+P = pathlib.Path(r'<library folder>')
+STORED = P / '09_redesign' / 'm2_decisions' / 'openloop' / 'gateR_rt_v01'
+M4 = P / '09_redesign' / 'm4_perception_model'
+OLD_ARCH = P / '07_fit_runs' / 'archives'
+A4DRY = P / '11_ojits' / 'A4' / 'dryrun' / 'extract'
+OLDOUT = CC.OUT / 's57a_old'
+DT = 0.05
+LAT = 1.75            # Lock 2 cut-in threshold (B9: events in 20 of 20 tuning runs at 1.75 m)
+CODE = 'x_s57a_extract_v13.py'
+
+
+# ------------------------------------------------------------------------------------------------ cut-in event (b9 / c_cutin, same lines)
+def event_tick(T):
+    ks = sorted(T); kc = None
+    lat_e = np.array([-math.sin(T[k]['ego'][2]) * T[k]['ego'][0] + math.cos(T[k]['ego'][2]) * T[k]['ego'][1] for k in ks])
+    lane = float(np.median(lat_e))
+    for k in ks:
+        tr = T[k]; tid = tr['target_id']
+        ex, ey, yaw = tr['ego']
+        if tid is None or tid not in tr['actors']: continue
+        a = tr['actors'][tid]
+        along = math.cos(yaw) * (a[0] - ex) + math.sin(yaw) * (a[1] - ey)
+        across = -math.sin(yaw) * a[0] + math.cos(yaw) * a[1] - lane
+        if along > 0 and abs(across) <= LAT:
+            kc = k; break
+    return kc, float(np.ptp(lat_e)) if lat_e.size else float('nan')
+
+
+def event_info(TA, rd, cap, ks_ref):
+    Lr = TA.load_capture(rd, cap); T = Lr['T']; book = Lr['book']
+    kc, spread = event_tick(T)
+    decs = list(TA.gc.decisions(cap)); ks = np.array([k for k, _ in decs])
+    assert np.array_equal(ks, ks_ref)
+    rel = (ks - kc) * DT if kc is not None else np.full(ks.size, np.nan)
+    age = np.full(ks.size, np.nan)
+    for di, (k, dec) in enumerate(decs):
+        tr = T.get(k)
+        m, prim, order = TA.gc.match_many(dec['actors'], dec['now'], tr)
+        if prim is None: continue
+        best = None
+        for a, aid in zip(dec['actors'], m):
+            if aid == prim:
+                b = book.birth.get(int(a['track_id']))
+                if b is None: continue
+                ag = dec['now'] - book.det_time[b]
+                best = ag if best is None else min(best, ag)
+        if best is not None: age[di] = best
+    stratum = np.full(ks.size, 'untracked', dtype='U9')
+    stratum[np.isfinite(age) & (age < 1.)] = '<1s'; stratum[np.isfinite(age) & (age >= 1.) & (age < 4.)] = '1-4s'
+    stratum[np.isfinite(age) & (age >= 4.)] = '>=4s'
+    return kc, spread, rel, stratum
+
+
+
+# ------------------------------------------------------------------------------------------------ run locations
+def fresh_paths(rid):
+    if not (CC.CD / 'runs' / rid / 'LOGS_OK').is_file():
+        raise SystemExit('REFUSED: runs/%s/LOGS_OK missing (run c_extract_v13.py --logs-only first)' % rid)
+    rd = CC.CD / 'runs' / rid / rid
+    caps = [p for p in (rd / 'capture').iterdir() if p.is_dir()]
+    assert len(caps) == 1, rid
+    return rd, caps[0]
+
+
+def old_lead_paths(run):
+    rd = OLD_ARCH / run
+    return rd, list((rd / 'x' / run / 'capture').iterdir())[0]
+
+
+def tune_rows(family):
+    rows = [r for r in csv.DictReader(open(M4 / 'run_index_m4_v02.csv', encoding='utf-8'))
+            if r['use'] == '1' and r['set'] == 'tune' and r['family'] == family]
+    rows.sort(key=lambda r: r['archive']); assert len(rows) == 20
+    return {r['archive']: (pathlib.Path(r['cap']).parents[3], pathlib.Path(r['cap'])) for r in rows}
+
+
+def delay_table(rids, evs):
+    """B6(b) draw: one generator (20261916), runs in the given (ascending id) order, evaluated decisions in k order."""
+    import trk_score_v01 as TS
+    d = TS.draw_delays(int(sum(int(e.sum()) for e in evs)))
+    out = {}; pos = 0
+    for rid, ev in zip(rids, evs):
+        idx = np.flatnonzero(ev)
+        tau = np.full(ev.size, np.nan); tau[idx] = 0.75 + d[pos:pos + idx.size]
+        out[rid] = (tau, [pos, pos + idx.size]); pos += idx.size
+    return out
+
+
+# ------------------------------------------------------------------------------------------------ workers
+def one(job):
+    kind, rid, rd, cap, k_ref, tau, pos, outf, extra = job
+    rd = pathlib.Path(rd); cap = pathlib.Path(cap); outf = pathlib.Path(outf)
+    if outf.is_file():
+        return rid, 'exists', 0.
+    import trk_env_v01 as env; env.setup()
+    import trk_arrays_v01 as TA, trk_score_v01 as TS
+    t0 = time.time()
+    contract = json.loads((cap / 'contract.json').read_text(encoding='utf-8'))
+    meta = dict(run_id=rid, kind=kind, case=contract['case']['id'], code=CODE)
+    arrs = dict(k=np.asarray(k_ref))
+    if kind == 'lead':
+        dec = TS.realised_decel(cap)
+        t1 = time.time()
+        ev = np.isfinite(tau)
+        taus = {int(i): float(tau[i]) for i in np.flatnonzero(ev)}
+        cl = TS.delayed_stop_clearance(rd, cap, taus, A=6.0)
+        assert cl.shape == (len(k_ref), 17)
+        arrs.update(decel=np.float64(np.nan if dec is None else dec), tau=tau, clearDS=cl)
+        meta.update(family='lead_braking', n_eval=int(ev.sum()), delay_pos=pos, decel_defined=dec is not None,
+                    seconds_decel=t1 - t0, seconds_clearDS=time.time() - t1)
+    elif kind == 'cutin':
+        kc, spread, rel, stratum = event_info(TA, rd, cap, np.asarray(k_ref))
+        arrs.update(kc=np.int64(-1 if kc is None else kc), rel=rel, stratum=stratum, spread=np.float64(spread))
+        meta.update(family='cutin', event=kc is not None)
+    elif kind == 'tg':
+        sys.path.insert(0, str(HERE))
+        import c_extract_v13 as CX
+        PB = json.loads(CX.PBAR_RECORD.read_text(encoding='utf-8'))['Pbar']
+        z = np.load(STORED / (rid + '.npz'), allow_pickle=False)
+        decs = list(TA.gc.decisions(cap)); ks = np.array([k for k, _ in decs], dtype=np.int64)
+        if not np.array_equal(ks, z['k']):
+            raise RuntimeError('REFUSED %s: decisions differ from the stored k' % rid)
+        tg, nd = CX.tg_arrays(TA, cap, PB, z['cF0'])
+        if nd != 0:
+            raise RuntimeError('REFUSED %s: %d rows of the recomputed cF0 differ from the stored cF0 (A9-7a identity)' % (rid, nd))
+        arrs.update(tg); arrs['k'] = ks
+        meta.update(family='lead_braking_tuning', cF0_rows_differ=nd, pbar=str(CX.PBAR_RECORD))
+    meta['seconds'] = time.time() - t0
+    outf.parent.mkdir(parents=True, exist_ok=True)
+    tmp = outf.with_name(outf.stem + '.partial.npz')
+    np.savez_compressed(tmp, meta=json.dumps(meta, default=float), **{k: np.asarray(v) for k, v in arrs.items()})
+    os.replace(tmp, outf)
+    return rid, 'ok', meta['seconds']
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--set', required=True, choices=('c_lead', 'c_cutin', 'test_lead', 'test_cutin', 'tg_tune'))
+    ap.add_argument('--workers', type=int, default=2); ap.add_argument('--runs', default='')
+    a = ap.parse_args()
+    if a.workers > 2: raise SystemExit('REFUSED: at most 2 workers on the shared laptop')
+    test = a.set in ('test_lead', 'test_cutin', 'tg_tune')
+    gate = CC.require_lock2(test)
+    jobs = []
+    if a.set == 'c_lead':
+        rids = CC.c_run_ids('lead_braking')
+        Z = [np.load(CC.ARR / 'CV0' / (r + '.npz'), allow_pickle=False) for r in rids]
+        assert all(json.loads(str(z['meta']))['family'] == 'lead_braking' for z in Z)
+        D = delay_table(rids, [z['evaluated'].astype(bool) for z in Z])
+        for rid, z in zip(rids, Z):
+            rd, cap = fresh_paths(rid)
+            jobs.append(('lead', rid, str(rd), str(cap), z['k'], D[rid][0], D[rid][1], str(CC.ARR / 'S57A' / (rid + '.npz')), None))
+    elif a.set == 'c_cutin':
+        rids = CC.c_run_ids('cutin')
+        for rid in rids:
+            z = np.load(CC.ARR / 'CV0' / (rid + '.npz'), allow_pickle=False)
+            assert json.loads(str(z['meta']))['family'] == 'cutin', rid
+            rd, cap = fresh_paths(rid)
+            jobs.append(('cutin', rid, str(rd), str(cap), z['k'], None, None, str(CC.ARR / 'S57A' / (rid + '.npz')), None))
+    elif a.set == 'test_lead':
+        rids = ['p1b_fit_finite_%04d' % i for i in range(5, 40)]
+        Z = {r: np.load(STORED / (r + '.npz'), allow_pickle=False) for r in rids}
+        D = delay_table(rids, [Z[r]['evaluated'].astype(bool) for r in rids])
+        sel = [x for x in a.runs.split(',') if x] or rids
+        for rid in sel:
+            rd, cap = old_lead_paths(rid)
+            jobs.append(('lead', rid, str(rd), str(cap), Z[rid]['k'], D[rid][0], D[rid][1], str(OLDOUT / 'x' / (rid + '.npz')), None))
+    elif a.set == 'test_cutin':
+        loc = tune_rows('cutin')
+        sel = [x for x in a.runs.split(',') if x] or sorted(loc)
+        for rid in sel:
+            z = np.load(STORED / (rid + '.npz'), allow_pickle=False)
+            jobs.append(('cutin', rid, str(loc[rid][0]), str(loc[rid][1]), z['k'], None, None, str(OLDOUT / 'x' / (rid + '.npz')), None))
+    else:
+        loc = tune_rows('lead_braking')
+        tune = sorted(p.stem for p in A4DRY.glob('*.npz'))
+        assert tune == sorted(loc), 'tuning runs differ from the A4 dry-run extraction'
+        sel = [x for x in a.runs.split(',') if x] or tune
+        for rid in sel:
+            z = np.load(STORED / (rid + '.npz'), allow_pickle=False)
+            jobs.append(('tg', rid, str(loc[rid][0]), str(loc[rid][1]), z['k'], None, None, str(OLDOUT / 'tg_tune' / (rid + '.npz')), None))
+    t0 = time.time(); log = []
+    if a.workers <= 1:
+        it = map(one, jobs)
+        for rid, st, sec in it:
+            log.append(dict(run=rid, status=st, seconds=sec)); print('[%5.0f s] %s %s %.1f s' % (time.time() - t0, rid, st, sec), flush=True)
+    else:
+        from concurrent.futures import ProcessPoolExecutor
+        with ProcessPoolExecutor(a.workers) as ex:
+            for rid, st, sec in ex.map(one, jobs):
+                log.append(dict(run=rid, status=st, seconds=sec)); print('[%5.0f s] %s %s %.1f s' % (time.time() - t0, rid, st, sec), flush=True)
+    CC.OUT.mkdir(exist_ok=True)
+    (CC.OUT / f'S57A_EXTRACT_{a.set}_{time.strftime("%Y%m%dT%H%M%S")}.json').write_text(
+        json.dumps(dict(gate=gate, set=a.set, workers=a.workers, runs=log, seconds=time.time() - t0), indent=1), encoding='utf-8')
+
+
+if __name__ == '__main__':
+    main()

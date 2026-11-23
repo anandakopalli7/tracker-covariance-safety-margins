@@ -1,0 +1,46 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "addendum_to": "work/locks/FREEZE_CD.json (sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7); FREEZE_CD_add9.json (sha256 913afc9cf85249891edef20c73bdf170cb7f1ce55931d3eeeba4f416bed04acd)",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5)",
+ "written": "2026-11-22 04:56 Eastern Standard Time",
+ "approval": "Coordinator, 22 Nov 2026: \"please write an export pair: A_EXPORT_XH.json from X_HEADING_v13.json and A_RECOUNT_XH.json from RC_X_HEADING_v13.json. Use prefix XH.* ... Also record its second program and compare script in a freeze addendum\" (the second program and compare script are in add10).",
+ "after_lock": "LOCK_A12a.txt sha256 0c4d4872946ba85d2ed91a0471eb8da7188333d2dfe462b68a6df555345b2766",
+ "kind": "the XH export pair (clerical) and its comparison; no analysis program changed",
+ "adds": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\make_export_xh_v13.py",
+   "sha256": "2eed5ee54bd1d58840c54c6e93bc33622b7c7eb21c9fc65759e91d9a3f8d8c24"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\out\\A_EXPORT_XH.json",
+   "sha256": "6a22d0c6a6ead109c8960bea3c6b78ca7b6fb96ff977372d2612cab81724556e"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\out\\A_RECOUNT_XH.json",
+   "sha256": "09ec4e5175d66ce9a8c7a4f1ed7192016a89ed7a0adec8d88464782729b2bb3e"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\ycheck\\out\\COMPARE_XH_EXPORTS_v13.json",
+   "sha256": "0dfc4ed4e550545878140bc1d17d62bdafd53a9c11ca63d3549bf396e873fb11"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\make_freeze_add11_v13.py",
+   "sha256": "983fa07cd323352c76cecc0b13eb380c91766330ed357ae903523f569798986d"
+  }
+ ],
+ "uses": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\crossing\\out\\X_HEADING_v13.json",
+   "sha256": "bc6c8da2adb537c47fec9b61eb7d5c4c476624a09d6374bcbc235a36a34988eb"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\recount\\out\\RC_X_HEADING_v13.json",
+   "sha256": "937baff72f1a8ddcfe716aa58bdc491c4e4bea83bfcd777075ab1f2c3ae43a12"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\ycheck\\compare_y_v13.py",
+   "sha256": "9eacd2d06133b16e68fc76f761dead8423e332f7cdb0b026dd36745272f2f7fb"
+  }
+ ],
+ "replaces": []
+}

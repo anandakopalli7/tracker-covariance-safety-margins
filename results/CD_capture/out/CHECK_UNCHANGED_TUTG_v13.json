@@ -1,0 +1,240 @@
+{
+ "schema": "CHECK_UNCHANGED_V13",
+ "keep": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\out\\KEEP_before_TUTG",
+ "allowed": [
+  "TRANSFER.structured"
+ ],
+ "verdict": "OK",
+ "files": {
+  "A_EXPORT_C": {
+   "old_sha256": "21ceaa48e85e0e8f0af46504694e0cc302e54d123fb1423e226eafa1267ab73e",
+   "new_sha256": "c6ea954f6daeae83e2e9704dcda43703ac04dbdc9100203d2ff928baa73de290",
+   "values": [
+    627,
+    627
+   ],
+   "changed": [
+    "TRANSFER.structured"
+   ],
+   "missing": [],
+   "added": [],
+   "changed_not_allowed": [],
+   "other_fields_differing": [
+    "written"
+   ],
+   "outcomes_equal": true,
+   "deviations_equal": true,
+   "ok": true
+  },
+  "A_EXPORT_D": {
+   "old_sha256": "3e6879723dbb14ea622a8c9d5e1fd0ef381c5c71a102cd29660d7a268eb1e2bd",
+   "new_sha256": "7b9bcaf9fffe44f450266d061515c479cc6ed46d2755b054379a7d8fba9a71e5",
+   "values": [
+    138,
+    138
+   ],
+   "changed": [],
+   "missing": [],
+   "added": [],
+   "changed_not_allowed": [],
+   "other_fields_differing": [
+    "written"
+   ],
+   "outcomes_equal": true,
+   "deviations_equal": true,
+   "ok": true
+  },
+  "A_RECOUNT_C": {
+   "old_sha256": "41817692094c8eb871dd04899a8948dcffceeded9e5f7203e4216109377db4d8",
+   "new_sha256": "ee03c591e3a60e35a7cfb533ed73e2c24937cd7b9518667d5e961f4c2437becd",
+   "values": [
+    616,
+    616
+   ],
+   "changed": [
+    "TRANSFER.structured"
+   ],
+   "missing": [],
+   "added": [],
+   "changed_not_allowed": [],
+   "other_fields_differing": [
+    "written"
+   ],
+   "outcomes_equal": true,
+   "deviations_equal": true,
+   "ok": true
+  },
+  "A_RECOUNT_D": {
+   "old_sha256": "7cceb01dce5d4ad97ff6b06303794752e41a2b7480372b35cbeeaa7abfdb0a92",
+   "new_sha256": "04b8d441993bffadfb83ec8f0d94672abc81ebed6b3dd59f9d238d8df8fed1e6",
+   "values": [
+    138,
+    138
+   ],
+   "changed": [],
+   "missing": [],
+   "added": [],
+   "changed_not_allowed": [],
+   "other_fields_differing": [
+    "written"
+   ],
+   "outcomes_equal": true,
+   "deviations_equal": true,
+   "ok": true
+  }
+ },
+ "transfer": {
+  "A_EXPORT_C": {
+   "N_inside_delta": [
+    true,
+    true
+   ],
+   "sets": [
+    [
+     "F",
+     "fresh",
+     "old",
+     "tuning"
+    ],
+    [
+     "F",
+     "fresh",
+     "old",
+     "tuning"
+    ]
+   ],
+   "sets_missing": [
+    [],
+    []
+   ],
+   "orderings_removed": [],
+   "orderings_added": [],
+   "orderings_new": [
+    [
+     "CK3",
+     "AM"
+    ],
+    [
+     "CK3",
+     "TG"
+    ],
+    [
+     "CK3",
+     "NA"
+    ],
+    [
+     "CK3",
+     "N"
+    ],
+    [
+     "AM",
+     "TG"
+    ],
+    [
+     "AM",
+     "NA"
+    ],
+    [
+     "AM",
+     "N"
+    ],
+    [
+     "TG",
+     "NA"
+    ],
+    [
+     "TG",
+     "N"
+    ],
+    [
+     "NA",
+     "N"
+    ]
+   ],
+   "per_set_changed": {
+    "tuning": {
+     "TG": [
+      null,
+      0.1816889394370202
+     ]
+    }
+   }
+  },
+  "A_RECOUNT_C": {
+   "N_inside_delta": [
+    true,
+    true
+   ],
+   "sets": [
+    [
+     "F",
+     "fresh",
+     "old",
+     "tuning"
+    ],
+    [
+     "F",
+     "fresh",
+     "old",
+     "tuning"
+    ]
+   ],
+   "sets_missing": [
+    [],
+    []
+   ],
+   "orderings_removed": [],
+   "orderings_added": [],
+   "orderings_new": [
+    [
+     "CK3",
+     "AM"
+    ],
+    [
+     "CK3",
+     "TG"
+    ],
+    [
+     "CK3",
+     "NA"
+    ],
+    [
+     "CK3",
+     "N"
+    ],
+    [
+     "AM",
+     "TG"
+    ],
+    [
+     "AM",
+     "NA"
+    ],
+    [
+     "AM",
+     "N"
+    ],
+    [
+     "TG",
+     "NA"
+    ],
+    [
+     "TG",
+     "N"
+    ],
+    [
+     "NA",
+     "N"
+    ]
+   ],
+   "per_set_changed": {
+    "tuning": {
+     "TG": [
+      null,
+      0.1816889394370202
+     ]
+    }
+   }
+  }
+ }
+}

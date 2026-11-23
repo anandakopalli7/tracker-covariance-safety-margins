@@ -1,0 +1,29 @@
+{
+ "name": "FREEZE_F_NUS5B_ADD03",
+ "layered_on": [
+  "work\\locks\\FREEZE_F_NUS5B.json",
+  "work\\locks\\FREEZE_F_NUS5B_ADD01.json",
+  "work\\locks\\FREEZE_F_NUS5B_ADD02.json"
+ ],
+ "reason": "the clerical sec. 5b export pair (coordinator, 05:22): the renamer f24_export_n5b_v01.py frozen BEFORE it runs, with the side-by-side f23_compare_nus5b_v01.py and its result (37 keys agree, max 3.6e-13)",
+ "exports_exist_at_writing": [],
+ "written": "2026-11-22 05:20:36",
+ "n": 3,
+ "entries": [
+  {
+   "group": "renamer",
+   "path": "work\\F_nuscenes\\code\\f24_export_n5b_v01.py",
+   "sha256": "33acc8b49e493fe3e878f62971a4703e09cfdb7bfb32854afce4628b2c5a0298"
+  },
+  {
+   "group": "compare",
+   "path": "work\\F_nuscenes\\code\\f23_compare_nus5b_v01.py",
+   "sha256": "2b18eac78cbbe19d8d1bc8da3b58dad2332588844829766a3d2a656c14f2cfbe"
+  },
+  {
+   "group": "compare",
+   "path": "work\\F_nuscenes\\out\\nus5b\\NUS5B_COMPARE_v01.json",
+   "sha256": "5c24b4860401a0134b16a3b5b31b8949921739b6b67a79b953117f428b7f11c7"
+  }
+ ]
+}

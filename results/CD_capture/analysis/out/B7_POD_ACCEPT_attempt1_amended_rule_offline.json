@@ -1,0 +1,158 @@
+{
+ "what": "amended acceptance rule (CD lead ~06:30 EST) applied offline to attempt 1 pod arrays (claude-v13cd-b01, old run 0037)",
+ "read_keys": [
+  "k",
+  "idx55",
+  "evaluated",
+  "clear",
+  "vbar",
+  "des",
+  "cF0",
+  "cE",
+  "cN",
+  "cCK3",
+  "phase",
+  "lead_found",
+  "dx_pred3",
+  "now",
+  "age"
+ ],
+ "tol_other_abs": 1e-14,
+ "chains": {
+  "B7_2_0": {
+   "all_keys_identical": false,
+   "read_keys_identical": true,
+   "other_keys_within_tol": false,
+   "differing": {
+    "cA1": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 1.4210854715202004e-14,
+     "max_rel": 3.9559577436501073e-16,
+     "n_values_differing": 764
+    },
+    "cQ": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 7.105427357601002e-15,
+     "max_rel": 2.9670278695455515e-16,
+     "n_values_differing": 761
+    }
+   },
+   "n_keys": 45
+  },
+  "B7_2_0.1": {
+   "all_keys_identical": false,
+   "read_keys_identical": true,
+   "other_keys_within_tol": false,
+   "differing": {
+    "cA1": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 1.4210854715202004e-14,
+     "max_rel": 3.9559577436501073e-16,
+     "n_values_differing": 764
+    },
+    "cQ": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 7.105427357601002e-15,
+     "max_rel": 2.9670278695455515e-16,
+     "n_values_differing": 761
+    }
+   },
+   "n_keys": 45
+  },
+  "B7_5_0": {
+   "all_keys_identical": false,
+   "read_keys_identical": true,
+   "other_keys_within_tol": false,
+   "differing": {
+    "cA1": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 1.4210854715202004e-14,
+     "max_rel": 4.1802677153372314e-16,
+     "n_values_differing": 1884
+    },
+    "cQ": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 1.4210854715202004e-14,
+     "max_rel": 2.95321498466421e-16,
+     "n_values_differing": 1897
+    }
+   },
+   "n_keys": 45
+  },
+  "B7_5_0.1": {
+   "all_keys_identical": false,
+   "read_keys_identical": true,
+   "other_keys_within_tol": false,
+   "differing": {
+    "cA1": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 1.4210854715202004e-14,
+     "max_rel": 4.1802677153372314e-16,
+     "n_values_differing": 1884
+    },
+    "cQ": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 1.4210854715202004e-14,
+     "max_rel": 2.95321498466421e-16,
+     "n_values_differing": 1897
+    }
+   },
+   "n_keys": 45
+  },
+  "B7_5_0.2": {
+   "all_keys_identical": true,
+   "read_keys_identical": true,
+   "other_keys_within_tol": true,
+   "differing": {},
+   "n_keys": 45
+  },
+  "B7_10_0": {
+   "all_keys_identical": true,
+   "read_keys_identical": true,
+   "other_keys_within_tol": true,
+   "differing": {},
+   "n_keys": 45
+  },
+  "B7_10_0.1": {
+   "all_keys_identical": false,
+   "read_keys_identical": true,
+   "other_keys_within_tol": true,
+   "differing": {
+    "cA1": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 7.105427357601002e-15,
+     "max_rel": 3.6117096569711987e-16,
+     "n_values_differing": 3727
+    },
+    "cQ": {
+     "dtype_shape_equal": true,
+     "finite_pattern_equal": true,
+     "max_abs": 7.105427357601002e-15,
+     "max_rel": 3.009324945560643e-16,
+     "n_values_differing": 3802
+    }
+   },
+   "n_keys": 45
+  },
+  "B7_10_0.2": {
+   "all_keys_identical": true,
+   "read_keys_identical": true,
+   "other_keys_within_tol": true,
+   "differing": {},
+   "n_keys": 45
+  }
+ },
+ "check1_read_keys_bit_identical": true,
+ "check2_other_keys_within_1e-14_abs": false,
+ "note": "check 2 fails only because cA1 and cQ differ by up to 1.42e-14 absolute (about 2 ulp at their magnitude; max relative 4.2e-16)",
+ "written": "2026-11-20 06:32:31"
+}

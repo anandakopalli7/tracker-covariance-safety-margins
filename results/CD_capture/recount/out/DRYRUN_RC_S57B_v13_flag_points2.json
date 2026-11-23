@@ -1,0 +1,216 @@
+{
+ "family": "S57B",
+ "program": "rc_s57b_v13.py",
+ "test_old": false,
+ "model": "claude-fable-5-2",
+ "threads": 2,
+ "dryrun": "OLD runs relabelled as fresh in a scratch tree; NOT fresh data",
+ "families": [
+  "trunc",
+  "caps",
+  "grid"
+ ],
+ "seed": 20261911,
+ "values": {
+  "LB.T0.R": 8.370568650119951,
+  "LB.T0.RR_CK3": 0.2729987557030278,
+  "LB.T1.R": 9.82364576425432,
+  "LB.T1.RR_CK3": 0.4029632660218008,
+  "LB.T2.R": 10.496949585569448,
+  "LB.T2.RR_CK3": 0.5339907679395719,
+  "LB.T5.R": 10.03709715995542,
+  "LB.T5.RR_CK3": 0.6855945379571419,
+  "LB.T10.R": 8.322811837496479,
+  "LB.T10.RR_CK3": 0.7691042220094663,
+  "LB.T20.R": 5.9605636597395675,
+  "LB.T20.RR_CK3": 0.822325434936629,
+  "LB.cut5.R": 10.535302161031971,
+  "LB.cut5.RR_CK3": 0.541020006409376,
+  "LB.cap5.R": 5.6736822521889945,
+  "LB.cap10.R": 6.792635135540633,
+  "LB.cap15.R": 6.931686561162823,
+  "LB.signed.R": 4.836072952487262,
+  "LB.signed.RR_N": -0.0001985530446868442,
+  "LB.signed.RR_CK3": 0.818869984984426,
+  "LB.grid.RR_N": 0.001220407810609995,
+  "LB.grid.RR_P": 0.0014904095386210547,
+  "LB.grid.RR_NmP": -0.00027000172801105966,
+  "LB.hull.R": 3.9783326752462655,
+  "LB.hull.RR_N": -0.0019676942560173396,
+  "LB.hull.RR_CK3": 0.7503229067851171
+ },
+ "details": {
+  "bootstrap": {
+   "draw": "default_rng(20261911).integers(0, 35, (20000, 35)), rows 0..19999",
+   "n": 20000,
+   "interval": "np.percentile over finite resamples, 2.5 / 97.5 (nominal 95%)"
+  },
+  "E5": {
+   "n_evaluated": 8290,
+   "n_with_ratio": 8290,
+   "m": 1.1029,
+   "A": 0.05
+  },
+  "trunc": {
+   "phase": "ph",
+   "T0": {
+    "n": 1433.0,
+    "denE": 1682.4842986741103,
+    "D_CK3": 459.3161200279134
+   },
+   "T1": {
+    "n": 1733.0,
+    "denE": 1974.5527986151183,
+    "D_CK3": 795.6722446624352
+   },
+   "T2": {
+    "n": 2033.0,
+    "denE": 2109.886866699459,
+    "D_CK3": 1126.6601082144614
+   },
+   "T5": {
+    "n": 2933.0,
+    "denE": 2017.4565291510396,
+    "D_CK3": 1383.1571769519262
+   },
+   "T10": {
+    "n": 4433.0,
+    "denE": 1672.8851793367921,
+    "D_CK3": 1286.62305436499
+   },
+   "T20": {
+    "n": 7422.0,
+    "denE": 1198.073295607653,
+    "D_CK3": 985.2061438965238
+   },
+   "cut5": {
+    "n": 2063.0,
+    "denE": 2117.5957343674263,
+    "D_CK3": 1145.6616577799323,
+    "rule": "evaluated and (no k_stop or (k - k_stop) * 0.05 + 3 <= 5 + 1e-9), truth phase"
+   },
+   "runs_without_after_stop_decision": []
+  },
+  "caps": {
+   "cap5": {
+    "denE": 1140.410132689988,
+    "c0": 1.09580046007649,
+    "C": 5.0,
+    "C_uncapped": 27.70436304172968
+   },
+   "cap10": {
+    "denE": 1365.3196622436672,
+    "c0": 1.09580046007649,
+    "C": 10.0,
+    "C_uncapped": 27.70436304172968
+   },
+   "cap15": {
+    "denE": 1393.2689987937274,
+    "c0": 1.09580046007649,
+    "C": 15.0,
+    "C_uncapped": 27.70436304172968
+   },
+   "signed": {
+    "n": 8290.0,
+    "denE": 972.0506634499397,
+    "D": {
+     "N": -0.19300361881785244,
+     "CK3": 795.9831121833535
+    },
+    "c0": -0.9722494552773443,
+    "C": 27.704363041728627
+   }
+  },
+  "grid": {
+   "n": 8290.0,
+   "denE": 1116.911942098914,
+   "R_pp": 5.556775831337881,
+   "D": {
+    "E": 1116.911942098914,
+    "N": 1.3630880579010933,
+    "P": 1.6646562123039887,
+    "CK3": 928.6851628468035
+   },
+   "hdenE": 799.6448677244994,
+   "hD": {
+    "N": -1.5734566130752428,
+    "CK3": 599.9918615468468
+   },
+   "placebo_factor": 1.21638841,
+   "hull": "lower convex envelope of the grid points (optA_lib_v02.hull_frontier)",
+   "hull_on_gridless_points": {
+    "hdenE": 798.306825216893,
+    "R_pp": 3.971675747347726,
+    "RR_N": 2.7967626643231715e-05,
+    "RR_CK3": 0.7511807064818773
+   }
+  },
+  "kernel_vs_point_path": [
+   {
+    "what": "W1 all (F0, E)",
+    "identical": true,
+    "differ": []
+   }
+  ],
+  "values_not_in_key_list": {},
+  "key_list": {
+   "file": "export\\A_KEYS_CD_v13.json",
+   "sha256": "9531ea3a3adb5a8f7bd43a58365f9f340f96c742a6915bb76387cb7372967353",
+   "n_keys_written": 26
+  },
+  "conventions": {
+   "phase_thr": -1.0,
+   "rs_variant": "est",
+   "gap2_variant": "est",
+   "trunc_phase": "ph",
+   "cut5": "CD_DEFINITIONS_S57B section 5: recording ends 5 s after k_stop; a decision is kept iff its 3 s window fits",
+   "caps": "CD_DEFINITIONS_S57B section 6: levels linspace(c0, min(C, cap), 201); null if cap <= c0",
+   "hull_gridless_beside": true
+  },
+  "runs": [
+   "pc13_dryrun_lead_0000_native",
+   "pc13_dryrun_lead_0001_native",
+   "pc13_dryrun_lead_0002_native",
+   "pc13_dryrun_lead_0003_native",
+   "pc13_dryrun_lead_0004_native",
+   "pc13_dryrun_lead_0005_native",
+   "pc13_dryrun_lead_0006_native",
+   "pc13_dryrun_lead_0007_native",
+   "pc13_dryrun_lead_0008_native",
+   "pc13_dryrun_lead_0009_native",
+   "pc13_dryrun_lead_0010_native",
+   "pc13_dryrun_lead_0011_native",
+   "pc13_dryrun_lead_0012_native",
+   "pc13_dryrun_lead_0013_native",
+   "pc13_dryrun_lead_0014_native",
+   "pc13_dryrun_lead_0015_native",
+   "pc13_dryrun_lead_0016_native",
+   "pc13_dryrun_lead_0017_native",
+   "pc13_dryrun_lead_0018_native",
+   "pc13_dryrun_lead_0019_native",
+   "pc13_dryrun_lead_0020_native",
+   "pc13_dryrun_lead_0021_native",
+   "pc13_dryrun_lead_0022_native",
+   "pc13_dryrun_lead_0023_native",
+   "pc13_dryrun_lead_0024_native",
+   "pc13_dryrun_lead_0025_native",
+   "pc13_dryrun_lead_0026_native",
+   "pc13_dryrun_lead_0027_native",
+   "pc13_dryrun_lead_0028_native",
+   "pc13_dryrun_lead_0029_native",
+   "pc13_dryrun_lead_0030_native",
+   "pc13_dryrun_lead_0031_native",
+   "pc13_dryrun_lead_0032_native",
+   "pc13_dryrun_lead_0033_native",
+   "pc13_dryrun_lead_0034_native"
+  ],
+  "rs_arrays": "arrays\\RSX",
+  "counts": {
+   "n_runs": 35,
+   "n_decisions": 9307,
+   "n_evaluated": 8290
+  }
+ },
+ "written": "2026-11-20 03:51:04",
+ "seconds": 36.4910786151886
+}

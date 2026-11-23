@@ -1,0 +1,35 @@
+{
+ "addendum": 2,
+ "to": "work\\locks\\FREEZE_B.json",
+ "freeze_b_sha256": "1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152",
+ "written": "2026-11-20 01:09:19 Eastern Standard Time",
+ "writer": "package-B session, Claude Opus 5.5 (claude-opus-5-5)",
+ "reason": "Coordinator OK (message stamped 20 Nov 01:35 EST): b_summary_v01.py exports the A10 10.1(b) fresh-run second-IMM check as 'second_imm_fresh' (reads out\\imm2\\IMM_COMPARE_fresh5_v01.json; pending until it exists; expected five run ids re-drawn from CD_capture\\CASES_C_v13.json, seed 20261917). Only b_summary_v01.py changed since FREEZE_B_add1; library and all other code untouched; before Lock 2. Re-run on existing inputs: every existing summary entry unchanged; new entry reads pending. Lists every change since FREEZE_B (so b_compare_recount_v01.py and make_freeze_add_v01.py from add1 appear again, unchanged since add1).",
+ "library_unchanged": true,
+ "changed": [
+  {
+   "path": "B_retrack\\code\\b_compare_recount_v01.py",
+   "sha256": "643698f0a95464c40fca06c377c44d6b2b9990f012d84c919fecf32deefecd03",
+   "bytes": 12011,
+   "mtime": "2026-11-19 20:42:55",
+   "old_sha256": "3cdcb7db994e7d319e51eb6ee047fe667e813b4f1b9fe3417d6d6d6e69c4dfdb"
+  },
+  {
+   "path": "B_retrack\\code\\b_summary_v01.py",
+   "sha256": "9efbdfe425b0af9581e539628737e1555badcbcaff3e49007283fee037ab0898",
+   "bytes": 14012,
+   "mtime": "2026-11-20 01:08:43",
+   "old_sha256": "0621af3a8ec8a05a8af127ab96e7e6e14b36ae6dc14038b62f458fe65408dd57"
+  }
+ ],
+ "new": [
+  {
+   "path": "B_retrack\\code\\make_freeze_add_v01.py",
+   "sha256": "92a3e3e6d454e09abddae4d0d84ee932394dbf753a6d67b2dc7e5985c7fedbf5",
+   "bytes": 3662,
+   "mtime": "2026-11-19 20:54:24"
+  }
+ ],
+ "missing": [],
+ "note": "FREEZE_B.json is kept as written; this addendum lists every covered file that changed or is new since it."
+}

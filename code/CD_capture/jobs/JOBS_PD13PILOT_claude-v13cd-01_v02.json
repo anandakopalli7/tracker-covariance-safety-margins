@@ -1,0 +1,120 @@
+{
+ "schema": "CLAUDE_MAIN_JOBS_V01",
+ "protocol": "DEVELOPMENT_PROTOCOL_SMOKE_v01.json",
+ "volume_folder": "/opt/claude_v13_local",
+ "capture_timeout_s": 600,
+ "review_timeout_s": 600,
+ "actor_review_timeout_s": 180,
+ "server_ready_timeout_s": 120,
+ "concurrent_start_stagger_s": 15,
+ "max_attempts": 2,
+ "protocol_d1_sha256": "1a8328644c610f477be9a605e70bbf2f0c46893d4716ce50d2f7319450bff601",
+ "note": "Revision v13 package D1 pilot (review finding 2): A1 references on packet_d1_v13 and the three d1_pilot cases (not study runs).",
+ "made_by": {
+  "script": "make_jobs_d1_v13.py",
+  "sha256": "00bbb4d9474f517510e03c7d93f562d391cebbf967dd4052d53e35055ab85177",
+  "case_file_sha256": "6aef155dfd1acaa6c423bf3bcac22f93dc401c33a5ac319659e63ce197931ea6"
+ },
+ "jobs": [
+  {
+   "id": "a1d13p_01_crash",
+   "case": "canonical_lead_braking_v10_r0_finite",
+   "arm": "native",
+   "phase": "A1",
+   "role": "control",
+   "scenario": "canonical_lead_braking_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 1.0,
+    "T": 0.18142429254388814,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 215
+   },
+   "alpha": 0.07595887787405835,
+   "beta": 0.056961122665147565
+  },
+  {
+   "id": "a1d13p_01_benign",
+   "case": "canonical_benign_v10_r0_finite",
+   "arm": "native",
+   "phase": "A1",
+   "role": "control",
+   "scenario": "canonical_benign_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 0.0,
+    "T": 0.9999999494794277,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 700
+   },
+   "alpha": 0.07595887787405835,
+   "beta": 0.056961122665147565
+  },
+  {
+   "id": "a1d13p_01_learned",
+   "case": "canonical_vehicle_crossing_v10_r0_finite",
+   "arm": "learned_without",
+   "phase": "A1",
+   "role": "control",
+   "scenario": "canonical_vehicle_crossing_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 0.0,
+    "T": 0.06592746377472082,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 700
+   },
+   "kappa": 1.0
+  },
+  {
+   "id": "ctl_pd13p_01_v02_000",
+   "case": "canonical_lead_braking_v10_r0_finite",
+   "arm": "native",
+   "phase": "CTL",
+   "role": "control",
+   "scenario": "canonical_lead_braking_v10_r0_finite",
+   "keep_raw": false,
+   "reference": {
+    "S": 1.0,
+    "T": 0.18142429254388814,
+    "source": "Codex reference (bit-identical in smoke)",
+    "physical_frames": 215
+   },
+   "alpha": 0.07595887787405835,
+   "beta": 0.056961122665147565
+  },
+  {
+   "id": "pd13pilot_constant_native",
+   "case": "d1v13pilot_constant",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PD13PILOT",
+   "role": "pilot",
+   "scenario": "d1v13pilot_constant",
+   "keep_raw": false
+  },
+  {
+   "id": "pd13pilot_mild_braking_native",
+   "case": "d1v13pilot_mild_braking",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PD13PILOT",
+   "role": "pilot",
+   "scenario": "d1v13pilot_mild_braking",
+   "keep_raw": false
+  },
+  {
+   "id": "pd13pilot_stop_and_go_native",
+   "case": "d1v13pilot_stop_and_go",
+   "arm": "native",
+   "alpha": 5.411894431054339,
+   "beta": 5.411894431054339,
+   "phase": "PD13PILOT",
+   "role": "pilot",
+   "scenario": "d1v13pilot_stop_and_go",
+   "keep_raw": false
+  }
+ ]
+}

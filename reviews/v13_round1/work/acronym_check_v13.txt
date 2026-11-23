@@ -1,0 +1,23 @@
+### Acronym check (advisory; no reply needed)
+Coverage: body, English abstract (partial)
+Not in this input: Chinese abstract.
+Not checked:
+- Body, line 21: IMM (the initials before its parentheses do not spell it)
+- Body, line 51: CV (the initials before its parentheses do not spell it)
+- Body, line 65: CA (the initials before its parentheses do not spell it)
+
+| Scope | Line | Rule | Acronym | Uses |
+|---|---|---|---|---|
+| Body | 5 | Not defined | AUTHOR | 2 |
+| Body | 5 | Not defined | BLOCK | 1 |
+| Body | 21 | Not defined | CANMOT | 5 |
+| Body | 21 | Not defined | CARLA | 7 |
+| Body | 39 | Not defined | IEEE | 2 |
+| Body | 73 | Not defined | PS | 2 |
+| Body | 75 | Not defined | TABLE | 5 |
+| Body | 112 | Not defined | AI | 2 |
+| Body | 112 | Not defined | SHA | 1 |
+| Body | 242 | Not defined | AND | 1 |
+| Body | 242 | Not defined | NAME | 1 |
+| Body | 256 | Not defined | OpenAI | 1 |
+| EN abstract | 9 | Not defined | CARLA | 1 |

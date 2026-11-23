@@ -1,0 +1,353 @@
+{
+ "schema": "B7_REPLACED_RUNS_V13",
+ "rule": "coordinator 20 Nov 08:45 EST: a fresh run whose pod-made arrays differ from the laptop CV0 in any key B7 reads is re-extracted on the laptop with the frozen extractor (all 8 chains) and replaces the pod version",
+ "cause": "extraction geometry uses glibc on the pod and Windows libm on the laptop; exact_trig covers the tracker path only",
+ "survey": "analysis/out/B7_CROSSMACHINE_DIFF_v13.json",
+ "written": "2026-11-20 09:05:52",
+ "runs": [
+  "pc13_c1109_eval_0114_native",
+  "pc13_c1109_eval_0184_native",
+  "pc13_c1109_eval_0226_native",
+  "pc13_c1109_eval_0238_native",
+  "pc13_c1109_eval_0358_native",
+  "pc13_c1109_eval_0418_native"
+ ],
+ "files": [
+  {
+   "run": "pc13_c1109_eval_0114_native",
+   "chain": "B7_2_0",
+   "pod_sha256": "ed1a42db70d4e909def42565f6549fd24cc9b2b2e720f3290dac8e341e9c50fd",
+   "laptop_sha256": "852cca1d1e6c1d9599eaf1fe6cc841c5e77d94cb1e0c6407bbeeb6d1554e866f",
+   "keys_equal_to_cv0_on_chain_2_0": 45
+  },
+  {
+   "run": "pc13_c1109_eval_0114_native",
+   "chain": "B7_2_0.1",
+   "pod_sha256": "da8c52a18cbb20a0fa106921b89917c05226302c3458105e082e956b5425a020",
+   "laptop_sha256": "6dde06c37fbfae798c2f1bb3ed17153756f70f6fd40ad72fb3df70f8c8372c0d",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0114_native",
+   "chain": "B7_5_0",
+   "pod_sha256": "0642ea8f446b3f72a31cda27c8946c4c2d05d4e1873c7069f09a5cae08493c0b",
+   "laptop_sha256": "1f8a87e3434b6329443412b0ae206686c0529694b0f528279a38b4d5d26452f1",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0114_native",
+   "chain": "B7_5_0.1",
+   "pod_sha256": "635f59655ca1cc0da372f5cd3b0a688c8c04485bc429626a228d5a6f30935380",
+   "laptop_sha256": "a69d46caca965e518142ef858ab7e308a0357b7bf1a01ae16c767966d04ffd9c",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0114_native",
+   "chain": "B7_5_0.2",
+   "pod_sha256": "80b181fb698d7a20f59db2527ac24f7e604846c51852ededa71b420369297afa",
+   "laptop_sha256": "cf0ef32ba8e706ecaf3b33b6076d131845b0f8c16b00f8b03a2c7a08a8ff7ab1",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0114_native",
+   "chain": "B7_10_0",
+   "pod_sha256": "e2148781a87fd5f826fb1021180fd9d1d99d74e9efa475de08f4ca9fb1dd6b48",
+   "laptop_sha256": "35997db3bb7bf1db44eb7af516b0e63c30f25ff68f7de7dac98c1546ab6ef5f3",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0114_native",
+   "chain": "B7_10_0.1",
+   "pod_sha256": "c1c33077050049b84b6ab13a6a5786ca07c51c5be67f7d7b5ce410d7c9bedbc6",
+   "laptop_sha256": "bb1b20ee12d135f4164a86395aee05b6b7c20d25f911acb244bdf1a232fa868c",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0114_native",
+   "chain": "B7_10_0.2",
+   "pod_sha256": "fc19494726b3d1beb91839da59a1a6a5143959219254fe02d328bd03235a9c40",
+   "laptop_sha256": "1a395e10314d8168358c2cbc8faef08e2d4084759f51e76a7db38e90e422d366",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0184_native",
+   "chain": "B7CI_2_0",
+   "pod_sha256": "ae245c952133478290fe94d74697b32a7358fb4607c02a0859c50d54cb254813",
+   "laptop_sha256": "ac3dd3d82ade7d6bf1a292089a849c9750a8fe6ea35fa8e7ee15dd1e0d708142",
+   "keys_equal_to_cv0_on_chain_2_0": 45
+  },
+  {
+   "run": "pc13_c1109_eval_0184_native",
+   "chain": "B7CI_2_0.1",
+   "pod_sha256": "e6fd1f85ff83c2d0c2e93abdd0db13d3e737923c674ebe6685126eb556261e0d",
+   "laptop_sha256": "fdcb1bc795abdd95e248536bcfed687bbcd965ca9e0abde068a23b59878dfc55",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0184_native",
+   "chain": "B7CI_5_0",
+   "pod_sha256": "b2bce09c9d640129fa11eaa92155561f4cb4ed63694b9284f2abc2f7df0e07aa",
+   "laptop_sha256": "c4e46e0e290a4ba7190bc2ae158bd963b3cbebaa5de47755e5da3b1d400edfcd",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0184_native",
+   "chain": "B7CI_5_0.1",
+   "pod_sha256": "1572133cc739b4056020b1272e869afc36952e611c20561e7125133482cd0c46",
+   "laptop_sha256": "003ae7c194be421112e3d33240b688422ae11bddd4b8b9e1ca50e8f00fbb275e",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0184_native",
+   "chain": "B7CI_5_0.2",
+   "pod_sha256": "2a3fc00a45bdf1da62afa8b4ecd330df47947302c366ad4ffad4494166efe106",
+   "laptop_sha256": "7a40dbee3172c60269fa12290fbcd5203f8cf8846a6c169aa506872c33935beb",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0184_native",
+   "chain": "B7CI_10_0",
+   "pod_sha256": "b1f4b8020417e12efb8672d1a00097aef202cce284293ec5057d185f4bbf874b",
+   "laptop_sha256": "86e41f74534c9188097ff803165943e80673e229eaac3adbb03148c84a450b25",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0184_native",
+   "chain": "B7CI_10_0.1",
+   "pod_sha256": "533eb2c8ce0d1284fe2c5b385b81755323873e6e4454ce118c887198511d16b0",
+   "laptop_sha256": "d12b2305b5f164d5118fc65b5920448e123026d090dcd4d830f9bbaae5c11e00",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0184_native",
+   "chain": "B7CI_10_0.2",
+   "pod_sha256": "5fd8427384f37d596cb9a061779815741b6755f8a81898a9b243a24787513bc3",
+   "laptop_sha256": "3e5a8e5bfe2e6d29cecb37c57d43ae1921f37bddf376ff93f2d3f2ecd8e7d05b",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0226_native",
+   "chain": "B7CI_2_0",
+   "pod_sha256": "aaeb682502930d58be071108f4e164ea5a8a375e3be0c3109d98bfcdf439e500",
+   "laptop_sha256": "962b47024b06ab02bfad0edad76594c7906ee12b4ca4f701597b70ad57fc2aba",
+   "keys_equal_to_cv0_on_chain_2_0": 45
+  },
+  {
+   "run": "pc13_c1109_eval_0226_native",
+   "chain": "B7CI_2_0.1",
+   "pod_sha256": "154421f16cc480dd06e250fa4a05b1fec60381cc726d1f10318e3b26753a0a0e",
+   "laptop_sha256": "3217ae8ccd98492cefe33ee79be54fd53d4938e752fa8d22e4b62e44a06561aa",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0226_native",
+   "chain": "B7CI_5_0",
+   "pod_sha256": "66f83a0adbbb79a6c4a5128bb978f9c514046458ec2619ff3c87642904f499f2",
+   "laptop_sha256": "ef1abbfa8912146ecf13a645c32e9c8f12ba071585abc1ddc0c8bd73cce90a13",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0226_native",
+   "chain": "B7CI_5_0.1",
+   "pod_sha256": "4c65cddf995d9e1401815a6412ef6203442137e8026771bc16cdcbdcc6d92ad2",
+   "laptop_sha256": "152e602a0b307ed68efcde686d1ff17f3dc632ef67850bd740266017987a4dd6",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0226_native",
+   "chain": "B7CI_5_0.2",
+   "pod_sha256": "1dc7c907b36f1c1d0d5001e14990247f81ffc74d29c08a26fdfbaf791841cd83",
+   "laptop_sha256": "b3edc9265fd9c0750708dbc4e4df1bb350220099704199b3c84f327bcfed9da2",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0226_native",
+   "chain": "B7CI_10_0",
+   "pod_sha256": "b5db58873e3beac11f5a5553920ccd561b1792f553ff93e7f3ed6f0098639cee",
+   "laptop_sha256": "e9db81f5d86b383e9ae7f83a7affced5204fac936edd2ebdab215cbaf1cb150c",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0226_native",
+   "chain": "B7CI_10_0.1",
+   "pod_sha256": "867af0fffd72c40c786637d31a954b1d1bbb91b780c6a5cfc5f4084d73c9f74e",
+   "laptop_sha256": "795a37298dcfd0d4658b6418d09d19a0564b35cef9483d58b76d26b4ceffe768",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0226_native",
+   "chain": "B7CI_10_0.2",
+   "pod_sha256": "50d29f912e8fc60880ccfe6cf7d54517a9ad8cc6d6c3411ebbd5b1e043007562",
+   "laptop_sha256": "ac9e1a18334f94a6693545f5e5f22b4c1ac29c349c57d5dec23159fe6666aa09",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0238_native",
+   "chain": "B7CI_2_0",
+   "pod_sha256": "2760429db553845fa183f188c7d2efa16bc303db78865331391677b5b4d00318",
+   "laptop_sha256": "e78e3c4410e3abc6c65bcbc16e8dc01ce109eba7a8cdf5760eb8851a3b14d365",
+   "keys_equal_to_cv0_on_chain_2_0": 45
+  },
+  {
+   "run": "pc13_c1109_eval_0238_native",
+   "chain": "B7CI_2_0.1",
+   "pod_sha256": "37edaa90fac788754f1d2b7f80b701fbd258ac6619b3a143df309aa9b5d4bd49",
+   "laptop_sha256": "e243bdeeb67c6bc4e4fcf941d64df3da91cd87042c74b78160e0904e0e1ea61e",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0238_native",
+   "chain": "B7CI_5_0",
+   "pod_sha256": "5f5c9939783e4b82f8601703723a586db1d5e2fd34fa1897e591e7c632b562d3",
+   "laptop_sha256": "fd5d73ff4da5ad65fbce33055d74b1d13f9f6c48134760b50686eafe4132c744",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0238_native",
+   "chain": "B7CI_5_0.1",
+   "pod_sha256": "0a01174e45b0f856b15b2e763c7098fa82f9ef655f5d93cad8cf5d2931321283",
+   "laptop_sha256": "becafe3496d2e044770953f2fd018bef41b33a6dd4ca9532bb1a200803301a61",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0238_native",
+   "chain": "B7CI_5_0.2",
+   "pod_sha256": "8ed8694b81bc4f5459246320c8ff3baeab3a9976ac93ede5864539334d29a9ec",
+   "laptop_sha256": "de29ad15bc306079de03827a6e36978dbf705bd9a660ad73bd46beed6fab9abc",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0238_native",
+   "chain": "B7CI_10_0",
+   "pod_sha256": "147dc57b98c8174accca0048567ecd71a70e77e0b29b02403f9b5e4257204af4",
+   "laptop_sha256": "bf14ef63cb0cacb6a6aae9f2239b4d2019a24b7153edf81dce1983c8a5281721",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0238_native",
+   "chain": "B7CI_10_0.1",
+   "pod_sha256": "d8775445bf6d291858ceec826a4c1690c46dd6f2acdc419ee3c72d568201b744",
+   "laptop_sha256": "2f8be1d4642419541d0b2776c77a8c47b0a3f3d54f3158c5fcdcd0c801263f35",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0238_native",
+   "chain": "B7CI_10_0.2",
+   "pod_sha256": "00d2d4473218a5c4b1aaac61ee757508295fd4f0970e201c51e5b919e264353a",
+   "laptop_sha256": "3a48f9a62942bd8606d28e65577a55f7038925ab17f97a13e538a88314a92b77",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0358_native",
+   "chain": "B7CI_2_0",
+   "pod_sha256": "e79ed0b3cd4446ca13ddbcfc200045bcd00d0263a6edfc952b337a615ab0176b",
+   "laptop_sha256": "303cd4c6c90b644d1e77e95552224c99e27217e225a41cd670f21966d6f7a95b",
+   "keys_equal_to_cv0_on_chain_2_0": 45
+  },
+  {
+   "run": "pc13_c1109_eval_0358_native",
+   "chain": "B7CI_2_0.1",
+   "pod_sha256": "d8c6fd6cd74952abad299295f7edb30ce8b856c4074a434d60729107a0894020",
+   "laptop_sha256": "86f81a5e7dde2e2957aa8a1f4981c384d572196a2bc0b24ee6d7d048b0b60548",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0358_native",
+   "chain": "B7CI_5_0",
+   "pod_sha256": "fa713a6f81ef82feed7a13509233733c127ee790d7a2486647a0c294a015fa24",
+   "laptop_sha256": "76e50710f95f2e699b76d2786fb44718123cb3a0caf02920ddf6b4c989f90221",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0358_native",
+   "chain": "B7CI_5_0.1",
+   "pod_sha256": "98a6fed80d0e8e1feda3dff29afb36c537f385d1086f2e3271241ee8585f6696",
+   "laptop_sha256": "f7c3fee1c403053b8ac3384d35e93a6c7598f71bc08cb440b928fe9fbc190b43",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0358_native",
+   "chain": "B7CI_5_0.2",
+   "pod_sha256": "b1c38dd0aa12c2b4639b86d7cbfaa48aa461bb115260999837907a4a1cd194d9",
+   "laptop_sha256": "9ddf6a13be77540e082fde3147335f2629ab502a918a5056e9288ea4dd647d2a",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0358_native",
+   "chain": "B7CI_10_0",
+   "pod_sha256": "ef119970eb90adb04b5fc6ddb6be5e452ce3afa8cbed33a9866895edb356da27",
+   "laptop_sha256": "d2790ff84108c51651f273b9ee02d6c88b35ed6e3626680044f2c968de1ee12e",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0358_native",
+   "chain": "B7CI_10_0.1",
+   "pod_sha256": "debbd8155bb7fa9df327405c57096bb2b044f08a5954d064f1ec1625222848bc",
+   "laptop_sha256": "dbd520722cbbc357b0fc99704cec33ef32cbd906f89c7566ab8c5e131ef81f1e",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0358_native",
+   "chain": "B7CI_10_0.2",
+   "pod_sha256": "dec0756a7262a3470bcc95f45ece93b51cdbd13e357e5c47bc64b10716898225",
+   "laptop_sha256": "2a339e8607a77b0a1e68ac154c795b743cf265fbc8bbf6ce50cd352f17e4e509",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0418_native",
+   "chain": "B7CI_2_0",
+   "pod_sha256": "e779a20989340ea9ccedc1599e62a9cde9993c660bb1852018c52a07e09464a6",
+   "laptop_sha256": "bbc429ef3539abd81a2d30bd770a0b5b0cf152af7b996c155d9935e24c757202",
+   "keys_equal_to_cv0_on_chain_2_0": 45
+  },
+  {
+   "run": "pc13_c1109_eval_0418_native",
+   "chain": "B7CI_2_0.1",
+   "pod_sha256": "94cf37f44c0a0b6ed92328b5b8340a5d5e4e845d539981c48cf3fabd73a71549",
+   "laptop_sha256": "458e4af257870313e93ef0ad34c90f4b2e2be45c685b258a19ffc8570ea4a138",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0418_native",
+   "chain": "B7CI_5_0",
+   "pod_sha256": "dede051b2a1ac3b634282c03e7de3dbe886477d34af2da2527dfae56019ee190",
+   "laptop_sha256": "9c1f12967545c7914078b2fd65b1b5d50bed2cee4a689f3fe22221cbf0c98fa1",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0418_native",
+   "chain": "B7CI_5_0.1",
+   "pod_sha256": "56e319d101088f870c96ac6fe66fe9c29877c8757ed8e1a814638e5b112dbf96",
+   "laptop_sha256": "29079b2ebd33705811d0178a458f22744a87f66eeff17d019e6f0d248b740aa1",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0418_native",
+   "chain": "B7CI_5_0.2",
+   "pod_sha256": "363da2cc4d926ad24506ffab9e54e92e2ab0664dc7bb7d6dea261362cc1c4c19",
+   "laptop_sha256": "73f87410f3581c67a99f56f0441143d9f7fdfeb79724e8383b7cf13fdf64b82f",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0418_native",
+   "chain": "B7CI_10_0",
+   "pod_sha256": "2750ada85ac31b415379db815fd500295b0efd4097ef272083837e20cf722a1c",
+   "laptop_sha256": "0a32bc4c8e67ca8eca4cc4974596c4968c9ef807350180a1b4c50ca97ca28179",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0418_native",
+   "chain": "B7CI_10_0.1",
+   "pod_sha256": "af172ef1a8ed6f332c82b68da76841046f01570a95ca17265269028bc763a3c4",
+   "laptop_sha256": "c50d6a1211400fb44e559421cd73781540847d4b4c312a5b95f0a230ce2303f0",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  },
+  {
+   "run": "pc13_c1109_eval_0418_native",
+   "chain": "B7CI_10_0.2",
+   "pod_sha256": "dd19cd08601804d9858996c3732d0fc5f0fa631362cfb9faae70cdc73f3819e3",
+   "laptop_sha256": "b8b94387ec5909b198edc525888858543bcc570bfee502df32c5d0b840898a47",
+   "keys_equal_to_cv0_on_chain_2_0": null
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "schema": "CLAUDE_MAIN_JOBS_V01",
+ "protocol": "DEVELOPMENT_PROTOCOL_SMOKE_v01.json",
+ "volume_folder": "claude_v13_e_v01",
+ "capture_timeout_s": 600,
+ "review_timeout_s": 600,
+ "actor_review_timeout_s": 180,
+ "server_ready_timeout_s": 120,
+ "concurrent_start_stagger_s": 15,
+ "max_attempts": 1,
+ "protocol_main_sha256": "32d683a0a8ca2e91ff0245759ad78b43e7953c33bd12847c5193cafcdaa5735d",
+ "note": "Revision v13 package E stage E1 (brake test, attempt list a1) on claude-v13e-01: 3 brake runs (5, 10, 15 m/s); packet_e; volume folder claude_v13_e_v01; one attempt per job: a second attempt is a new list after a fault, decided by a person.",
+ "made_by": {
+  "script": "make_jobs_e_v01.py",
+  "sha256": "45f6ff5880e6897ba5a0734713e593aacda28cdbba1c715eb4d1a6310a908e6f",
+  "imports_read_only": "make_phase1_jobs_v01.py 5a2364eecf5aeb9862c79ee87d6968cc8427898bcbedc3f6e1629dec49f54ef7"
+ },
+ "jobs": [
+  {
+   "id": "e1_a1_brake_05_c1109_tune_0023",
+   "case": "c1109_tune_0023",
+   "arm": "E_BRAKE",
+   "phase": "E1",
+   "role": "e",
+   "scenario": "c1109_tune_0023",
+   "keep_raw": false,
+   "tracker": "CANMOT",
+   "brake_from_k": 199,
+   "note": "brake test (A10 7.1 E1)"
+  },
+  {
+   "id": "e1_a1_brake_10_c1109_tune_0011",
+   "case": "c1109_tune_0011",
+   "arm": "E_BRAKE",
+   "phase": "E1",
+   "role": "e",
+   "scenario": "c1109_tune_0011",
+   "keep_raw": false,
+   "tracker": "CANMOT",
+   "brake_from_k": 199,
+   "note": "brake test (A10 7.1 E1)"
+  },
+  {
+   "id": "e1_a1_brake_15_c1109_tune_0005",
+   "case": "c1109_tune_0005",
+   "arm": "E_BRAKE",
+   "phase": "E1",
+   "role": "e",
+   "scenario": "c1109_tune_0005",
+   "keep_raw": false,
+   "tracker": "CANMOT",
+   "brake_from_k": 199,
+   "note": "brake test (A10 7.1 E1)"
+  }
+ ]
+}

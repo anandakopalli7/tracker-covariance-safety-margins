@@ -1,0 +1,56 @@
+LOCK_A11c (stage 3 of 3): AMENDMENT_11 section 6c, detection dropouts on the fresh lead-braking runs, open loop (DR)
+Written: 21 Nov 2026 15:09:34 EST by the laptop clock, by the coordinating session (Claude Opus 5.5), with work\shared\tools\make_lock_a11_v01.py (sha256 8bc65845d059d3930e30d1c7b096a6afb51d61ef1f39dc547f46baff9362668a).
+
+Amendment: revision_v13\AMENDMENT_11_v13.md, sha256 b33d8281848c9bf1fbe47a706adbba8e0e063dc4d7480f3fe6fd95e8bb677cf3, modified 21 Nov 15:05:29.
+Snapshot copy at this lock: revision_v13\AMENDMENT_11_v13_at_LOCK_A11c.md (identical bytes).
+
+Freezes, verified layered at writing (verify_freeze.layered; 0 mismatches required):
+- DR (FREEZE_DR): layered 1 manifests: 58 files, 58 match, 0 not
+    FREEZE_DR.json  sha256 e1348c40b656fb9db32fb874195fcb6265c7e7b82bce3d7301fcca298c1f2c26  modified 21 Nov 15:07:07
+- B (FREEZE_B + add1-add9): layered 10 manifests: 221 files, 221 match, 0 not
+    FREEZE_B.json  sha256 1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152  modified 19 Nov 20:38:46
+    FREEZE_B_add1.json  sha256 9b71225a10645bfd28b2e43a2a05578f6131ed6ec8443f14125672d480927ad6  modified 19 Nov 21:03:04
+    FREEZE_B_add2.json  sha256 6ffc5cd975b5ba91c597a1f989a1c649ca4bbbcf2244642577484f4b4341c39b  modified 20 Nov 01:09:19
+    FREEZE_B_add3.json  sha256 549ac106adb20e6eb9cae16088c231665c6f006fada64ec3eea15d1025970831  modified 20 Nov 03:36:24
+    FREEZE_B_add4.json  sha256 23f374c013510e0eadd8f7de574f61c8eaec1021669d799148266e8c9f269e7e  modified 21 Nov 02:32:44
+    FREEZE_B_add5.json  sha256 d91d1e5a55edb5224f8c150c46cee58ce30d70681fab8d76f1830ae6f5672ee0  modified 21 Nov 02:37:32
+    FREEZE_B_add6.json  sha256 bd24dc97ca4f0e2b7817e5ea6d0bc3da043aa68d8aa4dc1ca2ff21445b0bd4ed  modified 21 Nov 13:38:26
+    FREEZE_B_add7.json  sha256 d06cc48bbe89ec87b3927c962c041b31b5e7aab1dccbe570188a331e0a7b0c12  modified 21 Nov 13:45:37
+    FREEZE_B_add8.json  sha256 9c87f029ec3ed6438aea9dd60835a1ad1067ec0490190d5d89beee6a13d7b751  modified 21 Nov 14:06:57
+    FREEZE_B_add9.json  sha256 2e51dae7edb9aa9bd6da4203ee30c4cbb386a3bf31998ed537f3c173b415a341  modified 21 Nov 14:22:48
+- CD (FREEZE_CD chain + add3-add5): layered 11 manifests: 281 files, 281 match, 0 not
+    FREEZE_CD.json  sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7  modified 20 Nov 03:40:55
+    FREEZE_CD_add1.json  sha256 0e562f346cdd64feaed605041565d44b3d6f2f2a8639d33ff955a33fadb2730f  modified 20 Nov 03:44:34
+    FREEZE_CD_add2.json  sha256 df4e03c9a00df30f7b0159f8585df911a4b202745817241854462030f4d46d02  modified 20 Nov 23:43:41
+    FREEZE_CD_2.json  sha256 1039025ce46a9de60163f4468535b227ca0ec3e8d2705af293bfbaa54797a8a0  modified 20 Nov 05:59:53
+    FREEZE_CD_2_add1.json  sha256 e4e311049433f80a6f7a29cbe89543d95aceaa2377163c85fe8cdeded0b74161  modified 21 Nov 00:58:31
+    FREEZE_CD_2_add2.json  sha256 1e8f131d6b992e5e47efb5b8ef170f95cd41c755353046cd84da3e2b4c9114e2  modified 21 Nov 01:04:05
+    FREEZE_CD_2_add3.json  sha256 dc48da9fe515eb05a93f51aca51cab6e8ec6fa8223b59927990ef72a59c72b3b  modified 21 Nov 01:08:49
+    FREEZE_CD_2_add4.json  sha256 9686b38f308553c5d090d32d8c011ba1f3edf6cd97cdd44d034de2a1c91b7e92  modified 21 Nov 02:35:17
+    FREEZE_CD_add3.json  sha256 c372c0dd2aa874cef9b3599d15731a24f1dd82e1cc37c49208a7d2d785bcad40  modified 21 Nov 14:23:05
+    FREEZE_CD_add4.json  sha256 e45a141f0a376069483644567402f1d9ad5a7de35690050b26d676014d050674  modified 21 Nov 14:38:54
+    FREEZE_CD_add5.json  sha256 a33ab443fe68a271b223d4d0a7cbdd5cc529b58c3b65698b4370170e61199663  modified 21 Nov 14:55:01
+
+Files (path, sha256, modified):
+- LOCK_A11 (stage 1): LOCK_A11.txt  sha256 7ee8d706a9579c677accab6bab014c3c38acfca43d8e2628e2af81b5c853959f  modified 21 Nov 14:23:47
+- LOCK_A11b (stage 2): LOCK_A11b.txt  sha256 d3a11b4c4a05834def74126d8478fb3fe020f384cc8a8775d66bf5d887ddf7e1  modified 21 Nov 14:48:45
+- A11 snapshot at LOCK_A11: AMENDMENT_11_v13_at_LOCK_A11.md  sha256 9aab822c88f736c9eb9e7a165c2d8359e062cc3eb9becb00a2c77cffee92c487  modified 21 Nov 14:23:47
+- A11 snapshot at LOCK_A11b: AMENDMENT_11_v13_at_LOCK_A11b.md  sha256 45ae49b7f7482c9b5b7458fecce756c37e17edd16a6ac0271fe642744c5437d6  modified 21 Nov 14:48:45
+- F's DR spec v04 (merged verbatim into section 6c): F_dropout/A11_6c_DROPOUT_SPEC_v04.md  sha256 c26b093f0215a37691af3b4c128d897fec8f8172d2720404866f9a90ece053e8  modified 21 Nov 15:02:34
+- DR mask file v02: F_dropout/masks/DR_MASKS_v02.json  sha256 0746c0d399e751947fd98d7b12b7c2e233442c9f9870e449639a24f8045e2098  modified 21 Nov 14:27:53
+- DR identity checks (i) and (ii): F_dropout/out/DR_IDENTITY_v01.json  sha256 4d4571776ddcd8358d237ff35874c4533d9131a713d216a9b6aac6592d2b0a63  modified 21 Nov 14:37:34
+- DR records (R1 brief error and fix, R2 mask law, R3 identity rule, R4 lock stage): F_dropout/notes/DR_RECORDS_v01.md  sha256 fe0f16e96e1c395a421e1a68c356b55712f2d9cdb51744188f56dcfb81a764f0  modified 21 Nov 15:06:35
+- DR old-run two-program comparison: F_dropout/out/DR_COMPARE_TESTOLD_v01.json  sha256 d4441debe153427af3ef1f778adca98be620225ab1023c3725640702fd38963c  modified 21 Nov 15:06:51
+- E4 mask table (DR's masks reproduce it on all 61 E4 cases): E_closedloop/out/E4_MASKS_v01.json  sha256 c66d91923ae4d87ac7e49ac70fba98828434ae64de0954f15078ff80f2997313  modified 21 Nov 14:25:50
+
+Sealing evidence (each pattern must match no file at writing):
+- DR: no masked fresh-run arrays: F_dropout/out/arrays/DR*  -> 0 file(s)
+- DR: no fresh results file: F_dropout/out/DR_RESULTS*  -> 0 file(s)
+- DR: no export to A: F_nuscenes/out/A_EXPORT_DR*  -> 0 file(s)
+
+State at writing (coordinator's statement):
+- Since LOCK_A11b, only section 6c of AMENDMENT_11_v13.md changed: F's v03 and v04 texts were merged (v03 renamed the lock to LOCK_A11c; v04 spelled out the divisor of u_i as the convention of record), and the coordinator's header lines name LOCK_A11c. Sections 0-6b, 6d and 7-10 are byte-identical to the LOCK_A11b snapshot (checked by the coordinator before writing this file).
+- Before this lock, DR computed only its identity checks on the fresh runs, as section 6c.8 allows. (i) Empty mask, configuration of record: re-run arrays (out/arrays/ID0) reproduce the stored CV0 arrays under A10 B0(b), 104 of 105 runs bit-identical on read keys. (ii) Empty mask with punish_num = 3 (out/arrays/ID3): 76 of 21,574 evaluated decisions change, in 7 runs. No masked fresh run has been tracked, and no DR room, share, class or interval exists.
+- The second program's u_i divisor was corrected on old runs, before any DR value, to the convention of record (the frozen e5_u), and recorded as R1. The 35-run old-run test then agreed on all 65 value keys (max difference 7.96e-13), with levels and verdicts equal.
+- This lock completes AMENDMENT_11's staged locks: LOCK_A11 (X, Y, B1r), LOCK_A11b (E4) and LOCK_A11c (DR).
+- Spend: the sprint cap stays $80. DR is funded inside it (at most $10). The balance was about $60 at writing.

@@ -1,0 +1,278 @@
+"""Revision v13, package C: Table III per tracker on the fresh lead-braking runs (AMENDMENT_10_v13 sec. 5.7: "Variants B2-B4; B1's
+transition sensitivities; the ceilings E5_x"; "the margin-ratio check for every variant"; sec. 3 B3/B4 rule). Descriptive: nominal 95%
+percentile intervals over 20,000 run resamples (default_rng(20261911)). New file, 20 Nov 2026 (Claude Opus 5.5).
+Definitions: CD_capture\\CD_DEFINITIONS_TRK_v13.md (sec. 3-6, 8, 9); method of record: package B's b_analysis_v01.py and
+b2_oracle_check_v01.py (old runs), ported to fresh-run arrays with the same numerics (frozen library trk_score_v01, read-only; gridless
+resamples by gl_fast_v13, bit-identical to the library).
+
+Trackers x (key name: arrays folder): CV: CV0, CV2: B3, CA: B4, IMM: B1, AQ: B2; sensitivities IMM090: B1_d090, IMM098: B1_d098.
+Per x, on x's own room (F0_x = cF0 with P-bar_x, E_x, N_x, CK3_x):
+  B.<x>.within5             share of binding-row margin ratios sqrt(cF0/cN) within 5% of their median
+  B.<x>.RR(.ci)             RR_gl(N_x), all evaluated decisions
+  B.<x>.c(.ci)              RR_gl(E5_x): cF0 / f^2, f = m_x (1 + A_x (2u - 1)), m_x / A_x from the margin ratio, u = e5_u(F0_x, E_x)
+  B.<x>.RR_minus_c(.ci)     RR_gl(N_x) - RR_gl(E5_x) on the same resamples
+  B.<x>.RR_CK3(.ci)         RR_gl(CK3_x), all evaluated decisions
+  B.<x>.room_pre/brk/stop   R_gl (pp) by x's estimated phase (threshold -1.0 m/s^2)
+  B.<x>.as_room(.pp)        after-stop room: R_gl in truth phase 2 (CV0's truth phase), decision-equivalents (and pp)
+  B.<x>.lag                 median dx_pred3 over evaluated truth-phase-2 decisions in the first second after the run's first one
+  B.tuning                  "depends" | "persists" (A10 B3 rule, points); B.ca_window from package B's tuning record
+Lock gate: refuses without revision_v13\\LOCK_A10_2.txt unless --test-old: then it reads package B's stored arrays of the 35 OLD
+evaluation runs (B_retrack\\out\\retrack\\<v>\\<run>_arrays.npz), uses B's draw (first 2,000 rows of default_rng(20261113)), and compares
+every value with B_<v>_v01.json, <v>_ORACLE_CHECK_v01.json and B_RESULTS_SUMMARY_v13.json (B3_B4_rule) -> out\\TESTOLD_TRK_v13.json.
+Fresh output: out\\C_TRK_v13.json. Never overwrites.
+Usage: .venv\\Scripts\\python.exe -I -B -X utf8 analysis\\c_trackers_v13.py [--test-old] [--nboot N] [--only CV,CV2,...] [--tag S]
+"""
+import argparse, json, os, pathlib, sys, time
+os.environ.setdefault('OPENBLAS_CORETYPE', 'Haswell')
+os.environ.setdefault('NUMBA_NUM_THREADS', '2')
+sys.dont_write_bytecode = True
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import cd_common_v13 as CC               # noqa: E402
+import trk_env_v01 as env                # noqa: E402
+env.setup()
+import numpy as np                       # noqa: E402
+import trk_score_v01 as TS               # noqa: E402
+L = CC.L
+
+XMAP = [('CV', 'CV0'), ('CV2', 'B3'), ('CA', 'B4'), ('IMM', 'B1'), ('AQ', 'B2'), ('IMM090', 'B1_d090'), ('IMM098', 'B1_d098')]
+OPTIONAL = ('IMM090', 'IMM098')
+POPS = ['all', 'pre', 'brk', 'stop', 'after_stop']
+NAMES = ['N', 'CK3', 'E5x']
+B_OUT = CC.WORK / 'B_retrack' / 'out'
+OLD_RUNS = ['p1b_fit_finite_%04d' % i for i in range(5, 40)]
+LEVEL, CAL = 0.95, 'nominal95'
+
+
+def fin(x):
+    return float(x) if x is not None and np.isfinite(x) else None
+
+
+def arr_path(variant, rid, test):
+    return (B_OUT / 'retrack' / variant / (rid + '_arrays.npz')) if test else (CC.ARR / variant / (rid + '.npz'))
+
+
+def load_ref(rids, test):
+    ref = []
+    for rid in rids:
+        z = np.load(arr_path('CV0', rid, test), allow_pickle=False)
+        ref.append(dict(k=z['k'], idx55=z['idx55'], ev=z['evaluated'].astype(bool), clear1=L.clean_clear(z['clear']), phase=z['phase'].astype(int),
+                        now=z['now']))
+    return ref
+
+
+def load_x(rids, variant, ref, test):
+    runs = []; nphase = 0
+    for rid, rf in zip(rids, ref):
+        z = np.load(arr_path(variant, rid, test), allow_pickle=False)
+        for key in ('k', 'idx55'):
+            if not np.array_equal(z[key], rf[key]):
+                raise SystemExit('REFUSED: %s %s: %s differs from the CV0 array' % (variant, rid, key))
+        ev = z['evaluated'].astype(bool); clear1 = L.clean_clear(z['clear'])
+        if not np.array_equal(ev, rf['ev']) or not np.array_equal(clear1, rf['clear1']):
+            raise SystemExit('REFUSED: %s %s: evaluated / clearance differ from the CV0 array' % (variant, rid))
+        ph_t = rf['phase']; nphase += int((z['phase'].astype(int) != ph_t).sum())
+        eph = TS.est_phase(z['vhat'], z['ahat_long'], z['lead_found'], -1.0)
+        masks = (ev, ev & (eph == 0), ev & (eph == 1), ev & (eph == 2), ev & (ph_t == 2))
+        runs.append(dict(run=rid, desired=float(z['des'][0]), idx55=z['idx55'].astype(np.int64), clear1=clear1, vbar=z['vbar'], ev=ev, masks=masks,
+                         crit={'F0': np.asarray(z['cF0'], float), 'E': np.asarray(z['cE'], float), 'N': np.asarray(z['cN'], float),
+                               'CK3': np.asarray(z['cCK3'], float)}, sel={}, late={}, ph_t=ph_t,
+                         lead=dict(lead_found=z['lead_found'].astype(bool), dx_pred3=np.asarray(z['dx_pred3'], float), now=np.asarray(rf['now'], float))))
+    return runs, dict(decisions_where_own_phase_differs_from_CV0=nphase)
+
+
+def lag_of(runs):
+    vals = []
+    for r in runs:
+        ph = r['ph_t']; now = r['lead']['now']; i2 = np.flatnonzero(ph == 2)
+        if not i2.size:
+            continue
+        t = now - now[i2[0]]
+        m = r['ev'] & (ph == 2) & (t >= 0) & (t < 1) & r['lead']['lead_found']
+        vals.append(r['lead']['dx_pred3'][m])
+    v = np.concatenate(vals) if vals else np.zeros(0)
+    v = v[np.isfinite(v)]
+    return dict(n=int(v.size), median=float(np.median(v)) if v.size else None, q25=float(np.percentile(v, 25)) if v.size else None,
+                q75=float(np.percentile(v, 75)) if v.size else None)
+
+
+def cls_h3(r_ci, c_ci, d=CC.DELTA):
+    if r_ci[0] > 0: return 'recovers'
+    if c_ci[0] > d: return 'uninformative variation'
+    if c_ci[0] > -d and c_ci[1] < d: return 'amplitude-limited'
+    return 'inconclusive'
+
+
+def one_tracker(x, variant, rids, ref, W, test, log):
+    t0 = time.time()
+    runs, chk_info = load_x(rids, variant, ref, test)
+    NR = len(runs)
+    rs = TS.ratio_summary(TS.margin_ratios(runs, 'N', 'F0'))
+    u, uinfo = TS.e5_u(runs, 'F0', 'E')
+    TS.add_oracle(runs, 'E5x', 'F0', rs['median'], rs['A'], u)
+    G = TS.gridless(runs, ['F0', 'E'] + NAMES)
+    with np.errstate(divide='ignore', invalid='ignore'):
+        pts = [TS.rr_gl(G, 'F0', 'E', NAMES, pop=p) for p in range(len(POPS))]
+    Pp = CC.prep(G, ['F0', 'E'] + NAMES, 0)
+    one = CC.evaluate(Pp, np.ones((1, NR)))
+    if not (one['denE'][0] == pts[0]['denE'] and all(one['D'][a][0] == pts[0]['D'][a] for a in NAMES)):
+        raise SystemExit('REFUSED: gl_fast differs from the library at the full sample (%s)' % x)
+    B = CC.evaluate(Pp, W)
+    ok = np.isfinite(B['denE']) & (B['denE'] > 0)
+    with np.errstate(divide='ignore', invalid='ignore'):
+        rr = {a: np.where(ok, B['D'][a] / B['denE'], np.nan) for a in NAMES}
+    p0 = pts[0]
+    S = dict(RR=L.summ(rr['N'], p0['RR']['N']), c=L.summ(rr['E5x'], p0['RR']['E5x']),
+             RR_minus_c=L.summ(rr['N'] - rr['E5x'], p0['RR']['N'] - p0['RR']['E5x']), RR_CK3=L.summ(rr['CK3'], p0['RR']['CK3']),
+             R=L.summ(B['denE'] / L.NLEV, p0['R_pp']), R_deceq=dict(point=p0['R_deceq'], ci=L.pct(L.dec_eq(B['denE'], B['n']))))
+    lg = lag_of(runs)
+    V = {}
+    pre = 'B.%s.' % x
+    V[pre + 'within5'] = fin(rs.get('share_within_5pct'))
+    for k in ('RR', 'c', 'RR_minus_c', 'RR_CK3'):
+        V[pre + k] = fin(S[k]['point']); V[pre + k + '.ci'] = [fin(S[k]['ci'][0]), fin(S[k]['ci'][1])]
+        V[pre + k + '.level'] = LEVEL; V[pre + k + '.cal'] = CAL
+    V[pre + 'room_pre'] = fin(pts[1]['R_pp']); V[pre + 'room_brk'] = fin(pts[2]['R_pp']); V[pre + 'room_stop'] = fin(pts[3]['R_pp'])
+    V[pre + 'as_room'] = fin(pts[4]['R_deceq']); V[pre + 'as_room.pp'] = fin(pts[4]['R_pp'])
+    V[pre + 'lag'] = lg['median']
+    det = dict(variant=variant, n_runs=NR, ratio_summary=rs, e5_ranks=uinfo, check=chk_info,
+               populations={pn: dict(n=fin(pts[p]['n']), denE=fin(pts[p]['denE']), R_pp=fin(pts[p]['R_pp']), R_deceq=fin(pts[p]['R_deceq']),
+                                     RR={a: fin(pts[p]['RR'][a]) for a in NAMES}) for p, pn in enumerate(POPS)},
+               intervals=S, resamples=int(W.shape[0]), resamples_without_room=int((~ok).sum()), lag=lg,
+               h3_wording_descriptive=dict(classification=cls_h3(S['RR']['ci'], S['c']['ci']), barely_varies=rs.get('barely_varies')),
+               seconds=time.time() - t0)
+    log('%s (%s): RR %.6g [%.6g, %.6g], c %.6g, as_room %.4g dec-eq, lag %s (%.0f s)' % (
+        x, variant, S['RR']['point'], S['RR']['ci'][0], S['RR']['ci'][1], S['c']['point'], pts[4]['R_deceq'], lg['median'], time.time() - t0))
+    return V, det
+
+
+def b_tuning(V):
+    try:
+        cv, cv2, ca = V['B.CV.as_room'], V['B.CV2.as_room'], V['B.CA.as_room']
+        k, k2, ka = V['B.CV.RR_CK3'], V['B.CV2.RR_CK3'], V['B.CA.RR_CK3']
+    except KeyError:
+        return None, None
+    if None in (cv, cv2, ca, k, k2, ka):
+        return None, None
+    t = dict(CV2=dict(as_room_below_half=bool(cv2 < 0.5 * cv), ck3_differs_gt_0p10=bool(abs(k2 - k) > 0.10), ck3_diff=k2 - k),
+             CA=dict(as_room_below_half=bool(ca < 0.5 * cv), ck3_differs_gt_0p10=bool(abs(ka - k) > 0.10), ck3_diff=ka - k))
+    dep = any(v for d in t.values() for kk, v in d.items() if kk != 'ck3_diff')
+    return ('depends' if dep else 'persists'), t
+
+
+# ------------------------------------------------------------------------------------------------ old-run test: package B's values
+def b_values(x, variant):
+    """Package B's old-run values of record under our key names."""
+    d = json.loads((B_OUT / 'banalysis' / ('B_%s_v01.json' % variant)).read_text(encoding='utf-8'))
+    o = json.loads((B_OUT / 'banalysis' / ('%s_ORACLE_CHECK_v01.json' % variant)).read_text(encoding='utf-8'))
+    pa = d['points']; iv = d['intervals']['all']; pre = 'B.%s.' % x
+    out = {pre + 'within5': d['ratio_N_F0']['share_within_5pct'],
+           pre + 'RR': pa['all']['RR']['N'], pre + 'RR.ci': iv['RR_N']['ci'],
+           pre + 'c': d['ceiling']['c_x']['point'], pre + 'c.ci': d['ceiling']['c_x']['ci'],
+           pre + 'RR_minus_c': o['intervals']['diff_N_minus_E5x']['point'], pre + 'RR_minus_c.ci': o['intervals']['diff_N_minus_E5x']['ci'],
+           pre + 'RR_CK3': pa['all']['RR']['CK3'], pre + 'RR_CK3.ci': iv['RR_CK3']['ci'],
+           pre + 'room_pre': pa['est_before']['R_pp'], pre + 'room_brk': pa['est_braking']['R_pp'], pre + 'room_stop': pa['est_stopped']['R_pp'],
+           pre + 'as_room': pa['tru_stopped']['R_deceq'], pre + 'as_room.pp': pa['tru_stopped']['R_pp'],
+           pre + 'lag': d['lag_dx3_first_second_after_stop']['median']}
+    extra = {'R': pa['all']['R_pp'], 'R.ci': iv['R_pp']['ci'], 'm_x': d['ratio_N_F0']['median'], 'A_x': d['ratio_N_F0']['A'],
+             'lag_n': d['lag_dx3_first_second_after_stop']['n'], 'classification': d['classification_exploratory']['classification'],
+             'oracle_check_RR_N_ci': o['intervals']['RR_N']['ci'], 'oracle_check_RR_E5x_ci': o['intervals']['RR_E5x']['ci']}
+    return out, extra
+
+
+def cmp_val(a, b):
+    if isinstance(b, list):
+        if a is None or len(a) != len(b): return False, None
+        ds = [cmp_val(x, y) for x, y in zip(a, b)]
+        return all(e for e, _ in ds), max((d for _, d in ds if d is not None), default=None)
+    if a is None or b is None:
+        return (a is None and b is None), None
+    if isinstance(b, (bool, str)):
+        return a == b, None
+    return float(a) == float(b), abs(float(a) - float(b))
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--test-old', action='store_true'); ap.add_argument('--nboot', type=int, default=None)
+    ap.add_argument('--only', default=''); ap.add_argument('--tag', default='')
+    a = ap.parse_args()
+    gate = CC.require_lock2(a.test_old)
+    t00 = time.time()
+    log = lambda s: print('[%6.0f s] %s' % (time.time() - t00, s), flush=True)
+    outf = CC.OUT / (('TESTOLD_TRK_v13%s.json' if a.test_old else 'C_TRK_v13%s.json') % (('_' + a.tag) if a.tag else ''))
+    if outf.exists(): raise SystemExit('REFUSED: %s exists' % outf)
+    if a.test_old:
+        rids = OLD_RUNS; nb = a.nboot or 2000
+        W = CC.counts(35, 20000, 20261113)[:nb]
+        draw = 'first %d rows of default_rng(20261113).integers(0, 35, (20000, 35)) as counts (package B\'s draw of record), runs in name order' % nb
+    else:
+        rids = CC.c_run_ids('lead_braking'); nb = a.nboot or CC.NBOOT
+        if len(rids) != 105: raise SystemExit('REFUSED: %d lead-braking run ids, expected 105' % len(rids))
+        W = CC.counts(len(rids), nb, CC.SEED_BOOT)
+        draw = 'default_rng(%d), %d run resamples (optA_lib_v02.boot_counts), runs in ascending id order' % (CC.SEED_BOOT, nb)
+    ref = load_ref(rids, a.test_old)
+    only = [x for x in a.only.split(',') if x]
+    V = {}; DET = {}; missing = {}
+    for x, variant in XMAP:
+        if only and x not in only: continue
+        have = all(arr_path(variant, rid, a.test_old).is_file() for rid in rids)
+        if not have:
+            nmiss = sum(1 for rid in rids if not arr_path(variant, rid, a.test_old).is_file())
+            missing[x] = '%d of %d runs have no %s arrays' % (nmiss, len(rids), variant)
+            if x not in OPTIONAL:
+                raise SystemExit('REFUSED: %s: %s' % (x, missing[x]))
+            log('%s skipped: %s' % (x, missing[x])); continue
+        v, d = one_tracker(x, variant, rids, ref, W, a.test_old, log)
+        V.update(v); DET[x] = d
+    tun, tests = b_tuning(V)
+    V['B.tuning'] = tun
+    bs = json.loads((B_OUT / 'B_RESULTS_SUMMARY_v13.json').read_text(encoding='utf-8'))
+    V['B.ca_window'] = bool(bs['constants']['tuning']['sigma_a2']['window_reached'])
+    doc = dict(family='TRK', program='c_trackers_v13.py', test_old=a.test_old, values=V,
+               details=dict(gate=gate, definitions='CD_capture/CD_DEFINITIONS_TRK_v13.md', amendment='AMENDMENT_10_v13 sec. 3 (B1-B4), 5.7',
+                            status='descriptive (A10 sec. 5.7); nominal 95% percentile intervals', runs=rids, n_runs=len(rids), draw=draw,
+                            trackers={x: v for x, v in XMAP}, per_tracker=DET, missing=missing, b_tuning_tests=tests,
+                            b_ca_window_source='B_retrack/out/B_RESULTS_SUMMARY_v13.json constants.tuning.sigma_a2.window_reached (tuning runs)',
+                            units=dict(as_room='decision-equivalents (key list); as_room.pp in percentage points', rooms='pp', shares='fractions of the room',
+                                       lag='m')))
+    if a.test_old:
+        comp = []
+        for x, variant in XMAP:
+            if x not in DET: continue
+            bv, extra = b_values(x, variant)
+            for k, bval in bv.items():
+                eq, dd = cmp_val(V.get(k), bval)
+                comp.append(dict(key=k, ours=V.get(k), package_B=bval, equal=eq, max_abs_diff=dd))
+            for k, bval in (('R', extra['R']), ('R.ci', extra['R.ci'])):
+                ours = DET[x]['intervals']['R']['point'] if k == 'R' else DET[x]['intervals']['R']['ci']
+                eq, dd = cmp_val(ours, bval); comp.append(dict(key='B.%s.%s (details)' % (x, k), ours=ours, package_B=bval, equal=eq, max_abs_diff=dd))
+            for k, ours in (('m_x', DET[x]['ratio_summary']['median']), ('A_x', DET[x]['ratio_summary']['A']), ('lag_n', DET[x]['lag']['n']),
+                            ('classification', DET[x]['h3_wording_descriptive']['classification'])):
+                eq, dd = cmp_val(ours, extra[k]); comp.append(dict(key='B.%s.%s (details)' % (x, k), ours=ours, package_B=extra[k], equal=eq, max_abs_diff=dd))
+        rule = bs['B3_B4_rule']
+        for x, bx in (('CV2', 'B3'), ('CA', 'B4')):
+            if x not in DET or 'CV' not in DET: continue
+            tb = rule['tests'][bx]
+            for ours, theirs, nm in ((V['B.%s.as_room' % x], tb['after_stop_room'], 'after_stop_room'), (V['B.CV.as_room'], tb['online_after_stop_room'], 'online_after_stop_room'),
+                                     (V['B.%s.RR_CK3' % x], tb['RR_CK3'], 'RR_CK3'), (V['B.CV.RR_CK3'], tb['online_RR_CK3'], 'online_RR_CK3'),
+                                     (tests[x]['ck3_diff'] if tests else None, tb['ck3_diff'], 'ck3_diff'),
+                                     (tests[x]['as_room_below_half'] if tests else None, tb['below_half'], 'below_half'),
+                                     (tests[x]['ck3_differs_gt_0p10'] if tests else None, tb['ck3_differs_gt_0p10'], 'ck3_differs_gt_0p10')):
+                eq, dd = cmp_val(ours, theirs); comp.append(dict(key='B3_B4_rule.%s.%s' % (bx, nm), ours=ours, package_B=theirs, equal=eq, max_abs_diff=dd))
+        mp = {'the mechanism persists with NIS near 2 and with a CA filter': 'persists'}
+        exp = mp.get(rule['outcome'], 'depends')
+        comp.append(dict(key='B3_B4_rule.outcome -> B.tuning', ours=V['B.tuning'], package_B=rule['outcome'], equal=(V['B.tuning'] == exp), max_abs_diff=None))
+        doc['details']['comparison_with_package_B'] = dict(
+            sources='B_retrack/out/banalysis/B_<v>_v01.json, <v>_ORACLE_CHECK_v01.json, B_RESULTS_SUMMARY_v13.json B3_B4_rule',
+            n_items=len(comp), n_equal=sum(1 for c in comp if c['equal']), all_equal=all(c['equal'] for c in comp),
+            max_abs_diff=max((c['max_abs_diff'] for c in comp if c['max_abs_diff'] is not None), default=None),
+            differing=[c for c in comp if not c['equal']], items=comp)
+        log('comparison with package B: %d of %d items equal' % (doc['details']['comparison_with_package_B']['n_equal'], len(comp)))
+    doc['details']['seconds'] = time.time() - t00; doc['details']['written'] = time.strftime('%Y-%m-%d %H:%M:%S')
+    doc['details']['code_sha256'] = {f: CC.sha(CC.HERE / f) for f in ('c_trackers_v13.py', 'cd_common_v13.py', 'gl_fast_v13.py')}
+    CC.write_once(outf, doc)
+    log('written %s; B.tuning %s' % (outf.name, V['B.tuning']))
+
+
+if __name__ == '__main__':
+    main()

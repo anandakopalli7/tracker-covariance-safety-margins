@@ -1,0 +1,45 @@
+{
+ "code": "b_immr_rows_check_v01.py",
+ "first": "out\\fresh\\boot_B1R.npz",
+ "second": "recount_fresh\\out\\boot_IMMr.npz",
+ "tol": 1e-09,
+ "arrays": {
+  "denE": {
+   "rows": 20000,
+   "rows_first": 20000,
+   "rows_second": 20000,
+   "max_rel": 0.0,
+   "agree": true
+  },
+  "n": {
+   "rows": 20000,
+   "rows_first": 20000,
+   "rows_second": 20000,
+   "max_rel": 0.0,
+   "agree": true
+  },
+  "D_N": {
+   "rows": 20000,
+   "rows_first": 20000,
+   "rows_second": 20000,
+   "max_rel": 0.0,
+   "agree": true
+  },
+  "D_E5x": {
+   "rows": 20000,
+   "rows_first": 20000,
+   "rows_second": 20000,
+   "max_rel": 0.0,
+   "agree": true
+  },
+  "D_CK3": {
+   "rows": 20000,
+   "rows_first": 20000,
+   "rows_second": 20000,
+   "max_rel": 0.0,
+   "agree": true
+  }
+ },
+ "all_agree": true,
+ "written": "2026-11-21 15:19:35"
+}

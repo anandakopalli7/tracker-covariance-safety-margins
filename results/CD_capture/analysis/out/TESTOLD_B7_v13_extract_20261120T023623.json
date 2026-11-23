@@ -1,0 +1,152 @@
+{
+ "program": "x_trk_extract_v13.py",
+ "gate": "TEST_OLD: old runs only; no fresh value",
+ "test_old": true,
+ "combos": [
+  "B7_2_0",
+  "B7_2_0.1",
+  "B7_5_0",
+  "B7_5_0.1",
+  "B7_5_0.2",
+  "B7_10_0",
+  "B7_10_0.1",
+  "B7_10_0.2"
+ ],
+ "runs": [
+  "p1b_fit_finite_0037"
+ ],
+ "out_root": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\analysis\\out\\testold_b7_arrays",
+ "workers": 2,
+ "jobs": [
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_2_0",
+   "status": "ok",
+   "seconds_retrack": 20.205609599943273,
+   "seconds_extract": 36.153009700006805,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_2_0.1",
+   "status": "ok",
+   "seconds_retrack": 22.68721900007222,
+   "seconds_extract": 79.94409869995434,
+   "n_dec": 300,
+   "n_det_rows": 69
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_5_0",
+   "status": "ok",
+   "seconds_retrack": 10.622176099917851,
+   "seconds_extract": 60.23221090005245,
+   "n_dec": 300,
+   "n_det_rows": 171
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_5_0.1",
+   "status": "ok",
+   "seconds_retrack": 15.55764730006922,
+   "seconds_extract": 69.16873919998761,
+   "n_dec": 300,
+   "n_det_rows": 171
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_5_0.2",
+   "status": "ok",
+   "seconds_retrack": 6.768328399979509,
+   "seconds_extract": 39.66814950003754,
+   "n_dec": 300,
+   "n_det_rows": 171
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_10_0",
+   "status": "ok",
+   "seconds_retrack": 41.65506819996517,
+   "seconds_extract": 72.0273880000459,
+   "n_dec": 300,
+   "n_det_rows": 341
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_10_0.1",
+   "status": "ok",
+   "seconds_retrack": 13.743572899955325,
+   "seconds_extract": 55.45994029997382,
+   "n_dec": 300,
+   "n_det_rows": 341
+  },
+  {
+   "run": "p1b_fit_finite_0037",
+   "name": "B7_10_0.2",
+   "status": "ok",
+   "seconds_retrack": 21.586275600013323,
+   "seconds_extract": 45.254436400020495,
+   "n_dec": 300,
+   "n_det_rows": 341
+  }
+ ],
+ "seconds": 419.13061475753784,
+ "written": "2026-11-20 02:43:22",
+ "counts": {
+  "ok": 8,
+  "exists": 0,
+  "waiting": 0,
+  "ERROR": 0
+ },
+ "cost_seconds_per_run": {
+  "B7_2_0": {
+   "n": 1,
+   "retrack_mean": 20.205609599943273,
+   "extract_mean": 36.153009700006805,
+   "total_mean": 56.35861929995008
+  },
+  "B7_2_0.1": {
+   "n": 1,
+   "retrack_mean": 22.68721900007222,
+   "extract_mean": 79.94409869995434,
+   "total_mean": 102.63131770002656
+  },
+  "B7_5_0": {
+   "n": 1,
+   "retrack_mean": 10.622176099917851,
+   "extract_mean": 60.23221090005245,
+   "total_mean": 70.8543869999703
+  },
+  "B7_5_0.1": {
+   "n": 1,
+   "retrack_mean": 15.55764730006922,
+   "extract_mean": 69.16873919998761,
+   "total_mean": 84.72638650005683
+  },
+  "B7_5_0.2": {
+   "n": 1,
+   "retrack_mean": 6.768328399979509,
+   "extract_mean": 39.66814950003754,
+   "total_mean": 46.43647790001705
+  },
+  "B7_10_0": {
+   "n": 1,
+   "retrack_mean": 41.65506819996517,
+   "extract_mean": 72.0273880000459,
+   "total_mean": 113.68245620001107
+  },
+  "B7_10_0.1": {
+   "n": 1,
+   "retrack_mean": 13.743572899955325,
+   "extract_mean": 55.45994029997382,
+   "total_mean": 69.20351319992915
+  },
+  "B7_10_0.2": {
+   "n": 1,
+   "retrack_mean": 21.586275600013323,
+   "extract_mean": 45.254436400020495,
+   "total_mean": 66.84071200003382
+  }
+ }
+}

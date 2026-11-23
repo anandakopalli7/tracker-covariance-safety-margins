@@ -1,0 +1,132 @@
+{
+ "code": "f13_compare_horizon_v01.py",
+ "written": "2026-11-19 23:46:41",
+ "tolerance_abs": 1e-09,
+ "first": {
+  "file": "out\\F_HORIZON_RULE_v01.json",
+  "sha256": "b431314755deabc29439ec8f340f7905586641dbcb044e3dae202cb8d76340e2",
+  "primary_horizon_s": null
+ },
+ "second": {
+  "file": "recount\\F_RECOUNT_HORIZON_v01.json",
+  "sha256": "fe844ea15bfeb81900a81c7043a2ad6985ea3baa47e9811a001994823a57dbd3",
+  "writer": "Claude Fable 5.2 (claude-fable-5-2), independent second program",
+  "primary_horizon_s": null
+ },
+ "same_outcome": true,
+ "all_agree": true,
+ "rows": [
+  {
+   "horizon_s": 3,
+   "quantity": "n_scenes",
+   "first": 700,
+   "second": 700,
+   "abs_diff": 0.0,
+   "agree": true
+  },
+  {
+   "horizon_s": 3,
+   "quantity": "n_evaluated",
+   "first": 88737,
+   "second": 88737,
+   "abs_diff": 0.0,
+   "agree": true
+  },
+  {
+   "horizon_s": 3,
+   "quantity": "R_gl_pp.point",
+   "first": 0.0,
+   "second": 0.0,
+   "abs_diff": 0.0,
+   "agree": true
+  },
+  {
+   "horizon_s": 3,
+   "quantity": "R_gl_pp.ci.lower",
+   "first": -0.001121508933525342,
+   "second": -0.001121508933525342,
+   "abs_diff": 0.0,
+   "agree": true
+  },
+  {
+   "horizon_s": 3,
+   "quantity": "R_gl_pp.ci.upper",
+   "first": 0.00224367600918398,
+   "second": 0.00224367600918398,
+   "abs_diff": 0.0,
+   "agree": true
+  },
+  {
+   "horizon_s": 3,
+   "quantity": "D_gl_E_F0.point",
+   "first": 0.0,
+   "second": 0.0,
+   "abs_diff": 0.0,
+   "agree": true
+  },
+  {
+   "horizon_s": 3,
+   "quantity": "share_resamples_nonpositive",
+   "first": 0.75265,
+   "second": 0.75265,
+   "abs_diff": 0.0,
+   "agree": true
+  },
+  {
+   "horizon_s": 2,
+   "quantity": "n_scenes",
+   "first": 700,
+   "second": 700,
+   "abs_diff": 0.0,
+   "agree": true
+  },
+  {
+   "horizon_s": 2,
+   "quantity": "n_evaluated",
+   "first": 95871,
+   "second": 95871,
+   "abs_diff": 0.0,
+   "agree": true
+  },
+  {
+   "horizon_s": 2,
+   "quantity": "R_gl_pp.point",
+   "first": 0.0,
+   "second": 0.0,
+   "abs_diff": 0.0,
+   "agree": true
+  },
+  {
+   "horizon_s": 2,
+   "quantity": "R_gl_pp.ci.lower",
+   "first": -0.0010266653536866147,
+   "second": -0.0010266653536866147,
+   "abs_diff": 0.0,
+   "agree": true
+  },
+  {
+   "horizon_s": 2,
+   "quantity": "R_gl_pp.ci.upper",
+   "first": 0.14191037646077873,
+   "second": 0.14191037646077873,
+   "abs_diff": 0.0,
+   "agree": true
+  },
+  {
+   "horizon_s": 2,
+   "quantity": "D_gl_E_F0.point",
+   "first": 0.0,
+   "second": 0.0,
+   "abs_diff": 0.0,
+   "agree": true
+  },
+  {
+   "horizon_s": 2,
+   "quantity": "share_resamples_nonpositive",
+   "first": 0.4166,
+   "second": 0.4166,
+   "abs_diff": 0.0,
+   "agree": true
+  }
+ ]
+}

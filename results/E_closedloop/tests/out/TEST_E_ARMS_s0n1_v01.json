@@ -1,0 +1,368 @@
+{
+ "schema": "E_TEST_ARMS_V01",
+ "utc": "2026-11-19T20:06:46Z",
+ "binding": {
+  "149_supported_sensor_preparation_20261101/code/consumer.py": {
+   "bound": "ff62710a4415ef99df5d85b57c2fbfe741d93d8da4898186868b27e6710406ff",
+   "local": "ff62710a4415ef99df5d85b57c2fbfe741d93d8da4898186868b27e6710406ff",
+   "equal": true
+  },
+  "149_supported_sensor_preparation_20261101/code/finite_primitive.py": {
+   "bound": "13da04ec7f8b47827b85555da6e3b190f7dd6b0c08941fdde8b738c51c1cf4fe",
+   "local": "13da04ec7f8b47827b85555da6e3b190f7dd6b0c08941fdde8b738c51c1cf4fe",
+   "equal": true
+  },
+  "149_supported_sensor_preparation_20261101/code/sensor_policy.py": {
+   "bound": "05755d0cf0ce82dcb7d868cae3da430dac7ff559e4daf6cd69e43d9a6949e7d1",
+   "local": "05755d0cf0ce82dcb7d868cae3da430dac7ff559e4daf6cd69e43d9a6949e7d1",
+   "equal": true
+  },
+  "149_supported_sensor_preparation_20261101/code/sensor_execution.py": {
+   "bound": "5dc81a1c5f8a060a95f1d68a38c94d1ee5393181768269023c0d8da1b256ebe9",
+   "local": "5dc81a1c5f8a060a95f1d68a38c94d1ee5393181768269023c0d8da1b256ebe9",
+   "equal": true
+  },
+  "149_supported_sensor_preparation_20261101/code/acceleration_servo.py": {
+   "bound": "bbb87942f3b1551ee7b0e3f41d2be62b143a7b0d5c0539c9d33debefa68537eb",
+   "local": "bbb87942f3b1551ee7b0e3f41d2be62b143a7b0d5c0539c9d33debefa68537eb",
+   "equal": true
+  },
+  "149_supported_sensor_preparation_20261101/code/execution_core.py": {
+   "bound": "1514050649d46ace8053e9e45185117e3857e3be9d3bdd647de66a78a7dde5bd",
+   "local": "1514050649d46ace8053e9e45185117e3857e3be9d3bdd647de66a78a7dde5bd",
+   "equal": true
+  },
+  "149_supported_sensor_preparation_20261101/code/pi_servo.py": {
+   "bound": "058bac2f6b38bb16d5b3b322c9e12bb56e0161b45cff5d909f98fc9fd17cde7f",
+   "local": "058bac2f6b38bb16d5b3b322c9e12bb56e0161b45cff5d909f98fc9fd17cde7f",
+   "equal": true
+  },
+  "149_supported_sensor_preparation_20261101/code/forward_state_interface.py": {
+   "bound": "6ff3f13cf11f51ccecd1201b51fa56b3f52fc1c7b90c6b78a182be9c764307bc",
+   "local": "6ff3f13cf11f51ccecd1201b51fa56b3f52fc1c7b90c6b78a182be9c764307bc",
+   "equal": true
+  },
+  "149_supported_sensor_preparation_20261101/code/online_tracker.py": {
+   "bound": "69edbc02b6653889b4fb8b12d6ad23dd95ae0b7f932b7c93f76749ce4b22508f",
+   "local": "69edbc02b6653889b4fb8b12d6ad23dd95ae0b7f932b7c93f76749ce4b22508f",
+   "equal": true
+  },
+  "149_supported_sensor_preparation_20261101/vendor/design_core_v85.py": {
+   "bound": "06ef12a0de4a3da3d31c6387e28bba068204f2651209cfeaec626fbc2fdc09b8",
+   "local": "06ef12a0de4a3da3d31c6387e28bba068204f2651209cfeaec626fbc2fdc09b8",
+   "equal": true
+  },
+  "711_native_decision_capture_20261103/native_capture_v02.py": {
+   "bound": "8085fe5fa0ce200c4f520836233c95d0120bfec238ece5da1aaa1ad0df5f27da",
+   "local": "8085fe5fa0ce200c4f520836233c95d0120bfec238ece5da1aaa1ad0df5f27da",
+   "equal": true
+  },
+  "712_sensor_capture_integration_20261103/policy_capture_v01.py": {
+   "bound": "b0f313b9a156018af39bd594b4a84c58569b31971d57ea6314f8ffa7d79b0323",
+   "local": "b0f313b9a156018af39bd594b4a84c58569b31971d57ea6314f8ffa7d79b0323",
+   "equal": true
+  },
+  "807_shared_model_runtime_20261104/shared_policy_v01.py": {
+   "bound": "274998b53442e15120c5087ab207c2d713e1c0f42aa1cf2a1cbdf8fecc4fc429",
+   "local": "274998b53442e15120c5087ab207c2d713e1c0f42aa1cf2a1cbdf8fecc4fc429",
+   "equal": true
+  },
+  "747_full_scenario_binding_20261103/outcome_bridge_v01.py": {
+   "bound": "dcf603676b376620ae7f58b3f52260d7fbd38ce98855e2b07187922843d8d73a",
+   "local": "dcf603676b376620ae7f58b3f52260d7fbd38ce98855e2b07187922843d8d73a",
+   "equal": true
+  }
+ },
+ "runs": [
+  {
+   "run": "p2_c1109_tune_0000_fixed_c1",
+   "kind": "tune",
+   "decisions": 300,
+   "A1_rows": 5100,
+   "A1_rows_differ": 0,
+   "A2_F0_rows_differ": 0,
+   "A2_F0_maxrel": 0.0,
+   "A2_N_rows_differ": 0,
+   "A2_N_maxrel": 0.0,
+   "A2_CK3_rows_differ": 0,
+   "A2_CK3_maxrel": 0.0,
+   "A2_TG_rows_differ": 0,
+   "A2_TG_maxrel": 0.0,
+   "B1": {
+    "E_F0@0": [
+     300,
+     300
+    ],
+    "E_F0@0.25": [
+     300,
+     300
+    ],
+    "E_F0@1": [
+     300,
+     300
+    ],
+    "E_F0@4": [
+     300,
+     300
+    ],
+    "E_F0@16": [
+     300,
+     300
+    ],
+    "E_N@0": [
+     300,
+     300
+    ],
+    "E_N@0.25": [
+     300,
+     300
+    ],
+    "E_N@1": [
+     300,
+     300
+    ],
+    "E_N@4": [
+     300,
+     300
+    ],
+    "E_N@16": [
+     300,
+     300
+    ],
+    "E_CK3@0": [
+     300,
+     300
+    ],
+    "E_CK3@0.25": [
+     300,
+     300
+    ],
+    "E_CK3@1": [
+     300,
+     300
+    ],
+    "E_CK3@4": [
+     300,
+     300
+    ],
+    "E_CK3@16": [
+     300,
+     300
+    ]
+   },
+   "B2_f2_plan_mismatch": 0,
+   "seconds": 442.6
+  },
+  {
+   "run": "p1b_fit_finite_0005",
+   "kind": "fit",
+   "decisions": 300,
+   "A1_rows": 5100,
+   "A1_rows_differ": 0,
+   "A2_F0_rows_differ": 0,
+   "A2_F0_maxrel": 0.0,
+   "A2_N_rows_differ": 0,
+   "A2_N_maxrel": 0.0,
+   "A2_CK3_rows_differ": 0,
+   "A2_CK3_maxrel": 0.0,
+   "A2_TG_rows_differ": 0,
+   "A2_TG_maxrel": 0.0,
+   "B1": {
+    "E_F0@0": [
+     300,
+     300
+    ],
+    "E_F0@0.25": [
+     300,
+     300
+    ],
+    "E_F0@1": [
+     300,
+     300
+    ],
+    "E_F0@4": [
+     300,
+     300
+    ],
+    "E_F0@16": [
+     300,
+     300
+    ],
+    "E_N@0": [
+     300,
+     300
+    ],
+    "E_N@0.25": [
+     300,
+     300
+    ],
+    "E_N@1": [
+     300,
+     300
+    ],
+    "E_N@4": [
+     300,
+     300
+    ],
+    "E_N@16": [
+     300,
+     300
+    ],
+    "E_CK3@0": [
+     300,
+     300
+    ],
+    "E_CK3@0.25": [
+     300,
+     300
+    ],
+    "E_CK3@1": [
+     300,
+     300
+    ],
+    "E_CK3@4": [
+     300,
+     300
+    ],
+    "E_CK3@16": [
+     300,
+     300
+    ],
+    "E_TG@0": [
+     300,
+     300
+    ],
+    "E_TG@0.25": [
+     300,
+     300
+    ],
+    "E_TG@1": [
+     300,
+     300
+    ],
+    "E_TG@4": [
+     300,
+     300
+    ],
+    "E_TG@16": [
+     300,
+     300
+    ]
+   },
+   "B2_f2_plan_mismatch": 0,
+   "C1_phase_agree": [
+    288,
+    300
+   ],
+   "C1_same_lead_track": 300,
+   "C1_confusion_stored|online": {
+    "0|0": 28,
+    "1|0": 7,
+    "1|1": 5,
+    "2|1": 5,
+    "2|2": 255
+   },
+   "seconds": 702.1
+  }
+ ],
+ "totals": {
+  "decisions": 600,
+  "A1_rows": 10200,
+  "A1_rows_differ": 0,
+  "A2_F0_rows_differ": 0,
+  "A2_F0_maxrel": 0.0,
+  "A2_N_rows_differ": 0,
+  "A2_N_maxrel": 0.0,
+  "A2_CK3_rows_differ": 0,
+  "A2_CK3_maxrel": 0.0,
+  "A2_TG_rows_differ": 0,
+  "A2_TG_maxrel": 0.0,
+  "B1": {
+   "E_F0@0": [
+    600,
+    600
+   ],
+   "E_F0@0.25": [
+    600,
+    600
+   ],
+   "E_F0@1": [
+    600,
+    600
+   ],
+   "E_F0@4": [
+    600,
+    600
+   ],
+   "E_F0@16": [
+    600,
+    600
+   ],
+   "E_N@0": [
+    600,
+    600
+   ],
+   "E_N@0.25": [
+    600,
+    600
+   ],
+   "E_N@1": [
+    600,
+    600
+   ],
+   "E_N@4": [
+    600,
+    600
+   ],
+   "E_N@16": [
+    600,
+    600
+   ],
+   "E_CK3@0": [
+    600,
+    600
+   ],
+   "E_CK3@0.25": [
+    600,
+    600
+   ],
+   "E_CK3@1": [
+    600,
+    600
+   ],
+   "E_CK3@4": [
+    600,
+    600
+   ],
+   "E_CK3@16": [
+    600,
+    600
+   ],
+   "E_TG@0": [
+    300,
+    300
+   ],
+   "E_TG@0.25": [
+    300,
+    300
+   ],
+   "E_TG@1": [
+    300,
+    300
+   ],
+   "E_TG@4": [
+    300,
+    300
+   ],
+   "E_TG@16": [
+    300,
+    300
+   ]
+  },
+  "B2_f2_plan_mismatch": 0,
+  "C1_phase_agree": [
+   288,
+   300
+  ]
+ }
+}

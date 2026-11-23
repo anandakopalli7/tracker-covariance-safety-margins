@@ -1,0 +1,361 @@
+{
+ "rule": "BONFERRONI_A11_RULE_v13.md (sha256 a6d02815112ed14059a81caf79432f6def54dca56f8231737a07bccf433c9dd0), written before this computation",
+ "program_sha256": "a5e01d72571d64845b73d7eb801c5d305dc93b6b2b823a8bd97a8cc5fdedb06e",
+ "inputs": {
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\out\\A_EXPORT_X.json": "163c2d3fec0dca01003cefc8e6a25d0ea2106fd04db627db63d18308c289b9c6",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\out\\A_EXPORT_Y.json": "1608c107c68b9b067de4e446b5d83e11bba4643a7c2d1feab4ea2ad1ce91df44",
+  "ARS_TRIAL\\revision_v13\\work\\F_dropout\\out\\DR_RESULTS_v01.json": "d31acc52661711dcfaf1f7f2425e6291fc2310862044817f701ffd313c6c14bf"
+ },
+ "results": {
+  "m4": {
+   "alpha_B": 0.00625,
+   "steps": {
+    "X0": [
+     {
+      "step": "X0 R_gl > 0",
+      "point": 0.16177566525694037,
+      "ci": [
+       0.10792536622666843,
+       0.23292137195106372
+      ],
+      "level": 0.95,
+      "null": 0.0,
+      "method": "normal approximation on the lower side",
+      "se_low": 0.02747514722466139,
+      "z": 5.88807273475617,
+      "p_approx": 1.953625816675242e-09,
+      "survives": true
+     },
+     {
+      "step": "X0 share D>0",
+      "share": 1.0,
+      "need": 0.99375,
+      "survives": true
+     }
+    ],
+    "X1": [
+     {
+      "step": "X1 RR_E5N > 0",
+      "point": 0.6949735989964699,
+      "ci": [
+       0.5311009406654971,
+       0.899093575242159
+      ],
+      "level": 0.99,
+      "null": 0.0,
+      "method": "direct (level >= 1 - 2 alpha_B)",
+      "survives": true
+     },
+     {
+      "step": "X1 RR_E5N - RR_E5pN > 0",
+      "point": 0.5913533066892265,
+      "ci": [
+       0.3815598276803879,
+       0.9407736677326014
+      ],
+      "level": 0.95,
+      "null": 0.0,
+      "method": "normal approximation on the lower side",
+      "se_low": 0.10703945616534936,
+      "z": 5.5246292150039755,
+      "p_approx": 1.6509108080597912e-08,
+      "survives": true
+     }
+    ],
+    "X2": [
+     {
+      "step": "X2 r = RR_N not above 0 (a wider interval keeps it)",
+      "point": -0.06747571399399048,
+      "ci": [
+       -0.22101577292103838,
+       0.03389203748360463
+      ],
+      "survives": true
+     },
+     {
+      "step": "X2 c = RR_E5N > delta",
+      "point": 0.6949735989964699,
+      "ci": [
+       0.5311009406654971,
+       0.899093575242159
+      ],
+      "level": 0.99,
+      "null": 0.05,
+      "method": "direct (level >= 1 - 2 alpha_B)",
+      "survives": true
+     }
+    ],
+    "Y1": [
+     {
+      "step": "Y1 Delta > 0",
+      "point": 0.04979130975854154,
+      "ci": [
+       0.04242334429734801,
+       0.05691892849869489
+      ],
+      "level": 0.95,
+      "null": 0.0,
+      "method": "normal approximation on the lower side",
+      "se_low": 0.0037592351284570042,
+      "z": 13.2450639710261,
+      "p_approx": 0.0,
+      "survives": true
+     }
+    ],
+    "DR0": [
+     {
+      "step": "DR0 R_gl > 0",
+      "point": 5.633301002173704,
+      "ci": [
+       5.031127761049515,
+       6.23410909534183
+      ],
+      "level": 0.95,
+      "null": 0.0,
+      "method": "normal approximation on the lower side",
+      "se_low": 0.307236891021496,
+      "z": 18.33536650967988,
+      "p_approx": 0.0,
+      "survives": true
+     },
+     {
+      "step": "DR0 share D>0",
+      "share": 1.0,
+      "need": 0.99375,
+      "survives": true
+     }
+    ],
+    "DR1": [
+     {
+      "step": "DR1 c_DR > 0",
+      "point": 0.39817668995951394,
+      "ci": [
+       0.31505269705377964,
+       0.47290621095058527
+      ],
+      "level": 0.95,
+      "null": 0.0,
+      "method": "normal approximation on the lower side",
+      "se_low": 0.04241097977381511,
+      "z": 9.388528444357032,
+      "p_approx": 0.0,
+      "survives": true
+     },
+     {
+      "step": "DR1 c_DR - c_DRp > 0",
+      "point": 0.25309377315468673,
+      "ci": [
+       0.21354209785322434,
+       0.2955409094176669
+      ],
+      "level": 0.95,
+      "null": 0.0,
+      "method": "normal approximation on the lower side",
+      "se_low": 0.020179796982720582,
+      "z": 12.54193852254332,
+      "p_approx": 0.0,
+      "survives": true
+     }
+    ],
+    "DR2": [
+     {
+      "step": "DR2 recovers: r_DR > 0",
+      "point": 0.028266627367662674,
+      "ci": [
+       0.006377977572614286,
+       0.04964923065731883
+      ],
+      "level": 0.95,
+      "null": 0.0,
+      "method": "normal approximation on the lower side",
+      "se_low": 0.011167883679344756,
+      "z": 2.5310639132051866,
+      "p_approx": 0.0056858562650743405,
+      "survives": true
+     }
+    ]
+   },
+   "sequences_survive": {
+    "X": true,
+    "Y": true,
+    "DR": true
+   },
+   "DR2_class_under_bonferroni": "recovers"
+  },
+  "m3": {
+   "alpha_B": 0.008333333333333333,
+   "steps": {
+    "X0": [
+     {
+      "step": "X0 R_gl > 0",
+      "point": 0.16177566525694037,
+      "ci": [
+       0.10792536622666843,
+       0.23292137195106372
+      ],
+      "level": 0.95,
+      "null": 0.0,
+      "method": "normal approximation on the lower side",
+      "se_low": 0.02747514722466139,
+      "z": 5.88807273475617,
+      "p_approx": 1.953625816675242e-09,
+      "survives": true
+     },
+     {
+      "step": "X0 share D>0",
+      "share": 1.0,
+      "need": 0.9916666666666667,
+      "survives": true
+     }
+    ],
+    "X1": [
+     {
+      "step": "X1 RR_E5N > 0",
+      "point": 0.6949735989964699,
+      "ci": [
+       0.5311009406654971,
+       0.899093575242159
+      ],
+      "level": 0.99,
+      "null": 0.0,
+      "method": "direct (level >= 1 - 2 alpha_B)",
+      "survives": true
+     },
+     {
+      "step": "X1 RR_E5N - RR_E5pN > 0",
+      "point": 0.5913533066892265,
+      "ci": [
+       0.3815598276803879,
+       0.9407736677326014
+      ],
+      "level": 0.95,
+      "null": 0.0,
+      "method": "normal approximation on the lower side",
+      "se_low": 0.10703945616534936,
+      "z": 5.5246292150039755,
+      "p_approx": 1.6509108080597912e-08,
+      "survives": true
+     }
+    ],
+    "X2": [
+     {
+      "step": "X2 r = RR_N not above 0 (a wider interval keeps it)",
+      "point": -0.06747571399399048,
+      "ci": [
+       -0.22101577292103838,
+       0.03389203748360463
+      ],
+      "survives": true
+     },
+     {
+      "step": "X2 c = RR_E5N > delta",
+      "point": 0.6949735989964699,
+      "ci": [
+       0.5311009406654971,
+       0.899093575242159
+      ],
+      "level": 0.99,
+      "null": 0.05,
+      "method": "direct (level >= 1 - 2 alpha_B)",
+      "survives": true
+     }
+    ],
+    "Y1": [
+     {
+      "step": "Y1 Delta > 0",
+      "point": 0.04979130975854154,
+      "ci": [
+       0.04242334429734801,
+       0.05691892849869489
+      ],
+      "level": 0.95,
+      "null": 0.0,
+      "method": "normal approximation on the lower side",
+      "se_low": 0.0037592351284570042,
+      "z": 13.2450639710261,
+      "p_approx": 0.0,
+      "survives": true
+     }
+    ],
+    "DR0": [
+     {
+      "step": "DR0 R_gl > 0",
+      "point": 5.633301002173704,
+      "ci": [
+       5.031127761049515,
+       6.23410909534183
+      ],
+      "level": 0.95,
+      "null": 0.0,
+      "method": "normal approximation on the lower side",
+      "se_low": 0.307236891021496,
+      "z": 18.33536650967988,
+      "p_approx": 0.0,
+      "survives": true
+     },
+     {
+      "step": "DR0 share D>0",
+      "share": 1.0,
+      "need": 0.9916666666666667,
+      "survives": true
+     }
+    ],
+    "DR1": [
+     {
+      "step": "DR1 c_DR > 0",
+      "point": 0.39817668995951394,
+      "ci": [
+       0.31505269705377964,
+       0.47290621095058527
+      ],
+      "level": 0.95,
+      "null": 0.0,
+      "method": "normal approximation on the lower side",
+      "se_low": 0.04241097977381511,
+      "z": 9.388528444357032,
+      "p_approx": 0.0,
+      "survives": true
+     },
+     {
+      "step": "DR1 c_DR - c_DRp > 0",
+      "point": 0.25309377315468673,
+      "ci": [
+       0.21354209785322434,
+       0.2955409094176669
+      ],
+      "level": 0.95,
+      "null": 0.0,
+      "method": "normal approximation on the lower side",
+      "se_low": 0.020179796982720582,
+      "z": 12.54193852254332,
+      "p_approx": 0.0,
+      "survives": true
+     }
+    ],
+    "DR2": [
+     {
+      "step": "DR2 recovers: r_DR > 0",
+      "point": 0.028266627367662674,
+      "ci": [
+       0.006377977572614286,
+       0.04964923065731883
+      ],
+      "level": 0.95,
+      "null": 0.0,
+      "method": "normal approximation on the lower side",
+      "se_low": 0.011167883679344756,
+      "z": 2.5310639132051866,
+      "p_approx": 0.0056858562650743405,
+      "survives": true
+     }
+    ]
+   },
+   "sequences_survive": {
+    "X": true,
+    "Y": true,
+    "DR": true
+   },
+   "DR2_class_under_bonferroni": "recovers"
+  }
+ }
+}

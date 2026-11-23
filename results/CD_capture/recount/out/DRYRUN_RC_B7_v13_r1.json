@@ -1,0 +1,282 @@
+{
+ "family": "B7",
+ "program": "rc_b7_v13.py",
+ "test_old": false,
+ "values": {
+  "B7.10.0.1.R": 5.816754586536557,
+  "B7.10.0.1.as_room": 74.41293532338308,
+  "B7.10.0.1.as_room.pp": 1.0852112487003513,
+  "B7.10.0.1.RR_N": -0.0001650777929099058,
+  "B7.10.0.1.RR_N.ci": [
+   -0.001075711619966891,
+   0.0007366269550814948
+  ],
+  "B7.10.0.1.RR_N.level": 0.95,
+  "B7.10.0.1.RR_N.cal": "nominal95",
+  "B7.10.0.1.RR_CK3": 0.8032582229375593,
+  "B7.10.0.1.lag": 2.456820728281942,
+  "B7.ratio_10_2": null,
+  "B7.rule_rate": null,
+  "B7.rule_N": null,
+  "B7.identity": null
+ },
+ "details": {
+  "role": "second program (recount), AMENDMENT_10_v13 section 10.1(b)",
+  "model": "claude-fable-5-2",
+  "started": "2026-11-20 03:27:29",
+  "threads": 2,
+  "delta": 0.05,
+  "only": [
+   "B7_10_0.1"
+  ],
+  "shared": "extracted arrays, B7 detection files, resample draw; scoring library of record for cross-checks only",
+  "status": "descriptive (A10 section 5.7); every interval nominal 95% percentile",
+  "B7": {
+   "B7.10.0.1": {
+    "label": "B7_10_0.1",
+    "n_runs": 35,
+    "n_dec": 8290,
+    "margin_ratio": {
+     "n": 119210,
+     "median": 1.0717123233690373,
+     "q05": 1.0705107819363442,
+     "q95": 1.07896103508793,
+     "A": 0.003942407382711401,
+     "share_within_5pct": 0.9980790202164248,
+     "barely_varies": true
+    },
+    "populations": {
+     "all": {
+      "n": 8290,
+      "denE": 1169.167671893848,
+      "R_pp": 5.816754586536557,
+      "R_dec": 482.20895522388054,
+      "D": {
+       "N": -0.19300361881784933,
+       "CK3": 939.1435464414957
+      },
+      "RR": {
+       "N": -0.0001650777929099058,
+       "CK3": 0.8032582229375593
+      }
+     },
+     "pre": {
+      "n": 920,
+      "denE": 499.4565217391305,
+      "R_pp": 2.4848583171101017,
+      "R_dec": 22.860696517412933,
+      "D": {
+       "N": -0.869565217391304,
+       "CK3": 49.56521739130434
+      },
+      "RR": {
+       "N": -0.0017410228509249174,
+       "CK3": 0.09923830250272031
+      }
+     },
+     "brk": {
+      "n": 712,
+      "denE": 7026.123595505618,
+      "R_pp": 34.95583878361004,
+      "R_dec": 248.88557213930346,
+      "D": {
+       "N": -35.1123595505618,
+       "CK3": 5463.483146067415
+      },
+      "RR": {
+       "N": -0.004997401351297326,
+       "CK3": 0.7775956502618637
+      }
+     },
+     "stop": {
+      "n": 6658,
+      "denE": 4.085310904175428,
+      "R_pp": 0.02032492987151954,
+      "R_dec": 1.353233830845771,
+      "D": {
+       "N": 5.204170427930421e-18,
+       "CK3": 0.0
+      },
+      "RR": {
+       "N": 1.2738737760720863e-18,
+       "CK3": 0.0
+      }
+     },
+     "tru_stop": {
+      "n": 6857,
+      "denE": 218.12746098877062,
+      "R_pp": 1.0852112487003513,
+      "R_dec": 74.41293532338308,
+      "D": {
+       "N": -0.16042000875018303,
+       "CK3": 232.25900539594574
+      },
+      "RR": {
+       "N": -0.00073544159925119,
+       "CK3": 1.0647857190613088
+      }
+     }
+    },
+    "intervals": {
+     "RR_N": {
+      "point": -0.0001650777929099058,
+      "ci": [
+       -0.001075711619966891,
+       0.0007366269550814948
+      ],
+      "n_resamples": 200,
+      "n_invalid": 0
+     },
+     "R_pp": {
+      "point": 5.816754586536557,
+      "ci": [
+       4.613016487948567,
+       6.63082673135425
+      ],
+      "n_resamples": 200,
+      "n_invalid": 0
+     }
+    },
+    "bootstrap": {
+     "sources": [
+      "F0",
+      "E",
+      "N"
+     ],
+     "n_resamples": 200,
+     "n_den_le0_dropped": 0
+    },
+    "lag": {
+     "median": 2.456820728281942,
+     "n": 300,
+     "q25": 0.9182901718096796,
+     "q75": 4.706664134284536,
+     "tick_clock": {
+      "median": 2.456820728281942,
+      "n": 300,
+      "q25": 0.9182901718096796,
+      "q75": 4.706664134284536
+     },
+     "tstop_from_evaluated_tick_clock": {
+      "median": 2.456820728281942,
+      "n": 300,
+      "q25": 0.9182901718096796,
+      "q75": 4.706664134284536
+     },
+     "tick_clock_selects_same_n": true
+    },
+    "lead_state_age_s": {
+     "n": 8290,
+     "median": 0.20000000298023224,
+     "q90": 0.4000000059604645,
+     "max": 0.4000000059604645
+    },
+    "seconds": 13.147900581359863,
+    "decisions_own_phase_differs_from_CV0": 0
+   }
+  },
+  "run_set": {
+   "n": 35,
+   "in_arrays_not_in_cases": [],
+   "in_cases_not_in_arrays": [],
+   "replacements_file_present": true,
+   "replacements_listed": 0
+  },
+  "runs": [
+   "pc13_dryrun_lead_0000_native",
+   "pc13_dryrun_lead_0001_native",
+   "pc13_dryrun_lead_0002_native",
+   "pc13_dryrun_lead_0003_native",
+   "pc13_dryrun_lead_0004_native",
+   "pc13_dryrun_lead_0005_native",
+   "pc13_dryrun_lead_0006_native",
+   "pc13_dryrun_lead_0007_native",
+   "pc13_dryrun_lead_0008_native",
+   "pc13_dryrun_lead_0009_native",
+   "pc13_dryrun_lead_0010_native",
+   "pc13_dryrun_lead_0011_native",
+   "pc13_dryrun_lead_0012_native",
+   "pc13_dryrun_lead_0013_native",
+   "pc13_dryrun_lead_0014_native",
+   "pc13_dryrun_lead_0015_native",
+   "pc13_dryrun_lead_0016_native",
+   "pc13_dryrun_lead_0017_native",
+   "pc13_dryrun_lead_0018_native",
+   "pc13_dryrun_lead_0019_native",
+   "pc13_dryrun_lead_0020_native",
+   "pc13_dryrun_lead_0021_native",
+   "pc13_dryrun_lead_0022_native",
+   "pc13_dryrun_lead_0023_native",
+   "pc13_dryrun_lead_0024_native",
+   "pc13_dryrun_lead_0025_native",
+   "pc13_dryrun_lead_0026_native",
+   "pc13_dryrun_lead_0027_native",
+   "pc13_dryrun_lead_0028_native",
+   "pc13_dryrun_lead_0029_native",
+   "pc13_dryrun_lead_0030_native",
+   "pc13_dryrun_lead_0031_native",
+   "pc13_dryrun_lead_0032_native",
+   "pc13_dryrun_lead_0033_native",
+   "pc13_dryrun_lead_0034_native"
+  ],
+  "n_evaluated_per_run": [
+   271,
+   271,
+   271,
+   27,
+   271,
+   271,
+   271,
+   271,
+   271,
+   271,
+   271,
+   271,
+   271,
+   271,
+   271,
+   271,
+   271,
+   271,
+   271,
+   271,
+   18,
+   271,
+   271,
+   271,
+   271,
+   271,
+   53,
+   271,
+   25,
+   37,
+   271,
+   271,
+   271,
+   271,
+   271
+  ],
+  "draw": "first 200 rows of default_rng(20261911).integers(0, 35, (20000, 35)) as counts per run, runs in ascending run id order",
+  "B7_rule_N_leaves_by_config": {
+   "B7.2.0": null,
+   "B7.2.0.1": null,
+   "B7.5.0": null,
+   "B7.5.0.1": null,
+   "B7.5.0.2": null,
+   "B7.10.0": null,
+   "B7.10.0.1": false,
+   "B7.10.0.2": null
+  },
+  "keys_beyond_A_KEYS_CD_v13": [
+   "B7.<r>.<L>.as_room.pp",
+   "B7.ratio_10_2",
+   "B7.rule_rate",
+   "B7.rule_N",
+   "*.level",
+   "*.cal"
+  ],
+  "written": "2026-11-20 03:27:46",
+  "seconds": 16.609175205230713
+ },
+ "WARNING": "DRY RUN: OLD runs relabelled as fresh in a scratch tree outside the project; NOT fresh data, NOT B7 values"
+}

@@ -1,0 +1,23 @@
+{
+ "first": "<user folder>\\F_RECOUNT_HELDOUT_synth_v02.json",
+ "second": "out\\recount_pod_test\\pod\\F_RECOUNT_HELDOUT_synth_v02.json",
+ "tolerance": 1e-09,
+ "ignored_keys": [
+  "elapsed",
+  "elapsed_s",
+  "host",
+  "lock2",
+  "platform",
+  "python",
+  "runtime_s",
+  "seconds",
+  "threads",
+  "time",
+  "written"
+ ],
+ "n_numbers": 588,
+ "n_other": 37,
+ "max_abs_diff": 0.0,
+ "differ": [],
+ "agree": true
+}

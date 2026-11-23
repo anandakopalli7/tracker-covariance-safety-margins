@@ -1,0 +1,2134 @@
+{
+ "package": "F",
+ "route": "F-B, nuScenes (A10 section 0.3)",
+ "written": "2026-11-20 03:33:18",
+ "writer": "session F, Claude Opus 5.5",
+ "split": {
+  "design": "nuScenes v1.0-trainval train (700 scenes; devkit splits.py)",
+  "held_out": "val (150 scenes)",
+  "gate": "every F script calls f_common_v01.require_split: val refused until revision_v13\\LOCK_A10_2.txt exists"
+ },
+ "primary_horizon_s": 3,
+ "horizon_rule_output": "work\\F_nuscenes\\out\\F_HORIZON_RULE_v02.json",
+ "stop": null,
+ "clearance": {
+  "in_force": "departure (v02)",
+  "file": "work\\F_nuscenes\\notes\\F_DEPARTURE_CLEARANCE_v01.md",
+  "sha256": "a0be0de7e462281a7e8b95b6b0acf31dd99cdbc38299b6214edd08ad3bd18259",
+  "decided": "coordinator, 19 Nov 2026 23:58 EST, after the design-split stop; author may veto until the text freeze",
+  "clear_v02_train": {
+   "n_files": 700,
+   "digest_sha256_of_name_and_sha_lines": "4c2a702c5f9e62b2166b3ddd7f042c63146b8f27618df79a58e70c02aa05d4a4"
+  },
+  "preregistered_outcome": {
+   "file": "work\\F_nuscenes\\out\\F_HORIZON_RULE_v01.json",
+   "primary_horizon_s": null,
+   "stop": "no measurable room on design data at 2 or 3 s"
+  }
+ },
+ "delta": 0.05,
+ "seeds": {
+  "scene_bootstrap": 20261923,
+  "double_outer": 20261912,
+  "double_inner": 20261913,
+  "double_inner_2": 20261914,
+  "calibration_mc": 20261920,
+  "e5_permutation": 20261915,
+  "partial_oracle_mask": 20261919,
+  "adapter_check_subset": 20261917
+ },
+ "nboot": 20000,
+ "double_bootstrap": {
+  "outer": 2000,
+  "inner": 1000
+ },
+ "trackers": {
+  "T1": "CANMOT via OnlineTracker, lib\\tracker_config.json (= 149\\contracts\\tracker_config.json)",
+  "IMM": "session B's B1 (trk_tracker_v01.V13Tracker('B1'), default base configuration, trk_constants_v01.json), env.setup(exact_trig=False)"
+ },
+ "pbar_files": [
+  "work\\F_nuscenes\\out\\PBAR_T1_train_v01.json",
+  "work\\F_nuscenes\\out\\PBAR_IMM_train_v01.json"
+ ],
+ "sources": {
+  "computed": [
+   "F0",
+   "N",
+   "E",
+   "F0_IMM",
+   "N_IMM",
+   "E_IMM",
+   "E5_IMM (ceiling c_IMM)"
+  ],
+  "descriptive": [
+   "TG",
+   "E5",
+   "E5p",
+   "RR(E5) - RR(E5p)",
+   "PO25",
+   "PO50",
+   "PO75 (mask default_rng(20261919))"
+  ],
+  "not_computed": [
+   "CK3",
+   "AM",
+   "NA"
+  ],
+  "departure": "STATUS.md, \"Design decisions fixed on the design split\""
+ },
+ "imm_library": {
+  "n_track_files": 700,
+  "hashes": {
+   "trk_arrays_v01.py": "300b42bfb301680cb469784145837f8db8d5241c7e2f63c1c1dc6d58ed55dd1b",
+   "trk_env_v01.py": "0219dd2ed6517109a3c913430a2f30ca756fc01f4f003c1347c4ddd4a9628cad",
+   "trk_exact_math_v01.py": "6a42ece0b2255e4c2ec15a5651ee8ac65671e63cce01895e1ff4227ead86f541",
+   "trk_filters_v01.py": "9edfdd6cb5642c1618d41ccb3def176251074a3beaf703d8589df58018304dbb",
+   "trk_score_v01.py": "1cab6f300ad85fc6007d9b46dae75f41202f010c2080c5987ef06a79921417b4",
+   "trk_tracker_v01.py": "5cf4ad3baf81b614b18facc3fe4b3bc6506f867350d5b6216fce5ed725cfdef8",
+   "trk_constants_v01.json": "d8455cb50b637a3ce45460a0dee38f79b69fce4c085c913f713b56ac23338a9d",
+   "shims_v01/hydra/__init__.py": "3e04377812b92d89be393011cf4d00abae149265a96e1d52fa6b9932e8e8f1a9",
+   "shims_v01/hydra/utils.py": "ff50ad09edef0ca2a20eeaaca0598468cd58dc3596e5d77c05e8ca761542b88b",
+   "shims_v01/lap/__init__.py": "55a6afe044761f06fa0083e91628327c14738917ecc5b8eafb7aba12ce33e192",
+   "shims_v01/numba/__init__.py": "ed9de5401ec78ff0e4b37b45abf895a70e79dc4b941890437441c5ce48edae12",
+   "shims_v01/omegaconf/__init__.py": "1f8baabb30afacf77a3fcf35171538ba4e19ec70935b500fa9b5c3a3e28c76f9",
+   "shims_v01/pyquaternion/__init__.py": "1adeea625407d116c3ffda0cc8ce9a04a8cde60d7299ec1fb033735dbeca700d",
+   "shims_v01/shapely/__init__.py": "9562727d4d12ba5da97c724af75f551a0e6670e5e60578107186147e7b532baf",
+   "shims_v01/shapely/geometry.py": "89a97551c364c96f00a07b90e643ef5273da1179babbb83ed1c6aa1c53436c47"
+  },
+  "FREEZE_B_sha256": "1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152",
+  "hashes_not_found_in_FREEZE_B": []
+ },
+ "export": {
+  "program": "code\\f12_export_v01.py",
+  "file": "work\\F_nuscenes\\out\\A_EXPORT_F.json",
+  "recount_file": "work\\F_nuscenes\\out\\A_RECOUNT_F.json"
+ },
+ "hypotheses": "F-H0, F-H1, F-H2 as A10 section 8.5, population all evaluated decisions; secondary population in-path lead (descriptive)",
+ "detector_provenance": "the publicly released CenterPoint nuScenes predictions with flip augmentation, as confirmed by the author (\"Official CenterPoint\", 19 Nov 2026); file evidence and the post-Lock-2 val NDS check against 68.5 in STATUS.md; the test file and the second val file in Downloads are not used",
+ "versions": {
+  "python": "3.12.2",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "venv_numba_numpy_llvmlite": [
+   "0.68.1",
+   "2.5.5",
+   "0.50.0"
+  ]
+ },
+ "files": {
+  "code": {
+   "work\\F_nuscenes\\code\\f00_extract_v01.py": "8a91c1e39a74b21524ead1b95afacde81ad04fa4805053c5a79656c2024f2a42",
+   "work\\F_nuscenes\\code\\f01_prepare_v01.py": "ab6d4c4241634dcd6bb6bcf5a11984c2a613ce84bc962dc4d0895dddc13a95ea",
+   "work\\F_nuscenes\\code\\f02_track_v01.py": "d4854018939e5c689291b5faaa38693a0f42793e2f03d5a63df9c2f2f7d32cd1",
+   "work\\F_nuscenes\\code\\f03_adapter_v01.py": "0b8871a40e54a1f928571c616958dab575ecd3a5af81d012eb4163f08aa86b88",
+   "work\\F_nuscenes\\code\\f05_arrays_v01.py": "08c8afda26c0e260769c35a2ec0bc6753d1a654e9045c43d165413f76b6e390b",
+   "work\\F_nuscenes\\code\\f06_score_v01.py": "2036ed9088897148752c8500dd15347e286f81c0629b38302403ed4bb39f2247",
+   "work\\F_nuscenes\\code\\f06k_kernel_v01.py": "8d32d5bfb246610059279e508f7c21bf91594fe5b19be6310d9700829a646a99",
+   "work\\F_nuscenes\\code\\f06t2_calib_path_test_v01.py": "5accb29bff950aa35dd845d7b156b3fc44cbb7375431603e2751585992eb2aef",
+   "work\\F_nuscenes\\code\\f06t_synth_test_v01.py": "7eb080ed3b78753dd83484c0814325a2ee8c7ee4ef19655b87a612035d786090",
+   "work\\F_nuscenes\\code\\f07_check_select_v01.py": "b95def9f6147b5d56f64a6530548837584d8ded023c3134e0f069ff9b2d856d6",
+   "work\\F_nuscenes\\code\\f08_check_compare_v01.py": "6e28e07af8e828ad8b10bc86e3f97dbe592128ff56a475ce3b2dcd90d59d11a2",
+   "work\\F_nuscenes\\code\\f08_check_compare_v02.py": "4207041f2278d9d70c70dd82d4e215f4671633af1cf5cabef315e62ede11efba",
+   "work\\F_nuscenes\\code\\f09_freeze_v01.py": "36da892400c0cc6ce4bd332d1af48a9a38c0ade59f4a34c0d5eaea715e6c77b4",
+   "work\\F_nuscenes\\code\\f10_adapter_checks_v01.py": "faad64763ff6e34f4f3d0d8ac9d1f19ccf5f3339ff5a3d7a121249faf6afe3e3",
+   "work\\F_nuscenes\\code\\f11_fingerprint_v01.py": "e7cdc7d3013e17c6e1ce6d0e5ccd44574fe317685637c8bf824653ee0dc9b5b2",
+   "work\\F_nuscenes\\code\\f12_export_v01.py": "1fe6a86b01d019a530a49a63964a3aa38da76a5ae17b2d130023a95a4f558afc",
+   "work\\F_nuscenes\\code\\f12t_export_test_v01.py": "6e6b418e24f4f7affc8eca1cdc26503bd00258e34e4104f394cb1f9d2817be28",
+   "work\\F_nuscenes\\code\\f13_compare_horizon_v01.py": "042aaea47fdadb75aae3d74939782fce248864874509d2a66f964e600c688f04",
+   "work\\F_nuscenes\\code\\f14_room_mechanism_v01.py": "5c2ab86ece8f6c2e2c0696d4358a697989a6659c38365a4ac344d4ca9da6d47f",
+   "work\\F_nuscenes\\code\\f15_clear_v02.py": "7df0d38a42f0869bc412b425825f534500fb11bf82a07ea4eff53cfae1951adf",
+   "work\\F_nuscenes\\code\\f16_calib_job_v01.py": "a32d3034c5d407d3a373c193d9a5b35b3b641a62ff2993bbb23fae730acf4792",
+   "work\\F_nuscenes\\code\\f16_calib_remote_v01.py": "8ca33bbd36dd4d1808056f1dff5d17dfb24c98ea5de8d596970961f62ea9e31e",
+   "work\\F_nuscenes\\code\\f17_calib_pod_v01.py": "0da500838e1e6e0ecac18683cd96b94d31845deaba227ccb0ce4c72568527b57",
+   "work\\F_nuscenes\\code\\f_common_v01.py": "32986d1b0e03306973917264e7b7c9e3764ffa75900de2d98d9e12e64aa1c48f",
+   "work\\F_nuscenes\\code\\fpods_v01.py": "c73a82adf67dafb0953894cfa23fe40a2d49e46e82d6640931d3177ff8f05814",
+   "work\\F_nuscenes\\code\\run_val_finish_v01.sh": "6a4ceb946653956339aaa97e37db5685014c10eebc527ab7987643ef757c3008",
+   "work\\F_nuscenes\\code\\run_val_v01.sh": "d82ca0c01af1b8bb5c460aedd21e8cd7a87a47e39f27d2d9a11b9929624c160c"
+  },
+  "lib": {
+   "work\\F_nuscenes\\lib\\code149\\consumer.py": "ff62710a4415ef99df5d85b57c2fbfe741d93d8da4898186868b27e6710406ff",
+   "work\\F_nuscenes\\lib\\code149\\finite_primitive.py": "13da04ec7f8b47827b85555da6e3b190f7dd6b0c08941fdde8b738c51c1cf4fe",
+   "work\\F_nuscenes\\lib\\code149\\online_tracker.py": "69edbc02b6653889b4fb8b12d6ad23dd95ae0b7f932b7c93f76749ce4b22508f",
+   "work\\F_nuscenes\\lib\\code149\\sensor_adapter.py": "e1a31c6c59a1c9841ed63a08d1c083b459fa9768afc5ae2bc3566b9b5e5c1932",
+   "work\\F_nuscenes\\lib\\code149\\tracker_audit.py": "a138b85c03acc9a75f1d770973ebac1927d8af07b561bcebea5c0af0e20e5493",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\__init__.py": "84cea75c25ae12d3c618073847d4d65631f22bf82343cd0275ffb8260ea03efa",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\export\\export_release.py": "415806a8269df98dac947606c5ca1c237ed1df5c15cf6f35899a7bca82f60560",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\nuimages.py": "d2ec4786206108559f519983ccaf752471e96fd73f98e0ee27f4768e34de96ec",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\scripts\\render_images.py": "5b8930328f1fb33a38404938477a7515e115402b122621d7f5611405169489a2",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\scripts\\render_rare_classes.py": "d78e0569047968205a62d1b5976cd03bbbdf4f95065632f853bdac93869bc2ad",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\tests\\assert_download.py": "65d5588e326d117306c81bfde0a02dbff518e5146ae3b5bcab2a0f0f0dfc9444",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\tests\\test_attributes.py": "aec728e1789e04c308a06dfbae75d57d78c058ea94bb2ee94618dd0a25cffcfe",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\tests\\test_foreign_keys.py": "eb3847415e3e6f10342dbd70b0ac1c22e8538c9f02836e76c77b766299dedf7f",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\utils\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\utils\\test_nuimages.py": "1f75f42df14bac8dd46b72bd03d5194a241363df729e12c8cb2afa9499887314",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\utils\\utils.py": "b485a5285dc107ce1463e82559b5c0ae095ef7eeca036171f2ef25635e907c5b",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\__init__.py": "6d36de956c116812bd9f8ab83bf1111c3e7ded50920998247626574c4171d034",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\can_bus\\can_bus_api.py": "c0cf94e39af2f9fa152dcc08208f2b0af9f734f4536dd42ff65569b3dd7f5691",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\can_bus\\README.md": "472d7e613035547fa612fbced23617af8cf98fddebc730421c090cbb60057599",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\common\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\common\\config.py": "cfa463c100d8347d7986fa6940ae9d9cf43bf62cba074a38fc004802d5d54c91",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\common\\data_classes.py": "3708ad7075cd43e2fdee574cecbbcfb0f9b2ed40c17749a9fd93b1477fe52538",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\common\\loaders.py": "58a7ebfe87ea924dd71d1209a8e42f7aee36a3d86937b50ca1ad44e46b4e2577",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\common\\render.py": "a31f6f7169ac389ccd3cbda8ad700735145f8e7f82c78bdb28e790f9b195947c",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\common\\utils.py": "ea2fe32f2be3a23a760d9efbc1f194669dda40ca9ea27dcb9161f9ba89f92c42",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\algo.py": "0d6c454eebf79dfa6f88f1b196c1e9cc33c49a4cfda2ff1c7c8bff073cdb4cc7",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\config.py": "fe24da53cdc577eb7219167e2962ae8308e32cd5db48858d9640a2c94a23792e",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\configs\\detection_cvpr_2019.json": "0970f5854defc837eec0da4cbc0decba45404632bc1ec3e45237169b2763a5b1",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\constants.py": "d639859a03a566ef78c65969fb1cab7a0a4cdc283ab1574715a0e946e49dc8fe",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\data_classes.py": "7cda196022268009ffb109cc0096a7f96f1dbc4e9ea9a607fe02ee9b0aba6ff9",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\evaluate.py": "b7cac22befb118a77dfafeb4a87431b9c48a1550300ab814d43fbaedeccfecbd",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\README.md": "e03a7b88ad8067588fec747f9644e4097c635b4192bced1f7e313275ca6165bb",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\render.py": "e641b8d15ca12166b645189298434a63942874ae5d6159d99e7416a0f00f5a6f",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\tests\\test_algo.py": "ea4693bbfa60544cc6de7bea256159b9e03b9d6b55de80b583027e42cbc1bf2f",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\tests\\test_data_classes.py": "782d510ccaf1d701c299d97b44592d79b80e799132be7eab453be88cbaac57e7",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\tests\\test_evaluate.py": "784bb5c20756316f77393a439ed55bc8bab09fa82abb504f12260b1cc574b23c",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\tests\\test_loader.py": "5e8bb9723f4bc69bc7b18ec086de70e460b74e98d47ef88434cc46b5fd9298d5",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\tests\\test_utils.py": "7b137e20d9f9b4394cb8f48c07ae2d2d54f31697d18e966f4cf6698ce8782db7",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\utils.py": "f85c6f6bc0770ca507c837effdea2c1e1ee6e838cd844bc61c1ad73179e9042d",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\lidarseg\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\lidarseg\\evaluate.py": "a284c12d8d42447e75475d14006f23d1e1bc5ae8ac7bb4689f751c6d1dac8e6f",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\lidarseg\\README.md": "3d25b7606d031c6dc1a31dd24a0baaefd173a53a8ce05030b1e2e02e6dc23eb3",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\lidarseg\\render.py": "87444f36dce78d1868663bb303409dd9ad0ca998f8d670b0aee12288f954c812",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\lidarseg\\tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\lidarseg\\utils.py": "38acd87ba01f4056558349d7496035eeee3a48e55c8a9e2224f483837f6754b5",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\lidarseg\\validate_submission.py": "31d8fb31f08698bc2715526e8d6085db46126143bb558d9faff4d6bca81955a3",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\baselines.py": "298a6ae59b03885aeb10fab12e356df0b46f1709b4a8cdc9b07dcfa5490c98d0",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\evaluate.py": "1983e8184a6088db1f03a54db223726c9ebb680c6636741e9e482be176267f48",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\get_panoptic_from_seg_det_or_track.py": "7957ff0bd595bb200d229fe052147e370e834e5b3a83b365c75b845b1a897a98",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\panoptic_seg_evaluator.py": "9a00e6a4df0877fe390f05d1f2ec02211a0b4b0e182adb8d92d624b4450e45bb",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\panoptic_track_evaluator.py": "1256b6bcc250243802608681ce423ebd26ebb60b58f6e6a683b8b82adb585272",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\README.md": "8bb0b68e72acb78d5e4754cfbbfbd7447c2b42e35d5a70830e14bf278658d6dd",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\utils.py": "1a2a34c1c321c8cdcbab8408d7af549be218802d9bf33c3b64c62110c51bbcc4",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\baseline_model_inference.py": "d7c4edaa7217420d979018b6ea3752ef311fade58f96b7e0ae95c19c154d8816",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\compute_metrics.py": "4e63fadc1168687a6d12bce4fe456c4144627dc1936dee50bf8832fb0688d215",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\config.py": "5ae91cbf65e70eba5a0f1939ba95dc74e9a55b5e8d01912b7e6a0310db80d4f1",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\configs\\predict_2020_icra.json": "0321b0c7bbe2e1bcac13331d33346d5546cd55e9c42e82cb3e13eaba2493c337",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\data_classes.py": "36d8db03b58a43379d34427ef528fb0ef600f269b88053d4e15188055ac26a88",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\docker_container\\docker\\docker-compose.yml": "fd72a04e982531c74fa13a4e9ee126531dee7d3c6471ab020c029b33f6724021",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\docker_container\\docker\\Dockerfile": "572576146847f974cbd608caa329143e40b0ae1942934ecfba6d733f641aa399",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\docker_container\\README.md": "e768504054bbdc69e0347fed4b4daf80704ba1e8d458f6fa8802ff397a746d48",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\metrics.py": "1cc85490e5cefc462b9c5c94b525a98b1b1ebc54851dfca4b3706197086382c9",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\README.md": "22b81d771e2f1e969e39a0b92c0e12500556b2d42f00d8a55dcefa61a1940293",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\splits.py": "8569f426f6d0e24428f3db7aeac4bb56d3fb0f4eb2ff71f7e1f55877d1c8cd74",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\submission\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\submission\\do_inference.py": "280941377751ae91dbdd22c44241905260cc9152ca59cb3e7d0772a5ec1c8ce6",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\submission\\extra_packages.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\tests\\test_dataclasses.py": "5c5e7e6dedbe8bae90ab09540f393ed80897af3830742ab03af73795c2f6fa04",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\tests\\test_metrics.py": "4675cea6efd3df428ebcc88e3142409e7823f0924fa8e7a95a40d7fdda3f72c0",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\algo.py": "102bdf0c71087c176f8112492839604add6ae6412b1b4c6c798fec22b178fd88",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\configs\\tracking_nips_2019.json": "cbf7fd6b7d6729f0049d8308d71e6785f381a7728ede302fb3d797cb6595391e",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\constants.py": "564194e1a6600fa93990673938fca2156462181ff97e261e7b78eef01adfd8bb",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\data_classes.py": "77744c6dec2a0c89026395e93c77c3d3c770991d4d06207b8e6a71b4b770c7b7",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\evaluate.py": "a23b15cb8204c8c01826fe7d43624b0803f718d31dd74a30ddb0f5e496395202",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\loaders.py": "9b3c06837a4aa98da621221d8f28000ebf76453267fbb1314ba26a4c9460743a",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\metrics.py": "a86a65507360b052f5acf03596832c3a47d818a8165dd669670638daaa5f4b0e",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\mot.py": "fda1e0d6318b4a52b45bc3457b635c7d01bbc05192c4c407ebe5e7a0378827f3",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\README.md": "929f58afe7852557308db27a4f55f9e0aed9881b13ed53dfa7729ba45c50a01b",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\render.py": "b9f938a47904ea9fde5456e333a79f305aea79885a6023b6db522e0717015e03",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\tests\\scenarios.py": "5e9dbef4ad9d9f59e62a3885708cb1674d21c7cadcf33bec7e1462eea1ade913",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\tests\\test_algo.py": "b2e2f16f128e567a5ae0f6cbab682939a668c843be6c13bb46c3dafccdd87aef",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\tests\\test_data_classes.py": "9c0f01c6bcdf39080b19e682b4f90b22cd254e0916f1a96aeab337d32b8429b4",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\tests\\test_evaluate.py": "7cb58eaea248d042abde170f2bf36afb9d40d917e1b56966084ea13686b98a90",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\utils.py": "894fa8f639d3bec46494e74061325454a735ba549bb712348beb3d5d62128488",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\lidarseg\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\lidarseg\\class_histogram.py": "e7c3485acf0bd7adca9b99a271ea470ef5719029f4fd0750f4b9ca87308c90f6",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\lidarseg\\lidarseg_utils.py": "40f487a22ea2f9e94227f40377b40a71075b971f6e5190bbecbefe6263e6e0d4",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\arcline_path_utils.py": "c2119486f3f6b5fd0599aa820efd96396f3603440671c1061ce6a9cde53b363c",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\bitmap.py": "5331fe302845abe8be30598d8770f2529fb903d9e29fbfbef4f7ba5384ad12c4",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\map_api.py": "9cda15a00f86c24da6f0b9f4f5dbf15e50e3035882eb46268ddc1e6f8f8b6d8c",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\tests\\test_all_maps.py": "6e01983e1ac2f0d0147877c17e8f387db2d205ad2044d865d0fa1213ac329b47",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\tests\\test_arcline_path_utils.py": "98dcd2c7a2a860bbd6ed70888336cd0557ea1f92202708f8fd517f5669b77e68",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\utils.py": "c72a2b372164971199827ed9f3c139ebb5e31ef5bb83a304db94be096556dd89",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\nuscenes.py": "e3277243edd0e285ee2e03814ca36469d96f69f5248d322dc1d1dd35b0b2da5f",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\panoptic\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\panoptic\\generate_panoptic_labels.py": "7f62a792dcd141bb4e67283f56f2cc4a3b48e5895ceb8e1670a57613893d4097",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\panoptic\\panoptic_utils.py": "57b89dab39ef1c976ae5c0f10adc1d5b42a8b713112e4f2eaca1c84dfeaaff90",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\__init__.py": "4fd423c84f328252bbe25babe7a2c4a473011abb657bb6f30e5c6baaf2f1fe4d",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\helper.py": "5701a0a69d26711c760de25dc2dd79b63a8b05b89f4c5679922d17ff8089f12b",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\agents.py": "800bd288c352e0a910033a2f10420dae18b6e52fef506bd2cf49ccda06ca7fa7",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\combinators.py": "35f52a6f7ead58105f5010e3865e472ab88a5a51197f94e0dbe5e139baa47e86",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\interface.py": "628e374eb3f21a10da42d5fffc416ccf43bd434c79e98deacadc2059a219cdf4",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\static_layers.py": "126bed67408c647c9742fc06f5e0ab79a0a6691d8f86923ce46ac436ea25c50d",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\tests\\test_agents.py": "9544f5cdced0ffeb0fd6e921682713af7a6fb245a1c5614eb3e45df8c1f3b127",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\tests\\test_combinators.py": "af30ed86469a895d728ae15e8236d1f41ba356f78c2ad8664c5ac1f20f078877",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\tests\\test_static_layers.py": "0fa637a49a6349595d4addc2b9186686ae357dfb963c8c51e2c9cb64eca4d868",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\tests\\test_utils.py": "628b3356669fd98d40f9b6dff151270dc1068262804a884680c028a9377fe43e",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\utils.py": "801f1fcc61501b8d81213e955bb84c197d8347f4a71b56d20647436747452794",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\models\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\models\\backbone.py": "c72e890fd86b7f66603fc9d9f691954e36e0cfaff067fc96ac5e15b469871261",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\models\\covernet.py": "09226d945ab48b6cdfe2a0c73ed5c5aa77da843a95ec2e731619f6f31e4e3e83",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\models\\mtp.py": "780c67815e035f9ca4c6f4820128c64aa110627dcec9fd379fe6a16f934a5636",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\models\\physics.py": "206b97e7db25ad8aefc83708ceaa937dfba532f5b9718e29c69b9bebc1246974",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\run_covernet.py": "3407fcc004470941b24eb0cd2a13b0c7a677a6665b064f6eedffa6c844027f63",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\run_image_generation.py": "1971c1d84facfe68888642e53cca98fc445287815f43391f8f5ded6a811b6dc5",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\run_mtp.py": "2b16cbdbd41fb81bf793e5826dd53aa4bdc556d77239292fd995b11b623485ab",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\test_backbone.py": "80c1f8ca044a98d44e062be6af3f17e3341285c56753b8aae5f9161d32e912f0",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\test_covernet.py": "e31b3f8d8e479816232fa7f9d3f865774f713aab9da20b74aaadab3bfe2c4fe1",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\test_mtp.py": "c5b8999cdddc24dbb7c2977c751175601c8b9d52c51673a368de33122714e126",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\test_mtp_loss.py": "19b631c938c0913a08891b43b5c52695668ab0340eb3d81cdc5db3ab1d8b07b1",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\test_physics_models.py": "bd5e210ae7436130abf6372f69796e19e23d0617502e1525ec03793edfa825ef",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\test_predict_helper.py": "d8a42390066ec6e1ca4895304b62dc613e626162f012592a1f877f896cc19004",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\export_2d_annotations_as_json.py": "314c7fecae76fd4c037ae921ea5d8028fadd15fe65fa610180092bc017e1b93b",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\export_egoposes_on_map.py": "4792f74dc79c035c26f3893e3a1587346f710d0b187a7ef5a66bab3912580fd6",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\export_instance_videos.py": "ca916fe49c4b9d08d0141579284ed9a66b68335f8f7ca0aa6536d25468a867ab",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\export_kitti.py": "131fc07aebdfcefac29fd3031d04fe9b971865480e01852359fc81658e75f968",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\export_pointclouds_as_obj.py": "29195023a21c3686f35982617637b37f693ac1c7d6d6b7ee5ab8ed2a364ccea3",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\export_poses.py": "0f0b156566db099f30c35e2c5ad794a76a9df3f7e5f9df91b84df01a6494a64b",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\export_scene_videos.py": "b98b0336db6c659b26a1f4a35d4fda61cc37ea7572a1ad49df6d18bb7b9caf06",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\README.md": "de80376aa91db0f9c311bfdd742e3eccf0224ec37dec1b477f493ab1df742972",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\tests\\assert_download.py": "25ff3407d43b71b3028773a0564d2a8c4aa6c2dd3fc13c5730ce1fcf59076a0e",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\tests\\test_lidarseg.py": "70e5bd36c80d3a0bcbb97c3ea6e26cd6664780ee241c95a8f1f06db56fad0358",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\tests\\test_nuscenes.py": "dd03f008187c257748886624f6c1a991a6ae60fc96e03f8d72358aa882b8975b",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\tests\\test_predict_helper.py": "00606dd9688c377b6c7b980c44970d7190566b26268ad9c8de7bc9d7a06af926",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\color_map.py": "d804b0d350d9fba8cab48df8f3f8cf95d05fba72c62372ddc5cd7fdc3372f708",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\data_classes.py": "a72f1405991e53eabc004a27621c203c2d8f1c962d5f206031659766b9e66c2d",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\data_io.py": "f9949e9d6ce5211b79855a3e2e58ca6da9fd53f019cd55ed224aad219d5848c9",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\geometry_utils.py": "6d49d31b037c3495a2e4ff9645e64ee6030f1369382cf50ab9fdff695125c9b3",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\kitti.py": "4a53fcba5145757390091dabed4dbcd81db3b99694a38ab274912a577c29658c",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\map_mask.py": "690043cfa45346fa8bd6c7b50cc0fe1af9f2bc0e5aeed6ab962e73c055ecf904",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\splits.py": "6821dfc545eb29def46c1bb3d1c2f5a4893d5f4afe17f08b0532a10b4ec12c96",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\tests\\test_data_classes.py": "2e3ab08740bd08f10f73067aab53d30f510ee55c2e48ab554c6ac267c889b103",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\tests\\test_geometry_utils.py": "cc743d43ea7d3a6c9248c1a5da483b7bfe306ed4b3ef4adcaddcb8fa5f847afd",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\tests\\test_map_mask.py": "650bfe898c476e20ec10fe396ec28e15fb44c3a410dbeb96376184253de5c1e5",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\can_bus_tutorial.ipynb": "b4a3064769bece5168dd6cd4c56dd2c5cdc6416311981e615c541cf483923abc",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\map_expansion_tutorial.ipynb": "9170c5202d87e92541ad0a0d98555f87ad6c46e59c102f451f2ce6a398a62c49",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\nuimages_tutorial.ipynb": "28669a78f8f13f60a46b25e9c38720c9e55bba2ade6a9b6678a97d1b5c91bd28",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\nuscenes_lidarseg_panoptic_tutorial.ipynb": "ae7d73a6c3feae486f227f5ced2290ae80dbb360807bc7a91da3d442e3b1c4b1",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\nuscenes_tutorial.ipynb": "522bc576249372d9bbc1f9574f7e956bcfe12b2b538f4c236a362c2bafc55b7c",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\prediction_tutorial.ipynb": "f1dd1dda97b5d3cfe5a48ef3776c3d1c825747a01b07bad86296c3fc2578e94f",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\README.md": "e0574cc3927b13bf6e165a523e87ce85452c6a73d8bf0334c72ac4dfe29d5f7e",
+   "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\trajectory.gif": "ce60613035d684aeba733f84a11a49cfe39cc72b42699edc6d3c950409bb9a93",
+   "work\\F_nuscenes\\lib\\scoring\\a9_common_v01.py": "6ee4998074b00dfc678b2eb6e1ea349b951ad2569c6f4a13ec7376aaadc11edc",
+   "work\\F_nuscenes\\lib\\scoring\\ol_extract_v01.py": "a1d99303dae49c5de7119c008d5d5218f375195199103057b5a3fc44ba4b6dec",
+   "work\\F_nuscenes\\lib\\scoring\\ol_gateR_core_v01.py": "00eda05768de6918bff3fc1fdf38005740f44f3cc5fde1e7e17b59c0756d6193",
+   "work\\F_nuscenes\\lib\\scoring\\ol_pbar_v01.py": "e051d1bb911a82f253252f467143b5973e905392a468da79f9533b13aa0e7abb",
+   "work\\F_nuscenes\\lib\\scoring\\olcore_v01.py": "6298ad9282ad8bd15caf96e9c2d9238ca6fe207b0b03a07c380d650f01798542",
+   "work\\F_nuscenes\\lib\\scoring\\optA_lib_v02.py": "b32a619a07f494e919f8d0bf112c8df4bed0957f051412c73819982a9a3f9898",
+   "work\\F_nuscenes\\lib\\scoring\\rev_common_v01.py": "872f3559198dcfcddf4ac01d8b0389b00db0855456fc0835973e4c651782cf6c",
+   "work\\F_nuscenes\\lib\\shims_v01\\hydra\\__init__.py": "3e04377812b92d89be393011cf4d00abae149265a96e1d52fa6b9932e8e8f1a9",
+   "work\\F_nuscenes\\lib\\shims_v01\\hydra\\utils.py": "ff50ad09edef0ca2a20eeaaca0598468cd58dc3596e5d77c05e8ca761542b88b",
+   "work\\F_nuscenes\\lib\\shims_v01\\lap\\__init__.py": "55a6afe044761f06fa0083e91628327c14738917ecc5b8eafb7aba12ce33e192",
+   "work\\F_nuscenes\\lib\\shims_v01\\numba\\__init__.py": "ed9de5401ec78ff0e4b37b45abf895a70e79dc4b941890437441c5ce48edae12",
+   "work\\F_nuscenes\\lib\\shims_v01\\omegaconf\\__init__.py": "1f8baabb30afacf77a3fcf35171538ba4e19ec70935b500fa9b5c3a3e28c76f9",
+   "work\\F_nuscenes\\lib\\shims_v01\\pyquaternion\\__init__.py": "1adeea625407d116c3ffda0cc8ce9a04a8cde60d7299ec1fb033735dbeca700d",
+   "work\\F_nuscenes\\lib\\shims_v01\\shapely\\__init__.py": "9562727d4d12ba5da97c724af75f551a0e6670e5e60578107186147e7b532baf",
+   "work\\F_nuscenes\\lib\\shims_v01\\shapely\\geometry.py": "89a97551c364c96f00a07b90e643ef5273da1179babbb83ed1c6aa1c53436c47",
+   "work\\F_nuscenes\\lib\\tracker_config.json": "a3bfe2f344e15b96392d5b372366ae95450211446f1781eed4afacb21d8dd586",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\LICENSE": "bc7ae20a7b175f86198db4ff0ed22ce84d1e5b96fbef9fa056c4474117d4affc",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\__init__.py": "8efb979addc9cc67ff290d1c8c7926cf0624d41ca31b87d640573f3ef6102716",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\cli.py": "c6492e50790fa55a4491bc91013cb115496e7a429fdda08d3383459d51eaf8e1",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\config_resolvers.py": "6df997a44bf931d1cb898c31fb74357414d8394097df1f4417b64ccb8fbe41df",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\data\\__init__.py": "54677c610c2aaca20049e15678d59a0eaf892c0ef7ef70dd36127b9fe2954f23",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\data\\script\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\data\\script\\compute_sample_covariance_nusc.py": "da8601cba518daaab08a45df6991c9a270e371ca14746f4b875b0ca8244e780c",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\data\\script\\cpp\\iou_bev.cpp": "4ff677db64c132cd1396a4060f0599f5fe9ed9b36c32e3b0c0eee6ec9108e4a7",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\data\\script\\first_frame.py": "6f7fc981a1703991642a93795150d559d9a9b6c810b1c42398b8b71daf2510c4",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\data\\script\\NUSC_CONSTANT.py": "84702b154e48227341cb116f1815fa31fea752e59d4808ff4bf725d797bdbc7d",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\data\\script\\reorder_detection.py": "94280ff48ec7595d179077b4fc8d1e939fda065fcfa8aff0911678ccc79926c0",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\dataloader\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\dataloader\\cache.py": "291026caa39498866ab5566319dad8bfddebf423f59be91f474238fef61e90f4",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\dataloader\\nusc_loader.py": "d5865256539a5f52d37a73490709a7ee24d2226f1b324bbbafa419c40c3f9c5e",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\geometry\\__init__.py": "af282242419018274e65fa69c67dd6f90b70d3afbd4c60a20404d36e139c0654",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\geometry\\nusc_box.py": "5aee68a12eb1bf5b178d28e522654304c875c2bcf40a1653398cfcc86a912dd4",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\geometry\\nusc_distance.py": "879d81dd590fc09517f5dd7677d95e1b27f736e6a0a37092a7e0006a0c25a250",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\geometry\\nusc_utils.py": "9e4ffb129c41f7474928650c09fcc5856a858aefdca33b3df08082899e85e9b3",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\motion_module\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\motion_module\\kalman_filter.py": "67c00f6ab527c341a557b86f91a4a692bda00b529e75cd2016b6a123cd537b36",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\motion_module\\motion_model.py": "ed219e9575f293c372dd3b5817d9be0f196e76448e122f4757035455b585fb71",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\motion_module\\nusc_object.py": "b571857fdd38bff3f57b14a87aab0cae34ad52d5598641017c6bd61951476f3e",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\pre_processing\\__init__.py": "c93baad8aafeefd3791552157da9f6067ebf523feb0e220863c83d0f0539710e",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\pre_processing\\nusc_data_conversion.py": "0cb1e5189a09dac62003eeb3ffb5391fa01fa2a1722198fcc73da7e438f4eb17",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\pre_processing\\nusc_nms.py": "e6a9126e9549fcd2e1d0db4dc35a4cf9d8ceb794302f3155d3c04f6bedafc604",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\reproducibility.py": "b90d1488db8a79ec1e69a4a577622310b2063d0efdcf26fd9648ff3f788486fc",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\tracking\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\tracking\\nusc_life_manage.py": "ccb891e2dc279d1cc4713bded63b9b79946f2082b424ba03852851cb09a93caa",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\tracking\\nusc_score_manage.py": "aef9e7186883e2b126827903fd183f4ce225af7f349e6fc03f77f0e0dce885cf",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\tracking\\nusc_tracker.py": "eea3facab95e71e3f4dc4f22860816f7e3d0565457535d201d035d9c2ae0be45",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\tracking\\nusc_trajectory.py": "0b7e94456fcced0d97c119e785c5fb41a8b0fabfbfcaa1716b7c9bea289520cd",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\utils\\__init__.py": "acf72b0b427b65ea25da971b970ca86fef0a1600bcfd409fe808aca1f1c626ca",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\utils\\covariance_viz.py": "b108b8592bf0b3fc416060f7787f91a9eb0832dbfc995ab4c54b447c97d1fb22",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\utils\\figure2_viz.py": "8162c18de26179d5a48920b36d0b531f252d106b543caabe22b382ec97cd5f7c",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\utils\\io.py": "cf54b747857f306f51b49dafeb6c212f7af4fb9c803373c7d3626fc5950d4b67",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\utils\\matching.py": "ca9345856fa93ba4657cbaa5a8d33b500db90d6b781827b1fa024d4bcced3e4b",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\utils\\math.py": "dd33c87e8def595d8bca7e5296f36c244f454e7ce2ebfe2f05771e7df8960979",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\utils\\script.py": "f98184350ccba084166653dddf214b0efbd8c1d68a5485e5e06f21ba0e386ad9",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\__init__.py": "04e7a3940d4cdb09532d136d7fb790e3037e8c3763cce7aad9a7fd320bdcad07",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\apps\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\apps\\eval_motchallenge.py": "ca99d58862f3163b9cd7854a40db75edc7ba03eb1af93756f88a521e06b4c7ac",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\apps\\example.py": "405a0194869c23ef44dfecf32bb4eeeaa007964f5b72955a50de1ec5a0ad3788",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\apps\\list_metrics.py": "b3b95fbb21b0bb56989f7bdbcbec1ad657db1c3e2e89785160fcd3de9aa52bf4",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\data\\iotest\\motchallenge.txt": "29ecfae94d8873f245890e96b55c2fc5075011d230cbe1b487c26499e0ab08a8",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\data\\iotest\\vatic.txt": "a01d455c38e74a72a02f27f6ec9597981e801ef68ba30313315e7b23f74ceb3a",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\data\\TUD-Campus\\gt.txt": "6e6db5a416f59b1837bc5bfc90502f5d767e869806e1257e4b735f742a90809c",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\data\\TUD-Campus\\test.txt": "efbfaa766c4c27a07561e2d48f3538cadd73c7c583c5fc82f2992e9874261e28",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\data\\TUD-Stadtmitte\\gt.txt": "275e53717f0397c19484fd42198fc5c4dc7b3de7ba5ca15ef53e2b8188696650",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\data\\TUD-Stadtmitte\\test.txt": "454611aef78f84dea47ed22369fe518e76c3625871835270eaee0ea36fd387f3",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\distances.py": "eb103b41dfcb8ae3ae44eca277ee68c98544721ee538c7734bf1694d1623d492",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\etc\\mot.png": "732f92dab0ebaba86db9ac331b524f862709edca997c711545c32414ce2705f3",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\io.py": "b0e1888666165d30ff33e28d11dab429f3d54b8c18949a8cea6bb59e30ca749c",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\lap.py": "e82c0937feb850ecd5caeb4c8fb42db5754f8a380142de4015519c4e5eb332ee",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\metrics.py": "42eb20736886c8d236683f28c7dde21664fc2b4cbb7a6f6440f8deca7db84981",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\mot.py": "7cfa9a63cf3227d2344e16a75cd77a617c064937b3079c240ec276480373c209",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\tests\\test_distances.py": "a93cccad96bf79f2df51ef00cc2d924f5acfceebe7e95beac3b64b0f327babd8",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\tests\\test_io.py": "c4f7cd47a333a9a016eda82035bcf03c55a7ed75dd510f593a2b749bdc146344",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\tests\\test_lap.py": "a0b0594be3ef931a1cd38629c97ee6933027497d73a88ae1d9ceffd8de32c237",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\tests\\test_metrics.py": "7f34adfffc4ab22e8f0a92647a0d7e7fae620a30c5a3d3fae5464af807e9bf30",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\tests\\test_mot.py": "25f5baa60ec37460d7c564d56e1bc6d8ad56b2f02e72a5bd146eaa3685e43d87",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\utils.py": "54b0aaf526bde046263502d8a8315199a7383e6652b722acd17d0d18bda8e844",
+   "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\optimize.py": "dea042da2ce41bf310918b437f297f269ea8d11707349086888037979bded208",
+   "work\\F_nuscenes\\lib\\vendor149\\design_core_v85.py": "06ef12a0de4a3da3d31c6387e28bba068204f2651209cfeaec626fbc2fdc09b8",
+   "work\\F_nuscenes\\lib\\vendor149\\fast_hull.py": "93dd29e8e2f9560165fb8ac654e25f4d15b40826f5ec6558c4737ca1176a9ac9",
+   "work\\F_nuscenes\\lib\\vendor149\\fast_overlap.py": "4f2399d2685fd3efc78607427a67ac6dd9c1e584484a7bde02a2606368e1ff9e",
+   "work\\F_nuscenes\\lib\\vendor149\\fast_overlap_array.py": "e1bd727700160eb76439c8983ddf47d286716e43205d7d9e81c2dbf0a2678255"
+  },
+  "notes": {
+   "work\\F_nuscenes\\notes\\ADAPTER_SPEC_F_v01.md": "eed2ad3a4ed8882a0d95bedefc893c3d8d5f7718f06cc4245b4dc96901d8b45d",
+   "work\\F_nuscenes\\notes\\ADAPTER_CHECK_DECISIONS_v01.json": "14c1d69fa7752271af133f3190d8e3a5a1847e8c176e37a0d8127be094b8eb00",
+   "work\\F_nuscenes\\notes\\ARRAYS_FORMAT_F_v01.md": "7865cd7aa5e2b7f2f28ddb1329e2883a6ffb7c968be7ef99f470357513756482",
+   "work\\F_nuscenes\\notes\\F_DEPARTURE_CLEARANCE_v01.md": "a0be0de7e462281a7e8b95b6b0acf31dd99cdbc38299b6214edd08ad3bd18259",
+   "work\\F_nuscenes\\notes\\F_NUPLAN_ATFAULT_CHECK_v01.md": "bf830fa765e3637468528d58be1d2ae4f9381c1674195e06a9fef0af20d6934c"
+  },
+  "design_outputs": {
+   "work\\F_nuscenes\\out\\PBAR_T1_train_v01.json": "01b3708895f58fa21beb48d34f8efbf030259cdcd77254e13e18c398e7fbf9ba",
+   "work\\F_nuscenes\\out\\PBAR_IMM_train_v01.json": "296aa5295a13e768f16ede935a5e02ad8f03ff9d187fbecc4a73048aede1efed",
+   "work\\F_nuscenes\\out\\F_HORIZON_RULE_v01.json": "b431314755deabc29439ec8f340f7905586641dbcb044e3dae202cb8d76340e2",
+   "work\\F_nuscenes\\out\\F_HORIZON_COMPARE_v01.json": "c76ab34dda36e01556cbf774f2e494548c82a75e443ac2ec7814520c179f8d3b",
+   "work\\F_nuscenes\\out\\F_ROOM_MECHANISM_T1_train_v01.json": "19add9931fe5df0d44ddb6eeafba67a7fad239aebf404aeaf8a5d36a5efa3644",
+   "work\\F_nuscenes\\out\\F_HORIZON_RULE_v02.json": "6b7dfe2cf7b478176e590792830a527c0dfee7f583ce793cdfa660ade7a8a163",
+   "work\\F_nuscenes\\out\\F_HORIZON_COMPARE_v02.json": "57d7ec4566521eaf9aa6bdb689268eb9db46905f55c0ba56aa42d3499a0d8373",
+   "work\\F_nuscenes\\out\\F_CLEAR_V02_train_v01.json": "a00efc646db0d8b624a4fb6d202b989fef560940a6ab8922a4fd1b4287586a39",
+   "work\\F_nuscenes\\out\\F_ADAPTER_CHECK_v01.json": "de146ed738af52ccefdf90183ced55f811c96b14cf0ecc96e6372c17a77ee11d",
+   "work\\F_nuscenes\\out\\F_ADAPTER_CHECK_v02.json": "37f76cba2e6c1a4fdc9f222382da1bcc044663922ba72e17af755a6206b981a4",
+   "work\\F_nuscenes\\out\\F_ADAPTER_CHECKS_T1_train_v01.json": "0d4591fa7d97c3fe0d87c112491a7987bcca8d6148636a7599dad99f7f405abe"
+  },
+  "second_program_adapter_check": {
+   "work\\F_nuscenes\\check2\\ADAPTER_CHECK2_v01.json": "2a68f21e7b6ce441baadf9c2a71a96cb4462f0761a948d27c3e66227f84ff32a",
+   "work\\F_nuscenes\\check2\\ADAPTER_CHECK2_v02.json": "c0f1ef52ca9c60c55d2e7f61256f187d44ef233372658c6e29ad5b0d864a6254",
+   "work\\F_nuscenes\\check2\\check2_adapter_v01.py": "65e2860b79dbb27eed84adb2d7cc890cc25e424eb12c40d86b99627b39cd7d63",
+   "work\\F_nuscenes\\check2\\check2_adapter_v02.py": "90f1d6399f9cb1114473edb4f952a5186c0f0bc83ca350b81ec53919bbd1287f",
+   "work\\F_nuscenes\\check2\\README_CHECK2.md": "2b1f3ccf5912a720b223397de6cbcd92e6477ccd89096b8465bc0cbecbe6d522"
+  },
+  "second_program_recount": {
+   "work\\F_nuscenes\\recount\\fr_core_v01.py": "61a9615031843a8e73604175538e513d950a7f1d439f86a62ae0783f3daa26b2",
+   "work\\F_nuscenes\\recount\\fr_heldout_v01.py": "529021d40fdc7510d36581d8f230f50e7c0eaad39db15e77490ca794ebe1878c",
+   "work\\F_nuscenes\\recount\\fr_heldout_v02.py": "556d7e2939648a2681dd8989b974a824edaaf17b5a3204bb623a482e36e5bf7d",
+   "work\\F_nuscenes\\recount\\fr_horizon_v01.py": "307414d7eee597b2acd691051684a95028a18ce4230af39bacafb3e81c7bdf4b",
+   "work\\F_nuscenes\\recount\\fr_horizon_v02.py": "4cdbb6b187a465c5053719653982d6e0b6340baecdf7723f143fd3da5c94163f",
+   "work\\F_nuscenes\\recount\\fr_run_v01.py": "90da60080bc150685b03987bacdcf2dd93d8e2084b711bd4024f897ca455fd0c",
+   "work\\F_nuscenes\\recount\\fr_synth_v01.py": "9c3f283cf40f73f33713268ffb3d9a824d2b47218a41ebd5ec7473a56ff61b03",
+   "work\\F_nuscenes\\recount\\fr_test_v01.py": "f8edcd51695471043ad75010ca922b0128e097c57e51b24b81e7508d28dcf426",
+   "work\\F_nuscenes\\recount\\fr_test_v02_scripts.py": "c2c68a77f1000246ca77b9939d9ea3ff40d9fb7261b9c051342dca918084a2c4",
+   "work\\F_nuscenes\\recount\\README_RECOUNT.md": "6a642b91ee65e1456a26df8ebe531ab98b8dec1f870650623ef004db1d0e8121"
+  },
+  "second_program_recount_outputs": {
+   "work\\F_nuscenes\\recount\\F_RECOUNT_HORIZON_v01.json": "fe844ea15bfeb81900a81c7043a2ad6985ea3baa47e9811a001994823a57dbd3",
+   "work\\F_nuscenes\\recount\\F_RECOUNT_HORIZON_v02.json": "ee1f331e289f42f38167a85515fb08a50abfd150f5f7a75ebb65139fc847132c"
+  },
+  "pod_double_bootstrap_platform_test": {
+   "work\\F_nuscenes\\out\\calib\\test\\F_CALIB_PLATFORM_TEST_design_R_v01.json": "af0f3d3bc4e612b69d61a740af9b2e236aac9d8c3c9612fd48b532d11006313e",
+   "work\\F_nuscenes\\out\\calib\\test\\F_CALIB_PLATFORM_TEST_synth_full_v01.json": "2b6c0240be402f7b19933afcf283628ad89a2fb147b11d93ecd0105e5a891734"
+  },
+  "shared_imported": {
+   "work\\shared\\trackers\\trk_arrays_v01.py": "300b42bfb301680cb469784145837f8db8d5241c7e2f63c1c1dc6d58ed55dd1b",
+   "work\\shared\\trackers\\trk_env_v01.py": "0219dd2ed6517109a3c913430a2f30ca756fc01f4f003c1347c4ddd4a9628cad",
+   "work\\shared\\trackers\\trk_exact_math_v01.py": "6a42ece0b2255e4c2ec15a5651ee8ac65671e63cce01895e1ff4227ead86f541",
+   "work\\shared\\trackers\\trk_filters_v01.py": "9edfdd6cb5642c1618d41ccb3def176251074a3beaf703d8589df58018304dbb",
+   "work\\shared\\trackers\\trk_score_v01.py": "1cab6f300ad85fc6007d9b46dae75f41202f010c2080c5987ef06a79921417b4",
+   "work\\shared\\trackers\\trk_tracker_v01.py": "5cf4ad3baf81b614b18facc3fe4b3bc6506f867350d5b6216fce5ed725cfdef8",
+   "work\\shared\\trackers\\trk_constants_v01.json": "d8455cb50b637a3ce45460a0dee38f79b69fce4c085c913f713b56ac23338a9d",
+   "work\\shared\\trackers\\shims_v01\\hydra\\__init__.py": "3e04377812b92d89be393011cf4d00abae149265a96e1d52fa6b9932e8e8f1a9",
+   "work\\shared\\trackers\\shims_v01\\hydra\\utils.py": "ff50ad09edef0ca2a20eeaaca0598468cd58dc3596e5d77c05e8ca761542b88b",
+   "work\\shared\\trackers\\shims_v01\\lap\\__init__.py": "55a6afe044761f06fa0083e91628327c14738917ecc5b8eafb7aba12ce33e192",
+   "work\\shared\\trackers\\shims_v01\\numba\\__init__.py": "ed9de5401ec78ff0e4b37b45abf895a70e79dc4b941890437441c5ce48edae12",
+   "work\\shared\\trackers\\shims_v01\\omegaconf\\__init__.py": "1f8baabb30afacf77a3fcf35171538ba4e19ec70935b500fa9b5c3a3e28c76f9",
+   "work\\shared\\trackers\\shims_v01\\pyquaternion\\__init__.py": "1adeea625407d116c3ffda0cc8ce9a04a8cde60d7299ec1fb033735dbeca700d",
+   "work\\shared\\trackers\\shims_v01\\shapely\\__init__.py": "9562727d4d12ba5da97c724af75f551a0e6670e5e60578107186147e7b532baf",
+   "work\\shared\\trackers\\shims_v01\\shapely\\geometry.py": "89a97551c364c96f00a07b90e643ef5273da1179babbb83ed1c6aa1c53436c47"
+  },
+  "data_logs": {
+   "work\\F_nuscenes\\logs\\f00_extract_v01.json": "cbb5c2da468c985bb959e975b7250fed885414ddbf75592dfc926641735284f1",
+   "work\\F_nuscenes\\logs\\f01_prepare_train_v01.json": "1d0dcabb128e94b2395cc85429201aa1e395b5ed40ef3482b094fb88070d9d9c"
+  }
+ },
+ "entries": [
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f00_extract_v01.py",
+   "sha256": "8a91c1e39a74b21524ead1b95afacde81ad04fa4805053c5a79656c2024f2a42"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f01_prepare_v01.py",
+   "sha256": "ab6d4c4241634dcd6bb6bcf5a11984c2a613ce84bc962dc4d0895dddc13a95ea"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f02_track_v01.py",
+   "sha256": "d4854018939e5c689291b5faaa38693a0f42793e2f03d5a63df9c2f2f7d32cd1"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f03_adapter_v01.py",
+   "sha256": "0b8871a40e54a1f928571c616958dab575ecd3a5af81d012eb4163f08aa86b88"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f05_arrays_v01.py",
+   "sha256": "08c8afda26c0e260769c35a2ec0bc6753d1a654e9045c43d165413f76b6e390b"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f06_score_v01.py",
+   "sha256": "2036ed9088897148752c8500dd15347e286f81c0629b38302403ed4bb39f2247"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f06k_kernel_v01.py",
+   "sha256": "8d32d5bfb246610059279e508f7c21bf91594fe5b19be6310d9700829a646a99"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f06t2_calib_path_test_v01.py",
+   "sha256": "5accb29bff950aa35dd845d7b156b3fc44cbb7375431603e2751585992eb2aef"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f06t_synth_test_v01.py",
+   "sha256": "7eb080ed3b78753dd83484c0814325a2ee8c7ee4ef19655b87a612035d786090"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f07_check_select_v01.py",
+   "sha256": "b95def9f6147b5d56f64a6530548837584d8ded023c3134e0f069ff9b2d856d6"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f08_check_compare_v01.py",
+   "sha256": "6e28e07af8e828ad8b10bc86e3f97dbe592128ff56a475ce3b2dcd90d59d11a2"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f08_check_compare_v02.py",
+   "sha256": "4207041f2278d9d70c70dd82d4e215f4671633af1cf5cabef315e62ede11efba"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f09_freeze_v01.py",
+   "sha256": "36da892400c0cc6ce4bd332d1af48a9a38c0ade59f4a34c0d5eaea715e6c77b4"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f10_adapter_checks_v01.py",
+   "sha256": "faad64763ff6e34f4f3d0d8ac9d1f19ccf5f3339ff5a3d7a121249faf6afe3e3"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f11_fingerprint_v01.py",
+   "sha256": "e7cdc7d3013e17c6e1ce6d0e5ccd44574fe317685637c8bf824653ee0dc9b5b2"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f12_export_v01.py",
+   "sha256": "1fe6a86b01d019a530a49a63964a3aa38da76a5ae17b2d130023a95a4f558afc"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f12t_export_test_v01.py",
+   "sha256": "6e6b418e24f4f7affc8eca1cdc26503bd00258e34e4104f394cb1f9d2817be28"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f13_compare_horizon_v01.py",
+   "sha256": "042aaea47fdadb75aae3d74939782fce248864874509d2a66f964e600c688f04"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f14_room_mechanism_v01.py",
+   "sha256": "5c2ab86ece8f6c2e2c0696d4358a697989a6659c38365a4ac344d4ca9da6d47f"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f15_clear_v02.py",
+   "sha256": "7df0d38a42f0869bc412b425825f534500fb11bf82a07ea4eff53cfae1951adf"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f16_calib_job_v01.py",
+   "sha256": "a32d3034c5d407d3a373c193d9a5b35b3b641a62ff2993bbb23fae730acf4792"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f16_calib_remote_v01.py",
+   "sha256": "8ca33bbd36dd4d1808056f1dff5d17dfb24c98ea5de8d596970961f62ea9e31e"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f17_calib_pod_v01.py",
+   "sha256": "0da500838e1e6e0ecac18683cd96b94d31845deaba227ccb0ce4c72568527b57"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\f_common_v01.py",
+   "sha256": "32986d1b0e03306973917264e7b7c9e3764ffa75900de2d98d9e12e64aa1c48f"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\fpods_v01.py",
+   "sha256": "c73a82adf67dafb0953894cfa23fe40a2d49e46e82d6640931d3177ff8f05814"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\run_val_finish_v01.sh",
+   "sha256": "6a4ceb946653956339aaa97e37db5685014c10eebc527ab7987643ef757c3008"
+  },
+  {
+   "group": "code",
+   "path": "work\\F_nuscenes\\code\\run_val_v01.sh",
+   "sha256": "d82ca0c01af1b8bb5c460aedd21e8cd7a87a47e39f27d2d9a11b9929624c160c"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\code149\\consumer.py",
+   "sha256": "ff62710a4415ef99df5d85b57c2fbfe741d93d8da4898186868b27e6710406ff"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\code149\\finite_primitive.py",
+   "sha256": "13da04ec7f8b47827b85555da6e3b190f7dd6b0c08941fdde8b738c51c1cf4fe"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\code149\\online_tracker.py",
+   "sha256": "69edbc02b6653889b4fb8b12d6ad23dd95ae0b7f932b7c93f76749ce4b22508f"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\code149\\sensor_adapter.py",
+   "sha256": "e1a31c6c59a1c9841ed63a08d1c083b459fa9768afc5ae2bc3566b9b5e5c1932"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\code149\\tracker_audit.py",
+   "sha256": "a138b85c03acc9a75f1d770973ebac1927d8af07b561bcebea5c0af0e20e5493"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\__init__.py",
+   "sha256": "84cea75c25ae12d3c618073847d4d65631f22bf82343cd0275ffb8260ea03efa"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\export\\export_release.py",
+   "sha256": "415806a8269df98dac947606c5ca1c237ed1df5c15cf6f35899a7bca82f60560"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\nuimages.py",
+   "sha256": "d2ec4786206108559f519983ccaf752471e96fd73f98e0ee27f4768e34de96ec"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\scripts\\render_images.py",
+   "sha256": "5b8930328f1fb33a38404938477a7515e115402b122621d7f5611405169489a2"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\scripts\\render_rare_classes.py",
+   "sha256": "d78e0569047968205a62d1b5976cd03bbbdf4f95065632f853bdac93869bc2ad"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\tests\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\tests\\assert_download.py",
+   "sha256": "65d5588e326d117306c81bfde0a02dbff518e5146ae3b5bcab2a0f0f0dfc9444"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\tests\\test_attributes.py",
+   "sha256": "aec728e1789e04c308a06dfbae75d57d78c058ea94bb2ee94618dd0a25cffcfe"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\tests\\test_foreign_keys.py",
+   "sha256": "eb3847415e3e6f10342dbd70b0ac1c22e8538c9f02836e76c77b766299dedf7f"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\utils\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\utils\\test_nuimages.py",
+   "sha256": "1f75f42df14bac8dd46b72bd03d5194a241363df729e12c8cb2afa9499887314"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuimages\\utils\\utils.py",
+   "sha256": "b485a5285dc107ce1463e82559b5c0ae095ef7eeca036171f2ef25635e907c5b"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\__init__.py",
+   "sha256": "6d36de956c116812bd9f8ab83bf1111c3e7ded50920998247626574c4171d034"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\can_bus\\can_bus_api.py",
+   "sha256": "c0cf94e39af2f9fa152dcc08208f2b0af9f734f4536dd42ff65569b3dd7f5691"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\can_bus\\README.md",
+   "sha256": "472d7e613035547fa612fbced23617af8cf98fddebc730421c090cbb60057599"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\common\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\common\\config.py",
+   "sha256": "cfa463c100d8347d7986fa6940ae9d9cf43bf62cba074a38fc004802d5d54c91"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\common\\data_classes.py",
+   "sha256": "3708ad7075cd43e2fdee574cecbbcfb0f9b2ed40c17749a9fd93b1477fe52538"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\common\\loaders.py",
+   "sha256": "58a7ebfe87ea924dd71d1209a8e42f7aee36a3d86937b50ca1ad44e46b4e2577"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\common\\render.py",
+   "sha256": "a31f6f7169ac389ccd3cbda8ad700735145f8e7f82c78bdb28e790f9b195947c"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\common\\utils.py",
+   "sha256": "ea2fe32f2be3a23a760d9efbc1f194669dda40ca9ea27dcb9161f9ba89f92c42"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\algo.py",
+   "sha256": "0d6c454eebf79dfa6f88f1b196c1e9cc33c49a4cfda2ff1c7c8bff073cdb4cc7"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\config.py",
+   "sha256": "fe24da53cdc577eb7219167e2962ae8308e32cd5db48858d9640a2c94a23792e"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\configs\\detection_cvpr_2019.json",
+   "sha256": "0970f5854defc837eec0da4cbc0decba45404632bc1ec3e45237169b2763a5b1"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\constants.py",
+   "sha256": "d639859a03a566ef78c65969fb1cab7a0a4cdc283ab1574715a0e946e49dc8fe"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\data_classes.py",
+   "sha256": "7cda196022268009ffb109cc0096a7f96f1dbc4e9ea9a607fe02ee9b0aba6ff9"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\evaluate.py",
+   "sha256": "b7cac22befb118a77dfafeb4a87431b9c48a1550300ab814d43fbaedeccfecbd"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\README.md",
+   "sha256": "e03a7b88ad8067588fec747f9644e4097c635b4192bced1f7e313275ca6165bb"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\render.py",
+   "sha256": "e641b8d15ca12166b645189298434a63942874ae5d6159d99e7416a0f00f5a6f"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\tests\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\tests\\test_algo.py",
+   "sha256": "ea4693bbfa60544cc6de7bea256159b9e03b9d6b55de80b583027e42cbc1bf2f"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\tests\\test_data_classes.py",
+   "sha256": "782d510ccaf1d701c299d97b44592d79b80e799132be7eab453be88cbaac57e7"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\tests\\test_evaluate.py",
+   "sha256": "784bb5c20756316f77393a439ed55bc8bab09fa82abb504f12260b1cc574b23c"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\tests\\test_loader.py",
+   "sha256": "5e8bb9723f4bc69bc7b18ec086de70e460b74e98d47ef88434cc46b5fd9298d5"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\tests\\test_utils.py",
+   "sha256": "7b137e20d9f9b4394cb8f48c07ae2d2d54f31697d18e966f4cf6698ce8782db7"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\detection\\utils.py",
+   "sha256": "f85c6f6bc0770ca507c837effdea2c1e1ee6e838cd844bc61c1ad73179e9042d"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\lidarseg\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\lidarseg\\evaluate.py",
+   "sha256": "a284c12d8d42447e75475d14006f23d1e1bc5ae8ac7bb4689f751c6d1dac8e6f"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\lidarseg\\README.md",
+   "sha256": "3d25b7606d031c6dc1a31dd24a0baaefd173a53a8ce05030b1e2e02e6dc23eb3"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\lidarseg\\render.py",
+   "sha256": "87444f36dce78d1868663bb303409dd9ad0ca998f8d670b0aee12288f954c812"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\lidarseg\\tests\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\lidarseg\\utils.py",
+   "sha256": "38acd87ba01f4056558349d7496035eeee3a48e55c8a9e2224f483837f6754b5"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\lidarseg\\validate_submission.py",
+   "sha256": "31d8fb31f08698bc2715526e8d6085db46126143bb558d9faff4d6bca81955a3"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\baselines.py",
+   "sha256": "298a6ae59b03885aeb10fab12e356df0b46f1709b4a8cdc9b07dcfa5490c98d0"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\evaluate.py",
+   "sha256": "1983e8184a6088db1f03a54db223726c9ebb680c6636741e9e482be176267f48"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\get_panoptic_from_seg_det_or_track.py",
+   "sha256": "7957ff0bd595bb200d229fe052147e370e834e5b3a83b365c75b845b1a897a98"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\panoptic_seg_evaluator.py",
+   "sha256": "9a00e6a4df0877fe390f05d1f2ec02211a0b4b0e182adb8d92d624b4450e45bb"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\panoptic_track_evaluator.py",
+   "sha256": "1256b6bcc250243802608681ce423ebd26ebb60b58f6e6a683b8b82adb585272"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\README.md",
+   "sha256": "8bb0b68e72acb78d5e4754cfbbfbd7447c2b42e35d5a70830e14bf278658d6dd"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\panoptic\\utils.py",
+   "sha256": "1a2a34c1c321c8cdcbab8408d7af549be218802d9bf33c3b64c62110c51bbcc4"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\baseline_model_inference.py",
+   "sha256": "d7c4edaa7217420d979018b6ea3752ef311fade58f96b7e0ae95c19c154d8816"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\compute_metrics.py",
+   "sha256": "4e63fadc1168687a6d12bce4fe456c4144627dc1936dee50bf8832fb0688d215"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\config.py",
+   "sha256": "5ae91cbf65e70eba5a0f1939ba95dc74e9a55b5e8d01912b7e6a0310db80d4f1"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\configs\\predict_2020_icra.json",
+   "sha256": "0321b0c7bbe2e1bcac13331d33346d5546cd55e9c42e82cb3e13eaba2493c337"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\data_classes.py",
+   "sha256": "36d8db03b58a43379d34427ef528fb0ef600f269b88053d4e15188055ac26a88"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\docker_container\\docker\\docker-compose.yml",
+   "sha256": "fd72a04e982531c74fa13a4e9ee126531dee7d3c6471ab020c029b33f6724021"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\docker_container\\docker\\Dockerfile",
+   "sha256": "572576146847f974cbd608caa329143e40b0ae1942934ecfba6d733f641aa399"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\docker_container\\README.md",
+   "sha256": "e768504054bbdc69e0347fed4b4daf80704ba1e8d458f6fa8802ff397a746d48"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\metrics.py",
+   "sha256": "1cc85490e5cefc462b9c5c94b525a98b1b1ebc54851dfca4b3706197086382c9"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\README.md",
+   "sha256": "22b81d771e2f1e969e39a0b92c0e12500556b2d42f00d8a55dcefa61a1940293"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\splits.py",
+   "sha256": "8569f426f6d0e24428f3db7aeac4bb56d3fb0f4eb2ff71f7e1f55877d1c8cd74"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\submission\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\submission\\do_inference.py",
+   "sha256": "280941377751ae91dbdd22c44241905260cc9152ca59cb3e7d0772a5ec1c8ce6"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\submission\\extra_packages.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\tests\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\tests\\test_dataclasses.py",
+   "sha256": "5c5e7e6dedbe8bae90ab09540f393ed80897af3830742ab03af73795c2f6fa04"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\prediction\\tests\\test_metrics.py",
+   "sha256": "4675cea6efd3df428ebcc88e3142409e7823f0924fa8e7a95a40d7fdda3f72c0"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\algo.py",
+   "sha256": "102bdf0c71087c176f8112492839604add6ae6412b1b4c6c798fec22b178fd88"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\configs\\tracking_nips_2019.json",
+   "sha256": "cbf7fd6b7d6729f0049d8308d71e6785f381a7728ede302fb3d797cb6595391e"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\constants.py",
+   "sha256": "564194e1a6600fa93990673938fca2156462181ff97e261e7b78eef01adfd8bb"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\data_classes.py",
+   "sha256": "77744c6dec2a0c89026395e93c77c3d3c770991d4d06207b8e6a71b4b770c7b7"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\evaluate.py",
+   "sha256": "a23b15cb8204c8c01826fe7d43624b0803f718d31dd74a30ddb0f5e496395202"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\loaders.py",
+   "sha256": "9b3c06837a4aa98da621221d8f28000ebf76453267fbb1314ba26a4c9460743a"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\metrics.py",
+   "sha256": "a86a65507360b052f5acf03596832c3a47d818a8165dd669670638daaa5f4b0e"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\mot.py",
+   "sha256": "fda1e0d6318b4a52b45bc3457b635c7d01bbc05192c4c407ebe5e7a0378827f3"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\README.md",
+   "sha256": "929f58afe7852557308db27a4f55f9e0aed9881b13ed53dfa7729ba45c50a01b"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\render.py",
+   "sha256": "b9f938a47904ea9fde5456e333a79f305aea79885a6023b6db522e0717015e03"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\tests\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\tests\\scenarios.py",
+   "sha256": "5e9dbef4ad9d9f59e62a3885708cb1674d21c7cadcf33bec7e1462eea1ade913"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\tests\\test_algo.py",
+   "sha256": "b2e2f16f128e567a5ae0f6cbab682939a668c843be6c13bb46c3dafccdd87aef"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\tests\\test_data_classes.py",
+   "sha256": "9c0f01c6bcdf39080b19e682b4f90b22cd254e0916f1a96aeab337d32b8429b4"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\tests\\test_evaluate.py",
+   "sha256": "7cb58eaea248d042abde170f2bf36afb9d40d917e1b56966084ea13686b98a90"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\eval\\tracking\\utils.py",
+   "sha256": "894fa8f639d3bec46494e74061325454a735ba549bb712348beb3d5d62128488"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\lidarseg\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\lidarseg\\class_histogram.py",
+   "sha256": "e7c3485acf0bd7adca9b99a271ea470ef5719029f4fd0750f4b9ca87308c90f6"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\lidarseg\\lidarseg_utils.py",
+   "sha256": "40f487a22ea2f9e94227f40377b40a71075b971f6e5190bbecbefe6263e6e0d4"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\arcline_path_utils.py",
+   "sha256": "c2119486f3f6b5fd0599aa820efd96396f3603440671c1061ce6a9cde53b363c"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\bitmap.py",
+   "sha256": "5331fe302845abe8be30598d8770f2529fb903d9e29fbfbef4f7ba5384ad12c4"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\map_api.py",
+   "sha256": "9cda15a00f86c24da6f0b9f4f5dbf15e50e3035882eb46268ddc1e6f8f8b6d8c"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\tests\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\tests\\test_all_maps.py",
+   "sha256": "6e01983e1ac2f0d0147877c17e8f387db2d205ad2044d865d0fa1213ac329b47"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\tests\\test_arcline_path_utils.py",
+   "sha256": "98dcd2c7a2a860bbd6ed70888336cd0557ea1f92202708f8fd517f5669b77e68"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\map_expansion\\utils.py",
+   "sha256": "c72a2b372164971199827ed9f3c139ebb5e31ef5bb83a304db94be096556dd89"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\nuscenes.py",
+   "sha256": "e3277243edd0e285ee2e03814ca36469d96f69f5248d322dc1d1dd35b0b2da5f"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\panoptic\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\panoptic\\generate_panoptic_labels.py",
+   "sha256": "7f62a792dcd141bb4e67283f56f2cc4a3b48e5895ceb8e1670a57613893d4097"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\panoptic\\panoptic_utils.py",
+   "sha256": "57b89dab39ef1c976ae5c0f10adc1d5b42a8b713112e4f2eaca1c84dfeaaff90"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\__init__.py",
+   "sha256": "4fd423c84f328252bbe25babe7a2c4a473011abb657bb6f30e5c6baaf2f1fe4d"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\helper.py",
+   "sha256": "5701a0a69d26711c760de25dc2dd79b63a8b05b89f4c5679922d17ff8089f12b"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\agents.py",
+   "sha256": "800bd288c352e0a910033a2f10420dae18b6e52fef506bd2cf49ccda06ca7fa7"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\combinators.py",
+   "sha256": "35f52a6f7ead58105f5010e3865e472ab88a5a51197f94e0dbe5e139baa47e86"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\interface.py",
+   "sha256": "628e374eb3f21a10da42d5fffc416ccf43bd434c79e98deacadc2059a219cdf4"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\static_layers.py",
+   "sha256": "126bed67408c647c9742fc06f5e0ab79a0a6691d8f86923ce46ac436ea25c50d"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\tests\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\tests\\test_agents.py",
+   "sha256": "9544f5cdced0ffeb0fd6e921682713af7a6fb245a1c5614eb3e45df8c1f3b127"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\tests\\test_combinators.py",
+   "sha256": "af30ed86469a895d728ae15e8236d1f41ba356f78c2ad8664c5ac1f20f078877"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\tests\\test_static_layers.py",
+   "sha256": "0fa637a49a6349595d4addc2b9186686ae357dfb963c8c51e2c9cb64eca4d868"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\tests\\test_utils.py",
+   "sha256": "628b3356669fd98d40f9b6dff151270dc1068262804a884680c028a9377fe43e"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\input_representation\\utils.py",
+   "sha256": "801f1fcc61501b8d81213e955bb84c197d8347f4a71b56d20647436747452794"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\models\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\models\\backbone.py",
+   "sha256": "c72e890fd86b7f66603fc9d9f691954e36e0cfaff067fc96ac5e15b469871261"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\models\\covernet.py",
+   "sha256": "09226d945ab48b6cdfe2a0c73ed5c5aa77da843a95ec2e731619f6f31e4e3e83"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\models\\mtp.py",
+   "sha256": "780c67815e035f9ca4c6f4820128c64aa110627dcec9fd379fe6a16f934a5636"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\models\\physics.py",
+   "sha256": "206b97e7db25ad8aefc83708ceaa937dfba532f5b9718e29c69b9bebc1246974"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\run_covernet.py",
+   "sha256": "3407fcc004470941b24eb0cd2a13b0c7a677a6665b064f6eedffa6c844027f63"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\run_image_generation.py",
+   "sha256": "1971c1d84facfe68888642e53cca98fc445287815f43391f8f5ded6a811b6dc5"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\run_mtp.py",
+   "sha256": "2b16cbdbd41fb81bf793e5826dd53aa4bdc556d77239292fd995b11b623485ab"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\test_backbone.py",
+   "sha256": "80c1f8ca044a98d44e062be6af3f17e3341285c56753b8aae5f9161d32e912f0"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\test_covernet.py",
+   "sha256": "e31b3f8d8e479816232fa7f9d3f865774f713aab9da20b74aaadab3bfe2c4fe1"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\test_mtp.py",
+   "sha256": "c5b8999cdddc24dbb7c2977c751175601c8b9d52c51673a368de33122714e126"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\test_mtp_loss.py",
+   "sha256": "19b631c938c0913a08891b43b5c52695668ab0340eb3d81cdc5db3ab1d8b07b1"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\test_physics_models.py",
+   "sha256": "bd5e210ae7436130abf6372f69796e19e23d0617502e1525ec03793edfa825ef"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\prediction\\tests\\test_predict_helper.py",
+   "sha256": "d8a42390066ec6e1ca4895304b62dc613e626162f012592a1f877f896cc19004"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\export_2d_annotations_as_json.py",
+   "sha256": "314c7fecae76fd4c037ae921ea5d8028fadd15fe65fa610180092bc017e1b93b"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\export_egoposes_on_map.py",
+   "sha256": "4792f74dc79c035c26f3893e3a1587346f710d0b187a7ef5a66bab3912580fd6"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\export_instance_videos.py",
+   "sha256": "ca916fe49c4b9d08d0141579284ed9a66b68335f8f7ca0aa6536d25468a867ab"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\export_kitti.py",
+   "sha256": "131fc07aebdfcefac29fd3031d04fe9b971865480e01852359fc81658e75f968"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\export_pointclouds_as_obj.py",
+   "sha256": "29195023a21c3686f35982617637b37f693ac1c7d6d6b7ee5ab8ed2a364ccea3"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\export_poses.py",
+   "sha256": "0f0b156566db099f30c35e2c5ad794a76a9df3f7e5f9df91b84df01a6494a64b"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\export_scene_videos.py",
+   "sha256": "b98b0336db6c659b26a1f4a35d4fda61cc37ea7572a1ad49df6d18bb7b9caf06"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\scripts\\README.md",
+   "sha256": "de80376aa91db0f9c311bfdd742e3eccf0224ec37dec1b477f493ab1df742972"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\tests\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\tests\\assert_download.py",
+   "sha256": "25ff3407d43b71b3028773a0564d2a8c4aa6c2dd3fc13c5730ce1fcf59076a0e"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\tests\\test_lidarseg.py",
+   "sha256": "70e5bd36c80d3a0bcbb97c3ea6e26cd6664780ee241c95a8f1f06db56fad0358"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\tests\\test_nuscenes.py",
+   "sha256": "dd03f008187c257748886624f6c1a991a6ae60fc96e03f8d72358aa882b8975b"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\tests\\test_predict_helper.py",
+   "sha256": "00606dd9688c377b6c7b980c44970d7190566b26268ad9c8de7bc9d7a06af926"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\color_map.py",
+   "sha256": "d804b0d350d9fba8cab48df8f3f8cf95d05fba72c62372ddc5cd7fdc3372f708"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\data_classes.py",
+   "sha256": "a72f1405991e53eabc004a27621c203c2d8f1c962d5f206031659766b9e66c2d"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\data_io.py",
+   "sha256": "f9949e9d6ce5211b79855a3e2e58ca6da9fd53f019cd55ed224aad219d5848c9"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\geometry_utils.py",
+   "sha256": "6d49d31b037c3495a2e4ff9645e64ee6030f1369382cf50ab9fdff695125c9b3"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\kitti.py",
+   "sha256": "4a53fcba5145757390091dabed4dbcd81db3b99694a38ab274912a577c29658c"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\map_mask.py",
+   "sha256": "690043cfa45346fa8bd6c7b50cc0fe1af9f2bc0e5aeed6ab962e73c055ecf904"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\splits.py",
+   "sha256": "6821dfc545eb29def46c1bb3d1c2f5a4893d5f4afe17f08b0532a10b4ec12c96"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\tests\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\tests\\test_data_classes.py",
+   "sha256": "2e3ab08740bd08f10f73067aab53d30f510ee55c2e48ab554c6ac267c889b103"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\tests\\test_geometry_utils.py",
+   "sha256": "cc743d43ea7d3a6c9248c1a5da483b7bfe306ed4b3ef4adcaddcb8fa5f847afd"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\nuscenes\\utils\\tests\\test_map_mask.py",
+   "sha256": "650bfe898c476e20ec10fe396ec28e15fb44c3a410dbeb96376184253de5c1e5"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\can_bus_tutorial.ipynb",
+   "sha256": "b4a3064769bece5168dd6cd4c56dd2c5cdc6416311981e615c541cf483923abc"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\map_expansion_tutorial.ipynb",
+   "sha256": "9170c5202d87e92541ad0a0d98555f87ad6c46e59c102f451f2ce6a398a62c49"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\nuimages_tutorial.ipynb",
+   "sha256": "28669a78f8f13f60a46b25e9c38720c9e55bba2ade6a9b6678a97d1b5c91bd28"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\nuscenes_lidarseg_panoptic_tutorial.ipynb",
+   "sha256": "ae7d73a6c3feae486f227f5ced2290ae80dbb360807bc7a91da3d442e3b1c4b1"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\nuscenes_tutorial.ipynb",
+   "sha256": "522bc576249372d9bbc1f9574f7e956bcfe12b2b538f4c236a362c2bafc55b7c"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\prediction_tutorial.ipynb",
+   "sha256": "f1dd1dda97b5d3cfe5a48ef3776c3d1c825747a01b07bad86296c3fc2578e94f"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\README.md",
+   "sha256": "e0574cc3927b13bf6e165a523e87ce85452c6a73d8bf0334c72ac4dfe29d5f7e"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\devkit\\python-sdk\\tutorials\\trajectory.gif",
+   "sha256": "ce60613035d684aeba733f84a11a49cfe39cc72b42699edc6d3c950409bb9a93"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\scoring\\a9_common_v01.py",
+   "sha256": "6ee4998074b00dfc678b2eb6e1ea349b951ad2569c6f4a13ec7376aaadc11edc"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\scoring\\ol_extract_v01.py",
+   "sha256": "a1d99303dae49c5de7119c008d5d5218f375195199103057b5a3fc44ba4b6dec"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\scoring\\ol_gateR_core_v01.py",
+   "sha256": "00eda05768de6918bff3fc1fdf38005740f44f3cc5fde1e7e17b59c0756d6193"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\scoring\\ol_pbar_v01.py",
+   "sha256": "e051d1bb911a82f253252f467143b5973e905392a468da79f9533b13aa0e7abb"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\scoring\\olcore_v01.py",
+   "sha256": "6298ad9282ad8bd15caf96e9c2d9238ca6fe207b0b03a07c380d650f01798542"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\scoring\\optA_lib_v02.py",
+   "sha256": "b32a619a07f494e919f8d0bf112c8df4bed0957f051412c73819982a9a3f9898"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\scoring\\rev_common_v01.py",
+   "sha256": "872f3559198dcfcddf4ac01d8b0389b00db0855456fc0835973e4c651782cf6c"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\shims_v01\\hydra\\__init__.py",
+   "sha256": "3e04377812b92d89be393011cf4d00abae149265a96e1d52fa6b9932e8e8f1a9"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\shims_v01\\hydra\\utils.py",
+   "sha256": "ff50ad09edef0ca2a20eeaaca0598468cd58dc3596e5d77c05e8ca761542b88b"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\shims_v01\\lap\\__init__.py",
+   "sha256": "55a6afe044761f06fa0083e91628327c14738917ecc5b8eafb7aba12ce33e192"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\shims_v01\\numba\\__init__.py",
+   "sha256": "ed9de5401ec78ff0e4b37b45abf895a70e79dc4b941890437441c5ce48edae12"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\shims_v01\\omegaconf\\__init__.py",
+   "sha256": "1f8baabb30afacf77a3fcf35171538ba4e19ec70935b500fa9b5c3a3e28c76f9"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\shims_v01\\pyquaternion\\__init__.py",
+   "sha256": "1adeea625407d116c3ffda0cc8ce9a04a8cde60d7299ec1fb033735dbeca700d"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\shims_v01\\shapely\\__init__.py",
+   "sha256": "9562727d4d12ba5da97c724af75f551a0e6670e5e60578107186147e7b532baf"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\shims_v01\\shapely\\geometry.py",
+   "sha256": "89a97551c364c96f00a07b90e643ef5273da1179babbb83ed1c6aa1c53436c47"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\tracker_config.json",
+   "sha256": "a3bfe2f344e15b96392d5b372366ae95450211446f1781eed4afacb21d8dd586"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\LICENSE",
+   "sha256": "bc7ae20a7b175f86198db4ff0ed22ce84d1e5b96fbef9fa056c4474117d4affc"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\__init__.py",
+   "sha256": "8efb979addc9cc67ff290d1c8c7926cf0624d41ca31b87d640573f3ef6102716"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\cli.py",
+   "sha256": "c6492e50790fa55a4491bc91013cb115496e7a429fdda08d3383459d51eaf8e1"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\config_resolvers.py",
+   "sha256": "6df997a44bf931d1cb898c31fb74357414d8394097df1f4417b64ccb8fbe41df"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\data\\__init__.py",
+   "sha256": "54677c610c2aaca20049e15678d59a0eaf892c0ef7ef70dd36127b9fe2954f23"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\data\\script\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\data\\script\\compute_sample_covariance_nusc.py",
+   "sha256": "da8601cba518daaab08a45df6991c9a270e371ca14746f4b875b0ca8244e780c"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\data\\script\\cpp\\iou_bev.cpp",
+   "sha256": "4ff677db64c132cd1396a4060f0599f5fe9ed9b36c32e3b0c0eee6ec9108e4a7"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\data\\script\\first_frame.py",
+   "sha256": "6f7fc981a1703991642a93795150d559d9a9b6c810b1c42398b8b71daf2510c4"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\data\\script\\NUSC_CONSTANT.py",
+   "sha256": "84702b154e48227341cb116f1815fa31fea752e59d4808ff4bf725d797bdbc7d"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\data\\script\\reorder_detection.py",
+   "sha256": "94280ff48ec7595d179077b4fc8d1e939fda065fcfa8aff0911678ccc79926c0"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\dataloader\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\dataloader\\cache.py",
+   "sha256": "291026caa39498866ab5566319dad8bfddebf423f59be91f474238fef61e90f4"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\dataloader\\nusc_loader.py",
+   "sha256": "d5865256539a5f52d37a73490709a7ee24d2226f1b324bbbafa419c40c3f9c5e"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\geometry\\__init__.py",
+   "sha256": "af282242419018274e65fa69c67dd6f90b70d3afbd4c60a20404d36e139c0654"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\geometry\\nusc_box.py",
+   "sha256": "5aee68a12eb1bf5b178d28e522654304c875c2bcf40a1653398cfcc86a912dd4"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\geometry\\nusc_distance.py",
+   "sha256": "879d81dd590fc09517f5dd7677d95e1b27f736e6a0a37092a7e0006a0c25a250"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\geometry\\nusc_utils.py",
+   "sha256": "9e4ffb129c41f7474928650c09fcc5856a858aefdca33b3df08082899e85e9b3"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\motion_module\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\motion_module\\kalman_filter.py",
+   "sha256": "67c00f6ab527c341a557b86f91a4a692bda00b529e75cd2016b6a123cd537b36"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\motion_module\\motion_model.py",
+   "sha256": "ed219e9575f293c372dd3b5817d9be0f196e76448e122f4757035455b585fb71"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\motion_module\\nusc_object.py",
+   "sha256": "b571857fdd38bff3f57b14a87aab0cae34ad52d5598641017c6bd61951476f3e"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\pre_processing\\__init__.py",
+   "sha256": "c93baad8aafeefd3791552157da9f6067ebf523feb0e220863c83d0f0539710e"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\pre_processing\\nusc_data_conversion.py",
+   "sha256": "0cb1e5189a09dac62003eeb3ffb5391fa01fa2a1722198fcc73da7e438f4eb17"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\pre_processing\\nusc_nms.py",
+   "sha256": "e6a9126e9549fcd2e1d0db4dc35a4cf9d8ceb794302f3155d3c04f6bedafc604"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\reproducibility.py",
+   "sha256": "b90d1488db8a79ec1e69a4a577622310b2063d0efdcf26fd9648ff3f788486fc"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\tracking\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\tracking\\nusc_life_manage.py",
+   "sha256": "ccb891e2dc279d1cc4713bded63b9b79946f2082b424ba03852851cb09a93caa"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\tracking\\nusc_score_manage.py",
+   "sha256": "aef9e7186883e2b126827903fd183f4ce225af7f349e6fc03f77f0e0dce885cf"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\tracking\\nusc_tracker.py",
+   "sha256": "eea3facab95e71e3f4dc4f22860816f7e3d0565457535d201d035d9c2ae0be45"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\tracking\\nusc_trajectory.py",
+   "sha256": "0b7e94456fcced0d97c119e785c5fb41a8b0fabfbfcaa1716b7c9bea289520cd"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\utils\\__init__.py",
+   "sha256": "acf72b0b427b65ea25da971b970ca86fef0a1600bcfd409fe808aca1f1c626ca"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\utils\\covariance_viz.py",
+   "sha256": "b108b8592bf0b3fc416060f7787f91a9eb0832dbfc995ab4c54b447c97d1fb22"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\utils\\figure2_viz.py",
+   "sha256": "8162c18de26179d5a48920b36d0b531f252d106b543caabe22b382ec97cd5f7c"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\utils\\io.py",
+   "sha256": "cf54b747857f306f51b49dafeb6c212f7af4fb9c803373c7d3626fc5950d4b67"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\utils\\matching.py",
+   "sha256": "ca9345856fa93ba4657cbaa5a8d33b500db90d6b781827b1fa024d4bcced3e4b"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\utils\\math.py",
+   "sha256": "dd33c87e8def595d8bca7e5296f36c244f454e7ce2ebfe2f05771e7df8960979"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\canmot\\utils\\script.py",
+   "sha256": "f98184350ccba084166653dddf214b0efbd8c1d68a5485e5e06f21ba0e386ad9"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\__init__.py",
+   "sha256": "04e7a3940d4cdb09532d136d7fb790e3037e8c3763cce7aad9a7fd320bdcad07"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\apps\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\apps\\eval_motchallenge.py",
+   "sha256": "ca99d58862f3163b9cd7854a40db75edc7ba03eb1af93756f88a521e06b4c7ac"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\apps\\example.py",
+   "sha256": "405a0194869c23ef44dfecf32bb4eeeaa007964f5b72955a50de1ec5a0ad3788"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\apps\\list_metrics.py",
+   "sha256": "b3b95fbb21b0bb56989f7bdbcbec1ad657db1c3e2e89785160fcd3de9aa52bf4"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\data\\iotest\\motchallenge.txt",
+   "sha256": "29ecfae94d8873f245890e96b55c2fc5075011d230cbe1b487c26499e0ab08a8"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\data\\iotest\\vatic.txt",
+   "sha256": "a01d455c38e74a72a02f27f6ec9597981e801ef68ba30313315e7b23f74ceb3a"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\data\\TUD-Campus\\gt.txt",
+   "sha256": "6e6db5a416f59b1837bc5bfc90502f5d767e869806e1257e4b735f742a90809c"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\data\\TUD-Campus\\test.txt",
+   "sha256": "efbfaa766c4c27a07561e2d48f3538cadd73c7c583c5fc82f2992e9874261e28"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\data\\TUD-Stadtmitte\\gt.txt",
+   "sha256": "275e53717f0397c19484fd42198fc5c4dc7b3de7ba5ca15ef53e2b8188696650"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\data\\TUD-Stadtmitte\\test.txt",
+   "sha256": "454611aef78f84dea47ed22369fe518e76c3625871835270eaee0ea36fd387f3"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\distances.py",
+   "sha256": "eb103b41dfcb8ae3ae44eca277ee68c98544721ee538c7734bf1694d1623d492"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\etc\\mot.png",
+   "sha256": "732f92dab0ebaba86db9ac331b524f862709edca997c711545c32414ce2705f3"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\io.py",
+   "sha256": "b0e1888666165d30ff33e28d11dab429f3d54b8c18949a8cea6bb59e30ca749c"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\lap.py",
+   "sha256": "e82c0937feb850ecd5caeb4c8fb42db5754f8a380142de4015519c4e5eb332ee"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\metrics.py",
+   "sha256": "42eb20736886c8d236683f28c7dde21664fc2b4cbb7a6f6440f8deca7db84981"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\mot.py",
+   "sha256": "7cfa9a63cf3227d2344e16a75cd77a617c064937b3079c240ec276480373c209"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\tests\\__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\tests\\test_distances.py",
+   "sha256": "a93cccad96bf79f2df51ef00cc2d924f5acfceebe7e95beac3b64b0f327babd8"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\tests\\test_io.py",
+   "sha256": "c4f7cd47a333a9a016eda82035bcf03c55a7ed75dd510f593a2b749bdc146344"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\tests\\test_lap.py",
+   "sha256": "a0b0594be3ef931a1cd38629c97ee6933027497d73a88ae1d9ceffd8de32c237"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\tests\\test_metrics.py",
+   "sha256": "7f34adfffc4ab22e8f0a92647a0d7e7fae620a30c5a3d3fae5464af807e9bf30"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\tests\\test_mot.py",
+   "sha256": "25f5baa60ec37460d7c564d56e1bc6d8ad56b2f02e72a5bd146eaa3685e43d87"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\motmetrics\\utils.py",
+   "sha256": "54b0aaf526bde046263502d8a8315199a7383e6652b722acd17d0d18bda8e844"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\CANMOT\\src\\optimize.py",
+   "sha256": "dea042da2ce41bf310918b437f297f269ea8d11707349086888037979bded208"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\design_core_v85.py",
+   "sha256": "06ef12a0de4a3da3d31c6387e28bba068204f2651209cfeaec626fbc2fdc09b8"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\fast_hull.py",
+   "sha256": "93dd29e8e2f9560165fb8ac654e25f4d15b40826f5ec6558c4737ca1176a9ac9"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\fast_overlap.py",
+   "sha256": "4f2399d2685fd3efc78607427a67ac6dd9c1e584484a7bde02a2606368e1ff9e"
+  },
+  {
+   "group": "lib",
+   "path": "work\\F_nuscenes\\lib\\vendor149\\fast_overlap_array.py",
+   "sha256": "e1bd727700160eb76439c8983ddf47d286716e43205d7d9e81c2dbf0a2678255"
+  },
+  {
+   "group": "notes",
+   "path": "work\\F_nuscenes\\notes\\ADAPTER_SPEC_F_v01.md",
+   "sha256": "eed2ad3a4ed8882a0d95bedefc893c3d8d5f7718f06cc4245b4dc96901d8b45d"
+  },
+  {
+   "group": "notes",
+   "path": "work\\F_nuscenes\\notes\\ADAPTER_CHECK_DECISIONS_v01.json",
+   "sha256": "14c1d69fa7752271af133f3190d8e3a5a1847e8c176e37a0d8127be094b8eb00"
+  },
+  {
+   "group": "notes",
+   "path": "work\\F_nuscenes\\notes\\ARRAYS_FORMAT_F_v01.md",
+   "sha256": "7865cd7aa5e2b7f2f28ddb1329e2883a6ffb7c968be7ef99f470357513756482"
+  },
+  {
+   "group": "notes",
+   "path": "work\\F_nuscenes\\notes\\F_DEPARTURE_CLEARANCE_v01.md",
+   "sha256": "a0be0de7e462281a7e8b95b6b0acf31dd99cdbc38299b6214edd08ad3bd18259"
+  },
+  {
+   "group": "notes",
+   "path": "work\\F_nuscenes\\notes\\F_NUPLAN_ATFAULT_CHECK_v01.md",
+   "sha256": "bf830fa765e3637468528d58be1d2ae4f9381c1674195e06a9fef0af20d6934c"
+  },
+  {
+   "group": "design_outputs",
+   "path": "work\\F_nuscenes\\out\\PBAR_T1_train_v01.json",
+   "sha256": "01b3708895f58fa21beb48d34f8efbf030259cdcd77254e13e18c398e7fbf9ba"
+  },
+  {
+   "group": "design_outputs",
+   "path": "work\\F_nuscenes\\out\\PBAR_IMM_train_v01.json",
+   "sha256": "296aa5295a13e768f16ede935a5e02ad8f03ff9d187fbecc4a73048aede1efed"
+  },
+  {
+   "group": "design_outputs",
+   "path": "work\\F_nuscenes\\out\\F_HORIZON_RULE_v01.json",
+   "sha256": "b431314755deabc29439ec8f340f7905586641dbcb044e3dae202cb8d76340e2"
+  },
+  {
+   "group": "design_outputs",
+   "path": "work\\F_nuscenes\\out\\F_HORIZON_COMPARE_v01.json",
+   "sha256": "c76ab34dda36e01556cbf774f2e494548c82a75e443ac2ec7814520c179f8d3b"
+  },
+  {
+   "group": "design_outputs",
+   "path": "work\\F_nuscenes\\out\\F_ROOM_MECHANISM_T1_train_v01.json",
+   "sha256": "19add9931fe5df0d44ddb6eeafba67a7fad239aebf404aeaf8a5d36a5efa3644"
+  },
+  {
+   "group": "design_outputs",
+   "path": "work\\F_nuscenes\\out\\F_HORIZON_RULE_v02.json",
+   "sha256": "6b7dfe2cf7b478176e590792830a527c0dfee7f583ce793cdfa660ade7a8a163"
+  },
+  {
+   "group": "design_outputs",
+   "path": "work\\F_nuscenes\\out\\F_HORIZON_COMPARE_v02.json",
+   "sha256": "57d7ec4566521eaf9aa6bdb689268eb9db46905f55c0ba56aa42d3499a0d8373"
+  },
+  {
+   "group": "design_outputs",
+   "path": "work\\F_nuscenes\\out\\F_CLEAR_V02_train_v01.json",
+   "sha256": "a00efc646db0d8b624a4fb6d202b989fef560940a6ab8922a4fd1b4287586a39"
+  },
+  {
+   "group": "design_outputs",
+   "path": "work\\F_nuscenes\\out\\F_ADAPTER_CHECK_v01.json",
+   "sha256": "de146ed738af52ccefdf90183ced55f811c96b14cf0ecc96e6372c17a77ee11d"
+  },
+  {
+   "group": "design_outputs",
+   "path": "work\\F_nuscenes\\out\\F_ADAPTER_CHECK_v02.json",
+   "sha256": "37f76cba2e6c1a4fdc9f222382da1bcc044663922ba72e17af755a6206b981a4"
+  },
+  {
+   "group": "design_outputs",
+   "path": "work\\F_nuscenes\\out\\F_ADAPTER_CHECKS_T1_train_v01.json",
+   "sha256": "0d4591fa7d97c3fe0d87c112491a7987bcca8d6148636a7599dad99f7f405abe"
+  },
+  {
+   "group": "second_program_adapter_check",
+   "path": "work\\F_nuscenes\\check2\\ADAPTER_CHECK2_v01.json",
+   "sha256": "2a68f21e7b6ce441baadf9c2a71a96cb4462f0761a948d27c3e66227f84ff32a"
+  },
+  {
+   "group": "second_program_adapter_check",
+   "path": "work\\F_nuscenes\\check2\\ADAPTER_CHECK2_v02.json",
+   "sha256": "c0f1ef52ca9c60c55d2e7f61256f187d44ef233372658c6e29ad5b0d864a6254"
+  },
+  {
+   "group": "second_program_adapter_check",
+   "path": "work\\F_nuscenes\\check2\\check2_adapter_v01.py",
+   "sha256": "65e2860b79dbb27eed84adb2d7cc890cc25e424eb12c40d86b99627b39cd7d63"
+  },
+  {
+   "group": "second_program_adapter_check",
+   "path": "work\\F_nuscenes\\check2\\check2_adapter_v02.py",
+   "sha256": "90f1d6399f9cb1114473edb4f952a5186c0f0bc83ca350b81ec53919bbd1287f"
+  },
+  {
+   "group": "second_program_adapter_check",
+   "path": "work\\F_nuscenes\\check2\\README_CHECK2.md",
+   "sha256": "2b1f3ccf5912a720b223397de6cbcd92e6477ccd89096b8465bc0cbecbe6d522"
+  },
+  {
+   "group": "second_program_recount",
+   "path": "work\\F_nuscenes\\recount\\fr_core_v01.py",
+   "sha256": "61a9615031843a8e73604175538e513d950a7f1d439f86a62ae0783f3daa26b2"
+  },
+  {
+   "group": "second_program_recount",
+   "path": "work\\F_nuscenes\\recount\\fr_heldout_v01.py",
+   "sha256": "529021d40fdc7510d36581d8f230f50e7c0eaad39db15e77490ca794ebe1878c"
+  },
+  {
+   "group": "second_program_recount",
+   "path": "work\\F_nuscenes\\recount\\fr_heldout_v02.py",
+   "sha256": "556d7e2939648a2681dd8989b974a824edaaf17b5a3204bb623a482e36e5bf7d"
+  },
+  {
+   "group": "second_program_recount",
+   "path": "work\\F_nuscenes\\recount\\fr_horizon_v01.py",
+   "sha256": "307414d7eee597b2acd691051684a95028a18ce4230af39bacafb3e81c7bdf4b"
+  },
+  {
+   "group": "second_program_recount",
+   "path": "work\\F_nuscenes\\recount\\fr_horizon_v02.py",
+   "sha256": "4cdbb6b187a465c5053719653982d6e0b6340baecdf7723f143fd3da5c94163f"
+  },
+  {
+   "group": "second_program_recount",
+   "path": "work\\F_nuscenes\\recount\\fr_run_v01.py",
+   "sha256": "90da60080bc150685b03987bacdcf2dd93d8e2084b711bd4024f897ca455fd0c"
+  },
+  {
+   "group": "second_program_recount",
+   "path": "work\\F_nuscenes\\recount\\fr_synth_v01.py",
+   "sha256": "9c3f283cf40f73f33713268ffb3d9a824d2b47218a41ebd5ec7473a56ff61b03"
+  },
+  {
+   "group": "second_program_recount",
+   "path": "work\\F_nuscenes\\recount\\fr_test_v01.py",
+   "sha256": "f8edcd51695471043ad75010ca922b0128e097c57e51b24b81e7508d28dcf426"
+  },
+  {
+   "group": "second_program_recount",
+   "path": "work\\F_nuscenes\\recount\\fr_test_v02_scripts.py",
+   "sha256": "c2c68a77f1000246ca77b9939d9ea3ff40d9fb7261b9c051342dca918084a2c4"
+  },
+  {
+   "group": "second_program_recount",
+   "path": "work\\F_nuscenes\\recount\\README_RECOUNT.md",
+   "sha256": "6a642b91ee65e1456a26df8ebe531ab98b8dec1f870650623ef004db1d0e8121"
+  },
+  {
+   "group": "second_program_recount_outputs",
+   "path": "work\\F_nuscenes\\recount\\F_RECOUNT_HORIZON_v01.json",
+   "sha256": "fe844ea15bfeb81900a81c7043a2ad6985ea3baa47e9811a001994823a57dbd3"
+  },
+  {
+   "group": "second_program_recount_outputs",
+   "path": "work\\F_nuscenes\\recount\\F_RECOUNT_HORIZON_v02.json",
+   "sha256": "ee1f331e289f42f38167a85515fb08a50abfd150f5f7a75ebb65139fc847132c"
+  },
+  {
+   "group": "pod_double_bootstrap_platform_test",
+   "path": "work\\F_nuscenes\\out\\calib\\test\\F_CALIB_PLATFORM_TEST_design_R_v01.json",
+   "sha256": "af0f3d3bc4e612b69d61a740af9b2e236aac9d8c3c9612fd48b532d11006313e"
+  },
+  {
+   "group": "pod_double_bootstrap_platform_test",
+   "path": "work\\F_nuscenes\\out\\calib\\test\\F_CALIB_PLATFORM_TEST_synth_full_v01.json",
+   "sha256": "2b6c0240be402f7b19933afcf283628ad89a2fb147b11d93ecd0105e5a891734"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\trk_arrays_v01.py",
+   "sha256": "300b42bfb301680cb469784145837f8db8d5241c7e2f63c1c1dc6d58ed55dd1b"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\trk_env_v01.py",
+   "sha256": "0219dd2ed6517109a3c913430a2f30ca756fc01f4f003c1347c4ddd4a9628cad"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\trk_exact_math_v01.py",
+   "sha256": "6a42ece0b2255e4c2ec15a5651ee8ac65671e63cce01895e1ff4227ead86f541"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\trk_filters_v01.py",
+   "sha256": "9edfdd6cb5642c1618d41ccb3def176251074a3beaf703d8589df58018304dbb"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\trk_score_v01.py",
+   "sha256": "1cab6f300ad85fc6007d9b46dae75f41202f010c2080c5987ef06a79921417b4"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\trk_tracker_v01.py",
+   "sha256": "5cf4ad3baf81b614b18facc3fe4b3bc6506f867350d5b6216fce5ed725cfdef8"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\trk_constants_v01.json",
+   "sha256": "d8455cb50b637a3ce45460a0dee38f79b69fce4c085c913f713b56ac23338a9d"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\shims_v01\\hydra\\__init__.py",
+   "sha256": "3e04377812b92d89be393011cf4d00abae149265a96e1d52fa6b9932e8e8f1a9"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\shims_v01\\hydra\\utils.py",
+   "sha256": "ff50ad09edef0ca2a20eeaaca0598468cd58dc3596e5d77c05e8ca761542b88b"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\shims_v01\\lap\\__init__.py",
+   "sha256": "55a6afe044761f06fa0083e91628327c14738917ecc5b8eafb7aba12ce33e192"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\shims_v01\\numba\\__init__.py",
+   "sha256": "ed9de5401ec78ff0e4b37b45abf895a70e79dc4b941890437441c5ce48edae12"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\shims_v01\\omegaconf\\__init__.py",
+   "sha256": "1f8baabb30afacf77a3fcf35171538ba4e19ec70935b500fa9b5c3a3e28c76f9"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\shims_v01\\pyquaternion\\__init__.py",
+   "sha256": "1adeea625407d116c3ffda0cc8ce9a04a8cde60d7299ec1fb033735dbeca700d"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\shims_v01\\shapely\\__init__.py",
+   "sha256": "9562727d4d12ba5da97c724af75f551a0e6670e5e60578107186147e7b532baf"
+  },
+  {
+   "group": "shared_imported",
+   "path": "work\\shared\\trackers\\shims_v01\\shapely\\geometry.py",
+   "sha256": "89a97551c364c96f00a07b90e643ef5273da1179babbb83ed1c6aa1c53436c47"
+  },
+  {
+   "group": "data_logs",
+   "path": "work\\F_nuscenes\\logs\\f00_extract_v01.json",
+   "sha256": "cbb5c2da468c985bb959e975b7250fed885414ddbf75592dfc926641735284f1"
+  },
+  {
+   "group": "data_logs",
+   "path": "work\\F_nuscenes\\logs\\f01_prepare_train_v01.json",
+   "sha256": "1d0dcabb128e94b2395cc85429201aa1e395b5ed40ef3482b094fb88070d9d9c"
+  }
+ ]
+}

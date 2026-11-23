@@ -1,0 +1,15 @@
+{
+ "code": "dr_compare_v01.py",
+ "rule": "A10 sec. 10.1(c): counts exact, values within 1e-09, levels and verdicts equal",
+ "first": "out_a13\\TESTOLD_DRF_RESULTS_v01.json",
+ "second": "recount\\TESTOLD_DRF_RECOUNT_v01.json",
+ "n_keys_compared": 23,
+ "only_first": [],
+ "only_second": [],
+ "allowed_missing": [],
+ "max_abs_diff": 4.163336342344337e-17,
+ "n_float_diffs_within_tol": 8,
+ "differ": [],
+ "agree": true,
+ "written": "2026-11-22 06:47:48"
+}

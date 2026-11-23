@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# array archives belong to the Zenodo record, not to git
+arrays_*.zip
+*.npz
+*.npy
+
+# operating system
+.DS_Store
+Thumbs.db
+desktop.ini

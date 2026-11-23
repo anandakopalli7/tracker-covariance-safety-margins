@@ -1,0 +1,266 @@
+Only in src_v04: e_dropout_v01.py
+diff -ru -x __pycache__ src/e_imm_v01.py src_v04/e_imm_v01.py
+--- src/e_imm_v01.py	2026-11-19 14:58:35.540504100 -0500
++++ src_v04/e_imm_v01.py	2026-11-21 14:10:52.551245500 -0500
+@@ -22,7 +22,7 @@
+ 
+ 
+ class OnlineIMM:
+-    def __init__(self, codex_root=None, variant=VARIANT, const=None):
++    def __init__(self, codex_root=None, variant=VARIANT, const=None, punish_num=None):
+         root = pathlib.Path(codex_root) if codex_root is not None else P149
+         os.environ.setdefault('V13_CODEX_ROOT', str(root))
+         if str(TRK) not in sys.path:
+@@ -32,6 +32,12 @@
+         import trk_tracker_v01 as T
+         self.env = env; self.T = T; self.variant = variant
+         self.trk = T.V13Tracker(variant, const=const, record=True)
++        # E4 (A11 §6d): CANMOT's output.punish_num for this tracker (None = the config of record, unchanged)
++        self.punish_num = None if punish_num is None else int(punish_num)
++        if self.punish_num is not None:
++            assert 1 <= self.punish_num <= 14
++            self.trk.cfg['output']['punish_num'] = self.punish_num
++            self.trk.ot.tracker.punish_num = self.punish_num
+         self.n_events = self.n_algebra = self.n_modes = 0
+ 
+     @property
+@@ -52,4 +58,5 @@
+         return dict(schema='E_IMM_TRACKER_V01', variant=self.variant, library='work\\shared\\trackers (session B), frozen copy in trackers_b',
+                     files={f: (sha(TRK / f) if (TRK / f).exists() else None) for f in FILES},
+                     env=dict(codex=self.env.STATE['codex'], exact_trig=self.env.STATE['exact_trig'], blas=self.env.STATE['blas']),
+-                    imm=self.trk.cfg['v13'].get('imm'), car_filter=self.trk.cfg['v13'].get('car_filter'))
++                    imm=self.trk.cfg['v13'].get('imm'), car_filter=self.trk.cfg['v13'].get('car_filter'),
++                    punish_num=self.trk.ot.tracker.punish_num)
+diff -ru -x __pycache__ src/probe_e_v01.py src_v04/probe_e_v01.py
+--- src/probe_e_v01.py	2026-11-19 17:32:32.706475100 -0500
++++ src_v04/probe_e_v01.py	2026-11-21 14:10:52.543540200 -0500
+@@ -44,6 +44,7 @@
+ from range_noise import NoiseKey,apply_range_noise
+ from sensor_adapter import Sweep,SweepBuffer,reference_world,keyed_seed
+ from online_tracker import OnlineTracker,detector_to_world,planner_actors
++import e_dropout_v01 as edrop
+ from consumer import decode_command
+ from evaluation_geometry import box_from_record,compare_native_vertices,directional_gap
+ 
+@@ -67,13 +68,15 @@
+                 yaw_degrees_lh=float(tr.rotation.yaw),heading_rh=-math.radians(tr.rotation.yaw))
+ 
+ 
+-def run(case_id,out,backup,arm,g,triple,brake_from_k,carla_port):
++def run(case_id,out,backup,arm,g,triple,brake_from_k,carla_port,dropout=None,punish_num=None):
+     # This draft cannot dispatch merely because someone invokes its filename.
+     release=arms.require_release(L/'RELEASE_SMOKE_v01.json')
+     assert os.environ.get('RUNPOD_POD_ID')==release['pod_id'] and release['pod_id']
+     assert case_id in release['authorized_cases'],'Case outside the prospective release'
+     assert type(carla_port) is int and 1024<carla_port<65000,'Invalid CARLA port'
+     knobs=earms.check_knobs(arm,g,triple,brake_from_k)
++    # E4 (A11 §6d): detection dropout. dropout None = E3 behaviour, unchanged (punish_num must then be None too).
++    assert (dropout is None and punish_num is None) or (dropout==edrop.LAW and type(punish_num) is int and 1<=punish_num<=14),'Invalid dropout knobs'
+     emissions=live.ObservationStream()
+     EpisodeBridge,arm_capture_binding=earms.make_capture_class(arm)
+     assert release['source_binding_sha256']==sha(L/'RUNTIME_SOURCE_BINDING_SMOKE_v01.json')
+@@ -182,6 +185,8 @@
+         outcome=Assessment(int(base.frame),case['desired_mps'])
+         reference_sensor=np.eye(4);reference_sensor[:3,:3]=[[0,1,0],[-1,0,0],[0,0,1]];reference_sensor[:3,3]=[1,0,2]
+         execution,arm_method,ectx=earms.build_execution(arm,case,2*ego.bounding_box.extent.x,2*ego.bounding_box.extent.y,geometry['max_steer_rad'],protocol['frames'],**knobs)
++        dropout_record=None if dropout is None else edrop.describe(case_id,protocol['frames'],punish_num)
++        if dropout_record is not None:arm_method=dict(arm_method,dropout=dropout_record)
+         save('ARM_METHOD_v01.json',arm_method)
+         save('ARM_CAPTURE_BINDING_v01.json',arm_capture_binding)
+         episode_id='sensor747development:'+case_id+':'+str(world.id)+':'+str(base.frame)
+@@ -230,8 +235,11 @@
+         with audit_hooks:
+             if imm:
+                 import e_imm_v01
+-                tracker=e_imm_v01.OnlineIMM();save('E_IMM_TRACKER_v01.json',tracker.describe())
+-            else:tracker=OnlineTracker(ints(read(P/'contracts/tracker_config.json')))
++                tracker=e_imm_v01.OnlineIMM(punish_num=punish_num);save('E_IMM_TRACKER_v01.json',tracker.describe())
++            else:
++                tracker_cfg=ints(read(P/'contracts/tracker_config.json'))
++                if punish_num is not None:tracker_cfg['output']['punish_num']=int(punish_num)
++                tracker=OnlineTracker(tracker_cfg)
+             for k in range(protocol['frames']):
+                 fid=world.tick();msg=messages.get(timeout=15);snap=world.get_snapshot()
+                 now,clock_receipt=clock.observe(k,int(msg.frame),int(snap.frame),float(msg.timestamp),float(snap.timestamp.delta_seconds))
+@@ -275,10 +283,14 @@
+                             cloud=buffer.combined(sensor_reference,1,keyed_seed('integration',case['seed'],'lidar','driving_binding92:'+str(k)))
+                             prediction=policy_call('detector',model.predict,cloud,'binding_'+str(k))
+                             model_rows=policy_call('detector_world_conversion',detector_to_world,prediction,sensor_reference)
+-                            tracks=policy_call('tracker',tracker.step,model_rows,now)
++                            masked=dropout_record is not None and bool(dropout_record['mask'][edrop.tick_index(k)])
++                            tracker_rows=[] if masked else model_rows
++                            tracks=policy_call('tracker',tracker.step,tracker_rows,now)
+                             policy_call('emission_metadata',emissions.update,k,int(fid),now,tracks)
+-                            append('detections.jsonl',dict(k=k,frame=fid,time=now,model=model_rows,tracks=tracks,
+-                                combined_hash=hashlib.sha256(cloud.tobytes()).hexdigest(),inference_s=prediction['inference_s']))
++                            det_record=dict(k=k,frame=fid,time=now,model=model_rows,tracks=tracks,
++                                combined_hash=hashlib.sha256(cloud.tobytes()).hexdigest(),inference_s=prediction['inference_s'])
++                            if dropout_record is not None:det_record.update(masked=masked,tracker_rows=len(tracker_rows))
++                            append('detections.jsonl',det_record)
+                             for i,(name,items) in enumerate([('filter_events.jsonl',events),('filter_target_covariances.jsonl',targets),('filter_algebra.jsonl',algebra)]):
+                                 for item in items[counts[i]:]:append(name,item)
+                                 counts[i]=len(items)
+@@ -367,6 +379,8 @@
+     ap.add_argument('--triple',default=None,help='E_PS: g_before,g_braking,g_stopped (grid values)')
+     ap.add_argument('--brake-from-k',type=int,default=None,help='E_BRAKE: first forced-fallback decision tick (default 199)')
+     ap.add_argument('--carla-port',type=int,default=2000)
++    ap.add_argument('--dropout',default=None,choices=['A11D'],help='E4 (A11 §6d): the shared detection-dropout law')
++    ap.add_argument('--punish-num',type=int,default=None,help='E4: CANMOT output.punish_num (all arms), 1..14 (< car deletion age 15)')
+     args=ap.parse_args();backup=args.backup if args.backup is not None else args.out.with_name(args.out.name+'.local_copy')
+     triple=None if args.triple is None else [float(x) for x in args.triple.split(',')]
+-    run(args.case,args.out,backup,args.arm,args.g,triple,args.brake_from_k,args.carla_port)
++    run(args.case,args.out,backup,args.arm,args.g,triple,args.brake_from_k,args.carla_port,args.dropout,args.punish_num)
+diff -ru -x __pycache__ src/review/review_case_e_v01.py src_v04/review/review_case_e_v01.py
+--- src/review/review_case_e_v01.py	2026-11-19 14:52:23.496178900 -0500
++++ src_v04/review/review_case_e_v01.py	2026-11-21 14:10:52.565311800 -0500
+@@ -29,7 +29,21 @@
+         need(r['tick']==d['tick'] and r['arm']==method['arm'],'E record tick or arm differs')
+         need([float(x) for x in r['targets']]==[float(x) for x in d['output']['targets']] and bool(r['fallback'])==bool(d['output']['fallback']),'E record selection differs')
+         need(d['alpha']==method['alpha'] and d['beta']==0.,'Decision alpha/beta differ from the E method')
+-    return dict(status='PASS_E_RECORD',arm=method['arm'],tracker=method['tracker'],assessment_decisions=len(decs),
++    dropout=None
++    if method.get('dropout') is not None:
++        # E4 (A11 §6d): the run followed the pre-registered mask law, on every detector update tick
++        sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]))
++        import e_dropout_v01 as edrop
++        d=method['dropout'];contract=json.loads((folder/'contract.json').read_text())
++        need(d['law']==edrop.LAW and type(d['punish_num']) is int and 1<=d['punish_num']<=14 and d['case_id']==contract['case']['id'],'Dropout record differs from the law or the case')
++        mask,windows=edrop.mask_for_case(d['case_id'],d['n_updates'])
++        need(d['mask']==[int(x) for x in mask] and d['windows']==[list(w) for w in windows] and d['seed']==edrop.seed_for(d['case_id']),'Recorded mask differs from the law')
++        dets=lines(folder/'detections.jsonl')
++        for r in dets:
++            i=edrop.tick_index(r['k']);need(bool(r.get('masked'))==bool(mask[i]),'Detector tick masked flag differs from the law')
++            need(r.get('tracker_rows')==(0 if mask[i] else len(r['model'])),'Tracker input differs from the mask')
++        dropout=dict(masked_ticks=int(sum(mask[:len(dets)])),detector_updates=len(dets),windows=len(windows),punish_num=d['punish_num'])
++    return dict(status='PASS_E_RECORD',arm=method['arm'],tracker=method['tracker'],assessment_decisions=len(decs),dropout=dropout,
+         fallbacks=sum(bool(d['output']['fallback']) for d in decs),policy_failure=(folder/'policy_failure.json').exists(),
+         native_intervals_replayed=False,native_origins_replayed=False,laptop_replay='package E tests')
+ 
+Only in src_v04/review: review_perception_prefix_v01.py
+diff -ru -x __pycache__ src/worker_main_v01.py src_v04/worker_main_v01.py
+--- src/worker_main_v01.py	2026-11-19 14:53:10.613452000 -0500
++++ src_v04/worker_main_v01.py	2026-11-21 14:10:52.558169000 -0500
+@@ -38,7 +38,7 @@
+ E_ARMS=('E_Z','E_F0','E_N','E_CK3','E_TG','E_PS','E_F0_IMM','E_N_IMM','E_BRAKE')
+ ARMS=OLD_ARMS+E_ARMS
+ JOB_FIELDS={'id','case','arm','alpha','beta','kappa','phase','role','scenario','keep_raw','reference','note','knob','history','history_model','history_model_sha256',
+-            'g','triple','brake_from_k','level','tracker'}
++            'g','triple','brake_from_k','level','tracker','dropout','punish_num'}
+ read=lambda p:json.loads(pathlib.Path(p).read_bytes())
+ def now():return datetime.datetime.now(datetime.timezone.utc)
+ 
+@@ -93,7 +93,10 @@
+             elif j['arm'] in ('E_Z','E_BRAKE'):assert j.get('g') in (None,0,0.) and j.get('triple') is None,j['id']
+             else:assert j.get('g') is not None and float(j['g'])>=0 and j.get('triple') is None,j['id']
+             if j['arm']!='E_BRAKE':assert j.get('brake_from_k') is None,j['id']
+-        else:assert all(j.get(k) is None for k in ('g','triple','brake_from_k')),j['id']
++            # E4 (A11 §6d): both dropout knobs or neither; only the four E4 arms
++            if j.get('dropout') is not None or j.get('punish_num') is not None:
++                assert j.get('dropout')=='A11D' and type(j.get('punish_num')) is int and 1<=j['punish_num']<=14 and j['arm'] in ('E_F0','E_N','E_F0_IMM','E_N_IMM'),'Invalid dropout knobs: '+j['id']
++        else:assert all(j.get(k) is None for k in ('g','triple','brake_from_k','dropout','punish_num')),j['id']
+     return cfg
+ 
+ 
+@@ -113,6 +116,7 @@
+         if job.get('g') is not None and job['arm'] not in ('E_Z','E_BRAKE'):args+=['--g',repr(float(job['g']))]
+         if job.get('triple') is not None:args+=['--triple',','.join(repr(float(x)) for x in job['triple'])]
+         if job.get('brake_from_k') is not None:args+=['--brake-from-k',str(int(job['brake_from_k']))]
++        if job.get('dropout') is not None:args+=['--dropout',str(job['dropout']),'--punish-num',str(int(job['punish_num']))]
+     return args
+ 
+ 
+@@ -282,7 +286,7 @@
+     return dict(schema='CLAUDE_MAIN_SUMMARY_V01',status=status,job=job['id'],attempt=attempt,run_id=rid,capture_launched=launch is not None,case=job['case'],arm=job['arm'],
+         phase=job.get('phase'),role=job.get('role'),scenario=job.get('scenario'),knob=job.get('knob'),keep_raw=bool(job.get('keep_raw')),
+         history=job.get('history','off'),history_model=job.get('history_model'),history_model_sha256=job.get('history_model_sha256'),
+-        knobs={k:job.get(k) for k in ('alpha','beta','kappa')},e_job={k:job.get(k) for k in ('g','triple','brake_from_k','level','tracker')},
++        knobs={k:job.get(k) for k in ('alpha','beta','kappa')},e_job={k:job.get(k) for k in ('g','triple','brake_from_k','level','tracker','dropout','punish_num')},
+         port=port,pod_id=os.environ.get('RUNPOD_POD_ID'),
+         method=opt(out/'ARM_METHOD_v01.json'),assessment_outcomes=outcome,outcome_accounting=accounting,S_T_reader_agree=agree,
+         decision_count=calls,fallback_count=fallbacks,capture_wall_seconds=wall,capture_exit=capture_rc,review_exit=review_rc,actor_review_exit=actor_rc,
+--- packets/packet_e_v03/claude_smoke_v01/review/review_perception_prefix_v01.py	2026-11-09 20:28:04.884545300 -0500
++++ src_v04/review/review_perception_prefix_v01.py	2026-11-21 14:10:52.565970000 -0500
+@@ -116,9 +116,18 @@
+                 predicted=backend.predict(cloud,'binding_'+str(k));model=replay.detector_to_world(predicted,R)
+                 need(model==expected['model'],'Same-runtime detector output differs')
+             else:model=expected['model']
+-            rebuilt.append(dict(expected,model=model))
++            # E4 (A11 §6d): a masked tick ran the detector (checked above) but fed the tracker no rows; replay the same
++            if expected.get('masked'):
++                need(expected.get('tracker_rows')==0,'Masked tick fed rows to the tracker')
++                rebuilt.append(dict(expected,model=[]))
++            else:
++                need(expected.get('tracker_rows',len(model))==len(model),'Unmasked tick tracker input differs')
++                rebuilt.append(dict(expected,model=model))
+     need(len(rebuilt)==len(detections),'Incomplete successful detector prefix replay')
+-    tracker=replay.replay_tracker(rebuilt,json.loads((replay.P/'contracts/tracker_config.json').read_text()))
++    tracker_cfg=json.loads((replay.P/'contracts/tracker_config.json').read_text())
++    e4=json.loads((args.folder/'ARM_METHOD_v01.json').read_text()).get('dropout') if (args.folder/'ARM_METHOD_v01.json').exists() else None
++    if e4 is not None:tracker_cfg['output']['punish_num']=int(e4['punish_num'])   # E4: the run's output rule (all arms)
++    tracker=replay.replay_tracker(rebuilt,tracker_cfg)
+     for key,name in [('events','filter_events.jsonl'),('targets','filter_target_covariances.jsonl'),('algebra','filter_algebra.jsonl')]:
+         need(tracker[key]==evidence.lines(name,optional=True),'Tracker '+key+' differs')
+     evidence.finish()
+=== new file e_dropout_v01.py ===
+"""A11 §6d / F's D: the detection-dropout mask, one rule shared by package E (closed loop, set E4) and package F (open loop).
+
+Writer: session E (Claude Opus 5.5), 21 Nov 2026. The law, A11 §6c "One mask law for D and §6d" (final wording, about 14:00
+EST by the laptop clock; gap row added about 14:08), implemented exactly:
+  - seed per run: rng = numpy.random.default_rng(int.from_bytes(hashlib.sha256(("A11/D/" + case_id).encode()).digest()[:8], "big"))
+    (the same integer as int(hexdigest()[:16], 16)); case_id is the protocol case id, e.g. c1109_eval_0480;
+  - rows: the run's 2 Hz detector update ticks in order, i = 0, 1, 2, ...; row 0 is never masked (and draws nothing);
+  - from row 1 on, at each row not inside a window, draw u = rng.random(); if u < 0.10, draw L = rng.integers(1, 4) (uniform on
+    {1, 2, 3}) and mask rows i .. i+L-1; a window is cut at the run's end; rows inside a window draw nothing;
+  - the row right after a window is never masked and draws nothing; draws resume at the row after it. Every masked stretch is
+    therefore 1-3 rows (0.5-1.5 s).
+In the closed loop, row i is sim frame k = 19 + 10 i (the probe's detector condition k >= 19 and k % 10 == 9). The mask depends
+on the case only: every arm of a case sees the same mask. Draws do not depend on the number of rows (truncation only).
+"""
+import hashlib
+
+import numpy as np
+
+LAW = 'A11D'
+P_START = 0.10
+L_MIN, L_MAX = 1, 3
+FIRST_K, PERIOD_K = 19, 10
+SEED_PREFIX = 'A11/D/'
+
+
+def seed_for(case_id):
+    return int.from_bytes(hashlib.sha256((SEED_PREFIX + str(case_id)).encode()).digest()[:8], 'big')
+
+
+def mask_for_case(case_id, n_ticks):
+    """Returns (mask, windows): mask[i] True when update tick i is dropped; windows = [(start tick, length)] in draw order
+    (a window may run past n_ticks; its length is the drawn L, its masked ticks are truncated at n_ticks)."""
+    assert type(n_ticks) is int and n_ticks >= 0
+    rng = np.random.default_rng(seed_for(case_id))
+    mask = [False] * n_ticks; windows = []; i = 1                 # row 0 is never masked and draws nothing
+    while i < n_ticks:
+        u = rng.random()
+        if u < P_START:
+            L = int(rng.integers(L_MIN, L_MAX + 1))
+            for j in range(i, min(i + L, n_ticks)):                # a window is cut at the run's end
+                mask[j] = True
+            windows.append((i, L)); i += L + 1                     # the row after a window: unmasked, no draw
+        else:
+            i += 1
+    return mask, windows
+
+
+def n_updates(frames):
+    """Number of detector update ticks k = 19 + 10 i with k < frames."""
+    return 0 if frames <= FIRST_K else (frames - 1 - FIRST_K) // PERIOD_K + 1
+
+
+def tick_index(k):
+    assert k >= FIRST_K and (k - FIRST_K) % PERIOD_K == 0, k
+    return (k - FIRST_K) // PERIOD_K
+
+
+def describe(case_id, frames, punish_num):
+    n = n_updates(frames); mask, windows = mask_for_case(case_id, n)
+    return dict(schema='E4_DROPOUT_V01', law=LAW, p_start=P_START, length_ticks=[L_MIN, L_MAX], seed_rule='default_rng(int.from_bytes(sha256(("A11/D/" + case_id).encode()).digest()[:8], "big")); row 0 unmasked; gap row after each window (A11 §6c)',
+                case_id=str(case_id), seed=seed_for(case_id), first_k=FIRST_K, period_k=PERIOD_K, n_updates=n,
+                mask=[int(x) for x in mask], windows=[list(w) for w in windows], masked_ticks=int(sum(mask)), punish_num=int(punish_num))

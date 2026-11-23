@@ -1,0 +1,427 @@
+{
+ "values": {
+  "DR.n_runs": 105.0,
+  "DR.n_dec": 21574.0,
+  "DR.n_in_dropout": 3644.0,
+  "DR.R_gl": 5.633301002173703,
+  "DR.R_gl.ci": [
+   5.031127761049514,
+   6.234109095341825
+  ],
+  "DR.R_gl.level": 0.95,
+  "DR.R_gl.share_pos": 1.0,
+  "DR.R_deceq": 1215.3283582089548,
+  "DR.R_deceq.ci": [
+   1055.2537313432833,
+   1375.1854477611935
+  ],
+  "DR.c": 0.3981766899595139,
+  "DR.c.ci": [
+   0.3150526970537796,
+   0.4729062109505858
+  ],
+  "DR.c.level": 0.95,
+  "DR.cdiff": 0.25309377315468656,
+  "DR.cdiff.ci": [
+   0.21354209785322428,
+   0.2955409094176667
+  ],
+  "DR.cdiff.level": 0.95,
+  "DR.r": 0.028266627367662667,
+  "DR.r.ci": [
+   0.006377977572614278,
+   0.049649230657318764
+  ],
+  "DR.r.level": 0.95,
+  "DR.eff": 0.07099016110294347,
+  "DR.eff.ci": [
+   0.016437996451853013,
+   0.1293507349891999
+  ],
+  "DR.m": 0.7415885879984628,
+  "DR.A": 1.0326619427268777,
+  "DR.within5": 0.8049087898097301,
+  "DR.barely_varies": false,
+  "DR.DR0.passes": true,
+  "DR.DR1.passes": true,
+  "DR.DR2.class": "recovers",
+  "DR.DR2.passes": true,
+  "DR.in.R_gl": 7.66775343917078,
+  "DR.in.R_gl.ci": [
+   5.891396637497423,
+   9.574775295401512
+  ],
+  "DR.in.RR_N": -0.0031337915316406147,
+  "DR.in.RR_N.ci": [
+   -0.02040894300274297,
+   0.014858146801306727
+  ],
+  "DR.in.c": 0.3646059613261633,
+  "DR.in.c.ci": [
+   0.2620765232712452,
+   0.45393301358496596
+  ],
+  "DR.in.within5": 0.3383908890521675,
+  "DR.n_gap_row": 1837.0,
+  "DR.ig.R_gl": 7.166321285381156,
+  "DR.ig.R_gl.ci": [
+   5.647112389084269,
+   8.75305009677127
+  ],
+  "DR.ig.RR_N": 0.029955668144395216,
+  "DR.ig.RR_N.ci": [
+   -0.0025376335171245433,
+   0.0629739670383252
+  ],
+  "DR.ig.c": 0.38130462317922736,
+  "DR.ig.c.ci": [
+   0.2893722245379512,
+   0.4644391142270409
+  ],
+  "DR.reas.in.n": 3644.0,
+  "DR.reas.in.lead_found": 3549.0,
+  "DR.reas.in.new_track": 5.0,
+  "DR.reas.in.no_pre_lead": 182.0,
+  "DR.reas.gap.n": 1837.0,
+  "DR.reas.gap.lead_found": 1837.0,
+  "DR.reas.gap.new_track": 35.0,
+  "DR.reas.gap.no_pre_lead": 190.0,
+  "DR.ref3.R_gl": 5.585980360550083,
+  "DR.ref3.R_gl.ci": [
+   4.995574952374577,
+   6.175839044018648
+  ],
+  "DR.ref3.RR_N": -0.0006027354280453593,
+  "DR.ref3.RR_N.ci": [
+   -0.0019301458738119734,
+   0.0006268367452205951
+  ],
+  "DR.D_N_deceq": 34.353233830845774,
+  "DR.D_N_deceq.ci": [
+   7.7064676616915415,
+   59.74639303482587
+  ],
+  "DR.masked_share": 0.16686592655849702,
+  "DR.rec.RR_N": 0.028481388257924577,
+  "DR.rec.RR_N.ci": [
+   0.006597189137315032,
+   0.0498016891571014
+  ],
+  "DR.dec_in_share": 0.16890701770649857,
+  "DR.pbar.vehicle": [
+   [
+    0.4241056841781823,
+    -0.0015626010143681215,
+    0.2537638585789688,
+    -0.000868619454317743
+   ],
+   [
+    -0.0015626010143681215,
+    0.24949074054646125,
+    -0.0014160084684515985,
+    0.10555565679127585
+   ],
+   [
+    0.2537638585789688,
+    -0.0014160084684515975,
+    1.0031567148963807,
+    -0.0035276058879513306
+   ],
+   [
+    -0.0008686194543177428,
+    0.10555565679127585,
+    -0.0035276058879513306,
+    0.3679906161859632
+   ]
+  ],
+  "DR.pbar.pedestrian": [
+   [
+    0.41101915756463864,
+    0.021667425707349995,
+    0.16652702779927964,
+    0.012293315650916958
+   ],
+   [
+    0.021667425707349985,
+    0.11434576746765603,
+    0.012022998819427878,
+    0.04871535871245424
+   ],
+   [
+    0.16652702779927964,
+    0.012022998819427878,
+    0.5819825488190646,
+    0.02853138018254824
+   ],
+   [
+    0.01229331565091697,
+    0.04871535871245424,
+    0.028531380182548225,
+    0.14709279673730621
+   ]
+  ],
+  "DR.pbar.cnt_vehicle": 21002.0,
+  "DR.pbar.cnt_pedestrian": 2233.0,
+  "DR.masks_identical": true,
+  "DR.posthoc.count_r_le0_or_nan": 102.0,
+  "DR.posthoc.n_nan_r": 0.0,
+  "DR.posthoc.n_resamples": 20000.0,
+  "DR.posthoc.p_r": 0.005149742512874356
+ },
+ "details": {
+  "mode": {
+   "test_old": false,
+   "quick": false,
+   "nboot": 20000,
+   "nout": 2000,
+   "ninn": 1000,
+   "nmc": 2000,
+   "numba": true
+  },
+  "run_ids_first_last": [
+   "pc13_c1109_eval_0000_native",
+   "pc13_c1109_eval_0720_native"
+  ],
+  "seeds": {
+   "boot": 20261911,
+   "outer": 20261912,
+   "inner1": 20261913,
+   "inner2": 20261914,
+   "perm": 20261915,
+   "mc": 20261920
+  },
+  "delta": 0.05,
+  "confirmed": {
+   "DR0": true,
+   "DR1": true,
+   "DR2": true
+  },
+  "theta": {
+   "R_gl": 5.633301002173703,
+   "c": 0.3981766899595139,
+   "cdiff": 0.25309377315468656,
+   "r": 0.028266627367662667
+  },
+  "full_D": [
+   NaN,
+   1132.2935014369143,
+   450.8528784648186,
+   164.27644386761847,
+   32.00611847594327
+  ],
+  "share_D_pos": 1.0,
+  "n_resamples_finite_D": 20000,
+  "n_resamples_D_le0": 0,
+  "ratio_summary_all": {
+   "n": 313397,
+   "m": 0.7415885879984628,
+   "q05": 0.7377537386556411,
+   "q95": 2.2693743626287906,
+   "A": 1.0326619427268777,
+   "within5": 0.8049087898097301
+  },
+  "ratio_summary_in": {
+   "n": 54440,
+   "m": 2.265562338511204,
+   "q05": 1.5863863246173588,
+   "q95": 2.91834754170595,
+   "A": 0.2939581918465062,
+   "within5": 0.3383908890521675
+  },
+  "n_decisions_without_rank_rows": 282,
+  "alt_u_all_n": {
+   "note": "diagnostic: u_i = (rank - 0.5)/n with n = ALL evaluated decisions (previous reading), instead of n_r = decisions that have an r_i",
+   "c": 0.3985737736459244,
+   "cdiff": 0.25337623474605087
+  },
+  "des_nonconstant_runs": [],
+  "masks": {
+   "mode": "regenerated from the case id and compared with DR_MASKS_v02.json",
+   "identical": true,
+   "mismatches": []
+  },
+  "mask_shares": {
+   "fresh_frames": {
+    "masked": 977,
+    "frames": 5855,
+    "share": 0.16686592655849702
+   },
+   "tuning_frames": {
+    "masked": 1147,
+    "frames": 7398,
+    "share": 0.1550419032170857
+   },
+   "file_totals": {
+    "fresh": {
+     "masked": 977,
+     "frames": 5855,
+     "windows": 493,
+     "max_stretch": 3
+    },
+    "tuning": {
+     "masked": 1147,
+     "frames": 7398,
+     "windows": 583,
+     "max_stretch": 3
+    }
+   }
+  },
+  "ref3": {
+   "evaluated_equal_DR": true
+  },
+  "n_in_plus_gap": 5481,
+  "evaluated_decisions_masked_share": 0.16890701770649857,
+  "in_dropout_by_dr_age": {
+   "0": 0,
+   "1": 1817,
+   "2": 1236,
+   "3": 591
+  },
+  "rec": {
+   "point": 0.028481388257924577,
+   "DR_vs_DRrec_same": {
+    "cE": true,
+    "cN": true,
+    "clear": true,
+    "vbar": true,
+    "idx55": true,
+    "k": true,
+    "dr_masked": true,
+    "dr_age": true
+   },
+   "cE_cN_equal_in_rec_file": true
+  },
+  "calibration": {
+   "seed1": {},
+   "seed2": null,
+   "final": {
+    "R_gl": {
+     "level": 0.95,
+     "why": "post hoc: calibration skipped, nominal 95%",
+     "second_seed_level": null
+    },
+    "c": {
+     "level": 0.95,
+     "why": "post hoc: calibration skipped, nominal 95%",
+     "second_seed_level": null
+    },
+    "cdiff": {
+     "level": 0.95,
+     "why": "post hoc: calibration skipped, nominal 95%",
+     "second_seed_level": null
+    },
+    "r": {
+     "level": 0.95,
+     "why": "post hoc: calibration skipped, nominal 95%",
+     "second_seed_level": null
+    }
+   },
+   "levels_grid": [
+    0.95,
+    0.9505,
+    0.951,
+    0.9515,
+    0.952,
+    0.9525,
+    0.953,
+    0.9535,
+    0.954,
+    0.9545,
+    0.955,
+    0.9555,
+    0.956,
+    0.9565,
+    0.957,
+    0.9575,
+    0.958,
+    0.9585,
+    0.959,
+    0.9595,
+    0.96,
+    0.9605,
+    0.961,
+    0.9615,
+    0.962,
+    0.9625,
+    0.963,
+    0.9635,
+    0.964,
+    0.9645,
+    0.965,
+    0.9655,
+    0.966,
+    0.9665,
+    0.967,
+    0.9675,
+    0.968,
+    0.9685,
+    0.969,
+    0.9695,
+    0.97,
+    0.9705,
+    0.971,
+    0.9715,
+    0.972,
+    0.9725,
+    0.973,
+    0.9735,
+    0.974,
+    0.9745,
+    0.975,
+    0.9755,
+    0.976,
+    0.9765,
+    0.977,
+    0.9775,
+    0.978,
+    0.9785,
+    0.979,
+    0.9795,
+    0.98,
+    0.9805,
+    0.981,
+    0.9815,
+    0.982,
+    0.9825,
+    0.983,
+    0.9835,
+    0.984,
+    0.9845,
+    0.985,
+    0.9855,
+    0.986,
+    0.9865,
+    0.987,
+    0.9875,
+    0.988,
+    0.9885,
+    0.989,
+    0.9895,
+    0.99,
+    0.9905,
+    0.991,
+    0.9915,
+    0.992,
+    0.9925,
+    0.993,
+    0.9935,
+    0.994,
+    0.9945,
+    0.995
+   ]
+  },
+  "pbar": {
+   "n_files": 120,
+   "names_first_last": [
+    "p2_c1109_tune_0000_fixed_c1_pbar.npz",
+    "p2_c1109_tune_0119_fixed_c1_pbar.npz"
+   ]
+  },
+  "note_option2_lead_absent_share": "not computed (option 2 only; needs the tracker outputs)",
+  "lock": "ARS_TRIAL\\revision_v13\\LOCK_A11c.txt",
+  "library": "<library folder>\\optA_lib_v02.py",
+  "library_sha256": "b32a619a07f494e919f8d0bf112c8df4bed0957f051412c73819982a9a3f9898",
+  "code_sha256": "af1e0f42ac40ae514b8913f2f4422a6cf857bdfdf5d685e72090ae9cea042bd5",
+  "seconds": 236.98591804504395
+ }
+}

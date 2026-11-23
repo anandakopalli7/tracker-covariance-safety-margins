@@ -1,0 +1,11 @@
+MANUSCRIPT_v10.md <- MANUSCRIPT_DRAFT_v10.md (sha256 93cd88b1ae2c78eb; HTML comments removed)
+SUPPLEMENT_v10.md <- SUPPLEMENT_DRAFT_v10.md (sha256 73cc8e9df70fa9a1; HTML comments removed)
+SUPPLEMENT_FULL_CAPTIONS_v10.md <- SUPPLEMENT_CAPTIONS_v10.md (sha256 42a5edf8d0d79e2f; HTML comments removed)
+figures/fig1_method_v05.png
+figures/fig2_frontiers_v04.png
+figures/fig3_rr_v02.png
+figures/fig4_commitment_v04.png
+figures/fig5_closedloop_v04.png
+figures/figS1_nis_v04.png
+figures/figS2_hull_v04.png
+fig5_closedloop is printed as Fig. S3; figS1/figS2 as Figs. S1/S2.

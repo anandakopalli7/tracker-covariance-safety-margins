@@ -1,0 +1,17 @@
+{
+ "code": "b_tu_tg_v03.py --test-old",
+ "run": {
+  "run": "p1b_fit_finite_0012",
+  "n_dec": 300,
+  "cF0_cells_differ": 0,
+  "identity": true,
+  "seconds": 26.4
+ },
+ "identical_to_v12_out_tg": {
+  "cTG1": true,
+  "cTG2": true,
+  "cTG4": true
+ },
+ "k_equal": true,
+ "written": "2026-11-21 02:30:47"
+}

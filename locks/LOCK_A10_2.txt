@@ -1,0 +1,50 @@
+LOCK_A10_2 (stage 1 of Lock 2, AMENDMENT_10_v13.md section 4)
+written: 2026-11-20T03:41:21-05:00 by the coordinating session (Claude Opus 5.5), with shared/tools/make_lock2_v01.py (sha256 2cfb9dfd6d2b652a394f11286378b04e57eb5102d1046abf056ba96462276754)
+
+Freeze manifests, re-verified now:
+[B] layered 4 manifest(s): 90 files, 90 match
+  locks\FREEZE_B.json  sha256 1fc9bb7c05b784ae399c9856d76725d0f34ffca6d4d33b3c99214bdec07d8152
+  locks\FREEZE_B_add1.json  sha256 9b71225a10645bfd28b2e43a2a05578f6131ed6ec8443f14125672d480927ad6
+  locks\FREEZE_B_add2.json  sha256 6ffc5cd975b5ba91c597a1f989a1c649ca4bbbcf2244642577484f4b4341c39b
+  locks\FREEZE_B_add3.json  sha256 549ac106adb20e6eb9cae16088c231665c6f006fada64ec3eea15d1025970831
+[CD (core)] layered 1 manifest(s): 139 files, 139 match
+  locks\FREEZE_CD.json  sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7
+[E] layered 7 manifest(s): 133 files, 132 match
+  locks\FREEZE_E.json  sha256 0a613b6471dfd293a51d1a3e0557e6a830e519759cc65186c033186f4c27da98
+  locks\FREEZE_E_ADDENDUM_v01.json  sha256 49d37ef51622f182e5246973dc8913e81044f1805bd773ff06037f30ab1b053f
+  locks\FREEZE_E_ADDENDUM_v02.json  sha256 1527b1d5a8d018eed376150879a3809a5a29c144ecf9424907d39bd2674b24b0
+  locks\FREEZE_E_ADDENDUM_v03.json  sha256 5c33a8c823ae06f61025184c920f8fba369193d9f33e815b5d603e2899d5dc7e
+  locks\FREEZE_E_ADDENDUM_v04.json  sha256 3da1587103a0f558030b084a2beeb0d46bcc729c8466e8e634406ab0b138ebaa
+  locks\FREEZE_E_ADDENDUM_v05.json  sha256 fe5bc4dc03dabf670a2505058be2ad796cbced684da67b41447f57cbbf98ea25
+  locks\FREEZE_E_ADDENDUM_v06.json  sha256 507f920efdccf7517d4bedc6732b6d537f44fabd95af31bba26f185ff6754b61
+  excluded (living status note, mismatch): E_closedloop/STATUS.md
+[F] layered 1 manifest(s): 332 files, 332 match
+  locks\FREEZE_F.json  sha256 79a5bd03efb9cc7a01673fc2f86f7b59571836a838311ad737ccf71368b7769f
+
+Other files:
+  LOCK_A10_1.txt  sha256 2fe694042145f565fe2800e0679a22a3f2d85fa17c6bbef4680b4af662101581
+  AMENDMENT_10_v13.md  sha256 85787f3d75a84057eaadfedaeb80b4c440f3f56ed02fc97e77aa61174abb8f6b
+  work\locks\LOCK_A10_2b.txt  sha256 81d3a77ada225718987d745e7ee2faaa4ef49c3c5e50b7a2ab81ade76cd5e867
+  work\locks\LOCK_A10_2b_NOTE_v01.txt  sha256 744ce80d7fa83e3e25ef0054ef52175a821f5fde3f1290285b8810b74cab0a68
+  work\F_nuscenes\notes\F_DEPARTURE_CLEARANCE_v01.md  sha256 a0be0de7e462281a7e8b95b6b0acf31dd99cdbc38299b6214edd08ad3bd18259
+  work\F_nuscenes\out\F_HORIZON_RULE_v01.json  sha256 b431314755deabc29439ec8f340f7905586641dbcb044e3dae202cb8d76340e2
+  work\F_nuscenes\out\F_HORIZON_RULE_v02.json  sha256 6b7dfe2cf7b478176e590792830a527c0dfee7f583ce793cdfa660ade7a8a163
+
+Values A10 section 4 asks the lock to record (copied from the frozen files):
+  tuned_constants (FREEZE_B.json): {"R_car_diag": {"R_x": 0.046851677873796724, "R_y": 0.005920073314371262, "R_vx": 0.26689842565895483, "R_vy": 0.044646723127441834}, "kappa": 0.16788040181225605, "sigma_a2": 0.001, "ca_acc_init_var": 10.0, "tuning": {"R": {"n_boxes": 4933, "runs": 120, "rule": "A10 B3 (1)"}, "kappa": {"median_lead_nis": 1.9944344860529792, "window_reached": true, "j_first_sign_change": 44, "rule": "A10 B3 (2)"}, "sigma_a2": {"median_lead_nis": 1.634454782498468, "window_reached": false, "status": "no sign change on the grid; nearest grid value taken", "rule": "A10 B4 (B3 rule (2)); window not reachable: nearest grid value"}}}
+  b4_filter_class (FREEZE_B.json): "CANMOT LinearKalmanFilter arithmetic (world-frame noise); ExtendedKalmanFilterRotate cannot take the CA model unchanged (code check, spec section 4)"
+  cut_in_lateral_threshold_m (FREEZE_B.json): 1.75
+  imm (FREEZE_B.json): {"transition_diag_per_0p5s": 0.95, "sensitivities": [0.9, 0.98], "mu0": [0.9, 0.1]}
+  E matched settings: "LOCK_A10_2b.txt (hash above), with LOCK_A10_2b_NOTE_v01.txt on PS"
+  F route: "F-B, nuScenes (A10 section 0.3)"
+  F split (F_HORIZON_RULE_v02.json): "train (design split)"
+  F primary horizon s (F_HORIZON_RULE_v02.json, under the disclosed clearance departure): 3
+
+Two-stage rule (README_COORDINATION.md, 20 Nov 01:53 EST; A10 section 11 departure, Table S4):
+  - This lock covers every package's code except CD's section 5.7 additions (FREEZE_CD_2*).
+  - Until LOCK_A10_2c.txt exists, no fresh C or D value and no fresh B value (Table III, TU, B6) is computed;
+    frozen extractors and B's frozen re-tracking may write arrays that nobody reads;
+    B's five-run second-IMM check (stage-1 code) may run.
+  - E, F and the stage-1 parts start now.
+
+State: per each package's report and the gates in its code, no value of fresh, held-out or closed-loop data had been computed when this lock was written.

@@ -1,0 +1,105 @@
+{
+ "package": "X",
+ "written": "2026-11-22T00:30:54.459759+00:00",
+ "program": "make_export_xy_v13.py (second)",
+ "program_sha256": "1e9139a60517c3ac6a00fb07efce87c6b980f4ac6e18e683f8243c256a969012",
+ "lock_sha256": "7ee8d706a9579c677accab6bab014c3c38acfca43d8e2628e2af81b5c853959f",
+ "values": {
+  "X.PC.status": "ran",
+  "X.PC.n_runs": 390,
+  "X.PC.n_dec": 105419,
+  "X.PC.R": 0.16177566525694037,
+  "X.PC.R.ci": [
+   0.10792536622666841,
+   0.23292137195106372
+  ],
+  "X.PC.R.pos_share": 1.0,
+  "X.PC.R.dec": 170.54228855721396,
+  "X.PC.RR_E5N": 0.6949735989964699,
+  "X.PC.RR_E5N.ci": [
+   0.5311009406654971,
+   0.899093575242159
+  ],
+  "X.PC.RR_E5NmP": 0.5913533066892265,
+  "X.PC.RR_E5NmP.ci": [
+   0.3815598276803878,
+   0.9407736677326014
+  ],
+  "X.PC.RR_N": -0.06747571399399048,
+  "X.PC.RR_N.ci": [
+   -0.22101577292103838,
+   0.03389203748360463
+  ],
+  "X.PC.within5": 0.1132522468598791,
+  "X.PC.eff": null,
+  "X.PC.eff.ci": null,
+  "X.PC.RR_N.dec": -11.507462686567164,
+  "X.PC.PO25": 0.3273432713906473,
+  "X.PC.PO50": 0.6756614837072259,
+  "X.PC.PO75": 0.8923247469296068,
+  "X.PC.R.level": 0.95,
+  "X.PC.R.share_pos": 1.0,
+  "X.PC.RR_E5N.level": 0.99,
+  "X.PC.RR_E5NmP.level": 0.95,
+  "X.PC.RR_E5rec": 0.06552116456139324,
+  "X.PC.RR_E5rec.ci": [
+   0.04860938347813059,
+   0.08528150464469031
+  ],
+  "X.PC.RR_E5rec.level": 0.95,
+  "X.PC.RR_E5recmP": 0.04212491612940868,
+  "X.PC.RR_E5recmP.ci": [
+   0.026604949693566263,
+   0.060444034409846026
+  ],
+  "X.PC.RR_E5recmP.level": 0.95,
+  "X.PC.RR_N.inside_delta": false,
+  "X.PC.RR_N.level": 0.95,
+  "X.PC.X0": true,
+  "X.PC.X0.confirmed": true,
+  "X.PC.X1": true,
+  "X.PC.X1.confirmed": true,
+  "X.PC.X2": true,
+  "X.PC.X2.class": "uninformative variation",
+  "X.PC.X2.confirmed": true,
+  "X.PC.X2.eff": null,
+  "X.PC.X2.eff.ci": null,
+  "X.PC.n_contact": 1,
+  "X.PC.n_replaced": 6,
+  "X.PC.ratio.A": 0.9067441929292561,
+  "X.PC.ratio.barely": false,
+  "X.PC.ratio.median": 0.8782766678104066,
+  "X.PC.ratio.within5": 0.1132522468598791,
+  "X.PC.tested": true,
+  "X.PC.under_run": false,
+  "X.PC.PO25.dec": 55.82587064676617,
+  "X.PC.PO50.dec": 115.22885572139303,
+  "X.PC.PO75.dec": 152.17910447761193,
+  "X.PC.RR_E5qN": 0.8920913678928787,
+  "X.PC.RR_E5qN.ci": [
+   0.7570740043052099,
+   1.0115438351680548
+  ],
+  "X.PC.RR_E5qN.level": 0.95,
+  "X.PC.RR_NmE5qN": -0.9595670818868691,
+  "X.PC.RR_NmE5qN.ci": [
+   -1.1684929377297262,
+   -0.7756334367518181
+  ],
+  "X.PC.RR_NmE5qN.level": 0.95,
+  "X.PC.desc.n_dec": 105419,
+  "X.PC.desc.n_runs": 390,
+  "X.PC.grading_ok": true,
+  "X.PC.grid.R": 0.16530104295019085,
+  "X.PC.grid.RR_N": -0.0669217152972078,
+  "X.PC.grid.RR_NmP": -0.06358133957631475,
+  "X.PC.grid.RR_NmPrec": -0.06163992462741966,
+  "X.PC.grid.RR_P": -0.003340375720893067,
+  "X.PC.grid.RR_Prec": -0.00528179066978815,
+  "X.PC.grid.m_N": 0.8782766678104066
+ },
+ "inputs": {
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_X_CROSS_pedestrian_crossing_v13.json": "2a1aa7b1349fd63500e2013c71768121279111dd34a41b9d0d460319623c5f14",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_X_DESC_pedestrian_crossing_v13.json": "b88ee8f1ced271a6ccc548afb37e4660bbaa1167910de071f4b2c8636cad3d57"
+ }
+}

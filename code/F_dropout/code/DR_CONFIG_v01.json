@@ -1,0 +1,4 @@
+{
+ "punish_num": 3,
+ "note": "AMENDMENT_11 sec. 6c.3: the DR tracker is the online tracker of record with output.punish_num = 3 (the longest window; record: 1). Confirmed by the coordinator, 21 Nov 2026 (A11 sec. 6c, Output rule under dropouts). Frozen with the DR code in FREEZE_DR before LOCK_A11c (DR's own lock stage; LOCK_A11b covers sec. 6d only)."
+}

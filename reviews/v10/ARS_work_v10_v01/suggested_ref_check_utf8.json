@@ -1,0 +1,362 @@
+{
+  "checker": "verify_panel_recommendations/1",
+  "status": "checked",
+  "reports": [
+    {
+      "seat": "R2",
+      "input": "ARS_TRIAL\\review_v10_output\\ARS_work_v10_v01\\P2_domain.md",
+      "input_sha256": "6f2278510cccba07c170374b58e781bae410d0fccb1031b16ef13ad2c4db1b94",
+      "blocks": 1,
+      "problems": []
+    },
+    {
+      "seat": "R3",
+      "input": "ARS_TRIAL\\review_v10_output\\ARS_work_v10_v01\\P2_perspective.md",
+      "input_sha256": "25bb2121723e7451a8bee1e86e05d204c6f91a90ba6a1d4fe6104dadde93aaba",
+      "blocks": 1,
+      "problems": []
+    }
+  ],
+  "items": [
+    {
+      "seat": "R2",
+      "index": 1,
+      "title": "A survey on motion prediction and risk assessment for intelligent vehicles",
+      "authors": [
+        "Lefèvre, S.",
+        "Vasquez, D.",
+        "Laugier, C."
+      ],
+      "year": 2014,
+      "doi": "10.1186/s40648-014-0001-z",
+      "arxiv_id": null,
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "unreachable",
+          "queried_by": null,
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "skipped",
+          "queried_by": null,
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R2",
+      "index": 2,
+      "title": "A framework and automotive application of collision avoidance decision making",
+      "authors": [
+        "Jansson, J.",
+        "Gustafsson, F."
+      ],
+      "year": 2008,
+      "doi": null,
+      "arxiv_id": null,
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "matched",
+          "queried_by": "title",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "title",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "unreachable",
+          "queried_by": null,
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "skipped",
+          "queried_by": null,
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R2",
+      "index": 3,
+      "title": "3D Multi-Object Tracking: A Baseline and New Evaluation Metrics",
+      "authors": [
+        "Weng, X.",
+        "Wang, J.",
+        "Held, D.",
+        "Kitani, K."
+      ],
+      "year": 2020,
+      "doi": null,
+      "arxiv_id": "1907.03961",
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "matched",
+          "queried_by": "title",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "title",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "unreachable",
+          "queried_by": null,
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R2",
+      "index": 4,
+      "title": "Probabilistic 3D Multi-Object Tracking for Autonomous Driving",
+      "authors": [
+        "Chiu, H.-k.",
+        "Prioletti, A.",
+        "Li, J.",
+        "Bohg, J."
+      ],
+      "year": 2020,
+      "doi": null,
+      "arxiv_id": "2001.05673",
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "unmatched",
+          "queried_by": "title",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "title",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "unreachable",
+          "queried_by": null,
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R2",
+      "index": 5,
+      "title": "Autonomous intelligent cruise control",
+      "authors": [
+        "Ioannou, P. A.",
+        "Chien, C. C."
+      ],
+      "year": 1993,
+      "doi": null,
+      "arxiv_id": null,
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "matched",
+          "queried_by": "title",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "title",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "unreachable",
+          "queried_by": null,
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "skipped",
+          "queried_by": null,
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R3",
+      "index": 1,
+      "title": "Criticality Metrics for Automated Driving: A Review and Suitability Analysis of the State of the Art",
+      "authors": [
+        "Westhofen, L.",
+        "Neurohr, C.",
+        "Koopmann, T.",
+        "Butz, M.",
+        "Schütt, B.",
+        "Utesch, F.",
+        "Neurohr, B.",
+        "Gutenkunst, C.",
+        "Böde, E."
+      ],
+      "year": 2022,
+      "doi": "10.1007/s11831-022-09788-7",
+      "arxiv_id": "2108.02403",
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R3",
+      "index": 2,
+      "title": "Survey on Scenario-Based Safety Assessment of Automated Vehicles",
+      "authors": [
+        "Riedmaier, S.",
+        "Ponn, T.",
+        "Ludwig, D.",
+        "Schick, B.",
+        "Diermeyer, F."
+      ],
+      "year": 2020,
+      "doi": "10.1109/ACCESS.2020.2993730",
+      "arxiv_id": null,
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "skipped",
+          "queried_by": null,
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R3",
+      "index": 3,
+      "title": "Are Commercially Implemented Adaptive Cruise Control Systems String Stable?",
+      "authors": [
+        "Gunter, G.",
+        "Gloudemans, D.",
+        "Stern, R. E.",
+        "McQuade, S.",
+        "Bhadani, R.",
+        "Bunting, M.",
+        "Delle Monache, M. L.",
+        "Lysecky, R.",
+        "Seibold, B.",
+        "Sprinkle, J.",
+        "Piccoli, B.",
+        "Work, D. B."
+      ],
+      "year": 2021,
+      "doi": "10.1109/TITS.2020.3000682",
+      "arxiv_id": "1905.02108",
+      "result": "found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "unreachable",
+          "queried_by": null,
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "matched",
+          "queried_by": "id",
+          "response_summary": null
+        }
+      }
+    },
+    {
+      "seat": "R3",
+      "index": 4,
+      "title": "ISO 21448:2022 Road vehicles — Safety of the intended functionality",
+      "authors": [
+        "International Organization for Standardization"
+      ],
+      "year": 2022,
+      "doi": null,
+      "arxiv_id": null,
+      "result": "title_not_found",
+      "resolver_outcomes": {
+        "crossref": {
+          "status": "unmatched",
+          "queried_by": "title",
+          "response_summary": null
+        },
+        "openalex": {
+          "status": "unmatched",
+          "queried_by": "title",
+          "response_summary": null
+        },
+        "semantic_scholar": {
+          "status": "unreachable",
+          "queried_by": null,
+          "response_summary": null
+        },
+        "arxiv": {
+          "status": "skipped",
+          "queried_by": null,
+          "response_summary": null
+        }
+      }
+    }
+  ],
+  "item_problems": []
+}

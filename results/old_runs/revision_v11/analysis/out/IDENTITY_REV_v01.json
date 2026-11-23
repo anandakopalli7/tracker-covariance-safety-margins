@@ -1,0 +1,12 @@
+{
+ "written": "2026-11-18 16:43:18",
+ "n_checks": 768,
+ "n_fail": 0,
+ "fails": [],
+ "passed": true,
+ "seconds": 799.7020561695099,
+ "reference": "<library folder>\\OPTIONA_MAIN_RESULTS_v02.json",
+ "reference_sha256": "ac6b527c502e6434a0997c54bb5fe154ac2a09856f5438db2746a0c4c0ca284e",
+ "lib_sha256": "b32a619a07f494e919f8d0bf112c8df4bed0957f051412c73819982a9a3f9898",
+ "common_sha256": "872f3559198dcfcddf4ac01d8b0389b00db0855456fc0835973e4c651782cf6c"
+}

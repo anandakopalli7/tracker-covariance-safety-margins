@@ -1,0 +1,1 @@
+{"label": "cutin_window", "n_run": 105, "full": [0.0, NaN], "names": ["R_gl", "RR_N"], "seeds": [20261912, 20261913, 20261914], "n_outer": 2000, "n_inner": 1000, "job_sha256": "3bcaa3d92e9769c67e2d8b014aef3bdde1ac264800836efd6eb2815abce12eda"}

@@ -1,0 +1,178 @@
+{
+ "label": "lead_h4",
+ "n_outer": 2000,
+ "seeds": {
+  "20261913": {
+   "table": "lead_h4_20261913.npz",
+   "sha256": "e97448adb114cecefd7fd08a74cc0ab2c702da86287a2fcfd75a18684d607796",
+   "chunks": [
+    {
+     "file": "lead_h4_20261913_o0_200.npz",
+     "outer": [
+      0,
+      200
+     ],
+     "sha256": "ffa1742d7a111a636d7ae9ba664d3d6e6ae48c5b7ca5997418c65d7242924425"
+    },
+    {
+     "file": "lead_h4_20261913_o200_400.npz",
+     "outer": [
+      200,
+      400
+     ],
+     "sha256": "7df441ed60d2194823cb2b6b3804d080cd5d86d031b19df12072d517847500d0"
+    },
+    {
+     "file": "lead_h4_20261913_o400_600.npz",
+     "outer": [
+      400,
+      600
+     ],
+     "sha256": "d71a73f8529adedc733cabc16f45f4be20e74b6032a28443a0dc7b8d6f30f7c3"
+    },
+    {
+     "file": "lead_h4_20261913_o600_800.npz",
+     "outer": [
+      600,
+      800
+     ],
+     "sha256": "d14a937a6bf667ff67b5fb6e29be25216fc55970580f9c7fcc9f012cf09d02a3"
+    },
+    {
+     "file": "lead_h4_20261913_o800_1000.npz",
+     "outer": [
+      800,
+      1000
+     ],
+     "sha256": "ace81104936fe4c61a4d143fb2d1b4e82f021e66ba92eddaf0c904a45ee9523f"
+    },
+    {
+     "file": "lead_h4_20261913_o1000_1200.npz",
+     "outer": [
+      1000,
+      1200
+     ],
+     "sha256": "6c8e8d8d43d60d650bd54efab736877e25f0036f03243c90c24c3706195b68ee"
+    },
+    {
+     "file": "lead_h4_20261913_o1200_1400.npz",
+     "outer": [
+      1200,
+      1400
+     ],
+     "sha256": "c5ad07a70661bec73d2fad07d0fa60ad3e22239412f96d09c86d3679b29fba9f"
+    },
+    {
+     "file": "lead_h4_20261913_o1400_1600.npz",
+     "outer": [
+      1400,
+      1600
+     ],
+     "sha256": "94a596aa4575cd4cd529300751607ce3cf0f6e2910486dca0084ee76296f991b"
+    },
+    {
+     "file": "lead_h4_20261913_o1600_1800.npz",
+     "outer": [
+      1600,
+      1800
+     ],
+     "sha256": "53c90c7de998bc5a7e99acd388459161c939181d1275c62a089053c8f1e05f6e"
+    },
+    {
+     "file": "lead_h4_20261913_o1800_2000.npz",
+     "outer": [
+      1800,
+      2000
+     ],
+     "sha256": "10ca8652f94abc61069c4430c5901024b364ba32dfa9954113540b2ece35820e"
+    }
+   ]
+  },
+  "20261914": {
+   "table": "lead_h4_20261914.npz",
+   "sha256": "d72ad0bf20bd49ea9350c7282bcc9832ce5cca8ecb60d68027c6455e8204f358",
+   "chunks": [
+    {
+     "file": "lead_h4_20261914_o0_200.npz",
+     "outer": [
+      0,
+      200
+     ],
+     "sha256": "16c42681b86b3547b8a908b2a2a58d1b202e17b08342cf5fa84345a9ee8902f3"
+    },
+    {
+     "file": "lead_h4_20261914_o200_400.npz",
+     "outer": [
+      200,
+      400
+     ],
+     "sha256": "a3ec76141e11a19837191ce0898dfb444f94c3a2d681607fff25aa406da0d372"
+    },
+    {
+     "file": "lead_h4_20261914_o400_600.npz",
+     "outer": [
+      400,
+      600
+     ],
+     "sha256": "3d41cacdf06a266d18a248fd50e9fa058dfd67941e6512356f1544baca6474be"
+    },
+    {
+     "file": "lead_h4_20261914_o600_800.npz",
+     "outer": [
+      600,
+      800
+     ],
+     "sha256": "a8d5d72791ae229abf05386f25030fca058463c5614d5b7c10f52e0bd3ea9f87"
+    },
+    {
+     "file": "lead_h4_20261914_o800_1000.npz",
+     "outer": [
+      800,
+      1000
+     ],
+     "sha256": "589e6a98ac3726bea18229069fd333911356a3b29c2c6d03103051e425b07d20"
+    },
+    {
+     "file": "lead_h4_20261914_o1000_1200.npz",
+     "outer": [
+      1000,
+      1200
+     ],
+     "sha256": "de9c42090733c44095766106f438edd003b5b6bb7d3e48285e62bd3243bfaef5"
+    },
+    {
+     "file": "lead_h4_20261914_o1200_1400.npz",
+     "outer": [
+      1200,
+      1400
+     ],
+     "sha256": "9510a657467cc17136451a6ee6056825cd1050ef3069aac9ef56f069590759ad"
+    },
+    {
+     "file": "lead_h4_20261914_o1400_1600.npz",
+     "outer": [
+      1400,
+      1600
+     ],
+     "sha256": "4556a833c420286bf7f49e40a6a1444ab9c047a55b53c5fca97d081bc8be4f82"
+    },
+    {
+     "file": "lead_h4_20261914_o1600_1800.npz",
+     "outer": [
+      1600,
+      1800
+     ],
+     "sha256": "6e352428a66b94e9a0636d122c18bea98064de29c30ad91ae271a7e89e3a672a"
+    },
+    {
+     "file": "lead_h4_20261914_o1800_2000.npz",
+     "outer": [
+      1800,
+      2000
+     ],
+     "sha256": "4e944bc2ad6aa04656e1a69601d74450af29f2df117960ad40db4e8c30874321"
+    }
+   ]
+  }
+ }
+}

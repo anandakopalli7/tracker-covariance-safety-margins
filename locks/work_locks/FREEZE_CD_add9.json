@@ -1,0 +1,62 @@
+{
+ "schema": "FREEZE_V13_ADDENDUM",
+ "addendum_to": "work/locks/FREEZE_CD.json (sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7); FREEZE_CD_add8.json (sha256 3fe15ff6e92601de448d84ffad17249c14944e4daf7c46294239045df216eb42)",
+ "package": "C and D (session v13-cd-capture, Claude Opus 5.5)",
+ "written": "2026-11-22 00:54 Eastern Standard Time",
+ "approval": "Coordinator, 22 Nov 2026 (verbatim excerpts): \"10 Hz: GO, at LOWER priority than everything at 2 Hz. Run B7 re-detection (frozen, unchanged) on the capture pods right after each pod's capture ends; no lock needed, detections only. The 10 Hz re-track and arrays come after LOCK_A12a, on one pod.\"; \"The layout is going to F and B: good.\" B and F asked for the map as {\"runs\": {job: rid}}. Recorded after LOCK_A12a, before any value of a new run.",
+ "after_lock": "LOCK_A12a.txt sha256 0c4d4872946ba85d2ed91a0471eb8da7188333d2dfe462b68a6df555345b2766 exists; no value of a new run has been computed and no new-run file has been moved by these tools",
+ "kind": "adds the 10 Hz option tools (A12 sec. 2.2/2.5) and changes the map shape; no analysis program changed",
+ "adds": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\remote_l12_after_capture.sh",
+   "sha256": "27fd894855e0ccd6f884ae375478b42034ee0bda9c82a01c94205f7bafc698f4"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\l_trk_extract_v13.py",
+   "sha256": "2b84989cccae60ca32962c7bd9871735a05adc607d94078d96d244a2925062ae"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\out\\testold_lb7\\TESTOLD_LB7_v13_extract_20261122T005230.json",
+   "sha256": "ce51e7a6340609be67b120d724a03cb9505d773b3e4ce454da0e5791ddf3e1b9"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\out\\testold_lb7\\p1b_fit_finite_0037.npz",
+   "sha256": "c6b192e2f4f23ef0fde45a12c512cd017bf970510f6fed99514572556cd4c810"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\make_freeze_add9_v13.py",
+   "sha256": "a790cf0a26dca74cb5261a06331ed5ac624ad863574a89fb4b8629ce9051259c"
+  }
+ ],
+ "uses": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\x_trk_extract_v13.py",
+   "sha256": "ae0526121b4cfd70734c9cadd135cf1af83d9d6126f1cf1a628c044e05a94aaf"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\b7_redetect_v13.py",
+   "sha256": "d95d7e0d60d58548174ad17628927099abe3794a70c1bf6b46cc5301f7dd63a9"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\seal_extract_v13.py",
+   "sha256": "be03ea2f185413180d8d349e4219ef7be80feb0c83e190dfa4f5285617085e86"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\tools\\remote_b7_and_seal.sh",
+   "sha256": "6b08d738a1305bcd93fcc92846067f09f74e49e68980ed29fa467289f6ca8b7a"
+  },
+  {
+   "path": "revision_v13\\work\\CD_capture\\analysis\\out\\testold_b7_arrays_final\\B7_10_0.1\\p1b_fit_finite_0037.npz",
+   "sha256": "127bd614687c67c223afdd182b5506eb02ddb90fae0d94d989a87fcc82decbf4"
+  }
+ ],
+ "replaces": [
+  {
+   "path": "revision_v13\\work\\CD_capture\\l12\\l_logs_v13.py",
+   "sha256_before": "32032a007518864374ed3472aa10758c0f230754dc60ad76ffed71c311e001d5",
+   "sha256_after": "a33cded9f9de0546db4429bc758e922be806d1ae0966960d0d6b45333c3fd5c5",
+   "change": "runs_map(): \"runs\" is now {job id: rid} (was a list of rows), plus \"missing\" and \"detail\" (the rows); new command fetch-b7 (download finished B7 re-detections into b7/<rid>/, checked against their manifests and the laptop receipts). seal and fetch unchanged.",
+   "why": "B and F read the map as {\"runs\": {job: rid}} (their messages of 22 Nov about 00:45); the 10 Hz option (coordinator GO)."
+  }
+ ]
+}

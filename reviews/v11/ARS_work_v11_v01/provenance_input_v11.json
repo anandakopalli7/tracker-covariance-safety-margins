@@ -1,0 +1,59 @@
+{
+  "schema_version": "review-panel-provenance-input/1.0",
+  "panel_id": "ars-review-v11-20261118",
+  "mode": "reviewer_full",
+  "contract_id": "reviewer/reviewer_full/v2",
+  "contract_sha256": "d958bc2ade7d9d154954c33fd424766697a8b6ef664854800a3106d804ee7e5c",
+  "seats": [
+    {
+      "seat_id": "EIC",
+      "role_id": "eic",
+      "context_id": "ctx-1a56cf2c12201e6c",
+      "peer_outputs_visible": null,
+      "actor_type": "model",
+      "model_family": "claude-opus-5-5",
+      "provider": "anthropic",
+      "human_reviewer_id": null
+    },
+    {
+      "seat_id": "R1",
+      "role_id": "methodology",
+      "context_id": "ctx-2d4af8a4b69f5880",
+      "peer_outputs_visible": null,
+      "actor_type": "model",
+      "model_family": "claude-opus-5-5",
+      "provider": "anthropic",
+      "human_reviewer_id": null
+    },
+    {
+      "seat_id": "R2",
+      "role_id": "domain",
+      "context_id": "ctx-914b4d601dd54658",
+      "peer_outputs_visible": null,
+      "actor_type": "model",
+      "model_family": "claude-opus-5-5",
+      "provider": "anthropic",
+      "human_reviewer_id": null
+    },
+    {
+      "seat_id": "R3",
+      "role_id": "perspective",
+      "context_id": "ctx-5127c344c36924ed",
+      "peer_outputs_visible": null,
+      "actor_type": "model",
+      "model_family": "claude-opus-5-5",
+      "provider": "anthropic",
+      "human_reviewer_id": null
+    },
+    {
+      "seat_id": "DA",
+      "role_id": "da",
+      "context_id": "ctx-59eddefd9c079b5e",
+      "peer_outputs_visible": null,
+      "actor_type": "model",
+      "model_family": "claude-opus-5-5",
+      "provider": "anthropic",
+      "human_reviewer_id": null
+    }
+  ]
+}

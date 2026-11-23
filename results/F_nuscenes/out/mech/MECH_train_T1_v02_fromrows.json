@@ -1,0 +1,43 @@
+{
+ "code": "f21_design_from_rows_v02.py (f21_mech_v02 scene_terms / boot)",
+ "source": "out\\mech\\MECH_ROWS_train_T1_v01.npz",
+ "split": "train",
+ "tracker": "T1",
+ "n_scenes": 700,
+ "n_rows": {
+  "steady": 217089,
+  "in_miss": 8589,
+  "post_miss": 12886,
+  "young": 41804
+ },
+ "primary": "v02: within-cell tau_b over pairs with >= 1 member in-miss or post-miss (age >= 1.0 s rows)",
+ "tau": 0.18957175436689505,
+ "tau_ci95": [
+  0.1669887592000482,
+  0.212219151111173
+ ],
+ "tau_boot_sd": 0.011564367398925267,
+ "p_one_sided": 4.999750012499375e-05,
+ "power_for_val_150": {
+  "assumed_tau": 0.18957175436689505,
+  "se_val": 0.02498188881785201,
+  "power_one_sided_95": 0.999999990905742
+ },
+ "all_rows": {
+  "tau": -0.010796845409822677,
+  "ci95": [
+   -0.021575438464146425,
+   -0.00011287138212552309
+  ],
+  "p_one_sided": 0.9763011849407529,
+  "equals_v01": true
+ },
+ "strata": {
+  "steady": -0.05718104097195033,
+  "in_miss": 0.24239548363553712,
+  "post_miss": 0.14323232801578206,
+  "young": 0.1694533491727988
+ },
+ "share_of_primary_pairs_weight": 0.18797837958352903,
+ "written": "2026-11-22 03:31:52"
+}

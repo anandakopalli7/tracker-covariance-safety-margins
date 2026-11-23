@@ -1,0 +1,17 @@
+{
+ "schema": "E4_IMM_MASKED_REPLAY_IDENTITY_V01",
+ "case": "c1109_eval_0480",
+ "masked_ticks": 17,
+ "detector_updates": [
+  69,
+  69
+ ],
+ "tracks_max_abs_diff": 0.0,
+ "decision_ticks": [
+  340,
+  340
+ ],
+ "actors_max_abs_diff": 0.0,
+ "online_punish_num": 3,
+ "pass": true
+}

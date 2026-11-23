@@ -1,0 +1,373 @@
+{
+ "package": "D",
+ "written": "2026-11-21T07:44:22.213826+00:00",
+ "program": "make_export_cd_v13.py (second)",
+ "program_sha256": "eed12169cd46a20c3b46236221a225a3898030c688e7b3ed1eeb9da71ca67a17",
+ "lock2_sha256": "02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df",
+ "test_old": false,
+ "values": {
+  "D1.const.CK3.dcau": 5.295604858199197,
+  "D1.const.CK3.dcau.cal": "nominal95",
+  "D1.const.CK3.dcau.ci": [
+   2.7127007896353676,
+   8.46017538150503
+  ],
+  "D1.const.CK3.dcau.level": 0.95,
+  "D1.const.CK3.dwg": 0.0,
+  "D1.const.CK3.dwg.cal": "nominal95",
+  "D1.const.CK3.dwg.ci": [
+   0.0,
+   0.0
+  ],
+  "D1.const.CK3.dwg.level": 0.95,
+  "D1.const.DH1": "costs_progress",
+  "D1.const.DH2": "costs_progress",
+  "D1.const.N.dcau": -0.003783276813980066,
+  "D1.const.N.dcau.cal": "nominal95",
+  "D1.const.N.dcau.ci": [
+   -0.011349830441940212,
+   0.0
+  ],
+  "D1.const.N.dcau.level": 0.95,
+  "D1.const.N.dwg": 0.0,
+  "D1.const.N.dwg.cal": "nominal95",
+  "D1.const.N.dwg.ci": [
+   0.0,
+   0.0
+  ],
+  "D1.const.N.dwg.level": 0.95,
+  "D1.const.PS.dcau": 35.23227468411712,
+  "D1.const.PS.dcau.cal": "nominal95",
+  "D1.const.PS.dcau.ci": [
+   26.280885692418416,
+   44.133962586116844
+  ],
+  "D1.const.PS.dcau.level": 0.95,
+  "D1.const.PS.dwg": 0.0,
+  "D1.const.PS.dwg.cal": "nominal95",
+  "D1.const.PS.dwg.ci": [
+   0.0,
+   0.0
+  ],
+  "D1.const.PS.dwg.level": 0.95,
+  "D1.const.TG.dcau": 0.006809068248302297,
+  "D1.const.TG.dcau.cal": "nominal95",
+  "D1.const.TG.dcau.ci": [
+   0.0,
+   0.017999391026067624
+  ],
+  "D1.const.TG.dcau.level": 0.95,
+  "D1.const.TG.dwg": 0.0,
+  "D1.const.TG.dwg.cal": "nominal95",
+  "D1.const.TG.dwg.ci": [
+   0.0,
+   0.0
+  ],
+  "D1.const.TG.dwg.level": 0.95,
+  "D1.mild.CK3.dcau": 18.68907551254009,
+  "D1.mild.CK3.dcau.cal": "nominal95",
+  "D1.mild.CK3.dcau.ci": [
+   15.440172021049507,
+   21.857243337845798
+  ],
+  "D1.mild.CK3.dcau.level": 0.95,
+  "D1.mild.CK3.dwg": -0.9488666315234581,
+  "D1.mild.CK3.dwg.cal": "nominal95",
+  "D1.mild.CK3.dwg.ci": [
+   -1.591987348444913,
+   -0.41117554032683185
+  ],
+  "D1.mild.CK3.dwg.level": 0.95,
+  "D1.mild.DH1": "costs_progress",
+  "D1.mild.DH2": "costs_progress",
+  "D1.mild.N.dcau": 0.008707581581071988,
+  "D1.mild.N.dcau.cal": "nominal95",
+  "D1.mild.N.dcau.ci": [
+   0.0025437094559256357,
+   0.017079839913149927
+  ],
+  "D1.mild.N.dcau.level": 0.95,
+  "D1.mild.N.dwg": -0.021085925144965767,
+  "D1.mild.N.dwg.cal": "nominal95",
+  "D1.mild.N.dwg.ci": [
+   -0.05271481286241442,
+   0.0
+  ],
+  "D1.mild.N.dwg.level": 0.95,
+  "D1.mild.PS.dcau": 53.46293015470048,
+  "D1.mild.PS.dcau.cal": "nominal95",
+  "D1.mild.PS.dcau.ci": [
+   48.17461708041793,
+   58.7084579014487
+  ],
+  "D1.mild.PS.dcau.level": 0.95,
+  "D1.mild.PS.dwg": -0.9488666315234581,
+  "D1.mild.PS.dwg.cal": "nominal95",
+  "D1.mild.PS.dwg.ci": [
+   -1.591987348444913,
+   -0.41117554032683185
+  ],
+  "D1.mild.PS.dwg.level": 0.95,
+  "D1.mild.TG.dcau": 4.563186716242006,
+  "D1.mild.TG.dcau.cal": "nominal95",
+  "D1.mild.TG.dcau.ci": [
+   3.4586397182048905,
+   5.648418345782143
+  ],
+  "D1.mild.TG.dcau.level": 0.95,
+  "D1.mild.TG.dwg": -0.9488666315234581,
+  "D1.mild.TG.dwg.cal": "nominal95",
+  "D1.mild.TG.dwg.ci": [
+   -1.591987348444913,
+   -0.41117554032683185
+  ],
+  "D1.mild.TG.dwg.level": 0.95,
+  "D1.n_contact": 0,
+  "D1.n_dec": 25884,
+  "D1.n_replaced": 0,
+  "D1.n_runs": 105,
+  "D1.stopgo.CK3.dcau": 1.6592859083689513,
+  "D1.stopgo.CK3.dcau.cal": "nominal95",
+  "D1.stopgo.CK3.dcau.ci": [
+   1.1349926642982822,
+   2.237378011399703
+  ],
+  "D1.stopgo.CK3.dcau.level": 0.95,
+  "D1.stopgo.CK3.dwg": -4.700607463118311,
+  "D1.stopgo.CK3.dwg.cal": "nominal95",
+  "D1.stopgo.CK3.dwg.ci": [
+   -6.27321704186795,
+   -3.401878649403402
+  ],
+  "D1.stopgo.CK3.dwg.level": 0.95,
+  "D1.stopgo.DH1": "costs_progress",
+  "D1.stopgo.DH2": "costs_progress",
+  "D1.stopgo.N.dcau": 0.03353861603736208,
+  "D1.stopgo.N.dcau.cal": "nominal95",
+  "D1.stopgo.N.dcau.ci": [
+   0.014387891167760536,
+   0.05431400093999949
+  ],
+  "D1.stopgo.N.dcau.level": 0.95,
+  "D1.stopgo.N.dwg": -0.014463407578825027,
+  "D1.stopgo.N.dwg.cal": "nominal95",
+  "D1.stopgo.N.dwg.ci": [
+   -0.04730480956681331,
+   0.0
+  ],
+  "D1.stopgo.N.dwg.level": 0.95,
+  "D1.stopgo.PS.dcau": 21.442767582194218,
+  "D1.stopgo.PS.dcau.cal": "nominal95",
+  "D1.stopgo.PS.dcau.ci": [
+   14.766818139639517,
+   28.146785549235926
+  ],
+  "D1.stopgo.PS.dcau.level": 0.95,
+  "D1.stopgo.PS.dwg": -6.4796065953138555,
+  "D1.stopgo.PS.dwg.cal": "nominal95",
+  "D1.stopgo.PS.dwg.ci": [
+   -8.03422903683261,
+   -5.196688846899715
+  ],
+  "D1.stopgo.PS.dwg.level": 0.95,
+  "D1.stopgo.TG.dcau": 0.2714268411719214,
+  "D1.stopgo.TG.dcau.cal": "nominal95",
+  "D1.stopgo.TG.dcau.ci": [
+   0.15166096707778956,
+   0.4342050355397348
+  ],
+  "D1.stopgo.TG.dcau.level": 0.95,
+  "D1.stopgo.TG.dwg": -0.17356089094590654,
+  "D1.stopgo.TG.dwg.cal": "nominal95",
+  "D1.stopgo.TG.dwg.ci": [
+   -0.3093832799159153,
+   -0.06450209221957502
+  ],
+  "D1.stopgo.TG.dwg.level": 0.95,
+  "D2.CK3.c2.rs.runs": 2,
+  "D2.CK3.c2.rs.vclose": 0.8455506546992573,
+  "D2.CK3.c2.w3.runs": 92,
+  "D2.CK3.c2.w3.vclose": 7.090909566745843,
+  "D2.CK3.c5.rs.runs": 1,
+  "D2.CK3.c5.rs.vclose": 5.5636513418669434e-09,
+  "D2.CK3.c5.w3.runs": 80,
+  "D2.CK3.c5.w3.vclose": 7.72981533201167,
+  "D2.F0.c2.rs.runs": 37,
+  "D2.F0.c2.rs.vclose": 3.5030650404817587,
+  "D2.F0.c2.w3.runs": 105,
+  "D2.F0.c2.w3.vclose": 9.51763320028227,
+  "D2.F0.c5.rs.runs": 36,
+  "D2.F0.c5.rs.vclose": 3.4852427051186208,
+  "D2.F0.c5.w3.runs": 105,
+  "D2.F0.c5.w3.vclose": 9.609160345024438,
+  "D2.N.c2.rs.runs": 37,
+  "D2.N.c2.rs.vclose": 3.5030650404817587,
+  "D2.N.c2.w3.runs": 105,
+  "D2.N.c2.w3.vclose": 9.51763320028227,
+  "D2.N.c5.rs.runs": 36,
+  "D2.N.c5.rs.vclose": 3.4852427051186208,
+  "D2.N.c5.w3.runs": 105,
+  "D2.N.c5.w3.vclose": 9.609160345024438,
+  "D2.TG.c2.rs.runs": 38,
+  "D2.TG.c2.rs.vclose": 3.4516599424388588,
+  "D2.TG.c2.w3.runs": 105,
+  "D2.TG.c2.w3.vclose": 9.42175893602051,
+  "D2.TG.c5.rs.runs": 35,
+  "D2.TG.c5.rs.vclose": 3.2087194153524523,
+  "D2.TG.c5.w3.runs": 105,
+  "D2.TG.c5.w3.vclose": 9.609160345024438
+ },
+ "deviations": [
+  {
+   "id": "CD-1",
+   "kind": "deviation",
+   "title": "Two-stage Lock 2",
+   "what": "Coordinator's decision (20 Nov 01:53 EST). Stage 1: LOCK_A10_2 (03:41:21 EST, sha256 02048a431e41c6310202328545ac8d91e71f5c1bba78c3906fc0a672c6c5a4df) after FREEZE_CD (core, 139 files, sha256 4d345a4c3f0ce999ec36236bafc4156e0ad0e226c2b9432a6f3d8343b11c1ee7). Stage 2: LOCK_A10_2c of record (06:03:04 EST, sha256 94e06ed6b93a189c234911906896dc65d29f906aea17797e4622e844b211c0a6) after FREEZE_CD_2 (A10 sec. 5.7 additions, 99 files, sha256 1039025ce46a9de60163f4468535b227ca0ec3e8d2705af293bfbaa54797a8a0). Between the locks only the frozen core extractor ran (logs, CV0/B1 arrays) and no value was computed.",
+   "effect": "None on values: every program that computes a value is in one of the two freezes and ran after the lock that gates it."
+  },
+  {
+   "id": "CD-2",
+   "kind": "deviation",
+   "title": "FREEZE_CD_add1: REPLACEMENTS_C_v13.json format",
+   "what": "The file was written as a list; the frozen loader reads a mapping. It stopped the first extractor call while building the run list, before any fresh file was opened. Corrected to {} (same meaning: no replacement) and recorded in locks/FREEZE_CD_add1.json (sha256 0e562f346cdd64feaed605041565d44b3d6f2f2a8639d33ff955a33fadb2730f; file sha256 before 082081f7...59e9, after 05e26a6d...e58b). Accepted by the coordinator at 03:58 EST.",
+   "effect": "None on data or values."
+  },
+  {
+   "id": "CD-3",
+   "kind": "deviation",
+   "title": "B7 on both families",
+   "what": "B7 (tracker re-runs at every rate x latency) is scored on lead braking and on cut-in (coordinator 03:35 EST); the cut-in keys are B7CI.* (A accepted the names; C now has 364 keys).",
+   "effect": "Adds the B7CI.* keys."
+  },
+  {
+   "id": "CD-4",
+   "kind": "deviation",
+   "title": "B7 pod acceptance rule",
+   "what": "The planned acceptance (pod arrays bit-identical to the laptop on old run 0037 in every key) failed in two keys B7 never reads (cA1, cQ; last bit, <= 4.2e-16 relative; Linux maths library). Amended rule (06:30 EST, coordinator): bit-identical on every key B7 reads; all other array keys within A10 B0(b)'s 1e-12; plus a value-identity gate: both frozen B7 programs give bit-identical outputs on pod and laptop 0037 arrays (76/76 values each).",
+   "records": [
+    "analysis/out/B7_POD_RUN_v13_attempt1_FAILED.json",
+    "analysis/out/B7_POD_RUN_v13.json",
+    "analysis/out/B7_VALUE_IDENTITY_0037_v13.json"
+   ],
+   "effect": "See CD-5: the 0037 gate did not cover runs with actor yaw."
+  },
+  {
+   "id": "CD-5",
+   "kind": "deviation",
+   "title": "Six cut-in runs re-extracted on the laptop for B7",
+   "what": "The cut-in recount refused run 0184 because the pod-made arrays differed from the laptop CV0 at the last bit in keys B7 reads (glibc on the pod vs Windows libm in the extraction geometry; exact_trig covers only the tracker path; the straight-road 0037 had not shown it). A survey of all fresh runs found 6 such runs: pc13_c1109_eval_0114, 0184, 0226, 0238, 0358, 0418 (all _native). Coordinator's rule (08:45 EST): such runs are re-extracted on the laptop with the frozen extractor (all 8 chains, 48 files) and replace the pod files; each run's laptop 2/0 chain equals CV0 on all 45 keys. Both B7 analyses and both recounts were re-run on the corrected arrays.",
+   "records": [
+    "analysis/out/B7_CROSSMACHINE_DIFF_v13.json",
+    "analysis/out/B7_REPLACED_RUNS_v13.json"
+   ],
+   "effect": "B7/B7CI values are those of laptop-equivalent arrays; first and second programs agree on all values."
+  },
+  {
+   "id": "CD-6",
+   "kind": "deviation",
+   "title": "D2 reaction-and-stop column scored to the end of the stop",
+   "what": "A10 sec. 1 judges reaction-and-stop plans until the stop ends (v11 rev_e1 extended clearance, clearX, shared through arrays/RSX). The frozen core D2 programs score a 61-frame horizon. The reaction-and-stop column of D2 is therefore taken from the stage-2 programs analysis/d2_rs_v13.py (first) and recount_d/rc_d2_rs_v13.py (second); the 61-frame react_stop column of the core recount is not exported. Identity check: the minimum distance equals clearX on all 3,434 fresh pairs.",
+   "effect": "D2.*.rs keys come from the stage-2 programs."
+  },
+  {
+   "id": "CD-11",
+   "kind": "deviation",
+   "title": "FREEZE_CD_add2: a frozen identity check refused a legitimate NaN",
+   "what": "The core cut-in import stopped (20 Nov about 23:40 EST, no output) at analysis/cd_common_v13.py:333, which compares the recomputed full-sample values with the calibration job's by np.array_equal without equal_nan. On the fresh runs the cut-in event window has no room, so its full-sample values are R_gl = 0.0 and RR_N = NaN (undefined), and NaN never equalled NaN. The frozen merge tool, pod runner and recount import already compare with NaN equal to NaN. Fix, approved by the coordinator (about 23:45 EST): that line only gets equal_nan=True; the check stays exact. Recorded in locks/FREEZE_CD_add2.json (sha256 df4e03c9a00df30f7b0159f8585df911a4b202745817241854462030f4d46d02; file sha256 before 978dc19c...cf0c2, after 28a7238a...bdd0).",
+   "effect": "No analysis change. With no NaN the check gives the same result, so the lead import (which passed it) is unaffected."
+  },
+  {
+   "id": "CD-12",
+   "kind": "deviation",
+   "title": "FREEZE_CD_2_add1: the exporter reads B's flat export",
+   "what": "The first call of the frozen exporter on fresh runs (21 Nov about 01:00 EST) stopped with KeyError: 'values' and wrote nothing: TRANSFER.structured read package B's A_EXPORT_B.json / A_RECOUNT_B.json as {'values': {...}}, but B's exports are flat {key: value}, a layout A's loader accepts (A_text/gen/common_v13.py load_export). Fix, approved by the coordinator (about 00:20 EST): make_export_cd_v13.py lines 285 (B) and 304 (F) read the 'values' dict if present, else the flat file; no other change. Recorded in locks/FREEZE_CD_2_add1.json (sha256 e4e311049433f80a6f7a29cbe89543d95aceaa2377163c85fe8cdeded0b74161; file sha256 before 99fb107d...dfc2, after ab4e5b92...0484).",
+   "effect": "No value is computed differently; TRANSFER.structured gets B's tuning set (TU.RR_*)."
+  },
+  {
+   "id": "CD-13",
+   "kind": "deviation",
+   "title": "FREEZE_CD_2_add2: two exporter lines (B7CI keys; the recount's old-run TG)",
+   "what": "Found in the first fresh exports (21 Nov about 00:25-00:50 EST). (1) make_export_cd_v13.py line 366 kept C keys whose first dot-part is LB, CI, TU, B, B7, TRANSFER or HAND; 'B7CI' (A's names accepted 20 Nov 03:35) was missing, so the 32 B7CI.* supplement keys were dropped although both family files carry them. (2) Line 298 read the recount's old-run TG for TRANSFER.structured as point.descriptive.TG.RR, while the recount's old-run file stores RR_gl (0.3212018942899134, equal to the first program's value), so the second export had old-run TG = null (its TRANSFER outcome was nevertheless identical). Fix, approved by the coordinator (01:05 and 01:15 EST): 'B7CI' added to the tuple; .get('RR') -> .get('RR_gl'); nothing else. Recorded in locks/FREEZE_CD_2_add2.json (sha256 1e8f131d6b992e5e47efb5b8ef170f95cd41c755353046cd84da3e2b4c9114e2; file sha256 before ab4e5b92...0484 (after add1), after 16b84f81...0940). The frozen make_freeze_cd_v13.py --verify does not chain two addenda on one file; tools/verify_chain_cd_v13.py checks the chain (FREEZE_CD 139/139, FREEZE_CD_2 99/99, no break).",
+   "effect": "No value is computed differently; the B7CI.* keys reach the C exports and the recount's TRANSFER.structured has its old-run TG."
+  },
+  {
+   "id": "CD-14",
+   "kind": "deviation",
+   "title": "FREEZE_CD_2_add3: the second exporter reads the D2 recount's 3 s column",
+   "what": "A_RECOUNT_D lacked the 16 keys D2.{F0,N,CK3,TG}.{c2,c5}.w3.{runs,vclose} although the frozen D2 recount (recount_d/rc_d2_event_table_v13.py, RC_D2_EVENT_TABLE_v13.json) computed them and the sec. 10.1(c) comparison out/COMPARE_D_v13.json (185/185) had already compared them with the first program (all equal): make_export_cd_v13.py line 262 looked up table['commit_3s'], but the recount nests table[source][scoring][target], so the column was skipped silently. Fix, approved by the coordinator (about 01:20 EST) in place of a new second program: line 262 only. Recorded in locks/FREEZE_CD_2_add3.json (sha256 dc48da9fe515eb05a93f51aca51cab6e8ec6fa8223b59927990ef72a59c72b3b; file sha256 before 16b84f81...0940 (after add2), after ec1fbc45...ff77). Chain checked by tools/verify_chain_cd_v13.py.",
+   "effect": "No value is computed differently; the 16 keys reach A_RECOUNT_D from the frozen independent recount."
+  },
+  {
+   "id": "CD-15",
+   "kind": "deviation",
+   "title": "FREEZE_CD_2_add4: the first exporter writes A's Fig. 2 frontier curves",
+   "what": "A's Fig. 2 (wrong goes % against caution % on the 201 levels) needs the full-sample gridless step frontiers (A10 sec. 2.3), which no frozen program writes to a file. Coordinator's decision (21 Nov 2026, option (a)): an exporter-only change. make_export_cd_v13.py gets frontiers_first (new lines 321-362, call at line 393, docstring line 4): it loads the frozen calibration jobs analysis/out/calib/{lead_main, lead_imm, cutin_window}.job.npz (the full-sample inputs of LB.R/LB.RR_*, LB.IMM.r/c and CI.R; SHA-256 checked against their meta.json), evaluates them once with unit run weights by the frozen kernel gl_fast_v13.evaluate, refuses unless they reproduce the exported values exactly, and writes LB.frontier.{F0,E,E5,N,CK3}, LB.frontier.{IMM,F0_IMM,E_IMM} (the IMM tracker's own N, F0 and E) and CI.frontier.{F0,E,N}, each [[caution %], [wrong go %]] on the 201 levels. First program only: the second program is not changed; each curve's summed gap to F0 over the 201 levels reproduces the recount's D_gl (from RR_gl and the room, or from .dec and n) within 1e-9. Recorded in locks/FREEZE_CD_2_add4.json (sha256 9686b38f308553c5d090d32d8c011ba1f3edf6cd97cdd44d034de2a1c91b7e92; file sha256 before ec1fbc45...ff77 (after add3), after eed12169...7a17). Chain checked by tools/verify_chain_cd_v13.py.",
+   "effect": "Adds 11 frontier keys to A_EXPORT_C only (listed as 'only first' in the export comparison); every other key of all four exports is unchanged."
+  },
+  {
+   "id": "CD-7",
+   "kind": "record",
+   "title": "Calibration computed in chunks on pods",
+   "what": "The A10 sec. 2.6 double bootstrap (2,000 outer x 1,000 inner; inner seeds 20261913/20261914) ran as chunks of outer replicates on RunPod CPU workers and was merged by tools/calib_merge_v13.py, which checks that the chunks tile 0..2000 exactly and that every chunk reproduced the full-sample statistics. On old runs the chunked path equals the in-process path (recount/test_rc_calib_chunks_v13.py; analysis/out/calib_testold).",
+   "records": [
+    "analysis/out/calib/MERGE_*.json",
+    "recount/out/calib/MERGE_*.json"
+   ],
+   "effect": "None on the method."
+  },
+  {
+   "id": "CD-8",
+   "kind": "record",
+   "title": "Undefined values",
+   "what": "An undefined interval or value is written as null (never [null, null], never NaN), per A. CI.Y.R.dec = 0 when the young-track population is empty (K2's rule; both S57A programs).",
+   "effect": "Representation only."
+  },
+  {
+   "id": "CD-9",
+   "kind": "record",
+   "title": "Run storage and salvage (before any value)",
+   "what": "After the volume quota was reached, C archives went to pod disks and the laptop; 12 runs whose capture and reviews had passed were salvaged from complete local archives (receipts marked 'salvaged'); A10 sec. 5.1's retry rule was not invoked for them. The 57 rs13 re-simulation archives (old runs re-simulated frame-identically; regenerable) are kept only on the network volume, SHA-256-checked (resim_on_volume_v01.json).",
+   "effect": "None on values."
+  },
+  {
+   "id": "CD-10",
+   "kind": "record",
+   "title": "Definitions fixed before any fresh value",
+   "what": "D1 reserves (5 per variant, cases 55-59, continuing default_rng(20261921); none needed) and 3 non-study pilots; cut-in threshold 1.75 m (B9); H4 like-for-like single scale; K0's den0 = the perfect oracle's gridless room in decision-equivalents; K2's E5_N; D2 operating points, first loss of clearance and closing speed. Wording: STATUS.md, 'Decisions and departures'.",
+   "effect": "None; fixed before values."
+  }
+ ],
+ "not_produced": {
+  "required": [],
+  "supplement": []
+ },
+ "keys_not_in_A_list": [],
+ "overlaps": [],
+ "inputs": {
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_C_LEAD_v13.json": "89ae5ab689cf87334f42d384143eef2149cf138da6589b83bbbdac7dcebbf0a5",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_C_CUTIN_v13.json": "1c9b1e6ccc15330534991a0caf8ffd8deb3ff4179795fcdc49b1b2e91a31345e",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount_d\\out\\RC_D_NONBRAKING_v13.json": "2d17b6e309a2b0d1e8046bb1db7a45d6200d1dbc6a8ea1d26f1333deca5efa45",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount_d\\out\\RC_D2_EVENT_TABLE_v13.json": "f074811050082e77420ec6c033036dae7126e6b0d9a328bd083b0eb4762e10d0",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_S57A_v13.json": "49c6cf4e5768d7850991c72398ff322e5a1d09cd616e55fb747d83345bd824ac",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_B7_v13.json": "ff5c7583ad040f91bc6875e025ad41a4ae8e8b2862ecbcc039a91669581fcd29",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_B7_v13_cutin.json": "93b3ffa471ca257f1e2fa2099c28ae316feda4c8230240f41393017d546d3ddc",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\RC_S57B_v13.json": "c0066cba65419d35ad8021d1d7fb2ec50d9114577568231ff0d4b9fb952b69c4",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount_d\\out\\RC_D2_RS_v13.json": "0a4dce0d7ba2beba7b97ecf646b5b46ffac68f588469f433d8e4c778878d5765",
+  "ARS_TRIAL\\revision_v13\\work\\CD_capture\\recount\\out\\HAND_CHECK_v13.json": "c088bcda6dbaae1d000f097386d6882c74ea1ac708a29105495dc04c5ba7eaaf"
+ },
+ "deviations_source": {
+  "file": "DEVIATIONS_CD_v13.json",
+  "sha256": "a0de6b934c3447698260f9fee804d7ee2193288024680e4d1b86b2c740c6d5a2"
+ },
+ "status_keys_added": {
+  "keys": [
+   "D1.const.DH1",
+   "D1.const.DH2",
+   "D1.mild.DH1",
+   "D1.mild.DH2",
+   "D1.stopgo.DH1",
+   "D1.stopgo.DH2"
+  ],
+  "rule": "A's status keys and flags (RESULTS_INTERFACE_v13 sec. 2; names agreed with A 21 Nov), A's vocabulary, from this program's own outputs; A10 sec. 9 applied (not_run after a failed K0); first and second identical (checked)"
+ }
+}

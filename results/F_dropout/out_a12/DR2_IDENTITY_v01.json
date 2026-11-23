@@ -1,0 +1,128 @@
+{
+ "code": "dr_identity_v02.py",
+ "amendment": "AMENDMENT_12 sec. 3a.6 (A11 sec. 6c.8)",
+ "reference": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\arrays_l12\\CV0",
+ "rule": {
+  "tol_abs": 1e-12,
+  "compared": "every key both builders produce",
+  "read_keys": [
+   "k",
+   "idx55",
+   "evaluated",
+   "clear",
+   "vbar",
+   "des",
+   "cF0",
+   "cE",
+   "cN",
+   "cCK3",
+   "phase",
+   "lead_found",
+   "dx_pred3",
+   "now",
+   "age",
+   "v0",
+   "track_id"
+  ],
+  "citation": "A10 sec. 3 B0(b): arrays rebuilt from replayed actor lists within 1e-12 of the stored ones; session B (21 Nov): CD CV0 arrays are built from logged tracks, so (b) applies"
+ },
+ "check_i": {
+  "passed": true,
+  "n_runs": 150,
+  "all_common_keys_identical_runs": 106,
+  "read_keys_identical_runs": 150,
+  "keys_only_in_reference": [],
+  "keys_only_in_replay": [],
+  "by_key": {
+   "cA1": {
+    "runs": 44,
+    "max_abs": 2.842170943040401e-14,
+    "max_rel": 4.390884964525217e-16
+   },
+   "cQ": {
+    "runs": 44,
+    "max_abs": 2.842170943040401e-14,
+    "max_rel": 3.211313155378644e-16
+   }
+  },
+  "runs_read_keys_not_identical": {}
+ },
+ "check_ii": {
+  "n_runs": 150,
+  "n_evaluated": 29926,
+  "n_changed": 201,
+  "runs_with_changes": {
+   "pl12_c1109_eval_0900_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   },
+   "pl12_c1109_eval_1176_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   },
+   "pl12_c1109_eval_1260_native": {
+    "n_evaluated": 271,
+    "n_changed": 51,
+    "evaluated_equal": true
+   },
+   "pl12_c1109_eval_1476_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   },
+   "pl12_c1109_eval_1482_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   },
+   "pl12_c1109_eval_1524_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   },
+   "pl12_c1109_eval_1542_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   },
+   "pl12_c1109_eval_1584_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   },
+   "pl12_c1109_eval_1680_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   },
+   "pl12_c1109_eval_1722_native": {
+    "n_evaluated": 271,
+    "n_changed": 20,
+    "evaluated_equal": true
+   },
+   "pl12_c1109_eval_1746_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   },
+   "pl12_c1109_eval_1860_native": {
+    "n_evaluated": 271,
+    "n_changed": 20,
+    "evaluated_equal": true
+   },
+   "pl12_c1109_eval_1986_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   },
+   "pl12_c1109_eval_2082_native": {
+    "n_evaluated": 271,
+    "n_changed": 10,
+    "evaluated_equal": true
+   }
+  }
+ },
+ "written": "2026-11-22 03:10:30"
+}

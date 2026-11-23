@@ -1,0 +1,13 @@
+{
+ "scenes": 150,
+ "exact_key_differences": [],
+ "float_differences_evaluated": [],
+ "float_differences_not_evaluated": [
+  [
+   "scene-0966",
+   "vbar",
+   151,
+   2.410000000000016
+  ]
+ ]
+}

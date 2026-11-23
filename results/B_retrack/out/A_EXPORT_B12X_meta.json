@@ -1,0 +1,40 @@
+{
+ "code": "b_export_b12x_v02.py",
+ "written": "2026-11-22 03:39:28",
+ "sources": {
+  "IMM2N": {
+   "file": "out\\modeprob\\MODEPROB_IMM2_new_v01.json",
+   "sha256": "5d1aa79ea7bd72c8b93c222699bf3ea7fb95ac0edcad5dc3f37d79c93b130def",
+   "run_set": "new",
+   "n_runs": 150,
+   "seed": 20261911
+  },
+  "IMM2C": {
+   "file": "out\\modeprob\\MODEPROB_IMM2_fresh_v01.json",
+   "sha256": "aa7c688ea29883ae9de2cb3df2fafd8cb22ec9e427e078c445483a81007a5b5a",
+   "run_set": "fresh",
+   "n_runs": 105,
+   "seed": 20261911
+  },
+  "IMMrC": {
+   "file": "out\\modeprob\\MODEPROB_B1R_fresh_v01.json",
+   "sha256": "a080bb1d92d37258dab5c58ba12d8903a6fbe62be8ebbde441111d13fc21e2e8",
+   "run_set": "fresh",
+   "n_runs": 105,
+   "seed": 20261911
+  },
+  "twin": {
+   "file": "CD_capture\\ycheck_imm2\\out\\Y_TWIN_L12_v13_PENDING_CALIB.json",
+   "sha256": "4756e4753b5e8854686b0abbc4726c777cc05e1e08ff43aaa560629704e8981e",
+   "gate": "LOCK_A12a sha256 0c4d4872946ba85d2ed91a0471eb8da7188333d2dfe462b68a6df555345b2766",
+   "intervals": "calibrated",
+   "code": "y_twin_l12_v13.py",
+   "code_sha256": {
+    "ycheck_imm2\\y_twin_l12_v13.py": "70d705ed81973b32750de920fc13f0c4168345fee81d9bf0bef90404b3f1b863",
+    "analysis\\cd_common_v13.py": "28a7238a2f7135aec35f3018879af25566665856ff163502b6286b0249d6bdd0",
+    "analysis\\gl_fast_v13.py": "8911ed58ba70757d41057653b64b234c3bac2df1327e5397582a8a91be3f4789"
+   }
+  }
+ },
+ "n_keys": 86
+}

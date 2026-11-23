@@ -1,0 +1,32 @@
+{
+ "n_run": 12,
+ "full": [
+  0.0,
+  NaN,
+  NaN,
+  NaN
+ ],
+ "stats": [
+  "R",
+  "c",
+  "cdiff",
+  "r"
+ ],
+ "n_outer": 100,
+ "n_inner": 200,
+ "seed_outer": 20261912,
+ "seeds_inner": [
+  20261913,
+  20261914
+ ],
+ "nlev": 201,
+ "roles": [
+  "F0",
+  "E",
+  "N",
+  "E5x",
+  "E5xp"
+ ],
+ "job_sha256": "b97e7e40e2c59f3d639124b4b2192473fd213ede8b5fef2caf121e2f378a9cf0",
+ "written": "2026-11-22 05:54:14"
+}

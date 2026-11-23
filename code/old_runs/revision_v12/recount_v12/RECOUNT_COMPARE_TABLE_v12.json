@@ -1,0 +1,2706 @@
+[
+ {
+  "section": "A9-1a",
+  "name": "all n",
+  "recount": 8290.0,
+  "first": 8290.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "all R (pp)",
+  "recount": 5.556775831337881,
+  "first": 5.556775831337881,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "all RR(N)",
+  "recount": 0.001220407810609995,
+  "first": 0.001220407810609995,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "all RR(P)",
+  "recount": 0.0014904095386210547,
+  "first": 0.0014904095386210547,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "all RR(N)-RR(P)",
+  "recount": -0.0002700017280110596,
+  "first": -0.00027000172801105966,
+  "abs_diff": 5.421010862427522e-20,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "all D(N,F0) dec-eq",
+  "recount": 0.5621890547263714,
+  "first": 0.5621890547263714,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "all D(P,F0) dec-eq",
+  "recount": 0.6865671641791078,
+  "first": 0.6865671641791078,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "moving n",
+  "recount": 1863.0,
+  "first": 1863.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "moving R (pp)",
+  "recount": 10.164155070060325,
+  "first": 10.164155070060325,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "moving RR(N)",
+  "recount": -0.000131368067050269,
+  "first": -0.000131368067050269,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "moving RR(P)",
+  "recount": 0.0021807099130343372,
+  "first": 0.0021807099130343372,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "moving RR(N)-RR(P)",
+  "recount": -0.0023120779800846064,
+  "first": -0.0023120779800846064,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "moving D(N,F0) dec-eq",
+  "recount": -0.02487562189054869,
+  "first": -0.02487562189054869,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "moving D(P,F0) dec-eq",
+  "recount": 0.41293532338308414,
+  "first": 0.41293532338308414,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase0 n",
+  "recount": 678.0,
+  "first": 678.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase0 R (pp)",
+  "recount": 0.4314709637652444,
+  "first": 0.4314709637652444,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase0 RR(N)",
+  "recount": 0.0051020408163265345,
+  "first": 0.0051020408163265345,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase0 RR(P)",
+  "recount": 0.0051020408163265345,
+  "first": 0.0051020408163265345,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase0 RR(N)-RR(P)",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase0 D(N,F0) dec-eq",
+  "recount": 0.014925373134328363,
+  "first": 0.014925373134328363,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase0 D(P,F0) dec-eq",
+  "recount": 0.014925373134328363,
+  "first": 0.014925373134328363,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase1 n",
+  "recount": 755.0,
+  "first": 755.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase1 R (pp)",
+  "recount": 15.587624789957497,
+  "first": 15.587624789957497,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase1 RR(N)",
+  "recount": -0.0024519129148171735,
+  "first": -0.0024519129148171735,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase1 RR(P)",
+  "recount": -0.001437328260410071,
+  "first": -0.001437328260410071,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase1 RR(N)-RR(P)",
+  "recount": -0.0010145846544071025,
+  "first": -0.0010145846544071025,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase1 D(N,F0) dec-eq",
+  "recount": -0.28855721393034944,
+  "first": -0.28855721393034944,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase1 D(P,F0) dec-eq",
+  "recount": -0.16915422885572254,
+  "first": -0.16915422885572254,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase2 n",
+  "recount": 6857.0,
+  "first": 6857.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase2 R (pp)",
+  "recount": 0.820601672982615,
+  "first": 0.820601672982615,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase2 RR(N)",
+  "recount": 0.0018567639257294458,
+  "first": 0.0018567639257294458,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase2 RR(P)",
+  "recount": 0.0028293545534924876,
+  "first": 0.0028293545534924876,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase2 RR(N)-RR(P)",
+  "recount": -0.0009725906277630418,
+  "first": -0.000972590627763042,
+  "abs_diff": 2.168404344971009e-19,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase2 D(N,F0) dec-eq",
+  "recount": 0.10447761194029866,
+  "first": 0.10447761194029866,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1a",
+  "name": "phase2 D(P,F0) dec-eq",
+  "recount": 0.15920398009950268,
+  "first": 0.15920398009950268,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.05",
+  "recount": 0.00016200103680663762,
+  "first": 0.00016200103680663762,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.10",
+  "recount": 0.0004644029721790221,
+  "first": 0.0004644029721790221,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.15",
+  "recount": 0.0006048038707447737,
+  "first": 0.0006048038707447737,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.20",
+  "recount": 0.001004406428201146,
+  "first": 0.001004406428201146,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.25",
+  "recount": 0.0010368066355624771,
+  "first": 0.0010368066355624771,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.30",
+  "recount": 0.0010044064282011497,
+  "first": 0.0010044064282011497,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.35",
+  "recount": 0.0012312078797304393,
+  "first": 0.0012312078797304393,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.40",
+  "recount": 0.0015120096768619392,
+  "first": 0.0015120096768619392,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.45",
+  "recount": 0.0016848107827890195,
+  "first": 0.0016848107827890195,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.50",
+  "recount": 0.0011124071194055722,
+  "first": 0.0011124071194055722,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.55",
+  "recount": 0.0014580093312597288,
+  "first": 0.0014580093312597288,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.60",
+  "recount": 0.0017280110592707855,
+  "first": 0.0017280110592707855,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.65",
+  "recount": 0.0010692068429238,
+  "first": 0.0010692068429238,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.70",
+  "recount": 0.0013500086400553008,
+  "first": 0.0013500086400553008,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.75",
+  "recount": 0.0012744081562122075,
+  "first": 0.0012744081562122075,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.80",
+  "recount": 0.0011016070502851275,
+  "first": 0.0011016070502851275,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.85",
+  "recount": 0.0009288059443580478,
+  "first": 0.0009288059443580478,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.90",
+  "recount": 0.0006480041472265483,
+  "first": 0.0006480041472265483,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=0.95",
+  "recount": 1.0800069120441885e-05,
+  "first": 1.0800069120441885e-05,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset u=1.00",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset min",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1b",
+  "name": "RR offset max",
+  "recount": 0.0017280110592707855,
+  "first": 0.0017280110592707855,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "all R (pp)",
+  "recount": 5.512545835358791,
+  "first": 5.512545835358791,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "all RR(N)",
+  "recount": -0.00041369549833977597,
+  "first": -0.00041369549833977597,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "all RR(P)",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "all RR(NA)",
+  "recount": 0.01506722551848021,
+  "first": 0.01506722551848021,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "all RR(A1)",
+  "recount": 0.38239616787327857,
+  "first": 0.38239616787327857,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "all RR(CK3)",
+  "recount": 0.8366011648794295,
+  "first": 0.8366011648794295,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "all RR(Q)",
+  "recount": -0.0023950792009144913,
+  "first": -0.0023950792009144913,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "all D(N,F0) dec-eq",
+  "recount": -0.1890547263681598,
+  "first": -0.1890547263681598,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "all D(P,F0) dec-eq",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "all D(N,P) dec-eq",
+  "recount": -0.1890547263681598,
+  "first": -0.1890547263681598,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "moving R (pp)",
+  "recount": 9.972947928099705,
+  "first": 9.972947928099705,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "moving RR(N)",
+  "recount": -0.0023028517873878674,
+  "first": -0.0023028517873878674,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "moving RR(P)",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "moving RR(NA)",
+  "recount": 0.013736778685232298,
+  "first": 0.013736778685232298,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "moving RR(A1)",
+  "recount": 0.29141786049002544,
+  "first": 0.29141786049002544,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "moving RR(CK3)",
+  "recount": 0.464881510242335,
+  "first": 0.464881510242335,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "moving RR(Q)",
+  "recount": -0.0005355469272995029,
+  "first": -0.0005355469272995029,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "moving D(N,F0) dec-eq",
+  "recount": -0.42786069651741254,
+  "first": -0.42786069651741254,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "moving D(P,F0) dec-eq",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "moving D(N,P) dec-eq",
+  "recount": -0.42786069651741254,
+  "first": -0.42786069651741254,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase0 R (pp)",
+  "recount": 0.4204640514242943,
+  "first": 0.4204640514242943,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase0 RR(N)",
+  "recount": 0.0017452006980802808,
+  "first": 0.0017452006980802808,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase0 RR(P)",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase0 RR(NA)",
+  "recount": 0.0017452006980802808,
+  "first": 0.0017452006980802808,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase0 RR(A1)",
+  "recount": -0.12216404886561959,
+  "first": -0.12216404886561959,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase0 RR(CK3)",
+  "recount": -0.5846422338568938,
+  "first": -0.5846422338568938,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase0 RR(Q)",
+  "recount": 0.001745200698080265,
+  "first": 0.001745200698080265,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase0 D(N,F0) dec-eq",
+  "recount": 0.004975124378109455,
+  "first": 0.004975124378109455,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase0 D(P,F0) dec-eq",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase0 D(N,P) dec-eq",
+  "recount": 0.004975124378109455,
+  "first": 0.004975124378109455,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase1 R (pp)",
+  "recount": 15.237718691311652,
+  "first": 15.237718691311652,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase1 RR(N)",
+  "recount": 0.0001729804532087838,
+  "first": 0.0001729804532087838,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase1 RR(P)",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase1 RR(NA)",
+  "recount": -0.0054488842760768135,
+  "first": -0.0054488842760768135,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase1 RR(A1)",
+  "recount": -0.05747275557861962,
+  "first": -0.05747275557861962,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase1 RR(CK3)",
+  "recount": 0.5960041515308772,
+  "first": 0.5960041515308772,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase1 RR(Q)",
+  "recount": 0.0003892060197197582,
+  "first": 0.0003892060197197582,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase1 D(N,F0) dec-eq",
+  "recount": 0.019900497512437394,
+  "first": 0.019900497512437394,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase1 D(P,F0) dec-eq",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase1 D(N,P) dec-eq",
+  "recount": 0.019900497512437394,
+  "first": 0.019900497512437394,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase2 R (pp)",
+  "recount": 0.7956426123720032,
+  "first": 0.7956426123720032,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase2 RR(N)",
+  "recount": -0.0009119095385737746,
+  "first": -0.0009119095385737746,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase2 RR(P)",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase2 RR(NA)",
+  "recount": 0.07988327557906257,
+  "first": 0.07988327557906257,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase2 RR(A1)",
+  "recount": 0.7622651832938173,
+  "first": 0.7622651832938173,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase2 RR(CK3)",
+  "recount": 1.0223417836950575,
+  "first": 1.0223417836950575,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase2 RR(Q)",
+  "recount": -0.004833120554440999,
+  "first": -0.004833120554440999,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase2 D(N,F0) dec-eq",
+  "recount": -0.049751243781094585,
+  "first": -0.049751243781094585,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase2 D(P,F0) dec-eq",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "phase2 D(N,P) dec-eq",
+  "recount": -0.049751243781094585,
+  "first": -0.049751243781094585,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "number of gridless points F0",
+  "recount": 61770.0,
+  "first": 61770.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "number of gridless points E",
+  "recount": 53722.0,
+  "first": 53722.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "number of gridless points N",
+  "recount": 61805.0,
+  "first": 61805.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "number of gridless points P",
+  "recount": 61770.0,
+  "first": 61770.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "number of gridless points NA",
+  "recount": 61805.0,
+  "first": 61805.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "number of gridless points A1",
+  "recount": 62027.0,
+  "first": 62027.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "number of gridless points CK3",
+  "recount": 58908.0,
+  "first": 58908.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-1c",
+  "name": "number of gridless points Q",
+  "recount": 62018.0,
+  "first": 62018.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "R (pp), pooled",
+  "recount": 5.556775831337881,
+  "first": 5.556775831337881,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "truth phase in-sample gain (pp)",
+  "recount": 4.960901163662988,
+  "first": 4.960901163662988,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "truth phase in-sample gain share of R",
+  "recount": 0.892766113703128,
+  "first": 0.892766113703128,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "truth phase LORO G_cv share",
+  "recount": 0.9034905823397271,
+  "first": 0.2976499049593918,
+  "abs_diff": 0.6058406773803353,
+  "flag": true
+ },
+ {
+  "section": "A9-3",
+  "name": "truth phase LORO G_cv (pp)",
+  "recount": 5.020494631786783,
+  "first": 1.6539737980783655,
+  "abs_diff": 3.3665208337084174,
+  "flag": true
+ },
+ {
+  "section": "A9-3",
+  "name": "truth phase LORO G_cv_vs_in share",
+  "recount": 0.8678503542422673,
+  "first": 0.8714791774667361,
+  "abs_diff": 0.00362882322446878,
+  "flag": true
+ },
+ {
+  "section": "A9-3",
+  "name": "truth phase LORO G_cv_vs_in (pp)",
+  "recount": 4.82244987367145,
+  "first": 4.842614430861375,
+  "abs_diff": 0.020164557189925603,
+  "flag": true
+ },
+ {
+  "section": "A9-3",
+  "name": "truth phase LORO sum(F1_cv - F1_in)",
+  "recount": 39.80699638118214,
+  "first": -640.9167671893848,
+  "abs_diff": 680.7237635705669,
+  "flag": true
+ },
+ {
+  "section": "A9-3",
+  "name": "truth phase LORO run-level pairs without a qualifying triple",
+  "recount": 30.0,
+  "first": 30.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "truth phase LORO run-level pairs without a qualifying single scale",
+  "recount": 30.0,
+  "first": 30.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "estimated phase in-sample gain (pp)",
+  "recount": 5.465855283294024,
+  "first": 5.465855283294024,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "estimated phase in-sample gain share of R",
+  "recount": 0.9836378952825299,
+  "first": 0.9836378952825299,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "estimated phase LORO G_cv share",
+  "recount": 0.9993303957145329,
+  "first": 0.38986089510972877,
+  "abs_diff": 0.6094695006048041,
+  "flag": true
+ },
+ {
+  "section": "A9-3",
+  "name": "estimated phase LORO G_cv (pp)",
+  "recount": 5.553054990427837,
+  "first": 2.1663695995294936,
+  "abs_diff": 3.3866853908983434,
+  "flag": true
+ },
+ {
+  "section": "A9-3",
+  "name": "estimated phase LORO G_cv_vs_in share",
+  "recount": 0.963690167617073,
+  "first": 0.963690167617073,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "estimated phase LORO G_cv_vs_in (pp)",
+  "recount": 5.355010232312503,
+  "first": 5.355010232312503,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "estimated phase LORO sum(F1_cv - F1_in)",
+  "recount": 39.80699638118214,
+  "first": -640.9167671893848,
+  "abs_diff": 680.7237635705669,
+  "flag": true
+ },
+ {
+  "section": "A9-3",
+  "name": "estimated phase LORO run-level pairs without a qualifying triple",
+  "recount": 26.0,
+  "first": 26.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "estimated phase LORO run-level pairs without a qualifying single scale",
+  "recount": 30.0,
+  "first": 30.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "estimated phase agreement with truth",
+  "recount": 0.956453558504222,
+  "first": 0.956453558504222,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "confusion truth 0 / estimated 0",
+  "recount": 675.0,
+  "first": 675.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "confusion truth 0 / estimated 1",
+  "recount": 3.0,
+  "first": 3.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "confusion truth 0 / estimated 2",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "confusion truth 1 / estimated 0",
+  "recount": 226.0,
+  "first": 226.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "confusion truth 1 / estimated 1",
+  "recount": 529.0,
+  "first": 529.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "confusion truth 1 / estimated 2",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "confusion truth 2 / estimated 0",
+  "recount": 4.0,
+  "first": 4.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "confusion truth 2 / estimated 1",
+  "recount": 128.0,
+  "first": 128.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-3",
+  "name": "confusion truth 2 / estimated 2",
+  "recount": 6725.0,
+  "first": 6725.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all E total (dec-eq)",
+  "recount": 460.65671641791045,
+  "first": 460.65671641791045,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all E D dec-eq of record",
+  "recount": 460.65671641791033,
+  "first": 460.65671641791033,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all E time since stop before stop",
+  "recount": 419.08955223880594,
+  "first": 419.08955223880594,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all E time since stop 0-1 s",
+  "recount": 41.71144278606965,
+  "first": 41.71144278606965,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all E time since stop 1-2 s",
+  "recount": -0.1442786069651741,
+  "first": -0.1442786069651741,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all E time since stop 2-5 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all E time since stop 5-10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all E time since stop >=10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all E lead speed estimate <=0.5",
+  "recount": 2.3582089552238807,
+  "first": 2.3582089552238807,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all E lead speed estimate 0.5-1",
+  "recount": 5.074626865671641,
+  "first": 5.074626865671641,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all E lead speed estimate 1-2",
+  "recount": 18.069651741293534,
+  "first": 18.069651741293534,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all E lead speed estimate >2",
+  "recount": 435.1542288557213,
+  "first": 435.1542288557213,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all CK3 total (dec-eq)",
+  "recount": 383.02487562189043,
+  "first": 383.02487562189043,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all CK3 D dec-eq of record",
+  "recount": 383.02487562189066,
+  "first": 383.02487562189066,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all CK3 time since stop before stop",
+  "recount": 345.8656716417911,
+  "first": 345.8656716417911,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all CK3 time since stop 0-1 s",
+  "recount": 37.43283582089553,
+  "first": 37.43283582089553,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all CK3 time since stop 1-2 s",
+  "recount": -0.27363184079601993,
+  "first": -0.27363184079601993,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all CK3 time since stop 2-5 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all CK3 time since stop 5-10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all CK3 time since stop >=10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all CK3 lead speed estimate <=0.5",
+  "recount": -1.8905472636815923,
+  "first": -1.8905472636815923,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all CK3 lead speed estimate 0.5-1",
+  "recount": 5.27860696517413,
+  "first": 5.27860696517413,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all CK3 lead speed estimate 1-2",
+  "recount": 18.860696517412933,
+  "first": 18.860696517412933,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all CK3 lead speed estimate >2",
+  "recount": 360.77611940298505,
+  "first": 360.77611940298505,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all A1 total (dec-eq)",
+  "recount": 173.1144278606965,
+  "first": 173.1144278606965,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all A1 D dec-eq of record",
+  "recount": 173.1144278606965,
+  "first": 173.1144278606965,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all A1 time since stop before stop",
+  "recount": 143.20398009950247,
+  "first": 143.20398009950247,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all A1 time since stop 0-1 s",
+  "recount": 30.014925373134325,
+  "first": 30.014925373134325,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all A1 time since stop 1-2 s",
+  "recount": -0.10447761194029849,
+  "first": -0.10447761194029849,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all A1 time since stop 2-5 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all A1 time since stop 5-10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all A1 time since stop >=10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all A1 lead speed estimate <=0.5",
+  "recount": 1.3432835820895526,
+  "first": 1.3432835820895526,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all A1 lead speed estimate 0.5-1",
+  "recount": 3.6666666666666665,
+  "first": 3.6666666666666665,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all A1 lead speed estimate 1-2",
+  "recount": 13.412935323383081,
+  "first": 13.412935323383081,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all A1 lead speed estimate >2",
+  "recount": 154.6915422885572,
+  "first": 154.6915422885572,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all N total (dec-eq)",
+  "recount": 0.5621890547263683,
+  "first": 0.5621890547263683,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all N D dec-eq of record",
+  "recount": 0.5621890547263714,
+  "first": 0.5621890547263714,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all N time since stop before stop",
+  "recount": 0.41791044776119407,
+  "first": 0.41791044776119407,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all N time since stop 0-1 s",
+  "recount": 0.14427860696517408,
+  "first": 0.14427860696517408,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all N time since stop 1-2 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all N time since stop 2-5 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all N time since stop 5-10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all N time since stop >=10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all N lead speed estimate <=0.5",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all N lead speed estimate 0.5-1",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all N lead speed estimate 1-2",
+  "recount": 0.054726368159203974,
+  "first": 0.054726368159203974,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "all N lead speed estimate >2",
+  "recount": 0.5074626865671643,
+  "first": 0.5074626865671643,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop E total (dec-eq)",
+  "recount": 56.26865671641792,
+  "first": 56.26865671641792,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop E D dec-eq of record",
+  "recount": 56.26865671641791,
+  "first": 56.26865671641791,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop E time since stop before stop",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop E time since stop 0-1 s",
+  "recount": 56.11442786069652,
+  "first": 56.11442786069652,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop E time since stop 1-2 s",
+  "recount": 0.154228855721393,
+  "first": 0.154228855721393,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop E time since stop 2-5 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop E time since stop 5-10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop E time since stop >=10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop E lead speed estimate <=0.5",
+  "recount": 4.099502487562188,
+  "first": 4.099502487562188,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop E lead speed estimate 0.5-1",
+  "recount": 6.661691542288557,
+  "first": 6.661691542288557,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop E lead speed estimate 1-2",
+  "recount": 18.58706467661692,
+  "first": 18.58706467661692,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop E lead speed estimate >2",
+  "recount": 26.920398009950254,
+  "first": 26.920398009950254,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop CK3 total (dec-eq)",
+  "recount": 55.8955223880597,
+  "first": 55.8955223880597,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop CK3 D dec-eq of record",
+  "recount": 55.8955223880597,
+  "first": 55.8955223880597,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop CK3 time since stop before stop",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop CK3 time since stop 0-1 s",
+  "recount": 55.8955223880597,
+  "first": 55.8955223880597,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop CK3 time since stop 1-2 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop CK3 time since stop 2-5 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop CK3 time since stop 5-10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop CK3 time since stop >=10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop CK3 lead speed estimate <=0.5",
+  "recount": 0.009950248756218905,
+  "first": 0.009950248756218905,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop CK3 lead speed estimate 0.5-1",
+  "recount": 8.303482587064675,
+  "first": 8.303482587064675,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop CK3 lead speed estimate 1-2",
+  "recount": 20.776119402985074,
+  "first": 20.776119402985074,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop CK3 lead speed estimate >2",
+  "recount": 26.80597014925373,
+  "first": 26.80597014925373,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop A1 total (dec-eq)",
+  "recount": 39.51243781094528,
+  "first": 39.51243781094528,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop A1 D dec-eq of record",
+  "recount": 39.51243781094527,
+  "first": 39.51243781094527,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop A1 time since stop before stop",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop A1 time since stop 0-1 s",
+  "recount": 39.671641791044784,
+  "first": 39.671641791044784,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop A1 time since stop 1-2 s",
+  "recount": -0.15920398009950248,
+  "first": -0.15920398009950248,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop A1 time since stop 2-5 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop A1 time since stop 5-10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop A1 time since stop >=10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop A1 lead speed estimate <=0.5",
+  "recount": 1.6567164179104477,
+  "first": 1.6567164179104477,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop A1 lead speed estimate 0.5-1",
+  "recount": 4.8258706467661705,
+  "first": 4.8258706467661705,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop A1 lead speed estimate 1-2",
+  "recount": 14.129353233830845,
+  "first": 14.129353233830845,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop A1 lead speed estimate >2",
+  "recount": 18.90049751243781,
+  "first": 18.90049751243781,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop N total (dec-eq)",
+  "recount": 0.10447761194029852,
+  "first": 0.10447761194029852,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop N D dec-eq of record",
+  "recount": 0.10447761194029866,
+  "first": 0.10447761194029866,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop N time since stop before stop",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop N time since stop 0-1 s",
+  "recount": 0.10447761194029852,
+  "first": 0.10447761194029852,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop N time since stop 1-2 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop N time since stop 2-5 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop N time since stop 5-10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop N time since stop >=10 s",
+  "recount": 0.0,
+  "first": 0.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop N lead speed estimate <=0.5",
+  "recount": 0.029850746268656712,
+  "first": 0.029850746268656712,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop N lead speed estimate 0.5-1",
+  "recount": -0.014925373134328358,
+  "first": -0.014925373134328358,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop N lead speed estimate 1-2",
+  "recount": 0.009950248756218909,
+  "first": 0.009950248756218909,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-4b",
+  "name": "after_stop N lead speed estimate >2",
+  "recount": 0.07960199004975124,
+  "first": 0.07960199004975124,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "number of tuning runs",
+  "recount": 20.0,
+  "first": 20.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "all n",
+  "recount": 3018.0,
+  "first": 3018.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "all R (pp)",
+  "recount": 1.1803144647867356,
+  "first": 1.1803144647867356,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "all RR(N)",
+  "recount": 0.0022346368715083793,
+  "first": 0.0022346368715083793,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "all RR(NA)",
+  "recount": 0.06326815642458099,
+  "first": 0.06326815642458099,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "all RR(A1)",
+  "recount": 0.2451117318435754,
+  "first": 0.2451117318435754,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "all RR(CK3)",
+  "recount": 0.3768156424581005,
+  "first": 0.3768156424581005,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "all RR(Q)",
+  "recount": 0.0037709497206703914,
+  "first": 0.0037709497206703914,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "moving n",
+  "recount": 897.0,
+  "first": 897.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "moving R (pp)",
+  "recount": 4.052757394743118,
+  "first": 4.052757394743118,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "moving RR(N)",
+  "recount": -2.725797326094883e-19,
+  "first": -2.725797326094883e-19,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "moving RR(NA)",
+  "recount": 0.06774325988777885,
+  "first": 0.06774325988777885,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "moving RR(A1)",
+  "recount": 0.2535924456001095,
+  "first": 0.2535924456001095,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "moving RR(CK3)",
+  "recount": 0.15108799781031892,
+  "first": 0.15108799781031892,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "moving RR(Q)",
+  "recount": 0.002326536198166141,
+  "first": 0.002326536198166141,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase0 n",
+  "recount": 378.0,
+  "first": 378.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase0 R (pp)",
+  "recount": 0.07107320540156362,
+  "first": 0.07107320540156362,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase0 RR(N)",
+  "recount": -7.771561172376095e-18,
+  "first": -7.771561172376095e-18,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase0 RR(NA)",
+  "recount": -7.771561172376095e-18,
+  "first": -7.771561172376095e-18,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase0 RR(A1)",
+  "recount": -0.0740740740740741,
+  "first": -0.0740740740740741,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase0 RR(CK3)",
+  "recount": -5.222222222222222,
+  "first": -5.222222222222222,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase0 RR(Q)",
+  "recount": 0.07407407407407406,
+  "first": 0.07407407407407406,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase1 n",
+  "recount": 279.0,
+  "first": 279.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase1 R (pp)",
+  "recount": 10.14283421601669,
+  "first": 10.14283421601669,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase1 RR(N)",
+  "recount": 0.003516174402250337,
+  "first": 0.003516174402250337,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase1 RR(NA)",
+  "recount": 0.079817158931083,
+  "first": 0.079817158931083,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase1 RR(A1)",
+  "recount": 0.06258790436005626,
+  "first": 0.06258790436005626,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase1 RR(CK3)",
+  "recount": 0.30098452883263016,
+  "first": 0.30098452883263016,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase1 RR(Q)",
+  "recount": 0.011603375527426147,
+  "first": 0.011603375527426147,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase2 n",
+  "recount": 2361.0,
+  "first": 2361.0,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase2 R (pp)",
+  "recount": 1.1996350311129655,
+  "first": 1.1996350311129655,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase2 RR(N)",
+  "recount": -0.0010539258738802057,
+  "first": -0.0010539258738802057,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase2 RR(NA)",
+  "recount": -0.0015808888108203084,
+  "first": -0.0015808888108203084,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase2 RR(A1)",
+  "recount": 0.06253293518355876,
+  "first": 0.06253293518355876,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase2 RR(CK3)",
+  "recount": 0.9367644475671879,
+  "first": 0.9367644475671879,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "phase2 RR(Q)",
+  "recount": -0.03460389952573336,
+  "first": -0.03460389952573336,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "decision-weighted mean phase room (pp)",
+  "recount": 1.8850413274911062,
+  "first": 1.8850413274911064,
+  "abs_diff": 2.220446049250313e-16,
+  "flag": false
+ },
+ {
+  "section": "A9-5",
+  "name": "pooled room / weighted phase room",
+  "recount": 0.6261477918670748,
+  "first": 0.6261477918670748,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "all F0 share W1-unsafe but stop-safe",
+  "recount": 0.05817114667914949,
+  "first": 0.05817114667914949,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "all E share W1-unsafe but stop-safe",
+  "recount": 0.005510445360651507,
+  "first": 0.005510445360651507,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "all N share W1-unsafe but stop-safe",
+  "recount": 0.058175947764194706,
+  "first": 0.058175947764194706,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "all NA share W1-unsafe but stop-safe",
+  "recount": 0.05725834038492699,
+  "first": 0.05725834038492699,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "all A1 share W1-unsafe but stop-safe",
+  "recount": 0.046676148809630974,
+  "first": 0.046676148809630974,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "all CK3 share W1-unsafe but stop-safe",
+  "recount": 0.03286762808394697,
+  "first": 0.03286762808394697,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "all O share W1-unsafe but stop-safe",
+  "recount": 0.7225572979493365,
+  "first": 0.7225572979493365,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "moving F0 share W1-unsafe but stop-safe",
+  "recount": 0.19021371937948475,
+  "first": 0.19021371937948475,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "moving E share W1-unsafe but stop-safe",
+  "recount": 0.008743186910322248,
+  "first": 0.008743186910322248,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "moving N share W1-unsafe but stop-safe",
+  "recount": 0.19186408269975938,
+  "first": 0.19186408269975938,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "moving NA share W1-unsafe but stop-safe",
+  "recount": 0.18678747967088874,
+  "first": 0.18678747967088874,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "moving A1 share W1-unsafe but stop-safe",
+  "recount": 0.17766508306561662,
+  "first": 0.17766508306561662,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "moving CK3 share W1-unsafe but stop-safe",
+  "recount": 0.15273338086806973,
+  "first": 0.15273338086806973,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "moving O share W1-unsafe but stop-safe",
+  "recount": 0.5158346752549651,
+  "first": 0.5158346752549651,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase0 F0 share W1-unsafe but stop-safe",
+  "recount": 0.05014749262536873,
+  "first": 0.05014749262536873,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase0 E share W1-unsafe but stop-safe",
+  "recount": 0.05014749262536873,
+  "first": 0.05014749262536873,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase0 N share W1-unsafe but stop-safe",
+  "recount": 0.05014749262536873,
+  "first": 0.05014749262536873,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase0 NA share W1-unsafe but stop-safe",
+  "recount": 0.05014749262536873,
+  "first": 0.05014749262536873,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase0 A1 share W1-unsafe but stop-safe",
+  "recount": 0.05014749262536873,
+  "first": 0.05014749262536873,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase0 CK3 share W1-unsafe but stop-safe",
+  "recount": 0.05014749262536873,
+  "first": 0.05014749262536873,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase0 O share W1-unsafe but stop-safe",
+  "recount": 0.05014749262536873,
+  "first": 0.05014749262536873,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase1 F0 share W1-unsafe but stop-safe",
+  "recount": 0.41744917795130304,
+  "first": 0.41744917795130304,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase1 E share W1-unsafe but stop-safe",
+  "recount": 0.6569536423841059,
+  "first": 0.6569536423841059,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase1 N share W1-unsafe but stop-safe",
+  "recount": 0.42240453362327435,
+  "first": 0.42240453362327435,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase1 NA share W1-unsafe but stop-safe",
+  "recount": 0.4104642351158117,
+  "first": 0.4104642351158117,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase1 A1 share W1-unsafe but stop-safe",
+  "recount": 0.3792099107113439,
+  "first": 0.3792099107113439,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase1 CK3 share W1-unsafe but stop-safe",
+  "recount": 0.4047181311983131,
+  "first": 0.4047181311983131,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase1 O share W1-unsafe but stop-safe",
+  "recount": 0.7019867549668874,
+  "first": 0.7019867549668874,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase2 F0 share W1-unsafe but stop-safe",
+  "recount": 0.01211385104519694,
+  "first": 0.01211385104519694,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase2 E share W1-unsafe but stop-safe",
+  "recount": 0.0033244888290064915,
+  "first": 0.0033244888290064915,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase2 N share W1-unsafe but stop-safe",
+  "recount": 0.012144324316872688,
+  "first": 0.012144324316872688,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase2 NA share W1-unsafe but stop-safe",
+  "recount": 0.011777919502676206,
+  "first": 0.011777919502676206,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase2 A1 share W1-unsafe but stop-safe",
+  "recount": 0.007208379859489195,
+  "first": 0.007208379859489195,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase2 CK3 share W1-unsafe but stop-safe",
+  "recount": 0.004314870158468268,
+  "first": 0.004314870158468268,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-6",
+  "name": "phase2 O share W1-unsafe but stop-safe",
+  "recount": 0.791308152253172,
+  "first": 0.791308152253172,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "all R (pp)",
+  "recount": 5.556775831337881,
+  "first": 5.556775831337881,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "all RR(TG2)",
+  "recount": 0.3142172109901504,
+  "first": 0.3142172109901504,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "all RR(TG1)",
+  "recount": 0.38730127872818393,
+  "first": 0.38730127872818393,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "all RR(TG4)",
+  "recount": 0.21293416277864183,
+  "first": 0.21293416277864183,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "all D(TG2,F0) dec-eq",
+  "recount": 144.7462686567164,
+  "first": 144.7462686567164,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "moving R (pp)",
+  "recount": 10.164155070060325,
+  "first": 10.164155070060325,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "moving RR(TG2)",
+  "recount": 0.16780956885000398,
+  "first": 0.16780956885000398,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "moving RR(TG1)",
+  "recount": 0.184913691179948,
+  "first": 0.184913691179948,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "moving RR(TG4)",
+  "recount": 0.11576154068469038,
+  "first": 0.11576154068469038,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "moving D(TG2,F0) dec-eq",
+  "recount": 31.776119402985078,
+  "first": 31.776119402985078,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase0 R (pp)",
+  "recount": 0.4314709637652444,
+  "first": 0.4314709637652444,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase0 RR(TG2)",
+  "recount": -0.48129251700680276,
+  "first": -0.48129251700680276,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase0 RR(TG1)",
+  "recount": -0.7261904761904766,
+  "first": -0.7261904761904766,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase0 RR(TG4)",
+  "recount": -0.2585034013605443,
+  "first": -0.2585034013605443,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase0 D(TG2,F0) dec-eq",
+  "recount": -1.4079601990049748,
+  "first": -1.4079601990049748,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase1 R (pp)",
+  "recount": 15.587624789957497,
+  "first": 15.587624789957497,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase1 RR(TG2)",
+  "recount": 0.08788839568801524,
+  "first": 0.08788839568801524,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase1 RR(TG1)",
+  "recount": 0.053096596913971665,
+  "first": 0.053096596913971665,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase1 RR(TG4)",
+  "recount": 0.09270767279644894,
+  "first": 0.09270767279644894,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase1 D(TG2,F0) dec-eq",
+  "recount": 10.343283582089553,
+  "first": 10.343283582089553,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase2 R (pp)",
+  "recount": 0.820601672982615,
+  "first": 0.820601672982615,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase2 RR(TG2)",
+  "recount": 0.16127320954907165,
+  "first": 0.16127320954907165,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase2 RR(TG1)",
+  "recount": 0.1850574712643678,
+  "first": 0.1850574712643678,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase2 RR(TG4)",
+  "recount": 0.06622458001768353,
+  "first": 0.06622458001768353,
+  "abs_diff": 0.0,
+  "flag": false
+ },
+ {
+  "section": "A9-7",
+  "name": "phase2 D(TG2,F0) dec-eq",
+  "recount": 9.074626865671643,
+  "first": 9.074626865671643,
+  "abs_diff": 0.0,
+  "flag": false
+ }
+]

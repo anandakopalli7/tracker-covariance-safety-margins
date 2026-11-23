@@ -1,0 +1,1124 @@
+{
+ "compared": 185,
+ "disagreements": 0,
+ "rows": [
+  {
+   "item": "c_star",
+   "first": 8.96842530569466,
+   "second": 8.96842530569466,
+   "agree": true
+  },
+  {
+   "item": "matched_index_N",
+   "first": 78,
+   "second": 78,
+   "agree": true
+  },
+  {
+   "item": "matched_index_NA",
+   "first": 78,
+   "second": 78,
+   "agree": true
+  },
+  {
+   "item": "matched_index_A1",
+   "first": 51,
+   "second": 51,
+   "agree": true
+  },
+  {
+   "item": "matched_index_CK3",
+   "first": 74,
+   "second": 74,
+   "agree": true
+  },
+  {
+   "item": "matched_index_Q",
+   "first": 54,
+   "second": 54,
+   "agree": true
+  },
+  {
+   "item": "matched_index_TG",
+   "first": 63,
+   "second": 63,
+   "agree": true
+  },
+  {
+   "item": "PS_triple",
+   "first": [
+    164,
+    162,
+    38
+   ],
+   "second": [
+    164,
+    162,
+    38
+   ],
+   "agree": true
+  },
+  {
+   "item": "constant/D-H1",
+   "first": "costs progress",
+   "second": "costs progress",
+   "agree": true
+  },
+  {
+   "item": "constant/D-H2",
+   "first": "costs progress",
+   "second": "costs progress",
+   "agree": true
+  },
+  {
+   "item": "constant/N/caution_diff_pp/point",
+   "first": -0.003783276813980066,
+   "second": -0.003783276813980066,
+   "agree": true
+  },
+  {
+   "item": "constant/N/caution_diff_pp/lo",
+   "first": -0.011349830441940212,
+   "second": -0.011349830441940212,
+   "agree": true
+  },
+  {
+   "item": "constant/N/caution_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/N/wrong_go_diff_pp/point",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/N/wrong_go_diff_pp/lo",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/N/wrong_go_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/N/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "constant/NA/caution_diff_pp/point",
+   "first": -0.003783276813980066,
+   "second": -0.003783276813980066,
+   "agree": true
+  },
+  {
+   "item": "constant/NA/caution_diff_pp/lo",
+   "first": -0.011349830441940212,
+   "second": -0.011349830441940212,
+   "agree": true
+  },
+  {
+   "item": "constant/NA/caution_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/NA/wrong_go_diff_pp/point",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/NA/wrong_go_diff_pp/lo",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/NA/wrong_go_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/NA/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "constant/A1/caution_diff_pp/point",
+   "first": 0.004292173035728236,
+   "second": 0.004292173035728236,
+   "agree": true
+  },
+  {
+   "item": "constant/A1/caution_diff_pp/lo",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/A1/caution_diff_pp/hi",
+   "first": 0.012876519107184722,
+   "second": 0.012876519107184722,
+   "agree": true
+  },
+  {
+   "item": "constant/A1/wrong_go_diff_pp/point",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/A1/wrong_go_diff_pp/lo",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/A1/wrong_go_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/A1/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "constant/CK3/caution_diff_pp/point",
+   "first": 5.295604858199197,
+   "second": 5.295604858199197,
+   "agree": true
+  },
+  {
+   "item": "constant/CK3/caution_diff_pp/lo",
+   "first": 2.7127007896353676,
+   "second": 2.7127007896353676,
+   "agree": true
+  },
+  {
+   "item": "constant/CK3/caution_diff_pp/hi",
+   "first": 8.46017538150503,
+   "second": 8.46017538150503,
+   "agree": true
+  },
+  {
+   "item": "constant/CK3/wrong_go_diff_pp/point",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/CK3/wrong_go_diff_pp/lo",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/CK3/wrong_go_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/CK3/classification",
+   "first": "costs progress",
+   "second": "costs progress",
+   "agree": true
+  },
+  {
+   "item": "constant/Q/caution_diff_pp/point",
+   "first": 0.004292173035728236,
+   "second": 0.004292173035728236,
+   "agree": true
+  },
+  {
+   "item": "constant/Q/caution_diff_pp/lo",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/Q/caution_diff_pp/hi",
+   "first": 0.012876519107184722,
+   "second": 0.012876519107184722,
+   "agree": true
+  },
+  {
+   "item": "constant/Q/wrong_go_diff_pp/point",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/Q/wrong_go_diff_pp/lo",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/Q/wrong_go_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/Q/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "constant/TG/caution_diff_pp/point",
+   "first": 0.006809068248302297,
+   "second": 0.006809068248302297,
+   "agree": true
+  },
+  {
+   "item": "constant/TG/caution_diff_pp/lo",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/TG/caution_diff_pp/hi",
+   "first": 0.017999391026067624,
+   "second": 0.017999391026067624,
+   "agree": true
+  },
+  {
+   "item": "constant/TG/wrong_go_diff_pp/point",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/TG/wrong_go_diff_pp/lo",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/TG/wrong_go_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/TG/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "constant/PS/caution_diff_pp/point",
+   "first": 35.23227468411714,
+   "second": 35.23227468411712,
+   "agree": true
+  },
+  {
+   "item": "constant/PS/caution_diff_pp/lo",
+   "first": 26.280885692418416,
+   "second": 26.280885692418416,
+   "agree": true
+  },
+  {
+   "item": "constant/PS/caution_diff_pp/hi",
+   "first": 44.133962586116844,
+   "second": 44.133962586116844,
+   "agree": true
+  },
+  {
+   "item": "constant/PS/wrong_go_diff_pp/point",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/PS/wrong_go_diff_pp/lo",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/PS/wrong_go_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "constant/PS/classification",
+   "first": "costs progress",
+   "second": "costs progress",
+   "agree": true
+  },
+  {
+   "item": "mild_braking/D-H1",
+   "first": "costs progress",
+   "second": "costs progress",
+   "agree": true
+  },
+  {
+   "item": "mild_braking/D-H2",
+   "first": "costs progress",
+   "second": "costs progress",
+   "agree": true
+  },
+  {
+   "item": "mild_braking/N/caution_diff_pp/point",
+   "first": 0.008707581581071544,
+   "second": 0.008707581581071988,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/N/caution_diff_pp/lo",
+   "first": 0.0025437094559256357,
+   "second": 0.0025437094559256357,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/N/caution_diff_pp/hi",
+   "first": 0.017079839913149927,
+   "second": 0.017079839913149927,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/N/wrong_go_diff_pp/point",
+   "first": -0.021085925144965767,
+   "second": -0.021085925144965767,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/N/wrong_go_diff_pp/lo",
+   "first": -0.05271481286241442,
+   "second": -0.05271481286241442,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/N/wrong_go_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/N/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "mild_braking/NA/caution_diff_pp/point",
+   "first": 0.008707581581071544,
+   "second": 0.008707581581071988,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/NA/caution_diff_pp/lo",
+   "first": 0.0025437094559256357,
+   "second": 0.0025437094559256357,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/NA/caution_diff_pp/hi",
+   "first": 0.017079839913149927,
+   "second": 0.017079839913149927,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/NA/wrong_go_diff_pp/point",
+   "first": -0.021085925144965767,
+   "second": -0.021085925144965767,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/NA/wrong_go_diff_pp/lo",
+   "first": -0.05271481286241442,
+   "second": -0.05271481286241442,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/NA/wrong_go_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/NA/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "mild_braking/A1/caution_diff_pp/point",
+   "first": 0.12204222503159778,
+   "second": 0.12204222503159778,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/A1/caution_diff_pp/lo",
+   "first": 0.07672912846396844,
+   "second": 0.07672912846396844,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/A1/caution_diff_pp/hi",
+   "first": 0.17132622960829058,
+   "second": 0.17132622960829058,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/A1/wrong_go_diff_pp/point",
+   "first": -0.3584607274644175,
+   "second": -0.3584607274644175,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/A1/wrong_go_diff_pp/lo",
+   "first": -0.6220347917764891,
+   "second": -0.6220347917764891,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/A1/wrong_go_diff_pp/hi",
+   "first": -0.14760147601476012,
+   "second": -0.14760147601476012,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/A1/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "mild_braking/CK3/caution_diff_pp/point",
+   "first": 18.68907551254009,
+   "second": 18.68907551254009,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/CK3/caution_diff_pp/lo",
+   "first": 15.440172021049507,
+   "second": 15.440172021049507,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/CK3/caution_diff_pp/hi",
+   "first": 21.857243337845798,
+   "second": 21.857243337845798,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/CK3/wrong_go_diff_pp/point",
+   "first": -0.9488666315234581,
+   "second": -0.9488666315234581,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/CK3/wrong_go_diff_pp/lo",
+   "first": -1.591987348444913,
+   "second": -1.591987348444913,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/CK3/wrong_go_diff_pp/hi",
+   "first": -0.41117554032683185,
+   "second": -0.41117554032683185,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/CK3/classification",
+   "first": "costs progress",
+   "second": "costs progress",
+   "agree": true
+  },
+  {
+   "item": "mild_braking/Q/caution_diff_pp/point",
+   "first": 0.004525164498709655,
+   "second": 0.004525164498709655,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/Q/caution_diff_pp/lo",
+   "first": -0.004283444596551533,
+   "second": -0.004283444596551533,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/Q/caution_diff_pp/hi",
+   "first": 0.013285090535731531,
+   "second": 0.013285090535731531,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/Q/wrong_go_diff_pp/point",
+   "first": -0.010542962572482883,
+   "second": -0.010542962572482883,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/Q/wrong_go_diff_pp/lo",
+   "first": -0.05271481286241442,
+   "second": -0.05271481286241442,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/Q/wrong_go_diff_pp/hi",
+   "first": 0.03162888771744865,
+   "second": 0.03162888771744865,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/Q/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "mild_braking/TG/caution_diff_pp/point",
+   "first": 4.563186716242006,
+   "second": 4.563186716242006,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/TG/caution_diff_pp/lo",
+   "first": 3.4586397182048905,
+   "second": 3.4586397182048905,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/TG/caution_diff_pp/hi",
+   "first": 5.648418345782143,
+   "second": 5.648418345782143,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/TG/wrong_go_diff_pp/point",
+   "first": -0.9488666315234581,
+   "second": -0.9488666315234581,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/TG/wrong_go_diff_pp/lo",
+   "first": -1.591987348444913,
+   "second": -1.591987348444913,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/TG/wrong_go_diff_pp/hi",
+   "first": -0.41117554032683185,
+   "second": -0.41117554032683185,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/TG/classification",
+   "first": "costs progress",
+   "second": "costs progress",
+   "agree": true
+  },
+  {
+   "item": "mild_braking/PS/caution_diff_pp/point",
+   "first": 53.46293015470048,
+   "second": 53.46293015470048,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/PS/caution_diff_pp/lo",
+   "first": 48.17461708041793,
+   "second": 48.17461708041793,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/PS/caution_diff_pp/hi",
+   "first": 58.7084579014487,
+   "second": 58.7084579014487,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/PS/wrong_go_diff_pp/point",
+   "first": -0.9488666315234581,
+   "second": -0.9488666315234581,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/PS/wrong_go_diff_pp/lo",
+   "first": -1.591987348444913,
+   "second": -1.591987348444913,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/PS/wrong_go_diff_pp/hi",
+   "first": -0.41117554032683185,
+   "second": -0.41117554032683185,
+   "agree": true
+  },
+  {
+   "item": "mild_braking/PS/classification",
+   "first": "costs progress",
+   "second": "costs progress",
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/D-H1",
+   "first": "costs progress",
+   "second": "costs progress",
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/D-H2",
+   "first": "costs progress",
+   "second": "costs progress",
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/N/caution_diff_pp/point",
+   "first": 0.03353861603736252,
+   "second": 0.03353861603736208,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/N/caution_diff_pp/lo",
+   "first": 0.014387891167760536,
+   "second": 0.014387891167760536,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/N/caution_diff_pp/hi",
+   "first": 0.05431400093999949,
+   "second": 0.05431400093999949,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/N/wrong_go_diff_pp/point",
+   "first": -0.014463407578825027,
+   "second": -0.014463407578825027,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/N/wrong_go_diff_pp/lo",
+   "first": -0.04730480956681331,
+   "second": -0.04730480956681331,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/N/wrong_go_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/N/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/NA/caution_diff_pp/point",
+   "first": 0.058943990885075515,
+   "second": 0.05894399088507507,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/NA/caution_diff_pp/lo",
+   "first": 0.03137429846269567,
+   "second": 0.03137429846269567,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/NA/caution_diff_pp/hi",
+   "first": 0.08838791541098583,
+   "second": 0.08838791541098583,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/NA/wrong_go_diff_pp/point",
+   "first": -0.04339022273647686,
+   "second": -0.04339022273647686,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/NA/wrong_go_diff_pp/lo",
+   "first": -0.09422152834717486,
+   "second": -0.09422152834717486,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/NA/wrong_go_diff_pp/hi",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/NA/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/A1/caution_diff_pp/point",
+   "first": 0.5725233859254804,
+   "second": 0.5725233859254795,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/A1/caution_diff_pp/lo",
+   "first": 0.39209544511214295,
+   "second": 0.39209544511214295,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/A1/caution_diff_pp/hi",
+   "first": 0.7444544040461589,
+   "second": 0.7444544040461589,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/A1/wrong_go_diff_pp/point",
+   "first": -1.3017066820943013,
+   "second": -1.3017066820943013,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/A1/wrong_go_diff_pp/lo",
+   "first": -1.5969716737427204,
+   "second": -1.5969716737427204,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/A1/wrong_go_diff_pp/hi",
+   "first": -0.9969079555179997,
+   "second": -0.9969079555179997,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/A1/classification",
+   "first": "inconclusive",
+   "second": "inconclusive",
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/CK3/caution_diff_pp/point",
+   "first": 1.6592859083689513,
+   "second": 1.6592859083689513,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/CK3/caution_diff_pp/lo",
+   "first": 1.1349926642982822,
+   "second": 1.1349926642982822,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/CK3/caution_diff_pp/hi",
+   "first": 2.237378011399703,
+   "second": 2.237378011399703,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/CK3/wrong_go_diff_pp/point",
+   "first": -4.700607463118311,
+   "second": -4.700607463118311,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/CK3/wrong_go_diff_pp/lo",
+   "first": -6.27321704186795,
+   "second": -6.27321704186795,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/CK3/wrong_go_diff_pp/hi",
+   "first": -3.401878649403402,
+   "second": -3.401878649403402,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/CK3/classification",
+   "first": "costs progress",
+   "second": "costs progress",
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/Q/caution_diff_pp/point",
+   "first": -0.008623057032437487,
+   "second": -0.008623057032438375,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/Q/caution_diff_pp/lo",
+   "first": -0.043342621500427767,
+   "second": -0.043342621500427767,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/Q/caution_diff_pp/hi",
+   "first": 0.019545079808179135,
+   "second": 0.019545079808179135,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/Q/wrong_go_diff_pp/point",
+   "first": 0.0723170378941278,
+   "second": 0.0723170378941278,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/Q/wrong_go_diff_pp/lo",
+   "first": 0.013972334777141859,
+   "second": 0.013972334777141859,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/Q/wrong_go_diff_pp/hi",
+   "first": 0.14961157104053802,
+   "second": 0.14961157104053802,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/Q/classification",
+   "first": "costs safety",
+   "second": "costs safety",
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/TG/caution_diff_pp/point",
+   "first": 0.2714268411719214,
+   "second": 0.2714268411719214,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/TG/caution_diff_pp/lo",
+   "first": 0.15166096707778956,
+   "second": 0.15166096707778956,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/TG/caution_diff_pp/hi",
+   "first": 0.4342050355397348,
+   "second": 0.4342050355397348,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/TG/wrong_go_diff_pp/point",
+   "first": -0.17356089094590654,
+   "second": -0.17356089094590654,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/TG/wrong_go_diff_pp/lo",
+   "first": -0.3093832799159153,
+   "second": -0.3093832799159153,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/TG/wrong_go_diff_pp/hi",
+   "first": -0.06450209221957502,
+   "second": -0.06450209221957502,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/TG/classification",
+   "first": "no measurable cost",
+   "second": "no measurable cost",
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/PS/caution_diff_pp/point",
+   "first": 21.44276758219422,
+   "second": 21.442767582194218,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/PS/caution_diff_pp/lo",
+   "first": 14.766818139639513,
+   "second": 14.766818139639517,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/PS/caution_diff_pp/hi",
+   "first": 28.146785549235926,
+   "second": 28.146785549235926,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/PS/wrong_go_diff_pp/point",
+   "first": -6.4796065953138555,
+   "second": -6.4796065953138555,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/PS/wrong_go_diff_pp/lo",
+   "first": -8.03422903683261,
+   "second": -8.03422903683261,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/PS/wrong_go_diff_pp/hi",
+   "first": -5.196688846899715,
+   "second": -5.196688846899715,
+   "agree": true
+  },
+  {
+   "item": "stop_and_go/PS/classification",
+   "first": "costs progress",
+   "second": "costs progress",
+   "agree": true
+  },
+  {
+   "item": "D2/3s/F0/2%/g",
+   "first": 0.014962356560944336,
+   "second": 0.014962356560944336,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/F0/2%/runs_with_wrong_go",
+   "first": 105,
+   "second": 105,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/F0/2%/median_of_medians",
+   "first": 9.51763320028227,
+   "second": 9.51763320028227,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/F0/5%/g",
+   "first": 0.12589254117941676,
+   "second": 0.12589254117941676,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/F0/5%/runs_with_wrong_go",
+   "first": 105,
+   "second": 105,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/F0/5%/median_of_medians",
+   "first": 9.609160345024438,
+   "second": 9.609160345024438,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/N/2%/g",
+   "first": 0.012589254117941675,
+   "second": 0.012589254117941675,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/N/2%/runs_with_wrong_go",
+   "first": 105,
+   "second": 105,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/N/2%/median_of_medians",
+   "first": 9.51763320028227,
+   "second": 9.51763320028227,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/N/5%/g",
+   "first": 0.1,
+   "second": 0.1,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/N/5%/runs_with_wrong_go",
+   "first": 105,
+   "second": 105,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/N/5%/median_of_medians",
+   "first": 9.609160345024438,
+   "second": 9.609160345024438,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/CK3/2%/g",
+   "first": 0.01,
+   "second": 0.01,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/CK3/2%/runs_with_wrong_go",
+   "first": 92,
+   "second": 92,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/CK3/2%/median_of_medians",
+   "first": 7.090909566745843,
+   "second": 7.090909566745843,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/CK3/5%/g",
+   "first": 0.08413951416451952,
+   "second": 0.08413951416451952,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/CK3/5%/runs_with_wrong_go",
+   "first": 80,
+   "second": 80,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/CK3/5%/median_of_medians",
+   "first": 7.72981533201167,
+   "second": 7.72981533201167,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/TG/2%/g",
+   "first": 0.0,
+   "second": 0.0,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/TG/2%/runs_with_wrong_go",
+   "first": 105,
+   "second": 105,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/TG/2%/median_of_medians",
+   "first": 9.42175893602051,
+   "second": 9.42175893602051,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/TG/5%/g",
+   "first": 0.021134890398366465,
+   "second": 0.021134890398366465,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/TG/5%/runs_with_wrong_go",
+   "first": 105,
+   "second": 105,
+   "agree": true
+  },
+  {
+   "item": "D2/3s/TG/5%/median_of_medians",
+   "first": 9.609160345024438,
+   "second": 9.609160345024438,
+   "agree": true
+  }
+ ]
+}

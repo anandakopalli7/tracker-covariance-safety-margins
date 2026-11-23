@@ -1,0 +1,760 @@
+{
+ "code": "b_l12_retrack_v01.py manifest",
+ "variant": "B2",
+ "runs_root": "ARS_TRIAL\\revision_v13\\work\\CD_capture\\runs",
+ "n": 150,
+ "lock_A12a_sha256": "0c4d4872946ba85d2ed91a0471eb8da7188333d2dfe462b68a6df555345b2766",
+ "written": "2026-11-22 02:23:04",
+ "arrays_B2_l12": [
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_0864_native_arrays.npz",
+   "sha256": "03cb5479b5773205d37323f74c05d1bf25a18b2a01068ca95928f0d141e70a8c",
+   "bytes": 68829
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_0870_native_arrays.npz",
+   "sha256": "ccbb4d0373e01f25349e86a68d7a1431135a69b035b551d3c61b5f7ce8bf4ffc",
+   "bytes": 88044
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_0876_native_arrays.npz",
+   "sha256": "03cfd236d16eaa2d95395448a27e053297aade2627e0ac5bde7a060983031342",
+   "bytes": 269489
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_0882_native_arrays.npz",
+   "sha256": "b5bd96bedb5e0cb5aa831dd9082c2e59ed692e7a3a58adeb92f3a2015419e94e",
+   "bytes": 75243
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_0888_native_arrays.npz",
+   "sha256": "eef74c4d126a0228b29c489d49c64a3621f5fcb7fa86042e2c49ef7f96e49bcf",
+   "bytes": 87205
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_0900_native_arrays.npz",
+   "sha256": "dafa22dbe6837e5d5c941346945231fdf7e4fb2061ccb9eb8bcd332997e9d45e",
+   "bytes": 157938
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_0930_native_arrays.npz",
+   "sha256": "48f9a3ba08c9edea2bd29fc9ed862c45a3f9d321326fdf76a102eca72886c56b",
+   "bytes": 71259
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_0954_native_arrays.npz",
+   "sha256": "7170b6137685142727d5bddec51f892908cfe7f068a24e6802b2fc03db3c81c8",
+   "bytes": 278564
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_0972_native_arrays.npz",
+   "sha256": "170239a6ba030e48a52c0578cfa16797e777035331f1d99b001c421e31a967b3",
+   "bytes": 60200
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_0978_native_arrays.npz",
+   "sha256": "de9f6ee9d84fbb149c5b5c2522cd8ca274256ba24628f56ecbe4af6a8d6acfbe",
+   "bytes": 81138
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1008_native_arrays.npz",
+   "sha256": "4f3dffd270f4b104613568f882c5d6bc4965ab378a11ba9580838a80a8a25305",
+   "bytes": 84808
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1032_native_arrays.npz",
+   "sha256": "65b6da0e79165a6f313491e49b783a36ef851cdfd59b85d68e88c7afa1e40860",
+   "bytes": 272515
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1038_native_arrays.npz",
+   "sha256": "311c5e3d56102a2f50b854352190e71e18ad360c13ab60cee1136872356138b1",
+   "bytes": 153378
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1056_native_arrays.npz",
+   "sha256": "5f443dd9ca760f107fe6083d3c495229cd28fa3323154d5ee76307d9599b87b8",
+   "bytes": 78546
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1062_native_arrays.npz",
+   "sha256": "2e5869b3eb3d8bfb885cb66363866eec9fdfa8f9441b5f2c37f6499a876ac82b",
+   "bytes": 200711
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1068_native_arrays.npz",
+   "sha256": "2c82554b17281ac00e71b65ecff70da353266c0cd312f312e3089ae0f619b369",
+   "bytes": 67635
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1080_native_arrays.npz",
+   "sha256": "06857016b281370e487aa71289b6a0bdd53e1d2f346581927c6b6aea36f7572f",
+   "bytes": 95141
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1086_native_arrays.npz",
+   "sha256": "f752652f98fa199a313520bb72493a438a5d15db20d555622f0b8ad366f8520e",
+   "bytes": 213229
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1092_native_arrays.npz",
+   "sha256": "e2cf2f5d065988e24e81791235ead04f0a3eb91cfc6f9e655a6f3fd0e3a232df",
+   "bytes": 207487
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1104_native_arrays.npz",
+   "sha256": "1bf62d4f660c37be782b6ef1976eda2d4290d42f818f028e2e839e6d267d21f5",
+   "bytes": 71565
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1110_native_arrays.npz",
+   "sha256": "451dd53b66fd2421fdd1e553498a29948d8b70480a1c026b83c39564148bf21b",
+   "bytes": 236331
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1116_native_arrays.npz",
+   "sha256": "4f5cc8b9e2fef127b8e624c7b79336fa539c7670a0ec9ea8d562016d4e30a0b6",
+   "bytes": 262325
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1122_native_arrays.npz",
+   "sha256": "db4f0922de2fe1fa6f34542863002b37eb023ac46cf08b827c7ee060b1e90a28",
+   "bytes": 72633
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1128_native_arrays.npz",
+   "sha256": "8dd3c28c212fe2aad946e223d68eb119a0406daf4d3608abf32bf870b865d384",
+   "bytes": 155294
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1134_native_arrays.npz",
+   "sha256": "48218362d8462216b441c435fbea98c95c139dae12d46d610c8dd9ddf19c2275",
+   "bytes": 166297
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1140_native_arrays.npz",
+   "sha256": "98e6d0e330edebc0aaa79b6b7f528606fad8cb40f91bcf1ab131be017cf1943f",
+   "bytes": 83788
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1146_native_arrays.npz",
+   "sha256": "a522a998255c9b035f45e2c3be15e9026302d2b646252d62b8f5917b2a8dd52e",
+   "bytes": 249888
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1152_native_arrays.npz",
+   "sha256": "de34c90c6553fec3ae2c6cc2c7f8ed404edcfa3ac2ca6dcc41e151fcb2a7eab6",
+   "bytes": 249996
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1158_native_arrays.npz",
+   "sha256": "ee0942f70008de8232ff49e37e1e011e641aefff36c9bb181ba400f985b61a43",
+   "bytes": 213698
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1164_native_arrays.npz",
+   "sha256": "60d6bdab958dc2dbf85c62933bfaf2010f1183e780684e9db3fc1656f92b324e",
+   "bytes": 247628
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1170_native_arrays.npz",
+   "sha256": "a42f08a073cddd04b1dcb4917470b026c76a5644216991d88e4179d8e75f12e8",
+   "bytes": 72649
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1176_native_arrays.npz",
+   "sha256": "a6d8bde880ee76f4c51137e40c1197d96f253faecfbaa6ac0fca36edb060b91f",
+   "bytes": 151094
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1182_native_arrays.npz",
+   "sha256": "4d72abe5b0f21fff613dbc899b535ba403318ac180915a22a384ce740b961690",
+   "bytes": 245702
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1188_native_arrays.npz",
+   "sha256": "95a182b41dab6e65589dc31236153b7999233136bc05302f3a1b2950555cf522",
+   "bytes": 205319
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1194_native_arrays.npz",
+   "sha256": "e2f22888923e948c86a832fd47b5df1959c51985f9777882917de9ee223568d1",
+   "bytes": 246125
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1200_native_arrays.npz",
+   "sha256": "fb7e7858da81b28cc4c49f0ececc8930f94801fc7a0fcb18333154eecc4bd521",
+   "bytes": 223418
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1206_native_arrays.npz",
+   "sha256": "8f2852c0b819ae1b1ef5cd30f0f95359f829f7aa18fe10a6da2b9172b5fbd615",
+   "bytes": 223177
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1212_native_arrays.npz",
+   "sha256": "4a6b68be0e007a956609cf4bf5003b2aa82cd4b626a81cef505b6f7ccc15f9d4",
+   "bytes": 90081
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1218_native_arrays.npz",
+   "sha256": "92c83ab9224b18289e7d7f7d213cbef4fd6221bfaff9f425e2c5c7c1b76878cd",
+   "bytes": 67791
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1224_native_arrays.npz",
+   "sha256": "a59ce4e917675d5582ef08df45af9e9790a8dee711876ea4f06fa92e51d11740",
+   "bytes": 163734
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1230_native_arrays.npz",
+   "sha256": "84d4d28e2356c3ca5a8422bf30823c4c04d88111899b2e2b08db03a89bc13a2f",
+   "bytes": 234982
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1236_native_arrays.npz",
+   "sha256": "27239b12598a983ba6c37135cf7319dbd823fa2ee971154be09e4e9952a581c9",
+   "bytes": 250941
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1242_native_arrays.npz",
+   "sha256": "0683e584d5488293257373a92f3b806e3b4d1c120e1377a356efd1cb1551e74b",
+   "bytes": 205153
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1248_native_arrays.npz",
+   "sha256": "504154d2bfafcc43ba43aa52b5ee832b3a37966ea26d83e481138ccb9f6f366e",
+   "bytes": 238465
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1254_native_arrays.npz",
+   "sha256": "30d7c1f7880ef28760a0539b103bd1f001e2f1dd5db420b17644163f8601147f",
+   "bytes": 204308
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1260_native_arrays.npz",
+   "sha256": "abc770c963232eb32a22f7070896240839008b4ce748a81d45e954e819024d0f",
+   "bytes": 269014
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1266_native_arrays.npz",
+   "sha256": "25d2a58000ffee20ba6aa956f3aa84e1b7c628633694cddb4011a1c7f8ac17ba",
+   "bytes": 179674
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1272_native_arrays.npz",
+   "sha256": "e07fba0a21c7f62776502e69cb9f803753f37120d885bc3e5aee5ad3ed48851e",
+   "bytes": 247075
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1278_native_arrays.npz",
+   "sha256": "72358d11dae53fec589fa2c1b0788ab3ee79c7faa9ed4474fb785a1c845699e5",
+   "bytes": 264576
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1284_native_arrays.npz",
+   "sha256": "52c36f237e2b95cbdd4b9e40647919ddba87f7fc17a284f6df91f69b1a701520",
+   "bytes": 232467
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1290_native_arrays.npz",
+   "sha256": "46c3989a3ae2db2ad3696e952781cd84bf1ffbfb63ddeb25493af364ddc2bf84",
+   "bytes": 86654
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1296_native_arrays.npz",
+   "sha256": "67c246e2901afe93f0f1658c842ecb24188bc9a59389dcdf991f426fb8ba09da",
+   "bytes": 199427
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1302_native_arrays.npz",
+   "sha256": "6eba2e561b44e880833de857f10d2ddfeaf3d5a7be8516db2fe0dd4f7a7e10d0",
+   "bytes": 253656
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1308_native_arrays.npz",
+   "sha256": "bd835805a74bdd5de7c72a93752708e09ae60499b8ef52b4ae5513a7be8d72c6",
+   "bytes": 250802
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1314_native_arrays.npz",
+   "sha256": "86bb9274f3492d6036381b2ceb8ae7f5b5df3ef0db30f29cc33137610fdc5c0f",
+   "bytes": 223947
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1320_native_arrays.npz",
+   "sha256": "960d43b45e8381cd6590a89f7594826ed3062503d2843b26273fe9711e9e5d76",
+   "bytes": 134648
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1326_native_arrays.npz",
+   "sha256": "94a070780d4c1e2bdf28222d13bd96792dd5ce5c87f6f79ba6dd61afb8bab4ce",
+   "bytes": 226250
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1332_native_arrays.npz",
+   "sha256": "4398b0a7bca1df2564f3d35ec2ba09f2bf79dcf653a704dd81d72b7a4c3ba6e4",
+   "bytes": 167831
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1338_native_arrays.npz",
+   "sha256": "6aa7e4a6e740f288f50989d676271679595500680a33bdf7b92124604603159f",
+   "bytes": 256808
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1344_native_arrays.npz",
+   "sha256": "17003bef5dd57a0a53ef2c7b9e3c4fd5d989318cf7dcecb10c12d3ba9ef346a3",
+   "bytes": 259797
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1350_native_arrays.npz",
+   "sha256": "eea630c0b115ea4cca318b05347122f33ac124f9e93d9de3787ec32952deb369",
+   "bytes": 90609
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1356_native_arrays.npz",
+   "sha256": "ece132307f20288b07c3e49b87b196d17aa94e5d3953025a6e0cab985c81a256",
+   "bytes": 47871
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1362_native_arrays.npz",
+   "sha256": "f50e16221c000ca3913faf4f40bac662afc5378ed570784ab832e19437103f64",
+   "bytes": 73314
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1368_native_arrays.npz",
+   "sha256": "aa16b2f443d13d5d7036a856a52be5c0e524dc79b7e3b57d56d3cde1eed1ebf2",
+   "bytes": 211407
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1374_native_arrays.npz",
+   "sha256": "94d8a5509a2679fcc4811e153f06e9b59d2836a831f1c24a23f84bd35b8bded5",
+   "bytes": 197542
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1380_native_arrays.npz",
+   "sha256": "b1e68d91abfe6e23ef3b7e65402b4da47b027d3aef6316ddc6beb9ac672f7e55",
+   "bytes": 158272
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1386_native_arrays.npz",
+   "sha256": "5949aeab5c8308265ea94f1cc96f9cf607a13ed6f862599fed4b88b88137b052",
+   "bytes": 248272
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1392_native_arrays.npz",
+   "sha256": "5c4722459cc816675c0edb92c68fe5e6fef65c2f9444f5367a728465f2cafd8f",
+   "bytes": 260363
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1398_native_arrays.npz",
+   "sha256": "1fceef4989fba353b1c7f622eaa20c33596a601be2da6db25b1477f4b601cd57",
+   "bytes": 95203
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1404_native_arrays.npz",
+   "sha256": "a5596608b1278a0c86cd781cfd494a588e391c7ac75bd6ce6478a711b175bf97",
+   "bytes": 241199
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1410_native_arrays.npz",
+   "sha256": "523fec66eea291dd85b8a2943ccd38bed84061cf5b7ce6ced7f41e38a2812f06",
+   "bytes": 231293
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1416_native_arrays.npz",
+   "sha256": "faa4c30a0f9997906590ebe278acb1873e90d11830a8f9bd80433ea76dc93794",
+   "bytes": 264685
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1422_native_arrays.npz",
+   "sha256": "99bcc72693486098e3157a22517f73ca62e3498e3e2a6add10cd9c5a7b7e1b52",
+   "bytes": 204584
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1428_native_arrays.npz",
+   "sha256": "8524d2bfa7ff6ea73e0d9e2681e701fc8275f9169182e400988ffcd36e9f2245",
+   "bytes": 241927
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1434_native_arrays.npz",
+   "sha256": "3441cf631b9cf31e3d38b633af02b3661122b2a9fd95d7e2c323ddf9e1d76910",
+   "bytes": 71646
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1440_native_arrays.npz",
+   "sha256": "3d49422eb49b1a8a236425068b06fbec23d0a745a5c23ec5a84c396933cce33d",
+   "bytes": 97775
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1446_native_arrays.npz",
+   "sha256": "5e6d5c0970766eacf4d7632786323c107a831225a7c1fcf091317df1af7f1ff7",
+   "bytes": 186842
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1452_native_arrays.npz",
+   "sha256": "9bed65f77362ac68837cc22339eddf08e9d6236d495e30017f2cfc2409900127",
+   "bytes": 89947
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1458_native_arrays.npz",
+   "sha256": "5e2b427f3ef75c3cd6d7be8c7ba1efc964e57605ad0acf2ae0cea6e713af1d24",
+   "bytes": 64054
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1464_native_arrays.npz",
+   "sha256": "b5b2814d3c35574cedf827931ef3da8b58f96ffe0ed62c2201fe77735b6dcb83",
+   "bytes": 80275
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1470_native_arrays.npz",
+   "sha256": "a622a02da8fc1ddc1c4830a70a54546bd572553490a0fe72192002a300e1d862",
+   "bytes": 244398
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1476_native_arrays.npz",
+   "sha256": "dca15b535cc469fd09b750a2493862f3a89a0b525c635db980250f1b474ed04d",
+   "bytes": 165494
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1482_native_arrays.npz",
+   "sha256": "868cb0542934721e30754732fc01a2e108c160a0c7b6f9425e586e5480c05c6c",
+   "bytes": 245548
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1488_native_arrays.npz",
+   "sha256": "ca960dc367fffab6a2cd81d0fd2cd8a45a7f36dcac92b37064a6406e7040fce3",
+   "bytes": 68342
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1494_native_arrays.npz",
+   "sha256": "8e1c9bbec293fc1536ecc01989347d296c556cdf04788cfe9ce3c119c77679ee",
+   "bytes": 221451
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1500_native_arrays.npz",
+   "sha256": "f9b9ac652ee96b9e8352e081cd66ce481081e16ddb8a74e8d116cfd6fb90cc72",
+   "bytes": 73895
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1506_native_arrays.npz",
+   "sha256": "47e248c6b7f37228bf493edc157669d5636f728386ef207b90ed2436a4214880",
+   "bytes": 249180
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1512_native_arrays.npz",
+   "sha256": "9e9d8c5fe8f39b360c3a602472cbbddd1d9b2f6b8a06eff782cd7d617e15eeb0",
+   "bytes": 92443
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1518_native_arrays.npz",
+   "sha256": "f0f2cbe6107c07309eaacdd501ab57b2f111c31d764d4e1cbcfeaf0ea678826a",
+   "bytes": 67228
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1524_native_arrays.npz",
+   "sha256": "b482d4966185b42d8de132479e135490ba86ad66bcfeac1a535f8564c6940831",
+   "bytes": 269623
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1530_native_arrays.npz",
+   "sha256": "5290643e1da1a6976c34e1494b950303880a3f9a74b9891fe07d448a9a73c572",
+   "bytes": 153406
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1536_native_arrays.npz",
+   "sha256": "67cc95c2533d300d3193324833802d012790f722628358733de68f5b82ce4436",
+   "bytes": 85212
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1542_native_arrays.npz",
+   "sha256": "4e2a4602e4bb34ff46cd75a02c120dce73fe6bb8228ddcf743a96d19f20a96e4",
+   "bytes": 255402
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1548_native_arrays.npz",
+   "sha256": "34d84e465992bcc90924acbf3efc0979b1a69d2eb49658d0e2fcdf002d34a873",
+   "bytes": 154682
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1554_native_arrays.npz",
+   "sha256": "a5e4f3024fe32a4d4c9549e7b7137011636a82329f4bcfff96997bb1a8bde7c3",
+   "bytes": 242293
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1560_native_arrays.npz",
+   "sha256": "8bbdd43d3d0a54598491cefca358cd9317d7f6d0972f8afd702215c5cb3da707",
+   "bytes": 164283
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1566_native_arrays.npz",
+   "sha256": "9934493acefb2cafa0200f540ea3eb50953d46bfd2eb2642fdc09b3e5205f5d8",
+   "bytes": 168449
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1572_native_arrays.npz",
+   "sha256": "88c60bc9b4bda466a9fb3d14a7621fe6b0f2e05a903081e5e98d2472c0b688f8",
+   "bytes": 253774
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1578_native_arrays.npz",
+   "sha256": "2ca56b76aa0c5243621cd494223ee57c627a30b6d1fee3a5b8d3ba35a11384b7",
+   "bytes": 211973
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1584_native_arrays.npz",
+   "sha256": "5045810555cb47b3fca44191daadaad5cf5d4c7989d4e1eb21383e36d0797bfe",
+   "bytes": 252144
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1590_native_arrays.npz",
+   "sha256": "12803a1db437a9f09248a22835aa430f55567cda31a9dc2d2df96e07421b6ddc",
+   "bytes": 224255
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1596_native_arrays.npz",
+   "sha256": "107b51b6e12f3657e1772c8be2bc9245fa7e76e438dc333bc85ec1b12ed3793a",
+   "bytes": 159260
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1602_native_arrays.npz",
+   "sha256": "647f6dacafa7a4e97327591ff798d1af10f941295d89050e8cb79b2ab9fdefab",
+   "bytes": 86555
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1608_native_arrays.npz",
+   "sha256": "b9a98ab449999168865f5b4231401c41cd47057f71d89b3ea9bbf1f9bb8030f7",
+   "bytes": 172464
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1614_native_arrays.npz",
+   "sha256": "374f72c0153f5b2d174e4950a34c1268ff85d87bb61148d008761d8aa2a23745",
+   "bytes": 86909
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1620_native_arrays.npz",
+   "sha256": "388176f2e4ab41443cbe36d1bd88f4c61ad1028b7a80e50fd3feaed942fc89a0",
+   "bytes": 65775
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1626_native_arrays.npz",
+   "sha256": "e53c6d714de83c94859a9830c4a65f00fbf5e0eca459c9908fdd2e263705b041",
+   "bytes": 174304
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1632_native_arrays.npz",
+   "sha256": "6dbabc46d86bef9163767fff02fbd2c12172fa2e167bdd3e51c826a49517eef1",
+   "bytes": 247756
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1638_native_arrays.npz",
+   "sha256": "1e78b1acb8f65249ff5ba330631995f0a57d34026f8e580fc73470dd9e711935",
+   "bytes": 169648
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1644_native_arrays.npz",
+   "sha256": "c1dae964d53c309587e9b9cecbc4bea41eccdec9f1de3f4ea0a47ca2aabff1da",
+   "bytes": 252669
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1650_native_arrays.npz",
+   "sha256": "62ac6f6a1eb0a4307fa61bc17886890b0cd99956a7746875425f3eb5dbb07b89",
+   "bytes": 239380
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1656_native_arrays.npz",
+   "sha256": "e9cc64e7f34195b8500106541a80b936038d140956a50dcdbfdf90d17df68b37",
+   "bytes": 208378
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1662_native_arrays.npz",
+   "sha256": "fa2dd8a20a55949f88de7dcf0a96eb931026fa55a65a0018ca4f4076d82f2354",
+   "bytes": 246192
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1668_native_arrays.npz",
+   "sha256": "2fe0e8b179a526a2d14abdcea24348c3c14bc88cf068866be616afb572f7b28c",
+   "bytes": 88233
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1674_native_arrays.npz",
+   "sha256": "80f752f5ef9aa48edef5340be8580da53ce64e3ed67c3cde1676771729df093a",
+   "bytes": 79874
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1680_native_arrays.npz",
+   "sha256": "7b013141e3f17c62542e7bf1dbc2fc62ef4411438eae14acc5d6b12c1883c521",
+   "bytes": 236716
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1686_native_arrays.npz",
+   "sha256": "49b546d691f5e286088df806ace97b23b909c21dc0fb5843096b09df7ae8992c",
+   "bytes": 220653
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1692_native_arrays.npz",
+   "sha256": "9011d6d6397bde14df18a1ff6c56759e06ad0393d644209d0eb3bdcfad5468b1",
+   "bytes": 255877
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1698_native_arrays.npz",
+   "sha256": "a29dc7b9792622874833d94918d18a3780f2386ef113dfa44c721984e946f635",
+   "bytes": 73451
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1704_native_arrays.npz",
+   "sha256": "4ff3060b4a96733eec2d71bf8e302a7eed81a76fae8daa803b4420abfd9b4b21",
+   "bytes": 73610
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1710_native_arrays.npz",
+   "sha256": "8d4f556fdadc26c19092dfe4c62e98ecf56dcf7a4d63ffa2297102569c70eac3",
+   "bytes": 248153
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1716_native_arrays.npz",
+   "sha256": "b60143151f6209356702f01c54f2a7f2b66b001192ce059beff51dac31ba53eb",
+   "bytes": 134385
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1722_native_arrays.npz",
+   "sha256": "0e785e0c866be7b4361a949b169c52cf191ac5ecaf9ce8cca5c977ebf97ccbf2",
+   "bytes": 269551
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1728_native_arrays.npz",
+   "sha256": "03430be9ddee62f3ec9431375ea4eb59add3d5e68c6e949493690baeca865dc5",
+   "bytes": 71625
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1734_native_arrays.npz",
+   "sha256": "1b624cea5dab9ded081e3ba7f625e661b8a0ce8f9dc7840bc691595596f8b409",
+   "bytes": 71883
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1740_native_arrays.npz",
+   "sha256": "4420fffa36c1dec66a9b91261b333d502b6632e720a40794bcd59832f1bdbc4d",
+   "bytes": 158902
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1746_native_arrays.npz",
+   "sha256": "e0686930e8b9c8eb35188ba3b1f9adc8ee0a9ee5a1eedcc754fc8a3716358361",
+   "bytes": 231468
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1752_native_arrays.npz",
+   "sha256": "1f99dd5f5da2bfbf5401b8126caa308f4d90d1c84114bc9357150e528f068dea",
+   "bytes": 69293
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1758_native_arrays.npz",
+   "sha256": "0d5a355514acef2b802364e49aad9be2ea9d390c3dabe065d30bed05d7cf94dc",
+   "bytes": 260614
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1764_native_arrays.npz",
+   "sha256": "bc427082e3bb3c9ad65722026aac06dce61870620b1fe59ce636158d3cbfdded",
+   "bytes": 210038
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1770_native_arrays.npz",
+   "sha256": "9c122bb67800039a836a853f4472792a82c56c03752c8136bb31f65ec1884205",
+   "bytes": 237570
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1776_native_arrays.npz",
+   "sha256": "70498c7836987d5e938254298673c6ea2d9016445fd48aa30c718e406816003c",
+   "bytes": 165262
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1788_native_arrays.npz",
+   "sha256": "560ada874573f911e4ae353511176b2f5e698a2115bdbd3c47706f43bc4dd2c0",
+   "bytes": 251631
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1824_native_arrays.npz",
+   "sha256": "435d4dc80e8306d7744b98e8ea614e0ae597048613217a717bb876b936d19511",
+   "bytes": 90445
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1836_native_arrays.npz",
+   "sha256": "a6cbda76941389e1f21002403eedb164e1da2e821a3f3d7ee220ca8941c2cceb",
+   "bytes": 215234
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1848_native_arrays.npz",
+   "sha256": "9fac03327077b9b36120681036db75b5f1ff3ec036cf09736f19859a602d4919",
+   "bytes": 229418
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1860_native_arrays.npz",
+   "sha256": "beda52a0c22937a2d73d2c3a377c104789703f6ed09d1e978168cbe67ff2a8f2",
+   "bytes": 249566
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1872_native_arrays.npz",
+   "sha256": "60da086b4940d1f1709161bdcea28fdc18f722c51d550fdcc76e76e31786330b",
+   "bytes": 222552
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1890_native_arrays.npz",
+   "sha256": "ea1b3a7da1ce40efb2cde1527e239d9ba5df0d27d7be4329d269ed1ac1811392",
+   "bytes": 150100
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1902_native_arrays.npz",
+   "sha256": "0836a9ddeb75b441aa97e585f38c07dc416245314f0c22682a9beee22af7b11a",
+   "bytes": 158498
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1938_native_arrays.npz",
+   "sha256": "5d6ba74302fc8a2a4b162810a74752641562140c3c48797726678d546c13aa34",
+   "bytes": 242512
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_1986_native_arrays.npz",
+   "sha256": "5368ac093be27405cd5aaa8854eb8800f9ccd7e851c950790a6be78b5c16985b",
+   "bytes": 252538
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_2016_native_arrays.npz",
+   "sha256": "566ddd4023f1f5cfeb680bde88f421f5d5c5ea0ef050d3ad048b23d274a8706e",
+   "bytes": 80445
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_2082_native_arrays.npz",
+   "sha256": "700bbd91e0185cde33fd23d250cd446889f94cb7f967c21db22ba1cc9d76fb89",
+   "bytes": 258690
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_2100_native_arrays.npz",
+   "sha256": "273a731e0556d97f13b581bf8e32a56d8d0052916aa9f9988f828c20a1dca157",
+   "bytes": 165567
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_2112_native_arrays.npz",
+   "sha256": "a330b7a91efaa16e74fb22d787a918938c5971cdbaa8f81aa1904dc1cc901680",
+   "bytes": 58046
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_2124_native_arrays.npz",
+   "sha256": "6c66c3056fbfbdb7c9b5ce8aaf583db2a0ef8db2ac33505de13351e568d0120d",
+   "bytes": 251189
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_2130_native_arrays.npz",
+   "sha256": "eefcd12f5edeec139d34e6dcdc513aa3c6823c4a47dca20ab1741e775d84ccb7",
+   "bytes": 257767
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_2148_native_arrays.npz",
+   "sha256": "92c38f0d3263aea94e3f7255b7c0e931411852cb6bd6a98057d0071ecb07c7f2",
+   "bytes": 149256
+  },
+  {
+   "path": "B_retrack\\out\\retrack_new\\B2\\pl12_c1109_eval_2160_native_arrays.npz",
+   "sha256": "c55b2a3391719ab293633a317446c01bfc091a3540732439aecebfc74d812e4e",
+   "bytes": 144328
+  }
+ ]
+}

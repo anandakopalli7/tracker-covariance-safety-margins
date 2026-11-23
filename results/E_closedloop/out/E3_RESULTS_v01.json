@@ -1,0 +1,2443 @@
+{
+ "schema": "E3_RESULTS_V01",
+ "code": "e3_analyse_v01.py",
+ "low_power": false,
+ "comparisons": [
+  {
+   "arm": "E_N",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 60,
+   "pairs": 60,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 60,
+    "a": 11,
+    "b": 0,
+    "c": 1,
+    "d": 48,
+    "p_arm": 0.18333333333333332,
+    "p_ref": 0.2,
+    "diff": -0.016666666666666666,
+    "lo": -0.07626062600778594,
+    "hi": 0.039705210685623035,
+    "phi": 0.8937657714269422,
+    "mcnemar_exact_p": 1.0
+   },
+   "time_lost": {
+    "m": 48,
+    "mean": 0.015661098821528885,
+    "lo": -0.0037890029938424147,
+    "hi": 0.03729209186858443,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 11,
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "resamples": 20000
+     },
+     "mean_arm": 4.982401601386954,
+     "mean_ref": 4.642012850118431
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 48,
+      "mean": 0.06684520757713013,
+      "lo": -0.04529247386151909,
+      "hi": 0.18298443479905369,
+      "resamples": 20000
+     },
+     "mean_arm": 3.571760474751323,
+     "mean_ref": 3.5745804340085083
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -0.011781288174233635,
+      "lo": -0.08960050788856042,
+      "hi": 0.06641527777443858,
+      "resamples": 20000
+     },
+     "mean_arm": 8.623043781066377,
+     "mean_ref": 8.63482506924061
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -0.0407485747813454,
+      "lo": -0.13031659081708333,
+      "hi": 0.0741256622617997,
+      "resamples": 20000
+     },
+     "mean_arm": 8.704721282993953,
+     "mean_ref": 8.745469857775301
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 60,
+      "mean": 0.001999999999999998,
+      "lo": -0.015000000000000003,
+      "hi": 0.023944444444444442,
+      "resamples": 20000
+     },
+     "mean_arm": 0.48324676692207846,
+     "mean_ref": 0.4812467669220784
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 48,
+      "mean": 0.015661098821528885,
+      "lo": -0.0037890029938424147,
+      "hi": 0.03729209186858443,
+      "resamples": 20000
+     },
+     "mean_arm": 24.524084971109374,
+     "mean_ref": 24.518317228584078
+    }
+   },
+   "classification": "equivalent",
+   "stage": "E3",
+   "hypothesis": "E-H2"
+  },
+  {
+   "arm": "E_CK3",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 60,
+   "pairs": 60,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 60,
+    "a": 0,
+    "b": 0,
+    "c": 12,
+    "d": 48,
+    "p_arm": 0.0,
+    "p_ref": 0.2,
+    "diff": -0.2,
+    "lo": -0.317818058056279,
+    "hi": -0.09852101539727062,
+    "phi": 0.0,
+    "mcnemar_exact_p": 0.00048828125
+   },
+   "time_lost": {
+    "m": 48,
+    "mean": 0.16318455275375912,
+    "lo": 0.10457519906222609,
+    "hi": 0.22462742686628626,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": 4.642012850118431
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 48,
+      "mean": 1.4126423645124213,
+      "lo": 0.9377518488172675,
+      "hi": 1.8994795166853191,
+      "resamples": 20000
+     },
+     "mean_arm": 4.827850602912468,
+     "mean_ref": 3.5745804340085083
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -4.498132993250702,
+      "lo": -6.4708350750788455,
+      "hi": -2.7989098626459974,
+      "resamples": 20000
+     },
+     "mean_arm": 4.1366920759899095,
+     "mean_ref": 8.63482506924061
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -5.520420302986565,
+      "lo": -9.598670805102497,
+      "hi": -2.0274783592246677,
+      "resamples": 20000
+     },
+     "mean_arm": 3.2250495547887357,
+     "mean_ref": 8.745469857775301
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -0.4649134335887451,
+      "lo": -0.5564689911862181,
+      "hi": -0.3681701902813213,
+      "resamples": 20000
+     },
+     "mean_arm": 0.01633333333333333,
+     "mean_ref": 0.4812467669220784
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 48,
+      "mean": 0.16318455275375912,
+      "lo": 0.10457519906222609,
+      "hi": 0.22462742686628626,
+      "resamples": 20000
+     },
+     "mean_arm": 24.780267130343436,
+     "mean_ref": 24.518317228584078
+    }
+   },
+   "classification": "safer at no extra cost",
+   "stage": "E3",
+   "hypothesis": "E-H1"
+  },
+  {
+   "arm": "E_TG",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 60,
+   "pairs": 60,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 60,
+    "a": 0,
+    "b": 0,
+    "c": 12,
+    "d": 48,
+    "p_arm": 0.0,
+    "p_ref": 0.2,
+    "diff": -0.2,
+    "lo": -0.317818058056279,
+    "hi": -0.09852101539727062,
+    "phi": 0.0,
+    "mcnemar_exact_p": 0.00048828125
+   },
+   "time_lost": {
+    "m": 48,
+    "mean": -0.12752293127493997,
+    "lo": -0.1930577104640373,
+    "hi": -0.06441361882326416,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": 4.642012850118431
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 48,
+      "mean": -0.5692193834553638,
+      "lo": -1.032136710137585,
+      "hi": -0.0950836933629261,
+      "resamples": 20000
+     },
+     "mean_arm": 2.837447557242384,
+     "mean_ref": 3.5745804340085083
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -4.253274629148221,
+      "lo": -6.170906475995077,
+      "hi": -2.5980492704824942,
+      "resamples": 20000
+     },
+     "mean_arm": 4.381550440092392,
+     "mean_ref": 8.63482506924061
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -6.172164737611488,
+      "lo": -10.199051460403242,
+      "hi": -2.762775703583689,
+      "resamples": 20000
+     },
+     "mean_arm": 2.573305120163813,
+     "mean_ref": 8.745469857775301
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -0.3957467669220784,
+      "lo": -0.5079382573684298,
+      "hi": -0.2759981607868345,
+      "resamples": 20000
+     },
+     "mean_arm": 0.08549999999999999,
+     "mean_ref": 0.4812467669220784
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 48,
+      "mean": -0.12752293127493997,
+      "lo": -0.1930577104640373,
+      "hi": -0.06441361882326416,
+      "resamples": 20000
+     },
+     "mean_arm": 24.518898086496996,
+     "mean_ref": 24.518317228584078
+    }
+   },
+   "classification": "safer at no extra cost",
+   "stage": "E3",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_PS",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 60,
+   "pairs": 60,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 60,
+    "a": 0,
+    "b": 0,
+    "c": 12,
+    "d": 48,
+    "p_arm": 0.0,
+    "p_ref": 0.2,
+    "diff": -0.2,
+    "lo": -0.317818058056279,
+    "hi": -0.09852101539727062,
+    "phi": 0.0,
+    "mcnemar_exact_p": 0.00048828125
+   },
+   "time_lost": {
+    "m": 48,
+    "mean": -0.16521036074629727,
+    "lo": -0.2509732701553036,
+    "hi": -0.08067932176749579,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": 4.642012850118431
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 48,
+      "mean": -0.8774951152389647,
+      "lo": -1.4534105730615288,
+      "hi": -0.2817749765922013,
+      "resamples": 20000
+     },
+     "mean_arm": 2.6675022983599326,
+     "mean_ref": 3.5745804340085083
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -3.3531321174448467,
+      "lo": -5.422409465958811,
+      "hi": -1.5678441745610723,
+      "resamples": 20000
+     },
+     "mean_arm": 5.2816929517957645,
+     "mean_ref": 8.63482506924061
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -5.087180129487878,
+      "lo": -9.235122545400566,
+      "hi": -1.5836837794725502,
+      "resamples": 20000
+     },
+     "mean_arm": 3.658289728287422,
+     "mean_ref": 8.745469857775301
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -0.4569689891443007,
+      "lo": -0.5417366238919812,
+      "hi": -0.3677419228632428,
+      "resamples": 20000
+     },
+     "mean_arm": 0.02427777777777778,
+     "mean_ref": 0.4812467669220784
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 48,
+      "mean": -0.16521036074629727,
+      "lo": -0.2509732701553036,
+      "hi": -0.08067932176749579,
+      "resamples": 20000
+     },
+     "mean_arm": 24.49376628827089,
+     "mean_ref": 24.518317228584078
+    }
+   },
+   "classification": "safer at no extra cost",
+   "stage": "E3",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_N_IMM",
+   "ref": "E_F0_IMM",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 60,
+   "pairs": 60,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 60,
+    "a": 12,
+    "b": 0,
+    "c": 0,
+    "d": 48,
+    "p_arm": 0.2,
+    "p_ref": 0.2,
+    "diff": 0.0,
+    "lo": -0.048023940351074816,
+    "hi": 0.04802394035107485,
+    "phi": 0.9479166666666666,
+    "mcnemar_exact_p": 1.0
+   },
+   "time_lost": {
+    "m": 48,
+    "mean": 0.01897458248587543,
+    "lo": 0.001457049264334203,
+    "hi": 0.04016306272055029,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 12,
+      "mean": -0.0565167965614819,
+      "lo": -0.18938024686279029,
+      "hi": 0.006339503359049559,
+      "resamples": 20000
+     },
+     "mean_arm": 5.695544864651008,
+     "mean_ref": 5.7520616612124895
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 48,
+      "mean": 0.0891337160500143,
+      "lo": -0.011699112440428022,
+      "hi": 0.2022614234772918,
+      "resamples": 20000
+     },
+     "mean_arm": 3.423048243949373,
+     "mean_ref": 3.3339145278993585
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -0.02174014139116863,
+      "lo": -0.13921605657469252,
+      "hi": 0.0963472896766904,
+      "resamples": 20000
+     },
+     "mean_arm": 9.396674297646491,
+     "mean_ref": 9.41841443903766
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 60,
+      "mean": 0.013773628535611851,
+      "lo": -0.13323414568455694,
+      "hi": 0.15619879035181847,
+      "resamples": 20000
+     },
+     "mean_arm": 10.30391237741265,
+     "mean_ref": 10.290138748877041
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 60,
+      "mean": 0.004353318250377076,
+      "lo": -0.002757792860734036,
+      "hi": 0.011283053670186007,
+      "resamples": 20000
+     },
+     "mean_arm": 0.48268305203205436,
+     "mean_ref": 0.47832973378167726
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 48,
+      "mean": 0.01897458248587543,
+      "lo": 0.001457049264334203,
+      "hi": 0.04016306272055029,
+      "resamples": 20000
+     },
+     "mean_arm": 24.494285249244424,
+     "mean_ref": 24.47531066675855
+    }
+   },
+   "classification": "equivalent",
+   "stage": "E3",
+   "hypothesis": "E-H3"
+  },
+  {
+   "arm": "E_Z",
+   "ref": "E_F0",
+   "level_arm": null,
+   "level_ref": "lo",
+   "cases": 60,
+   "pairs": 60,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 60,
+    "a": 12,
+    "b": 13,
+    "c": 0,
+    "d": 35,
+    "p_arm": 0.4166666666666667,
+    "p_ref": 0.2,
+    "diff": 0.21666666666666667,
+    "lo": 0.10565441530271732,
+    "hi": 0.3227305313263228,
+    "phi": 0.5493502655735358,
+    "mcnemar_exact_p": 0.000244140625
+   },
+   "time_lost": {
+    "m": 35,
+    "mean": -0.5716797519613155,
+    "lo": -0.6716854998558038,
+    "hi": -0.47018084277353844,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 12,
+      "mean": 2.3257467820059667,
+      "lo": 1.5152975807237985,
+      "hi": 3.124425527377947,
+      "resamples": 20000
+     },
+     "mean_arm": 4.833485698714967,
+     "mean_ref": 4.642012850118431
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 35,
+      "mean": -3.5699056706145873,
+      "lo": -4.017113341504083,
+      "hi": -3.09619693398788,
+      "resamples": 20000
+     },
+     "mean_arm": 0.6220438486233133,
+     "mean_ref": 3.5745804340085083
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 60,
+      "mean": 2.44422557199352,
+      "lo": 1.001974409098256,
+      "hi": 3.9862426916456677,
+      "resamples": 20000
+     },
+     "mean_arm": 11.07905064123413,
+     "mean_ref": 8.63482506924061
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 60,
+      "mean": 5.732437832078689,
+      "lo": 3.3404250461197207,
+      "hi": 8.292102579470031,
+      "resamples": 20000
+     },
+     "mean_arm": 14.47790768985399,
+     "mean_ref": 8.745469857775301
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -0.416125666705068,
+      "lo": -0.5044025390030276,
+      "hi": -0.32474696136077874,
+      "resamples": 20000
+     },
+     "mean_arm": 0.06512110021701037,
+     "mean_ref": 0.4812467669220784
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 35,
+      "mean": -0.5716797519613155,
+      "lo": -0.6716854998558038,
+      "hi": -0.47018084277353844,
+      "resamples": 20000
+     },
+     "mean_arm": 24.20904885751277,
+     "mean_ref": 24.518317228584078
+    }
+   },
+   "classification": "worse",
+   "stage": "E3",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_N",
+   "ref": "E_F0",
+   "level_arm": "hi",
+   "level_ref": "hi",
+   "cases": 60,
+   "pairs": 60,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 60,
+    "a": 3,
+    "b": 0,
+    "c": 0,
+    "d": 57,
+    "p_arm": 0.05,
+    "p_ref": 0.05,
+    "diff": 0.0,
+    "lo": -0.06273429805487488,
+    "hi": 0.06273429805487488,
+    "phi": 0.8245614035087719,
+    "mcnemar_exact_p": 1.0
+   },
+   "time_lost": {
+    "m": 57,
+    "mean": 0.0011705625358256,
+    "lo": -0.005691085706707211,
+    "hi": 0.007542865007648479,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 3,
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "resamples": 19044
+     },
+     "mean_arm": 5.7226021116069505,
+     "mean_ref": 5.7226021116069505
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 57,
+      "mean": 0.019312619085989007,
+      "lo": -0.027932306938212123,
+      "hi": 0.06737654044450393,
+      "resamples": 20000
+     },
+     "mean_arm": 5.93176424672283,
+     "mean_ref": 5.912451627636842
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 60,
+      "mean": 0.008270994487848545,
+      "lo": -0.04177960084107017,
+      "hi": 0.06169354381457495,
+      "resamples": 20000
+     },
+     "mean_arm": 7.081209880537431,
+     "mean_ref": 7.072938886049583
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 60,
+      "mean": 0.0037283063868371437,
+      "lo": -0.059760853877873464,
+      "hi": 0.06865093246402036,
+      "resamples": 20000
+     },
+     "mean_arm": 5.169210487291272,
+     "mean_ref": 5.165482180904435
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 60,
+      "mean": 0.008777777777777778,
+      "lo": 1.8503717077085942e-18,
+      "hi": 0.023277777777777776,
+      "resamples": 20000
+     },
+     "mean_arm": 0.771502484595508,
+     "mean_ref": 0.7627247068177302
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 57,
+      "mean": 0.0011705625358256,
+      "lo": -0.005691085706707211,
+      "hi": 0.007542865007648479,
+      "resamples": 20000
+     },
+     "mean_arm": 24.89118710748178,
+     "mean_ref": 24.89001654494595
+    }
+   },
+   "classification": "equivalent",
+   "stage": "E3",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_CK3",
+   "ref": "E_F0",
+   "level_arm": "hi",
+   "level_ref": "hi",
+   "cases": 60,
+   "pairs": 60,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 60,
+    "a": 0,
+    "b": 0,
+    "c": 3,
+    "d": 57,
+    "p_arm": 0.0,
+    "p_ref": 0.05,
+    "diff": -0.05,
+    "lo": -0.13700516476348518,
+    "hi": 0.018555138379676303,
+    "phi": 0.0,
+    "mcnemar_exact_p": 0.25
+   },
+   "time_lost": {
+    "m": 57,
+    "mean": 0.1980608389088962,
+    "lo": 0.13232420991152247,
+    "hi": 0.2625401837762265,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": 5.7226021116069505
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 57,
+      "mean": 1.983114953695662,
+      "lo": 1.371945260446525,
+      "hi": 2.6016015436938167,
+      "resamples": 20000
+     },
+     "mean_arm": 7.823570277801837,
+     "mean_ref": 5.912451627636842
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -2.9541330818633975,
+      "lo": -4.019519821061001,
+      "hi": -2.1162054575443423,
+      "resamples": 20000
+     },
+     "mean_arm": 4.1188058041861835,
+     "mean_ref": 7.072938886049583
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -1.83537615228612,
+      "lo": -4.216697731224461,
+      "hi": 0.055777452137650216,
+      "resamples": 20000
+     },
+     "mean_arm": 3.3301060286183146,
+     "mean_ref": 5.165482180904435
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -0.713502484595508,
+      "lo": -0.7825555555555556,
+      "hi": -0.6294346799840992,
+      "resamples": 20000
+     },
+     "mean_arm": 0.04922222222222223,
+     "mean_ref": 0.7627247068177302
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 57,
+      "mean": 0.1980608389088962,
+      "lo": 0.13232420991152247,
+      "hi": 0.2625401837762265,
+      "resamples": 20000
+     },
+     "mean_arm": 25.146764232244745,
+     "mean_ref": 24.89001654494595
+    }
+   },
+   "classification": "inconclusive",
+   "stage": "E3",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_TG",
+   "ref": "E_F0",
+   "level_arm": "hi",
+   "level_ref": "hi",
+   "cases": 60,
+   "pairs": 60,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 60,
+    "a": 0,
+    "b": 0,
+    "c": 3,
+    "d": 57,
+    "p_arm": 0.0,
+    "p_ref": 0.05,
+    "diff": -0.05,
+    "lo": -0.13700516476348518,
+    "hi": 0.018555138379676303,
+    "phi": 0.0,
+    "mcnemar_exact_p": 0.25
+   },
+   "time_lost": {
+    "m": 57,
+    "mean": -0.2326392234502068,
+    "lo": -0.3216425164877998,
+    "hi": -0.14689957123565597,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": 5.7226021116069505
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 57,
+      "mean": -1.2591662169458822,
+      "lo": -1.8805586966514884,
+      "hi": -0.6188718165565288,
+      "resamples": 20000
+     },
+     "mean_arm": 4.6540361437716715,
+     "mean_ref": 5.912451627636842
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -2.666383467480826,
+      "lo": -3.8014675035537895,
+      "hi": -1.76082906034704,
+      "resamples": 20000
+     },
+     "mean_arm": 4.406555418568756,
+     "mean_ref": 7.072938886049583
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -2.406457185110898,
+      "lo": -4.7496087880545605,
+      "hi": -0.5326646670397094,
+      "resamples": 20000
+     },
+     "mean_arm": 2.759024995793537,
+     "mean_ref": 5.165482180904435
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -0.7365580401510635,
+      "lo": -0.780611111111111,
+      "hi": -0.6850832985489963,
+      "resamples": 20000
+     },
+     "mean_arm": 0.026166666666666668,
+     "mean_ref": 0.7627247068177302
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 57,
+      "mean": -0.2326392234502068,
+      "lo": -0.3216425164877998,
+      "hi": -0.14689957123565597,
+      "resamples": 20000
+     },
+     "mean_arm": 24.731640851603448,
+     "mean_ref": 24.89001654494595
+    }
+   },
+   "classification": "inconclusive",
+   "stage": "E3",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_PS",
+   "ref": "E_F0",
+   "level_arm": "hi",
+   "level_ref": "hi",
+   "cases": 60,
+   "pairs": 60,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 60,
+    "a": 0,
+    "b": 0,
+    "c": 3,
+    "d": 57,
+    "p_arm": 0.0,
+    "p_ref": 0.05,
+    "diff": -0.05,
+    "lo": -0.13700516476348518,
+    "hi": 0.018555138379676303,
+    "phi": 0.0,
+    "mcnemar_exact_p": 0.25
+   },
+   "time_lost": {
+    "m": 57,
+    "mean": -0.47380416350467713,
+    "lo": -0.5957284967292793,
+    "hi": -0.357701649480903,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": 5.7226021116069505
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 57,
+      "mean": -3.2118142890929713,
+      "lo": -3.904561375185219,
+      "hi": -2.4991403496385893,
+      "resamples": 20000
+     },
+     "mean_arm": 2.6675022983599326,
+     "mean_ref": 5.912451627636842
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -1.791245934253816,
+      "lo": -2.9609700481095653,
+      "hi": -0.8602334205029536,
+      "resamples": 20000
+     },
+     "mean_arm": 5.2816929517957645,
+     "mean_ref": 7.072938886049583
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -1.5071924526170124,
+      "lo": -3.9125651786135762,
+      "hi": 0.4084458006794234,
+      "resamples": 20000
+     },
+     "mean_arm": 3.658289728287422,
+     "mean_ref": 5.165482180904435
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -0.7384469290399522,
+      "lo": -0.7802778398926655,
+      "hi": -0.6894467327569073,
+      "resamples": 20000
+     },
+     "mean_arm": 0.02427777777777778,
+     "mean_ref": 0.7627247068177302
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 57,
+      "mean": -0.47380416350467713,
+      "lo": -0.5957284967292793,
+      "hi": -0.357701649480903,
+      "resamples": 20000
+     },
+     "mean_arm": 24.49376628827089,
+     "mean_ref": 24.89001654494595
+    }
+   },
+   "classification": "inconclusive",
+   "stage": "E3",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_N_IMM",
+   "ref": "E_F0_IMM",
+   "level_arm": "hi",
+   "level_ref": "hi",
+   "cases": 60,
+   "pairs": 60,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 60,
+    "a": 5,
+    "b": 0,
+    "c": 1,
+    "d": 54,
+    "p_arm": 0.08333333333333333,
+    "p_ref": 0.1,
+    "diff": -0.016666666666666666,
+    "lo": -0.08612620564176102,
+    "hi": 0.04635627801544524,
+    "phi": 0.8040302522073696,
+    "mcnemar_exact_p": 1.0
+   },
+   "time_lost": {
+    "m": 54,
+    "mean": -0.002045928167898836,
+    "lo": -0.018672207672964066,
+    "hi": 0.011782907181209612,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 5,
+      "mean": 0.09555550676852817,
+      "lo": -0.03329912821451823,
+      "hi": 0.35181748410961217,
+      "resamples": 19891
+     },
+     "mean_arm": 4.5324563829015005,
+     "mean_ref": 4.1542843965900715
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 54,
+      "mean": -0.02210045539885536,
+      "lo": -0.11565945375996231,
+      "hi": 0.06129057674562981,
+      "resamples": 20000
+     },
+     "mean_arm": 5.776453945180301,
+     "mean_ref": 5.9023838374033275
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -0.033412131847956286,
+      "lo": -0.40096990150384154,
+      "hi": 0.23316962330928495,
+      "resamples": 20000
+     },
+     "mean_arm": 7.360951740411052,
+     "mean_ref": 7.3943638722590075
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -0.059810690745768426,
+      "lo": -0.6424486561777221,
+      "hi": 0.3677510723186696,
+      "resamples": 20000
+     },
+     "mean_arm": 5.706632077422208,
+     "mean_ref": 5.766442768167975
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 60,
+      "mean": 0.010684734636789433,
+      "lo": -0.0016417213201459777,
+      "hi": 0.03135148321021604,
+      "resamples": 20000
+     },
+     "mean_arm": 0.7795808787863583,
+     "mean_ref": 0.7688961441495687
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 54,
+      "mean": -0.002045928167898836,
+      "lo": -0.018672207672964066,
+      "hi": 0.011782907181209612,
+      "resamples": 20000
+     },
+     "mean_arm": 24.86818026028081,
+     "mean_ref": 24.888793851121505
+    }
+   },
+   "classification": "equivalent",
+   "stage": "E3",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_Z",
+   "ref": "E_F0",
+   "level_arm": null,
+   "level_ref": "hi",
+   "cases": 60,
+   "pairs": 60,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 60,
+    "a": 3,
+    "b": 22,
+    "c": 0,
+    "d": 35,
+    "p_arm": 0.4166666666666667,
+    "p_ref": 0.05,
+    "diff": 0.36666666666666664,
+    "lo": 0.23583512657697697,
+    "hi": 0.49061272850269155,
+    "phi": 0.19389168358237033,
+    "mcnemar_exact_p": 4.76837158203125e-07
+   },
+   "time_lost": {
+    "m": 35,
+    "mean": -1.0460726180635163,
+    "lo": -1.1931875584298186,
+    "hi": -0.9000126898680053,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 3,
+      "mean": 4.34038292629278,
+      "lo": 3.6197303847875446,
+      "hi": 5.329889188202287,
+      "resamples": 19044
+     },
+     "mean_arm": 4.833485698714967,
+     "mean_ref": 5.7226021116069505
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 35,
+      "mean": -6.733939150959666,
+      "lo": -7.193426301013376,
+      "hi": -6.275050193051456,
+      "resamples": 20000
+     },
+     "mean_arm": 0.6220438486233133,
+     "mean_ref": 5.912451627636842
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 60,
+      "mean": 4.00611175518455,
+      "lo": 1.8178841480536807,
+      "hi": 6.349274816207149,
+      "resamples": 20000
+     },
+     "mean_arm": 11.07905064123413,
+     "mean_ref": 7.072938886049583
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 60,
+      "mean": 9.312425508949554,
+      "lo": 5.515807338007782,
+      "hi": 13.386189193059838,
+      "resamples": 20000
+     },
+     "mean_arm": 14.47790768985399,
+     "mean_ref": 5.165482180904435
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 60,
+      "mean": -0.6976036066007197,
+      "lo": -0.7471361204223292,
+      "hi": -0.6420349075591529,
+      "resamples": 20000
+     },
+     "mean_arm": 0.06512110021701037,
+     "mean_ref": 0.7627247068177302
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 35,
+      "mean": -1.0460726180635163,
+      "lo": -1.1931875584298186,
+      "hi": -0.9000126898680053,
+      "resamples": 20000
+     },
+     "mean_arm": 24.20904885751277,
+     "mean_ref": 24.89001654494595
+    }
+   },
+   "classification": "worse",
+   "stage": "E3",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_N",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 20,
+   "pairs": 20,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 20,
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 20,
+    "p_arm": 0.0,
+    "p_ref": 0.0,
+    "diff": 0.0,
+    "lo": -0.16112515805281938,
+    "hi": 0.16112515805281938,
+    "phi": 0.0,
+    "mcnemar_exact_p": 1.0
+   },
+   "time_lost": {
+    "m": 20,
+    "mean": 0.003270221579983179,
+    "lo": 0.0,
+    "hi": 0.007540001414492537,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.028883463559091993,
+      "lo": -7.4653572278649e-05,
+      "hi": 0.08672504424955463,
+      "resamples": 20000
+     },
+     "mean_arm": 0.5450772748399846,
+     "mean_ref": 0.5161938112808926
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 20,
+      "mean": -0.007104015401843166,
+      "lo": -0.021489459601731153,
+      "hi": 0.0041707448469644245,
+      "resamples": 20000
+     },
+     "mean_arm": 0.4218029704324957,
+     "mean_ref": 0.42890698583433895
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "resamples": 20000
+     },
+     "mean_arm": 0.0,
+     "mean_ref": 0.0
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.003270221579983179,
+      "lo": 0.0,
+      "hi": 0.007540001414492537,
+      "resamples": 20000
+     },
+     "mean_arm": 0.1049225472424375,
+     "mean_ref": 0.10165232566245433
+    }
+   },
+   "classification": "inconclusive",
+   "stage": "E3b",
+   "lead_variant": "constant",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_CK3",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 20,
+   "pairs": 20,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 20,
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 20,
+    "p_arm": 0.0,
+    "p_ref": 0.0,
+    "diff": 0.0,
+    "lo": -0.16112515805281938,
+    "hi": 0.16112515805281938,
+    "phi": 0.0,
+    "mcnemar_exact_p": 1.0
+   },
+   "time_lost": {
+    "m": 20,
+    "mean": 0.5175729574865701,
+    "lo": 0.251202089921885,
+    "hi": 0.8105684120448685,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.7550239144498461,
+      "lo": 0.4188086756800399,
+      "hi": 1.1272753387774863,
+      "resamples": 20000
+     },
+     "mean_arm": 1.2712177257307387,
+     "mean_ref": 0.5161938112808926
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.712755884315616,
+      "lo": 0.4100851359834122,
+      "hi": 1.0371052122648414,
+      "resamples": 20000
+     },
+     "mean_arm": 1.1416628701499552,
+     "mean_ref": 0.42890698583433895
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "resamples": 20000
+     },
+     "mean_arm": 0.0,
+     "mean_ref": 0.0
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.5175729574865701,
+      "lo": 0.251202089921885,
+      "hi": 0.8105684120448685,
+      "resamples": 20000
+     },
+     "mean_arm": 0.6192252831490244,
+     "mean_ref": 0.10165232566245433
+    }
+   },
+   "classification": "inconclusive",
+   "stage": "E3b",
+   "lead_variant": "constant",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_TG",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 20,
+   "pairs": 20,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 20,
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 20,
+    "p_arm": 0.0,
+    "p_ref": 0.0,
+    "diff": 0.0,
+    "lo": -0.16112515805281938,
+    "hi": 0.16112515805281938,
+    "phi": 0.0,
+    "mcnemar_exact_p": 1.0
+   },
+   "time_lost": {
+    "m": 20,
+    "mean": 0.0743873177079708,
+    "lo": 0.0292951446803583,
+    "hi": 0.12589202742892178,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.07990112592838994,
+      "lo": -0.0012173292154187905,
+      "hi": 0.1836620630912091,
+      "resamples": 20000
+     },
+     "mean_arm": 0.5960949372092825,
+     "mean_ref": 0.5161938112808926
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.11248614417823703,
+      "lo": -0.011243531527970752,
+      "hi": 0.25973752377456666,
+      "resamples": 20000
+     },
+     "mean_arm": 0.5413931300125759,
+     "mean_ref": 0.42890698583433895
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "resamples": 20000
+     },
+     "mean_arm": 0.0,
+     "mean_ref": 0.0
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.0743873177079708,
+      "lo": 0.0292951446803583,
+      "hi": 0.12589202742892178,
+      "resamples": 20000
+     },
+     "mean_arm": 0.17603964337042513,
+     "mean_ref": 0.10165232566245433
+    }
+   },
+   "classification": "inconclusive",
+   "stage": "E3b",
+   "lead_variant": "constant",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_PS",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 20,
+   "pairs": 20,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 20,
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 20,
+    "p_arm": 0.0,
+    "p_ref": 0.0,
+    "diff": 0.0,
+    "lo": -0.16112515805281938,
+    "hi": 0.16112515805281938,
+    "phi": 0.0,
+    "mcnemar_exact_p": 1.0
+   },
+   "time_lost": {
+    "m": 20,
+    "mean": 1.3401693578071543,
+    "lo": 0.745162564756973,
+    "hi": 1.9781603299707402,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 2.126873665394144,
+      "lo": 1.3227177064837088,
+      "hi": 2.9334485743684833,
+      "resamples": 20000
+     },
+     "mean_arm": 2.643067476675037,
+     "mean_ref": 0.5161938112808926
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 1.4202664754841647,
+      "lo": 0.996113648960674,
+      "hi": 1.8270057820921306,
+      "resamples": 20000
+     },
+     "mean_arm": 1.8491734613185034,
+     "mean_ref": 0.42890698583433895
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.013000000000000001,
+      "lo": 0.003166666666666667,
+      "hi": 0.024666666666666663,
+      "resamples": 20000
+     },
+     "mean_arm": 0.013000000000000001,
+     "mean_ref": 0.0
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 1.3401693578071543,
+      "lo": 0.745162564756973,
+      "hi": 1.9781603299707402,
+      "resamples": 20000
+     },
+     "mean_arm": 1.4418216834696085,
+     "mean_ref": 0.10165232566245433
+    }
+   },
+   "classification": "inconclusive",
+   "stage": "E3b",
+   "lead_variant": "constant",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_N",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 20,
+   "pairs": 20,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 20,
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 20,
+    "p_arm": 0.0,
+    "p_ref": 0.0,
+    "diff": 0.0,
+    "lo": -0.16112515805281938,
+    "hi": 0.16112515805281938,
+    "phi": 0.0,
+    "mcnemar_exact_p": 1.0
+   },
+   "time_lost": {
+    "m": 20,
+    "mean": 0.004480819737264064,
+    "lo": -0.006252891139319825,
+    "hi": 0.01491138262552989,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.010219764713485624,
+      "lo": -0.012294631002172695,
+      "hi": 0.04706049562378336,
+      "resamples": 20000
+     },
+     "mean_arm": 2.0962041378120957,
+     "mean_ref": 2.0859843730986105
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.019391888288108304,
+      "lo": -0.1277529003487831,
+      "hi": 0.19785890083815838,
+      "resamples": 20000
+     },
+     "mean_arm": 1.9715503002515624,
+     "mean_ref": 1.9521584119634539
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "resamples": 20000
+     },
+     "mean_arm": 0.0,
+     "mean_ref": 0.0
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.004480819737264064,
+      "lo": -0.006252891139319825,
+      "hi": 0.01491138262552989,
+      "resamples": 20000
+     },
+     "mean_arm": 11.348821837254105,
+     "mean_ref": 11.344341017516843
+    }
+   },
+   "classification": "inconclusive",
+   "stage": "E3b",
+   "lead_variant": "mild_braking",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_CK3",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 20,
+   "pairs": 20,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 20,
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 20,
+    "p_arm": 0.0,
+    "p_ref": 0.0,
+    "diff": 0.0,
+    "lo": -0.16112515805281938,
+    "hi": 0.16112515805281938,
+    "phi": 0.0,
+    "mcnemar_exact_p": 1.0
+   },
+   "time_lost": {
+    "m": 20,
+    "mean": 0.8221667153972849,
+    "lo": 0.7899246926621825,
+    "hi": 0.8552576051314833,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.0188759258607476,
+      "lo": -0.027440463045753906,
+      "hi": 0.07473788553882903,
+      "resamples": 20000
+     },
+     "mean_arm": 2.104860298959358,
+     "mean_ref": 2.0859843730986105
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.7524876901414098,
+      "lo": 0.4741822750018236,
+      "hi": 1.0301259821487294,
+      "resamples": 20000
+     },
+     "mean_arm": 2.7046461021048636,
+     "mean_ref": 1.9521584119634539
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "resamples": 20000
+     },
+     "mean_arm": 0.0,
+     "mean_ref": 0.0
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.8221667153972849,
+      "lo": 0.7899246926621825,
+      "hi": 0.8552576051314833,
+      "resamples": 20000
+     },
+     "mean_arm": 12.166507732914127,
+     "mean_ref": 11.344341017516843
+    }
+   },
+   "classification": "inconclusive",
+   "stage": "E3b",
+   "lead_variant": "mild_braking",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_TG",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 20,
+   "pairs": 20,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 20,
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 20,
+    "p_arm": 0.0,
+    "p_ref": 0.0,
+    "diff": 0.0,
+    "lo": -0.16112515805281938,
+    "hi": 0.16112515805281938,
+    "phi": 0.0,
+    "mcnemar_exact_p": 1.0
+   },
+   "time_lost": {
+    "m": 20,
+    "mean": 0.18264914752974323,
+    "lo": 0.1348211235914486,
+    "hi": 0.22630931557184344,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 20,
+      "mean": -0.13836584083313497,
+      "lo": -0.23434782623286624,
+      "hi": -0.05195640075107893,
+      "resamples": 20000
+     },
+     "mean_arm": 1.9476185322654758,
+     "mean_ref": 2.0859843730986105
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 20,
+      "mean": -0.17057105768599023,
+      "lo": -0.3982153238957545,
+      "hi": 0.03001062779865953,
+      "resamples": 20000
+     },
+     "mean_arm": 1.7815873542774636,
+     "mean_ref": 1.9521584119634539
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "resamples": 20000
+     },
+     "mean_arm": 0.0,
+     "mean_ref": 0.0
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.18264914752974323,
+      "lo": 0.1348211235914486,
+      "hi": 0.22630931557184344,
+      "resamples": 20000
+     },
+     "mean_arm": 11.526990165046582,
+     "mean_ref": 11.344341017516843
+    }
+   },
+   "classification": "inconclusive",
+   "stage": "E3b",
+   "lead_variant": "mild_braking",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_PS",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 20,
+   "pairs": 20,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 20,
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 20,
+    "p_arm": 0.0,
+    "p_ref": 0.0,
+    "diff": 0.0,
+    "lo": -0.16112515805281938,
+    "hi": 0.16112515805281938,
+    "phi": 0.0,
+    "mcnemar_exact_p": 1.0
+   },
+   "time_lost": {
+    "m": 20,
+    "mean": 2.3044660752952764,
+    "lo": 1.8021055775781731,
+    "hi": 2.8362427017396685,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.8917046402319306,
+      "lo": 0.34819506126694394,
+      "hi": 1.5277423823726974,
+      "resamples": 20000
+     },
+     "mean_arm": 2.977689013330541,
+     "mean_ref": 2.0859843730986105
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 1.8259476240305013,
+      "lo": 1.5859901235751805,
+      "hi": 2.0803621902070852,
+      "resamples": 20000
+     },
+     "mean_arm": 3.778106035993955,
+     "mean_ref": 1.9521584119634539
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.007666666666666667,
+      "lo": 0.0018333333333333333,
+      "hi": 0.015,
+      "resamples": 20000
+     },
+     "mean_arm": 0.007666666666666667,
+     "mean_ref": 0.0
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 2.3044660752952764,
+      "lo": 1.8021055775781731,
+      "hi": 2.8362427017396685,
+      "resamples": 20000
+     },
+     "mean_arm": 13.648807092812117,
+     "mean_ref": 11.344341017516843
+    }
+   },
+   "classification": "inconclusive",
+   "stage": "E3b",
+   "lead_variant": "mild_braking",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_N",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 20,
+   "pairs": 20,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 20,
+    "a": 5,
+    "b": 0,
+    "c": 0,
+    "d": 15,
+    "p_arm": 0.25,
+    "p_ref": 0.25,
+    "diff": 0.0,
+    "lo": -0.12060923282248123,
+    "hi": 0.12060923282248123,
+    "phi": 0.8666666666666667,
+    "mcnemar_exact_p": 1.0
+   },
+   "time_lost": {
+    "m": 15,
+    "mean": -0.005123696612515971,
+    "lo": -0.060683282445065344,
+    "hi": 0.05323579281221851,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 5,
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "resamples": 19937
+     },
+     "mean_arm": 4.896962205168506,
+     "mean_ref": 4.896962205168506
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.13023486587024077,
+      "lo": -0.014646647140075034,
+      "hi": 0.34303121511294676,
+      "resamples": 20000
+     },
+     "mean_arm": 9.522590567990678,
+     "mean_ref": 9.392355702120437
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.06849431689277714,
+      "lo": -0.06161291500020229,
+      "hi": 0.23500840765647363,
+      "resamples": 20000
+     },
+     "mean_arm": 10.214067058079369,
+     "mean_ref": 10.145572741186594
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 20,
+      "mean": 0.0011666666666666687,
+      "lo": -0.0008333333333333318,
+      "hi": 0.003833333333333337,
+      "resamples": 20000
+     },
+     "mean_arm": 0.123587773231938,
+     "mean_ref": 0.12242110656527132
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 15,
+      "mean": -0.005123696612515971,
+      "lo": -0.060683282445065344,
+      "hi": 0.05323579281221851,
+      "resamples": 20000
+     },
+     "mean_arm": 7.167089534618086,
+     "mean_ref": 7.172213231230601
+    }
+   },
+   "classification": "inconclusive",
+   "stage": "E3b",
+   "lead_variant": "stop_and_go",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_CK3",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 20,
+   "pairs": 20,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 20,
+    "a": 0,
+    "b": 0,
+    "c": 5,
+    "d": 15,
+    "p_arm": 0.0,
+    "p_ref": 0.25,
+    "diff": -0.25,
+    "lo": -0.46870087761874407,
+    "hi": -0.03776544556663036,
+    "phi": 0.0,
+    "mcnemar_exact_p": 0.0625
+   },
+   "time_lost": {
+    "m": 15,
+    "mean": 0.8022105532618523,
+    "lo": 0.6817785556827707,
+    "hi": 0.9163551527338596,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": 4.896962205168506
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 20,
+      "mean": -5.427309938354403,
+      "lo": -8.820958751912256,
+      "hi": -2.58415830344873,
+      "resamples": 20000
+     },
+     "mean_arm": 3.9650457637660317,
+     "mean_ref": 9.392355702120437
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 20,
+      "mean": -6.878011939706501,
+      "lo": -13.52539573281677,
+      "hi": -1.3880829427920736,
+      "resamples": 20000
+     },
+     "mean_arm": 3.267560801480092,
+     "mean_ref": 10.145572741186594
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 20,
+      "mean": -0.12075443989860465,
+      "lo": -0.1535906086031944,
+      "hi": -0.0869114716000587,
+      "resamples": 20000
+     },
+     "mean_arm": 0.0016666666666666666,
+     "mean_ref": 0.12242110656527132
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 15,
+      "mean": 0.8022105532618523,
+      "lo": 0.6817785556827707,
+      "hi": 0.9163551527338596,
+      "resamples": 20000
+     },
+     "mean_arm": 8.384872549224685,
+     "mean_ref": 7.172213231230601
+    }
+   },
+   "classification": "safer at a cost",
+   "stage": "E3b",
+   "lead_variant": "stop_and_go",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_TG",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 20,
+   "pairs": 20,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 20,
+    "a": 1,
+    "b": 0,
+    "c": 4,
+    "d": 15,
+    "p_arm": 0.05,
+    "p_ref": 0.25,
+    "diff": -0.2,
+    "lo": -0.4171142428264243,
+    "hi": 0.016600499109455574,
+    "phi": 0.13245323570650439,
+    "mcnemar_exact_p": 0.125
+   },
+   "time_lost": {
+    "m": 15,
+    "mean": -0.21503900316091748,
+    "lo": -0.3198979470024603,
+    "hi": -0.11262397101044841,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 1,
+      "mean": -5.357897984009469,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": 1.8648844841809478,
+     "mean_ref": 4.896962205168506
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 20,
+      "mean": -4.535147018451346,
+      "lo": -7.524834103179709,
+      "hi": -2.0219983664901795,
+      "resamples": 20000
+     },
+     "mean_arm": 4.857208683669091,
+     "mean_ref": 9.392355702120437
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 20,
+      "mean": -6.997503077474723,
+      "lo": -13.0196233809742,
+      "hi": -2.0586479455615216,
+      "resamples": 20000
+     },
+     "mean_arm": 3.14806966371187,
+     "mean_ref": 10.145572741186594
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 20,
+      "mean": -0.06966713831130307,
+      "lo": -0.10383594054580896,
+      "hi": -0.030743187335378553,
+      "resamples": 20000
+     },
+     "mean_arm": 0.05275396825396824,
+     "mean_ref": 0.12242110656527132
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 15,
+      "mean": -0.21503900316091748,
+      "lo": -0.3198979470024603,
+      "hi": -0.11262397101044841,
+      "resamples": 20000
+     },
+     "mean_arm": 7.370777943695163,
+     "mean_ref": 7.172213231230601
+    }
+   },
+   "classification": "inconclusive",
+   "stage": "E3b",
+   "lead_variant": "stop_and_go",
+   "hypothesis": null
+  },
+  {
+   "arm": "E_PS",
+   "ref": "E_F0",
+   "level_arm": "lo",
+   "level_ref": "lo",
+   "cases": 20,
+   "pairs": 20,
+   "dropped_pairs": [],
+   "contact": {
+    "n": 20,
+    "a": 0,
+    "b": 0,
+    "c": 5,
+    "d": 15,
+    "p_arm": 0.0,
+    "p_ref": 0.25,
+    "diff": -0.25,
+    "lo": -0.46870087761874407,
+    "hi": -0.03776544556663036,
+    "phi": 0.0,
+    "mcnemar_exact_p": 0.0625
+   },
+   "time_lost": {
+    "m": 15,
+    "mean": 2.347592235707379,
+    "lo": 2.083351857673036,
+    "hi": 2.6007975020289598,
+    "resamples": 20000
+   },
+   "descriptive": {
+    "impact_speed_mps": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": 4.896962205168506
+    },
+    "rest_gap_m": {
+     "paired_diff": {
+      "m": 0,
+      "mean": NaN,
+      "lo": NaN,
+      "hi": NaN,
+      "resamples": 0
+     },
+     "mean_arm": NaN,
+     "mean_ref": NaN
+    },
+    "peak_decel_mps2": {
+     "paired_diff": {
+      "m": 20,
+      "mean": -3.59640334814679,
+      "lo": -7.3577385961547135,
+      "hi": -0.4493541885642165,
+      "resamples": 20000
+     },
+     "mean_arm": 5.7959523539736475,
+     "mean_ref": 9.392355702120437
+    },
+    "rms_jerk_mps3": {
+     "paired_diff": {
+      "m": 20,
+      "mean": -5.788129992246768,
+      "lo": -12.602878952547375,
+      "hi": -0.16290469362353852,
+      "resamples": 20000
+     },
+     "mean_arm": 4.357442748939825,
+     "mean_ref": 10.145572741186594
+    },
+    "fallback_share": {
+     "paired_diff": {
+      "m": 20,
+      "mean": -0.03242110656527132,
+      "lo": -0.0635689481581644,
+      "hi": -0.0009966680535330417,
+      "resamples": 20000
+     },
+     "mean_arm": 0.09,
+     "mean_ref": 0.12242110656527132
+    },
+    "time_lost_s": {
+     "paired_diff": {
+      "m": 15,
+      "mean": 2.347592235707379,
+      "lo": 2.083351857673036,
+      "hi": 2.6007975020289598,
+      "resamples": 20000
+     },
+     "mean_arm": 9.853734870970753,
+     "mean_ref": 7.172213231230601
+    }
+   },
+   "classification": "safer at a cost",
+   "stage": "E3b",
+   "lead_variant": "stop_and_go",
+   "hypothesis": null
+  }
+ ]
+}

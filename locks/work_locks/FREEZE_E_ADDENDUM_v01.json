@@ -1,0 +1,82 @@
+{
+ "schema": "FREEZE_ADDENDUM_V13",
+ "package": "E",
+ "addendum": "v01",
+ "freeze_e_sha256": "0a613b6471dfd293a51d1a3e0557e6a830e519759cc65186c033186f4c27da98",
+ "written": "2026-11-19T21:01:50.240654-05:00",
+ "note": "E3 and E3b job lists, written after FREEZE_E by the frozen make_jobs_e_v01.py from out/E2_MATCHED_v01.json (the file whose SHA-256 is in LOCK_A10_2b.txt), before any E3/E3b run. Cases: E3 = positions 35-54 per speed of the sorted evaluation lead-braking cases (C used no replacement); E3b = the 60 d1_e3b cases.",
+ "files": [
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E3B_claude-v13e-04_v01.json",
+   "bytes": 16912,
+   "sha256": "c0ef87671508c31452c1fdaf4e13f851f55abbe1e6696059a96c63ea86bfa577"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E3B_claude-v13e-05_v01.json",
+   "bytes": 16912,
+   "sha256": "5b3e83f06938917d58f9ba11884b223c4e9a6faffab0e8fd2864a96c41568709"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E3B_claude-v13e-06_v01.json",
+   "bytes": 16972,
+   "sha256": "cc0c659ef03577b54271dd0819346a3373c7bf84d671bc1850a14e111f1e62a4"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E3B_claude-v13e-07_v01.json",
+   "bytes": 16972,
+   "sha256": "59a6871977dbaebb2cc6f91eb3c27785084dacbe4a946033bc35ad7fe641af83"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E3B_claude-v13e-08_v01.json",
+   "bytes": 16957,
+   "sha256": "23b4abe0569e1e32192d4e88b45b7d9705951114e20d3ceeed968d172ff914d1"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E3B_claude-v13e-09_v01.json",
+   "bytes": 16957,
+   "sha256": "6ad8e2caba549174499def49e84f46b1f6e473aa4dd53e823fd1242d156ec7f7"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E3_claude-v13e-04_v01.json",
+   "bytes": 42815,
+   "sha256": "be587970c818c072b22427397903d9a1bb93c96116b5bbd8ebcdf0ad3aa6d089"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E3_claude-v13e-05_v01.json",
+   "bytes": 42815,
+   "sha256": "0b86350ab43824770c27a55675b355d87b9e602d02322f5cfc856039c0ae7648"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E3_claude-v13e-06_v01.json",
+   "bytes": 42815,
+   "sha256": "f4184b7e7c3fb7fb3ab4ce2ff57fa2c385d6eaab671396d87a6190e370e74a9b"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E3_claude-v13e-07_v01.json",
+   "bytes": 42815,
+   "sha256": "59a6ad0c00352f3a3d2a97a4ff8b06b86a834784ee72d3f796a642fb510bc38b"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E3_claude-v13e-08_v01.json",
+   "bytes": 42815,
+   "sha256": "db050c614da5eab8d600ad19af571b25c65b6afab1f74458f9e0c81240416aa1"
+  },
+  {
+   "group": "jobs",
+   "path": "E_closedloop/jobs/JOBS_E3_claude-v13e-09_v01.json",
+   "bytes": 42815,
+   "sha256": "de2b3ec5b10c1ad911c1e74eef6a2591fe535b26becfb8413408f7fbebd665f1"
+  }
+ ]
+}

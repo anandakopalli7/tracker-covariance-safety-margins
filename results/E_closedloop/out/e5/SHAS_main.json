@@ -1,0 +1,10 @@
+{
+ "lock_a12b": "8fe336698b36ce334601d4928c179c1eccfcc9936e449b673c79a92d21e2324e",
+ "outputs": {
+  "A_EXPORT_E5.json": "20ecda6a122de2c2d976ee6bf8c84bd229f801a453425162ca25ae40d6655e28",
+  "A_RECOUNT_E5.json": "f3bc8ee583249058063a2c45c8af682a83b8d93fd3eefd76df629add1f4a7013",
+  "OUTCOMES_E5_v01.json": "b602d25edf64f2fe34ffe9e8945d49c57e327d9ef3c9b0a830a2899545a5082c",
+  "E5_RESULTS_v01.json": "2e3d5b5304af8a9fc893a171d7f1a5a3d2a7050ef06d1e752d4ca02424143266"
+ },
+ "disagreements": 17
+}

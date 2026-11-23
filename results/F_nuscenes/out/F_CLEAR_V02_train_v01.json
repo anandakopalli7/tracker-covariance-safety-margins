@@ -1,0 +1,58 @@
+{
+ "code": "f15_clear_v02.py summary",
+ "split": "train",
+ "written": "2026-11-20 02:18:43",
+ "rule": "notes\\F_DEPARTURE_CLEARANCE_v01.md",
+ "rule_sha256": "a0be0de7e462281a7e8b95b6b0acf31dd99cdbc38299b6214edd08ad3bd18259",
+ "n_scenes": 700,
+ "checks": {
+  "v01_max_abs": 0.0,
+  "v01_inf_differ": 0,
+  "brute_n": 1399,
+  "brute_max_abs": 0.0,
+  "brute_inf_differ": 0,
+  "monotone_violations": 0
+ },
+ "checks_passed": true,
+ "g1_counts": {
+  "3 s": {
+   "n_evaluated": 88737,
+   "rows_unsafe_to_safe": 65560,
+   "rows_safe_to_unsafe": 0,
+   "rows_unsafe_v01": 98890,
+   "rows_unsafe_v02": 33330,
+   "F0": {
+    "wrong_go_v01": 8081,
+    "wrong_go_v02": 1959,
+    "removed": 6122,
+    "added": 0
+   },
+   "E": {
+    "wrong_go_v01": 6922,
+    "wrong_go_v02": 1585,
+    "removed": 5337,
+    "added": 0
+   }
+  },
+  "2 s": {
+   "n_evaluated": 95871,
+   "rows_unsafe_to_safe": 9430,
+   "rows_safe_to_unsafe": 0,
+   "rows_unsafe_v01": 16478,
+   "rows_unsafe_v02": 7048,
+   "F0": {
+    "wrong_go_v01": 1006,
+    "wrong_go_v02": 155,
+    "removed": 851,
+    "added": 0
+   },
+   "E": {
+    "wrong_go_v01": 848,
+    "wrong_go_v02": 54,
+    "removed": 794,
+    "added": 0
+   }
+  }
+ },
+ "note": "F0 and E only on the design split (A10 section 8.6); selection at g = 1: first row with critical scale >= 1, else the fallback row; \"removed\" = unsafe under the clearance of record and safe under the new rule"
+}
